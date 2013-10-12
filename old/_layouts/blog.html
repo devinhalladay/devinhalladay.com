@@ -1,0 +1,16 @@
+{% capture content %}
+  {% for article in posts limit:6 %}
+    {% if article == posts.first %}
+      {% capture article_body %}{{ article.excerpt | strip_html | truncatewords: 60 | smartypants }}<a href="{{ article.url }}">Read&nbsp;more</a>{% endcapture %}
+    {% else %}
+      {% capture article_body %}{{ article.excerpt | strip_html | truncatewords: 45 | smartypants }} <a href="{{ article.url }}">Read&nbsp;more</a>{% endcapture %}
+    {% endif %}
+
+    {% include 'includes/article-listing' %}
+  {% endfor %}
+    <div class="archive-link">
+      <a href="/{{ slug }}/archive">Archives &rarr;</a>
+    </div>
+{% endcapture %}
+
+{% include 'layouts/default' %}

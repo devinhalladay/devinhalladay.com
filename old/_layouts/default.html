@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+{% assign development_mode = false %}
+<head>
+  {% capture section %}{{ url | remove_first:'/' | split:'/' | first }}{% endcapture %}
+  {% capture img %}/public/img{% endcapture %}
+  {% capture js  %}/public/js{% endcapture %}
+  {% capture css %}/public/css{% endcapture %}
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>
+    {{ site.title }} — {{ page.title }}
+  </title>
+  <meta name="description" content="{{ site.meta.description }}">
+
+  <link href="{{ css }}/devin.css" rel="stylesheet">
+
+  <script type="text/javascript" src="{{ js }}/jquery.min.js"></script>
+
+  {% if section == 'blog' %}
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
+  {% endif %}
+
+  {% include 'includes/typekit'   %}
+  {% include 'includes/analytics' %}
+
+  <style>
+    {% if article_title %}
+    blockquote { font-size: 0.9em; }
+    .dropcap { margin-top: 0.1em; }
+    .post h1,
+    .post-title { text-align: center; }
+    {% endif %}
+  </style>
+</head>
+<body class="prettify">
+  <div class="container">
+    <header class="masthead">
+      <ul>
+        <li><a href="/" title="Home">{{ site.title }}</a></li>
+        <li><a href="/about" title="About" {% if section == 'about' %}class="current-page"{% endif %}>About</a></li>
+        <li><a href="/" title="Blog" {% if section == 'blog' or section == '' %}class="current-page"{% endif %}>Blog</a></li>
+        <li><a href="/projects" title="Projects" {% if section == 'projects' %}class="current-page"{% endif %}>Projects</a></li>
+        <li><a href="mailto:devin@devinhalladay.com" title="Contact">Contact</a></li>
+      </ul>
+    </header>
+    <div class="body">
+      {{ content }}
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <span>
+        Made with &hearts; in Ohio by Devin Halladay. <a href="http://devinhalladay.com/about">Learn more.</a>
+      </span>
+      <ul>
+        <li><a href="http://twitter.com/devinhalladay">Twitter</a>&emsp;&emsp;</li>
+        <li><a href="http://dribbble.com/devinhalladay">Dribbble</a>&emsp;&emsp;</li>
+        <li><a href="http://github.com/devinhalladay">GitHub</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  {% if parent and (previous or next) %}
+    <script>
+      document.body.onkeyup = function(e){
+        {% if next %}
+        if (e.keyCode == '37') { window.location = '{{ next.url }}'; }
+        {% endif %}
+
+        {% if previous %}
+        if (e.keyCode == '39') { window.location = '{{ previous.url }}'; }
+        {% endif %}
+      };
+    </script>
+  {% endif %}
+
+  {% if section == 'blog' %}
+  <script>
+    {% if meta.dropcap_enabled.value == '1' %}
+    jQuery(document).ready(function($) {
+      $("#content>:nth-child(2)").addClass("first-paragraph");
+    });
+
+    jQuery(document).ready(function($) {
+      $("#content>:nth-child(2)").lettering('words');
+    });
+
+    jQuery(document).ready(function($) {
+      $("#content>:nth-child(2) .word1").each(function () {
+        var el = $(this),
+          text = el.html(),
+          first = text.slice(0, 1),
+          rest = text.slice(1);
+        el.html("<span class='dropcap'>" + first + "</span>" + rest);
+      });
+    });
+    {% endif %}
+  </script>
+  {% endif %}
+</body>
+</html>

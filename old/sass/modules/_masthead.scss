@@ -1,0 +1,73 @@
+.masthead {
+  color: $primary-text-color;
+  overflow: hidden;
+  margin-bottom: 4em;
+  margin-top: 2em;
+  ul {
+    a { border-bottom: none; }
+    li { margin-left: 0; }
+  }
+  a {
+    border-bottom: 1px solid $primary-highlight-color;
+    color:#333;
+    text-decoration:none;
+    padding-bottom: 2px;
+    -webkit-transition:color 0.2s ease-in-out;
+       -moz-transition:color 0.2s ease-in-out;
+         -o-transition:color 0.2s ease-in-out;
+            transition:color 0.2s ease-in-out;
+   &:hover { color: $primary-highlight-color; }
+  }
+  ul {
+    font-family: $sans-font-family;
+    padding: 0 0 em(24) 0;
+    text-align: center;
+    font-size: em(20);
+    list-style: none;
+    margin: auto;
+  }
+  li {
+    display: inline-block;
+    & + li:before {
+      display: inline-block;
+      content: "\00B7 \00a0";
+      color: $secondary-text-color;
+    }
+  }
+
+.masthead-title {
+  font-family: $sans-font-family;
+  font-size: em(50);
+  text-align: center;
+  margin: 0.5em 0 0 0!important;
+}
+
+.masthead-title a,
+.masthead ul a { border-bottom: none;}
+
+.current-page {
+  color: $primary-highlight-color;
+  &:hover { color: $primary-text-color; }
+}
+
+
+@media (min-width: 768px) and (max-width: 959px) {
+  .masthead {
+    margin-bottom: 1em;
+    h1 {
+      margin-bottom: 0;
+    }
+  }
+}
+}
+
+@media (max-width: 600px) {
+  .masthead {
+    &:after { margin-bottom: 0.8em; }
+    h1 { text-align: center; }
+  }
+  .masthead-title {
+    font-size: 240%!important;
+    line-height: 1.25em;
+  }
+}
