@@ -13,40 +13,13 @@
 
   <div class="main-content">
     <div class="row">
-      <div class="large-6 small-11 small-centered large-centered columns">
+      <div class="large-8 small-11 small-centered large-centered columns">
         {{ content }}
       </div>
     </div>
   </div>
 
-  <div class="footer clearfix">
-    <div class="row">
-      <div class="large-6 small-11 columns small-centered large-centered">
-        <p>I've started a brand new mailing list for this site. Tell me who you are and what you're <del>struggling with</del> afraid of. Maybe we can help each other.</p>
-        <p class="small">Get yourself on the list.</p>
-
-        <!-- Begin MailChimp Signup Form -->
-        <div id="mc_embed_signup">
-          <form action="http://bottlerocketcreative.us2.list-manage.com/subscribe/post?u=e0bc7481323b9e775dd142a1a&amp;id=43ecd188b8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate email-signup" target="_blank" novalidate>
-            <div class="row">
-              <div class="large-7 columns">
-                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
-              </div>
-
-              <div class="large-3 columns">
-                <input type="submit" value="DO IT!" name="subscribe" id="mc-embedded-subscribe" class="button">
-              </div>
-
-              <div class="large-2 columns">
-                &nbsp;
-              </div>
-            </div>
-          </form>
-        </div>
-        <!--End mc_embed_signup-->
-      </div>
-    </div>
-  </div>
+  {% include "includes/footer" %}
 
   <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 
@@ -59,6 +32,6 @@
   <script src="{{ js }}/foundation/foundation.js"></script>
   <script src="{{ js }}/vendor/responsive-nav.min.js"></script>
 
-  <script src="{{ js }}/devin.js"></script>.
+  <script src="{{ js }}/devin.js"></script>
 </body>
 </html>

@@ -7,6 +7,31 @@
 // Comment out this import if you are customizing you imports below
 @import "foundation";
 
+.row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 980px;
+}
+
+.button {
+-webkit-box-shadow: none;
+box-shadow: none;
+-webkit-transition: background-color 300ms ease-out;
+-moz-transition: background-color 300ms ease-out;
+transition: background-color 300ms ease-out;
+border: none;
+background-color: $blue;
+margin-bottom: 0;
+}
+
+.tb {
+display: block;
+background-color: #01d4ff;
+}
+
 html {
   min-height: 100%;
   width: 100%;
@@ -22,7 +47,23 @@ body {
   color: #444;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  border-top: 7px solid $blue;
+  border-top: 16px solid $blue;
+  &:before {
+    border-top: 16px solid #5fc9fa;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-top: 16px solid #a1dffc;
+    top: 16px;
+    left: 0;
+  }
 }
 
 a {
@@ -57,7 +98,7 @@ a {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: $serif;
+  font-family: $sans;
   font-weight: 800;
   color: #2b292b;
   line-height: 1.2em;
@@ -97,6 +138,7 @@ p {
   }
   &.date {
     font-family: $sans;
+    font-weight: 500;
     font-size: 0.618em;
     letter-spacing: 2px;
     color: #999;
@@ -189,7 +231,7 @@ blockquote {
 
 .header {
   margin-bottom: 4em;
-  margin-top: 2em;
+  padding-top: 2em;
 }
 
 nav {
@@ -364,92 +406,12 @@ body.single-post .quote p.date {
   }
 }
 
-form.email-signup {
-  margin: 0;
-  background-color: transparent;
-  padding: 0;
-  label {
-    display: block;
-    margin-bottom: 10px;
-    color: #2b292b;
-  }
-  input {
-    &[type="email"] {
-      font-family: $serif;
-      font-size: 0.818em;
-      height: 47px;
-      font-style: italic;
-      color: #999;
-      background-color: #fff;
-      border: 1px solid #ccc;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      -ms-border-radius: 5px;
-      -o-border-radius: 5px;
-      border-radius: 5px;
-      width: 100%;
-      padding: 0 0 0 20px;
-      margin-bottom: 20px;
-      -webkit-transition: all 0.2s ease-out;
-      -moz-transition: all 0.2s ease-out;
-      transition: all 0.2s ease-out;
-      &:focus {
-        outline: none;
-        background-color: #f2f2f2;
-      }
-    }
-    &[type="submit"] {
-      font-family: $sans;
-      font-size: 0.618em;
-      font-weight: 500;
-      line-height: 47px;
-      color: #fff;
-      background-color: $blue;
-      border: none;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      -ms-border-radius: 5px;
-      -o-border-radius: 5px;
-      border-radius: 5px;
-      width: 100%;
-      padding: 0;
-      margin: 0;
-      cursor: pointer;
-      letter-spacing: 2px;
-      &:focus {
-        outline: none;
-        background-color: #00b7e4;
-      }
-      &:hover {
-        background-color: #00b7e4;
-      }
-    }
-  }
-}
-
 .footer {
   background-color: #fafafa;
-  padding: 3.466em 0 0 0;
-  p {
-    font-style: italic;
-    &.small {
-      font-family: $sans;
-      font-size: 0.618em;
-      font-weight: 500;
-      line-height: 1em;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: $blue;
-      font-style: normal;
-    }
-  }
-  #mc_embed_signup {
-    background: transparent;
-    padding: 0;
-    margin: 0;
-  }
-  form.email-signup {
-    margin: 0 0 3.466em;
+  padding: 3.466em 0;
+  .button {
+    width: 100%;
+    font-family: $sans;
   }
   .footer-nav {
     background-color: #f0f0f0;
@@ -515,11 +477,6 @@ form.email-signup {
   }
 }
 
-#mc_embed_signup {
-  background: #f0f0f0;
-  padding: 2em;
-  margin: 2.6em 0 2em 0;
-}
 
 @media screen and (max-width: 768px) {
   nav li {
