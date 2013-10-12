@@ -1,0 +1,10 @@
+.archive-link {
+  text-align: center;
+  padding-bottom: 1.5em;
+  font-family: $sans-font-family;
+  font-size: em(18);
+}
+
+.post:last-child {
+  border-bottom: none;
+}

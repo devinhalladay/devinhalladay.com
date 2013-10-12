@@ -1,0 +1,9 @@
+<div class="post">
+  <h2><a href="{{ article.url }}">{{ article.title | smartypants }}</a></h2>
+  <span class="post-date">
+    {{ article.date | date: "%d %B %G" }}
+  </span>
+  <p>
+    {{ article_body | smartypants }}
+  </p>
+</div>

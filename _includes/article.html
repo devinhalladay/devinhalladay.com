@@ -1,0 +1,25 @@
+<div class="article">
+  <h1>
+    <a href="{{ article_url }}">{{ article_title | smartypants }}</a>
+  </h1>
+  <span class="article-date">
+    {{ article_date | date: "%d %B %G" }}
+  </span>
+
+  <div id="content">
+    <div id="scrollbubble"><span id="scrollBubbleText"></span></div>
+    {{ article_body | smartypants }}
+  </div>
+
+  <div class="article-meta">
+    <ul>
+      {% include 'includes/tweet-button' %}
+
+      <li>
+        <span>Date Published: </span>{{ article_date | date: "%d %B %G" }}
+      </li>
+      <li>
+        <span>Permalink: </span><a class="highlight" href="{{ article_url }}">{{ article_url }}</a>
+      </li>
+  </div>
+</div>

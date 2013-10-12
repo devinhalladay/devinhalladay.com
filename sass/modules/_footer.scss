@@ -1,0 +1,37 @@
+footer {
+  border-top: $separator;
+  font-family: $sans-font-family;
+  font-size: 1em;
+  text-align: center;
+  margin-top: 2em;
+  padding: 2em 0;
+  ul {
+    margin-bottom: 0;
+    font-size: 1em;
+    margin-top: .5em;
+  }
+  li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  footer {
+    text-align: center;
+    ul {
+      margin-top: 8px;
+      font-size: 1em;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+  footer {
+    text-align: center;
+    ul {
+      margin-top: 8px;
+      font-size: 1em;
+    }
+  }
+}

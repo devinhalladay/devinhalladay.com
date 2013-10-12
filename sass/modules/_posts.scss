@@ -1,0 +1,31 @@
+.posts {
+  margin-bottom: 8rem;
+  li a {
+    &:hover { text-decoration: none; }
+    small {
+      font-size: 75%;
+      color: #999;
+    }
+  }
+}
+
+.post {
+  padding-bottom: 1.5em;
+  position: relative;
+  margin-bottom: 3em;
+  border-bottom: $separator;
+  img { max-width: 100%; }
+  h2  {
+    font-size: em(28);
+    font-style: italic;
+    font-weight: normal;
+    margin-bottom: .5em;
+  }
+}
+
+.post-date {
+  display: block;
+  margin: 0 0 -1em 0;
+  color: $secondary-text-color;
+  font-size: em(21);
+}

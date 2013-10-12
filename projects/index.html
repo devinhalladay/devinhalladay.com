@@ -1,0 +1,15 @@
+{% capture content %}
+  <div class="post project">
+    {% for project in posts %}
+      <h2 class="title">{{ project.title }}</h2>
+      <p>{{ project.body }}</p>
+      <p>
+        <a class="project-image" href="{{ project.meta.url }}">
+          <img src="{{ project.meta.image }}" alt="{{ project.title }}">
+        </a>
+      </p>
+    {% endfor %}
+  </div>
+{% endcapture %}
+
+{% include 'layouts/default' %}

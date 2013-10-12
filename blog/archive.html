@@ -1,0 +1,9 @@
+{% capture content %}
+  {% for article in posts %}
+    {% capture article_body %}{{ article.excerpt | strip_html | truncatewords: 45 | smartypants }}<p><a href="{{ article.url }}">Read&nbsp;more</a></p>{% endcapture %}
+
+    {% include 'includes/article-listing' %}
+  {% endfor %}
+{% endcapture %}
+
+{% include 'layouts/default' %}

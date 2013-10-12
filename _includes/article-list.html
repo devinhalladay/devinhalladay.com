@@ -1,0 +1,4 @@
+{% for article in posts %}
+  {% capture article_body %} {{ article.excerpt | strip_html }}<a href="{{ article.url }}">Read&nbsp;more</a>{% endcapture %}
+  {% include 'includes/article-listing' %}
+{% endfor %}
