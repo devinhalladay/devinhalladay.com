@@ -46,27 +46,6 @@
         <li><a href="/projects" title="Projects" {% if section == 'projects' %}class="current-page"{% endif %}>Projects</a></li>
         <li><a href="mailto:devin@devinhalladay.com" title="Contact">Contact</a></li>
       </ul>
-      <h1>
-        {% if article_title %}
-        This is the personal journal of <a href="http://devinhalladay.com/about">Devin Halladay</a> — a designer, developer, and writer.<br>You are currently reading <a href="{{ article_url }}">"{{ article_title }}"</a>.
-        {% endif %}
-
-        {% if archive == 'archive' %}
-        This is the personal journal of <a href="http://devinhalladay.com/about">Devin Halladay</a> — a designer, developer, and writer.<br>You are currently perusing the archives.
-        {% endif %}
-
-        {% if section == 'projects' %}
-        This is the personal journal of <a href="http://devinhalladay.com/about">Devin Halladay</a> — a designer, developer, and writer.<br>You are currently browsing some of my projects. You can view more of my work on <a href="http://dribbble.com/devinhalladay">Dribbble</a>.
-        {% endif %}
-
-        {% if section == 'about' %}
-        This is the personal journal of <a href="http://twitter.com/devinhalladay">Devin Halladay</a> — a designer, developer, and writer.<br>You are currently reading about him.
-        {% endif %}
-
-        {% if section == '' %}
-        {{ site.meta.h1 }}
-        {% endif %}
-      </h1>
     </header>
     <div class="body">
       {{ content }}
