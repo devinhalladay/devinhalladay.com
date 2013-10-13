@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+{% capture section %}{{ url | remove_first:'/' | split:'/' | first }}{% endcapture %}
 {% capture js %}/public/js{% endcapture %}
 {% capture css %}/public/css{% endcapture %}
 {% capture img %}/public/img{% endcapture %}
@@ -13,7 +14,7 @@
 
   <div class="main-content">
     <div class="row">
-      <div class="large-8 small-11 small-centered large-centered columns">
+      <div class="large-8 small-10 small-centered large-centered columns" id="content">
         {{ content }}
       </div>
     </div>
@@ -33,5 +34,31 @@
   <script src="{{ js }}/vendor/responsive-nav.min.js"></script>
 
   <script src="{{ js }}/devin.js"></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
+
+  {% if section == 'blog' %}
+  <script>
+    {% if meta.dropcap_enabled.value == '1' %}
+    jQuery(document).ready(function($) {
+      $("#content>:nth-child(3)").addClass("first-paragraph");
+    });
+
+    jQuery(document).ready(function($) {
+      $("#content>:nth-child(3)").lettering('words');
+    });
+
+    jQuery(document).ready(function($) {
+      $("#content>:nth-child(3) .word1").each(function () {
+        var el = $(this),
+          text = el.html(),
+          first = text.slice(0, 1),
+          rest = text.slice(1);
+        el.html("<span class='dropcap'>" + first + "</span>" + rest);
+      });
+    });
+    {% endif %}
+  </script>
+  {% endif %}
 </body>
 </html>
