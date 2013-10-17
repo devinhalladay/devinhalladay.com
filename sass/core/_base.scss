@@ -15,6 +15,12 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   border-left: 8px solid $blue;
+  -moz-font-feature-settings:"kern" 1, "liga" 1, "dlig" 1, "hlig" 1, "clig" 1;
+  -moz-font-feature-settings:"kern=1, liga=1, dlig=1, hlig=1, clig=1";
+  -ms-font-feature-settings:"kern" 1, "liga" 1, "dlig" 1, "hlig" 1, "clig" 1;
+  -o-font-feature-settings:"kern" 1, "liga" 1, "dlig" 1, "hlig" 1, "clig" 1;
+  -webkit-font-feature-settings:"kern" 1, "liga" 1, "dlig" 1, "hlig" 1, "clig" 1;
+  font-feature-settings:"kern" 1, "liga" 1, "dlig" 1, "hlig" 1, "clig" 1;
 
   @media screen and (max-width: 768px) {
     border-left: none;
@@ -53,11 +59,9 @@ a {
 p {
   margin-bottom: 1.618em;
   &.lead {
-    font-size: 1.324em;
+    font-size: 26px;
     line-height: 1.5em;
     margin-bottom: 1.05em;
-    font-style: italic;
-    color: #999;
   }
   &.date {
     font-family: $sans;

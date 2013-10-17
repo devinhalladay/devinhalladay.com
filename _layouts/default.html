@@ -1,3 +1,4 @@
+{% capture html %}
 <!DOCTYPE html>
 <html>
 {% capture section %}{{ url | remove_first:'/' | split:'/' | first }}{% endcapture %}
@@ -8,13 +9,13 @@
   {% include "includes/head" %}
 </head>
 
-<body class="home blog">
+<body class="page-{{ id }} {% if section == '' %}home blog{% endif %}{% if section == 'blog' %}single-post post-{{ id }}{% endif %}">
 
   {% include "includes/header" %}
 
   <div class="main-content">
     <div class="row">
-      <div class="large-8 small-10 small-centered large-centered columns" id="content">
+      <div class="large-8 small-11 small-centered large-centered columns" id="content">
         {{ content }}
       </div>
     </div>
@@ -62,3 +63,5 @@
   {% endif %}
 </body>
 </html>
+{% endcapture %}
+{{ html | strip_newlines }}
