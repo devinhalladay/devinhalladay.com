@@ -18,17 +18,12 @@ nav {
     &:last-child {
       margin-right: 0;
     }
-    &.current-menu-item a {
-      color: $blue;
-      border-bottom: none;
-    }
     a {
       font-family: $sans;
       font-size: 0.7em;
       font-weight: 500;
       line-height: 1em;
       letter-spacing: 2px;
-      text-transform: uppercase;
       color: #444;
       border-bottom: none;
       &:hover {
@@ -37,10 +32,6 @@ nav {
       }
     }
   }
-}
-
-body.single-post #menu-item-59 a {
-  color: $blue;
 }
 
 .js .nav-collapse {

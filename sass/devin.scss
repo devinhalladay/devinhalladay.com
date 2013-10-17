@@ -9,26 +9,14 @@
 
 @import "core/layout";
 
-.button {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  -webkit-transition: background-color 300ms ease-out;
-  -moz-transition: background-color 300ms ease-out;
-  transition: background-color 300ms ease-out;
-  border: none;
-  background-color: $blue;
-  margin-bottom: 0;
-}
+@import "core/forms";
 
 .dropcap {
-  border: 6px solid;
   width: 104px;
   height: 104px;
   text-align: center;
-  color: $blue;
-  font-size: 75px;
-  line-height: 84px;
-  margin-right: 15px;
+  font-size: 127px;
+  line-height: 88px;
   float: left;
   display: block;
   position: relative;
@@ -36,12 +24,11 @@
   font-weight: 400;
 
   @media screen and (max-width: 768px) {
-    border: 4px solid;
     width: 52px;
     height: 52px;
-    font-size: 40px;
+    font-size: 58px;
     line-height: 40px;
-    margin-right: 6px
+    margin-right: 0;
   }
 }
 
@@ -100,9 +87,11 @@
 
 .post {
   position: relative;
-  margin-bottom: 4em;
+  border-bottom: 1px solid #ecefef;
+  padding: 0 0 1em;
+  margin: 0 0 2em;
   h2 {
-    margin: 0 0 1em;
+    margin: 0 0 0.3em;
   }
 }
 
@@ -136,41 +125,10 @@ body.single-post .quote p.date {
   }
 }
 
-.footer {
-  background-color: #f6f6f6;
-  padding: 3.466em 0;
-  .button {
-    width: 100%;
-    font-family: $sans;
-  }
-}
+@import "modules/footer";
 
 .blog p.date {
-  margin-bottom: 0.4em;
-}
-
-.btn {
-  display: inline-block;
-  font-family: $sans;
-  font-size: 0.618em;
-  font-weight: 500;
-  line-height: 47px;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: $blue;
-  border: none;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  padding: 0 2em;
-  margin: 0;
-  letter-spacing: 2px;
-  &:hover {
-    background-color: #00b7e4;
-    color: #fff;
-  }
+  margin-bottom: 2em;
 }
 
 @import "core/misc";

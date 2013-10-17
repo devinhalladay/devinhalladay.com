@@ -1,25 +1,24 @@
 {% for post in site.pages.blog.posts %}
   {% if post.meta.type.value == "quote" %}
     <div class="quote">
-      <p class="date">{{ post.date | date: "%d %B %G" }}</p>
       <h4><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h4>
+      <p class="date">{{ post.date | date: "%d %B %G" }}</p>
       {{ post.body }}
     </div>
 
   {% elsif post.meta.type.value == "post" %}
 
     <div class="post">
-      <p class="date">{{ post.date | date: "%d %B %G" }}</p>
       <h2><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h2>
-      {{ post.excerpt | strip_html | truncatewords: 60 | smartypants }}
-      <a class="more" href="{{ post.url }}">continue reading</a>
+      <p class="date">{{ post.date | date: "%d %B %G" }}</p>
+      <p>{{ post.excerpt | strip_html | truncatewords: 60 | smartypants }} <a class="more" href="{{ post.url }}">read more</a></p>
     </div>
 
   {% elsif post.meta.type.value == "link" %}
 
     <div class="link">
-      <p class="date">{{ post.date | date: "%d %B %G" }}</p>
       <h4><a href="{{ post.meta.url.value }}" class="post-title">{{ post.title }} <i class="ss-icon">link</i></a></h4>
+      <p class="date">{{ post.date | date: "%d %B %G" }}</p>
       {{ post.body }}
     </div>
   {% endif %}
