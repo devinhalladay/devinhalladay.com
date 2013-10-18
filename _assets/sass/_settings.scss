@@ -1,0 +1,24 @@
+//$serif: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+//$serif: "ratio","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+$sans: "Calluna-sans","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+
+$blue: #222222;
+
+@mixin ligatures_kerning {
+  -moz-font-feature-settings:"kern" 1, "liga" 1, "clig" 1, "swsh" 1;
+  -moz-font-feature-settings:"kern=1, liga=1, clig=1, swsh=1";
+  -ms-font-feature-settings:"kern" 1, "liga" 1, "clig" 1, "swsh" 1;
+  -o-font-feature-settings:"kern" 1, "liga" 1, "clig" 1, "swsh" 1;
+  -webkit-font-feature-settings:"kern" 1, "liga" 1, "clig" 1, "swsh" 1;
+  font-feature-settings:"kern" 1, "liga" 1, "clig" 1, "swsh" 1;
+}
+
+@mixin small-caps {
+  -moz-font-feature-settings:"smcp" 1, "c2sc" 1;
+  -moz-font-feature-settings:"smcp=1, c2sc=1";
+  -ms-font-feature-settings:"smcp" 1, "c2sc" 1;
+  -o-font-feature-settings:"smcp" 1, "c2sc" 1;
+  -webkit-font-feature-settings:"smcp" 1, "c2sc" 1;
+  font-feature-settings:"smcp" 1, "c2sc" 1;
+}
+

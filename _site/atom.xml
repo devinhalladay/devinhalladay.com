@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <link rel="hub" href="https://pubsubhubbub.appspot.com"/>
+
+  <title>Devin Halladay</title>
+  <link href="http://devinhalladay.com"/>
+  <link type="application/atom+xml" rel="self" href="http://devinhalladay.com/atom.xml"/>
+  <updated>2013-10-18T13:05:20-04:00</updated>
+  <id>http://devinhalladay.com</id>
+  <author>
+    <name>Devin Halladay</name>
+    <email>devin@devinhalladay.com</email>
+  </author>
+
+  
+  <entry>
+    <id>http://devinhalladay.com/2013/10/napoleon-hill</id>
+    <link type="text/html" rel="alternate" href="http://devinhalladay.com/2013/10/napoleon-hill"/>
+    <title>Napoleon Hill</title>
+    <published>2013-10-17T00:00:00-04:00</published>
+    <updated>2013-10-17T00:00:00-04:00</updated>
+    <author>
+      <name>Devin Halladay</name>
+      <uri>http://devinhalladay.com/</uri>
+    </author>
+    <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;“If you think you are beaten, you are. If you think you dare not, you don’t. If you like to win, but you think you can’t, it is almost certain you won’t. If you think you’ll lose, you’re lost, for out in the world we find, success begins with a fellow’s will – it’s all in the state of mind. If you think you are outclassed, you are. You’ve got to think high to rise. You’ve got to be sure of yourself before you can ever win a prize. Life’s battles don’t always go to the stronger or faster man, but soon or late the man who wins is the man who thinks he can.” &lt;br /&gt; — Napoleon Hill&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://devinhalladay.com/2013/07/starting-fresh</id>
+    <link type="text/html" rel="alternate" href="http://devinhalladay.com/2013/07/starting-fresh"/>
+    <title>Starting Fresh</title>
+    <published>2013-07-22T11:11:00-04:00</published>
+    <updated>2013-07-22T11:11:00-04:00</updated>
+    <author>
+      <name>Devin Halladay</name>
+      <uri>http://devinhalladay.com/</uri>
+    </author>
+    <content type="html">&lt;p&gt;Last week, my Windows 7 PC of three years crashed. I lost three entire years worth of design files, school work, and photos. I lost music, programs, and emails. I lost everything — all my hard work and memories (both good and bad). At first, I was utterly devastated. But after I had exhausted all possible routes of recovering my files, I came to realize that stating of with a clean slate would do me more good than bad.&lt;/p&gt;
+
+&lt;p&gt;I called my dad and told him that, after two years of whining about wanting a Mac, it was finally time to fulfill that dream. Two days later, we ordered my 13-Inch MacBooK Pro off the Apple website and requested store pickup. Keep in mind that this was only 45 minutes before the Apple Store closed. The drive from our house to the Apple Store is &lt;em&gt;usually&lt;/em&gt; about 45 minutes — we made it there in 35 (shh, don’t tell). After arriving at the Apple Store, the manager let me know that my computer won’t be ready for pickup for a few hours, but they close in five minutes. My dad, thinking quickly, interjected:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Let’s just buy another one in the store, and then I’ll ‘pick up’ and return the other computer tomorrow on my way home from work!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Thanks dad, that was wicked cool! So I walked out of the store that day a proud owner of a brand now MacBook Pro. I also had a fresh start — a clean slate — to be more productive and work harder than I ever had before.&lt;/p&gt;
+
+&lt;p&gt;This experience opened open many doors for me. I learned a few valuable lessons, was introduced to the copywriter for a cool new startup called &lt;a href=&quot;http://widdle.it&quot;&gt;Widdle&lt;/a&gt;, was able to share &lt;a href=&quot;https://theguild.co&quot;&gt;The Guild&lt;/a&gt; with a few people, and, most importantly, learned how to work hard for the things that I want or need. My new Mac has drastically changed the way I work, read, and browse. The vast spectrum of apps that are available for the Mac is breathtaking. From design apps to development apps; from reading apps to writing apps; from games to focus tools, and everything in between, these tools have increased my productivity and creativity tenfold.&lt;/p&gt;
+
+&lt;p&gt;But I digress. Starting fresh without any files or programs has increased my productivity and has allowed me to see my work more clearly. With the $100 App Store gift card that I received for free with my Mac, I purchased tons of useful apps — but only the apps I &lt;em&gt;need&lt;/em&gt;. Nothing less, nothing more. This is a great way to start a new chapter in my life. I’m finally done seeing the thousands of errors thrown by Windows’ CMD whenever I tried running a Ruby Gem. I’m finally through struggling to run Photoshop and Sublime Text 3 at once.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;I’m finally free from the shackles of Windows&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;My hard work is gone&lt;/strong&gt;, but I have a totally clean slate to create better work. I have a fresh start.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;And it feels &lt;em&gt;great&lt;/em&gt;.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In addition to a new computer, I just launched the finished redesign of my website, which you are currently viewing. &lt;a href=&quot;http://twitter.com/devinhalladay&quot;&gt;What do you think?&lt;/a&gt; You can read a bit more about this site in my about page under the “Colophon” section, or you can wait a few days until I blog about its creation.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://devinhalladay.com/2013/05/kick</id>
+    <link type="text/html" rel="alternate" href="http://devinhalladay.com/2013/05/kick"/>
+    <title>Kick</title>
+    <published>2013-05-02T05:33:00-04:00</published>
+    <updated>2013-05-02T05:33:00-04:00</updated>
+    <author>
+      <name>Devin Halladay</name>
+      <uri>http://devinhalladay.com/</uri>
+    </author>
+    <content type="html">&lt;p&gt;Yesterday, &lt;a href=&quot;http://twitter.com/_dte&quot;&gt;Dan Eden&lt;/a&gt; &lt;a href=&quot;https://twitter.com/_dte/status/324656949285224448&quot;&gt;Tweeted&lt;/a&gt;,&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;… when one door closes, another, garishly painted one makes itself present.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I disagree.&lt;/p&gt;
+
+&lt;p&gt;As designers, we need to learn to &lt;em&gt;make&lt;/em&gt; opportunities; we need to &lt;em&gt;erect our own doors&lt;/em&gt;. Sometimes, however, that just isn’t enough.&lt;/p&gt;
+
+&lt;p&gt;Sometimes that closed door needs to be kicked down. Chuck Norris style. When that door slams in your face, &lt;strong&gt;get pumped&lt;/strong&gt; and &lt;strong&gt;kick it down&lt;/strong&gt;. Don’t let anything stand in your way.&lt;/p&gt;
+
+&lt;p&gt;As you may know, I’m only 16 years old and I’m working very hard to fulfill my dreams and become a designer and developer. I’ll tell you this right now; &lt;strong&gt;it’s really hard&lt;/strong&gt;. Gaining credibility and such a young age is a daily struggle—but I try, and I succeed.&lt;/p&gt;
+
+&lt;p&gt;About a month ago I change my entire philosophy—I began to live my life according to &lt;a href=&quot;http://Stemmings.com/manifesto&quot;&gt;my manifesto&lt;/a&gt;. Since that change, I have gained mountains of credibility in the design industry and I have received many job offers, clients, and I began putting together my first startup, &lt;a href=&quot;http://theguild.co&quot;&gt;The Guild&lt;/a&gt; (I’ll be posting about The Guild very soon). Last week I was asked how I manage to find all of these fantastic opportunities at such a young age. I responded immediately with this:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I don’t &lt;em&gt;find&lt;/em&gt; fantastic opportunities — I create them. I have &lt;em&gt;kick&lt;/em&gt;, &lt;em&gt;fire&lt;/em&gt;, and &lt;em&gt;passion&lt;/em&gt;. When I think I have an opportunity, an open door, and that door closes; I kick it down.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And that, my friend, is important for all of us to do. Don’t let &lt;em&gt;anything&lt;/em&gt; hold you back! You may be asking, “How the heck do I get this &lt;em&gt;kick&lt;/em&gt;?” and scratching your head. The answer is simple: &lt;em&gt;you just&lt;/em&gt; &lt;strong&gt;&lt;em&gt;do&lt;/em&gt;&lt;/strong&gt;. You’re a designer, and the chances are high that you are passionate about design. If you are anything like me, design makes you who you are. And when you are that passionate about something, you make it a priority; you do everything in your power to make it &lt;em&gt;real&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;So, when you close this tab and leave this essay behind, I want you to take one thing with you. Just one little lesson that will change your career and your life:
+Don’t wait for opportunities to present themselves to you; go out and create your own golden opportunities. And, most importantly, &lt;strong&gt;&lt;em&gt;always remember to kick.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://devinhalladay.com/2013/03/design-over-style</id>
+    <link type="text/html" rel="alternate" href="http://devinhalladay.com/2013/03/design-over-style"/>
+    <title>Design Over Style</title>
+    <published>2013-03-05T09:06:00-05:00</published>
+    <updated>2013-03-05T09:06:00-05:00</updated>
+    <author>
+      <name>Devin Halladay</name>
+      <uri>http://devinhalladay.com/</uri>
+    </author>
+    <content type="html">&lt;p&gt;I was browsing through the day’s Twitter feed, when I saw this brilliant Tweet by &lt;strong&gt;&lt;a href=&quot;http://twitter.com/schneidertobias&quot;&gt;@schneidertobias&lt;/a&gt;&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;…we need more web designers and less web stylists.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;aside&gt;Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum.&lt;/aside&gt;
+
+&lt;p&gt;I was dumbfounded. After hours of pondering the implications of Tobias’s statement, I sat down at my desk with a can of cold San Pellegrino and began writing down my interpretation in my journal.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;what-is-a-web-stylist&quot;&gt;What is a “web stylist”?&lt;/h4&gt;
+&lt;p&gt;I am going to give Tobias the credit of coining the term “web stylist,” but I will take credit for defining it (aren’t I so humble?).&lt;/p&gt;
+
+&lt;p&gt;A web stylist is someone who simply &lt;em&gt;styles&lt;/em&gt; the web. He or she doesn’t worry about content or hierarchy; form or function. All a web stylist &lt;em&gt;really&lt;/em&gt; worries about is making the final product &lt;a href=&quot;http://www.youtube.com/watch?v=D4i7vS_UO4Q&quot;&gt;fluffy&lt;/a&gt; and pretty. Websites designed by a web stylist often lack strong usability, a cohesive organization pattern, and other essential design patterns.&lt;/p&gt;
+
+&lt;h4 id=&quot;what-is-a-web-designer&quot;&gt;What is a web designer?&lt;/h4&gt;
+&lt;p&gt;A web designer is a “web stylist” that gives &lt;a href=&quot;http://www.smashingmagazine.com/2010/03/23/does-form-follow-function/&quot;&gt;function to form&lt;/a&gt;. A web designer’s workflow begins with an idea and ends with a beautiful &lt;strong&gt;and&lt;/strong&gt;* functional product. Content, usability, hierarchy, and all the other “&lt;a href=&quot;http://www.smashingmagazine.com/2008/08/05/7-essential-guidelines-for-functional-design/&quot;&gt;functional design&lt;/a&gt;” buzzwords are the some of the first and last things that enter a web designer’s mind while working on a project.&lt;/p&gt;
+
+&lt;p&gt;In other words, a web designer gives beauty &lt;em&gt;function and &lt;a href=&quot;http://devinhalladay.com/blog/designer-of-souls/&quot;&gt;soul&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Now that we have the definitions out of the way, let’s explore the implications of Tobias’s statement and some methods of solving the “web stylist” dilemma that seems rampant in the web today.&lt;/p&gt;
+
+&lt;p&gt;Designers need to put &lt;em&gt;design&lt;/em&gt; over &lt;em&gt;style&lt;/em&gt;. What does that mean? It simply means that before a designer can make a project beautiful, he/she must first consider what I like to call “&lt;em&gt;ACHOO&lt;/em&gt;” (pronounced &lt;em&gt;ah-choo&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;A&lt;/strong&gt;ccessibility - Easy use regardless of any physical disabilities.
+&lt;strong&gt;C&lt;/strong&gt;ontent - Clear, concise text and easily identifiable images.
+&lt;strong&gt;H&lt;/strong&gt;ierarchy - Easy to distinguish the important from the insignificant.
+&lt;strong&gt;O&lt;/strong&gt;ptimization - Works in all major browsers and operating systems.
+&lt;strong&gt;O&lt;/strong&gt;ne Minute Rule - Given one minute of viewing time, what will a user remember about the site?&lt;/p&gt;
+
+&lt;p&gt;Only after successfully going through and passing the &lt;em&gt;ACHOO&lt;/em&gt; can the designer move on to beautifying the project.&lt;/p&gt;
+
+&lt;p&gt;Don’t merely &lt;em&gt;style&lt;/em&gt; the web, give the web &lt;em&gt;function&lt;/em&gt;. If every web designer put some more effort into recognizing the necessary function and fulfilling it before focusing on beauty, the web would be a much better place to browse; work; and, hopefully, play.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;I urge all of you to take some time to evaluate your standing with relationship of form and function, and if you discover that it is flawed, &lt;em&gt;remember to always ACHOO&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Put &lt;em&gt;function&lt;/em&gt; over &lt;em&gt;form&lt;/em&gt;.
+Put the &lt;em&gt;user&lt;/em&gt; above &lt;em&gt;yourself&lt;/em&gt;.
+&lt;strong&gt;Put &lt;em&gt;design&lt;/em&gt; over &lt;em&gt;style&lt;/em&gt;.&lt;/strong&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://devinhalladay.com/2013/02/designer-of-souls</id>
+    <link type="text/html" rel="alternate" href="http://devinhalladay.com/2013/02/designer-of-souls"/>
+    <title>Designer of Souls</title>
+    <published>2013-02-03T05:05:00-05:00</published>
+    <updated>2013-02-03T05:05:00-05:00</updated>
+    <author>
+      <name>Devin Halladay</name>
+      <uri>http://devinhalladay.com/</uri>
+    </author>
+    <content type="html">&lt;p&gt;As designers, I’m sure we can reach a general consensus that when web design, we design for the viewer. We use color theory, white space typography, and countless other elements of design (some of which we are not even aware that we are using) in order to convey a message or a feeling to the viewer.
+But what is the secret to great design that successfully conveys those feelings or messages to the user?&lt;/p&gt;
+
+&lt;blockquote class=&quot;pullquote&quot;&gt;&lt;p&gt;As designers, I’m sure we can reach a general consensus that when web design, we design for the viewer.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;The secret is &lt;strong&gt;&lt;em&gt;soul&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;You’re probably wondering, &lt;em&gt;“What the hell does that even mean? Is this guy crazy?”&lt;/em&gt; Well I can assure you that I am crazy, but that is beside the point.
+When designing, you need to design not just with the user in mind, but with &lt;em&gt;yourself&lt;/em&gt; in mind. It’s important to remember that great design is not only concise beautiful, and creative; it is soulful. Let’s dive deeper into the &lt;em&gt;soul&lt;/em&gt; part of this and see what happens when we come out on the other side.&lt;/p&gt;
+
+&lt;p&gt;The soul is a beautiful thing. This may sound crazy, but your soul is what makes thoughts and feelings &lt;em&gt;real&lt;/em&gt;. I know that we have all seen a design, at one time or another, that just hits us straight in the soul. For me, that design is anything by &lt;a href=&quot;http://joncontino.com/&quot;&gt;Jon Contino&lt;/a&gt;. If you haven’t heard of Jon (what am I saying, of course you’ve heard of him!) then go check out some of his work and watch some videos about him. Jon pours his soul into everything he designs, and successfully conveys the desired message almost every time. &lt;em&gt;We all need to be a little more like Jon.&lt;/em&gt; We need to pour our soul into everything we design. But I digress.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;I am a designer of souls.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I pour my heart and soul into every design I make. Sure, sometimes I make mistakes and the design doesn’t turn out the way it’s supposed to — but that’s okay. By using your soul to design rather than your brain, you can create a connection with the viewer that is stronger than your silly color theory and white space.&lt;/p&gt;
+
+&lt;p&gt;So, in everything you design from this point onward, I want you to give your design a &lt;strong&gt;&lt;em&gt;soul&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;I have been working and writing all day, so this article may not be as eloquently written as you might have hoped — but I truly hope that you can take something away from this. I hope that you have learned that great design is not just pixels or ink, but rather the &lt;em&gt;soul&lt;/em&gt; that makes the design &lt;em&gt;special&lt;/em&gt; and &lt;em&gt;real&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I am a designer of souls.&lt;/strong&gt; &lt;strong&gt;&lt;em&gt;Are you?&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://devinhalladay.com/2013/01/the-new-me</id>
+    <link type="text/html" rel="alternate" href="http://devinhalladay.com/2013/01/the-new-me"/>
+    <title>The New Me</title>
+    <published>2013-01-22T04:55:00-05:00</published>
+    <updated>2013-01-22T04:55:00-05:00</updated>
+    <author>
+      <name>Devin Halladay</name>
+      <uri>http://devinhalladay.com/</uri>
+    </author>
+    <content type="html">&lt;p&gt;My website has been reborn. My branding has been reborn. I have been reborn. &lt;em&gt;This is the new me&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;So here I am, finally publishing a post on a personal website that I’m proud to call my own. What prompted this change? &lt;em&gt;Lots of things&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;One month ago today I made some huge changes to my life. I am now working hard to balance school, design, family and friends in order to improve my quality of life.&lt;/p&gt;
+
+&lt;p&gt;I know this is a very short blog post, but I’m in a last minute rush to push my new site (this one) live by 4:00 PM.&lt;/p&gt;
+
+&lt;p&gt;This site and its new design exemplifies my personality, my minimalist beliefs, and, most importantly, my love for design. I will be sharing reviews, interviews, and hastily-developed personal thoughts every week.&lt;/p&gt;
+
+&lt;p&gt;Info about the site:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Typeset in FF Tisa Web Pro and Proxima Nova, served by TypeKit.&lt;/li&gt;
+  &lt;li&gt;Published using Jekyll and GitHub.&lt;/li&gt;
+  &lt;li&gt;Handmade in three days using SublimeText 2 and Photoshop CS6.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I will be posting a followup to this post in the next day or two explaining the “new me” and thanking all of the people that have supported me thus far in my still-budding career as a designer &amp;amp; developer.&lt;/p&gt;
+</content>
+  </entry>
+  
+
+</feed>

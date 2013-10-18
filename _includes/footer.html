@@ -1,9 +1,20 @@
 <div class="footer clearfix">
   <div class="row">
     <div class="large-8 small-11 columns small-centered large-centered">
+      <div id="search" class="footer__search-form">
+        <form action="/search" method="get">
+          <p>
+            <input type="text" id="search-query" name="q" placeholder="Search…" autocomplete="off">
+          </p>
+        </form>
+      </div>
       <em>Thanks for visiting! You look spectacular today.</em>
       <br>
       <em class="small">&copy; Devin Halladay 2013. All rights reserved.</em>
     </div>
   </div>
 </div>
+
+<!-- Other JS libraries -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      {% javascript devin %}
