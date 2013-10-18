@@ -1,20 +1,19 @@
-<div class="footer clearfix">
-  <div class="row">
-    <div class="large-8 small-11 columns small-centered large-centered">
-      <div id="search" class="footer__search-form">
-        <form action="/search" method="get">
-          <p>
-            <input type="text" id="search-query" name="q" placeholder="Search…" autocomplete="off">
-          </p>
-        </form>
+  <div class="footer clearfix">
+    <div class="row">
+      <div class="large-8 small-11 columns small-centered large-centered">
+        {% if paginator.next_page == 2 %}
+          <div id="search" class="footer__search-form">
+            <form action="/search" method="get">
+              <p>
+                <input type="text" id="search-query" name="q" placeholder="Search…" autocomplete="off">
+              </p>
+            </form>
+          </div>
+        {% endif %}
+        <small><a href="/subscribe/">Subscribe</a> &middot; <a href="/archives/">Archives</a> &middot; <a href="https://github.com/ttimsmith/theboldreport.net">View Source on GitHub</a></small>
+        <small>Copyright &copy; {{ site.time | date: "%Y" }} Devin Halladay.</small>
       </div>
-      <em>Thanks for visiting! You look spectacular today.</em>
-      <br>
-      <em class="small">&copy; Devin Halladay 2013. All rights reserved.</em>
     </div>
   </div>
-</div>
 
-<!-- Other JS libraries -->
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-      {% javascript devin %}
+  {% javascript devin %}

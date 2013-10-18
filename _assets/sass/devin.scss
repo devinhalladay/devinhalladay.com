@@ -1,251 +1,50 @@
-// Global Foundation Settings
-@import "settings";
+/*
 
-@import "normalize";
+GLOBAL STYLESHEET
+-------------------------------------------
 
-@import "foundation";
+Created and Authored by Devin Halladay
 
-@import "core/layout";
+-------------------------------------------
 
-@import "core/forms";
+This stylesheet should only be a table of contents of styles.
+The meat of the styles will be in the individual partials in
+an effort to keep the CSS as dry as possible.
 
+------------------------------------------- */
+
+// @compass
 @import "compass";
 
-.pagination {
-  border-bottom: 1px solid #ecefef;
-  padding: 0 0 1em;
-  padding-bottom: 2em;
-  text-align: center;
-  margin: 8% 0;
-  ul {
-    margin: 0;
-    list-style-type: none;
-    li {
-      display: inline-block;
-      margin: 0;
-      line-height: inherit;
-      padding: 0;
-    }
-  }
-}
+// @foundation
+@import "foundation";
 
-.pagination a {
-  background: $blue;
-  border: none !important;
-  display: inline-block;
-  padding: 5px 14px;
-  margin: 0 5px;
-  font-size: .85em;
-  font-weight: bold;
-  color: white;
-  text-decoration: none !important;
-  @include border-radius (4px);
-  &:hover {
-    background: lighten($blue, 10%);
-    color: white;
-  }
-  &:active {
-    box-shadow: inset 2px 2px 0 rgba(black, .2);
-  }
-}
+// @reset
+@import "_dawn/normalize";
+@import "_dawn/reset";
+@import "_dawn/mixins";
 
-.disabled {
-  background: $blue;
-  color: lighten($blue, 40%);
-  padding: 5px 14px !important;
-  margin: 0 5px;
-  @include border-radius (4px);
-  border: none !important;
-  display: inline-block;
-  font-weight: bold;
-  font-size: .85em;
-}
+// @settings
+@import "_dawn/settings";
 
-.dropcap {
-  width: 104px;
-  height: 104px;
-  text-align: center;
-  font-size: 127px;
-  line-height: 88px;
-  float: left;
-  display: block;
-  position: relative;
-  top: 6px;
-  font-weight: 400;
+// @tools
+@import "_dawn/hide";
+@import "_dawn/misc";
 
-  @media screen and (max-width: 768px) {
-    width: 52px;
-    height: 52px;
-    font-size: 58px;
-    line-height: 40px;
-    margin-right: 0;
-  }
-}
+// @base
+@import "_dawn/type";
+@import "_dawn/images";
+@import "_dawn/forms";
+@import "_dawn/icons";
 
-.archive-list, .search-results-list, .tag-list {
-  h3 {
-    font-size: 1em;
-    margin: 1.5em 0 0;
-  }
-}
+// @components
+@import "_dawn/objects";
+@import "_dawn/pagenavi";
+@import "_dawn/print";
 
-.archive__tag-list {
-  margin: 1em 0 0 0;
-  li {
-    display: inline-block;
-    list-style-type: none;
-    font-size: 1.15em;
-    line-height: 1.8em;
-    padding: 0;
-    a:hover, a:focus {
-      color: $blue;
-    }
-    &:after {
-      color: lighten($blue, 70%);
-      content: "//";
-      padding: 0 3px 0 6px;
-      font-size: .7em;
-    }
-    &:last-child {
-      padding: 0;
-      &:after {
-        content: "";
-      }
-    }
-  }
-}
-
-.pubdate {
-  color: #989898;
-  margin-left: 12px;
-}
-
-.link {
-  .ss-icon {
-    font-size: 0.8em;
-  }
-}
-
-.page {
-  h2 {
-    margin: 2em 0 .2em;
-  }
-}
-
-.entry.quote {
-  blockquote {
-    margin: auto;
-    border-left: none;
-    padding-left: 0;
-    margin-left: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    p {
-      font-weight: bold;
-      color: #222;
-    }
-  }
-}
-
-
-@import "core/base";
-
-@import "core/content";
-
-
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 112.5%;
-  }
-  h1 {
-    font-size: 2em;
-  }
-  p.lead {
-    font-size: 1em;
-    line-height: 1.618em;
-    margin-bottom: 1.618em;
-  }
-}
-
-@import "modules/header";
-
-.main-content {
-  margin-bottom: 4em;
-
-  ul {
-  list-style: none;
-  margin-left: 0;
-  margin-bottom: 1.618em;
-  > li:before {
-    padding-right: 14px;
-    text-decoration: none;
-    speak: none;
-    text-rendering: optimizeLegibility;
-    font-size: 18px;
-    -webkit-font-smoothing: antialiased;
-    content: "\25C6";
-    position: relative;
-    display: inline-block;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 58px;
-    margin-left: -58px;
-    padding-top: 6px;
-    text-align: right;
-    font-size: 16px;
-  }
-}
-}
-
-.entry {
-  border-bottom: 1px solid #ecefef;
-  padding: 0 0 1em;
-  margin: 0 0 2em;
-}
-
-.post {
-  position: relative;
-  h2 {
-    margin: 0 0 0.3em;
-  }
-}
-
-.quote {
-  position: relative;
-  h4 {
-    margin: 0 0 0.3em;
-  }
-  p {
-    margin-bottom: 0;
-    font-style: italic;
-    &.date {
-      font-style: normal;
-    }
-    + p {
-      text-indent: 2em;
-    }
-  }
-}
-
-body.single-post .quote p.date {
-  margin-bottom: 2.25em;
-}
-
-.link {
-  position: relative;
-  h4 {
-    margin: 0 0 0.3em;
-  }
-}
-
-@import "modules/footer";
-
-.blog p.date {
-  margin-bottom: 2em;
-}
-
-@import "core/misc";
-@import "core/fonts";
-
-@import "core/print";
+// @layout
+@import "_layout/header";
+@import "_layout/maincontent";
+@import "_layout/posts";
+@import "_layout/archive";
+@import "_layout/footer";

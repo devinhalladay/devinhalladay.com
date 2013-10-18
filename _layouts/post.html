@@ -1,49 +1,25 @@
 {% include header.html %}
 
-  <div class="main-content">
-    <div class="row">
-      <div class="large-8 small-11 small-centered large-centered columns" id="content">
+    <div class="main-content">
+      <div class="row">
+        <div class="large-8 small-11 small-centered large-centered columns" id="content">
+          {% if page.custom_type == 'link' %}
+            <h1><a href="{{ page.link_url }}">{{ page.title }}</a></h1>
+            <p class="date">{{ page.date | date: "%d %B %G" }}</p>
 
-        <h1>{{ page.title }}</h1>
-        <p class="date">{{ page.date | date: "%d %B %G" }}</p>
+            {{ content }}
 
-        {{ content }}
+          {% else %}
+            <h1>{{ page.title }}</h1>
+            <p class="date">{{ page.date | date: "%d %B %G" }}</p>
 
+            {{ content }}
+          {% endif %}
+
+        </div>
       </div>
     </div>
-  </div>
 
   {% include footer.html %}
-
-  <!-- Other JS libraries -->
-  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-  {% javascript devin %}
-
-  <script src="//cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
-
-      {% if page.dropcap_enabled == 1 %}
-
-  <script>
-    jQuery(document).ready(function($) {
-      $("#content>:nth-child(3)").addClass("first-paragraph");
-    });
-
-    jQuery(document).ready(function($) {
-      $("#content>:nth-child(3)").lettering('words');
-    });
-
-    jQuery(document).ready(function($) {
-      $("#content>:nth-child(3) .word1").each(function () {
-        var el = $(this),
-          text = el.html(),
-          first = text.slice(0, 1),
-          rest = text.slice(1);
-        el.html("<span class='dropcap'>" + first + "</span>" + rest);
-      });
-    });
-  </script>
-      {% endif %}
-
-
-</body>
+  </body>
 </html>

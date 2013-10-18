@@ -1,23 +1,21 @@
-{% include header.html %}
+---
+layout: page
+custom_css_class: page search
+---
+<div class="contain search__search-wrapper">
+  <div id="search" class="site__search-form">
+    <form action="/search" method="get">
+      <p>
+        <input type="text" id="search-query" name="q" placeholder="Search…" autocomplete="off">
+      </p>
+    </form>
+  </div>
+</div>
 
-          <div class="contain search__search-wrapper">
-            <div id="search" class="site__search-form">
-              <form action="/search" method="get">
-                <p>
-                  <input type="text" id="search-query" name="q" placeholder="Search…" autocomplete="off">
-                </p>
-              </form>
-            </div><!-- .site__search-form -->
-          </div>
+<main class="content__main-content" role="main">
+  <div class="contain">
 
-          <main class="content__main-content" role="main">
-            <div class="contain">
+    {{ content }}
 
-              {{ content }}
-
-            </div><!-- .content__main-content -->
-          </main>
-{% include footer.html %}
-
-    </body>
-</html>
+  </div>
+</main>

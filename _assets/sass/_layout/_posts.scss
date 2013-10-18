@@ -1,0 +1,27 @@
+.quote {
+  position: relative;
+  h4 {
+    margin: 0 0 0.3em;
+  }
+  p {
+    margin-bottom: 0;
+    font-style: italic;
+    &.date {
+      font-style: normal;
+    }
+    + p {
+      text-indent: 2em;
+    }
+  }
+}
+
+body.single-post .quote p.date {
+  margin-bottom: 2.25em;
+}
+
+.link {
+  position: relative;
+  h4 {
+    margin: 0 0 0.3em;
+  }
+}

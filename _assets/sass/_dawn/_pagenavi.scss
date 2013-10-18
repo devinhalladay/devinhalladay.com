@@ -1,0 +1,53 @@
+/*
+
+PAGE NAVIGATION
+------------------------------------------- */
+
+.pagination {
+  border-bottom: 1px solid #ecefef;
+  padding: 0 0 1em;
+  padding-bottom: 2em;
+  text-align: center;
+  margin: 8% 0;
+  ul {
+    margin: 0;
+    list-style-type: none;
+    li {
+      display: inline-block;
+      margin: 0;
+      line-height: inherit;
+      padding: 0;
+    }
+  }
+  a {
+    background: $blue;
+    border: none !important;
+    display: inline-block;
+    padding: 5px 14px;
+    margin: 0 5px;
+    font-size: .85em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none !important;
+    @include border-radius (4px);
+    &:hover {
+      background: lighten($blue, 10%);
+      color: white;
+    }
+    &:active {
+      box-shadow: inset 2px 2px 0 rgba(black, .2);
+    }
+  }
+}
+
+.disabled {
+  background: $blue;
+  color: lighten($blue, 40%);
+  padding: 5px 14px !important;
+  margin: 0 5px;
+  @include border-radius (4px);
+  border: none !important;
+  display: inline-block;
+  font-weight: bold;
+  font-size: .85em;
+}

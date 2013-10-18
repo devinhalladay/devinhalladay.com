@@ -1,0 +1,20 @@
+.dropcap {
+  width: 104px;
+  height: 104px;
+  text-align: center;
+  font-size: 127px;
+  line-height: 88px;
+  float: left;
+  display: block;
+  position: relative;
+  top: 6px;
+  font-weight: 400;
+
+  @media screen and (max-width: 768px) {
+    width: 52px;
+    height: 52px;
+    font-size: 58px;
+    line-height: 40px;
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,202 @@
+body {
+  font-family: $sans;
+  font-size: 137.5%;
+  line-height: 1.618em;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  @include ligatures_kerning;
+
+  @media screen and (max-width: 768px) {
+    font-size: 112.5%;
+  }
+}
+
+/*
+
+HEADINGS
+------------------------------------------- */
+h1, h2, h3, h4, h5 {
+  font-family: $sans;
+  font-weight: 800;
+  color: #2b292b;
+  line-height: 1.2em;
+  margin: 0.3em 0 0.5em 0;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.2em;
+  margin: 0.3em 0 0.5em 0;
+}
+
+h2 { font-size: 1.375em; }
+h3 { font-size: 1.324em; }
+h4 { font-size: 1em; }
+h5 { font-size: 0.818em; }
+
+h3 small { font-size: 80%; }
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+
+/*
+
+TEXT
+------------------------------------------- */
+p {
+  margin-bottom: 1.618em;
+  &.lead {
+    font-size: 26px;
+    line-height: 1.5em;
+    margin-bottom: 1.05em;
+    @media screen and (max-width: 768px) {
+      font-size: 1em;
+      line-height: 1.618em;
+      margin-bottom: 1.618em;
+    }
+  }
+  &.date {
+    font-family: $sans;
+    font-weight: 500;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    color: #9aa4a8;
+    margin-bottom: 2.25em;
+    @include small-caps;
+  }
+}
+
+.cite {
+  font-size: 0.618em;
+  font-style: italic;
+  display: block;
+}
+
+.blog p.date {
+  margin-bottom: 2em;
+}
+
+em, i { font-style: italic; }
+strong, b { font-weight: bold; }
+small { font-size: 70%; }
+
+/*
+
+LISTS
+------------------------------------------- */
+ul {
+  list-style: disc outside none;
+  margin-bottom: 1.618em;
+  margin-left: 2.5em;
+}
+
+ol {
+  list-style: decimal outside none;
+  margin-bottom: 1.618em;
+  margin-left: 2.5em;
+}
+
+/*
+
+BLOCKQUOTES
+------------------------------------------- */
+blockquote {
+  padding: 0;
+  border-left: 5px solid $blue;
+  padding-left: 20px;
+  p {
+    margin-bottom: 0;
+    color: #9aa4a8;
+    + p {
+      text-indent: 2em;
+    }
+  }
+  &.pullquote {
+    border-left: none;
+    margin: auto;
+    p {
+      color: #222;
+      margin: 0 -80px 2em;
+      line-height: 1.5;
+      text-align: center;
+      font-size: 26px;
+      padding: 0;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1.3em;
+        line-height: 1.618em;
+      }
+    }
+  }
+}
+
+/*
+
+ASIDE
+------------------------------------------- */
+aside {
+  font-size: 16px;
+  line-height: 29px;
+  margin-left: -12em;
+  margin-top: 0.3em;
+  position: absolute;
+  text-align: right;
+  width: 160px;
+
+  @media screen and (max-width: 1052px) {
+    color: #999;
+    display: block;
+    font-style: italic;
+    margin-bottom: 1.5em;
+    padding: 0;
+    position: inherit;
+    text-align: center;
+    width: inherit;
+    margin-left: 0;
+    margin: auto;
+  }
+}
+
+/*
+
+HR
+------------------------------------------- */
+hr {
+  background: #DDD;
+  border: none;
+  -moz-box-shadow: 0 1px 0 #FFF;
+  -webkit-box-shadow: 0 1px 0 #FFF;
+  box-shadow: 0px 1px 0 #FFF;
+  height: 1px;
+}
+
+/*
+
+LINKS
+------------------------------------------- */
+a {
+  text-decoration: none;
+  color: #444;
+  border-bottom: 1px solid $blue;
+  a:hover, a:focus {
+    color: $blue;
+  }
+  &.more {
+    font-style: normal;
+    color: $blue;
+  }
+  &.post-title {
+    border-bottom: none;
+    color: #222;
+    &.link-title {
+      border-bottom: 1px solid $blue;
+    }
+    &:hover {
+      color: $blue;
+    }
+  }
+}
