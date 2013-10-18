@@ -3,32 +3,66 @@ layout: default
 exclude_from_search: true
 custom_css_class: home blog
 ---
-{% include article-listings.html %}
+{% for post in paginator.posts %}
+
+  {% if post.custom_type == "quote" %}
+    <div class="entry quote">
+      <h4><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h4>
+      <p class="date">{{ post.date | date: "%d %B %G" }}</p>
+      {{ post.content }}
+    </div>
+
+  {% elsif post.custom_type == "music" %}
+    <div class="entry music">
+      <h4><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h4>
+      <p class="date">{{ post.date | date: "%d %B %G" }}</p>
+      {{ post.music-embed }}
+      <p>{{ post.content }}</p>
+    </div>
+
+  {% elsif post.custom_type == "article" %}
+
+    <div class="entry post">
+      <h2><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h2>
+      <p class="date">{{ post.date | date: "%d %B %G" }}</p>
+      <p>{{ post.excerpt | strip_html | truncatewords: 60 | smartypants }} <a class="more" href="{{ post.url }}">read more</a></p>
+    </div>
+
+  {% elsif post.custom_type == "link" %}
+
+    <div class="entry link">
+      <h4><a href="{{ post.link_url }}" class="post-title link-title">{{ post.title }}</a><a class="post-title" href="{{ post.url }}"><i class="ss-icon">link</i></a></h4>
+      <p class="date">{{ post.date | date: "%d %B %G" }}</p>
+      {{ post.content }}
+    </div>
+  {% endif %}
+
+{% endfor %}
+
 <div class="pagination">
-      <ul>
-      {% if paginator.previous_page %}
-        <li class="previous">
-          {% if paginator.previous_page == 1 %}
-            <a href="/">Newer</a>
-          {% else %}
-            <a href="{{ paginator.previous_page_path }}">Newer</a>
-          {% endif %}
-        </li>
-      {% else %}
-        <li class="previous disabled">
-          Newer
-        </li>
-      {% endif %}
+  <ul>
+    {% if paginator.previous_page %}
+      <li class="previous">
+        {% if paginator.previous_page == 1 %}
+          <a href="/">Newer</a>
+        {% else %}
+          <a href="{{ paginator.previous_page_path }}">Newer</a>
+        {% endif %}
+      </li>
+    {% else %}
+      <li class="previous disabled">
+        Newer
+      </li>
+    {% endif %}
 
-
-      {% if paginator.next_page %}
-        <li class="next">
-          <a href="{{ paginator.next_page_path }}">Older</a>
-        </li>
-      {% else %}
-        <li class="next disabled">
-          Older
-        </li>
-      {% endif %}
-      </ul>
-  </div><!-- .pagination -->
+    {% if paginator.next_page %}
+      <li class="next">
+        <a href="{{ paginator.next_page_path }}">Older</a>
+      </li>
+    {% else %}
+      <li class="next disabled">
+        Older
+      </li>
+    {% endif %}
+    </ul>
+</div>

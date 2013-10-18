@@ -1,4 +1,38 @@
 ---
 layout: default
 ---
-{% include article-listings.html %}
+{% for post in paginator.posts %}
+
+  {% if post.custom_type == "quote" %}
+    <div class="entry quote">
+      <h4><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h4>
+      <p class="date">{{ post.date | date: "%d %B %G" }}</p>
+      {{ post.content }}
+    </div>
+
+  {% elsif post.custom_type == "music" %}
+    <div class="entry music">
+      <h4><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h4>
+      <p class="date">{{ post.date | date: "%d %B %G" }}</p>
+      {{ post.music-embed }}
+      <p>{{ post.content }}</p>
+    </div>
+
+  {% elsif post.custom_type == "article" %}
+
+    <div class="entry post">
+      <h2><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h2>
+      <p class="date">{{ post.date | date: "%d %B %G" }}</p>
+      <p>{{ post.excerpt | strip_html | truncatewords: 60 | smartypants }} <a class="more" href="{{ post.url }}">read more</a></p>
+    </div>
+
+  {% elsif post.custom_type == "link" %}
+
+    <div class="entry link">
+      <h4><a href="{{ post.link_url }}" class="post-title">{{ post.title }} <i class="ss-icon">link</i></a></h4>
+      <p class="date">{{ post.date | date: "%d %B %G" }}</p>
+      {{ post.content }}
+    </div>
+  {% endif %}
+
+{% endfor %}
