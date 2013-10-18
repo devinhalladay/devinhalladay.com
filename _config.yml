@@ -1,0 +1,34 @@
+name: Devin Halladay
+url: http://devinhalladay.com
+description: 'This is the personal journal of Devin Halladay &mdash; a designer, developer, and writer.'
+markdown: kramdown
+pygments: true
+permalink: /:year/:month/:title
+paginate: 6
+exclude: ['README.md', 'atom.articles.xml', 'sitemap.xml']
+include: ['.htaccess']
+timezone: America/New_York
+port: 4200
+post:
+  extension: md
+page:
+  template: _page.txt
+  extension: md
+assets:
+  js_compressor: uglifier
+  css_compressor: sass
+  sources:
+    - _assets/fonts
+    - _assets/js
+    - _assets/sass
+    - _assets/img
+  gzip: false
+authors:
+  devinhalladay:
+    display_name: Devin Halladay
+    email: devin@devinhalladay.com
+    web: http://devinhalladay.com/
+    twitter: devinhalladay
+    github: devinhalladay
+    dribbble: devinhalladay
+    bio: 'Designer & Raconteur.'
