@@ -4,13 +4,11 @@ title: Design Over Style
 categories: articles
 custom_type: article
 date: "2013-3-5 9:06:00"
-dropcap_enabled: 0
+tags: ["design", "style"]
 ---
 I was browsing through the day’s Twitter feed, when I saw this brilliant Tweet by **[@schneidertobias](http://twitter.com/schneidertobias)**:
 
 > ...we need more web designers and less web stylists.
-
-<aside>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum.</aside>
 
 I was dumbfounded. After hours of pondering the implications of Tobias’s statement, I sat down at my desk with a can of cold San Pellegrino and began writing down my interpretation in my journal.
 
