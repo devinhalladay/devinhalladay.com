@@ -108,6 +108,7 @@ blockquote {
   padding: 0;
   border-left: 5px solid $blue;
   padding-left: 20px;
+  margin-bottom: 1.4em;
   p {
     margin-bottom: 0;
     color: #9aa4a8;
@@ -118,6 +119,8 @@ blockquote {
   &.pullquote {
     border-left: none;
     margin: auto;
+    padding-left: 0;
+    margin-bottom: 1.5em;
     p {
       color: #222;
       margin: 0 -80px 2em;
@@ -129,6 +132,7 @@ blockquote {
       @media screen and (max-width: 768px) {
         font-size: 1.3em;
         line-height: 1.618em;
+        margin: 0;
       }
     }
   }
@@ -151,13 +155,14 @@ aside {
     color: #999;
     display: block;
     font-style: italic;
-    margin-bottom: 1.5em;
     padding: 0;
+    padding-bottom: 1.5em;
     position: inherit;
     text-align: center;
     width: inherit;
     margin-left: 0;
     margin: auto;
+    margin-top: 1.5em;
   }
 }
 
