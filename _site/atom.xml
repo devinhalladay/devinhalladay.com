@@ -5,7 +5,7 @@
   <title>Devin Halladay</title>
   <link href="http://devinhalladay.com"/>
   <link type="application/atom+xml" rel="self" href="http://devinhalladay.com/atom.xml"/>
-  <updated>2013-10-19T12:59:07-04:00</updated>
+  <updated>2013-10-19T13:13:32-04:00</updated>
   <id>http://devinhalladay.com</id>
   <author>
     <name>Devin Halladay</name>
@@ -26,12 +26,24 @@
     <content type="html">&lt;h1&gt;Web Design&lt;/h1&gt;
 &lt;hr /&gt;
 
-&lt;p class=&quot;lead&quot;&gt;&lt;/p&gt;
+&lt;p class=&quot;lead&quot;&gt;Various websites designed and developed for clients, friends and studio projects.&lt;/p&gt;
 &lt;hr /&gt;
 
 &lt;ul class=&quot;small-block-grid-1&quot;&gt;
   &lt;li&gt;
-    &lt;figure&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; /&gt;&lt;/figure&gt;
+    &lt;figure&gt;&lt;img src=&quot;/uploads/2013/10/made_in_ohio.jpg&quot; alt=&quot;Made in Ohio&quot; /&gt;&lt;/figure&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;figure&gt;&lt;img src=&quot;/uploads/2013/10/welcome-to-the-guild.png&quot; alt=&quot;Welcome to The Guild&quot; /&gt;&lt;/figure&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;figure&gt;&lt;img src=&quot;/uploads/2013/10/devin-halladay-v1.jpg&quot; alt=&quot;devinhalladay.com v1&quot; /&gt;&lt;/figure&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;figure&gt;&lt;img src=&quot;/uploads/2013/10/website_shot-v1.jpg&quot; alt=&quot;devinhalladay.com v1&quot; /&gt;&lt;/figure&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;figure&gt;&lt;img src=&quot;/uploads/2013/10/devinhalladay-1-2.jpg&quot; alt=&quot;devinhalladay.com v1&quot; /&gt;&lt;/figure&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 </content>
