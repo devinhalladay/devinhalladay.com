@@ -6,10 +6,18 @@ custom_css_class: work
 <hr>
 <p class="lead">This page features some of my favorite work. For more recent work and a full portfolio, visit me on <a href="http://dribbble.com/devinhalladay">dribbble</a>.</p>
 <hr>
-<ul class="small-block-grid-2">
-  {% for post in site.posts %}
-    {% if post.categories contains 'work' %}
-      <li class="work-entry"><a href="{{ post.permalink }}"><img src="{{ post.cover_image }}" alt="{{ post.title }}"></a></li>
-    {% endif %}
-  {% endfor %}
+<ul class="small-block-grid-1 large-block-grid-2">
+
+      <li class="work-entry"><a href="/work/print"><img src="/uploads/2013/10/print-design.jpg" alt="Print Design"></a></li>
+
+      <li class="work-entry"><a href="/work/logomark"><img src="/uploads/2013/10/Logos + Marks.jpg" alt="Logo + Mark"></a></li>
+
+      <li class="work-entry"><a href="/work/web"><img src="/uploads/2013/10/web-design.jpg" alt="Web Design"></a></li>
+
+      <li class="work-entry"><a href="/work/illustration"><img src="/uploads/2013/10/illustration.jpg" alt="Illustration"></a></li>
+
+      <li class="work-entry"><a href="/work/ui"><img src="/uploads/2013/10/ui-design.jpg" alt="UI Design"></a></li>
+
+      <li class="work-entry"><a href="/work/lettering"><img src="/uploads/2013/10/lettering.jpg" alt="Lettering"></a></li>
+
 </ul>

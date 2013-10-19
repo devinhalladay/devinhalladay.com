@@ -10,6 +10,15 @@
       "body": ""
     },
     {
+      "title": "Illustration",
+      "url": "/work/illustration/index.html",
+      "date": null,
+      "categories": [
+
+      ],
+      "body": "Vector illustrations done  for clients, friends, and studio projects."
+    },
+    {
       "title": "Work",
       "url": "/work/index.html",
       "date": null,
@@ -17,6 +26,105 @@
 
       ],
       "body": "This page features some of my favorite work. For more recent work and a full portfolio, visit me on dribbble."
+    },
+    {
+      "title": "Lettering",
+      "url": "/work/lettering/index.html",
+      "date": null,
+      "categories": [
+
+      ],
+      "body": "Digital and analog lettering done for clients, friends, and studio projects."
+    },
+    {
+      "title": "Logo + Mark",
+      "url": "/work/logomark/index.html",
+      "date": null,
+      "categories": [
+
+      ],
+      "body": "A selection of logos and marks produced for clients, friends and studio projects."
+    },
+    {
+      "title": "Illustration",
+      "url": "/work/posts/work/illustration",
+      "date": null,
+      "categories": [
+
+      ],
+      "body": "Vector illustrations done  for clients, friends, and studio projects."
+    },
+    {
+      "title": "Lettering",
+      "url": "/work/posts/work/lettering",
+      "date": null,
+      "categories": [
+
+      ],
+      "body": "Digital and analog lettering done for clients, friends, and studio projects."
+    },
+    {
+      "title": "Logo + Mark",
+      "url": "/work/posts/work/logomark",
+      "date": null,
+      "categories": [
+
+      ],
+      "body": "A selection of logos and marks produced for clients, friends and studio projects."
+    },
+    {
+      "title": "Print Design",
+      "url": "/work/posts/work/print",
+      "date": null,
+      "categories": [
+
+      ],
+      "body": "I love print design. I have a passion for typography and layouts that honor their content in a printed, tangible form. These are print designs created for clients and studio projects."
+    },
+    {
+      "title": "UI Design",
+      "url": "/work/posts/work/ui",
+      "date": null,
+      "categories": [
+
+      ],
+      "body": "User interfaces designed for clients, friends, and studio projects."
+    },
+    {
+      "title": "Web Design",
+      "url": "/work/posts/web",
+      "date": null,
+      "categories": [
+
+      ],
+      "body": "Various websites designed and developed for clients, friends and studio projects."
+    },
+    {
+      "title": "Print Design",
+      "url": "/work/print/index.html",
+      "date": null,
+      "categories": [
+
+      ],
+      "body": "I love print design. I have a passion for typography and layouts that honor their content in a printed, tangible form. These are print designs created for clients and studio projects."
+    },
+    {
+      "title": "UI Design",
+      "url": "/work/ui/index.html",
+      "date": null,
+      "categories": [
+
+      ],
+      "body": "User interfaces designed for clients, friends, and studio projects."
+    },
+    {
+      "title": "Web Design",
+      "url": "/work/web/index.html",
+      "date": null,
+      "categories": [
+
+      ],
+      "body": "Various websites designed and developed for clients, friends and studio projects."
     },
     {
       "title": "The New Me",
@@ -80,24 +188,6 @@
         "links"
       ],
       "body": "Fascinating! I’ve always wondered what English might sound like to non-English speakers."
-    },
-    {
-      "title": "Logo + Mark",
-      "url": "/work/logomark",
-      "date": "2013-10-19 12:41:00 -0400",
-      "categories": [
-        "work"
-      ],
-      "body": "A selection of logos and marks produced for clients, friends and studio projects."
-    },
-    {
-      "title": "Web Design",
-      "url": "/work/web-design",
-      "date": "2013-10-19 12:57:00 -0400",
-      "categories": [
-        "work"
-      ],
-      "body": "Various websites designed and developed for clients, friends and studio projects."
     }
   ]
 }
