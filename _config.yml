@@ -3,7 +3,7 @@ url: http://devinhalladay.com
 description: 'This is the personal journal of Devin Halladay &mdash; a designer, developer, and writer.'
 markdown: kramdown
 pygments: true
-permalink: /:year/:month/:title
+permalink: /blog/:title
 paginate: 6
 exclude: ['README.md', 'atom.articles.xml', 'sitemap.xml']
 include: ['.htaccess']

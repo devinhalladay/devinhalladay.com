@@ -26,10 +26,10 @@ nav {
       line-height: 1em;
       letter-spacing: 2px;
       color: #444;
-      border-bottom: none;
+      text-decoration: none;
       &:hover {
         color: $blue;
-        border-bottom: none;
+        text-decoration: none;
       }
     }
   }

@@ -2,7 +2,16 @@
 
 FORMS
 ------------------------------------------- */
-.wufoo {
+.parsley-error {
+  border: 2px solid #C81717 !important;
+}
+ul.parsley-error-list {
+            display:none !important;
+        }
+        ul.parsley-error-list li {
+            display:none !important;
+        }
+.wufoo, .search-form {
   font-family: $sans;
 
   input:hover, textarea:hover {
@@ -10,6 +19,7 @@ FORMS
   }
 
   input, button, textarea, .button {
+    font-size: 80%;
     width: 100%;
     margin: 0 0 15px 0;
     padding: 10px;
@@ -46,7 +56,7 @@ FORMS
 .wufoo input.btn, .btn {
   display: inline-block;
   font-family: $sans;
-  font-size: 0.618em;
+  font-size: 70%;
   font-weight: 500;
   line-height: 47px;
   text-transform: uppercase;
