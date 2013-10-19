@@ -2,20 +2,12 @@
 layout: page
 custom_css_class: page search
 ---
-<div class="contain search__search-wrapper">
-  <div id="search" class="site__search-form">
-    <form action="/search" method="get">
-      <p>
-        <input type="text" id="search-query" name="q" placeholder="Search…" autocomplete="off">
-      </p>
-    </form>
-  </div>
+<div id="search" class="search-form">
+  <form action="/search" method="get">
+    <p>
+      <input type="text" id="search-query" name="q" placeholder="Search…" autocomplete="off">
+    </p>
+  </form>
 </div>
 
-<main class="content__main-content" role="main">
-  <div class="contain">
-
-    {{ content }}
-
-  </div>
-</main>
+{{ content }}
