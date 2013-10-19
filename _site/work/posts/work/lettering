@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Lettering - Devin Halladay</title>
+    <meta name="description" content="This is the personal journal of Devin Halladay &mdash; a designer, developer, and writer.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="//use.typekit.net">
+    <link rel="dns-prefetch" href="//p.typekit.net">
+
+    <!-- Facebook Article Info -->
+    <meta property="og:image" content="https://twitter.com/api/users/profile_image/devinhalladay?size=original">
+    <meta property="og:title" content="Lettering - Devin Halladay">
+    <meta property="og:site_name" content="Devin Halladay">
+    <meta property="og:url" content="http://devinhalladay.com/work/posts/work/lettering">
+    <meta property="og:description" content="">
+
+    <!-- Twitter Info -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@devinhalladay">
+    <meta name="twitter:creator" content="@devinhalladay">
+
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for devinhalladay.com" href="/atom.xml" />
+
+    <!-- Syntax Highlighting CSS -->
+    <link rel="stylesheet" href="/assets/syntax-cf8f627b7156f71f38cf6723f1e1d0a3.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/devin-f50429cca7222742ef48d9a9e3aebbb7.css">
+
+    
+
+    <!-- Typekit Code  -->
+    <script type="text/javascript" src="//use.typekit.net/ajq7xob.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  </head>
+  <body class="work work-single">
+
+    <div class="header">
+      <div class="row">
+        <div class="large-8 small-11 columns small-centered large-centered">
+          <nav class="nav-collapse">
+            <ul id="menu-main-nav" class="menu">
+              <li class="dh"><a href="/">Devin Halladay</a></li>
+              <li><a href="/work">Work</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div
+
+    <div class="main-content">
+      <div class="row">
+        <div class="large-8 small-11 small-centered large-centered columns" id="content">
+
+          <h1>Lettering</h1>
+<hr />
+
+<p class="lead">Digital and analog lettering done for clients, friends, and studio projects.</p>
+<hr />
+
+<ul class="small-block-grid-1 large-block-grid-2">
+  <li>
+    <figure><img src="/uploads/2013/10/d-letter.jpg" alt="D" /></figure>
+  </li>
+  <li>
+    <figure><img src="/uploads/2013/10/2-letter.jpg" alt="2" /></figure>
+  </li>
+  <li>
+    <figure><img src="/uploads/2013/10/s-letter.jpg" alt="S" /></figure>
+  </li>
+  <li>
+    <figure><img src="/uploads/2013/10/amp-letter.jpg" alt="Ampersand" /></figure>
+  </li>
+  <li>
+    <figure><img src="/uploads/2013/10/amp-letter-2.jpg" alt="Ampersand" /></figure>
+  </li>
+  <li>
+    <figure><img src="/uploads/2013/10/d-letter-2.jpg" alt="D" /></figure>
+  </li>
+  <li>
+    <figure><img src="/uploads/2013/10/gothic.jpg" alt="Gothic lettering" /></figure>
+  </li>
+  <li>
+    <figure><img src="/uploads/2013/10/c-letter.jpg" alt="Calligraphy C" /></figure>
+  </li>
+  <li>
+    <figure><img src="/uploads/2013/10/kick.jpg" alt="Kick script" /></figure>
+  </li>
+  <li>
+    <figure><img src="/uploads/2013/10/never-say-die.jpg" alt="Never Say Die script" /></figure>
+  </li>
+  <li>
+    <figure><img src="/uploads/2013/10/quasar.jpg" alt="Quasar font" /></figure>
+  </li>
+  <li>
+    <figure><img src="/uploads/2013/10/action.jpg" alt="Action vintage type" /></figure>
+  </li>
+  <li>
+    <figure><img src="/uploads/2013/10/the-end.jpg" alt="The End script" /></figure>
+  </li>
+</ul>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer clearfix">
+    <div class="row">
+      <div class="large-8 small-11 columns small-centered large-centered">
+        
+        <small style="padding-right:1em">Copyright &copy; 2013 Devin Halladay.</small>
+        <small>
+          <a href="/archives/">Archives</a>
+          &middot;
+          <a href="/atom.xml">Feed</a>
+          &middot;
+          <a href="/contact">Contact</a>
+        </small>
+      </div>
+    </div>
+  </div>
+
+  <script src="/assets/devin-be4949abeca33019d54cfc5c12049f6d.js"></script>
+
+  </body>
+</html>
