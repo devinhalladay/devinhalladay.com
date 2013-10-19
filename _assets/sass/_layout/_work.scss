@@ -1,0 +1,28 @@
+.work-entry {
+  a {
+    img {
+      -moz-transition: all .3s linear;
+      -webkit-transition: all .3s linear;
+      -ms-transition: all .3s linear;
+      -o-transition: all .3s linear;
+      transition: all .3s linear;
+      opacity: 1;
+      transition: opacity .25s ease-in-out;
+      -moz-transition: opacity .25s ease-in-out;
+      -webkit-transition: opacity .25s ease-in-out;
+      margin-bottom: 0;
+    }
+    &:hover {
+      img {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.work {
+  img {
+    margin-bottom: 0;
+    border: 1px solid #ddd;
+  }
+}

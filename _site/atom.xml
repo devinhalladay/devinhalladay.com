@@ -5,13 +5,79 @@
   <title>Devin Halladay</title>
   <link href="http://devinhalladay.com"/>
   <link type="application/atom+xml" rel="self" href="http://devinhalladay.com/atom.xml"/>
-  <updated>2013-10-19T01:27:46-04:00</updated>
+  <updated>2013-10-19T12:59:07-04:00</updated>
   <id>http://devinhalladay.com</id>
   <author>
     <name>Devin Halladay</name>
     <email>devin@devinhalladay.com</email>
   </author>
 
+  
+  <entry>
+    <id>http://devinhalladay.com/work/web-design</id>
+    <link type="text/html" rel="alternate" href="http://devinhalladay.com/work/web-design"/>
+    <title>Web Design</title>
+    <published>2013-10-19T12:57:00-04:00</published>
+    <updated>2013-10-19T12:57:00-04:00</updated>
+    <author>
+      <name>Devin Halladay</name>
+      <uri>http://devinhalladay.com/</uri>
+    </author>
+    <content type="html">&lt;h1&gt;Web Design&lt;/h1&gt;
+&lt;hr /&gt;
+
+&lt;p class=&quot;lead&quot;&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;ul class=&quot;small-block-grid-1&quot;&gt;
+  &lt;li&gt;
+    &lt;figure&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; /&gt;&lt;/figure&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://devinhalladay.com/work/logo-mark</id>
+    <link type="text/html" rel="alternate" href="http://devinhalladay.com/work/logomark"/>
+    <title>Logo + Mark</title>
+    <published>2013-10-19T12:41:00-04:00</published>
+    <updated>2013-10-19T12:41:00-04:00</updated>
+    <author>
+      <name>Devin Halladay</name>
+      <uri>http://devinhalladay.com/</uri>
+    </author>
+    <content type="html">&lt;h1&gt;Logo + Mark&lt;/h1&gt;
+&lt;hr /&gt;
+
+&lt;p class=&quot;lead&quot;&gt;A selection of logos and marks produced for clients, friends and studio projects.&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;ul class=&quot;small-block-grid-1 large-block-grid-2&quot;&gt;
+  &lt;li&gt;
+    &lt;figure&gt;&lt;img src=&quot;/uploads/2013/10/s-mark.jpg&quot; alt=&quot;S Lettermark&quot; /&gt;&lt;/figure&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;figure&gt;&lt;img src=&quot;/uploads/2013/10/crown-loading.gif&quot; alt=&quot;Loading Crown Logo&quot; /&gt;&lt;/figure&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;figure&gt;&lt;img src=&quot;/uploads/2013/10/bear-logo.jpg&quot; alt=&quot;Bear Logo&quot; /&gt;&lt;/figure&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;figure&gt;&lt;img src=&quot;/uploads/2013/10/oddball.jpg&quot; alt=&quot;Oddball Logo and Mark&quot; /&gt;&lt;/figure&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;figure&gt;&lt;img src=&quot;/uploads/2013/10/oddball-lettermark.gif&quot; alt=&quot;Oddball Lettermark&quot; /&gt;&lt;/figure&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;figure&gt;&lt;img src=&quot;/uploads/2013/10/devin-logo.gif&quot; alt=&quot;Personal Lettermark&quot; /&gt;&lt;/figure&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;figure&gt;&lt;img src=&quot;/uploads/2013/10/guild-logo.jpg&quot; alt=&quot;The Guild logo&quot; /&gt;&lt;/figure&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   
   <entry>
     <id>http://devinhalladay.com/blog/how-english-sounds-to-non-english-speakers</id>

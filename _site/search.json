@@ -10,6 +10,15 @@
       "body": ""
     },
     {
+      "title": "Work",
+      "url": "/work/index.html",
+      "date": null,
+      "categories": [
+
+      ],
+      "body": "This page features some of my favorite work. For more recent work and a full portfolio, visit me on dribbble."
+    },
+    {
       "title": "The New Me",
       "url": "/blog/the-new-me",
       "date": "2013-01-22 04:55:00 -0500",
@@ -71,6 +80,24 @@
         "links"
       ],
       "body": "Fascinating! I’ve always wondered what English might sound like to non-English speakers."
+    },
+    {
+      "title": "Logo + Mark",
+      "url": "/work/logomark",
+      "date": "2013-10-19 12:41:00 -0400",
+      "categories": [
+        "work"
+      ],
+      "body": "A selection of logos and marks produced for clients, friends and studio projects."
+    },
+    {
+      "title": "Web Design",
+      "url": "/work/web-design",
+      "date": "2013-10-19 12:57:00 -0400",
+      "categories": [
+        "work"
+      ],
+      "body": ""
     }
   ]
 }
