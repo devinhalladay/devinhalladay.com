@@ -1,0 +1,14 @@
+<div class="header">
+  <div class="row">
+    <div class="large-8 small-11 columns small-centered large-centered">
+      <nav class="nav-collapse">
+        <ul id="menu-main-nav" class="menu">
+          <li {% if page.url == "/" or "blog" %}class="is-selected"{% endif %}><a href="/">{{ site.title }}</a></li>
+          {% for page in site.pages offset:1 %}
+            <li {% if page.url == url %}class="is-selected"{% endif %}><a href="{{ page.url }}">{{ page.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div

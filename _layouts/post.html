@@ -1,4 +1,5 @@
 {% include header.html %}
+    {% capture tweet_text %}&ldquo;{{ page.title }}&rdquo; by @devinhalladay{% endcapture %}
 
     <div class="main-content">
       <div class="row">
@@ -14,6 +15,7 @@
             <p class="date">{{ page.date | date: "%d %B %G" }}</p>
 
             {{ content }}
+            <!--<a href="http://twitter.com/share?url={{ site.url }}{{ page.url }}&text={{ tweet_text }}" target="_blank">Tweet this post.</a>-->
           {% endif %}
 
         </div>

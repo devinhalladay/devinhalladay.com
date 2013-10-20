@@ -25,7 +25,7 @@ custom_css_class: home blog
     <div class="entry post">
       <h2><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h2>
       <p class="date">{{ post.date | date: "%d %B %G" }}</p>
-      <p>{{ post.excerpt | strip_html | truncatewords: 60 | smartypants }} <a class="more" href="{{ post.url }}">read more</a></p>
+      <p>{{ post.excerpt | strip_newlines | strip_html | truncatewords: 60 | smartypants }} <a class="more" href="{{ post.url }}">read more</a></p>
     </div>
 
   {% elsif post.custom_type == "link" %}
