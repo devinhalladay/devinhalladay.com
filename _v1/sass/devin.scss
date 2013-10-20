@@ -1,0 +1,136 @@
+// Global Foundation Settings
+@import "settings";
+
+// Comment out this import if you don't want to use normalize
+@import "normalize";
+
+// Comment out this import if you are customizing you imports below
+@import "foundation";
+
+@import "core/layout";
+
+@import "core/forms";
+
+.dropcap {
+  width: 104px;
+  height: 104px;
+  text-align: center;
+  font-size: 127px;
+  line-height: 88px;
+  float: left;
+  display: block;
+  position: relative;
+  top: 6px;
+  font-weight: 400;
+
+  @media screen and (max-width: 768px) {
+    width: 52px;
+    height: 52px;
+    font-size: 58px;
+    line-height: 40px;
+    margin-right: 0;
+  }
+}
+
+
+@import "core/base";
+
+@import "core/content";
+
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 112.5%;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  p.lead {
+    font-size: 1em;
+    line-height: 1.618em;
+    margin-bottom: 1.618em;
+  }
+}
+
+@import "modules/header";
+
+.main-content {
+  margin-bottom: 4em;
+
+  ul {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 1.618em;
+  > li:before {
+    padding-right: 14px;
+    text-decoration: none;
+    speak: none;
+    text-rendering: optimizeLegibility;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    content: "\25C6";
+    position: relative;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 58px;
+    margin-left: -58px;
+    padding-top: 6px;
+    text-align: right;
+    font-size: 16px;
+  }
+}
+}
+
+
+
+.post {
+  position: relative;
+  border-bottom: 1px solid #ecefef;
+  padding: 0 0 1em;
+  margin: 0 0 2em;
+  h2 {
+    margin: 0 0 0.3em;
+  }
+}
+
+.quote {
+  position: relative;
+  margin-bottom: 4em;
+  h4 {
+    margin: 0 0 1.618em 0;
+  }
+  p {
+    margin-bottom: 0;
+    font-style: italic;
+    &.date {
+      font-style: normal;
+    }
+    + p {
+      text-indent: 2em;
+    }
+  }
+}
+
+body.single-post .quote p.date {
+  margin-bottom: 2.25em;
+}
+
+.link {
+  position: relative;
+  margin-bottom: 4em;
+  h4 {
+    margin: 0 0 1.618em 0;
+  }
+}
+
+@import "modules/footer";
+
+.blog p.date {
+  margin-bottom: 2em;
+}
+
+@import "core/misc";
+
+@import "core/print";

@@ -10,3 +10,7 @@ $(function() {
 });
 
 $(".video-pusher").fitVids();
+
+$(".post-sharing-button").on("click", function() {
+    $(".sharing-menu").toggleClass("IsOpen")
+});

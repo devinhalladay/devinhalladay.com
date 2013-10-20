@@ -1,0 +1,74 @@
+html {
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0 auto;
+  background: #fff;
+  font-family: $serif;
+  font-size: 137.5%;
+  line-height: 1.618em;
+  cursor: auto;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  border-left: 8px solid $blue;
+  -moz-font-feature-settings:"kern" 1, "liga" 1, "dlig" 1, "hlig" 1, "clig" 1;
+  -moz-font-feature-settings:"kern=1, liga=1, dlig=1, hlig=1, clig=1";
+  -ms-font-feature-settings:"kern" 1, "liga" 1, "dlig" 1, "hlig" 1, "clig" 1;
+  -o-font-feature-settings:"kern" 1, "liga" 1, "dlig" 1, "hlig" 1, "clig" 1;
+  -webkit-font-feature-settings:"kern" 1, "liga" 1, "dlig" 1, "hlig" 1, "clig" 1;
+  font-feature-settings:"kern" 1, "liga" 1, "dlig" 1, "hlig" 1, "clig" 1;
+
+  @media screen and (max-width: 768px) {
+    border-left: none;
+    border-top: 8px solid $blue;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+  border-bottom: 1px solid $blue;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  &:hover {
+    color: $blue;
+  }
+  &.more {
+    font-style: normal;
+    color: $blue;
+    border-bottom: none;
+    &:hover {
+      border-bottom: 1px solid $blue;
+    }
+  }
+  &.post-title {
+    border-bottom: none;
+    color: #2b292b;
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+
+p {
+  margin-bottom: 1.618em;
+  &.lead {
+    font-size: 26px;
+    line-height: 1.5em;
+    margin-bottom: 1.05em;
+  }
+  &.date {
+    font-family: $sans;
+    font-weight: 500;
+    font-size: 0.7em;
+    letter-spacing: 2px;
+    color: #999;
+    margin-bottom: 2.25em;
+  }
+}

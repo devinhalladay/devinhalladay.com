@@ -5,7 +5,7 @@
   <title>Devin Halladay</title>
   <link href="http://devinhalladay.com"/>
   <link type="application/atom+xml" rel="self" href="http://devinhalladay.com/atom.xml"/>
-  <updated>2013-10-19T15:12:59-04:00</updated>
+  <updated>2013-10-19T22:20:59-04:00</updated>
   <id>http://devinhalladay.com</id>
   <author>
     <name>Devin Halladay</name>
@@ -14,8 +14,87 @@
 
   
   <entry>
-    <id>http://devinhalladay.com/blog/how-english-sounds-to-non-english-speakers</id>
-    <link type="text/html" rel="alternate" href="http://devinhalladay.com/blog/how-english-sounds-to-non-english-speakers"/>
+    <id>http://devinhalladay.com/journal/designed-with-love</id>
+    <link type="text/html" rel="alternate" href="http://devinhalladay.com/journal/designed-with-love"/>
+    <title>Designed with Love</title>
+    <published>2013-10-19T00:00:00-04:00</published>
+    <updated>2013-10-19T00:00:00-04:00</updated>
+    <author>
+      <name>Devin Halladay</name>
+      <uri>http://devinhalladay.com/</uri>
+    </author>
+    <content type="html">&lt;p class=&quot;lead&quot;&gt;I love design. Its uncanny ability to make any person feel a wide range of emotions is absolutely fascinating. As designers, we hold the power of emotion in our hands — we can use color theory to evoke emotions, whitespace to draw attention, and so much more. That fact makes it clear that we need to pay attention to every pixel and give an equal amount of care to every single detail in what we are designing, in order to honestly and efficiently harness emotion. We need to design with &lt;i&gt;love&lt;/i&gt;.&lt;/p&gt;
+
+&lt;p&gt;Everything around us is designed&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; — from the seat you’re sitting on to the sheets of paper sitting in your printer. That sheet of paper, as simple as it may seem, was meticulously designed by someone just like me — someone just like you. The thickness of the paper was a design choice, allowing vendors to fit more in a pack and cutting the cost of production. The white color of the paper was a design choice — it is practical, and also conveys great emotion: that of having a clean slate. Paper has been designed and redesigned time after time since about the year &lt;span class=&quot;smallcaps&quot;&gt;105 AD&lt;/span&gt; It was designed with love and care, with the single purpose of giving your content, be it art, text, or anything else, a place to &lt;em&gt;shine&lt;/em&gt;.&lt;/p&gt;
+
+&lt;blockquote class=&quot;pullquote&quot;&gt;&lt;p&gt;Paper was designed with love and care, with the single purpose of giving your content, be it art, text, or anything else, a place to &lt;i&gt;shine&lt;/i&gt;.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;We need to design everything the way paper was designed. We need to value simplicity, typography, and color. We need to take color, shape, texture, and rhythm into careful consideration. We need to design honestly, transparently&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;, and with generous amounts of love and care.&lt;/p&gt;
+
+&lt;blockquote class=&quot;pullquote&quot;&gt;&lt;p&gt;We need to design honestly, transparently, and with generous amounts of love and care.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;With that being said, I’m going to go ahead and present to you what I think are important principles of honest, transparent design. Following these principles won’t guarantee a beautiful, emotional design, but it will certainly help you gain a better insight into any design problem you might encounter.&lt;/p&gt;
+
+&lt;h3 id=&quot;ambitious&quot;&gt;1. Ambitious&lt;/h3&gt;
+&lt;p&gt;Great design is bold, rule-breaking, and ambitious. If we don’t break out of our niches or go against design trends, how will we ever innovate? Don’t be afraid of failure, either. Be fearless. Design something that nobody has ever thought of before — that’s the only way you can break the cycle of trend and become an innovator.&lt;/p&gt;
+
+&lt;p&gt;Ambitious design is also honest. It allows you to forget any predetermined notions about what you’re designing or who you’re designing for, thus allowing you to focus your mind on the design solution rather than just on the design problem.&lt;/p&gt;
+
+&lt;h3 id=&quot;universal&quot;&gt;2. Universal&lt;/h3&gt;
+&lt;p&gt;Great design can be understood by anyone, regardless of what language they speak or what ideals they might have. Don’t focus your energy creating a design that will be understood by one section of your audience. Take a step back, look at the problem, and find a solution that will fit everyone’s needs.&lt;/p&gt;
+
+&lt;blockquote class=&quot;pullquote&quot;&gt;&lt;p&gt;Take a step back, look at the problem, and find a solution that will fit everyone&#39;s needs.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Universal design represents or results in products and environments that are usable by all people, to the greatest extent possible, without the need for adaptation or specialized design.&lt;sup id=&quot;fnref:4&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;enlightened&quot;&gt;3. Enlightened&lt;/h3&gt;
+&lt;p&gt;Great design is well-researched and rational. Let’s regress to the design of paper for a minute. Paper was designed to fit a simple need — recording events and history. Prior to paper and its cousin papyrus, man used chisel and stone to record history. While this was more permanent, it was found to be impractical and non-universal because it could not be erased or adapted. Thus, paper was born. Research then went into every design detail of paper, from the consistency of the pulp to the exact size of a sheet.&lt;/p&gt;
+
+&lt;p&gt;Well-researched, rational, enlightened design gives the end-user or viewer the benefit of seeing and using a product that was carefully crafted to fit their exact needs.&lt;/p&gt;
+
+&lt;h3 id=&quot;adaptable&quot;&gt;4. Adaptable&lt;/h3&gt;
+&lt;p&gt;Great design is adaptable. It can be transformed and tweaked to fit the needs of people at present. Again, let’s regress to the design of paper. As I stated in point &lt;span class=&quot;smallcaps&quot;&gt;No. 3&lt;/span&gt;, paper came out of a need for something better. It evolved from ideas that are as adaptable as they are timeless: writing and art.&lt;/p&gt;
+
+&lt;p&gt;It all began with cave drawings. Originally there was no language, and thus no need for writing. Cavemen merely needed to sketch things that they saw. Then came early language, and with it came carvings on stone slabs. Next came papyrus, as civilizations began to develop and languages expanded. And it slowly evolved into what we know as paper today as our needs and conditions changed.&lt;/p&gt;
+
+&lt;hr class=&quot;short&quot; /&gt;
+
+&lt;p&gt;Everything around us is designed. The thought, care, and love that we have for the things we use every day — our MacBooks, our iPhones, our clothes, and anything else — should be reflected in the things that &lt;em&gt;we&lt;/em&gt; design. Learn to sweat the details — the subtleties of your typography, the tint of your colors, and every other tiny detail in your design. &lt;strong&gt;Design with love.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote class=&quot;pullquote&quot;&gt;
+  &lt;p&gt;Learn to sweat the details — the subtleties of your typography, the tint of your colors, and every other tiny detail in your design.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Put your whole heart and soul into designing an honest design — a design that is &lt;strong&gt;ambitious&lt;/strong&gt;, &lt;strong&gt;universal&lt;/strong&gt;, &lt;strong&gt;enlightened&lt;/strong&gt;, and &lt;strong&gt;adaptable&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+
+      &lt;p&gt;&lt;a href=&quot;http://twitter.com/_dte&quot;&gt;Dan Eden&lt;/a&gt; put this perfectly on the homepage of &lt;a href=&quot;http://daneden.me/&quot;&gt;his website&lt;/a&gt;. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+
+      &lt;p&gt;&lt;a href=&quot;http://twitter.com/ttimsmith&quot;&gt;Tim Smith’s&lt;/a&gt; &lt;i&gt;&lt;a href=&quot;http://theboldreport.net&quot;&gt;The Bold Report&lt;/a&gt;&lt;/i&gt; did an excellent example of this, open-sourcing its code and design. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot;&gt;
+
+      &lt;p&gt;Tim Smith is also working on a &lt;i&gt;very&lt;/i&gt; cool project appropriately named Open Source Design. &lt;a href=&quot;http://opensourcedesign.is&quot;&gt;Check it out.&lt;/a&gt; &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:4&quot;&gt;
+
+      &lt;p&gt;Quoted in &lt;a href=&quot;http://www.publicinterestdesign.org/glossary/&quot;&gt;the Public Interest Design Glossary&lt;/a&gt;. &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://devinhalladay.com/journal/how-english-sounds-to-non-english-speakers</id>
+    <link type="text/html" rel="alternate" href="http://devinhalladay.com/journal/how-english-sounds-to-non-english-speakers"/>
     <title>How English Sounds to Non-English Speakers</title>
     <published>2013-10-18T14:11:38-04:00</published>
     <updated>2013-10-18T14:11:38-04:00</updated>
@@ -28,8 +107,8 @@
   </entry>
   
   <entry>
-    <id>http://devinhalladay.com/blog/napoleon-hill</id>
-    <link type="text/html" rel="alternate" href="http://devinhalladay.com/blog/napoleon-hill"/>
+    <id>http://devinhalladay.com/journal/napoleon-hill</id>
+    <link type="text/html" rel="alternate" href="http://devinhalladay.com/journal/napoleon-hill"/>
     <title>Napoleon Hill</title>
     <published>2013-10-17T00:00:00-04:00</published>
     <updated>2013-10-17T00:00:00-04:00</updated>
@@ -44,8 +123,8 @@
   </entry>
   
   <entry>
-    <id>http://devinhalladay.com/blog/starting-fresh</id>
-    <link type="text/html" rel="alternate" href="http://devinhalladay.com/blog/starting-fresh"/>
+    <id>http://devinhalladay.com/journal/starting-fresh</id>
+    <link type="text/html" rel="alternate" href="http://devinhalladay.com/journal/starting-fresh"/>
     <title>Starting Fresh</title>
     <published>2013-07-22T11:11:00-04:00</published>
     <updated>2013-07-22T11:11:00-04:00</updated>
@@ -78,45 +157,8 @@
   </entry>
   
   <entry>
-    <id>http://devinhalladay.com/blog/kick</id>
-    <link type="text/html" rel="alternate" href="http://devinhalladay.com/blog/kick"/>
-    <title>Kick</title>
-    <published>2013-05-02T05:33:00-04:00</published>
-    <updated>2013-05-02T05:33:00-04:00</updated>
-    <author>
-      <name>Devin Halladay</name>
-      <uri>http://devinhalladay.com/</uri>
-    </author>
-    <content type="html">&lt;p&gt;Yesterday, &lt;a href=&quot;http://twitter.com/_dte&quot;&gt;Dan Eden&lt;/a&gt; &lt;a href=&quot;https://twitter.com/_dte/status/324656949285224448&quot;&gt;Tweeted&lt;/a&gt;,&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;… when one door closes, another, garishly painted one makes itself present.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I disagree.&lt;/p&gt;
-
-&lt;p&gt;As designers, we need to learn to &lt;em&gt;make&lt;/em&gt; opportunities; we need to &lt;em&gt;erect our own doors&lt;/em&gt;. Sometimes, however, that just isn’t enough.&lt;/p&gt;
-
-&lt;p&gt;Sometimes that closed door needs to be kicked down. Chuck Norris style. When that door slams in your face, &lt;strong&gt;get pumped&lt;/strong&gt; and &lt;strong&gt;kick it down&lt;/strong&gt;. Don’t let anything stand in your way.&lt;/p&gt;
-
-&lt;p&gt;As you may know, I’m only 16 years old and I’m working very hard to fulfill my dreams and become a designer and developer. I’ll tell you this right now; &lt;strong&gt;it’s really hard&lt;/strong&gt;. Gaining credibility and such a young age is a daily struggle—but I try, and I succeed.&lt;/p&gt;
-
-&lt;p&gt;About a month ago I change my entire philosophy—I began to live my life according to &lt;a href=&quot;http://Stemmings.com/manifesto&quot;&gt;my manifesto&lt;/a&gt;. Since that change, I have gained mountains of credibility in the design industry and I have received many job offers, clients, and I began putting together my first startup, &lt;a href=&quot;http://theguild.co&quot;&gt;The Guild&lt;/a&gt; (I’ll be posting about The Guild very soon). Last week I was asked how I manage to find all of these fantastic opportunities at such a young age. I responded immediately with this:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;I don’t &lt;em&gt;find&lt;/em&gt; fantastic opportunities — I create them. I have &lt;em&gt;kick&lt;/em&gt;, &lt;em&gt;fire&lt;/em&gt;, and &lt;em&gt;passion&lt;/em&gt;. When I think I have an opportunity, an open door, and that door closes; I kick it down.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;And that, my friend, is important for all of us to do. Don’t let &lt;em&gt;anything&lt;/em&gt; hold you back! You may be asking, “How the heck do I get this &lt;em&gt;kick&lt;/em&gt;?” and scratching your head. The answer is simple: &lt;em&gt;you just&lt;/em&gt; &lt;strong&gt;&lt;em&gt;do&lt;/em&gt;&lt;/strong&gt;. You’re a designer, and the chances are high that you are passionate about design. If you are anything like me, design makes you who you are. And when you are that passionate about something, you make it a priority; you do everything in your power to make it &lt;em&gt;real&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;So, when you close this tab and leave this essay behind, I want you to take one thing with you. Just one little lesson that will change your career and your life:
-Don’t wait for opportunities to present themselves to you; go out and create your own golden opportunities. And, most importantly, &lt;strong&gt;&lt;em&gt;always remember to kick.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-</content>
-  </entry>
-  
-  <entry>
-    <id>http://devinhalladay.com/blog/design-over-style</id>
-    <link type="text/html" rel="alternate" href="http://devinhalladay.com/blog/design-over-style"/>
+    <id>http://devinhalladay.com/journal/design-over-style</id>
+    <link type="text/html" rel="alternate" href="http://devinhalladay.com/journal/design-over-style"/>
     <title>Design Over Style</title>
     <published>2013-03-05T09:06:00-05:00</published>
     <updated>2013-03-05T09:06:00-05:00</updated>
@@ -171,8 +213,8 @@ Put the &lt;em&gt;user&lt;/em&gt; above &lt;em&gt;yourself&lt;/em&gt;.
   </entry>
   
   <entry>
-    <id>http://devinhalladay.com/blog/designer-of-souls</id>
-    <link type="text/html" rel="alternate" href="http://devinhalladay.com/blog/designer-of-souls"/>
+    <id>http://devinhalladay.com/journal/designer-of-souls</id>
+    <link type="text/html" rel="alternate" href="http://devinhalladay.com/journal/designer-of-souls"/>
     <title>Designer of Souls</title>
     <published>2013-02-03T05:05:00-05:00</published>
     <updated>2013-02-03T05:05:00-05:00</updated>
@@ -205,8 +247,8 @@ When designing, you need to design not just with the user in mind, but with &lt;
   </entry>
   
   <entry>
-    <id>http://devinhalladay.com/blog/the-new-me</id>
-    <link type="text/html" rel="alternate" href="http://devinhalladay.com/blog/the-new-me"/>
+    <id>http://devinhalladay.com/journal/the-new-me</id>
+    <link type="text/html" rel="alternate" href="http://devinhalladay.com/journal/the-new-me"/>
     <title>The New Me</title>
     <published>2013-01-22T04:55:00-05:00</published>
     <updated>2013-01-22T04:55:00-05:00</updated>

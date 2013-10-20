@@ -1,0 +1,14 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>{{ site.title }} &mdash; {{ page.title }}</title>
+
+<script type="text/javascript" src="//use.typekit.net/ajq7xob.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<link rel="stylesheet" href="{{ css }}/devin.css">
+<script src="{{ js }}/vendor/custom.modernizr.js"></script>
+{% if section == 'contact' %}
+  <script src="{{ js }}/vendor/wufoo.js"></script>
+{% endif %}

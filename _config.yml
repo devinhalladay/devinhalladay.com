@@ -3,10 +3,11 @@ url: http://devinhalladay.com
 description: 'This is the personal journal of Devin Halladay &mdash; a designer, developer, and writer.'
 markdown: kramdown
 pygments: true
-permalink: /blog/:title
+permalink: /journal/:title
 paginate: 6
-exclude: ['README.md', 'atom.articles.xml', 'sitemap.xml']
+exclude: ['README.md', 'Rakefile', 'Gemfile', 'Gemfile.lock', 'work/posts/']
 include: ['.htaccess']
+lunr_excludes: ['atom.xml', 'sitemap.xml', 'work/']
 timezone: America/New_York
 port: 4200
 post:
