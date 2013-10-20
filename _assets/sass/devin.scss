@@ -17,7 +17,15 @@ an effort to keep the CSS as dry as possible.
 @import "compass";
 
 // @foundation
-@import "foundation";
+@import "foundation/components/global";
+@import "foundation/components/grid";
+@import "foundation/components/block-grid";
+@import "foundation/components/type";
+@import "foundation/components/buttons";
+@import "foundation/components/forms";
+@import "foundation/components/tooltips";
+@import "foundation/components/inline-lists";
+@import "foundation/components/tables";
 
 // @reset
 @import "_dawn/normalize";
