@@ -1,3 +1,56 @@
+.wf-loading {
+  height: 100%;
+  overflow: hidden;
+  background: url(/uploads/2013/10/ajax-loader.gif) center center no-repeat fixed;
+}
+
+.wf-loading * {
+  opacity: 0;
+}
+
+.wf-active body, .wf-inactive body {
+  -webkit-animation: fade 1s ease;
+     -moz-animation: fade 1s ease;
+    -ms-animation: fade 1s ease;
+     -o-animation: fade 1s ease;
+      animation: fade 1s ease;
+  -webkit-animation-fill-mode: both;
+     -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+     -o-animation-fill-mode: both;
+      animation-fill-mode: both;
+}
+
+@-webkit-keyframes fade {
+  0% { display: none; opacity: 0; }
+  1% { display: block; }
+  100%{ opacity: 1; }
+}
+
+@-moz-keyframes fade {
+  0% { display: none; opacity: 0; }
+  1% { display: block; }
+  100%{ opacity: 1; }
+}
+
+@-ms-keyframes fade {
+  0% { display: none; opacity: 0; }
+  1% { display: block; }
+  100%{ opacity: 1; }
+}
+
+@-o-keyframes fade {
+  0% { display: none; opacity: 0; }
+  1% { display: block; }
+  100%{ opacity: 1; }
+}
+
+@keyframes fade {
+  0% { display: none; opacity: 0; }
+  1% { display: block; }
+  100%{ opacity: 1; }
+}
+
 body {
   font-family: $sans;
   font-size: 137.5%;
