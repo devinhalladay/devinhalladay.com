@@ -1,14 +1,13 @@
+.wf-loading * { opacity: 0; }
 .wf-loading {
+  background: url('/uploads/2013/10/ajax-loader.gif') no-repeat center center;
   height: 100%;
   overflow: hidden;
-  background: url(/uploads/2013/10/ajax-loader.gif) center center no-repeat fixed;
 }
 
-.wf-loading * {
-  opacity: 0;
-}
 
-.wf-active body, .wf-inactive body {
+.wf-active *,
+.wf-inactive * {
   -webkit-animation: fade 1s ease;
      -moz-animation: fade 1s ease;
     -ms-animation: fade 1s ease;
@@ -19,6 +18,14 @@
     -ms-animation-fill-mode: both;
      -o-animation-fill-mode: both;
       animation-fill-mode: both;
+}
+
+.wf-loading:after {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 @-webkit-keyframes fade {
