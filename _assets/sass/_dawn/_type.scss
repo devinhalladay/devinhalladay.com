@@ -8,11 +8,11 @@
 
 .wf-active *,
 .wf-inactive * {
-  -webkit-animation: fade 1s ease;
-     -moz-animation: fade 1s ease;
-    -ms-animation: fade 1s ease;
-     -o-animation: fade 1s ease;
-      animation: fade 1s ease;
+  -webkit-animation: fade 0.25s ease;
+     -moz-animation: fade 0.25s ease;
+    -ms-animation: fade 0.25s ease;
+     -o-animation: fade 0.25s ease;
+      animation: fade 0.25s ease;
   -webkit-animation-fill-mode: both;
      -moz-animation-fill-mode: both;
     -ms-animation-fill-mode: both;
