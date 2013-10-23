@@ -5,6 +5,7 @@ categories: articles
 custom_type: article
 date: "2013-3-5 9:06:00"
 tags: ["design", "style"]
+alias: [/blog/design-over-style/]
 ---
 I was browsing through the day’s Twitter feed, when I saw this brilliant Tweet by **[@schneidertobias](http://twitter.com/schneidertobias)**:
 

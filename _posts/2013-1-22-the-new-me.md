@@ -6,6 +6,7 @@ custom_type: article
 date: "2013-1-22 4:55:00"
 dropcap_enabled: 0
 tags: ["redesign", "new", "devin halladay", "devinhalladay.com"]
+alias: [/blog/the-new-me/]
 ---
 My website has been reborn. My branding has been reborn. I have been reborn. *This is the new me*.
 
