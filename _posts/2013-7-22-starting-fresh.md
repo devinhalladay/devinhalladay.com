@@ -5,7 +5,7 @@ categories: articles
 custom_type: article
 date: "2013-7-22 11:11:00"
 tags: ["redesign", "new", "inspirational"]
-alias: [/blog/starting-fresh/]
+alias: [/blog/starting-fresh]
 ---
 Last week, my Windows 7 PC of three years crashed. I lost three entire years worth of design files, school work, and photos. I lost music, programs, and emails. I lost everything — all my hard work and memories (both good and bad). At first, I was utterly devastated. But after I had exhausted all possible routes of recovering my files, I came to realize that stating of with a clean slate would do me more good than bad.
 

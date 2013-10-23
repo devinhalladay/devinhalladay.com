@@ -5,6 +5,10 @@ RewriteCond %{HTTP_USER_AGENT} !FeedPress [NC]
 RewriteRule ^atom.xml http://feedpress.me/devinhalladay [R=302,NC,L]
 # END FEEDPRESS
 
+# BEGIN INDEX.HTML TO /
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^(.*)/index\.html$ /$1/ [R=301,L]
+# END INDEX.HTML TO /
 
 # Error Document
 ErrorDocument 404 /404/index.html
