@@ -4,18 +4,22 @@ exclude_from_search: true
 custom_css_class: home blog
 ---
 {% for post in paginator.posts %}
+  {% capture quote_tweet_text %}Cool post by @devinhalladay! "{{ post.title }}":{% endcapture %}
+  {% capture music_tweet_text %}Cool post by @devinhalladay! "{{ post.title }}":{% endcapture %}
+  {% capture link_tweet_text %}Cool post by @devinhalladay! "{{ post.title }}":{% endcapture %}
+  {% capture article_tweet_text %}I thoroughly enjoyed this article by @devinhalladay! "{{ post.title }}":{% endcapture %}
 
   {% if post.custom_type == "quote" %}
     <div class="entry quote">
       <h4><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h4>
-      <p class="date">{{ post.date | date: "%d %B %G" }}</p>
+      <p class="date">{{ post.date | date: "%d %B %G" }}&nbsp;<a href="https://twitter.com/intent/tweet?original_referer=http://devinhalladay.com{{ post.url | escape }}&text={{ quote_tweet_text | escape }}&tw_p=tweetbutton&url=http://devinhalladay.com{{ post.url | escape }}" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://devinhalladay.com{{ post.url }}/&p[images][0]=https://twitter.com/api/users/profile_image/devinhalladay?size=original&p[title]={{ post.title }}&p[summary]={{ post.excerpt | strip_html }}" target="_blank"><i class="fa fa-facebook"></i></a></p>
       {{ post.content }}
     </div>
 
   {% elsif post.custom_type == "music" %}
     <div class="entry music">
       <h4><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h4>
-      <p class="date">{{ post.date | date: "%d %B %G" }}</p>
+      <p class="date">{{ post.date | date: "%d %B %G" }}&nbsp;<a href="https://twitter.com/intent/tweet?original_referer=http://devinhalladay.com{{ post.url | escape }}&text={{ music_tweet_text | escape }}&tw_p=tweetbutton&url=http://devinhalladay.com{{ post.url | escape }}" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://devinhalladay.com{{ post.url }}/&p[images][0]=https://twitter.com/api/users/profile_image/devinhalladay?size=original&p[title]={{ post.title }}&p[summary]={{ post.excerpt | strip_html }}" target="_blank"><i class="fa fa-facebook"></i></a></p>
       {{ post.music-embed }}
       <p>{{ post.content }}</p>
     </div>
@@ -24,7 +28,7 @@ custom_css_class: home blog
 
     <div class="entry post">
       <h2><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h2>
-      <p class="date">{{ post.date | date: "%d %B %G" }}</p>
+      <p class="date">{{ post.date | date: "%d %B %G" }}&nbsp;<a href="https://twitter.com/intent/tweet?original_referer=http://devinhalladay.com{{ post.url | escape }}&text={{ article_tweet_text | escape }}&tw_p=tweetbutton&url=http://devinhalladay.com{{ post.url | escape }}" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://devinhalladay.com{{ post.url }}/&p[images][0]=https://twitter.com/api/users/profile_image/devinhalladay?size=original&p[title]={{ post.title }}&p[summary]={{ post.excerpt | strip_html }}" target="_blank"><i class="fa fa-facebook"></i></a></p>
       <p>{{ post.excerpt | strip_newlines | strip_html | truncatewords: 60 | smartypants }} <a class="more" href="{{ post.url }}">read more</a></p>
     </div>
 
@@ -32,7 +36,7 @@ custom_css_class: home blog
 
     <div class="entry link">
       <h4><a href="{{ post.link_url }}" class="post-title link-title">{{ post.title }}</a><a class="post-title" href="{{ post.url }}"><i class="ss-icon">link</i></a></h4>
-      <p class="date">{{ post.date | date: "%d %B %G" }}</p>
+      <p class="date">{{ post.date | date: "%d %B %G" }}&nbsp;<a href="https://twitter.com/intent/tweet?original_referer=http://devinhalladay.com{{ post.url | escape }}&text={{ link_tweet_text | escape }}&tw_p=tweetbutton&url=http://devinhalladay.com{{ post.url | escape }}" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://devinhalladay.com{{ post.url }}/&p[images][0]=https://twitter.com/api/users/profile_image/devinhalladay?size=original&p[title]={{ post.title }}&p[summary]={{ post.excerpt | strip_html }}" target="_blank"><i class="fa fa-facebook"></i></a></p>
       {{ post.content }}
     </div>
   {% endif %}

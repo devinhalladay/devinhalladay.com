@@ -1,21 +1,30 @@
 {% include header.html %}
-    {% capture tweet_text %}&ldquo;{{ page.title }}&rdquo; by @devinhalladay{% endcapture %}
-
     <div class="main-content">
       <div class="row">
         <div class="large-8 small-11 small-centered large-centered columns" id="content">
           {% if page.custom_type == 'link' %}
             <h1><a href="{{ page.link_url }}">{{ page.title }}</a></h1>
-            <p class="date">{{ page.date | date: "%d %B %G" }}</p>
+            {% capture tweet_text %}Cool post by @devinhalladay! "{{ page.title }}":{% endcapture %}
+            <p class="date">{{ page.date | date: "%d %B %G" }}&nbsp;&nbsp;<a href="https://twitter.com/intent/tweet?original_referer=http://devinhalladay.com{{ page.url | escape }}&text={{ tweet_text | escape }}&tw_p=tweetbutton&url=http://devinhalladay.com{{ page.url | escape }}" target="_blank"><i class="fa fa-twitter"></i>&nbsp;&nbsp;</a><a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://devinhalladay.com{{ page.url }}/&p[images][0]=https://twitter.com/api/users/profile_image/devinhalladay?size=original&p[title]={{ page.title }}&p[summary]={{ page.excerpt | strip_html }}" target="_blank"><i class="fa fa-facebook"></i>&nbsp;&nbsp;</a></p>
+
+            {{ content }}
+
+          {% elsif page.custom_type == 'quote' %}
+
+            <h1><a href="{{ page.link_url }}">{{ page.title }}</a></h1>
+            {% capture tweet_text %}Cool post by @devinhalladay! "{{ page.title }}":{% endcapture %}
+            <p class="date">{{ page.date | date: "%d %B %G" }}&nbsp;&nbsp;<a href="https://twitter.com/intent/tweet?original_referer=http://devinhalladay.com{{ page.url | escape }}&text={{ tweet_text | escape }}&tw_p=tweetbutton&url=http://devinhalladay.com{{ page.url | escape }}" target="_blank"><i class="fa fa-twitter"></i>&nbsp;&nbsp;</a><a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://devinhalladay.com{{ page.url }}/&p[images][0]=https://twitter.com/api/users/profile_image/devinhalladay?size=original&p[title]={{ page.title }}&p[summary]={{ page.excerpt | strip_html }}" target="_blank"><i class="fa fa-facebook"></i>&nbsp;&nbsp;</a></p>
 
             {{ content }}
 
           {% else %}
             <h1>{{ page.title }}</h1>
-            <p class="date">{{ page.date | date: "%d %B %G" }}</p>
+            {% capture tweet_text %}I thoroughly enjoyed this article by @devinhalladay! "{{ page.title }}":{% endcapture %}
+            <p class="date">{{ page.date | date: "%d %B %G" }}&nbsp;&nbsp;<a href="https://twitter.com/intent/tweet?original_referer=http://devinhalladay.com{{ page.url | escape }}&text={{ tweet_text | escape }}&tw_p=tweetbutton&url=http://devinhalladay.com{{ page.url | escape }}" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://devinhalladay.com{{ page.url }}/&p[images][0]=https://twitter.com/api/users/profile_image/devinhalladay?size=original&p[title]={{ page.title }}&p[summary]={{ page.excerpt | strip_html }}" target="_blank"><i class="fa fa-facebook"></i></a></p>
+            <!--<div class="kudos kudos--default" data-amount="0" data-url="devinhalladay.com{{ page.url }}"></div>-->
 
             {{ content }}
-            <!--<a href="http://twitter.com/share?url={{ site.url }}{{ page.url }}&text={{ tweet_text }}" target="_blank">Tweet this post.</a>-->
+
           {% endif %}
 
         </div>
