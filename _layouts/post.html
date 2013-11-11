@@ -22,7 +22,7 @@
     <meta name="twitter:title" content="{{ page.title }}">
     <meta name="twitter:description" content="{{ page.excerpt | strip_html | truncate: 200 }}">
     <meta name="twitter:creator" content="@devinhalladay">
-    <meta name="twitter:image:src" content="{{ page.image }}">
+    {% if page.image %}<meta name="twitter:image:src" content="{{ page.image }}">{% endif %}
     <meta name="twitter:domain" content="devinhalladay.com">
 
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for devinhalladay.com" href="/atom.xml" />
