@@ -19,7 +19,7 @@
     <!-- Twitter Info -->
     <meta name="twitter:site" content="@devinhalladay">
     <meta name="twitter:title" content="{{ page.title }}">
-    <meta name="twitter:description" content="{{ page.excerpt }}">
+    <meta name="twitter:description" content="{{ page.excerpt | strip_html | truncate: 200 }}">
     <meta name="twitter:creator" content="@devinhalladay">
     <meta name="twitter:image:src" content="{{ page.image }}">
     <meta name="twitter:domain" content="devinhalladay.com">
