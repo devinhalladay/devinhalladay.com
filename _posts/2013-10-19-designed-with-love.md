@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Designed with Love
+image: "/uploads/2013/11/Carpenter's Hands.jpg"
 categories: articles
 custom_type: article
 date: 2013-10-19
