@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
 gem 'kramdown'
+gem "growl", :git => "https://github.com/visionmedia/growl.git"
 gem 'jekyll'
 gem 'fileutils'
 gem 'jekyll-assets'

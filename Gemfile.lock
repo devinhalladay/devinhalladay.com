@@ -48,6 +48,7 @@ GEM
     rake (10.1.0)
     redcarpet (2.3.0)
     rmagick (2.13.2)
+    ruby_gntp (0.3.4)
     safe_yaml (0.7.1)
     sass (3.2.12)
     sprockets (2.10.0)
@@ -75,6 +76,7 @@ DEPENDENCIES
   kramdown
   nokogiri
   rake
+  ruby_gntp
   sass
   uglifier
   zurb-foundation
