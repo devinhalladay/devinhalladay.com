@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Designed with Love
-image: "/uploads/2013/11/Carpenter's Hands.jpg"
+image: http://devinhalladay.com/uploads/2013/11/Carpenter's%20Hands.jpg
 categories: articles
 custom_type: article
 date: 2013-10-19
