@@ -1,10 +1,10 @@
 ---
 layout: post
 title: The New Me
+tweet_text: 'I thoroughly enjoyed this article by @devinhalladay! "The New Me":'
+date: "2013-1-22 4:55:00"
 categories: articles
 custom_type: article
-date: "2013-1-22 4:55:00"
-dropcap_enabled: 0
 tags: ["redesign", "new", "devin halladay", "devinhalladay.com"]
 alias: [/blog/the-new-me]
 ---

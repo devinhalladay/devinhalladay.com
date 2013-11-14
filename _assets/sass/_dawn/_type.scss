@@ -110,9 +110,7 @@ h3 small { font-size: 80%; }
 
 TEXT
 ------------------------------------------- */
-p {
-  margin-bottom: 1.618em;
-  &.lead {
+.lead {
     font-size: 27px;
     line-height: 1.5em;
     margin-bottom: 1.05em;
@@ -122,6 +120,9 @@ p {
       margin-bottom: 1.618em;
     }
   }
+
+p {
+  margin-bottom: 1.618em;
   &.date {
     font-family: $sans;
     font-weight: 500;
@@ -150,6 +151,11 @@ p {
 em, i { font-style: italic; }
 strong, b { font-weight: bold; }
 small { font-size: 70%; }
+
+figcaption {
+  font-size: .75em;
+  color: #9aa4a8;
+}
 
 /*
 

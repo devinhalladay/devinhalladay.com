@@ -1,81 +1,27 @@
-<!DOCTYPE html>
-<html class="wf-loading">
-  <head>
+{% include header.html %}
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}</title>
-    <meta name="description" content="{{ site.description }}">
-    <link rel="icon" type="image/png" href="/favicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  {% capture tweet_link %}https://twitter.com/intent/tweet?original_referer=http://devinhalladay.com{{ page.url | escape }}&text={{ page.tweet_text | escape }}&tw_p=tweetbutton&url=http://devinhalladay.com{{ page.url | escape }}{% endcapture %}
+  {% capture fb_link %}http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://devinhalladay.com{{ page.url }}/&p[images][0]=https://twitter.com/api/users/profile_image/devinhalladay?size=original&p[title]={{ page.title }}&p[summary]={{ page.excerpt | strip_html }}{% endcapture %}
 
-    <!-- Facebook Article Info -->
-    <meta property="og:image" content="https://twitter.com/api/users/profile_image/devinhalladay?size=original">
-    <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}">
-    <meta property="og:site_name" content="Devin Halladay">
-    <meta property="og:url" content="http://devinhalladay.com{{ page.url }}">
-    <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 156 }}">
-
-    <!-- Twitter Info -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@devinhalladay">
-    <meta name="twitter:title" content="{{ page.title }}">
-    <meta name="twitter:description" content="{{ page.excerpt | strip_html | truncate: 200 }}">
-    <meta name="twitter:creator" content="@devinhalladay">
-    {% if page.image %}<meta name="twitter:image:src" content="{{ page.image }}">{% endif %}
-    <meta name="twitter:domain" content="devinhalladay.com">
-
-    <link rel="alternate" type="application/rss+xml" title="RSS Feed for devinhalladay.com" href="/atom.xml" />
-
-    <!-- Custom CSS -->
-    {% stylesheet devin %}
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
-
-    {% if page.custom_css %}{{ page.custom_css | stylesheet }}{% endif %}
-
-    <!-- Typekit Code  -->
-    <style type="text/css">.cf-hidden { display: none; } .cf-invisible { visibility: hidden; }</style>
-    <script type="text/javascript" src="//use.typekit.net/ajq7xob.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  </head>
-  <body class="{% if page.custom_css_class %}{{ page.custom_css_class }}{% endif %}">
-
-    <div class="header">
-      <div class="row">
-        <div class="large-8 small-11 columns small-centered large-centered">
-          <nav class="nav-collapse">
-            <ul id="menu-main-nav" class="menu">
-              <li class="dh"><a href="/">Devin Halladay</a></li>
-              <li><a href="/work">Work</a></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/contact">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
     <div class="main-content">
       <div class="row">
         <div class="large-8 small-11 small-centered large-centered columns" id="content">
           {% if page.custom_type == 'link' %}
             <h1><a href="{{ page.link_url }}">{{ page.title }}</a></h1>
-            {% capture tweet_text %}Cool post by @devinhalladay! "{{ page.title }}":{% endcapture %}
-            <p class="date">{{ page.date | date: "%d %B %G" }}&nbsp;&nbsp;<a href="https://twitter.com/intent/tweet?original_referer=http://devinhalladay.com{{ page.url | escape }}&text={{ tweet_text | escape }}&tw_p=tweetbutton&url=http://devinhalladay.com{{ page.url | escape }}" target="_blank"><i class="fa fa-twitter"></i>&nbsp;&nbsp;</a><a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://devinhalladay.com{{ page.url }}/&p[images][0]=https://twitter.com/api/users/profile_image/devinhalladay?size=original&p[title]={{ page.title }}&p[summary]={{ page.excerpt | strip_html }}" target="_blank"><i class="fa fa-facebook"></i>&nbsp;&nbsp;</a></p>
+            <p class="date">{{ page.date | date: "%d %B %G" }}&nbsp;&nbsp;<a href="{{ tweet_link }}" target="_blank"><i class="fa fa-twitter"></i>&nbsp;&nbsp;</a><a href="{{ fb_link }}" target="_blank"><i class="fa fa-facebook"></i>&nbsp;&nbsp;</a></p>
 
             {{ content }}
 
           {% elsif page.custom_type == 'quote' %}
 
             <h1><a href="{{ page.link_url }}">{{ page.title }}</a></h1>
-            {% capture tweet_text %}Cool post by @devinhalladay! "{{ page.title }}":{% endcapture %}
-            <p class="date">{{ page.date | date: "%d %B %G" }}&nbsp;&nbsp;<a href="https://twitter.com/intent/tweet?original_referer=http://devinhalladay.com{{ page.url | escape }}&text={{ tweet_text | escape }}&tw_p=tweetbutton&url=http://devinhalladay.com{{ page.url | escape }}" target="_blank"><i class="fa fa-twitter"></i>&nbsp;&nbsp;</a><a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://devinhalladay.com{{ page.url }}/&p[images][0]=https://twitter.com/api/users/profile_image/devinhalladay?size=original&p[title]={{ page.title }}&p[summary]={{ page.excerpt | strip_html }}" target="_blank"><i class="fa fa-facebook"></i>&nbsp;&nbsp;</a></p>
+            <p class="date">{{ page.date | date: "%d %B %G" }}&nbsp;&nbsp;<a href="{{ tweet_link }}" target="_blank"><i class="fa fa-twitter"></i>&nbsp;&nbsp;</a><a href="{{ fb_link }}" target="_blank"><i class="fa fa-facebook"></i>&nbsp;&nbsp;</a></p>
 
             {{ content }}
 
           {% else %}
             <h1>{{ page.title }}</h1>
-            {% capture tweet_text %}I thoroughly enjoyed this article by @devinhalladay! "{{ page.title }}":{% endcapture %}
-            <p class="date">{{ page.date | date: "%d %B %G" }}&nbsp;&nbsp;<a href="https://twitter.com/intent/tweet?original_referer=http://devinhalladay.com{{ page.url | escape }}&text={{ tweet_text | escape }}&tw_p=tweetbutton&url=http://devinhalladay.com{{ page.url | escape }}" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://devinhalladay.com{{ page.url }}/&p[images][0]=https://twitter.com/api/users/profile_image/devinhalladay?size=original&p[title]={{ page.title }}&p[summary]={{ page.excerpt | strip_html }}" target="_blank"><i class="fa fa-facebook"></i></a></p>
+            <p class="date">{{ page.date | date: "%d %B %G" }}&nbsp;&nbsp;<a href="{{ tweet_link }}" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;<a href="{{ fb_link }}" target="_blank"><i class="fa fa-facebook"></i></a></p>
             <!--<div class="kudos kudos--default" data-amount="0" data-url="devinhalladay.com{{ page.url }}"></div>-->
 
             {{ content }}

@@ -2,6 +2,8 @@ name: Devin Halladay
 url: http://devinhalladay.com
 description: 'This is the personal journal of Devin Halladay &mdash; a designer, developer, and writer.'
 markdown: kramdown
+redcarpet:
+  extensions: [footnotes]
 pygments: true
 permalink: /journal/:title
 paginate: 6
