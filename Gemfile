@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 
+gem 'redcarpet'
 gem 'kramdown'
 gem "growl", :git => "https://github.com/visionmedia/growl.git"
 gem 'jekyll'
@@ -12,3 +13,5 @@ gem 'json'
 gem 'nokogiri'
 gem 'rake'
 gem 'zurb-foundation'
+gem 'mini_magick'
+gem 'pp'

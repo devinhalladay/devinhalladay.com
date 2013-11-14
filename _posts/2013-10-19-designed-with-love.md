@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Designed with Love
+tweet_text: 'I thoroughly enjoyed this article by @devinhalladay! "Designed with Love":'
 image: http://devinhalladay.com/uploads/2013/11/Carpenter's%20Hands.jpg
 categories: articles
 custom_type: article
 date: 2013-10-19
+tags: ["love", "design", "craft", "care", "handcrafted", "simplicity", "honest design"]
 ---
 <p class="lead">I love design. Its uncanny ability to make any person feel a wide range of emotions is absolutely fascinating. As designers, we hold the power of emotion in our hands — we can use color theory to evoke emotions, whitespace to draw attention, and so much more. That fact makes it clear that we need to pay attention to every pixel and give an equal amount of care to every single detail in what we are designing, in order to honestly and efficiently harness emotion. We need to design with <i>love</i>.</p>
 
@@ -51,14 +53,10 @@ Everything around us is designed. The thought, care, and love that we have for t
 Put your whole heart and soul into designing an honest design — a design that is **ambitious**, **universal**, **enlightened**, and **adaptable**.
 
 
-[^1]:
-    <a href="http://twitter.com/_dte">Dan Eden</a> put this perfectly on the homepage of <a href="http://daneden.me/">his website</a>.
+[^1]: <a href="http://twitter.com/_dte">Dan Eden</a> put this perfectly on the homepage of <a href="http://daneden.me/">his website</a>.
 
-[^2]:
-    <a href="http://twitter.com/ttimsmith">Tim Smith's</a> <i><a href="http://theboldreport.net">The Bold Report</a></i> did an excellent example of this, open-sourcing its code and design.
+[^2]: <a href="http://twitter.com/ttimsmith">Tim Smith's</a> <i><a href="http://theboldreport.net">The Bold Report</a></i> did an excellent example of this, open-sourcing its code and design.
 
-[^3]:
-    Tim Smith is also working on a <i>very</i> cool project appropriately named Open Source Design. <a href="http://opensourcedesign.is">Check it out.</a>
+[^3]: Tim Smith is also working on a <i>very</i> cool project appropriately named Open Source Design. <a href="http://opensourcedesign.is">Check it out.</a>
 
-[^4]:
-    Quoted in <a href="http://www.publicinterestdesign.org/glossary/">the Public Interest Design Glossary</a>.
+[^4]: Quoted in <a href="http://www.publicinterestdesign.org/glossary/">the Public Interest Design Glossary</a>.

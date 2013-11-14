@@ -5,7 +5,7 @@
   <title>Devin Halladay</title>
   <link href="http://devinhalladay.com"/>
   <link type="application/atom+xml" rel="self" href="http://devinhalladay.com/atom.xml"/>
-  <updated>2013-11-11T19:15:25-05:00</updated>
+  <updated>2013-11-13T20:21:11-05:00</updated>
   <id>http://devinhalladay.com</id>
   <author>
     <name>Devin Halladay</name>
@@ -72,19 +72,15 @@
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-
       &lt;p&gt;&lt;a href=&quot;http://twitter.com/_dte&quot;&gt;Dan Eden&lt;/a&gt; put this perfectly on the homepage of &lt;a href=&quot;http://daneden.me/&quot;&gt;his website&lt;/a&gt;. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:2&quot;&gt;
-
       &lt;p&gt;&lt;a href=&quot;http://twitter.com/ttimsmith&quot;&gt;Tim Smith’s&lt;/a&gt; &lt;i&gt;&lt;a href=&quot;http://theboldreport.net&quot;&gt;The Bold Report&lt;/a&gt;&lt;/i&gt; did an excellent example of this, open-sourcing its code and design. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:3&quot;&gt;
-
       &lt;p&gt;Tim Smith is also working on a &lt;i&gt;very&lt;/i&gt; cool project appropriately named Open Source Design. &lt;a href=&quot;http://opensourcedesign.is&quot;&gt;Check it out.&lt;/a&gt; &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:4&quot;&gt;
-
       &lt;p&gt;Quoted in &lt;a href=&quot;http://www.publicinterestdesign.org/glossary/&quot;&gt;the Public Interest Design Glossary&lt;/a&gt;. &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
@@ -117,7 +113,7 @@
       <uri>http://devinhalladay.com/</uri>
     </author>
     <content type="html">&lt;blockquote&gt;
-  &lt;p&gt;“If you think you are beaten, you are. If you think you dare not, you don’t. If you like to win, but you think you can’t, it is almost certain you won’t. If you think you’ll lose, you’re lost, for out in the world we find, success begins with a fellow’s will – it’s all in the state of mind. If you think you are outclassed, you are. You’ve got to think high to rise. You’ve got to be sure of yourself before you can ever win a prize. Life’s battles don’t always go to the stronger or faster man, but soon or late the man who wins is the man who thinks he can.” &lt;br /&gt; — Napoleon Hill&lt;/p&gt;
+  &lt;p&gt;“If you think you are beaten, you are. If you think you dare not, you don’t. If you like to win, but you think you can’t, it is almost certain you won’t. If you think you’ll lose, you’re lost, for out in the world we find, success begins with a fellow’s will – it’s all in the state of mind. If you think you are outclassed, you are. You’ve got to think high to rise. You’ve got to be sure of yourself before you can ever win a prize. Life’s battles don’t always go to the stronger or faster man, but soon or late the man who wins is the man who thinks he can.” &lt;br /&gt; —Napoleon Hill&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>
   </entry>

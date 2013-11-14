@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Starting Fresh
+tweet_text: 'I thoroughly enjoyed this article by @devinhalladay! "Starting Fresh":'
 categories: articles
 custom_type: article
 date: "2013-7-22 11:11:00"
