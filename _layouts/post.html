@@ -10,21 +10,21 @@
             <h1><a href="{{ page.link_url }}">{{ page.title }}</a></h1>
             <p class="date">{{ page.date | date: "%d %B %G" }}&nbsp;&nbsp;<a href="{{ tweet_link }}" target="_blank"><i class="fa fa-twitter"></i>&nbsp;&nbsp;</a><a href="{{ fb_link }}" target="_blank"><i class="fa fa-facebook"></i>&nbsp;&nbsp;</a></p>
 
-            <div class="article">{{ content }}</div>
+            <article>{{ content }}</article>
 
           {% elsif page.custom_type == 'quote' %}
 
             <h1><a href="{{ page.link_url }}">{{ page.title }}</a></h1>
             <p class="date">{{ page.date | date: "%d %B %G" }}&nbsp;&nbsp;<a href="{{ tweet_link }}" target="_blank"><i class="fa fa-twitter"></i>&nbsp;&nbsp;</a><a href="{{ fb_link }}" target="_blank"><i class="fa fa-facebook"></i>&nbsp;&nbsp;</a></p>
 
-            <div class="article">{{ content }}</div>
+            <article>{{ content }}</article>
 
           {% else %}
             <h1>{{ page.title }}</h1>
             <p class="date">{{ page.date | date: "%d %B %G" }}&nbsp;&nbsp;<a href="{{ tweet_link }}" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;<a href="{{ fb_link }}" target="_blank"><i class="fa fa-facebook"></i></a></p>
             <!--<div class="kudos kudos--default" data-amount="0" data-url="devinhalladay.com{{ page.url }}"></div>-->
 
-            <div class="article">{{ content }}</div>
+            <article>{{ content }}</article>
 
           {% endif %}
 
