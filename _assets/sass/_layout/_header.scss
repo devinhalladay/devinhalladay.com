@@ -21,7 +21,7 @@ nav {
     }
     a {
       font-family: $sans;
-      font-size: 0.8em;
+      font-size: 0.9em;
       font-weight: 500;
       line-height: 1em;
       letter-spacing: 2px;
@@ -30,6 +30,11 @@ nav {
       &:hover {
         color: $blue;
         text-decoration: none;
+      }
+    }
+    &.active {
+      a {
+        font-weight: bold;
       }
     }
   }

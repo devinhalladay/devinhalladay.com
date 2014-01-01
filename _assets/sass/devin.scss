@@ -48,10 +48,12 @@ an effort to keep the CSS as dry as possible.
 @import "_kudos";
 @import "_dawn/objects";
 @import "_dawn/pagenavi";
+@import "_dawn/ads";
 
 // @layout
 @import "_layout/header";
 @import "_layout/maincontent";
+@import "_layout/sidebar";
 @import "_layout/work";
 @import "_layout/posts";
 @import "_layout/archive";
