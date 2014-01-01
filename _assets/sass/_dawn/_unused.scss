@@ -18,3 +18,23 @@
     margin-right: 0;
   }
 }
+
+> li:before {
+      padding-right: 14px;
+      text-decoration: none;
+      speak: none;
+      text-rendering: optimizeLegibility;
+      font-size: 18px;
+      -webkit-font-smoothing: antialiased;
+      content: "\25C6";
+      position: relative;
+      display: inline-block;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 58px;
+      margin-left: -58px;
+      padding-top: 6px;
+      text-align: right;
+      font-size: 16px;
+    }

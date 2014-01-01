@@ -3,4 +3,9 @@
     margin-bottom: 0;
     border: 1px solid #ddd;
   }
+  ul {
+    li:before {
+      display: none;
+    }
+  }
 }

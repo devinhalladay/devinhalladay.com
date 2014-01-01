@@ -60,7 +60,7 @@
 
 body {
   font-family: $sans;
-  font-size: 137.5%;
+  font-size: 112.5%;
   line-height: 1.618em;
   color: #222;
   -webkit-font-smoothing: antialiased;
@@ -68,7 +68,7 @@ body {
   @include ligatures_kerning;
 
   @media screen and (max-width: 768px) {
-    font-size: 112.5%;
+    font-size: 100%;
   }
 }
 
@@ -126,7 +126,7 @@ p {
   &.date {
     font-family: $sans;
     font-weight: 500;
-    font-size: 0.8em;
+    font-size: 0.9em;
     letter-spacing: 2px;
     color: #9aa4a8;
     margin-bottom: 2.25em;
