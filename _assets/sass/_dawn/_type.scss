@@ -59,10 +59,10 @@
 }
 
 body {
-  font-family: $sans;
-  font-size: 112.5%;
+  font-family: $serif;
+  font-size: 100%;
   line-height: 1.618em;
-  color: #222;
+  color: #111;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   @include ligatures_kerning;
@@ -90,10 +90,10 @@ h1 {
   margin: 0.3em 0 0.5em 0;
 }
 
-h2 { font-size: 1.375em; }
+h2 { font-size: 1.675em; }
 h3 { font-size: 1.324em; }
 h4 {
-  font-size: 1em;
+  font-size: 1.3em;
   @include small-caps;
 }
 h5 { font-size: 0.818em; }
@@ -184,7 +184,7 @@ blockquote {
   margin-bottom: 1.4em;
   p {
     margin-bottom: 0;
-    color: #9aa4a8;
+    color: #111;
     + p {
       text-indent: 2em;
     }
@@ -195,7 +195,7 @@ blockquote {
     padding-left: 0;
     margin-bottom: 1.5em;
     p {
-      color: #222;
+      color: #111;
       margin: 0 -80px 2em;
       line-height: 1.5;
       text-align: center;
@@ -286,7 +286,7 @@ a {
   }
   &.post-title {
     text-decoration: none;
-    color: #222;
+    color: #111;
     &.link-title {
       text-decoration: underline;
     }
