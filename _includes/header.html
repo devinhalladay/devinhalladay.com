@@ -57,15 +57,16 @@
     })();
     </script>
     <!-- End AdPacks.com Ad Code -->
+    {% capture currentURL %}{{ page.url | replace: '/', ' ' | truncatewords: 1 | remove: '...' | remove: ' ' }}{% endcapture %}
     <div class="header">
       <div class="row">
         <div class="large-8 small-11 columns small-centered large-centered">
           <nav class="nav-collapse">
             <ul id="menu-main-nav" class="menu">
-              <li{% if page.url == '/' %} class="active"{% endif %}><a href="/" title="Home">Devin Halladay</a></li>
-              <li{% if page.url == '/work/' %} class="active"{% endif %}><a href="/work" title="Selected Works">Work</a></li>
-              <li{% if page.url == '/about/' %} class="active"{% endif %}><a href="/about" title="About Me">About</a></li>
-              <li{% if page.url == '/contact/' %} class="active"{% endif %}><a href="/contact" title="Let's work together!">Contact</a></li>
+              <li{% if currentURL == 'index.html' %} class="active"{% endif %}><a href="/" title="Home">Devin Halladay</a></li>
+              <li{% if currentURL == 'work' %} class="active"{% endif %}><a href="/work" title="Selected Works">Work</a></li>
+              <li{% if currentURL == 'about' %} class="active"{% endif %}><a href="/about" title="About Me">About</a></li>
+              <li{% if currentURL == 'contact' %} class="active"{% endif %}><a href="/contact" title="Let's work together!">Contact</a></li>
             </ul>
           </nav>
         </div>

@@ -35,7 +35,7 @@
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for devinhalladay.com" href="/atom.xml" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/assets/devin-30726ad2c5ced03ed92c80586b522aee.css">
+    <link rel="stylesheet" href="/assets/devin-5dea7c902453c0cca27bdb9b1f792bfd.css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
 
     
@@ -57,6 +57,7 @@
     })();
     </script>
     <!-- End AdPacks.com Ad Code -->
+    
     <div class="header">
       <div class="row">
         <div class="large-8 small-11 columns small-centered large-centered">
@@ -65,7 +66,7 @@
               <li><a href="/" title="Home">Devin Halladay</a></li>
               <li><a href="/work" title="Selected Works">Work</a></li>
               <li><a href="/about" title="About Me">About</a></li>
-              <li><a href="/contact" title="Let's work together!">Contact</a></li>
+              <li class="active"><a href="/contact" title="Let's work together!">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -84,8 +85,9 @@
           </div>
 
           <h1>Let's Chat</h1>
-<p>I'm currently <strong>available</strong> for work. Feel free to use the form below to send me a work inquiry, a question, or to say hi. Mention <a href="http://twitter.com/devinhalladay">@devinhalladay</a> on Twitter if you want a quick reply.</p>
-
+<hr>
+<p><span class="lead">I am <strong>available</strong> for freelance work and consulting.</span><br>Feel free to use the form below to send me a work inquiry, a question, or to say hi. Mention <a href="http://twitter.com/devinhalladay">@devinhalladay</a> on Twitter if you want a quick reply.</p>
+<hr>
 <form data-validate="parsley" id="form1" name="form1" class="wufoo topLabel page" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://devinhalladay.wufoo.com/forms/z1mgef9g0156ry6/#public">
 
   <div class="large-6 columns">
@@ -128,7 +130,14 @@
     <div class="footer clearfix">
     <div class="row">
       <div class="large-8 small-11 columns small-centered large-centered">
-        
+          <div id="search" class="search-form">
+            <form action="/search" method="get">
+              <p>
+                <input type="text" id="search-query" name="q" placeholder="Search…" autocomplete="off">
+              </p>
+            </form>
+          </div>
+        <hr>
         <small style="padding-right:1em">Copyright &copy; 2014 Devin Halladay.</small>
         <small>
           <a href="/archives/">Archives</a>

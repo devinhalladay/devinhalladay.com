@@ -122,7 +122,18 @@ TEXT
   }
 
 p {
-  margin-bottom: 1.618em;
+  margin: auto auto 1.5em;
+
+  & + p {
+    text-indent: 1.5em; /* indent subsequent paragraphs */
+    margin-top: -1.5em; /* no top margin on subsequent paragraphs */
+  }
+
+  &.no-indent {
+    text-indent: 0;
+    margin-bottom: 1.618em;
+  }
+
   &.date {
     font-family: $sans;
     font-weight: 500;
@@ -131,6 +142,14 @@ p {
     color: #9aa4a8;
     margin-bottom: 2.25em;
     @include small-caps;
+  }
+
+  &.lead {
+    margin-bottom: 2em;
+    text-indent: 0;
+    + p {
+      text-indent: 0;
+    }
   }
 }
 
@@ -150,10 +169,11 @@ p {
 
 em, i { font-style: italic; }
 strong, b { font-weight: bold; }
-small { font-size: 70%; }
+small { font-size: 80%; }
 
 figcaption {
-  font-size: .75em;
+  font-size: 90%;
+  font-family: $sans;
   color: #9aa4a8;
 }
 

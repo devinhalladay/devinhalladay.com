@@ -35,7 +35,7 @@
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for devinhalladay.com" href="/atom.xml" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/assets/devin-30726ad2c5ced03ed92c80586b522aee.css">
+    <link rel="stylesheet" href="/assets/devin-5dea7c902453c0cca27bdb9b1f792bfd.css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
 
     
@@ -57,13 +57,14 @@
     })();
     </script>
     <!-- End AdPacks.com Ad Code -->
+    
     <div class="header">
       <div class="row">
         <div class="large-8 small-11 columns small-centered large-centered">
           <nav class="nav-collapse">
             <ul id="menu-main-nav" class="menu">
               <li><a href="/" title="Home">Devin Halladay</a></li>
-              <li><a href="/work" title="Selected Works">Work</a></li>
+              <li class="active"><a href="/work" title="Selected Works">Work</a></li>
               <li><a href="/about" title="About Me">About</a></li>
               <li><a href="/contact" title="Let's work together!">Contact</a></li>
             </ul>
@@ -116,7 +117,14 @@
     <div class="footer clearfix">
     <div class="row">
       <div class="large-8 small-11 columns small-centered large-centered">
-        
+          <div id="search" class="search-form">
+            <form action="/search" method="get">
+              <p>
+                <input type="text" id="search-query" name="q" placeholder="Search…" autocomplete="off">
+              </p>
+            </form>
+          </div>
+        <hr>
         <small style="padding-right:1em">Copyright &copy; 2014 Devin Halladay.</small>
         <small>
           <a href="/archives/">Archives</a>
