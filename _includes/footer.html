@@ -1,7 +1,6 @@
   <div class="footer clearfix">
     <div class="row">
       <div class="large-8 small-11 columns small-centered large-centered">
-        {% if paginator.next_page or paginator.previous_page %}
           <div id="search" class="search-form">
             <form action="/search" method="get">
               <p>
@@ -9,7 +8,7 @@
               </p>
             </form>
           </div>
-        {% endif %}
+        <hr>
         <small style="padding-right:1em">Copyright &copy; {{ site.time | date: "%Y" }} Devin Halladay.</small>
         <small>
           <a href="/archives/">Archives</a>

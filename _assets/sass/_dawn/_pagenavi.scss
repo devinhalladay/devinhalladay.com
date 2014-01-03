@@ -6,11 +6,12 @@ PAGE NAVIGATION
 .pagination {
   border-bottom: 1px solid #ecefef;
   text-align: center;
-  margin: 8% 0;
+  margin: 0 0 8% 0;
   ul {
     margin: 0;
     list-style-type: none;
     li {
+      font-family: $sans;
       display: inline-block;
       margin: 0;
       line-height: inherit;
