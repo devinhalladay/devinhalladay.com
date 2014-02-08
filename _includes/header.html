@@ -8,7 +8,7 @@
     Thanks!
     Devin Halladay
 -->
-<html class="wf-loading">
+<html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -39,11 +39,6 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
 
     {% if page.custom_css %}{{ page.custom_css | stylesheet }}{% endif %}
-
-    <!-- Typekit Code  -->
-    <style type="text/css">.cf-hidden { display: none; } .cf-invisible { visibility: hidden; }</style>
-    <script type="text/javascript" src="//use.typekit.net/ajq7xob.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
   <body class="{% if page.custom_css_class %}{{ page.custom_css_class }}{% endif %}">
     <!-- AdPacks.com Ad Code
@@ -63,7 +58,7 @@
         <div class="large-8 small-11 columns small-centered large-centered">
           <nav class="nav-collapse">
             <ul id="menu-main-nav" class="menu">
-              <li{% if currentURL == 'index.html' %} class="active"{% endif %}><a href="/" title="Home">Devin Halladay</a></li>
+              <li{% if currentURL == 'index.html' %} class="active"{% endif %}><a href="/" title="Home">Devin&nbsp;Halladay</a></li>
               <li{% if currentURL == 'work' %} class="active"{% endif %}><a href="/work" title="Selected Works">Work</a></li>
               <li{% if currentURL == 'about' %} class="active"{% endif %}><a href="/about" title="About Me">About</a></li>
               <li{% if currentURL == 'contact' %} class="active"{% endif %}><a href="/contact" title="Let's work together!">Contact</a></li>
