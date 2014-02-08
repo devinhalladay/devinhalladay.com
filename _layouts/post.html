@@ -1,42 +1,31 @@
 {% include header.html %}
 
   {% capture tweet_link %}https://twitter.com/intent/tweet?original_referer=http://devinhalladay.com{{ page.url | escape }}&text={{ page.tweet_text | escape }}&tw_p=tweetbutton&url=http://devinhalladay.com{{ page.url | escape }}{% endcapture %}
+
   {% capture fb_link %}http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://devinhalladay.com{{ page.url }}/&p[images][0]=https://twitter.com/api/users/profile_image/devinhalladay?size=original&p[title]={{ page.title }}&p[summary]={{ page.excerpt | strip_html }}{% endcapture %}
 
-    <div class="main-content">
-      <div class="row">
+  <div class="main-content">
+    <div class="row">
+      <div class="large-8 small-11 small-centered large-centered columns" id="content">
+        {% if page.custom_type == 'link' %}
+          <h1><a href="{{ page.link_url }}">{{ page.title }}</a></h1>
+          <p class="date">{{ page.date | date: "%d %B %G" }}&nbsp;&nbsp;<a href="{{ tweet_link }}" target="_blank"><i class="fa fa-twitter"></i>&nbsp;&nbsp;</a><a href="{{ fb_link }}" target="_blank"><i class="fa fa-facebook"></i>&nbsp;&nbsp;</a></p>
+          <article>{{ content }}</article>
 
-        <div class="large-8 small-11 small-centered large-centered columns" id="content">
-          <!--<div class="ad">
-            <div id="bsap_1292665" class="bsarocks bsap_7c031ea3b4fb26fdc3a11df00b48f064"></div>
-            <a href="http://adpacks.com" id="bsap_aplink">via Ad Packs</a>
-          </div>-->
-          {% if page.custom_type == 'link' %}
-            <h1><a href="{{ page.link_url }}">{{ page.title }}</a></h1>
-            <p class="date">{{ page.date | date: "%d %B %G" }}&nbsp;&nbsp;<a href="{{ tweet_link }}" target="_blank"><i class="fa fa-twitter"></i>&nbsp;&nbsp;</a><a href="{{ fb_link }}" target="_blank"><i class="fa fa-facebook"></i>&nbsp;&nbsp;</a></p>
+        {% elsif page.custom_type == 'quote' %}
+          <h1><a href="{{ page.link_url }}">{{ page.title }}</a></h1>
+          <p class="date">{{ page.date | date: "%d %B %G" }}&nbsp;&nbsp;<a href="{{ tweet_link }}" target="_blank"><i class="fa fa-twitter"></i>&nbsp;&nbsp;</a><a href="{{ fb_link }}" target="_blank"><i class="fa fa-facebook"></i>&nbsp;&nbsp;</a></p>
+          <article>{{ content }}</article>
 
-            <article>{{ content }}</article>
-
-          {% elsif page.custom_type == 'quote' %}
-
-            <h1><a href="{{ page.link_url }}">{{ page.title }}</a></h1>
-            <p class="date">{{ page.date | date: "%d %B %G" }}&nbsp;&nbsp;<a href="{{ tweet_link }}" target="_blank"><i class="fa fa-twitter"></i>&nbsp;&nbsp;</a><a href="{{ fb_link }}" target="_blank"><i class="fa fa-facebook"></i>&nbsp;&nbsp;</a></p>
-
-            <article>{{ content }}</article>
-
-          {% else %}
-            <h1>{{ page.title }}</h1>
-            <p class="date">{{ page.date | date: "%d %B %G" }}&nbsp;&nbsp;<a href="{{ tweet_link }}" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;<a href="{{ fb_link }}" target="_blank"><i class="fa fa-facebook"></i></a></p>
-            <!--<div class="kudos kudos--default" data-amount="0" data-url="devinhalladay.com{{ page.url }}"></div>-->
-
-            <article>{{ content }}</article>
-
-          {% endif %}
-
-        </div>
+        {% else %}
+          <h1>{{ page.title }}</h1>
+          <p class="date">{{ page.date | date: "%d %B %G" }}&nbsp;&nbsp;<a href="{{ tweet_link }}" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;<a href="{{ fb_link }}" target="_blank"><i class="fa fa-facebook"></i></a></p>
+          <article>{{ content }}</article>
+        {% endif %}
       </div>
     </div>
+  </div>
 
   {% include footer.html %}
-  </body>
+</body>
 </html>

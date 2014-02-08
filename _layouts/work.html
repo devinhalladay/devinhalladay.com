@@ -7,10 +7,13 @@ alias: [/projects]
 <hr>
 <p class="lead">I am currently <strong>available</strong> for freelance or full time work. For more recent work and a full portfolio, visit me on <a href="http://dribbble.com/devinhalladay">dribbble</a>.</p>
 <hr>
+
 <ul class="small-block-grid-1 large-block-grid-2">
   {% for project in page.projects %}
-
-      <li class="work-entry"><a href="/work/{{ project[0] }}"><img src="{{ project[1].image.url }}" title="{{ project[1].image.title }}" alt="{{ project[1].image.title }}"></a></li>
-
+    <li class="work-entry">
+      <a href="/work/{{ project[0] }}">
+        <img src="{{ project[1].image.url }}" title="{{ project[1].image.title }}" alt="{{ project[1].image.title }}">
+      </a>
+    </li>
   {% endfor %}
 </ul>
