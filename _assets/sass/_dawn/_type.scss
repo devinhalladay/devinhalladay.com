@@ -151,6 +151,14 @@ p {
       text-indent: 0;
     }
   }
+
+  &.page-description {
+    margin-bottom: 0;
+    font-family: $sans;
+    .lead {
+      margin-bottom: 0.4em;
+    }
+  }
 }
 
 .cite {
