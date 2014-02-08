@@ -2,6 +2,7 @@
 layout: page
 title: About
 exclude_from_search: true
+custom_css_class: about
 ---
 ![Devin Halladay](/uploads/2013/10/devin.jpg)
 
