@@ -1,6 +1,6 @@
 name: Devin Halladay
 url: http://devinhalladay.com
-description: 'This is the personal journal of Devin Halladay &mdash; a designer, developer, and writer.'
+description: 'This is the personal journal and portfolio of Devin Halladay &mdash; a designer, developer, and writer.'
 markdown: kramdown
 redcarpet:
   extensions: [footnotes]
