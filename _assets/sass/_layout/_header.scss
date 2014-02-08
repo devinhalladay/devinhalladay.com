@@ -19,12 +19,17 @@ nav {
     &:last-child {
       margin-right: 0;
     }
+    &:first-child {
+      a {
+        letter-spacing: 2px;
+      }
+    }
     a {
-      font-family: $sans;
+      font-family: $sans-sc;
       font-size: 1em;
       font-weight: 500;
       line-height: 1em;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
       color: #444;
       text-decoration: none;
       &:hover {

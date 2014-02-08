@@ -1,4 +1,4 @@
-.wf-loading * { opacity: 0; }
+/* .wf-loading * { opacity: 0; }
 .wf-loading {
   background: url('/uploads/2013/10/ajax-loader.gif') no-repeat center center;
   height: 100%;
@@ -56,11 +56,11 @@
   0% { display: none; opacity: 0; }
   1% { display: block; }
   100%{ opacity: 1; }
-}
+} */
 
 body {
   font-family: $serif;
-  font-size: 100%;
+  font-size: 106.3%;
   line-height: 1.618em;
   color: #111;
   -webkit-font-smoothing: antialiased;
@@ -111,7 +111,7 @@ h3 small { font-size: 80%; }
 TEXT
 ------------------------------------------- */
 .lead {
-    font-size: 27px;
+    font-size: 118.8%;
     line-height: 1.5em;
     margin-bottom: 1.05em;
     @media screen and (max-width: 768px) {
@@ -135,11 +135,11 @@ p {
   }
 
   &.date {
-    font-family: $sans;
+    font-family: $sans-sc;
     font-weight: 500;
-    font-size: 0.9em;
-    letter-spacing: 2px;
-    color: #9aa4a8;
+    font-size: 1em;
+    letter-spacing: 1px;
+    color: #8D8D8D;
     margin-bottom: 2.25em;
     @include small-caps;
   }
