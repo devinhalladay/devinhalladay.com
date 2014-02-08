@@ -46,7 +46,7 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
   <body class="{% if page.custom_css_class %}{{ page.custom_css_class }}{% endif %}">
-    <!-- AdPacks.com Ad Code -->
+    <!-- AdPacks.com Ad Code
     <script type="text/javascript">
     (function(){
       var bsa = document.createElement('script');
@@ -56,7 +56,7 @@
       (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
     })();
     </script>
-    <!-- End AdPacks.com Ad Code -->
+    End AdPacks.com Ad Code -->
     {% capture currentURL %}{{ page.url | replace: '/', ' ' | truncatewords: 1 | remove: '...' | remove: ' ' }}{% endcapture %}
     <div class="header">
       <div class="row">
