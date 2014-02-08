@@ -94,7 +94,7 @@ h2 { font-size: 1.675em; }
 h3 { font-size: 1.324em; }
 h4 {
   font-size: 1.3em;
-  @include small-caps;
+  font-family: $sans-sc;
 }
 h5 { font-size: 0.818em; }
 
@@ -190,7 +190,7 @@ ul {
 ol {
   list-style: decimal outside none;
   margin-bottom: 1.618em;
-  margin-left: 2.5em;
+//  margin-left: 2.5em;
 }
 
 /*
@@ -217,9 +217,11 @@ blockquote {
     p {
       color: #111;
       margin: 0 -80px 2em;
+      font-family: "Mercury SSm A","Mercury SSm B",Georgia,serif;
       line-height: 1.5;
       text-align: center;
-      font-size: 26px;
+      font-weight: 600;
+      font-size: 24px;
       padding: 0;
 
       @media screen and (max-width: 768px) {
