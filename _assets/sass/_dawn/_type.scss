@@ -319,20 +319,3 @@ sup {
     margin-bottom: 20px;
   }
 }
-
-/*
-
-ICON FONT
-------------------------------------------- */
-@include embed-font("Icomoon", "icon-font/icomoon");
-
-%icon-font {
-  font-family: "Icomoon";
-}
-
-[data-icon]:before {
-  content: attr(data-icon);
-  @extend %icon-font;
-  speak: none;
-  vertical-align: top;
-}
