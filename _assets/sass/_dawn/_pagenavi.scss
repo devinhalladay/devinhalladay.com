@@ -4,7 +4,7 @@ PAGE NAVIGATION
 ------------------------------------------- */
 
 .pagination {
-  border-bottom: 1px solid #ecefef;
+  border-bottom: 1px solid $dark-grey;
   text-align: center;
   margin: 0 0 8% 0;
   ul {
@@ -19,7 +19,7 @@ PAGE NAVIGATION
     }
   }
   a {
-    background: $blue;
+    background: $main-text-color;
     border: none !important;
     display: inline-block;
     padding: 5px 14px;
@@ -30,18 +30,18 @@ PAGE NAVIGATION
     text-decoration: none !important;
     @include border-radius (4px);
     &:hover {
-      background: lighten($blue, 10%);
+      background: $accent-color;
       color: white;
     }
     &:active {
-      box-shadow: inset 2px 2px 0 rgba(black, .2);
+      box-shadow: inset 2px 2px 0 $heading-text-color;
     }
   }
 }
 
 .disabled {
-  background: $blue;
-  color: lighten($blue, 40%);
+  background: $heading-text-color;
+  color: #fff;
   padding: 5px 14px !important;
   margin: 0 5px;
   @include border-radius (4px);
