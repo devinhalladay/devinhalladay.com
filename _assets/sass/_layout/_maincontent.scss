@@ -19,7 +19,7 @@ MAIN CONTENT
 }
 
 .entry {
-  border-bottom: 1px solid #ecefef;
+  border-bottom: 1px solid darken($light-grey, 10%);
   padding: 0 0 1em;
   margin: 0 0 2em;
   &.quote {
@@ -32,14 +32,14 @@ MAIN CONTENT
       padding-bottom: 0;
       p {
         font-weight: bold;
-        color: #111;
+        color: $main-text-color;
       }
     }
   }
 }
 
 .pubdate {
-  color: #989898;
+  color: $secondary-text-color;
   margin-left: 12px;
 }
 

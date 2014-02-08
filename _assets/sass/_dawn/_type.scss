@@ -2,7 +2,7 @@ body {
   font-family: $serif;
   font-size: 106.3%;
   line-height: 1.618em;
-  color: #111;
+  color: $main-text-color;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   @include ligatures_kerning;
@@ -19,7 +19,7 @@ HEADINGS
 h1, h2, h3, h4, h5 {
   font-family: $sans;
   font-weight: 800;
-  color: #2b292b;
+  color: $heading-text-color;
   line-height: 1.2em;
   margin: 0.3em 0 0.5em 0;
 }
@@ -79,7 +79,7 @@ p {
     font-weight: 500;
     font-size: 1em;
     letter-spacing: 1px;
-    color: #8D8D8D;
+    color: $secondary-text-color;
     margin-bottom: 2.25em;
     @include small-caps;
   }
@@ -122,7 +122,7 @@ small { font-size: 80%; }
 figcaption {
   font-size: 90%;
   font-family: $sans;
-  color: #9aa4a8;
+  color: $secondary-text-color;
 }
 
 .serif-sc {
@@ -159,12 +159,12 @@ BLOCKQUOTES
 ------------------------------------------- */
 blockquote {
   padding: 0;
-  border-left: 5px solid $blue;
+  border-left: 5px solid $heading-text-color;
   padding-left: 20px;
   margin-bottom: 1.4em;
   p {
     margin-bottom: 0;
-    color: #111;
+    color: $main-text-color;
     + p {
       text-indent: 2em;
     }
@@ -175,7 +175,7 @@ blockquote {
     padding-left: 0;
     margin-bottom: 1.5em;
     p {
-      color: #111;
+      color: $heading-text-color;
       margin: 2em -80px 2em;
       line-height: 1.5;
       text-align: center;
@@ -207,7 +207,7 @@ aside {
   width: 160px;
 
   @media screen and (max-width: 1052px) {
-    color: #999;
+    color: $secondary-text-color;
     display: block;
     font-style: italic;
     padding: 0;
@@ -226,7 +226,7 @@ aside {
 HR
 ------------------------------------------- */
 hr {
-  background: #DDD;
+  background: $dark-grey;
   border: none;
   -moz-box-shadow: 0 1px 0 #FFF;
   -webkit-box-shadow: 0 1px 0 #FFF;
@@ -235,7 +235,7 @@ hr {
   &.short {
     background: transparent;
     height: auto;
-    color: #ddd;
+    color: $dark-grey;
     &:after {
       content: "* * *";
       font-size: 1.75rem;
@@ -257,29 +257,31 @@ hr {
 LINKS
 ------------------------------------------- */
 a {
-  color: #444;
+  color: $main-text-color;
   text-decoration: underline;
+  -webkit-transition: .2s;
+  transition: .2s;
   a:hover, a:focus {
-    color: $blue;
+    color: $accent-color;
   }
   &.more {
     font-style: normal;
-    color: $blue;
+    color: $main-text-color;
   }
   &.post-title {
     text-decoration: none;
-    color: #111;
+    color: $heading-text-color;
     &.link-title {
       text-decoration: underline;
     }
     &:hover {
-      color: $blue;
+      color: $accent-color;
     }
   }
 }
 
 a:hover, a:focus {
-color: $blue;
+color: $accent-color;
 }
 
 /*
@@ -298,7 +300,7 @@ sup {
 
 .footnotes {
   margin: 40px 0 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid $dark-grey;
   p {
     margin-bottom: 0.8em;
   }
@@ -311,7 +313,7 @@ sup {
     }
   }
   &:before {
-    background: #ddd;
+    background: $dark-grey;
     content: " ";
     display: block;
     height: 3px;

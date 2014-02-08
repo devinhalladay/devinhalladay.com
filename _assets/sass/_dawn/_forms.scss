@@ -15,7 +15,7 @@ ul.parsley-error-list {
   font-family: $sans;
 
   input:hover, textarea:hover {
-    border-color: #bbb;
+    border-color: $secondary-text-color;
   }
 
   input, button, textarea, .button {
@@ -24,8 +24,8 @@ ul.parsley-error-list {
     margin: 0 0 15px 0;
     padding: 10px;
     line-height: 25px;
-    color: #212121;
-    border: 2px solid #ccc;
+    color: $main-text-color;
+    border: 2px solid $dark-grey;
     background: #fff;
     position: relative;
     display: block;
@@ -46,7 +46,7 @@ ul.parsley-error-list {
   }
 
   input:focus, textarea:focus {
-    border-color: $blue;
+    border-color: $secondary-text-color;
     -webkit-box-shadow: none;
     box-shadow: none;
     outline: none;
@@ -61,7 +61,7 @@ ul.parsley-error-list {
   line-height: 47px;
   text-transform: uppercase;
   color: #fff;
-  background-color: $blue;
+  background-color: $secondary-text-color;
   border: none !important;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -76,12 +76,12 @@ ul.parsley-error-list {
   -o-transition: background-color .15s ease-out, color .15s ease-out;
   transition: background-color .15s ease-out, color .15s ease-out;
   &:hover {
-    color: darken(#fff, 10%);
-    background-color: darken($blue, 10%);
+    color: $light-grey;
+    background-color: $main-text-color;
   }
   &:active {
-    color: darken(#fff, 20%);
-    background-color: darken($blue, 20%);
+    color: $dark-grey;
+    background-color: $heading-text-color;
   }
 }
 
@@ -96,6 +96,6 @@ ul.parsley-error-list {
   -moz-transition: background-color 300ms ease-out;
   transition: background-color 300ms ease-out;
   border: none;
-  background-color: $blue;
+  background-color: $secondary-text-color;
   margin-bottom: 0;
 }
