@@ -5,10 +5,10 @@ module Jekyll
     @class = nil
     @resrc = nil
 
-    IMAGE_URL_WITH_CLASS_AND_CAPTION = /(\w+)(\s+)((http?:\/\/|\/)(\S+))(\s+)"(.*?)"/i
-    IMAGE_URL_WITH_CAPTION = /((http?:\/\/|\/)(\S+))(\s+)"(.*?)"/i
-    IMAGE_URL_WITH_CLASS = /(\w+)(\s+)((http?:\/\/|\/)(\S+))/i
-    IMAGE_URL = /((http?:\/\/|\/)(\S+))/i
+    IMAGE_URL_WITH_CLASS_AND_CAPTION = /(\w+)(\s+)((https?:\/\/|\/)(\S+))(\s+)"(.*?)"/i
+    IMAGE_URL_WITH_CAPTION = /((https?:\/\/|\/)(\S+))(\s+)"(.*?)"/i
+    IMAGE_URL_WITH_CLASS = /(\w+)(\s+)((https?:\/\/|\/)(\S+))/i
+    IMAGE_URL = /((https?:\/\/|\/)(\S+))/i
 
     def initialize(tag_name, markup, tokens)
       super
