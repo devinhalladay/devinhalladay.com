@@ -9,7 +9,7 @@ layout: default
       {% if tag == page.tag %}
         <h3>
           <a href="{{ post.url }}">{{ post.title | truncate:55 }}</a>
-          <small class="pubdate"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %e, %Y" }}</time></small>
+          <small class="pubdate"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | pretty }}</time></small>
         </h3>
       {% endif %}
     {% endfor %}

@@ -137,6 +137,12 @@ figcaption {
   letter-spacing: .05em;
 }
 
+.caps, %caps {
+  font-family: $serif-sc;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
 /*
 
 LISTS

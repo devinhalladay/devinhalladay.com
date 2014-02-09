@@ -10,11 +10,11 @@ tags: ["love", "design", "craft", "care", "handcrafted", "simplicity", "honest d
 ---
 <p class="lead">I love design. Its uncanny ability to make any person feel a wide range of emotions is absolutely fascinating. As designers, we hold the power of emotion in our hands — we can use color theory to evoke emotions, whitespace to draw attention, and so much more. That fact makes it clear that we need to pay attention to every pixel and give an equal amount of care to every single detail in what we are designing, in order to honestly and efficiently harness emotion. We need to design with <i>love</i>.</p>
 
-Everything around us is designed[^1] — from the seat you're sitting on to the sheets of paper sitting in your printer. That sheet of paper, as simple as it may seem, was meticulously designed by someone just like me — someone just like you. The thickness of the paper was a design choice, allowing vendors to fit more in a pack and cutting the cost of production. The white color of the paper was a design choice — it is practical, and also conveys great emotion: that of having a clean slate. Paper has been designed and redesigned time after time since about the year <span class="smallcaps">105 AD</span> It was designed with love and care, with the single purpose of giving your content, be it art, text, or anything else, a place to *shine*.
+Everything around us is designed—from the seat you're sitting on to the sheets of paper sitting in your printer. That sheet of paper, as simple as it may seem, was meticulously designed by someone just like me — someone just like you. The thickness of the paper was a design choice, allowing vendors to fit more in a pack and cutting the cost of production. The white color of the paper was a design choice — it is practical, and also conveys great emotion: that of having a clean slate. Paper has been designed and redesigned time after time since about the year <span class="smallcaps">105 AD</span> It was designed with love and care, with the single purpose of giving your content, be it art, text, or anything else, a place to *shine*.
 
 <blockquote class="pullquote"><p>Paper was designed with love and care, with the single purpose of giving your content, be it art, text, or anything else, a place to <i>shine</i>.</p></blockquote>
 
-We need to design everything the way paper was designed. We need to value simplicity, typography, and color. We need to take color, shape, texture, and rhythm into careful consideration. We need to design honestly, transparently[^2][^3], and with generous amounts of love and care.
+We need to design everything the way paper was designed. We need to value simplicity, typography, and color. We need to take color, shape, texture, and rhythm into careful consideration. We need to design honestly, transparently, and with generous amounts of love and care.
 
 <blockquote class="pullquote"><p>We need to design honestly, transparently, and with generous amounts of love and care.</p></blockquote>
 
@@ -30,7 +30,7 @@ Great design can be understood by anyone, regardless of what language they speak
 
 <blockquote class="pullquote"><p>Take a step back, look at the problem, and find a solution that will fit everyone's needs.</p></blockquote>
 
->Universal design represents or results in products and environments that are usable by all people, to the greatest extent possible, without the need for adaptation or specialized design.[^4]
+>Universal design represents or results in products and environments that are usable by all people, to the greatest extent possible, without the need for adaptation or specialized design.
 
 ### 3. Enlightened
 Great design is well-researched and rational. Let's regress to the design of paper for a minute. Paper was designed to fit a simple need — recording events and history. Prior to paper and its cousin papyrus, man used chisel and stone to record history. While this was more permanent, it was found to be impractical and non-universal because it could not be erased or adapted. Thus, paper was born. Research then went into every design detail of paper, from the consistency of the pulp to the exact size of a sheet.
@@ -51,12 +51,3 @@ Everything around us is designed. The thought, care, and love that we have for t
 </blockquote>
 
 Put your whole heart and soul into designing an honest design — a design that is **ambitious**, **universal**, **enlightened**, and **adaptable**.
-
-
-[^1]: <a href="http://twitter.com/_dte">Dan Eden</a> put this perfectly on the homepage of <a href="http://daneden.me/">his website</a>.
-
-[^2]: <a href="http://twitter.com/ttimsmith">Tim Smith's</a> <i><a href="http://theboldreport.net">The Bold Report</a></i> did an excellent example of this, open-sourcing its code and design.
-
-[^3]: Tim Smith is also working on a <i>very</i> cool project appropriately named Open Source Design. <a href="http://opensourcedesign.is">Check it out.</a>
-
-[^4]: Quoted in <a href="http://www.publicinterestdesign.org/glossary/">the Public Interest Design Glossary</a>.
