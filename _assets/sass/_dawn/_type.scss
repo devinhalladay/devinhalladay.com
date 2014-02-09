@@ -102,6 +102,11 @@ p {
   }
 }
 
+p, figure, blockquote, table, form, ul, ol {
+  display: block;
+  margin-bottom: 1.64706rem;
+}
+
 .cite {
   font-size: 0.618em;
   font-style: italic;
