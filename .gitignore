@@ -1,2 +1,11 @@
-.sass-cache/
+# Ignore caches and logs
+.sass-cache
+_asset_bundler_cache/
+.bundle/
+Gemfile.lock
+
+# Ignore misc. files and folders
 _v1/
+
+# Ignore node dependencies. Ensure you run `node install`!
+node_modules/

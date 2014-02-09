@@ -12,7 +12,7 @@ custom_css_class: home blog
 
     <div class="entry quote">
       <h4><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h4>
-      <p class="date">{{ post.date | date: "%d %B %G" }}&nbsp;<a href="{{ tweet_link }}" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;<a href="{{ fb_link }}" target="_blank"><i class="fa fa-facebook"></i></a></p>
+      <p class="date">{{ post.date | pretty }}&nbsp;<a href="{{ tweet_link }}" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;<a href="{{ fb_link }}" target="_blank"><i class="fa fa-facebook"></i></a></p>
       {{ post.content }}
     </div>
 
@@ -20,7 +20,7 @@ custom_css_class: home blog
 
     <div class="entry music">
       <h4><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h4>
-      <p class="date">{{ post.date | date: "%d %B %G" }}&nbsp;<a href="{{ tweet_link }}" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;<a href="{{ fb_link }}" target="_blank"><i class="fa fa-facebook"></i></a></p>
+      <p class="date">{{ post.date | pretty }}&nbsp;<a href="{{ tweet_link }}" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;<a href="{{ fb_link }}" target="_blank"><i class="fa fa-facebook"></i></a></p>
       {{ post.music-embed }}
       <p>{{ post.content }}</p>
     </div>
@@ -29,7 +29,7 @@ custom_css_class: home blog
 
     <div class="entry post">
       <h2><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h2>
-      <p class="date">{{ post.date | date: "%d %B %G" }}&nbsp;<a href="{{ tweet_link }}" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;<a href="{{ fb_link }}" target="_blank"><i class="fa fa-facebook"></i></a></p>
+      <p class="date">{{ post.date | pretty }}&nbsp;<a href="{{ tweet_link }}" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;<a href="{{ fb_link }}" target="_blank"><i class="fa fa-facebook"></i></a></p>
       <p>{{ post.excerpt | strip_newlines | strip_html | truncatewords: 60 | smartypants }} <a class="more" href="{{ post.url }}">read more</a></p>
     </div>
 
@@ -37,7 +37,7 @@ custom_css_class: home blog
 
     <div class="entry link">
       <h4><a href="{{ post.link_url }}" class="post-title link-title">{{ post.title }}</a><a class="post-title" href="{{ post.url }}"><i class="ss-icon">link</i></a></h4>
-      <p class="date">{{ post.date | date: "%d %B %G" }}&nbsp;<a href="{{ tweet_link }}" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;<a href="{{ fb_link }}" target="_blank"><i class="fa fa-facebook"></i></a></p>
+      <p class="date">{{ post.date | pretty }}&nbsp;<a href="{{ tweet_link }}" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;<a href="{{ fb_link }}" target="_blank"><i class="fa fa-facebook"></i></a></p>
       {{ post.content }}
     </div>
   {% endif %}

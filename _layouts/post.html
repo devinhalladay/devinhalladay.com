@@ -9,17 +9,17 @@
       <div class="large-8 small-11 small-centered large-centered columns" id="content">
         {% if page.custom_type == 'link' %}
           <h1><a href="{{ page.link_url }}">{{ page.title }}</a></h1>
-          <p class="date">{{ page.date | date: "%d %B %G" }}&nbsp;&nbsp;<a href="{{ tweet_link }}" target="_blank"><i class="fa fa-twitter"></i>&nbsp;&nbsp;</a><a href="{{ fb_link }}" target="_blank"><i class="fa fa-facebook"></i>&nbsp;&nbsp;</a></p>
+          <p class="date">{{ page.date | pretty }}&nbsp;&nbsp;<a href="{{ tweet_link }}" target="_blank"><i class="fa fa-twitter"></i>&nbsp;&nbsp;</a><a href="{{ fb_link }}" target="_blank"><i class="fa fa-facebook"></i>&nbsp;&nbsp;</a></p>
           <article>{{ content }}</article>
 
         {% elsif page.custom_type == 'quote' %}
           <h1><a href="{{ page.link_url }}">{{ page.title }}</a></h1>
-          <p class="date">{{ page.date | date: "%d %B %G" }}&nbsp;&nbsp;<a href="{{ tweet_link }}" target="_blank"><i class="fa fa-twitter"></i>&nbsp;&nbsp;</a><a href="{{ fb_link }}" target="_blank"><i class="fa fa-facebook"></i>&nbsp;&nbsp;</a></p>
+          <p class="date">{{ page.date | pretty }}&nbsp;&nbsp;<a href="{{ tweet_link }}" target="_blank"><i class="fa fa-twitter"></i>&nbsp;&nbsp;</a><a href="{{ fb_link }}" target="_blank"><i class="fa fa-facebook"></i>&nbsp;&nbsp;</a></p>
           <article>{{ content }}</article>
 
         {% else %}
           <h1>{{ page.title }}</h1>
-          <p class="date">{{ page.date | date: "%d %B %G" }}&nbsp;&nbsp;<a href="{{ tweet_link }}" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;<a href="{{ fb_link }}" target="_blank"><i class="fa fa-facebook"></i></a></p>
+          <p class="date">{{ page.date | pretty }}&nbsp;&nbsp;<a href="{{ tweet_link }}" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;<a href="{{ fb_link }}" target="_blank"><i class="fa fa-facebook"></i></a></p>
           <article>{{ content }}</article>
         {% endif %}
       </div>

@@ -1,22 +1,21 @@
 name: Devin Halladay
 url: http://devinhalladay.com
 description: 'This is the personal journal and portfolio of Devin Halladay &mdash; a designer, developer, and writer.'
-markdown: kramdown
-redcarpet:
-  extensions: [footnotes]
-pygments: true
-permalink: /journal/:title
-paginate: 6
-exclude: ['README.md', 'Rakefile', 'Gemfile', 'Gemfile.lock', 'work/posts/']
-include: ['.htaccess']
-lunr_excludes: ['atom.xml', 'sitemap.xml', 'work/']
+
 timezone: America/New_York
 port: 4200
-post:
-  extension: md
-page:
-  template: _page.txt
-  extension: md
+
+markdown: rdiscount
+rdiscount:
+  extensions:
+    - smart
+    - generate_toc
+
+permalink: /journal/:title
+paginate: 6
+
+exclude: ['README.md', 'Rakefile', 'Gemfile', 'Gemfile.lock']
+
 assets:
   js_compressor: uglifier
   css_compressor: sass
@@ -26,12 +25,3 @@ assets:
     - _assets/sass
     - _assets/img
   gzip: false
-authors:
-  devinhalladay:
-    display_name: Devin Halladay
-    email: devin@devinhalladay.com
-    web: http://devinhalladay.com/
-    twitter: devinhalladay
-    github: devinhalladay
-    dribbble: devinhalladay
-    bio: 'Designer & Raconteur.'
