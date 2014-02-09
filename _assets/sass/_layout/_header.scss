@@ -12,7 +12,6 @@ nav {
     display: block;
   }
   li {
-    @include small-caps;
     float: left;
     margin-right: 30px;
     display: block;
@@ -26,6 +25,7 @@ nav {
     }
     a {
       font-family: $sans-sc;
+      text-transform: lowercase;
       font-size: 1em;
       font-weight: 500;
       line-height: 1em;
