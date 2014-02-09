@@ -20,12 +20,12 @@ We need to design everything the way paper was designed. We need to value simpli
 
 With that being said, I'm going to go ahead and present to you what I think are important principles of honest, transparent design. Following these principles won't guarantee a beautiful, emotional design, but it will certainly help you gain a better insight into any design problem you might encounter.
 
-### 1. Ambitious
+## 1. Ambitious
 Great design is bold, rule-breaking, and ambitious. If we don't break out of our niches or go against design trends, how will we ever innovate? Don't be afraid of failure, either. Be fearless. Design something that nobody has ever thought of before — that's the only way you can break the cycle of trend and become an innovator.
 
 Ambitious design is also honest. It allows you to forget any predetermined notions about what you're designing or who you're designing for, thus allowing you to focus your mind on the design solution rather than just on the design problem.
 
-### 2. Universal
+## 2. Universal
 Great design can be understood by anyone, regardless of what language they speak or what ideals they might have. Don't focus your energy creating a design that will be understood by one section of your audience. Take a step back, look at the problem, and find a solution that will fit everyone's needs.
 
 <blockquote class="pullquote"><p>Take a step back, look at the problem, and find a solution that will fit everyone's needs.</p></blockquote>
@@ -37,7 +37,7 @@ Great design is well-researched and rational. Let's regress to the design of pap
 
 Well-researched, rational, enlightened design gives the end-user or viewer the benefit of seeing and using a product that was carefully crafted to fit their exact needs.
 
-### 4. Adaptable
+## 4. Adaptable
 Great design is adaptable. It can be transformed and tweaked to fit the needs of people at present. Again, let's regress to the design of paper. As I stated in point <span class="smallcaps">No. 3</span>, paper came out of a need for something better. It evolved from ideas that are as adaptable as they are timeless: writing and art.
 
 It all began with cave drawings. Originally there was no language, and thus no need for writing. Cavemen merely needed to sketch things that they saw. Then came early language, and with it came carvings on stone slabs. Next came papyrus, as civilizations began to develop and languages expanded. And it slowly evolved into what we know as paper today as our needs and conditions changed.

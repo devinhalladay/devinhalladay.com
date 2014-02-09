@@ -17,8 +17,7 @@ body {
 HEADINGS
 ------------------------------------------- */
 h1, h2, h3, h4, h5 {
-  font-family: $sans;
-  font-weight: 800;
+  font-family: inherit;
   color: $heading-text-color;
   line-height: 1.2em;
   margin: 0.3em 0 0.5em 0;
@@ -31,7 +30,12 @@ h1 {
 }
 
 h2 { font-size: 1.675em; }
-h3 { font-size: 1.324em; }
+h3 {
+  font-size: 1.324em;
+  font-family: "Mercury SSm SC A","Mercury SSm SC B","Mercury SSm A","Mercury SSm B",Georgia,serif;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
 h4 {
   font-size: 1.3em;
   font-family: $sans-sc;
@@ -78,14 +82,6 @@ p {
     letter-spacing: 1px;
     color: $secondary-text-color;
     margin-bottom: 2.25em;
-  }
-
-  &.lead {
-    margin-bottom: 2em;
-    text-indent: 0;
-    + p {
-      text-indent: 0;
-    }
   }
 
   &.page-description {

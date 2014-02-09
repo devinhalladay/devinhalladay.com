@@ -17,12 +17,12 @@ I was dumbfounded. After hours of pondering the implications of Tobias’s state
 
 ----
 
-#### What is a “web stylist”?
+## What is a “web stylist”?
 I am going to give Tobias the credit of coining the term “web stylist,” but I will take credit for defining it (aren't I so humble?).
 
 A web stylist is someone who simply *styles* the web. He or she doesn't worry about content or hierarchy; form or function. All a web stylist *really* worries about is making the final product [fluffy](http://www.youtube.com/watch?v=D4i7vS_UO4Q) and pretty. Websites designed by a web stylist often lack strong usability, a cohesive organization pattern, and other essential design patterns.
 
-#### What is a web designer?
+## What is a web designer?
 A web designer is a “web stylist” that gives [function to form](http://www.smashingmagazine.com/2010/03/23/does-form-follow-function/). A web designer’s workflow begins with an idea and ends with a beautiful **and*** functional product. Content, usability, hierarchy, and all the other “[functional design](http://www.smashingmagazine.com/2008/08/05/7-essential-guidelines-for-functional-design/)” buzzwords are the some of the first and last things that enter a web designer’s mind while working on a project.
 
 In other words, a web designer gives beauty *function and [soul](http://devinhalladay.com/blog/designer-of-souls/)*.

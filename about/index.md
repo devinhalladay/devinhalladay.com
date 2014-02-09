@@ -6,13 +6,13 @@ custom_css_class: about
 ---
 ![Devin Halladay](/uploads/2013/10/devin.jpg)
 
-<p class="no-indent" style="margin-bottom: 3em;">Welcome! My name is Devin Halladay. I'm a web designer, graphic designer, and writer.</p>
+<p>Welcome! My name is Devin Halladay. I'm a web designer, graphic designer, and writer.</p>
 
 <p class="lead"><strong>I craft beautiful and honest visual solutions. I sincerely care about the stories with which I work and I have an ambition towards the finest of execution.</strong></p>
 
-<p class="no-indent" style="margin-bottom: 3em;">I value craftsmanship, curation, and careful research. I try to make those characteristics present in <i>every</i> project I work on. Building beautiful products does not just mean making something visually appealing &mdash; it means taking every pixel into consideration and giving an equal amount of care to every minute detail.</p>
+<p>I value craftsmanship, curation, and careful research. I try to make those characteristics present in <i>every</i> project I work on. Building beautiful products does not just mean making something visually appealing &mdash; it means taking every pixel into consideration and giving an equal amount of care to every minute detail.</p>
 
-<p class="no-indent">Design is my passion.</p>
+<p>Design is my passion.</p>
 
 #### Elsewhere
 
