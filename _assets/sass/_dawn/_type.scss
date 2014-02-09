@@ -12,10 +12,7 @@ body {
   }
 }
 
-/*
-
-HEADINGS
-------------------------------------------- */
+/* HEADINGS */
 h1, h2, h3, h4, h5 {
   font-family: inherit;
   color: $heading-text-color;
@@ -27,69 +24,55 @@ h1 {
   font-size: 2em;
   line-height: 1.2em;
   margin: 0.3em 0 0.5em 0;
+  @media screen and (max-width: 768px) {
+    font-size: 2em;
+  }
 }
 
 h2 { font-size: 1.675em; }
+
 h3 {
   font-size: 1.324em;
   font-family: "Mercury SSm SC A","Mercury SSm SC B","Mercury SSm A","Mercury SSm B",Georgia,serif;
   text-transform: uppercase;
   letter-spacing: .05em;
 }
+
 h4 {
   font-size: 1.3em;
   font-family: $sans-sc;
   text-transform: lowercase;
 }
-h5 { font-size: 0.818em; }
 
-h3 small { font-size: 80%; }
-
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 2em;
-  }
-}
-
-/*
-
-TEXT
-------------------------------------------- */
-.lead {
-    font-size: 118.8%;
-    line-height: 1.5em;
-    margin-bottom: 1.05em;
-    @media screen and (max-width: 768px) {
-      font-size: 1em;
-      line-height: 1.618em;
-      margin-bottom: 1.618em;
-    }
-  }
-
+/* TEXT */
 p {
   margin: auto auto 1.5em;
-
-  &.no-indent {
-    text-indent: 0;
-    margin-bottom: 1.618em;
-  }
-
   &.date {
-    font-family: $sans-sc;
+    font-family: $serif-sc;
     text-transform: lowercase;
     font-weight: 500;
     font-size: 1em;
-    letter-spacing: 1px;
+    letter-spacing: .05px;
     color: $secondary-text-color;
     margin-bottom: 2.25em;
   }
-
   &.page-description {
     margin-bottom: 0;
     font-family: $sans;
     .lead {
       margin-bottom: 0.4em;
     }
+  }
+}
+
+.lead {
+  font-size: 118.8%;
+  line-height: 1.5em;
+  margin-bottom: 1.05em;
+  @media screen and (max-width: 768px) {
+    font-size: 1em;
+    line-height: 1.618em;
+    margin-bottom: 1.618em;
   }
 }
 
@@ -106,10 +89,6 @@ p, blockquote, table, form, ul, ol {
 
 .blog p.date {
   margin-bottom: 1.2em;
-}
-
-.smallcaps {
-  @include small-caps;
 }
 
 em, i { font-style: italic; }
@@ -140,10 +119,7 @@ figcaption {
   letter-spacing: .05em;
 }
 
-/*
-
-LISTS
-------------------------------------------- */
+/* LISTS */
 ul {
   list-style: disc outside none;
   margin-bottom: 1.618em;
@@ -153,17 +129,14 @@ ul {
 ol {
   list-style: decimal outside none;
   margin-bottom: 1.618em;
-//  margin-left: 2.5em;
 }
 
-/*
-
-BLOCKQUOTES
-------------------------------------------- */
+/* BLOCKQUOTES */
 blockquote {
   padding: 0;
-  border-left: 5px solid $heading-text-color;
-  padding-left: 20px;
+  border-left: 5px solid $accent-color;
+  padding-left: 1.5em;
+  margin-left: -1.5em;
   margin-bottom: 1.4em;
   p {
     margin-bottom: 0;
@@ -274,9 +247,6 @@ a {
   &.post-title {
     text-decoration: none;
     color: $heading-text-color;
-    &.link-title {
-      text-decoration: underline;
-    }
     &:hover {
       color: $accent-color;
     }
@@ -285,42 +255,4 @@ a {
 
 a:hover, a:focus {
   color: $accent-color;
-}
-
-/*
-
-FOOTNOTES
-------------------------------------------- */
-sup {
-  padding-left: 0.2em;
-  a {
-    border-bottom: none;
-    font-size: .9em;
-    font-weight: bold;
-    color: inherit;
-  }
-}
-
-.footnotes {
-  margin: 40px 0 0;
-  border-bottom: 1px solid $dark-grey;
-  p {
-    margin-bottom: 0.8em;
-  }
-  ol {
-    margin-left: 6%;
-    li {
-      font-size: .85em;
-      padding: 0;
-      margin: 0;
-    }
-  }
-  &:before {
-    background: $dark-grey;
-    content: " ";
-    display: block;
-    height: 3px;
-    width: 150px;
-    margin-bottom: 20px;
-  }
 }
