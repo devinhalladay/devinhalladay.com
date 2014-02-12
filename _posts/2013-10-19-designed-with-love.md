@@ -10,7 +10,7 @@ tags: ["love", "design", "craft", "care", "handcrafted", "simplicity", "honest d
 ---
 <p class="lead">I love design. Its uncanny ability to make any person feel a wide range of emotions is absolutely fascinating. As designers, we hold the power of emotion in our hands — we can use color theory to evoke emotions, whitespace to draw attention, and so much more. That fact makes it clear that we need to pay attention to every pixel and give an equal amount of care to every single detail in what we are designing, in order to honestly and efficiently harness emotion. We need to design with <i>love</i>.</p>
 
-Everything around us is designed—from the seat you're sitting on to the sheets of paper sitting in your printer. That sheet of paper, as simple as it may seem, was meticulously designed by someone just like me — someone just like you. The thickness of the paper was a design choice, allowing vendors to fit more in a pack and cutting the cost of production. The white color of the paper was a design choice — it is practical, and also conveys great emotion: that of having a clean slate. Paper has been designed and redesigned time after time since about the year <span class="smallcaps">105 AD</span> It was designed with love and care, with the single purpose of giving your content, be it art, text, or anything else, a place to *shine*.
+Everything around us is designed—from the seat you're sitting on to the sheets of paper sitting in your printer. That sheet of paper, as simple as it may seem, was meticulously designed by someone just like me — someone just like you. The thickness of the paper was a design choice, allowing vendors to fit more in a pack and cutting the cost of production. The white color of the paper was a design choice — it is practical, and also conveys great emotion: that of having a clean slate. Paper has been designed and redesigned time after time since about the year 105 A.D. It was designed with love and care, with the single purpose of giving your content, be it art, text, or anything else, a place to *shine*.
 
 <blockquote class="pullquote"><p>Paper was designed with love and care, with the single purpose of giving your content, be it art, text, or anything else, a place to <i>shine</i>.</p></blockquote>
 
@@ -32,13 +32,13 @@ Great design can be understood by anyone, regardless of what language they speak
 
 >Universal design represents or results in products and environments that are usable by all people, to the greatest extent possible, without the need for adaptation or specialized design.
 
-### 3. Enlightened
+## 3. Enlightened
 Great design is well-researched and rational. Let's regress to the design of paper for a minute. Paper was designed to fit a simple need — recording events and history. Prior to paper and its cousin papyrus, man used chisel and stone to record history. While this was more permanent, it was found to be impractical and non-universal because it could not be erased or adapted. Thus, paper was born. Research then went into every design detail of paper, from the consistency of the pulp to the exact size of a sheet.
 
 Well-researched, rational, enlightened design gives the end-user or viewer the benefit of seeing and using a product that was carefully crafted to fit their exact needs.
 
 ## 4. Adaptable
-Great design is adaptable. It can be transformed and tweaked to fit the needs of people at present. Again, let's regress to the design of paper. As I stated in point <span class="smallcaps">No. 3</span>, paper came out of a need for something better. It evolved from ideas that are as adaptable as they are timeless: writing and art.
+Great design is adaptable. It can be transformed and tweaked to fit the needs of people at present. Again, let's regress to the design of paper. As I stated in point No. 3, paper came out of a need for something better. It evolved from ideas that are as adaptable as they are timeless: writing and art.
 
 It all began with cave drawings. Originally there was no language, and thus no need for writing. Cavemen merely needed to sketch things that they saw. Then came early language, and with it came carvings on stone slabs. Next came papyrus, as civilizations began to develop and languages expanded. And it slowly evolved into what we know as paper today as our needs and conditions changed.
 
