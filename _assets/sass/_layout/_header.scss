@@ -13,10 +13,13 @@ nav {
   }
   li {
     float: left;
-    margin-right: 30px;
     display: block;
     &:last-child {
       margin-right: 0;
+    }
+    &:not(:first-child) {
+      float: right;
+      margin-left: 30px;
     }
     a {
       font-family: $serif-sc;
@@ -46,7 +49,7 @@ nav {
   }
 }
 
-.js .nav-collapse {
+/*.js .nav-collapse {
   clip: rect(0 0 0 0);
   max-height: 0;
   position: absolute;
@@ -76,19 +79,35 @@ nav {
   display: block;
   width: 30px;
   border-bottom: none;
-}
+}*/
 
 @media screen and (max-width: 768px) {
   nav li {
-    float: none;
     margin-right: none;
     a {
       font-size: 1em;
     }
+    &:not(:first-child) {
+      margin-left: 30px;
+      float: left;
+    }
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 485px) {
+  nav li {
+    &:first-child {
+      float: none;
+    }
+    &:not(:first-child) {
+      float: left;
+      margin-left: 0;
+      margin-right: 20px;
+    }
+  }
+}
+
+/*@media screen and (min-width: 768px) {
   .js .nav-collapse {
     position: relative;
     &.closed {
@@ -98,4 +117,4 @@ nav {
   .nav-toggle {
     display: none;
   }
-}
+}*/
