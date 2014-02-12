@@ -25,5 +25,3 @@ But I digress. Starting fresh without any files or programs has increased my pro
 **My hard work is gone**, but I have a totally clean slate to create better work. I have a fresh start.
 
 **And it feels *great*.**
-
-In addition to a new computer, I just launched the finished redesign of my website, which you are currently viewing. [What do you think?](http://twitter.com/devinhalladay) You can read a bit more about this site in my about page under the "Colophon" section, or you can wait a few days until I blog about its creation.

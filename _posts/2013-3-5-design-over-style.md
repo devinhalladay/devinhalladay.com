@@ -27,20 +27,6 @@ A web designer is a “web stylist” that gives [function to form](http://www.s
 
 In other words, a web designer gives beauty *function and [soul](http://devinhalladay.com/blog/designer-of-souls/)*.
 
-----
-
-Now that we have the definitions out of the way, let’s explore the implications of Tobias’s statement and some methods of solving the “web stylist” dilemma that seems rampant in the web today.
-
-Designers need to put *design* over *style*. What does that mean? It simply means that before a designer can make a project beautiful, he/she must first consider what I like to call “*ACHOO*” (pronounced *ah-choo*).
-
-**A**ccessibility - Easy use regardless of any physical disabilities.
-**C**ontent - Clear, concise text and easily identifiable images.
-**H**ierarchy - Easy to distinguish the important from the insignificant.
-**O**ptimization - Works in all major browsers and operating systems.
-**O**ne Minute Rule - Given one minute of viewing time, what will a user remember about the site?
-
-Only after successfully going through and passing the *ACHOO* can the designer move on to beautifying the project.
-
 Don’t merely *style* the web, give the web *function*. If every web designer put some more effort into recognizing the necessary function and fulfilling it before focusing on beauty, the web would be a much better place to browse; work; and, hopefully, play.
 
 ----
