@@ -93,7 +93,13 @@ p, blockquote, table, form, ul, ol {
 
 em, i { font-style: italic; }
 strong, b { font-weight: bold; }
-small { font-size: 80%; }
+
+small {
+  font-size: 14px;
+  h3 {
+    font-size: 17px;
+  }
+}
 
 figcaption {
   font-size: 90%;
@@ -202,29 +208,29 @@ aside {
 HR
 ------------------------------------------- */
 hr {
-  background: $dark-grey;
   border: none;
-  -moz-box-shadow: 0 1px 0 #FFF;
-  -webkit-box-shadow: 0 1px 0 #FFF;
-  box-shadow: 0px 1px 0 #FFF;
-  height: 1px;
-  &.short {
-    background: transparent;
-    height: auto;
-    color: $dark-grey;
-    &:after {
-      content: "* * *";
-      font-size: 1.75rem;
-      font-family: -webkit-body;
-      font-weight: 700;
-      line-height: .857142857;
-      letter-spacing: .2em;
-      color: rgba(0,0,0,0.3);
-      display: block;
-      text-align: center;
-      margin-top: 2rem;
-      margin-bottom: 1.75rem;
-    }
+  height: auto;
+  color: $dark-grey;
+  &:after {
+    content: "* * *";
+    font-size: 1.75rem;
+    font-family: -webkit-body;
+    font-weight: 700;
+    line-height: .857142857;
+    letter-spacing: .2em;
+    color: rgba(0,0,0,0.3);
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1.75rem;
+  }
+  &.long {
+    background: $dark-grey;
+    border: none;
+    -moz-box-shadow: 0 1px 0 #FFF;
+    -webkit-box-shadow: 0 1px 0 #FFF;
+    box-shadow: 0px 1px 0 #FFF;
+    height: 1px;
   }
 }
 

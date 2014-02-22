@@ -6,6 +6,7 @@ categories: articles
 custom_type: article
 date: "2013-3-5 9:06:00"
 tags: ["design", "style"]
+published: false
 alias: [/blog/design-over-style]
 tags: ["design", "style", "details", "function"]
 ---

@@ -4,9 +4,6 @@ PAGE NAVIGATION
 ------------------------------------------- */
 
 .pagination {
-  border-bottom: 1px solid $dark-grey;
-  text-align: center;
-  margin: 0 0 8% 0;
   ul {
     margin: 0;
     list-style-type: none;
@@ -19,34 +16,21 @@ PAGE NAVIGATION
     }
   }
   a {
-    background: $main-text-color;
-    border: none !important;
-    display: inline-block;
-    padding: 5px 14px;
-    margin: 0 5px;
     font-size: .85em;
     font-weight: bold;
-    color: white;
-    text-decoration: none !important;
-    @include border-radius (4px);
-    &:hover {
-      background: $accent-color;
-      color: white;
-    }
-    &:active {
-      box-shadow: inset 2px 2px 0 $heading-text-color;
-    }
   }
 }
 
 .disabled {
-  background: $heading-text-color;
-  color: #fff;
-  padding: 5px 14px !important;
-  margin: 0 5px;
-  @include border-radius (4px);
-  border: none !important;
-  display: inline-block;
+  color: $dark-grey;
   font-weight: bold;
-  font-size: .85em;
+  font-size: 0.9em;
+}
+
+.previous {
+  float: left;
+}
+
+.next {
+  float: right;
 }

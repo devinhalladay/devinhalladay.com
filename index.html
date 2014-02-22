@@ -46,8 +46,14 @@ custom_css_class: home blog
 
 <div class="pagination">
   <ul>
+    {% if paginator.next_page %}
+      <li class="previous"><a href="{{ paginator.next_page_path }}">Older</a></li>
+    {% else %}
+      <li class="previous disabled">Older</li>
+    {% endif %}
+
     {% if paginator.previous_page %}
-      <li class="previous">
+      <li class="next">
         {% if paginator.previous_page == 1 %}
           <a href="/">Newer</a>
         {% else %}
@@ -55,19 +61,7 @@ custom_css_class: home blog
         {% endif %}
       </li>
     {% else %}
-      <li class="previous disabled">
-        Newer
-      </li>
-    {% endif %}
-
-    {% if paginator.next_page %}
-      <li class="next">
-        <a href="{{ paginator.next_page_path }}">Older</a>
-      </li>
-    {% else %}
-      <li class="next disabled">
-        Older
-      </li>
+      <li class="next disabled">Newer</li>
     {% endif %}
     </ul>
 </div>
