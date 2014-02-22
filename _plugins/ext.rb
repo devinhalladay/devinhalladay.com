@@ -1,4 +1,4 @@
 require "jekyll-assets"
-require 'zurb-foundation'
-require 'compass'
 require 'jekyll-assets/compass'
+require 'compass'
+require 'zurb-foundation'

@@ -1,4 +1,11 @@
 .footer {
-  padding: 3.466em 0 2em;
-  font-family: $sans;
+  background-color: #F6F7F8;
+  padding: 2em 0 2em;
+  font-family: $serif;
+}
+
+@media screen and (max-width: 768px) {
+  [class*="column"]+[class*="column"]:last-child {
+    float: none;
+  }
 }
