@@ -210,19 +210,21 @@ HR
 hr {
   border: none;
   height: auto;
-  color: $dark-grey;
-  &:after {
-    content: "* * *";
-    font-size: 1.75rem;
-    font-family: -webkit-body;
-    font-weight: 700;
-    line-height: .857142857;
-    letter-spacing: .2em;
-    color: rgba(0,0,0,0.3);
-    display: block;
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 1.75rem;
+  &.short {
+    color: $dark-grey;
+    &:after {
+      content: "* * *";
+      font-size: 1.75rem;
+      font-family: -webkit-body;
+      font-weight: 700;
+      line-height: .857142857;
+      letter-spacing: .2em;
+      color: rgba(0,0,0,0.3);
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 1.75rem;
+    }
   }
   &.long {
     background: $dark-grey;
