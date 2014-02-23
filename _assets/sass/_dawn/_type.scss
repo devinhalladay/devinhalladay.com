@@ -98,6 +98,7 @@ small {
   font-size: 14px;
   h3 {
     font-size: 17px;
+    padding-bottom: 1em;
   }
 }
 
@@ -140,7 +141,7 @@ ol {
 /* BLOCKQUOTES */
 blockquote {
   padding: 0;
-  border-left: 5px solid $accent-color;
+  border-left: 3px solid $accent-color;
   padding-left: 1.5em;
   margin-left: -1.5em;
   margin-bottom: 1.4em;
