@@ -2,7 +2,7 @@
 layout: post
 title: A Manifesto for Quality Thought
 tweet_text: 'Brilliant article by @devinhalladay! "A Manifesto for Quality Thought":'
-categories: articles
+categories: journal
 custom_type: article
 date: 2014-02-07
 tags: ["thought", "learning", "thinking"]

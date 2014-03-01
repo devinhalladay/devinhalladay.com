@@ -2,7 +2,7 @@
 layout: post
 title: Napoleon Hill
 tweet_text: 'Cool post by @devinhalladay! A quote by Napoleon Hill:'
-categories: quotes
+categories: journal
 custom_type: quote
 tags: ["quote", "inspirational"]
 ---

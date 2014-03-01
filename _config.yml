@@ -11,10 +11,13 @@ rdiscount:
     - smart
     - generate_toc
 
-permalink: /journal/:title
+permalink: /:categories/:title
 paginate: 6
 
 exclude: ['README.md', 'Rakefile', 'Gemfile', 'Gemfile.lock']
+
+exclude_home:
+  categories: ['project']
 
 assets:
   js_compressor: uglifier

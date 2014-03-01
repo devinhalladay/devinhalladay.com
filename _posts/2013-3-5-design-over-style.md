@@ -2,7 +2,7 @@
 layout: post
 title: Design Over Style
 tweet_text: 'I thoroughly enjoyed this article by @devinhalladay! "Design Over Style":'
-categories: articles
+categories: journal
 custom_type: article
 date: "2013-3-5 9:06:00"
 tags: ["design", "style"]

@@ -2,7 +2,7 @@
 layout: post
 title: Designer of Souls
 tweet_text: 'I thoroughly enjoyed this article by @devinhalladay! "Designer of Souls":'
-categories: articles
+categories: journal
 custom_type: article
 date: "2013-2-3 5:05:00"
 tags: ["design", "process", "soul"]
