@@ -3,7 +3,8 @@ layout: project
 title: Print Design
 description: 'I <strong>love</strong> print design. I have a passion for typography and layouts that honor their content in a printed, tangible form. These are print designs created for clients and studio projects.'
 cover_image: '/uploads/2013/10/print-design.jpg'
-categories: project
+categories: work
+weight: 2
 ---
 <ul class="small-block-grid-1 large-block-grid-1">
   <li>
