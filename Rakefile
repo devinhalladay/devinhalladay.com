@@ -224,3 +224,28 @@ end
 desc "Notify various services about new content"
 task :ping => [:pingomatic, :sitemapgoogle, :sitemapbing] do
 end
+
+# NEW
+
+desc "Delete old website files to start fresh."
+task :clean do
+  puts "Starting fresh!"
+  system "rm -rf _site"
+end
+
+desc "Generate a copy of the most current site."
+task :compile do
+  system "jekyll build"
+end
+
+desc "Push to GitHub."
+# Usage: rake ship "Commit message."
+task :ship do
+  message = ARGV.last
+  task message.to_sym do ; end
+  system "add"
+  system "git commit -am '#{message}'"
+  system "git pull"
+  system "git push"
+  puts "Pushed latest changes to GitHub!"
+end

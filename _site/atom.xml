@@ -5,13 +5,198 @@
   <title>Devin Halladay</title>
   <link href="http://devinhalladay.com"/>
   <link type="application/atom+xml" rel="self" href="http://devinhalladay.com/atom.xml"/>
-  <updated>2014-02-22T22:06:16-05:00</updated>
+  <updated>2014-03-01T13:16:03-05:00</updated>
   <id>http://devinhalladay.com</id>
   <author>
     <name>Devin Halladay</name>
     <email>devin@devinhalladay.com</email>
   </author>
 
+  
+  <entry>
+    <id>http://devinhalladay.com/project/the-ministry-of-print</id>
+    <link type="text/html" rel="alternate" href="http://devinhalladay.com/project/the-ministry-of-print"/>
+    <title>The Ministry of Print</title>
+    <published>2014-03-01T00:00:00-05:00</published>
+    <updated>2014-03-01T00:00:00-05:00</updated>
+    <author>
+      <name>Devin Halladay</name>
+      <uri>http://devinhalladay.com/</uri>
+    </author>
+    <content type="html">&lt;ul class=&quot;small-block-grid-1 large-block-grid-1&quot;&gt;
+  &lt;li&gt;
+    &lt;figure&gt;
+      &lt;img src=&quot;/uploads/2014/02/modern_influence.jpg&quot; alt=&quot;Modern Influence poster&quot;&gt;
+    &lt;/figure&gt;
+
+    &lt;figcaption&gt;
+      &lt;strong&gt;Modern&amp;nbsp;Influence&lt;/strong&gt;
+    &lt;/figcaption&gt;
+  &lt;/li&gt;
+
+  &lt;li&gt;
+    &lt;figure&gt;
+      &lt;img src=&quot;/uploads/2014/02/synesthesia.jpg&quot; alt=&quot;Synesthesia poster&quot;&gt;
+    &lt;/figure&gt;
+
+    &lt;figcaption&gt;
+      &lt;strong&gt;Synesthesia&lt;/strong&gt;
+    &lt;/figcaption&gt;
+  &lt;/li&gt;
+
+  &lt;li&gt;
+    &lt;figure&gt;
+      &lt;img src=&quot;/uploads/2013/11/disruption.jpg&quot; alt=&quot;Disruption poster&quot;&gt;
+    &lt;/figure&gt;
+
+    &lt;figcaption&gt;
+      &lt;strong&gt;Disruption&lt;/strong&gt;: A poster I designed to explore the disruption of waves and the uniformity that such seemingly disruptive forces can create in their idenetically intricate&amp;nbsp;curves.
+    &lt;/figcaption&gt;
+  &lt;/li&gt;
+
+  &lt;li&gt;
+    &lt;figure&gt;
+      &lt;img src=&quot;/uploads/2013/10/perception.jpg&quot; alt=&quot;Perception poster&quot;&gt;
+    &lt;/figure&gt;
+
+    &lt;figcaption&gt;
+      &lt;strong&gt;Perception&lt;/strong&gt;: An exploration of the human experience. The way we as a society perceive things has become increasingly skewed along with the advancement of technology and our subsequent avoidal of reality. &lt;strong&gt;With this poster I tried to capture our skewed&amp;nbsp;perception.&lt;/strong&gt;
+    &lt;/figcaption&gt;
+  &lt;/li&gt;
+
+  &lt;li&gt;
+    &lt;figure&gt;
+      &lt;img src=&quot;/uploads/2013/10/wander_small.jpg&quot; alt=&quot;Those Who Wander poster&quot;&gt;
+    &lt;/figure&gt;
+
+    &lt;figcaption&gt;
+      &lt;strong&gt;Those Who Wander&lt;/strong&gt;: This poster began with me experimenting with blackletter typography. I had been reading Tolkien&amp;#8217;s &lt;i&gt;The Fellowship of the Ring&lt;/i&gt; at the time and this quote form the novel really resonated with me. I decided to take my passion for lettering to the next level and created this&amp;nbsp;poster.
+    &lt;/figcaption&gt;
+  &lt;/li&gt;
+
+  &lt;li&gt;
+    &lt;figure&gt;
+      &lt;img src=&quot;/uploads/2013/10/oceania.jpg&quot; alt=&quot;Oceania poster&quot;&gt;
+    &lt;/figure&gt;
+
+    &lt;figcaption&gt;
+      &lt;strong&gt;Oceania&lt;/strong&gt;: I didn&amp;#8217;t have any specific reasons for creating this one. &lt;strong&gt;I just had an idea and acted on&amp;nbsp;it.&lt;/strong&gt;
+    &lt;/figcaption&gt;
+  &lt;/li&gt;
+
+  &lt;li&gt;
+    &lt;figure&gt;
+      &lt;img src=&quot;/uploads/2013/10/royale_poster.jpg&quot; alt=&quot;Royale poster&quot;&gt;
+    &lt;/figure&gt;
+
+    &lt;figcaption&gt;
+      &lt;strong&gt;Royale&lt;/strong&gt;: The first poster I ever made. I created this one for a new boutique design agency called &lt;strong&gt;Royale&lt;/strong&gt; that I will be starting soon with a few good&amp;nbsp;friends.
+    &lt;/figcaption&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://devinhalladay.com/project/print-design</id>
+    <link type="text/html" rel="alternate" href="http://devinhalladay.com/project/print-design"/>
+    <title>Print Design</title>
+    <published>2014-03-01T00:00:00-05:00</published>
+    <updated>2014-03-01T00:00:00-05:00</updated>
+    <author>
+      <name>Devin Halladay</name>
+      <uri>http://devinhalladay.com/</uri>
+    </author>
+    <content type="html">&lt;ul class=&quot;small-block-grid-1 large-block-grid-1&quot;&gt;
+  &lt;li&gt;
+    &lt;figure&gt;
+      &lt;img src=&quot;/uploads/2013/10/article_page_spread.jpg&quot; alt=&quot;Article spreads for The Guild magazine&quot;&gt;
+      &lt;figcaption&gt;Article spread for &lt;strong&gt;&lt;a href=&quot;http://theguild.co&quot;&gt;The Guild&lt;/a&gt;&lt;/strong&gt;, a new design magazine that I have been working on in my spare time for the past half a year or so.&lt;/figcaption&gt;
+    &lt;/figure&gt;
+  &lt;/li&gt;
+
+  &lt;li&gt;
+    &lt;figure&gt;
+      &lt;img src=&quot;/uploads/2013/11/cards.jpg&quot; alt=&quot;Personal business cards&quot;&gt;
+      &lt;figcaption&gt;&lt;strong&gt;My personal business cards&lt;/strong&gt;. The goal here was to futher explore and hone my understanding of typography by using the classic Neue Haas Grotesk and a limited color palette.&lt;/figcaption&gt;
+    &lt;/figure&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://devinhalladay.com/project/logomark</id>
+    <link type="text/html" rel="alternate" href="http://devinhalladay.com/project/logomark"/>
+    <title>Logo + Marks</title>
+    <published>2014-03-01T00:00:00-05:00</published>
+    <updated>2014-03-01T00:00:00-05:00</updated>
+    <author>
+      <name>Devin Halladay</name>
+      <uri>http://devinhalladay.com/</uri>
+    </author>
+    <content type="html">&lt;p&gt;  &lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;large-12 small-11 small-centered large-centered columns&quot; id=&quot;content&quot;&gt;
+    &lt;ul class=&quot;small-block-grid-1 large-block-grid-3&quot;&gt;
+      &lt;li&gt;
+        &lt;figure&gt;&lt;img src=&quot;/uploads/2014/02/guild_shot.jpg&quot; alt=&quot;New logo for The Guild&quot;&gt;&lt;/figure&gt;
+      &lt;/li&gt;
+
+      &lt;li&gt;
+        &lt;figure&gt;&lt;img src=&quot;/uploads/2014/02/royal_courier.jpg&quot; alt=&quot;Royal Courier logo&quot;&gt;&lt;/figure&gt;
+      &lt;/li&gt;
+
+      &lt;li&gt;
+        &lt;figure&gt;&lt;img src=&quot;/uploads/2014/02/eagle.jpg&quot; alt=&quot;USA logo&quot;&gt;&lt;/figure&gt;
+      &lt;/li&gt;
+
+      &lt;li&gt;
+        &lt;figure&gt;&lt;img src=&quot;/uploads/2014/02/usa-logo.jpg&quot; alt=&quot;USA logo&quot;&gt;&lt;/figure&gt;
+      &lt;/li&gt;
+
+      &lt;li&gt;
+        &lt;figure&gt;&lt;img src=&quot;/uploads/2013/10/s-mark.jpg&quot; alt=&quot;S Lettermark&quot;&gt;&lt;/figure&gt;
+      &lt;/li&gt;
+
+      &lt;li&gt;
+        &lt;figure&gt;&lt;img src=&quot;/uploads/2013/10/crown-loading.gif&quot; alt=&quot;Loading Crown Logo&quot;&gt;&lt;/figure&gt;
+      &lt;/li&gt;
+
+      &lt;li&gt;
+        &lt;figure&gt;&lt;img src=&quot;/uploads/2013/10/bear-logo.jpg&quot; alt=&quot;Bear Logo&quot;&gt;&lt;/figure&gt;
+      &lt;/li&gt;
+
+      &lt;li&gt;
+        &lt;figure&gt;&lt;img src=&quot;/uploads/2013/10/oddball.jpg&quot; alt=&quot;Oddball Logo and Mark&quot;&gt;&lt;/figure&gt;
+      &lt;/li&gt;
+
+      &lt;li&gt;
+        &lt;figure&gt;&lt;img src=&quot;/uploads/2013/10/oddball-lettermark.gif&quot; alt=&quot;Oddball Lettermark&quot;&gt;&lt;/figure&gt;
+      &lt;/li&gt;
+
+      &lt;li&gt;
+        &lt;figure&gt;&lt;img src=&quot;/uploads/2013/10/devin-logo.gif&quot; alt=&quot;Personal Lettermark&quot;&gt;&lt;/figure&gt;
+      &lt;/li&gt;
+
+      &lt;li&gt;
+        &lt;figure&gt;&lt;img src=&quot;/uploads/2013/10/guild-logo.jpg&quot; alt=&quot;The Guild logo&quot;&gt;&lt;/figure&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;p&gt;&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;large-8 small-11 small-centered large-centered columns&quot; id=&quot;content&quot;&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <id>http://devinhalladay.com/journal/a-manifesto-for-quality-thought</id>

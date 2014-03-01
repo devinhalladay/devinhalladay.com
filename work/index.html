@@ -15,17 +15,16 @@ alias: [/projects]
 <div class="row">
   <div class="large-12 small-11 small-centered large-centered columns" id="content">
     <ul class="small-block-grid-1 large-block-grid-3">
-      <li class="work-entry">
-        <a href="/work/posters"><img src="/uploads/2013/11/posters.jpg" alt="Poster Design"></a>
-      </li>
+      {% for post in site.posts %}
+        {% if post.categories contains 'project' %}
+          {% capture tweet_link %}https://twitter.com/intent/tweet?original_referer=http://devinhalladay.com{{ post.url | escape }}&text={{ post.tweet_text | escape }}&tw_p=tweetbutton&url=http://devinhalladay.com{{ post.url | escape }}{% endcapture %}
+          {% capture fb_link %}http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://devinhalladay.com{{ post.url }}/&p[images][0]=https://twitter.com/api/users/profile_image/devinhalladay?size=original&p[title]={{ post.title }}&p[summary]={{ post.excerpt | strip_html }}{% endcapture %}
 
-      <li class="work-entry">
-        <a href="/work/print"><img src="/uploads/2013/11/print-design.jpg" alt="Print Design"></a>
-      </li>
-
-      <li class="work-entry">
-        <a href="/work/logomark"><img src="/uploads/2013/11/Logos + Marks.jpg" alt="Logo + Mark"></a>
-      </li>
+          <li class="work-entry">
+            <a href="{{ post.url }}"><img src="{{ post.cover_image }}" alt="{{ post.title }}"></a>
+          </li>
+        {% endif %}
+      {% endfor %}
 
       <li class="work-entry">
         <a href="/work/web"><img src="/uploads/2013/11/web-design.jpg" alt="Web Design"></a>

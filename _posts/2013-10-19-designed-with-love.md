@@ -3,7 +3,7 @@ layout: post
 title: Designed with Love
 tweet_text: 'I thoroughly enjoyed this article by @devinhalladay! "Designed with Love":'
 image: http://devinhalladay.com/uploads/2013/11/Carpenter's%20Hands.jpg
-categories: articles
+categories: journal
 custom_type: article
 date: 2013-10-19
 tags: ["love", "design", "craft", "care", "handcrafted", "simplicity", "honest design"]

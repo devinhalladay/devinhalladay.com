@@ -1,8 +1,10 @@
 ---
 layout: project
-title: Poster Design
+title: The Ministry of Print
 description: 'I have long been fascinated by the beauty, simplicity, and effectiveness of French editorial design.<br><br>To work on my typography skills as well as venture into a new medium, I decided to begin designing a series of posters. I design a few every month, and I plan to begin selling them in 18x24 prints in early 2014.'
-cover_image: '/uploads/2013/10/print-design.jpg'
+tweet_text: 'I thoroughly enjoyed this article by @devinhalladay! "Starting Fresh":'
+cover_image: '/uploads/2013/11/posters.jpg'
+categories: project
 ---
 <ul class="small-block-grid-1 large-block-grid-1">
   <li>

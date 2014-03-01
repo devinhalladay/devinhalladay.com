@@ -3,7 +3,7 @@ layout: post
 title: The New Me
 tweet_text: 'I thoroughly enjoyed this article by @devinhalladay! "The New Me":'
 date: "2013-1-22 4:55:00"
-categories: articles
+categories: journal
 published: false
 custom_type: article
 tags: ["redesign", "new", "devin halladay", "devinhalladay.com"]
