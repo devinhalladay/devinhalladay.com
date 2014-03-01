@@ -17,7 +17,7 @@ paginate: 6
 exclude: ['README.md', 'Rakefile', 'Gemfile', 'Gemfile.lock']
 
 exclude_home:
-  categories: ['project']
+  categories: ['work']
 
 assets:
   js_compressor: uglifier
