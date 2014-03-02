@@ -5,7 +5,7 @@
   <title>Devin Halladay</title>
   <link href="http://devinhalladay.com"/>
   <link type="application/atom+xml" rel="self" href="http://devinhalladay.com/atom.xml"/>
-  <updated>2014-03-01T23:35:10-05:00</updated>
+  <updated>2014-03-01T23:46:16-05:00</updated>
   <id>http://devinhalladay.com</id>
   <author>
     <name>Devin Halladay</name>
@@ -253,8 +253,8 @@
 
   &lt;li&gt;
     &lt;figure&gt;
-      &lt;a href=&quot;http://devinhalladay.com/uploads/2014/02/royal_courier.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;http://devinhalladay.com/uploads/2014/02/royal_courier.jpg&quot; alt=&quot;Royal Courier logo&quot;&gt;
+      &lt;a href=&quot;/uploads/2014/02/royal_courier.jpg&quot; data-fluidbox&gt;
+        &lt;img src=&quot;/uploads/2014/02/royal_courier.jpg&quot; alt=&quot;Royal Courier logo&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
