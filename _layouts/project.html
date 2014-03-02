@@ -3,10 +3,20 @@ layout: page
 custom_css_class: work work-single
 categories: work
 ---
-<div class="page-masthead">
-  <hr class="long">
-    <p class="page-description">{{ page.description }}</p>
-  <hr class="long">
+    <div class="page-masthead">
+      <hr class="long">
+      {{ page.description }}
+      <hr class="long">
+    </div>
+
+  </div>
 </div>
 
-{{ content}}
+<div class="row">
+  <div class="large-12 small-11 small-centered large-centered columns" id="content">
+    {{ content }}
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-8 small-11 small-centered large-centered columns" id="content">

@@ -6,18 +6,24 @@ cover_image: '/uploads/2013/10/print-design.jpg'
 categories: work
 weight: 2
 ---
-<ul class="small-block-grid-1 large-block-grid-1">
+<ul class="small-block-grid-1 large-block-grid-2">
   <li>
     <figure>
-      <img src="/uploads/2013/10/article_page_spread.jpg" alt="Article spreads for The Guild magazine">
-      <figcaption>Article spread for <strong><a href="http://theguild.co">The Guild</a></strong>, a new design magazine that I have been working on in my spare time for the past half a year or so.</figcaption>
+      <a href="http://devinhalladay.com/uploads/2013/11/cards.jpg" data-fluidbox>
+        <img src="/uploads/2013/11/cards.jpg" alt="Personal business cards">
+      </a>
+
+      <figcaption><strong>My personal business cards</strong>. The goal here was to futher explore and hone my understanding of typography by using the classic Neue Haas Grotesk and a limited color palette.</figcaption>
     </figure>
   </li>
 
   <li>
     <figure>
-      <img src="/uploads/2013/11/cards.jpg" alt="Personal business cards">
-      <figcaption><strong>My personal business cards</strong>. The goal here was to futher explore and hone my understanding of typography by using the classic Neue Haas Grotesk and a limited color palette.</figcaption>
+      <a href="http://devinhalladay.com/uploads/2013/10/article_page_spread.jpg" data-fluidbox>
+        <img src="/uploads/2013/10/article_page_spread.jpg" alt="Article spreads for The Guild magazine">
+      </a>
+
+      <figcaption>Article spread for <strong><a href="http://theguild.co">The Guild</a></strong>, a new design magazine that I have been working on in my spare time for the past half a year or so.</figcaption>
     </figure>
   </li>
 </ul>
