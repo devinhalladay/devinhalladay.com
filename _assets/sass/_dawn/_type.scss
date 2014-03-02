@@ -1,6 +1,8 @@
 body {
-  font-family: $serif;
-  font-size: 106.3%;
+  font: {
+    family: $serif;
+    size: 106.3%;
+  }
   line-height: 1.618em;
   color: $main-text-color;
   -webkit-font-smoothing: antialiased;
@@ -14,7 +16,7 @@ body {
 
 /* HEADINGS */
 h1, h2, h3, h4, h5 {
-  font-family: inherit;
+  font-family: $display-font;
   color: $heading-text-color;
   line-height: 1.2em;
   margin: 0.3em 0 0.5em 0;
@@ -32,15 +34,19 @@ h1 {
 h2 { font-size: 1.675em; }
 
 h3 {
-  font-size: 1.324em;
-  font-family: "Mercury SSm SC A","Mercury SSm SC B","Mercury SSm A","Mercury SSm B",Georgia,serif;
+  font: {
+    size: 1.324em;
+    family: $serif-sc;
+  }
   text-transform: uppercase;
   letter-spacing: .05em;
 }
 
 h4 {
-  font-size: 1.3em;
-  font-family: $sans-sc;
+  font: {
+    size: 1.3em;
+    family: $sans-sc;
+  }
   text-transform: lowercase;
 }
 
@@ -48,17 +54,19 @@ h4 {
 p {
   margin: auto auto 1.5em;
   &.date {
-    font-family: $serif-sc;
+    font: {
+      family: $serif-sc;
+      weight: 500;
+      size: 1em;
+    }
     text-transform: lowercase;
-    font-weight: 500;
-    font-size: 1em;
     letter-spacing: .05px;
     color: $secondary-text-color;
     margin-bottom: 2.25em;
   }
   &.page-description {
     margin-bottom: 0;
-    font-family: $serif;
+    font-family: $display-font;
     .lead {
       margin-bottom: 0.4em;
     }
@@ -66,7 +74,10 @@ p {
 }
 
 .lead {
-  font-size: 118.8%;
+  font: {
+    size: 118.8%;
+    family: $display-font;
+  }
   line-height: 1.5em;
   margin-bottom: 1.05em;
   @media screen and (max-width: 768px) {
@@ -82,8 +93,10 @@ p, blockquote, table, form, ul, ol {
 }
 
 .cite {
-  font-size: 0.618em;
-  font-style: italic;
+  font: {
+    size: 0.618em;
+    style: italic;
+  }
   display: block;
 }
 
@@ -103,8 +116,10 @@ small {
 }
 
 figcaption {
-  font-size: 90%;
-  font-family: $sans;
+  font: {
+    size: 90%;
+    family: $sans;
+  }
   color: $secondary-text-color;
 }
 
@@ -146,6 +161,7 @@ blockquote {
   margin-left: -1.5em;
   margin-bottom: 1.4em;
   p {
+    font-family: $display-font;
     margin-bottom: 0;
     color: $main-text-color;
     + p {
@@ -158,13 +174,15 @@ blockquote {
     padding-left: 0;
     margin-bottom: 1.5em;
     p {
+      font: {
+        family: $display-font;
+        weight: 500;
+        size: 24px;
+      }
       color: $heading-text-color;
       margin: 2em -80px 2em;
       line-height: 1.5;
       text-align: center;
-      font-weight: 500;
-      font-style: italic;
-      font-size: 24px;
       padding: 0;
 
       @media screen and (max-width: 768px) {
@@ -215,9 +233,11 @@ hr {
     color: $dark-grey;
     &:after {
       content: "* * *";
-      font-size: 1.75rem;
-      font-family: -webkit-body;
-      font-weight: 700;
+      font: {
+        size: 1.75rem;
+        family: $display-font;
+        weight: 700;
+      }
       line-height: .857142857;
       letter-spacing: .2em;
       color: rgba(0,0,0,0.3);
