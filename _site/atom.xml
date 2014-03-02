@@ -5,7 +5,7 @@
   <title>Devin Halladay</title>
   <link href="http://devinhalladay.com"/>
   <link type="application/atom+xml" rel="self" href="http://devinhalladay.com/atom.xml"/>
-  <updated>2014-03-01T21:13:46-05:00</updated>
+  <updated>2014-03-01T21:19:31-05:00</updated>
   <id>http://devinhalladay.com</id>
   <author>
     <name>Devin Halladay</name>
@@ -72,7 +72,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/reads.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/reads.jpg&quot; alt=&quot;Weekly reads widget for The Guild&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/reads.jpg&quot; alt=&quot;Weekly reads widget for The Guild&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -80,7 +80,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/mail_widget.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/mail_widget.jpg&quot; alt=&quot;Mail Widget UI&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/mail_widget.jpg&quot; alt=&quot;Mail Widget UI&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -88,7 +88,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/live_support_chat.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/live_support_chat.jpg&quot; alt=&quot;Live support chat UI&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/live_support_chat.jpg&quot; alt=&quot;Live support chat UI&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -96,7 +96,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/mt-hyde.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/mt-hyde.jpg&quot; alt=&quot;Mr. Hyde iPad app UI&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/mt-hyde.jpg&quot; alt=&quot;Mr. Hyde iPad app UI&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -119,7 +119,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2014/02/modern_influence.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2014/02/modern_influence.jpg&quot; alt=&quot;Modern Influence poster&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2014/02/modern_influence.jpg&quot; alt=&quot;Modern Influence poster&quot;&gt;
       &lt;/a&gt;
       &lt;figcaption&gt;
         &lt;strong&gt;Modern&amp;nbsp;Influence&lt;/strong&gt;
@@ -130,7 +130,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2014/02/synesthesia.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2014/02/synesthesia.jpg&quot; alt=&quot;Synesthesia poster&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2014/02/synesthesia.jpg&quot; alt=&quot;Synesthesia poster&quot;&gt;
       &lt;/a&gt;
       &lt;figcaption&gt;
         &lt;strong&gt;Synesthesia&lt;/strong&gt;
@@ -141,7 +141,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/11/disruption.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/11/disruption.jpg&quot; alt=&quot;Disruption poster&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/11/disruption.jpg&quot; alt=&quot;Disruption poster&quot;&gt;
       &lt;/a&gt;
       &lt;figcaption&gt;
         &lt;strong&gt;Disruption&lt;/strong&gt;: A poster I designed to explore the disruption of waves and the uniformity that such seemingly disruptive forces can create in their idenetically intricate&amp;nbsp;curves.
@@ -152,7 +152,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/perception.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/perception.jpg&quot; alt=&quot;Perception poster&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/perception.jpg&quot; alt=&quot;Perception poster&quot;&gt;
       &lt;/a&gt;
       &lt;figcaption&gt;
         &lt;strong&gt;Perception&lt;/strong&gt;: An exploration of the human experience. The way we as a society perceive things has become increasingly skewed along with the advancement of technology and our subsequent avoidal of reality. &lt;strong&gt;With this poster I tried to capture our skewed&amp;nbsp;perception.&lt;/strong&gt;
@@ -163,7 +163,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/wander_small.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/wander_small.jpg&quot; alt=&quot;Those Who Wander poster&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/wander_small.jpg&quot; alt=&quot;Those Who Wander poster&quot;&gt;
       &lt;/a&gt;
       &lt;figcaption&gt;
         &lt;strong&gt;Those Who Wander&lt;/strong&gt;: This poster began with me experimenting with blackletter typography. I had been reading Tolkien&amp;#8217;s &lt;i&gt;The Fellowship of the Ring&lt;/i&gt; at the time and this quote form the novel really resonated with me. I decided to take my passion for lettering to the next level and created this&amp;nbsp;poster.
@@ -174,7 +174,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/oceania.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/oceania.jpg&quot; alt=&quot;Oceania poster&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/oceania.jpg&quot; alt=&quot;Oceania poster&quot;&gt;
       &lt;/a&gt;
       &lt;figcaption&gt;
         &lt;strong&gt;Oceania&lt;/strong&gt;: I didn&amp;#8217;t have any specific reasons for creating this one. &lt;strong&gt;I just had an idea and acted on&amp;nbsp;it.&lt;/strong&gt;
@@ -185,7 +185,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/royale_poster.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/royale_poster.jpg&quot; alt=&quot;Royale poster&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/royale_poster.jpg&quot; alt=&quot;Royale poster&quot;&gt;
       &lt;/a&gt;
       &lt;figcaption&gt;
         &lt;strong&gt;Royale&lt;/strong&gt;: The first poster I ever made. I created this one for a new boutique design agency called &lt;strong&gt;Royale&lt;/strong&gt; that I will be starting soon with a few good&amp;nbsp;friends.
@@ -211,7 +211,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/11/cards.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/11/cards.jpg&quot; alt=&quot;Personal business cards&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/11/cards.jpg&quot; alt=&quot;Personal business cards&quot;&gt;
       &lt;/a&gt;
 
       &lt;figcaption&gt;&lt;strong&gt;My personal business cards&lt;/strong&gt;. The goal here was to futher explore and hone my understanding of typography by using the classic Neue Haas Grotesk and a limited color palette.&lt;/figcaption&gt;
@@ -221,7 +221,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/article_page_spread.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/article_page_spread.jpg&quot; alt=&quot;Article spreads for The Guild magazine&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/article_page_spread.jpg&quot; alt=&quot;Article spreads for The Guild magazine&quot;&gt;
       &lt;/a&gt;
 
       &lt;figcaption&gt;Article spread for &lt;strong&gt;&lt;a href=&quot;http://theguild.co&quot;&gt;The Guild&lt;/a&gt;&lt;/strong&gt;, a new design magazine that I have been working on in my spare time for the past half a year or so.&lt;/figcaption&gt;
@@ -246,7 +246,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2014/02/guild_shot.jpg&quot; title=&quot;&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2014/02/guild_shot.jpg&quot; title=&quot;&quot; alt=&quot;The Guild&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2014/02/guild_shot.jpg&quot; title=&quot;&quot; alt=&quot;The Guild&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -254,7 +254,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2014/02/royal_courier.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2014/02/royal_courier.jpg&quot; alt=&quot;Royal Courier logo&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2014/02/royal_courier.jpg&quot; alt=&quot;Royal Courier logo&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -262,7 +262,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2014/02/eagle.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2014/02/eagle.jpg&quot; alt=&quot;USA logo&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2014/02/eagle.jpg&quot; alt=&quot;USA logo&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -270,7 +270,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2014/02/usa-logo.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2014/02/usa-logo.jpg&quot; alt=&quot;USA logo&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2014/02/usa-logo.jpg&quot; alt=&quot;USA logo&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -278,7 +278,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/s-mark.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/s-mark.jpg&quot; alt=&quot;S Lettermark&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/s-mark.jpg&quot; alt=&quot;S Lettermark&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -286,7 +286,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/crown-loading.gif&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/crown-loading.gif&quot; alt=&quot;Loading Crown Logo&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/crown-loading.gif&quot; alt=&quot;Loading Crown Logo&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -294,7 +294,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/bear-logo.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/bear-logo.jpg&quot; alt=&quot;Bear Logo&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/bear-logo.jpg&quot; alt=&quot;Bear Logo&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -302,7 +302,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/oddball.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/oddball.jpg&quot; alt=&quot;Oddball Logo and Mark&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/oddball.jpg&quot; alt=&quot;Oddball Logo and Mark&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -310,7 +310,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/oddball-lettermark.gif&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/oddball-lettermark.gif&quot; alt=&quot;Oddball Lettermark&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/oddball-lettermark.gif&quot; alt=&quot;Oddball Lettermark&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -318,7 +318,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/devin-logo.gif&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/devin-logo.gif&quot; alt=&quot;Personal Lettermark&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/devin-logo.gif&quot; alt=&quot;Personal Lettermark&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -326,7 +326,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/guild-logo.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/guild-logo.jpg&quot; alt=&quot;The Guild logo&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/guild-logo.jpg&quot; alt=&quot;The Guild logo&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -349,7 +349,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/d-letter.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/d-letter.jpg&quot; alt=&quot;D&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/d-letter.jpg&quot; alt=&quot;D&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -357,7 +357,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/2-letter.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/2-letter.jpg&quot; alt=&quot;2&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/2-letter.jpg&quot; alt=&quot;2&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -365,7 +365,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/s-letter.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/s-letter.jpg&quot; alt=&quot;S&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/s-letter.jpg&quot; alt=&quot;S&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -373,7 +373,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/amp-letter.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/amp-letter.jpg&quot; alt=&quot;Ampersand&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/amp-letter.jpg&quot; alt=&quot;Ampersand&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -381,7 +381,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/amp-letter-2.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/amp-letter-2.jpg&quot; alt=&quot;Ampersand&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/amp-letter-2.jpg&quot; alt=&quot;Ampersand&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -389,7 +389,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/d-letter-2.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/d-letter-2.jpg&quot; alt=&quot;D&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/d-letter-2.jpg&quot; alt=&quot;D&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -397,7 +397,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/gothic.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/gothic.jpg&quot; alt=&quot;Gothic lettering&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/gothic.jpg&quot; alt=&quot;Gothic lettering&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -405,7 +405,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/c-letter.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/c-letter.jpg&quot; alt=&quot;Calligraphy C&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/c-letter.jpg&quot; alt=&quot;Calligraphy C&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -413,7 +413,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/kick.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/kick.jpg&quot; alt=&quot;Kick script&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/kick.jpg&quot; alt=&quot;Kick script&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -421,7 +421,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/never-say-die.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/never-say-die.jpg&quot; alt=&quot;Never Say Die script&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/never-say-die.jpg&quot; alt=&quot;Never Say Die script&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -429,7 +429,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/quasar.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/quasar.jpg&quot; alt=&quot;Quasar font&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/quasar.jpg&quot; alt=&quot;Quasar font&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -437,7 +437,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/action.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/action.jpg&quot; alt=&quot;Action vintage type&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/action.jpg&quot; alt=&quot;Action vintage type&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -445,7 +445,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/the-end.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/the-end.jpg&quot; alt=&quot;The End script&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/the-end.jpg&quot; alt=&quot;The End script&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -468,7 +468,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2014/02/books.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2014/02/books.jpg&quot; alt=&quot;Book stack illustration&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2014/02/books.jpg&quot; alt=&quot;Book stack illustration&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -476,7 +476,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/hammeraxe.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/hammeraxe.jpg&quot; alt=&quot;Hammer &amp;amp; Axe&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/hammeraxe.jpg&quot; alt=&quot;Hammer &amp;amp; Axe&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -484,7 +484,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/sword.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/sword.jpg&quot; alt=&quot;Sword&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/sword.jpg&quot; alt=&quot;Sword&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -492,7 +492,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/beef.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/beef.jpg&quot; alt=&quot;Butcher guide for beef cuts&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/beef.jpg&quot; alt=&quot;Butcher guide for beef cuts&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -500,7 +500,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/revolver.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/revolver.jpg&quot; alt=&quot;Revolver&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/revolver.jpg&quot; alt=&quot;Revolver&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -508,7 +508,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/lion.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/lion.jpg&quot; alt=&quot;Lion&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/lion.jpg&quot; alt=&quot;Lion&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -516,7 +516,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/owl_eagle.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/owl_eagle.jpg&quot; alt=&quot;Owl&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/owl_eagle.jpg&quot; alt=&quot;Owl&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -524,7 +524,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/toucan.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/toucan.jpg&quot; alt=&quot;Toucan&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/toucan.jpg&quot; alt=&quot;Toucan&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -532,7 +532,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/ampersand.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/ampersand.jpg&quot; alt=&quot;Ampersand&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/ampersand.jpg&quot; alt=&quot;Ampersand&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;
@@ -540,7 +540,7 @@
   &lt;li&gt;
     &lt;figure&gt;
       &lt;a href=&quot;http://devinhalladay.com/uploads/2013/10/grand_canal.jpg&quot; data-fluidbox&gt;
-        &lt;img src=&quot;/uploads/2013/10/grand_canal.jpg&quot; alt=&quot;Grand Canal&quot;&gt;
+        &lt;img src=&quot;http://devinhalladay.com/uploads/2013/10/grand_canal.jpg&quot; alt=&quot;Grand Canal&quot;&gt;
       &lt;/a&gt;
     &lt;/figure&gt;
   &lt;/li&gt;

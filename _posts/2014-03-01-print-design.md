@@ -10,7 +10,7 @@ weight: 2
   <li>
     <figure>
       <a href="http://devinhalladay.com/uploads/2013/11/cards.jpg" data-fluidbox>
-        <img src="/uploads/2013/11/cards.jpg" alt="Personal business cards">
+        <img src="http://devinhalladay.com/uploads/2013/11/cards.jpg" alt="Personal business cards">
       </a>
 
       <figcaption><strong>My personal business cards</strong>. The goal here was to futher explore and hone my understanding of typography by using the classic Neue Haas Grotesk and a limited color palette.</figcaption>
@@ -20,7 +20,7 @@ weight: 2
   <li>
     <figure>
       <a href="http://devinhalladay.com/uploads/2013/10/article_page_spread.jpg" data-fluidbox>
-        <img src="/uploads/2013/10/article_page_spread.jpg" alt="Article spreads for The Guild magazine">
+        <img src="http://devinhalladay.com/uploads/2013/10/article_page_spread.jpg" alt="Article spreads for The Guild magazine">
       </a>
 
       <figcaption>Article spread for <strong><a href="http://theguild.co">The Guild</a></strong>, a new design magazine that I have been working on in my spare time for the past half a year or so.</figcaption>
