@@ -30,7 +30,9 @@ nav {
       letter-spacing: 0.5px;
       color: $main-text-color;
       text-decoration: none;
+      border-bottom: none;
       &:hover {
+        border-bottom: none;
         color: $accent-color;
         text-decoration: none;
       }

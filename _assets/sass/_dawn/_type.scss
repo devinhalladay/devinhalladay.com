@@ -263,25 +263,25 @@ LINKS
 ------------------------------------------- */
 a {
   color: $main-text-color;
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 1px dotted $main-text-color;
   -webkit-transition: .2s;
   transition: .2s;
-  a:hover, a:focus {
+  &:hover, &:focus {
     color: $accent-color;
+    text-decoration: none;
+    border-bottom: 1px dotted $accent-color;
   }
   &.more {
     font-style: normal;
-    color: $main-text-color;
   }
   &.post-title {
     text-decoration: none;
+    border-bottom: none;
     color: $heading-text-color;
     &:hover {
+      border-bottom-color: $accent-color;
       color: $accent-color;
     }
   }
-}
-
-a:hover, a:focus {
-  color: $accent-color;
 }
