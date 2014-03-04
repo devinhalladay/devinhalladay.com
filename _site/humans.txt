@@ -1,0 +1,17 @@
+# devinhalladay.com
+# The personal journal and portfolio of Devin Halladay — a designer and writer.
+
+# ME
+
+  Name: Devin Halladay
+  Twitter: @devinhalladay
+  Dribbble: devinhalladay
+  GitHub: @devinhalladay
+  Location: Cleveland, OH
+
+# TECHNOLOGY COLOPHON
+
+  HTML5, CSS3
+  jQuery, Parsley, Fluidbox, Modernizr, ZURB Foundation
+  SASS, Compass, Bourbon, Iron, ZURB Foundation
+  Jekyll, Ruby, PHP
