@@ -1,0 +1,23 @@
+/*
+
+OBJECTS
+------------------------------------------- */
+
+html {
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0 auto;
+  background: #fff;
+  cursor: default;
+  border-top: 8px solid $heading-text-color;
+}
+
+.row {
+  width: 100%;
+  margin: 0 auto 0 auto;
+  max-width: 980px;
+}
