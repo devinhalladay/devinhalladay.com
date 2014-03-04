@@ -246,7 +246,6 @@ task :ship do
   system "jekyll build"
   system "add"
   system "git commit -am '#{message}'"
-  system "git pull"
   system "git push"
   puts "Pushed latest changes to GitHub!"
 end
