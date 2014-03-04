@@ -1,0 +1,78 @@
+.dropcap {
+  width: 104px;
+  height: 104px;
+  text-align: center;
+  font-size: 127px;
+  line-height: 88px;
+  float: left;
+  display: block;
+  position: relative;
+  top: 6px;
+  font-weight: 400;
+
+  @media screen and (max-width: 768px) {
+    width: 52px;
+    height: 52px;
+    font-size: 58px;
+    line-height: 40px;
+    margin-right: 0;
+  }
+}
+
+> li:before {
+      padding-right: 14px;
+      text-decoration: none;
+      speak: none;
+      text-rendering: optimizeLegibility;
+      font-size: 18px;
+      -webkit-font-smoothing: antialiased;
+      content: "\25C6";
+      position: relative;
+      display: inline-block;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 58px;
+      margin-left: -58px;
+      padding-top: 6px;
+      text-align: right;
+      font-size: 16px;
+    }
+
+/*
+
+FOOTNOTES
+------------------------------------------- */
+sup {
+  padding-left: 0.2em;
+  a {
+    border-bottom: none;
+    font-size: .9em;
+    font-weight: bold;
+    color: inherit;
+  }
+}
+
+.footnotes {
+  margin: 40px 0 0;
+  border-bottom: 1px solid $dark-grey;
+  p {
+    margin-bottom: 0.8em;
+  }
+  ol {
+    margin-left: 6%;
+    li {
+      font-size: .85em;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  &:before {
+    background: $dark-grey;
+    content: " ";
+    display: block;
+    height: 3px;
+    width: 150px;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,21 @@
+/*
+
+HIDE
+------------------------------------------- */
+
+// Hide Text or Elements
+
+.screen-reader-hide {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.invisible {
+  visibility: hidden;
+}
