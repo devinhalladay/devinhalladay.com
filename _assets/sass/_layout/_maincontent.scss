@@ -20,10 +20,14 @@ MAIN CONTENT
 
 .page-masthead {
   padding-bottom: 1em;
+  hr.long {
+    border-top: 1px dotted $dark-grey;
+    background: transparent;
+  }
 }
 
 .entry {
-  border-bottom: 1px solid darken($light-grey, 10%);
+  border-bottom: 1px dotted $dark-grey;
   padding: 0 0 1em;
   margin: 0 0 2em;
   &.quote {

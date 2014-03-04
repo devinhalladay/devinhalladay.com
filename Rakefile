@@ -243,6 +243,7 @@ desc "Push to GitHub."
 task :ship do
   message = ARGV.last
   task message.to_sym do ; end
+  system "jekyll build"
   system "add"
   system "git commit -am '#{message}'"
   system "git pull"
