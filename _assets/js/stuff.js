@@ -5,5 +5,5 @@
 //= require vendor/jquery.fluidbox.min
 
 $(function () {
-  $("li figure a").fluidbox();
+  $("figure a").fluidbox();
 });
