@@ -15,9 +15,9 @@ and only this page's styles.
 
 h1 {
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
   @media screen and (max-width: 768px) {
-    margin-top: -1em;
+    margin-top: 0em;
     text-align: left;
     margin-bottom: 1em;
   }
