@@ -5,5 +5,10 @@
 //= require vendor/jquery.fluidbox.min
 
 $(function () {
-  $("figure a").fluidbox();
+  $("figure a").fluidbox({
+    closeTrigger: [
+      { selector: '#fluidbox-overlay', event: 'click'},
+      { selector: 'window', event: 'scroll'}
+    ]
+  });
 });
