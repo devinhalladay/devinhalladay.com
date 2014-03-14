@@ -12,6 +12,18 @@ custom_css: editorial-about
   <div class="large-12 small-12 small-centered large-centered columns" id="content">
     <div class="small-12 medium-10 large-6 columns">
       <figure><a href="/uploads/2013/10/devin.jpg" data-fluidbox data-no-instant><img src="/uploads/2013/10/devin.jpg" alt="Devin Halladay"></a></figure>
+      <hr class="long">
+      <h3>Services</h3>
+      <hr class="long">
+      {% for service in site.data.services %}
+        <h4 class="text-align-left">{{ service.category }}</h4>
+        <ul>
+          {% for item in service.list %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      {% endfor %}
+      <hr class="long">
     </div>
     <div class="small-12 medium-10 large-6 columns">
       <p>Welcome! My name is Devin Halladay. I'm a web designer, graphic designer, and writer.</p>
@@ -21,22 +33,7 @@ custom_css: editorial-about
       <p>I value craftsmanship, curation, and careful research. I try to make those characteristics present in <i>every</i> project I work on. Building beautiful products does not just mean making something visually appealing &mdash; it means taking every pixel into consideration and giving an equal amount of care to every minute detail.</p>
 
       <p>Design is my passion.</p>
-      <hr class="long">
-      <h2>Services</h2>
-      <hr class="long">
     </div>
-    {% for service in site.data.services %}
-      <div class="small-12 medium-10 large-6 columns service-title">
-        <h4 class="text-align-right">{{ service.category }}</h4>
-      </div>
-      <div class="small-12 medium-10 large-6 columns">
-        <ul>
-          {% for item in service.list %}
-            <li>{{ item }}</li>
-          {% endfor %}
-        </ul>
-      </div>
-    {% endfor %}
   </div>
 </div>
 
