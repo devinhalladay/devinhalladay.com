@@ -5,57 +5,13 @@
   <title>Devin Halladay</title>
   <link href="http://devinhalladay.com"/>
   <link type="application/atom+xml" rel="self" href="http://devinhalladay.com/atom.xml"/>
-  <updated>2014-03-13T21:01:35-04:00</updated>
+  <updated>2014-03-14T22:02:14-04:00</updated>
   <id>http://devinhalladay.com</id>
   <author>
     <name>Devin Halladay</name>
     <email>devin@devinhalladay.com</email>
   </author>
 
-  
-  <entry>
-    <id>http://devinhalladay.com/work/web</id>
-    <link type="text/html" rel="alternate" href="http://devinhalladay.com/work/web"/>
-    <title>Web Design</title>
-    <published>2014-03-01T00:00:00-05:00</published>
-    <updated>2014-03-01T00:00:00-05:00</updated>
-    <author>
-      <name>Devin Halladay</name>
-      <uri>http://devinhalladay.com/</uri>
-    </author>
-    <content type="html">&lt;ul class=&quot;small-block-grid-1 large-block-grid-1&quot;&gt;
-  &lt;li&gt;
-  &lt;div id=&quot;browser&quot;&gt;
-    &lt;div class=&quot;browser-content&quot;&gt;
-      &lt;iframe src=&quot;http://devinhalladay.com/&quot; frameborder=&quot;0&quot; style=&quot;height: 500px; width: 100%; display: inline;&quot;&gt;&lt;/iframe&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-
-
-
-&lt;ul class=&quot;small-block-grid-1 large-block-grid-2&quot;&gt;
-  &lt;li&gt;
-  &lt;figure&gt;
-    &lt;a href=&quot;/uploads/2013/10/welcome-to-the-guild.png&quot; title=&quot;Welcome to The Guild&quot; data-fluidbox data-no-instant&gt;
-      &lt;img src=&quot;/uploads/2013/10/welcome-to-the-guild.png&quot; title=&quot;Welcome to The Guild&quot; alt=&quot;Welcome to The Guild&quot;&gt;
-    &lt;/a&gt;
-  &lt;/figure&gt;
-&lt;/li&gt;
-
-  &lt;li&gt;
-  &lt;figure&gt;
-    &lt;a href=&quot;/uploads/2013/10/devin-halladay-v1.jpg&quot; title=&quot;devinhalladay.com v1&quot; data-fluidbox data-no-instant&gt;
-      &lt;img src=&quot;/uploads/2013/10/devin-halladay-v1.jpg&quot; title=&quot;devinhalladay.com v1&quot; alt=&quot;devinhalladay.com v1&quot;&gt;
-    &lt;/a&gt;
-  &lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-</content>
-  </entry>
   
   <entry>
     <id>http://devinhalladay.com/work/ui</id>
@@ -185,7 +141,7 @@
   <entry>
     <id>http://devinhalladay.com/work/print-design</id>
     <link type="text/html" rel="alternate" href="http://devinhalladay.com/work/print-design"/>
-    <title>Print Design</title>
+    <title>Misc. Print Design</title>
     <published>2014-03-01T00:00:00-05:00</published>
     <updated>2014-03-01T00:00:00-05:00</updated>
     <author>
@@ -226,6 +182,14 @@
       <uri>http://devinhalladay.com/</uri>
     </author>
     <content type="html">&lt;ul class=&quot;small-block-grid-1 large-block-grid-3&quot;&gt;
+  &lt;li&gt;
+  &lt;figure&gt;
+    &lt;a href=&quot;/uploads/2014/03/squire.jpg&quot; title=&quot;Squire Logo&quot; data-fluidbox data-no-instant&gt;
+      &lt;img src=&quot;/uploads/2014/03/squire.jpg&quot; title=&quot;Squire Logo&quot; alt=&quot;Squire Logo&quot;&gt;
+    &lt;/a&gt;
+  &lt;/figure&gt;
+&lt;/li&gt;
+
   &lt;li&gt;
   &lt;figure&gt;
     &lt;a href=&quot;http://devinhalladay.com/uploads/2014/02/guild_shot.jpg&quot; title=&quot;The Guild&quot; data-fluidbox data-no-instant&gt;

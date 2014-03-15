@@ -3,6 +3,7 @@
 //= require vendor/parsley.extend
 //= require vendor/imagesloaded.pkgd.min
 //= require vendor/jquery.fluidbox.min
+// //= require vendor/mosaic
 
 $(function () {
   $("figure a").fluidbox({
@@ -11,4 +12,8 @@ $(function () {
       { selector: 'window', event: 'scroll'}
     ]
   });
+
+  // $('.project-cover').mosaic({
+  //   animation : 'slide'   //fade or slide
+  // });
 });

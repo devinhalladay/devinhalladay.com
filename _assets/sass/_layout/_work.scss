@@ -14,10 +14,31 @@
       border-bottom: none;
     }
   }
+  .work-info-bg {
+    background-color: #111;
+  }
+  .work-info {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    padding: 0px 20px;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    color: #fff;
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
 .work-entry {
   a {
     border-bottom: none;
+  }
+  figcaption {
+    text-align: center;
+    font-weight: 600;
   }
 }
