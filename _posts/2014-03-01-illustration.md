@@ -3,9 +3,9 @@ layout: project
 title: Illustration
 description: 'Vector illustrations done for clients, friends, and studio projects.'
 tweet_text: 'I thoroughly enjoyed this article by @devinhalladay! "Starting Fresh":'
-cover_image: '/uploads/2013/10/illustration.jpg'
+cover_image: '/uploads/2013/10/hammeraxe.jpg'
 categories: work
-weight: 5
+weight: 4
 ---
 <ul class="small-block-grid-1 large-block-grid-3">
   {% include project-image.html alt="Book stack illustration" url="http://devinhalladay.com/uploads/2014/02/books.jpg" %}

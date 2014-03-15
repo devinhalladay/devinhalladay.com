@@ -3,9 +3,9 @@ layout: project
 title: Lettering
 description: 'Digital and analog lettering done for clients, friends, and studio projects.'
 tweet_text: 'I thoroughly enjoyed this article by @devinhalladay! "Starting Fresh":'
-cover_image: '/uploads/2013/10/lettering.jpg'
+cover_image: '/uploads/2013/10/d-letter.jpg'
 categories: work
-weight: 7
+weight: 3
 ---
 <ul class="small-block-grid-1 large-block-grid-3">
   {% include project-image.html alt="D" url="http://devinhalladay.com/uploads/2013/10/d-letter.jpg" %}
