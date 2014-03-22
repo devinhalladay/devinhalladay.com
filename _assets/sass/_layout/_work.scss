@@ -14,28 +14,46 @@
       border-bottom: none;
     }
   }
-  .work-info-bg {
-    background-color: #111;
-  }
-  .work-info {
+  .overlay {
+    display: block;
+    visibility: hidden;
     opacity: 0;
-    filter: alpha(opacity=0);
-    position: absolute;
-    padding: 0px 20px;
-    height: 100%;
+    padding: 80px 20px;
     width: 100%;
-    top: 0px;
-    left: 0px;
+    height: 97%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $accent-color;
+    background: rgba($accent-color,0.8);
     color: #fff;
-    &:hover {
-      opacity: 1;
-    }
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
   }
 }
 
 .work-entry {
   a {
     border-bottom: none;
+    .overlay {
+      h4 {
+        text-align: center;
+        color: #fff;
+        font-weight: 600;
+      }
+    }
+    &:hover {
+      .overlay {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  figure {
+    display: block;
+    position: relative;
   }
   figcaption {
     text-align: center;
