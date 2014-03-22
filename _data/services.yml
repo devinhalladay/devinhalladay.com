@@ -1,3 +1,16 @@
+- category: Print
+  list:
+  - Editorial Design
+  - Typography
+  - Posters
+  - Business Cards
+
+- category: Digital
+  list:
+  - 'Web Design &amp; Development'
+  - Responsive Design
+  - Web Typography
+
 - category: Branding
   list:
   - Brand Creation
@@ -6,20 +19,8 @@
   - Brand Collateral
   - Custom Typography
 
-- category: Digital
-  list:
-  - 'Web Design &amp; Development'
-  - Responsive Design
-  - Web Typography
 
 - category: Content Creation
   list:
   - Copywriting
   - Illustration
-
-- category: Print
-  list:
-  - Editorial Design
-  - Typography
-  - Posters
-  - Business Cards

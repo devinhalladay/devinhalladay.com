@@ -1,8 +1,8 @@
 source "https://rubygems.org"
 
-gem 'jekyll'
+gem 'jekyll', '~> 1.4.3'
 gem 'rdiscount'
-gem 'redcarpet', "3.0.0"
+gem 'redcarpet'
 
 gem 'jekyll-assets'
 
