@@ -25,7 +25,9 @@ alias: [/projects]
               <a href="{{ post.url }}">
                 <figure>
                   <img src="{{ post.cover_image }}" alt="{{ post.title }}">
-                  <figcaption>{{ post.title }}</figcaption>
+                  <span class="overlay">
+                    <h4>{{ post.title }}</h4>
+                  </span>
                 </figure>
               </a>
             </li>
