@@ -23,6 +23,9 @@
 }
   .fluidbox-opened .fluidbox-wrap {
     z-index: 600;
+    // .fluidbox-ghost {
+    //   border: 1px solid $dark-grey;
+    // }
   }
 .fluidbox-ghost {
   background-size: cover;
