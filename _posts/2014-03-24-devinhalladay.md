@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: editorial-project
 title: Personal Site
 description: 'The story of my personal website, its evolution, and how it became an extension of my body and soul.'
 tweet_text: 'Beautiful work by @devinhalladay on his website. Check out this case study: '
@@ -9,9 +9,24 @@ weight: 1
 custom_css: editorial-project--devinhalladay
 published: true
 ---
+<div class="row full-width">
+  <p class="large-6 small-11 columns">Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
 
-<ul class="small-block-grid-1 large-block-grid-2">
-  {% include project-image.html alt="Welcome to The Guild" url="/uploads/2013/10/welcome-to-the-guild.png" %}
+  Nullam id dolor id nibh ultricies vehicula ut id elit. Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
 
-  {% include project-image.html alt="devinhalladay.com v1" url="/uploads/2013/10/devin-halladay-v1.jpg" %}
-</ul>
+  <p class="large-6 small-11 columns">Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+
+  Nullam id dolor id nibh ultricies vehicula ut id elit. Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+
+  <blockquote class="pullquote large-10 small-11 columns large-offset-2">
+    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue.</p>
+  </blockquote>
+
+  <p class="large-6 small-11 columns">Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+
+  Nullam id dolor id nibh ultricies vehicula ut id elit. Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+
+  <p class="large-6 small-11 columns">Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+
+  Nullam id dolor id nibh ultricies vehicula ut id elit. Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+</div>

@@ -1,0 +1,17 @@
+@import "_iron/settings";
+
+.row.full-width {
+  max-width: 80%;
+}
+
+blockquote.pullquote {
+  margin-bottom: 0;
+
+  p {
+    text-align: left;
+    margin: 0;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    font-family: $sans;
+  }
+}

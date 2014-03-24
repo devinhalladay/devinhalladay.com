@@ -16,6 +16,9 @@ an effort to keep the CSS as dry as possible.
 // @compass
 @import "compass";
 
+// @settings
+@import "_iron/settings";
+
 // @foundation
 @import "foundation/components/global";
 @import "foundation/components/grid";
@@ -29,9 +32,6 @@ an effort to keep the CSS as dry as possible.
 @import "_iron/normalize";
 @import "_iron/reset";
 @import "_iron/mixins";
-
-// @settings
-@import "_iron/settings";
 
 // @tools
 @import "_iron/hide";
