@@ -5,13 +5,44 @@
   <title>Devin Halladay</title>
   <link href="http://devinhalladay.com"/>
   <link type="application/atom+xml" rel="self" href="http://devinhalladay.com/atom.xml"/>
-  <updated>2014-03-22T16:52:19-04:00</updated>
+  <updated>2014-03-24T14:31:24-04:00</updated>
   <id>http://devinhalladay.com</id>
   <author>
     <name>Devin Halladay</name>
     <email>devin@devinhalladay.com</email>
   </author>
 
+  
+  <entry>
+    <id>http://devinhalladay.com/work/devinhalladay</id>
+    <link type="text/html" rel="alternate" href="http://devinhalladay.com/work/devinhalladay"/>
+    <title>Personal Site</title>
+    <published>2014-03-24T00:00:00-04:00</published>
+    <updated>2014-03-24T00:00:00-04:00</updated>
+    <author>
+      <name>Devin Halladay</name>
+      <uri>http://devinhalladay.com/</uri>
+    </author>
+    <content type="html">&lt;ul class=&quot;small-block-grid-1 large-block-grid-2&quot;&gt;
+  &lt;li&gt;
+  &lt;figure&gt;
+    &lt;a href=&quot;/uploads/2013/10/welcome-to-the-guild.png&quot; title=&quot;Welcome to The Guild&quot; data-fluidbox data-no-instant&gt;
+      &lt;img src=&quot;/uploads/2013/10/welcome-to-the-guild.png&quot; title=&quot;Welcome to The Guild&quot; alt=&quot;Welcome to The Guild&quot;&gt;
+    &lt;/a&gt;
+  &lt;/figure&gt;
+&lt;/li&gt;
+
+  &lt;li&gt;
+  &lt;figure&gt;
+    &lt;a href=&quot;/uploads/2013/10/devin-halladay-v1.jpg&quot; title=&quot;devinhalladay.com v1&quot; data-fluidbox data-no-instant&gt;
+      &lt;img src=&quot;/uploads/2013/10/devin-halladay-v1.jpg&quot; title=&quot;devinhalladay.com v1&quot; alt=&quot;devinhalladay.com v1&quot;&gt;
+    &lt;/a&gt;
+  &lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+  </entry>
   
   <entry>
     <id>http://devinhalladay.com/work/ui</id>

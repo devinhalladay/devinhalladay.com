@@ -297,6 +297,7 @@ a {
     text-decoration: none;
     border-bottom: none;
     color: $heading-text-color;
+    font-weight: 600;
     &:hover {
       border-bottom-color: $accent-color;
       color: $accent-color;
