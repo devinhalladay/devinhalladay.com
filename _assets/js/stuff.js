@@ -3,7 +3,11 @@
 //= require vendor/parsley.extend
 //= require vendor/imagesloaded.pkgd.min
 //= require vendor/jquery.fluidbox.min
+//= require foundation/foundation
+//= require foundation/foundation.equalizer
 // //= require vendor/mosaic
+
+$(document).foundation();
 
 $(function () {
   $("figure a").fluidbox({
