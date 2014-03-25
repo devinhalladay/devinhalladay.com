@@ -22,7 +22,7 @@ alias: [/projects]
             {% capture fb_link %}http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://devinhalladay.com{{ post.url }}/&p[images][0]=https://twitter.com/api/users/profile_image/devinhalladay?size=original&p[title]={{ post.title }}&p[summary]={{ post.excerpt | strip_html }}{% endcapture %}
 
             <li class="work-entry">
-              <a href="{{ post.url }}" {% if page.data_no_instant == true %}data-no-instant{% endif %}>
+              <a href="{{ post.url }}" {% if post.data_no_instant == true %}data-no-instant{% endif %}>
                 <figure>
                   <img src="{{ post.cover_image }}" alt="{{ post.title }}">
                   <span class="overlay">
