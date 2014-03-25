@@ -1,14 +1,8 @@
 
 @import "_iron/settings";
 
-body {
-  background : $secondary-text-color;
-  color      : #fff;
-  border-top : 8px solid #1E2429;
-}
-
 .row.full-width {
-  max-width : 80%;
+  max-width : 100%;
 
   @media screen and (min-width: 1400px) {
     max-width : 70%;
@@ -23,40 +17,51 @@ body {
     -webkit-column-gap   : 1.22em;
     -webkit-hyphens      : auto;
     -moz-hyphens         : auto;
+
+    @media screen and (max-width: 768px) {
+      column-count         : inherit;
+      column-gap           : inherit;
+
+      -moz-column-count    : inherit;
+      -webkit-column-count : inherit;
+      -moz-column-gap      : inherit;
+      -webkit-column-gap   : inherit;
+      -webkit-hyphens      : auto;
+      -moz-hyphens         : auto;
+    }
   }
 }
 
 blockquote.pullquote {
   margin-bottom : 0;
   p {
-    margin        : 0;
-    margin-top    : 3rem;
-    margin-bottom : 3rem;
+    margin               : 0;
+    margin-top           : 3rem;
+    margin-bottom        : 3rem;
+    column-count         : 1;
+    column-gap           : 1;
 
-    font-family   : $sans;
-    color         : #84888A;
-    text-align    : left;
+    font-family          : $sans;
+    color                : #84888A;
+    line-height          : 1.6em;
+    text-align           : left;
+
+    -moz-column-count    : 1 !important;
+    -webkit-column-count : 1 !important;
+    -moz-column-gap      : 1 !important;
+    -webkit-column-gap   : 1 !important;
+    -webkit-hyphens      : auto;
+    -moz-hyphens         : auto;
   }
 }
 
 .header {
-  margin-bottom  : 2em;
+  margin-bottom  : 0;
   padding-bottom : 0;
 
-  background     : $heading-text-color;
-  border-bottom  : 1px dotted #c4c8ca;
-
   nav {
-    border-bottom : 0;
-    li {
-      a {
-        color : #fff;
-      }
-      &:first-child a {
-        font-weight : bold;
-        color       : #fff;
-      }
-    }
+    padding-bottom: 0;
+    border-bottom: 0;
   }
 }
 
@@ -75,22 +80,53 @@ hr.long {
   border-top : 1px dotted #c4c8ca;
 }
 
-h1, h2, h3, h4, h5 {
-  color : #fff;
+h3 {
+  font-family    : $sans;
+  font-weight    : 600;
+  letter-spacing : inherit;
+  text-transform : none;
 }
 
-p {
-  color : #fff;
-}
+.single-text-column {
+  p {
+    column-count         : inherit;
+    column-gap           : inherit;
 
-section.dark {
-  background : #56636F;
-  &.intro {
-    padding-top : 1.6em;
+    -moz-column-count    : inherit !important;
+    -webkit-column-count : inherit !important;
+    -moz-column-gap      : inherit !important;
+    -webkit-column-gap   : inherit !important;
+    -webkit-hyphens      : auto;
+    -moz-hyphens         : auto;
   }
 }
 
-section.darker {
-  background : #4F5C68;
-  margin-bottom: 1.6em;
+.intro {
+  p {
+    font-family : $sans;
+    font-size   : 18px;
+    line-height : 1.8em;
+  }
+}
+
+section {
+  padding-top: 1.6em;
+
+  &.intro {
+    padding-top: 0;
+  }
+
+  &#masthead {
+    padding-top: 2.3em;
+  }
+
+  &.wrap-grey {
+    background: #F2F3F3;
+  }
+}
+
+figure {
+  @media screen and (max-width: 768px) {
+    padding-bottom: 2em;
+  }
 }

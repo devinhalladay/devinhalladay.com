@@ -17,6 +17,13 @@ $(function () {
     ]
   });
 
+  $(".fluidbox").fluidbox({
+    closeTrigger: [
+      { selector: '#fluidbox-overlay', event: 'click'},
+      { selector: 'window', event: 'scroll'}
+    ]
+  });
+
   // $('.project-cover').mosaic({
   //   animation : 'slide'   //fade or slide
   // });

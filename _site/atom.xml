@@ -5,7 +5,7 @@
   <title>Devin Halladay</title>
   <link href="http://devinhalladay.com"/>
   <link type="application/atom+xml" rel="self" href="http://devinhalladay.com/atom.xml"/>
-  <updated>2014-03-25T13:18:35-04:00</updated>
+  <updated>2014-03-25T18:33:29-04:00</updated>
   <id>http://devinhalladay.com</id>
   <author>
     <name>Devin Halladay</name>
@@ -25,42 +25,53 @@
     </author>
     <content type="html">&lt;section id=&quot;masthead&quot;&gt;
   &lt;div class=&quot;row full-width&quot;&gt;
-    &lt;div class=&quot;large-6 small-12 columns data-equalizer&quot;&gt;
-      &lt;div class=&quot;data-equalizer-watch&quot;&gt;
-        &lt;hr class=&quot;long&quot;&gt;
-        &lt;h1&gt;Personal Site&lt;/h1&gt;
-        &lt;hr class=&quot;long&quot;&gt;
-      &lt;/div&gt;
+    &lt;div class=&quot;large-5 small-12 columns push-1&quot;&gt;
+      &lt;hr class=&quot;long&quot;&gt;
+      &lt;h1&gt;Personal Site&lt;/h1&gt;
+      &lt;hr class=&quot;long&quot;&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;page-masthead large-6 small-12 columns data-equalizer&quot;&gt;
-      &lt;div class=&quot;data-equalizer-watch&quot;&gt;
-        &lt;hr class=&quot;long&quot;&gt;
-        The story of my personal website, its evolution, and how it became an extension of my body and soul.
-        &lt;hr class=&quot;long&quot;&gt;
-      &lt;/div&gt;
+    &lt;div class=&quot;page-masthead large-5 small-12 pull-1 columns&quot;&gt;
+      &lt;hr class=&quot;long&quot;&gt;
+      The story of my personal website, its evolution, and how it became an extension of my body and soul.
+      &lt;hr class=&quot;long&quot;&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/section&gt;
 
-&lt;section class=&quot;dark intro&quot;&gt;
+&lt;section class=&quot;intro&quot;&gt;
   &lt;div class=&quot;row full-width&quot;&gt;
-    &lt;p class=&quot;large-12 small-11 columns&quot;&gt;In any weather, at any hour of the day or night, I have been anxious to improve the nick of time, and notch it on my stick too; to stand on the meeting of two eternities, the past and future, which is precisely the present moment; to toe that line. You will pardon some obscurities, for there are more secrets in my trade than in most men&#39;s, and yet not voluntarily kept, but inseparable from its very nature. I would gladly tell all that I know about it, and never paint &quot;No Admittance&quot; on my gate.&lt;br&gt;I long ago lost a hound, a bay horse, and a turtle dove, and am still on their trail. Many are the travellers I have spoken concerning them, describing their tracks and what calls they answered to. I have met one or two who had heard the hound, and the tramp of the horse, and even seen the dove disappear behind a cloud, and they seemed as anxious to recover them as if they had lost them themselves.&lt;/p&gt;
+    &lt;p class=&quot;large-10 small-12 push-1 columns&quot;&gt;
+    The story begins in 2006 with a trip down Route 66. Day in, day out, I looked at U.S. traffic signs that were either set in the old, somewhat clumsy “FHWA font series” or the new Clearview HWY typeface. Approaching the signs, I would often test myself: which typeface works best from a distance, and which of its features or details might be responsible for its performance. I had so many more questions than answers. Surely every professional type designer has at least an inkling of how a signage typeface should look: Probably it sports a rather clean sans serif design, open counters and a rather large x-height. But which x-height works best, and why? What is the optimal stroke width? A monocular or binocular g? Should the design be somewhat condensed to permit more information on a sign, or rather should it be relatively wide so that individual letters are more easily differentiated?
   &lt;/div&gt;
 &lt;/section&gt;
 
-&lt;section class=&quot;darker&quot;&gt;
+&lt;section class=&quot;wrap-grey&quot;&gt;
   &lt;div class=&quot;row full-width&quot;&gt;
-    &lt;blockquote class=&quot;pullquote large-10 small-11 columns large-offset-2&quot;&gt;
+    &lt;div class=&quot;large-4 small-12 columns push-1&quot;&gt;
+      &lt;h3&gt;Studying Existing Road Signs&lt;/h3&gt;
+
+      &lt;figure&gt;
+  &lt;a href=&quot;http://cdn.ilovetypography.com/img/2012/04/signage-1.jpg&quot; title=&quot;Studying Existing Road Signs&quot; data-fluidbox data-no-instant&gt;
+    &lt;img class=&quot;fluidbox&quot; src=&quot;http://cdn.ilovetypography.com/img/2012/04/signage-1.jpg&quot; alt=&quot;Studying Existing Road Signs&quot;&gt;
+  &lt;/a&gt;
+
+  &lt;figcaption&gt;Top-left: Germany. Bottom-left: Italy. Right: Holland.&lt;/figcaption&gt;
+&lt;/figure&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;large-6 small-12 columns pull-1&quot;&gt;
+      &lt;p&gt;I have looked after the wild stock of the town, which give a faithful herdsman a good deal of trouble by leaping fences; and I have had an eye to the unfrequented nooks and corners of the farm; though I did not always know whether Jonas or Solomon worked in a particular field to-day; that was none of my business. I have watered the red huckleberry, the sand cherry and the nettle-tree, the red pine and the black ash, the white grape and the yellow violet, which might have withered else in dry seasons.In short, I went on thus for a long time (I may say it without boasting), faithfully minding my business, till it became more and more evident that my townsmen would not after all admit me into the list of town officers, nor make my place a sinecure with a moderate allowance. My accounts, which I can swear to have kept faithfully, I have, indeed, never got audited, still less accepted, still less paid and settled. However, I have not set my heart on that.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+  &lt;div class=&quot;row full-width&quot;&gt;
+    &lt;blockquote class=&quot;pullquote large-9 small-11 columns large-offset-2 small-offset-1&quot;&gt;
       &lt;p&gt;For a long time I was reporter to a journal, of no very wide circulation, whose editor has never yet seen fit to print the bulk of my contributions, and, as is too common with writers, I got only my labor for my pains. However, in this case my pains were their own reward.&lt;/p&gt;
     &lt;/blockquote&gt;
   &lt;/div&gt;
-&lt;/section&gt;
-
-&lt;div class=&quot;row full-width&quot;&gt;
-  &lt;p class=&quot;large-6 small-11 columns&quot;&gt;I have looked after the wild stock of the town, which give a faithful herdsman a good deal of trouble by leaping fences; and I have had an eye to the unfrequented nooks and corners of the farm; though I did not always know whether Jonas or Solomon worked in a particular field to-day; that was none of my business. I have watered the red huckleberry, the sand cherry and the nettle-tree, the red pine and the black ash, the white grape and the yellow violet, which might have withered else in dry seasons.&lt;/p&gt;
-
-  &lt;p class=&quot;large-6 small-11 columns&quot;&gt;In short, I went on thus for a long time (I may say it without boasting), faithfully minding my business, till it became more and more evident that my townsmen would not after all admit me into the list of town officers, nor make my place a sinecure with a moderate allowance. My accounts, which I can swear to have kept faithfully, I have, indeed, never got audited, still less accepted, still less paid and settled. However, I have not set my heart on that.&lt;/p&gt;
-&lt;/div&gt;</content>
+&lt;/section&gt;</content>
   </entry>
   
   <entry>
@@ -231,7 +242,7 @@
       <name>Devin Halladay</name>
       <uri>http://devinhalladay.com/</uri>
     </author>
-    <content type="html">&lt;ul class=&quot;full-width-row&quot;&gt;
+    <content type="html">&lt;ul class=&quot;small-block-grid-1 large-block-grid-3&quot;&gt;
   &lt;li&gt;
   &lt;figure&gt;
     &lt;a href=&quot;/uploads/2014/03/squire.jpg&quot; title=&quot;Squire Logo&quot; data-fluidbox data-no-instant&gt;
