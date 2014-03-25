@@ -1,15 +1,16 @@
 .footer {
-  border-top: 1px dotted $dark-grey;
-  background-color: #F6F7F8;
-  padding: 2em 0 2em;
-  font-family: $serif;
-  bottom: 0;
-  width: 100%;
-  height: auto;
-}
+  bottom           : 0;
 
+  height           : auto;
+  width            : 100%;
+  padding          : 2em 0 2em;
+
+  background-color : #F6F7F8;
+  font-family      : $serif;
+  border-top       : 1px dotted $dark-grey;
+}
 @media screen and (max-width: 768px) {
   [class*="column"]+[class*="column"]:last-child {
-    float: none;
+    float : none;
   }
 }

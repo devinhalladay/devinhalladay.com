@@ -1,55 +1,64 @@
+
 .header {
-  padding-top: 1em;
+  padding-top    : 1em;
   // background-color: #F6F7F8;
-  padding-bottom: 2em;
+  padding-bottom : 2em;
 }
 
 nav {
-  border-bottom: 1px dotted $dark-grey;
-  padding-bottom: 2.5em;
+  padding-bottom : 2.5em;
+  border-bottom  : 1px dotted $dark-grey;
 
   ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    display: block;
+    display    : block;
+
+    width      : 100%;
+    margin     : 0;
+    padding    : 0;
+
+    list-style : none;
   }
   li {
-    float: left;
-    display: block;
+    display : block;
+    float   : left;
+
     &:last-child {
-      margin-right: 0;
+      margin-right : 0;
     }
+
     &:not(:first-child) {
-      float: right;
-      margin-left: 30px;
+      float       : right;
+      margin-left : 30px;
     }
+
     a {
-      font-family: $serif-sc;
-      text-transform: lowercase;
-      font-size: 1em;
-      font-weight: 500;
-      line-height: 1em;
-      letter-spacing: 0.5px;
-      color: $main-text-color;
-      text-decoration: none;
-      border-bottom: none;
+      font-family     : $serif-sc;
+      font-size       : 1em;
+      font-weight     : 500;
+      color           : $main-text-color;
+      letter-spacing  : 0.5px;
+      line-height     : 1em;
+      text-decoration : none;
+      text-transform  : lowercase;
+      border-bottom   : none;
+
       &:hover {
-        border-bottom: none;
-        color: $accent-color;
-        text-decoration: none;
+        color           : $accent-color;
+        text-decoration : none;
+        border-bottom   : none;
       }
     }
+
     &.active {
       a {
-        color: $accent-color;
+        color : $accent-color;
       }
     }
+
     &:first-child {
       a {
-        font-weight: bold;
-        color: $main-text-color;
+        font-weight : bold;
+        color       : $main-text-color;
       }
     }
   }
@@ -86,16 +95,16 @@ nav {
   width: 30px;
   border-bottom: none;
 }*/
-
 @media screen and (max-width: 768px) {
   nav li {
-    margin-right: none;
+    margin-right : none;
+
     a {
-      font-size: 1em;
+      font-size : 1em;
     }
     &:not(:first-child) {
-      margin-left: 30px;
-      float: left;
+      float       : left;
+      margin-left : 30px;
     }
   }
 }
@@ -103,16 +112,16 @@ nav {
 @media screen and (max-width: 485px) {
   nav li {
     &:first-child {
-      float: none;
+      float : none;
     }
     &:not(:first-child) {
-      float: left;
-      margin-left: 0;
-      margin-right: 20px;
+      float        : left;
+
+      margin-right : 20px;
+      margin-left  : 0;
     }
   }
 }
-
 /*@media screen and (min-width: 768px) {
   .js .nav-collapse {
     position: relative;

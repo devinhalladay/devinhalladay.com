@@ -42,7 +42,7 @@
   {% stylesheet devin %}
   {% if page.custom_css %}{{ page.custom_css | stylesheet }}{% endif %}
 </head>
-<body class="{% if page.custom_css_class %}{{ page.custom_css_class }}{% endif %}">
+<body class="{% if page.custom_class %}{{ page.custom_class }}{% endif %}">
   {% capture currentURL %}{{ page.url | replace: '/', ' ' | truncatewords: 1 | remove: '...' | remove: ' ' }}{% endcapture %}
   <div class="header">
     <div class="row">
