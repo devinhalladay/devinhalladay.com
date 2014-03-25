@@ -1,199 +1,215 @@
+
+.browser-window-controls .tabtext,
+
 #browser {
 /*  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;*/
-  position: relative;
-  display: inline-block;
-  width: 100%;
+  position : relative;
+  display  : inline-block;
+
+  width    : 100%;
+
   @media screen and (max-width: 321px) {
-    margin-left: -26px;
+    margin-left : -26px;
   }
 }
 
 #browser > img {
-  display: block;
+  display : block;
 }
 
 .browser-window-border {
-  border: 1px solid rgba(0,0,0,0.3);
-  border-radius: 5px 5px 0 0;
-  margin-left: -2px;
-  min-height: 69px;
-  min-width: 300px;
-  width: 100%;
+  min-height    : 69px;
+  width         : 100%;
+  min-width     : 300px;
+  margin-left   : -2px;
+
+  border        : 1px solid rgba(0,0,0,0.3);
+  border-radius : 5px 5px 0 0;
 }
 
 .browser-window-controls {
-  height: 35px;
-  width: 100%;
-  border-bottom: 1px solid rgb(145,145,145);
-  background: rgb(207,207,207); /* Old browsers */
-  background: -webkit-linear-gradient(top, rgba(207,207,207,1) 0%, rgba(176,176,176,1) 100%);
+  box-sizing         : border-box;
 
-  background: -moz-linear-gradient(top, rgba(207,207,207,1) 0%, rgba(176,176,176,1) 100%);
-  background: -o-linear-gradient(top, rgba(207,207,207,1) 0%, rgba(176,176,176,1) 100%);
-  background: -ms-linear-gradient(top, rgba(207,207,207,1) 0%, rgba(176,176,176,1) 100%);
+  height             : 35px;
+  width              : 100%;
+  padding            : 7px 0 0 9px;
+
+  background: rgb(207,207,207); /* Old browsers */
+  background         : -webkit-linear-gradient(top, rgba(207,207,207,1) 0%, rgba(176,176,176,1) 100%);
+  background         : -moz-linear-gradient(top, rgba(207,207,207,1) 0%, rgba(176,176,176,1) 100%);
+  background         : -o-linear-gradient(top, rgba(207,207,207,1) 0%, rgba(176,176,176,1) 100%);
+  background         : -ms-linear-gradient(top, rgba(207,207,207,1) 0%, rgba(176,176,176,1) 100%);
   background: linear-gradient(top, rgba(207,207,207,1) 0%, rgba(176,176,176,1) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfcfcf', endColorstr='#b0b0b0',GradientType=0 ); /* IE6-9 */
-  border-radius: 4px 4px 0 0;
+  border-radius      : 4px 4px 0 0;
+  border-bottom      : 1px solid rgb(145,145,145);
+  box-shadow         : inset 0px 1px 1px rgba(255,255,255,0.7);
 
-  -webkit-box-shadow: inset 0px 1px 1px rgba(255,255,255,0.7);
-  box-shadow: inset 0px 1px 1px rgba(255,255,255,0.7);
-
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 7px 0 0 9px;
+  -webkit-box-shadow : inset 0px 1px 1px rgba(255,255,255,0.7);
+  -webkit-box-sizing : border-box;
+  -moz-box-sizing    : border-box;
+  -ms-box-sizing     : border-box;
 }
 
 .browser-window-controls .window-button {
-  float: left;
+  float : left;
 }
 
 .browser-window-controls .window-button.red, .browser-window-controls .window-button.yellow {
-  margin-right: 7px;
+  margin-right : 7px;
 }
 
 .browser-window-controls .tab {
-  background-image: url(/uploads/2014/03/tab-left.png), url(/uploads/2014/03/tab-right.png);
-  background-position: top left, top right;
-  background-repeat: no-repeat;
-  position: relative;
-  display: inline-block;
+  position            : relative;
+  display             : inline-block;
+  float               : left;
+  top                 : 3px;
+  z-index             : 5;
+  box-sizing          : border-box;
 
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  max-width:  231px;
-  height: 26px;
-  padding: 0 37px 0 16px;
-  top: 3px;
-  float: left;
-  overflow: hidden;
-  z-index: 5;
-  white-space: nowrap;
-  overflow-x: hidden;
+  overflow            : hidden;
+  overflow-x          : hidden;
+  height              : 26px;
+  max-width           : 231px;
+  padding             : 0 37px 0 16px;
+
+  background-image    : url(/uploads/2014/03/tab-left.png), url(/uploads/2014/03/tab-right.png);
+  background-position : top left, top right;
+  background-repeat   : no-repeat;
+  white-space         : nowrap;
+
+  -webkit-box-sizing  : border-box;
+  -moz-box-sizing     : border-box;
+  -ms-box-sizing      : border-box;
 }
 
 .browser-window-controls .tab-wrapper {
-  border-top: 1px solid rgb(157,157,157);
-  display: inline-block;
-  background: rgb(240,240,240); /* Old browsers */
-  background: -webkit-linear-gradient(top, rgba(240,240,240,1) 0%, rgba(223,223,223,1) 100%);
-  max-width: 178px;
-  background: -moz-linear-gradient(top, rgba(240,240,240,1) 0%, rgba(223,223,223,1) 100%);
-  background: -o-linear-gradient(top, rgba(240,240,240,1) 0%, rgba(223,223,223,1) 100%);
-  background: -ms-linear-gradient(top, rgba(240,240,240,1) 0%, rgba(223,223,223,1) 100%);
+  display        : inline-block;
+
+  overflow-x     : hidden;
+  overflow-y     : hidden;
   background: linear-gradient(top, rgba(240,240,240,1) 0%, rgba(223,223,223,1) 100%); /* W3C */
-  height: 26px;
+  height         : 26px;
+  max-width      : 178px;
 
-  -ms-overflow-y: hidden;
-  overflow-y: hidden;
-  white-space: nowrap;
-  overflow-x: hidden;
+  background: rgb(240,240,240); /* Old browsers */
+  background     : -webkit-linear-gradient(top, rgba(240,240,240,1) 0%, rgba(223,223,223,1) 100%);
+  background     : -moz-linear-gradient(top, rgba(240,240,240,1) 0%, rgba(223,223,223,1) 100%);
+  background     : -o-linear-gradient(top, rgba(240,240,240,1) 0%, rgba(223,223,223,1) 100%);
+  background     : -ms-linear-gradient(top, rgba(240,240,240,1) 0%, rgba(223,223,223,1) 100%);
+  border-top     : 1px solid rgb(157,157,157);
+  white-space    : nowrap;
+
+  -ms-overflow-y : hidden;
 }
 
-.browser-window-controls .tabtext,
 .browser-window-controls .favicon {
-  margin: 5px 2px 0 2px;
-  display: inline-block;
-  float: left;
+  display : inline-block;
+  float   : left;
+
+  margin  : 5px 2px 0 2px;
 }
 
 .browser-window-controls .favicon {
-  height: 16px;
-  width: 16px;
+  height : 16px;
+  width  : 16px;
 }
 
 .browser-window-controls .tabtext {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 11px;
-  height: 26px !important;
-  padding-top: 2px;
-  line-height: 13px;
-  width: 150px;
-  white-space: nowrap;
-  overflow-x: hidden;
-  text-align: left;
-  overflow-y: none;
+  overflow-x  : hidden;
+  overflow-y  : none;
+  height      : 26px !important;
+  width       : 150px;
+  padding-top : 2px;
+
+  font-family : Helvetica, Arial, sans-serif;
+  font-size   : 11px;
+  line-height : 13px;
+  text-align  : left;
+  white-space : nowrap;
 }
 
 .browser-gui {
-  position: relative;
-  width: 100%;
+  position : relative;
+  width    : 100%;
 }
 
 .browser-gui-controls {
-  position: relative;
-  height: 34px;
-  width: 100%;
-  background: #d1d1d1;
-  border-bottom: 1px solid rgb(122,122,122);
+  position           : relative;
+  box-sizing         : border-box;
 
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
+  height             : 34px;
+  width              : 100%;
+
+  background         : #d1d1d1;
+  border-bottom      : 1px solid rgb(122,122,122);
+
+  -webkit-box-sizing : border-box;
+  -moz-box-sizing    : border-box;
+  -ms-box-sizing     : border-box;
 }
 
 .browser-gui-controls .nav-buttons {
-  float: left;
-  margin: 8px 10px 0 9px;
+  float  : left;
+  margin : 8px 10px 0 9px;
 }
 
 .browser-gui-controls .nav-button-settings {
-  float: right;
-  margin: 8px 9px 0 0;
+  float  : right;
+  margin : 8px 9px 0 0;
 }
 
 .browser-gui-controls .address-bar {
-  position: absolute;
-  left: 4px;
-  right: 4px;
-  float: left;
-  margin: 4px 10px 0 0;
-  height: 25px;
+  position           : absolute;
+  display            : inline-block;
+  float              : left;
+  right              : 4px;
+  left               : 4px;
+  box-sizing         : border-box;
 
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 5px 7px;
-  background: white;
-  border: 1px solid rgb(186,186,186);
-  border-radius: 3px;
+  height             : 25px;
+  margin             : 4px 10px 0 0;
+  padding            : 5px 7px;
 
-  -webkit-box-shadow: inset 0px 1px 1px rgb(245,245,245), 0px 1px 1px rgb(225,225,225);
-  box-shadow: inset 0px 1px 1px rgb(245,245,245), 0px 1px 1px rgb(225,225,225);
-  display: inline-block;
+  background         : white;
+  border             : 1px solid rgb(186,186,186);
+  border-radius      : 3px;
+  box-shadow         : inset 0px 1px 1px rgb(245,245,245), 0px 1px 1px rgb(225,225,225);
+
+  -webkit-box-sizing : border-box;
+  -moz-box-sizing    : border-box;
+  -ms-box-sizing     : border-box;
+  -webkit-box-shadow : inset 0px 1px 1px rgb(245,245,245), 0px 1px 1px rgb(225,225,225);
 }
 
 .browser-gui-controls .address-bar-text,.browser-gui-controls .address-bar-icon {
-  float: left;
-  display: inline-block;
+  display : inline-block;
+  float   : left;
 }
 
 .browser-gui-controls .address-bar-text {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 11px;
-  margin: 0 6px;
-  overflow-x: hidden;
-  line-height: 13px;
-  text-align: left;
-  height: 13px;
-  position: absolute;
-  left: 25px;
-  right: 25px;
+  position    : absolute;
+  right       : 25px;
+  left        : 25px;
+
+  overflow-x  : hidden;
+  height      : 13px;
+  margin      : 0 6px;
+
+  font-family : Helvetica, Arial, sans-serif;
+  font-size   : 11px;
+  line-height : 13px;
+  text-align  : left;
 }
 
 .browser-gui-controls .address-bar-icon {
-  margin-top: -1px;
+  margin-top : -1px;
 }
 
 .browser-gui-controls .address-bar-bookmark {
-  float: right;
-  margin-top: -2px;
+  float      : right;
+  margin-top : -2px;
 }

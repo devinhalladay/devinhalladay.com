@@ -1,212 +1,235 @@
+
 body {
-  font: {
-    family: $serif;
-    size: 106.3%;
-  }
-  line-height: 1.618em;
-  color: $main-text-color;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
   @include ligatures_kerning;
 
+  color                  : $main-text-color;
+  line-height            : 1.618em;
+
+  -webkit-font-smoothing : antialiased;
+  text-rendering         : optimizeLegibility;
+
+  font: {
+    family : $serif;
+    size   : 106.3%;
+  }
   @media screen and (max-width: 500px) {
-    font-size: 93.8%;
+    font-size : 93.8%;
   }
 }
 
 /* HEADINGS */
 h1, h2, h3, h4, h5 {
-  font-family: $display-font;
-  color: $heading-text-color;
-  line-height: 1.2em;
-  margin: 0.3em 0 0.5em 0;
+  margin      : 0.3em 0 0.5em 0;
+
+  font-family : $display-font;
+  color       : $heading-text-color;
+  line-height : 1.2em;
 }
 
 h1 {
-  font-size: 2em;
-  line-height: 1.2em;
-  margin: 0.3em 0 0.5em 0;
+  margin      : 0.3em 0 0.5em 0;
+
+  font-size   : 2em;
+  line-height : 1.2em;
+
   @media screen and (max-width: 768px) {
-    font-size: 1.8em;
+    font-size : 1.8em;
   }
 }
 
 h2 { font-size: 1.675em; }
 
 h3 {
+  letter-spacing : .05em;
+  text-transform : uppercase;
+
   font: {
-    size: 1.324em;
-    family: $serif-sc;
+    size   : 1.324em;
+    family : $serif-sc;
   }
-  text-transform: uppercase;
-  letter-spacing: .05em;
 }
 
 h4 {
+  text-transform : lowercase;
   font: {
-    size: 1.3em;
-    family: $sans-sc;
+    size   : 1.3em;
+    family : $sans-sc;
   }
-  text-transform: lowercase;
 }
 
 /* TEXT */
 p {
-  margin: auto auto 1.5em;
+  margin : auto auto 1.5em;
+
   &.date {
+    margin-bottom  : 2.25em;
+
+    color          : $secondary-text-color;
+    letter-spacing : .05px;
+    text-transform : lowercase;
+
     font: {
-      family: $serif-sc;
-      weight: 500;
-      size: 1em;
+      family : $serif-sc;
+      weight : 500;
+      size   : 1em;
     }
-    text-transform: lowercase;
-    letter-spacing: .05px;
-    color: $secondary-text-color;
-    margin-bottom: 2.25em;
   }
   &.page-description {
-    margin-bottom: 0;
-    font-family: $display-font;
+    margin-bottom : 0;
+    font-family   : $display-font;
+
     .lead {
-      margin-bottom: 0.4em;
+      margin-bottom : 0.4em;
     }
   }
 }
 
 .text-align-right {
-  text-align: right;
+  text-align : right;
 }
 
 .text-align-left {
-  text-align: left;
+  text-align : left;
 }
 
 .text-align-center {
-  text-align: center;
+  text-align : center;
 }
 
 .lead {
+  margin-bottom : 1.05em;
+  line-height   : 1.5em;
+
   font: {
-    size: 118.8%;
-    family: $display-font;
+    size   : 118.8%;
+    family : $display-font;
   }
-  line-height: 1.5em;
-  margin-bottom: 1.05em;
   @media screen and (max-width: 768px) {
-    font-size: 110%;
-    line-height: 1.618em;
-    margin-bottom: 1.618em;
+    margin-bottom : 1.618em;
+
+    font-size     : 110%;
+    line-height   : 1.618em;
   }
 }
 
 p, blockquote, table, form, ul, ol {
-  display: block;
-  margin-bottom: 1.64706rem;
+  display       : block;
+  margin-bottom : 1.64706rem;
 }
 
 ol, ul {
   @media screen and (max-width: 768px) {
-    margin-left: 1.4em;
+    margin-left : 1.4em;
   }
 }
 
 .cite {
+  display : block;
   font: {
-    size: 0.618em;
-    style: italic;
+    size  : 0.618em;
+    style : italic;
   }
-  display: block;
 }
 
 .blog p.date {
-  margin-bottom: 1.2em;
+  margin-bottom : 1.2em;
 }
 
 em, i { font-style: italic; }
+
 strong, b { font-weight: bold; }
 
 small {
-  font-size: 14px;
+  font-size : 14px;
   h3 {
-    font-size: 17px;
-    padding-bottom: 1em;
+    padding-bottom : 1em;
+    font-size      : 17px;
   }
 }
 
 figcaption {
+  color : $secondary-text-color;
   font: {
-    size: 90%;
-    family: $sans;
+    size   : 90%;
+    family : $sans;
   }
-  color: $secondary-text-color;
 }
 
 .serif-sc {
-  font-family: $serif-sc;
-  text-transform: lowercase;
-  letter-spacing: .05em;
+  font-family    : $serif-sc;
+  letter-spacing : .05em;
+  text-transform : lowercase;
 }
 
 .sans-sc {
-  font-family: $sans-sc;
-  text-transform: lowercase;
-  letter-spacing: .05em;
+  font-family    : $sans-sc;
+  letter-spacing : .05em;
+  text-transform : lowercase;
 }
 
 .caps, %caps {
-  font-family: $serif-sc;
-  text-transform: lowercase;
-  letter-spacing: .05em;
+  font-family    : $serif-sc;
+  letter-spacing : .05em;
+  text-transform : lowercase;
 }
 
 /* LISTS */
 ul {
-  list-style: disc outside none;
-  margin-bottom: 1.618em;
-  margin-left: 2.5em;
+  margin-bottom : 1.618em;
+  margin-left   : 2.5em;
+
+  list-style    : disc outside none;
 }
 
 ol {
-  list-style: decimal outside none;
-  margin-bottom: 1.618em;
+  margin-bottom : 1.618em;
+  list-style    : decimal outside none;
 }
 
 /* BLOCKQUOTES */
 blockquote {
-  padding: 0;
-  border-left: 3px solid $accent-color;
-  padding-left: 1.5em;
-  margin-left: -1.5em;
-  margin-bottom: 1.4em;
+  margin-bottom : 1.4em;
+  margin-left   : -1.5em;
+  padding       : 0;
+  padding-left  : 1.5em;
+
+  border-left   : 3px solid $accent-color;
+
   p {
-    font-family: $display-font;
-    margin-bottom: 0;
-    color: $main-text-color;
+    margin-bottom : 0;
+
+    font-family   : $display-font;
+    color         : $main-text-color;
+
     + p {
-      text-indent: 2em;
+      text-indent : 2em;
     }
   }
   &.pullquote {
-    border-left: none;
-    margin: auto;
-    padding-left: 0;
-    margin-bottom: 1.5em;
-    p {
-      font: {
-        family: $display-font;
-        weight: 500;
-        size: 24px;
-      }
-      color: $heading-text-color;
-      margin: 2em -80px 2em;
-      line-height: 40px;
-      text-align: center;
-      padding: 0;
+    margin        : auto;
+    margin-bottom : 1.5em;
+    padding-left  : 0;
 
+    border-left   : none;
+
+    p {
+      margin      : 2em -80px 2em;
+      padding     : 0;
+
+      color       : $heading-text-color;
+      line-height : 40px;
+      text-align  : center;
+
+      font: {
+        family : $display-font;
+        weight : 500;
+        size   : 24px;
+      }
       @media screen and (max-width: 768px) {
-        font-size: 1.3em;
-        line-height: 1.618em;
-        margin: 0;
+        margin      : 0;
+
+        font-size   : 1.3em;
+        line-height : 1.618em;
       }
     }
   }
@@ -217,26 +240,30 @@ blockquote {
 ASIDE
 ------------------------------------------- */
 aside {
-  font-size: 16px;
-  line-height: 29px;
-  margin-left: -12em;
-  margin-top: 0.3em;
-  position: absolute;
-  text-align: right;
-  width: 160px;
+  position    : absolute;
+
+  width       : 160px;
+  margin-top  : 0.3em;
+  margin-left : -12em;
+
+  font-size   : 16px;
+  line-height : 29px;
+  text-align  : right;
 
   @media screen and (max-width: 1052px) {
-    color: $secondary-text-color;
-    display: block;
-    font-style: italic;
-    padding: 0;
-    padding-bottom: 1.5em;
-    position: inherit;
-    text-align: center;
-    width: inherit;
-    margin-left: 0;
-    margin: auto;
-    margin-top: 1.5em;
+    position       : inherit;
+    display        : block;
+
+    width          : inherit;
+    margin         : auto;
+    margin-top     : 1.5em;
+    margin-left    : 0;
+    padding        : 0;
+    padding-bottom : 1.5em;
+
+    font-style     : italic;
+    color          : $secondary-text-color;
+    text-align     : center;
   }
 }
 
@@ -245,33 +272,40 @@ aside {
 HR
 ------------------------------------------- */
 hr {
-  border: none;
-  height: auto;
+  height : auto;
+  border : none;
+
   &.short {
-    color: $dark-grey;
+    color : $dark-grey;
     &:after {
-      content: "* * *";
+      content        : "* * *";
+
+      display        : block;
+
+      margin-top     : 2rem;
+      margin-bottom  : 1.75rem;
+
+      color          : rgba(0,0,0,0.3);
+      letter-spacing : .2em;
+      line-height    : .857142857;
+      text-align     : center;
+
       font: {
-        size: 1.75rem;
-        family: $display-font;
-        weight: 700;
+        size   : 1.75rem;
+        family : $display-font;
+        weight : 700;
       }
-      line-height: .857142857;
-      letter-spacing: .2em;
-      color: rgba(0,0,0,0.3);
-      display: block;
-      text-align: center;
-      margin-top: 2rem;
-      margin-bottom: 1.75rem;
     }
   }
   &.long {
-    background: $dark-grey;
-    border: none;
-    -moz-box-shadow: 0 1px 0 #FFF;
-    -webkit-box-shadow: 0 1px 0 #FFF;
-    box-shadow: 0px 1px 0 #FFF;
-    height: 1px;
+    height             : 1px;
+
+    background         : $dark-grey;
+    border             : none;
+    box-shadow         : 0px 1px 0 #FFF;
+
+    -moz-box-shadow    : 0 1px 0 #FFF;
+    -webkit-box-shadow : 0 1px 0 #FFF;
   }
 }
 
@@ -280,27 +314,32 @@ hr {
 LINKS
 ------------------------------------------- */
 a {
-  color: $main-text-color;
-  text-decoration: none;
-  border-bottom: 1px dotted $main-text-color;
-  -webkit-transition: .2s;
-  transition: .2s;
+  color              : $main-text-color;
+  text-decoration    : none;
+  border-bottom      : 1px dotted $main-text-color;
+
+  -webkit-transition : .2s;
+  transition         : .2s;
+
   &:hover, &:focus {
-    color: $accent-color;
-    text-decoration: none;
-    border-bottom: 1px dotted $accent-color;
+    color           : $accent-color;
+    text-decoration : none;
+    border-bottom   : 1px dotted $accent-color;
   }
+
   &.more {
-    font-style: normal;
+    font-style : normal;
   }
+
   &.post-title {
-    text-decoration: none;
-    border-bottom: none;
-    color: $heading-text-color;
-    font-weight: 600;
+    font-weight     : 600;
+    color           : $heading-text-color;
+    text-decoration : none;
+    border-bottom   : none;
+
     &:hover {
-      border-bottom-color: $accent-color;
-      color: $accent-color;
+      color               : $accent-color;
+      border-bottom-color : $accent-color;
     }
   }
 }

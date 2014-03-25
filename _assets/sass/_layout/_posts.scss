@@ -1,37 +1,40 @@
+
 .entry {
   p {
-    text-indent: 0;
-    margin-top: auto;
+    margin-top  : auto;
+    text-indent : 0;
   }
 }
 
 .quote {
-  position: relative;
+  position : relative;
+
   h4 {
-    font-family: $serif-sc;
+    font-family : $serif-sc;
   }
   p {
-    margin-bottom: 0;
-    font-style: italic;
+    margin-bottom : 0;
+    font-style    : italic;
+
     &.date {
-      font-style: normal;
+      font-style : normal;
     }
     + p {
-      text-indent: 2em;
+      text-indent : 2em;
     }
   }
 }
 
 .link {
-  position: relative;
+  position : relative;
   h4 {
-    font-family: $serif-sc;
+    font-family : $serif-sc;
   }
 }
 
 .date {
   a {
-    font-size: 1.1em;
-    text-decoration: none;
+    font-size       : 1.1em;
+    text-decoration : none;
   }
 }

@@ -1,63 +1,68 @@
+
   /*
 
 MAIN CONTENT
 --------------------------------------------------------- */
-
 .main-content {
-  margin-bottom: 3em;
+  margin-bottom : 3em;
   ul {
-  list-style: none;
-  margin-left: 0;
-  margin-bottom: 1.618em;
+    margin-bottom : 1.618em;
+    margin-left   : 0;
+
+    list-style    : none;
   }
 }
 
 .page {
   h2 {
-    margin: 2em 0 .2em;
+    margin : 2em 0 .2em;
   }
 }
 
 .page-masthead {
-  padding-bottom: 2em;
+  padding-bottom : 2em;
   hr.long {
-    border-top: 1px dotted $dark-grey;
-    background: transparent;
+    background : transparent;
+    border-top : 1px dotted $dark-grey;
   }
 }
 
 .entry {
-  border-bottom: 1px dotted $dark-grey;
-  padding: 0 0 1em;
-  margin: 0 0 2em;
+  margin        : 0 0 2em;
+  padding       : 0 0 1em;
+
+  border-bottom : 1px dotted $dark-grey;
+
   &.quote {
     blockquote {
-      margin: auto;
-      border-left: none;
-      padding-left: 0;
-      margin-left: 0;
-      margin-top: 0;
-      padding-bottom: 0;
+      margin         : auto;
+      margin-top     : 0;
+      margin-left    : 0;
+      padding-bottom : 0;
+      padding-left   : 0;
+
+      border-left    : none;
+
       p {
-        color: $main-text-color;
+        color : $main-text-color;
       }
     }
   }
 }
 
 .pubdate {
-  color: $secondary-text-color;
-  margin-left: 12px;
+  margin-left : 12px;
+  color       : $secondary-text-color;
 }
 
 .post {
-  position: relative;
+  position : relative;
   h2 {
-    margin: 0 0 0.3em;
-    font-weight: 600;
+    margin      : 0 0 0.3em;
+    font-weight : 600;
   }
 }
 
 .full-width-row {
-  max-width: 90%
+  max-width : 90%
 }
