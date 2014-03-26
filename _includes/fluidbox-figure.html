@@ -3,5 +3,5 @@
     <img class="fluidbox" src="{{ include.url }}" alt="{{ include.alt }}">
   </a>
 
-  <figcaption>Top-left: Germany. Bottom-left: Italy. Right: Holland.</figcaption>
+  {% if include.caption %}<figcaption>{{ include.caption }}</figcaption>{% endif %}
 </figure>

@@ -298,10 +298,10 @@ hr {
     }
   }
   &.long {
-    height             : 1px;
+    height     : 1px;
 
-    background         : $dark-grey;
-    border             : none;
+    background : $dark-grey;
+    border     : none;
   }
 }
 
@@ -337,5 +337,22 @@ a {
       color               : $accent-color;
       border-bottom-color : $accent-color;
     }
+  }
+}
+
+.sans {
+  font-family : $sans;
+  &.light {
+    color : $secondary-text-color;
+  }
+}
+
+.light {
+  color : $secondary-text-color;
+}
+
+.dark {
+  p {
+    color : $heading-text-color;
   }
 }
