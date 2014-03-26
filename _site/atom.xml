@@ -5,7 +5,7 @@
   <title>Devin Halladay</title>
   <link href="http://devinhalladay.com"/>
   <link type="application/atom+xml" rel="self" href="http://devinhalladay.com/atom.xml"/>
-  <updated>2014-03-25T18:33:29-04:00</updated>
+  <updated>2014-03-26T19:27:22-04:00</updated>
   <id>http://devinhalladay.com</id>
   <author>
     <name>Devin Halladay</name>
@@ -16,7 +16,7 @@
   <entry>
     <id>http://devinhalladay.com/work/devinhalladay</id>
     <link type="text/html" rel="alternate" href="http://devinhalladay.com/work/devinhalladay"/>
-    <title>Personal Site</title>
+    <title>My Website</title>
     <published>2014-03-24T00:00:00-04:00</published>
     <updated>2014-03-24T00:00:00-04:00</updated>
     <author>
@@ -27,12 +27,12 @@
   &lt;div class=&quot;row full-width&quot;&gt;
     &lt;div class=&quot;large-5 small-12 columns push-1&quot;&gt;
       &lt;hr class=&quot;long&quot;&gt;
-      &lt;h1&gt;Personal Site&lt;/h1&gt;
+      &lt;h1&gt;My Website&lt;/h1&gt;
       &lt;hr class=&quot;long&quot;&gt;
     &lt;/div&gt;
     &lt;div class=&quot;page-masthead large-5 small-12 pull-1 columns&quot;&gt;
       &lt;hr class=&quot;long&quot;&gt;
-      The story of my personal website, its evolution, and how it became an extension of my body and soul.
+      A glimpse into the making of my site, and its continous evolution as my humble home on the web.
       &lt;hr class=&quot;long&quot;&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -40,38 +40,142 @@
 
 &lt;section class=&quot;intro&quot;&gt;
   &lt;div class=&quot;row full-width&quot;&gt;
-    &lt;p class=&quot;large-10 small-12 push-1 columns&quot;&gt;
-    The story begins in 2006 with a trip down Route 66. Day in, day out, I looked at U.S. traffic signs that were either set in the old, somewhat clumsy “FHWA font series” or the new Clearview HWY typeface. Approaching the signs, I would often test myself: which typeface works best from a distance, and which of its features or details might be responsible for its performance. I had so many more questions than answers. Surely every professional type designer has at least an inkling of how a signage typeface should look: Probably it sports a rather clean sans serif design, open counters and a rather large x-height. But which x-height works best, and why? What is the optimal stroke width? A monocular or binocular g? Should the design be somewhat condensed to permit more information on a sign, or rather should it be relatively wide so that individual letters are more easily differentiated?
+  &lt;div class=&quot;large-10 small-12 push-1 columns&quot;&gt;
+    &lt;p&gt;My website has always been a sacred place — a place where I can experiment, test, succeed, fail, and share. As a writer, it’s important to me that I have an outlet besides pen and paper to share some of my thoughts with the world. As a designer and a human being, that outlet needs to be beautiful and it needs to reflect who I am — this means it has to show my painstaking attention to detail, my love for typography, my unique mind, and my individualism. &lt;em&gt;It needs to feel like home.&lt;/em&gt;
+    &lt;br&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;That’s what this website is to me — home&lt;/strong&gt;. It allows me to be free. Like any home, this website needs constant improvement and change to fit my ever-changing personality and tastes. Many of you know that I’m only 17 years old — and as I continue to grow older, my life grows more complicated. When my life is complicated, this website might be simplified to help me feel more at home again; or, when my life is simple, maybe I’ll rethink my website so that it compliments my life.
+    &lt;br&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Whatever happens with this website in the future, it will always be my home on the Internet, and I will treat it with the respect and love that I give to my brick &amp;amp; mortar home — the same goes for every other project I work on, whether it be for a client or for myself.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/section&gt;
 
 &lt;section class=&quot;wrap-grey&quot;&gt;
   &lt;div class=&quot;row full-width&quot;&gt;
     &lt;div class=&quot;large-4 small-12 columns push-1&quot;&gt;
-      &lt;h3&gt;Studying Existing Road Signs&lt;/h3&gt;
+      &lt;h3&gt;Judging a Book by Its Cover&lt;/h3&gt;
 
       &lt;figure&gt;
-  &lt;a href=&quot;http://cdn.ilovetypography.com/img/2012/04/signage-1.jpg&quot; title=&quot;Studying Existing Road Signs&quot; data-fluidbox data-no-instant&gt;
-    &lt;img class=&quot;fluidbox&quot; src=&quot;http://cdn.ilovetypography.com/img/2012/04/signage-1.jpg&quot; alt=&quot;Studying Existing Road Signs&quot;&gt;
+  &lt;a href=&quot;/uploads/2014/03/urban-life-and-form.png&quot; title=&quot;Urban Life and Form&quot; data-fluidbox data-no-instant&gt;
+    &lt;img class=&quot;fluidbox&quot; src=&quot;/uploads/2014/03/urban-life-and-form.png&quot; alt=&quot;Urban Life and Form&quot;&gt;
   &lt;/a&gt;
 
-  &lt;figcaption&gt;Top-left: Germany. Bottom-left: Italy. Right: Holland.&lt;/figcaption&gt;
+  &lt;figcaption&gt;One of my favorite book covers. It gives the reader only what they &lt;em&gt;need&lt;/em&gt; to become intriqued in the book, and nothing more. Simple, but not too simple. Brilliant.&lt;/figcaption&gt;
 &lt;/figure&gt;
     &lt;/div&gt;
 
     &lt;div class=&quot;large-6 small-12 columns pull-1&quot;&gt;
-      &lt;p&gt;I have looked after the wild stock of the town, which give a faithful herdsman a good deal of trouble by leaping fences; and I have had an eye to the unfrequented nooks and corners of the farm; though I did not always know whether Jonas or Solomon worked in a particular field to-day; that was none of my business. I have watered the red huckleberry, the sand cherry and the nettle-tree, the red pine and the black ash, the white grape and the yellow violet, which might have withered else in dry seasons.In short, I went on thus for a long time (I may say it without boasting), faithfully minding my business, till it became more and more evident that my townsmen would not after all admit me into the list of town officers, nor make my place a sinecure with a moderate allowance. My accounts, which I can swear to have kept faithfully, I have, indeed, never got audited, still less accepted, still less paid and settled. However, I have not set my heart on that.&lt;/p&gt;
+      &lt;p&gt;
+        While I don&#39;t encourage the act of judging a book by its cover, I understand that many people do this without even realizing it (including myself). There&#39;s no avoiding that. But one thing I have learned through the past few iterations of my website is that the homepage is one of the most important pages on any website. I tried to make the homepage of this website simple and readable, like a book — but not so simple as to dissuade visitors from continuing on to other pages.
+        &lt;br&gt;
+        &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;My goal with the homepage of this website is to give users just enough information and design so that they become interested in the site — just like a great book cover. This may seem like an obvious concept, but it&#39;s shocking how many designers don&#39;t understand this. I think of a book cover as a photograph of the contents of the book. Looking at a photo, you usually can&#39;t see much only see what the photographer &lt;em&gt;wants&lt;/em&gt; you to see. If you want to see more, you need to go to the location and see it for yourself — this is why photography is so intoxicating as an artform.
+        &lt;br&gt;
+        &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;Applying these principles to this website, I have been fairly successful in having visitors click through to other pages on my website — many of my visitors have viewed nearly every page on my website; and fifteen of those visitors in the past year have turned into clients.&lt;/strong&gt;
+      &lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/section&gt;
 
 &lt;section&gt;
   &lt;div class=&quot;row full-width&quot;&gt;
-    &lt;blockquote class=&quot;pullquote large-9 small-11 columns large-offset-2 small-offset-1&quot;&gt;
-      &lt;p&gt;For a long time I was reporter to a journal, of no very wide circulation, whose editor has never yet seen fit to print the bulk of my contributions, and, as is too common with writers, I got only my labor for my pains. However, in this case my pains were their own reward.&lt;/p&gt;
+    &lt;div class=&quot;large-8 small-11 push-1 columns&quot;&gt;
+      &lt;p&gt;In future iterations of this website, I&#39;ll probably try to adopt a new homepage concept that is truly akin to a book cover — no articles, no links, just a small snapshot of me and my ability as a designer, writer, and human being. I&#39;ll cross that bridge when the time comes, though.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+  &lt;div class=&quot;row full-width&quot;&gt;
+    &lt;blockquote class=&quot;pullquote large-8 small-11 columns large-offset-3 small-offset-1&quot;&gt;
+      &lt;p&gt;I think of a book cover as a photograph of the contents of the book. Looking at a photo, you usually can&#39;t see much only see what the photographer wants you to see. If you want to see more, you need to go to the location and see it for yourself — this is why photography is so intoxicating as an artform.&lt;/p&gt;
     &lt;/blockquote&gt;
   &lt;/div&gt;
-&lt;/section&gt;</content>
+&lt;/section&gt;
+
+&lt;section&gt;
+  &lt;div class=&quot;row full-width&quot;&gt;
+    &lt;div class=&quot;large-10 small-12 push-1 columns&quot;&gt;
+      &lt;h3&gt;The Typography&lt;/h3&gt;
+      &lt;p&gt;
+        I&#39;m obsessed with typography, so much so that it&#39;s almost unhealthy — &lt;em&gt;almost&lt;/em&gt;. Typography is one of the most powerful, and most complicated, aspects of design; and it&#39;s equally as important to me as a writer. Typography can convey so much emotion in a design. Helvetica, a bold, steril font, can make a design feel strong; Neutra Display can make a design feel elegant; or if you set type in Arial, it might feel cheap and flimsy, like cardboard.
+        &lt;br&gt;
+        &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;With this in mind, I chose three incredibly strong, yet personable typefaces from &lt;span class=&quot;serif-sc&quot;&gt;H&amp;amp;Co.&lt;/span&gt;: Sentinel ScreenSmart, Whitney ScreenSmart, and Mercury ScreenSmart (also the small-caps variants of Whitney SSm and Mercury SSm). Headers and most display text are set in Sentinel; Blockquotes, pullquotes, image captions, and other tertiary text are set in Whitney; And most body text is set in Mercury (although lately I&#39;ve been switching between Sentinel and Mercury every few weeks to suit my mood).
+      &lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;figure class=&quot;img-caption-overlay&quot;&gt;
+  &lt;img src=&quot;/uploads/2014/03/type-sample.jpg&quot; alt=&quot;Type samples.&quot;&gt;
+  &lt;figcaption class=&quot;caption-overlay&quot;&gt;Left to right: Mercury Bold, Whitney Bold, Sentinel Bold&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+    &lt;div class=&quot;large-10 small-12 push-1 columns&quot;&gt;
+      &lt;h3&gt;The Grid&lt;/h3&gt;
+      &lt;p&gt;
+        This year one of my goals is to learn to understand the power of the grid, and to learn to use it properly to harness that power. I&#39;ve come a long way, but there&#39;s still so much to learn.
+        &lt;br&gt;
+        &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;I use &lt;span class=&quot;serif-sc&quot;&gt;ZURB&lt;/span&gt; Foundation for grids on this site. Originally I planned on using Susy, but it was a little too complicated for me at the time because I didn&#39;t fully understand how grids work in design. Foundation has been an essential tool in the creation of this website, and has allowed me to focus on the design rather than focusing on coding the layouts.
+        &lt;br&gt;
+        &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Take this case study, for example. It would have taken me tons of time to code an editorial page like this without the help of Foundation! Foundation has allowed me to experiment with layouts without worrying about ruining other parts of my site by changing site-wide CSS.
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+  &lt;div class=&quot;row full-width&quot;&gt;
+    &lt;blockquote class=&quot;pullquote large-8 small-11 columns large-offset-3 small-offset-1&quot;&gt;
+      &lt;p&gt;Typography is one of the most powerful, and most complicated, aspects of design; and it&#39;s equally as important to me as a writer.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+  &lt;div class=&quot;row full-width&quot;&gt;
+    &lt;div class=&quot;large-10 small-12 push-1 columns&quot;&gt;
+      &lt;h3&gt;Constraints and Restraint&lt;/h3&gt;
+      &lt;p&gt;
+        I &lt;em&gt;love&lt;/em&gt; print design. One of my passions as a web designer is bringing elements of print design to the web — the typography, the grids, and the beauty of constraints and restraint. With that love for print in mind, I have tried to create an environment similar to a newspaper: constrained by a simple grid, limited to a minimal color palette, but restricted only by the limits of my imagination and ingenuity as a designer. This has made designing and developing my website manageable while still leaving room for expansion or reduction.
+      &lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;figure class=&quot;img-caption-overlay&quot;&gt;
+  &lt;img src=&quot;/uploads/2014/03/good-idea.jpg&quot; alt=&quot;Type samples.&quot;&gt;
+  &lt;figcaption class=&quot;caption-overlay&quot;&gt;Contraints and restraint: because it&#39;s just a good idea.&lt;/figcaption&gt;
+&lt;/figure&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class=&quot;wrap-grey&quot;&gt;
+  &lt;div class=&quot;row full-width&quot;&gt;
+    &lt;div class=&quot;large-5 small-11 single-text-column push-1 columns&quot;&gt;
+      &lt;h3&gt;Static, and Electric&lt;/h3&gt;
+      &lt;p&gt;Content management systems frustrate me. Too many of them have too many features — and the ones I love, like &lt;a href=&quot;http://siteleaf.com&quot;&gt;Siteleaf&lt;/a&gt;, don&#39;t have the features that I need for my site. That&#39;s why, with this latest iteration of my site I&#39;m using Jekyll. It doesn&#39;t have any fluff — in fact, it&#39;s fairly barebones as a static site generator — but it gives me the ability to change the source code or develop plugins that suit my workflow and my website.&lt;/p&gt;
+      &lt;p class=&quot;sans light&quot;&gt;
+        Side note: I absolutely adore Siteleaf. If I didn&#39;t need more extensibility, I&#39;d still be using it for my website. I use it for most other static websites I create, though. Go sign up and give it a try! You won&#39;t regret it.
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;large-4 small-11 columns pull-2&quot;&gt;
+      &lt;figure&gt;
+  &lt;a href=&quot;/uploads/2014/03/jekyll-and-hyde.jpg&quot; title=&quot;Jekyll and Hyde&quot; data-fluidbox data-no-instant&gt;
+    &lt;img class=&quot;fluidbox&quot; src=&quot;/uploads/2014/03/jekyll-and-hyde.jpg&quot; alt=&quot;Jekyll and Hyde&quot;&gt;
+  &lt;/a&gt;
+
+  &lt;figcaption&gt;I just &lt;em&gt;love&lt;/em&gt; the type on this poster!&lt;/figcaption&gt;
+&lt;/figure&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+  &lt;div class=&quot;row full-width&quot;&gt;
+    &lt;div class=&quot;large-10 small-11 push-1 columns&quot;&gt;
+      &lt;h3&gt;Constant Iteration&lt;/h3&gt;
+      &lt;p&gt;It&#39;s inevitable that the website you see before you will undergo constant change while it&#39;s online. Seriously, I&#39;m antsy and I&#39;m a perfectionist so it has to be this way to keep me sane. Despite the constant change, this website will continue to be a rock for me to fall back on when I am in need of a visible change in my philosoophy. It will continue to be my home, and it will always showcase my ideas, my work, and my love for everything design.&lt;/p&gt;
+      &lt;h3 class=&quot;light&quot;&gt;I hope you enjoy it as much as I do.&lt;/h3&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+</content>
   </entry>
   
   <entry>
