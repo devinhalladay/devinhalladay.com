@@ -6,6 +6,7 @@ Gemfile.lock
 
 # Ignore misc. files and folders
 _v1/
+_site/
 
 # Ignore node dependencies. Ensure you run `node install`!
 node_modules/
