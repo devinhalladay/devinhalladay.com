@@ -10,7 +10,7 @@ body {
 
   font: {
     family : $serif;
-    size   : 106.3%;
+    size   : 18px;
   }
   @media screen and (max-width: 500px) {
     font-size : 93.8%;
@@ -37,7 +37,7 @@ h1 {
   }
 }
 
-h2 { font-size: 1.675em; }
+h2 { font-size: 28px; }
 
 h3 {
   letter-spacing : .05em;
@@ -328,7 +328,7 @@ a {
   }
 
   &.post-title {
-    font-weight     : 600;
+    // font-weight     : 600;
     color           : $heading-text-color;
     text-decoration : none;
     border-bottom   : none;
