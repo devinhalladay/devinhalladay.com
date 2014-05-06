@@ -3,7 +3,7 @@ body {
   @include ligatures_kerning;
 
   color                  : $main-text-color;
-  line-height            : 1.618em;
+  line-height            : 28px;
 
   -webkit-font-smoothing : antialiased;
   text-rendering         : optimizeLegibility;
@@ -140,10 +140,11 @@ em, i { font-style: italic; }
 strong, b { font-weight: bold; }
 
 small {
-  font-size : 14px;
+  font-size : 15px;
+  line-height: 24px;
   h3 {
     padding-bottom : 1em;
-    font-size      : 17px;
+    font-size      : 18px;
   }
 }
 
