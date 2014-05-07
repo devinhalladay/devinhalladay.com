@@ -59,10 +59,10 @@ blockquote.pullquote {
   margin-bottom  : 0;
   padding-bottom : 0;
 
-  nav {
-    padding-bottom : 0;
-    border-bottom  : 0;
-  }
+  // nav {
+  //   padding-bottom : 0;
+  //   border-bottom  : 0;
+  // }
 }
 
 .editorial-project--devinhalladay {
@@ -82,7 +82,7 @@ hr.long {
 
 h3 {
   font-family    : $sans;
-  font-weight    : 600;
+  // font-weight    : 600;
   letter-spacing : inherit;
   text-transform : none;
 }
