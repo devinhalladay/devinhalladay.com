@@ -1,17 +1,11 @@
 ---
 layout: page
-title: 404
+title: Sorry, this page is lost.
 exclude_from_search: true
 ---
-
-## Sorry, this page doesn't exist.
+<figure>
+  <img src="/uploads/2014/05/numbers.jpg" title="This page is lost." alt="This page is lost.">
+  <figcaption>Beep, beep, beep, beep, beep, beep, beep, beep, beep.</figcaption>
+</figure>
 
 Looking for something? Search for it below or [peruse the archives](/archives/).
-
-<div id="search" class="search-form">
-  <form action="/search" method="get">
-    <p>
-      <input type="text" id="search-query" name="q" placeholder="Search…" autocomplete="off">
-    </p>
-  </form>
-</div>
