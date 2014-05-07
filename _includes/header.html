@@ -45,8 +45,8 @@
 <body class="{% if page.custom_class %}{{ page.custom_class }}{% endif %}">
   {% capture currentURL %}{{ page.url | replace: '/', ' ' | truncatewords: 1 | remove: '...' | remove: ' ' }}{% endcapture %}
   <div class="header">
-    <div class="row">
-      <div class="large-8 small-11 columns small-centered large-centered">
+    <div class="row full-width">
+      <div class="large-12 small-11 columns small-centered large-centered">
         <nav>
           <ul>
             <li{% if currentURL == 'index.html' %} class="active"{% endif %}><a href="/" title="Home" data-no-instant>Devin&nbsp;Halladay</a></li>
