@@ -2,12 +2,13 @@
 .header {
   padding-top    : 1em;
   // background-color: #F6F7F8;
-  padding-bottom : 2em;
+  margin-bottom : 2em;
+  border-bottom  : 1px dotted $dark-grey;
 }
 
 nav {
   padding-bottom : 2.5em;
-  border-bottom  : 1px dotted $dark-grey;
+  // border-bottom  : 1px dotted $dark-grey;
 
   ul {
     display    : block;
