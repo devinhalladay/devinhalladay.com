@@ -23,7 +23,6 @@ an effort to keep the CSS as dry as possible.
 @import "foundation/components/global";
 @import "foundation/components/grid";
 @import "foundation/components/block-grid";
-// @import "foundation/components/type";
 @import "foundation/components/tooltips";
 @import "foundation/components/inline-lists";
 @import "foundation/components/tables";
@@ -38,25 +37,19 @@ an effort to keep the CSS as dry as possible.
 @import "_iron/misc";
 
 // @base
-// @import "_iron/fonts";
 @import "_iron/type";
-// @import "_syntax";
 @import "_iron/images";
 @import "_iron/forms";
 @import "_iron/icons";
 
 // @components
-// @import "_kudos";
 @import "_iron/objects";
 @import "_iron/pagenavi";
 @import "_iron/fluidbox";
-// @import "_iron/mosaic";
-// @import "_iron/ads";
 
 // @layout
 @import "_layout/header";
 @import "_layout/maincontent";
-@import "_layout/sidebar";
 @import "_layout/work";
 @import "_layout/about";
 @import "_layout/posts";
