@@ -8,9 +8,9 @@ custom_type: article
 date: 2013-10-19
 tags: ["love", "design", "craft", "care", "handcrafted", "simplicity", "honest design"]
 ---
-<p class="lead">I love design. Its uncanny ability to make any person feel a wide range of emotions is absolutely fascinating. As designers, we hold the power of emotion in our hands — we can use color theory to evoke emotions, whitespace to draw attention, and so much more. That fact makes it clear that we need to pay attention to every pixel and give an equal amount of care to every single detail in what we are designing, in order to honestly and efficiently harness emotion. We need to design with <i>love</i>.</p>
+<p class="lead">I love design. Its uncanny ability to make any person feel a wide range of emotions is absolutely fascinating. As designers, we hold the power of emotion in our hands—we can use color theory to evoke emotions, whitespace to draw attention, and so much more. That fact makes it clear that we need to pay attention to every pixel and give an equal amount of care to every single detail in what we are designing, in order to honestly and efficiently harness emotion. We need to design with <i>love</i>.</p>
 
-Everything around us is designed—from the seat you're sitting on to the sheets of paper sitting in your printer. That sheet of paper, as simple as it may seem, was meticulously designed by someone just like me — someone just like you. The thickness of the paper was a design choice, allowing vendors to fit more in a pack and cutting the cost of production. The white color of the paper was a design choice — it is practical, and also conveys great emotion: that of having a clean slate. Paper has been designed and redesigned time after time since about the year 105 A.D. It was designed with love and care, with the single purpose of giving your content, be it art, text, or anything else, a place to *shine*.
+Everything around us is designed—from the seat you're sitting on to the sheets of paper sitting in your printer. That sheet of paper, as simple as it may seem, was meticulously designed by someone just like me—someone just like you. The thickness of the paper was a design choice, allowing vendors to fit more in a pack and cutting the cost of production. The white color of the paper was a design choice — it is practical, and also conveys great emotion: that of having a clean slate. Paper has been designed and redesigned time after time since about the year 105 A.D. It was designed with love and care, with the single purpose of giving your content, be it art, text, or anything else, a place to *shine*.
 
 <blockquote class="pullquote"><p>Paper was designed with love and care, with the single purpose of giving your content, be it art, text, or anything else, a place to <i>shine</i>.</p></blockquote>
 
@@ -21,7 +21,7 @@ We need to design everything the way paper was designed. We need to value simpli
 With that being said, I'm going to go ahead and present to you what I think are important principles of honest, transparent design. Following these principles won't guarantee a beautiful, emotional design, but it will certainly help you gain a better insight into any design problem you might encounter.
 
 ## 1. Ambitious
-Great design is bold, rule-breaking, and ambitious. If we don't break out of our niches or go against design trends, how will we ever innovate? Don't be afraid of failure, either. Be fearless. Design something that nobody has ever thought of before — that's the only way you can break the cycle of trend and become an innovator.
+Great design is bold, rule-breaking, and ambitious. If we don't break out of our niches or go against design trends, how will we ever innovate? Don't be afraid of failure, either. Be fearless. Design something that nobody has ever thought of before—that's the only way you can break the cycle of trend and become an innovator.
 
 Ambitious design is also honest. It allows you to forget any predetermined notions about what you're designing or who you're designing for, thus allowing you to focus your mind on the design solution rather than just on the design problem.
 
@@ -44,10 +44,10 @@ It all began with cave drawings. Originally there was no language, and thus no n
 
 <hr class="short">
 
-Everything around us is designed. The thought, care, and love that we have for the things we use every day — our MacBooks, our iPhones, our clothes, and anything else — should be reflected in the things that *we* design. Learn to sweat the details — the subtleties of your typography, the tint of your colors, and every other tiny detail in your design. **Design with love.**
+Everything around us is designed. The thought, care, and love that we have for the things we use every day—our MacBooks, our iPhones, our clothes, and anything else—should be reflected in the things that *we* design. Learn to sweat the details — the subtleties of your typography, the tint of your colors, and every other tiny detail in your design. **Design with love.**
 
 <blockquote class="pullquote">
-  <p>Learn to sweat the details — the subtleties of your typography, the tint of your colors, and every other tiny detail in your design.</p>
+  <p>Learn to sweat the details: the subtleties of your typography, the tint of your colors, and every other tiny detail in your design.</p>
 </blockquote>
 
-Put your whole heart and soul into designing an honest design — a design that is **ambitious**, **universal**, **enlightened**, and **adaptable**.
+Put your whole heart and soul into designing an honest design—a design that is **ambitious**, **universal**, **enlightened**, and **adaptable**.
