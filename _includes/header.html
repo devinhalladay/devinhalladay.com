@@ -43,6 +43,14 @@
   <!-- Custom CSS -->
   {% stylesheet devin %}
   {% if page.custom_css %}{{ page.custom_css | stylesheet }}{% endif %}
+
+  <script>
+    !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+    arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+    d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+    insertBefore(d,q)}(window,document,'script','_gs');
+    _gs('GSN-736835-P');
+  </script>
 </head>
 <body class="{% if page.custom_class %}{{ page.custom_class }}{% endif %}">
   {% capture currentURL %}{{ page.url | replace: '/', ' ' | truncatewords: 1 | remove: '...' | remove: ' ' }}{% endcapture %}
