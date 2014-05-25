@@ -16,14 +16,14 @@
   font-feature-settings:"smcp" 1, "c2sc" 1;
 }
 
-/*
+// /*
 
-FONT FACE IMPORT
--------------------------------------------
-@font-import
+// FONT FACE IMPORT
+// -------------------------------------------
+// @font-import
 
-Mixin to help import fonts
-------------------------------------------- */
+// Mixin to help import fonts
+// ------------------------------------------- */
 
 @mixin embed-font($font-name, $font-filepath-and-name){
   @font-face {
