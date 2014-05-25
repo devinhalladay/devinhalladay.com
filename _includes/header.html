@@ -36,10 +36,10 @@
 
   <link rel="alternate" type="application/rss+xml" title="RSS Feed for devinhalladay.com" href="/atom.xml" />
 
-{% comment %}  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7806452/634364/css/fonts.css" />
-{% endcomment %}
+  {% comment %}  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7806452/634364/css/fonts.css" />
+  {% endcomment %}
 
-<link rel="stylesheet" type="text/css" href="//cloud.typography.com/7806452/772864/css/fonts.css" />
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7806452/772864/css/fonts.css" />
   <!-- Custom CSS -->
   {% stylesheet devin %}
   {% if page.custom_css %}{{ page.custom_css | stylesheet }}{% endif %}
@@ -60,6 +60,7 @@
         <nav>
           <ul>
             <li{% if currentURL == 'index.html' %} class="active"{% endif %}><a href="/" title="Home" data-no-instant>Devin&nbsp;Halladay</a></li>
+            <li{% if currentURL == 'quotes' %} class="active"{% endif %}><a href="/quotes" title="Quotes" data-no-instant>Quotes</a></li>
             <li{% if currentURL == 'contact' %} class="active"{% endif %}><a href="/contact" title="Let's work together!" data-no-instant>Contact</a></li>
             <li{% if currentURL == 'about' %} class="active"{% endif %}><a href="/about" title="About Me" data-no-instant>About</a></li>
             <li{% if currentURL == 'work' %} class="active"{% endif %}><a href="/work" title="Selected Works" data-no-instant>Work</a></li>
