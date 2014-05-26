@@ -14,3 +14,4 @@ I've long needed a place to jot down the quotes I see and read that have an impa
 - "There’s a way of playing safe, there’s a way of using tricks and there’s the way I like to play, which is dangerously, where you're going to take a chance on making mistakes in order to create something you haven't created before."—<span class="serif-sc">Dave Brubeck</span>
 - "I will be a commodity, and I will be in demand and valuable."—<span class="serif-sc">Marie Calloway</span>, *What Purpose Did I Serve in Your Life*
 - "The challenge of leadership is to be strong, but not rude; be kind, but not weak; be bold, but not bully; be thoughtful, but not lazy; be humble, but not timid; be proud, but not arrogant; have humor, but without folly."—<span class="serif-sc">Jim Rohn</span>
+- "That's what fiction is for. It's for getting at the truth when the truth isn't sufficient for the truth."—<span class="serif-sc">Tim O'Brien</span>
