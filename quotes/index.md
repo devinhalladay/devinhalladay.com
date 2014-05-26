@@ -16,3 +16,4 @@ I've long needed a place to jot down the quotes I see and read that have an impa
 - "The challenge of leadership is to be strong, but not rude; be kind, but not weak; be bold, but not bully; be thoughtful, but not lazy; be humble, but not timid; be proud, but not arrogant; have humor, but without folly."—<span class="serif-sc">Jim Rohn</span>
 - "That's what fiction is for. It's for getting at the truth when the truth isn't sufficient for the truth."—<span class="serif-sc">Tim O'Brien</span>
 - "But this too is true: stories can save us."—<span class="serif-sc">Tim O'Brien</span>, *The Things They Carried*
+- "To avoid criticism say nothing, do nothing, be nothing."—<span class="serif-sc">Aristotle</span>
