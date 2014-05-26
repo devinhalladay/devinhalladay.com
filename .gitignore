@@ -10,5 +10,3 @@ _site/
 
 # Ignore node dependencies. Ensure you run `node install`!
 node_modules/
-
-build.sh
