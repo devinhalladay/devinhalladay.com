@@ -17,3 +17,4 @@ I've long needed a place to jot down the quotes I see and read that have an impa
 - "But this too is true: stories can save us."—<span class="serif-sc">Tim O'Brien</span>, *The Things They Carried*
 - "To avoid criticism say nothing, do nothing, be nothing."—<span class="serif-sc">Aristotle</span>
 - "You did not kill the fish only to keep alive and to sell for food, he thought. You killed him for pride and because you are a fisherman. You loved him when he was alive and you loved him after. If you love him, it is not a sin to kill him. Or is it more?"—<span class="serif-sc">Ernest Hemingway</span>, *The Old Man and the Sea*
+- "A lie, sometimes, can be truer than the truth, which is why fiction gets written."—<span class="serif-sc">Tim O'Brien</span>
