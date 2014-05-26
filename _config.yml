@@ -15,7 +15,7 @@ permalink: /:categories/:title
 paginate: 6
 
 exclude: ['README.md', 'Rakefile', 'Gemfile', 'Gemfile.lock']
-include: ['.htaccess', 'ping.php', 'keybase.txt', 'build.sh']
+include: ['.htaccess', 'ping.php', 'keybase.txt', 'build.php']
 
 exclude_home:
   categories: ['work']
