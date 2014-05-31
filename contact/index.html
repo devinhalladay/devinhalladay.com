@@ -1,13 +1,12 @@
 ---
 layout: page
 title: Let's Chat
-custom_js: contact
 ---
 <div class="page-masthead">
   <hr class="long">
 
   <p class="page-description">
-    I am <strong>available</strong> for freelance work and consulting.
+    I am <strong>available</strong> for freelance work.
     <br>
     Mention <a href="http://twitter.com/devinhalladay">@devinhalladay</a> on Twitter if you just have a quick question or comment.
   </p>
@@ -15,25 +14,25 @@ custom_js: contact
   <hr class="long">
 </div>
 
-<form name="Contact Me" id="contact" class="grid-form" method="POST" action="/send.php">
+<form class="grid-form" method="POST" action="//forms.brace.io/devin@devinhalladay.com">
   <fieldset>
     <legend>Want to work with me on a project, ask me a question, or just chat? Email me using this form!</legend>
 
     <div data-row-span="2">
-      <div data-field-span="1" class="alpha required">
-        <label for="id_name">Your Full Name</label>
-        <input type="text" name="name" tabindex="1" id="id_name">
+      <div data-field-span="1">
+        <label for="name">Your Full Name</label>
+        <input type="text" name="Name" tabindex="1" id="name">
       </div>
-      <div data-field-span="1" class="email required">
-        <label for="id_email-address">Email Address</label>
-        <input type="email-address" tabindex="2" id="id_email-address" name="email-address">
+      <div data-field-span="1">
+        <label for="email-address">Email Address</label>
+        <input type="email" tabindex="2" id="email-address" name="_replyto">
       </div>
     </div>
 
     <div data-row-span="2">
-      <div data-field-span="2" class="required">
-        <label for="id_message">Your Message</label>
-        <textarea name="message" type="text" cols="30" rows="10" tabindex="3" id="id_message"></textarea>
+      <div data-field-span="2">
+        <label for="message">Your Message</label>
+        <textarea name="Message" type="text" cols="30" rows="10" tabindex="3" id="message"></textarea>
       </div>
     </div>
 
@@ -42,6 +41,7 @@ custom_js: contact
         <span>Ready to get the ball rolling? Click submit.</span>
       </div>
       <div data-field-span="1">
+        <input type="hidden" name="_next" value="http://devinhalladay.com/contact/thanks">
         <input class="submit" type="submit" value="Submit">
       </div>
     </div>
