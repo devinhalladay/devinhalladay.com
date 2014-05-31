@@ -5,6 +5,7 @@
 //= require vendor/jquery.fluidbox.min
 //= require foundation/foundation
 //= require foundation/foundation.equalizer
+//= require vendor/gridforms
 // //= require vendor/mosaic
 
 $(document).foundation();

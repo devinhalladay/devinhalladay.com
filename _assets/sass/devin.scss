@@ -39,13 +39,14 @@ an effort to keep the CSS as dry as possible.
 // @base
 @import "_iron/type";
 @import "_iron/images";
-@import "_iron/forms";
 @import "_iron/icons";
 
 // @components
 @import "_iron/objects";
 @import "_iron/pagenavi";
 @import "_iron/fluidbox";
+@import "_iron/gridforms";
+@import "_iron/forms";
 
 // @layout
 @import "_layout/header";

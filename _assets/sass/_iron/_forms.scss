@@ -2,100 +2,35 @@
 
 FORMS
 ------------------------------------------- */
-.parsley-error {
-  border: 2px solid #C81717 !important;
-}
-ul.parsley-error-list {
-            display:none !important;
-        }
-        ul.parsley-error-list li {
-            display:none !important;
-        }
-.wufoo, .search-form {
-  font-family: $sans;
 
-  input:hover, textarea:hover {
-    border-color: $secondary-text-color;
-  }
-
-  input, button, textarea, .button {
-    font-size: 80%;
-    width: 100%;
-    margin: 0 0 15px 0;
-    padding: 10px;
-    line-height: 25px;
-    color: $main-text-color;
-    border: 2px solid $dark-grey;
-    background: #fff;
-    position: relative;
-    display: block;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-transition: border-color .15s ease-out;
-    -moz-transition: border-color .15s ease-out;
-    -o-transition: border-color .15s ease-out;
-    -webkit-box-shadow: none;
-      box-shadow: none;
-    transition: border-color .15s ease-out;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    outline: none;
-    height: auto;
-  }
-
-  input:focus, textarea:focus {
-    border-color: $secondary-text-color;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    outline: none;
-  }
+textarea {
+  height: 160px;
 }
 
-.wufoo input.btn, .btn {
-  display: inline-block;
+form * {
   font-family: $sans;
-  font-size: 70%;
-  font-weight: 500;
-  line-height: 47px;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: $secondary-text-color;
-  border: none !important;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  padding: 0 2em;
+}
+
+.grid-form [data-row-span] [data-field-span] label:first-child {
+  font-family: $sans-sc;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.grid-form input[type="text"], .grid-form input[type="email"], .grid-form textarea, .grid-form select {
+  font-size: 16px;
+  padding: 0;
   margin: 0;
-  letter-spacing: 2px;
-  -webkit-transition: background-color .15s ease-out, color .15s ease-out;
-  -moz-transition: background-color .15s ease-out, color .15s ease-out;
-  -o-transition: background-color .15s ease-out, color .15s ease-out;
-  transition: background-color .15s ease-out, color .15s ease-out;
-  &:hover {
-    color: $light-grey;
-    background-color: $main-text-color;
-  }
-  &:active {
-    color: $dark-grey;
-    background-color: $heading-text-color;
-  }
+  width: 100%;
 }
 
-.wufoo textarea:focus {
-  background: #fafafa;
+input.submit {
+  width: 100%;
+  height: 100%;
+  background: none;
 }
 
-.button {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  -webkit-transition: background-color 300ms ease-out;
-  -moz-transition: background-color 300ms ease-out;
-  transition: background-color 300ms ease-out;
-  border: none;
-  background-color: $secondary-text-color;
-  margin-bottom: 0;
+input {
+  background-color: transparent;
+  font-size: 16px;
 }
