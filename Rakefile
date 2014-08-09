@@ -271,7 +271,7 @@ task :deploy => [:generate] do
     # Add our repo as the origin remote.
     system "git remote add origin ssh://root@162.243.103.246/var/www/devinhalladay.com/site.git"
     # Force push all files to our master branch.
-    system "git push --all origin --force"
+    system "git push --set-upstream origin master --force"
 
     Dir.chdir pwd
   end
