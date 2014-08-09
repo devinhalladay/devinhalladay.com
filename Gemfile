@@ -17,6 +17,8 @@ gem 'nokogiri'
 gem 'rake'
 gem 'mini_magick'
 gem 'fileutils'
+gem 'httparty'
+gem 'highline'
 
 gem 'facets'
 gem 'typogruby'
