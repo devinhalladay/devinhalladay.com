@@ -7,5 +7,5 @@ Gemfile.lock
 # Ignore misc. files and folders
 _v1/
 _site/
-
+devinhalladay_rsa.pub
 .DS_Store
