@@ -14,10 +14,6 @@ before_install:
 - gem install nokogiri -- --use-system-libraries
 - gem install bundle_cache
 - bundle_cache_install
-# install:
-# - bundle config build.nokogiri --use-system-libraries
-# - bundle install
-# install: bundle install --without development --path=~/.bundle
 script:
 - git config --global user.email "devin@devinhalladay.com"
 - git config --global user.name "Devin Halladay"
@@ -29,4 +25,4 @@ env:
   global:
   - BUNDLE_ARCHIVE: bundle-archive
   - AWS_S3_BUCKET: devinhalladay-bundler-cache
-  - secure: NQFUBsjbQT/v9rORuOwyVCI/HQBUUn10VtTG1H3UBHecuzRVB8Dz6XtdPcmvY67mq844zfZ4Qy3nP8hJU+35ZxV6BSOhafIUYZsXqJwYGJrulmYdMkBq/MqfKMe9BPuBkY2AMk/ZVYzv8+3/zB+uJWb+fw7X1MHKUxI8iL+gVDk=
+  - secure: lkxUqZoZBSMtoMvZnEsT6RJVri7zbMsE1cnyzyyO9lDFAxLNz7PM2RGVD+8hVDTYv4plknviyingrjBony/BB2ORh2zOigP6Q5Cwen8z5gG8zEWIuQ0rnpTcgt1mqBN+6Da/+MrRdgZlbZ7GM8QIHitdLIZB+ZbqsCw6mQIdOtk=
