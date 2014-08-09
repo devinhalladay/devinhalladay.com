@@ -269,9 +269,9 @@ task :deploy => [:generate] do
     message = "Site updated at #{Time.now.utc}"
     system "git commit -m #{message.inspect}"
     # Add our repo as the origin remote.
-    system "git remote add origin root@162.243.103.246/var/www/devinhalladay.com/public_html"
+    system "git remote add origin root@162.243.103.246/var/www/devinhalladay.com/site.git"
     # Force push all files to our master branch.
-    system "git push origin master --force"
+    system "git push --all origin --force"
 
     Dir.chdir pwd
   end
