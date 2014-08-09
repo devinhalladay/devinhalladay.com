@@ -8,7 +8,4 @@ Gemfile.lock
 _v1/
 _site/
 
-# Ignore node dependencies. Ensure you run `node install`!
-node_modules/
-
 .DS_Store
