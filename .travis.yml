@@ -14,6 +14,8 @@ before_install:
 - gem install nokogiri -- --use-system-libraries
 - gem install bundle_cache
 - bundle_cache_install
+before_script:
+- echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 script:
 - git config --global user.email "devin@devinhalladay.com"
 - git config --global user.name "Devin Halladay"
