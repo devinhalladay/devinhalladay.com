@@ -15,6 +15,7 @@ before_install:
 - gem install bundle_cache
 - bundle_cache_install
 before_script:
+- "openssl aes-256-cbc -k '$DEPLOY_KEY' -in devin_rsa_travis -d -a -out devin_rsa"
 - echo -e "Host 162.243.103.246\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 script:
 - git config --global user.email "devin@devinhalladay.com"
@@ -28,3 +29,4 @@ env:
   - BUNDLE_ARCHIVE: bundle-archive
   - AWS_S3_BUCKET: devinhalladay-bundler-cache
   - secure: lkxUqZoZBSMtoMvZnEsT6RJVri7zbMsE1cnyzyyO9lDFAxLNz7PM2RGVD+8hVDTYv4plknviyingrjBony/BB2ORh2zOigP6Q5Cwen8z5gG8zEWIuQ0rnpTcgt1mqBN+6Da/+MrRdgZlbZ7GM8QIHitdLIZB+ZbqsCw6mQIdOtk=
+  - secure: Z1BupSnWcRXDliou5yFSMAeek05Y3NkoCL56Fy0AxbJnomQHJ5SCGSJR2xdcEY3O4r0WrqK830v+OsKiSMSAFZMYH89Ijn0TBUjiuga/VisNsa7xsip+VosN/oWC9ui/ChuEqJY0Z3WsbXdfD/l5QHVRrSKU9VT3RdZZ2hf9aAY=
