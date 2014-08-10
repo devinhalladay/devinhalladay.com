@@ -1,14 +1,12 @@
 
 .header {
   padding-top    : 1em;
-  // background-color: #F6F7F8;
-  margin-bottom : 2em;
-  border-bottom  : 1px dotted $dark-grey;
+  // margin-bottom : 2em;
+  // border-bottom  : 1px dotted $dark-grey;
 }
 
 nav {
   padding-bottom : 2.5em;
-  // border-bottom  : 1px dotted $dark-grey;
 
   ul {
     display    : block;
@@ -66,37 +64,6 @@ nav {
   }
 }
 
-/*.js .nav-collapse {
-  clip: rect(0 0 0 0);
-  max-height: 0;
-  position: absolute;
-  display: block;
-  overflow: hidden;
-  zoom: 1;
-}
-
-.nav-collapse.opened {
-  max-height: 9999px;
-  margin-bottom: 1em;
-}
-
-.nav-toggle {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  background: url('/uploads/2013/10/hamburger.gif') 0 no-repeat $main-text-color;
-  text-indent: -9999px;
-  width: 30px;
-  height: 20px;
-  text-indent: -9999px;
-  display: block;
-  width: 30px;
-  border-bottom: none;
-}*/
 @media screen and (max-width: 768px) {
   nav li {
     margin-right : none;
@@ -124,14 +91,3 @@ nav {
     }
   }
 }
-/*@media screen and (min-width: 768px) {
-  .js .nav-collapse {
-    position: relative;
-    &.closed {
-      max-height: none;
-    }
-  }
-  .nav-toggle {
-    display: none;
-  }
-}*/
