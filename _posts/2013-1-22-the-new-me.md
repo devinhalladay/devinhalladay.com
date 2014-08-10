@@ -1,13 +1,10 @@
 ---
 layout: post
 title: The New Me
-tweet_text: 'I thoroughly enjoyed this article by @devinhalladay! "The New Me":'
 date: "2013-1-22 4:55:00"
 categories: journal
 published: false
 custom_type: article
-tags: ["redesign", "new", "devin halladay", "devinhalladay.com"]
-alias: [/blog/the-new-me]
 ---
 My website has been reborn. My branding has been reborn. I have been reborn. *This is the new me*.
 

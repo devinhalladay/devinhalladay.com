@@ -1,13 +1,10 @@
 ---
 layout: post
 title: Designer of Souls
-tweet_text: 'I thoroughly enjoyed this article by @devinhalladay! "Designer of Souls":'
 categories: journal
 custom_type: article
 date: "2013-2-3 5:05:00"
-tags: ["design", "process", "soul"]
 alias: [/blog/designer-of-souls]
-tags: ["design", "craft", "handcrafted", "soul"]
 ---
 As designers, I'm sure we can reach a general consensus that when web design, we design for the viewer. We use color theory, white space typography, and countless other elements of design (some of which we are not even aware that we are using) in order to convey a message or a feeling to the viewer.
 But what is the secret to great design that successfully conveys those feelings or messages to the user?

@@ -1,11 +1,9 @@
 ---
 layout: post
 title: A Manifesto for Quality Thought
-tweet_text: 'Brilliant article by @devinhalladay! "A Manifesto for Quality Thought":'
 categories: journal
 custom_type: article
 date: 2014-02-07
-tags: ["thought", "learning", "thinking"]
 ---
 1. No amount of thought can change anything unless ideas are shared and acted upon. If you censor yourself, you’ll never know what impact your thoughts can have on the world.
 

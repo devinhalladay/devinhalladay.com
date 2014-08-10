@@ -2,7 +2,6 @@
 layout: project
 title: Lettering
 description: 'Digital and analog lettering done for clients, friends, and studio projects.'
-tweet_text: 'I thoroughly enjoyed this article by @devinhalladay! "Starting Fresh":'
 cover_image: '/uploads/2013/10/d-letter.jpg'
 categories: work
 weight: 3

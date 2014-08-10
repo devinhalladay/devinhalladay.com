@@ -1,14 +1,11 @@
 ---
 layout: post
 title: Design Over Style
-tweet_text: 'I thoroughly enjoyed this article by @devinhalladay! "Design Over Style":'
 categories: journal
 custom_type: article
 date: "2013-3-5 9:06:00"
-tags: ["design", "style"]
 published: false
 alias: [/blog/design-over-style]
-tags: ["design", "style", "details", "function"]
 ---
 I was browsing through the day’s Twitter feed, when I saw this brilliant Tweet by **[@schneidertobias](http://twitter.com/schneidertobias)**:
 

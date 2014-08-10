@@ -2,7 +2,6 @@
 layout: project
 title: The Ministry of Print
 description: 'I have long been fascinated by the beauty, simplicity, and effectiveness of French editorial design.<br><br>To work on my typography skills as well as venture into a new medium, I decided to begin designing a series of posters. I design a few every month, and I plan to begin selling them in 18x24 prints in early 2014.'
-tweet_text: 'I thoroughly enjoyed this article by @devinhalladay! "Starting Fresh":'
 cover_image: '/uploads/2014/03/synesthesia.jpg'
 categories: work
 weight: 1
