@@ -29,3 +29,15 @@ input.submit {
   height: 100%;
   background: none;
 }
+
+.parsley-required {
+  display: none;
+}
+
+.parsley-error {
+  background: #ffeded !important;
+}
+
+.parsley-errors-list {
+  display: none;
+}

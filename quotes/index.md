@@ -3,9 +3,8 @@ layout: page
 title: Quotes
 custom_class: quotes
 ---
-
+<hr class="long">
 I've long needed a place to jot down the quotes I see and read that have an impact on me. This is that place. This page is mainly for me, but I encourage you to soak up all the wisdom it contains.
-
 <hr class="long">
 
 - "The challenge of leadership is to be strong, but not rude; be kind, but not weak; be bold, but not bully; be thoughtful, but not lazy; be humble, but not timid; be proud, but not arrogant; have humor, but without folly."—<span class="serif-sc">Jim Rohn</span>
