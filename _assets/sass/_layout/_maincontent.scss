@@ -8,9 +8,6 @@ MAIN CONTENT
   ul {
     margin-bottom : 1.618em;
     margin-left   : 0;
-    // li {
-    //   margin-bottom : 1.618em;
-    // }
   }
 }
 
@@ -33,35 +30,6 @@ MAIN CONTENT
   padding       : 0 0 1em;
 
   border-bottom : 1px dotted $dark-grey;
-
-  &.quote {
-    blockquote {
-      margin         : auto;
-      margin-top     : 0;
-      margin-left    : 0;
-      padding-bottom : 0;
-      padding-left   : 0;
-
-      border-left    : none;
-
-      p {
-        color : $main-text-color;
-      }
-    }
-  }
-}
-
-.pubdate {
-  margin-left : 12px;
-  color       : $secondary-text-color;
-}
-
-.post {
-  position : relative;
-  h2 {
-    margin      : 0 0 0.3em;
-    // font-weight : 600;
-  }
 }
 
 .full-width-row {

@@ -13,17 +13,17 @@ about page. It should be used for this page's styles,
 and only this page's styles.
 
 ------------------------------------------- */
-h1 {
-  margin-bottom : 1.5em;
-  text-align    : center;
+// h1 {
+//   margin-bottom : 1.5em;
+//   text-align    : center;
 
-  @media screen and (max-width: 768px) {
-    margin-top    : 0em;
-    margin-bottom : 1em;
+//   @media screen and (max-width: 768px) {
+//     margin-top    : 0em;
+//     margin-bottom : 1em;
 
-    text-align    : left;
-  }
-}
+//     text-align    : left;
+//   }
+// }
 
 h2 {
   margin-top: 1em;
