@@ -6,7 +6,7 @@
 }
 
 nav {
-  padding-bottom : 2.5em;
+  padding-bottom : 2em;
 
   ul {
     display    : block;
@@ -20,7 +20,7 @@ nav {
   li {
     display : block;
     float   : left;
-    font-family: $serif-sc;
+    font-family: $serif;
 
     &:last-child {
       margin-right : 0;
@@ -29,17 +29,17 @@ nav {
     &:not(:first-child) {
       float       : right;
       margin-left : 30px;
-      font-family: $sans-sc;
+      font-family: $sans;
     }
 
     a {
       font-size       : 1em;
       font-weight     : 500;
       color           : $main-text-color;
-      letter-spacing  : 0.5px;
+      // letter-spacing  : 0.5px;
       line-height     : 1em;
       text-decoration : none;
-      text-transform  : lowercase;
+      // text-transform  : lowercase;
       border-bottom   : none;
 
       &:hover {
