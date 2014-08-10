@@ -1,13 +1,13 @@
 - category: Print
   list:
   - Editorial Design
-  - Typography
   - Posters
   - Business Cards
 
 - category: Digital
   list:
-  - 'Web Design &amp; Development'
+  - Web Design
+  - Web Development
   - Responsive Design
   - Web Typography
 
@@ -17,10 +17,9 @@
   - Logo Design
   - Identity Design
   - Brand Collateral
-  - Custom Typography
+  - Brand Strategy
 
 
 - category: Content Creation
   list:
   - Copywriting
-  - Illustration
