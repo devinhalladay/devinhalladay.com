@@ -1,39 +1,47 @@
 ---
-layout: default
-title: Welcome
+layout: page
+title: About Me
 exclude_from_search: true
-custom_class: home blog
+custom_class: about
+custom_css: editorial-about
 ---
-{% for post in paginator.posts %}
-  {% unless post.categories contains 'work' %}
-    {% capture tweet_link %}https://twitter.com/intent/tweet?original_referer=http://devinhalladay.com{{ post.url | escape }}&text={{ post.tweet_text | escape }}&tw_p=tweetbutton&url=http://devinhalladay.com{{ post.url | escape }}{% endcapture %}
-    {% capture fb_link %}http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://devinhalladay.com{{ post.url }}/&p[images][0]=https://twitter.com/api/users/profile_image/devinhalladay?size=original&p[title]={{ post.title }}&p[summary]={{ post.excerpt | strip_html }}{% endcapture %}
-      <div class="entry post">
-        <h2><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h2>
-        <p class="date">{{ post.date | pretty }}&nbsp;<a href="{{ tweet_link }}" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;<a href="{{ fb_link }}" target="_blank"><i class="fa fa-facebook"></i></a></p>
-        <p>{{ post.excerpt | strip_newlines | strip_html | truncatewords: 60 | smartypants }} <a class="more" href="{{ post.url }}">read more</a></p>
-      </div>
-  {% endunless %}
-{% endfor %}
-
-<div class="pagination">
-  <ul>
-    {% if paginator.next_page %}
-      <li class="previous"><a href="{{ paginator.next_page_path }}">Older</a></li>
-    {% else %}
-      <li class="previous disabled">Older</li>
-    {% endif %}
-
-    {% if paginator.previous_page %}
-      <li class="next">
-        {% if paginator.previous_page == 1 %}
-          <a href="/">Newer</a>
-        {% else %}
-          <a href="{{ paginator.previous_page_path }}">Newer</a>
-        {% endif %}
-      </li>
-    {% else %}
-      <li class="next disabled">Newer</li>
-    {% endif %}
-    </ul>
+  </div>
 </div>
+
+<div class="row">
+  <div class="large-12 small-12 small-centered large-centered columns" id="content">
+    <div class="small-12 medium-10 large-6 columns">
+      <figure><img src="{{ 'devin@devinhalladay.com' | to_gravatar }}" alt="Devin Halladay"></a></figure>
+    </div>
+    <div class="small-12 medium-10 large-6 columns">
+      <p>Welcome! My name is Devin Halladay. I'm a web designer, graphic designer, and writer.</p>
+
+      <p class="lead">I craft beautiful and honest visual solutions. I sincerely care about the stories with which I work and I have an ambition toward the finest of execution.</p>
+
+      <p>I value craftsmanship, curation, and careful research. I try to make those characteristics present in <i>every</i> project I work on. Building beautiful products does not just mean making something visually appealing &mdash; it means taking every pixel into consideration and giving an equal amount of care to every minute detail.</p>
+
+      <p>Design is my passion.</p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-6 large-offset-6 small-12 columns">
+    <hr class="long">
+    <h2 class="text-align-center section-title">Services</h2>
+    {% for service in site.data.services %}
+      <div class="large-6 small-12 columns">
+        <ul>
+          <h4 class="text-align-left">{{ service.category }}</h4>
+          {% for item in service.list %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+    <hr class="long">
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-9 small-11 small-centered large-centered columns" id="content">
