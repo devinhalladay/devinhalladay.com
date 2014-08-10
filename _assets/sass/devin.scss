@@ -13,50 +13,29 @@ an effort to keep the CSS as dry as possible.
 
 ------------------------------------------- */
 
-// @compass
+// Compass
 @import "compass";
 
-// @settings
-@import "_iron/settings";
+// Normalize
+@import "vendor/normalize";
 
-// @foundation
+// Foundation
 @import "foundation/components/global";
 @import "foundation/components/grid";
 @import "foundation/components/block-grid";
-@import "foundation/components/tooltips";
 @import "foundation/components/inline-lists";
-@import "foundation/components/tables";
 
-// @reset
-@import "_iron/normalize";
-@import "_iron/reset";
-@import "_iron/mixins";
+// Partials
+@import "partials/all";
 
-// @tools
-@import "_iron/hide";
-@import "_iron/misc";
+// Modules
+@import "modules/header";
+@import "modules/maincontent";
+@import "modules/work";
+@import "modules/quotes";
+@import "modules/archive";
+@import "modules/footer";
 
-// @base
-@import "_iron/type";
-@import "_iron/images";
-@import "_iron/icons";
-
-// @components
-@import "_iron/objects";
-@import "_iron/pagenavi";
-@import "_iron/fluidbox";
-@import "_iron/gridforms";
-@import "_iron/forms";
-
-// @layout
-@import "_layout/header";
-@import "_layout/maincontent";
-@import "_layout/work";
-@import "_layout/about";
-@import "_layout/quotes";
-@import "_layout/archive";
-@import "_layout/footer";
-
-* {
-  cursor: auto;
-}
+// Vendor
+@import "vendor/fluidbox";
+@import "vendor/gridforms";
