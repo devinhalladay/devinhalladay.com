@@ -2,7 +2,7 @@ body {
   @include ligatures_kerning;
 
   color: $main-text-color;
-  line-height: 29px;
+  line-height: 30px;
 
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -84,6 +84,11 @@ p {
       margin-bottom: 0.4em;
     }
   }
+}
+
+.lead {
+  font-family: $sans;
+  font-size: 19px;
 }
 
 .text-align-right {
@@ -208,7 +213,7 @@ blockquote {
       text-align  : center;
 
       font: {
-        family : $display-font;
+        family : $sans;
         weight : 500;
         size   : 24px;
       }
