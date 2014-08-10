@@ -64,8 +64,6 @@ p {
   &.date {
     margin-bottom: 2.25em;
 
-    text-align: center;
-
     color: $secondary-text-color;
     letter-spacing: .05px;
     text-transform: lowercase;
@@ -321,5 +319,11 @@ a {
 .dark {
   p {
     color : $heading-text-color;
+  }
+}
+
+.post {
+  p.date {
+    text-align: center;
   }
 }
