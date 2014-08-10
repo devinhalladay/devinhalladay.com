@@ -1,122 +1,122 @@
 body {
   @include ligatures_kerning;
 
-  color                  : $main-text-color;
-  line-height            : 29px;
+  color: $main-text-color;
+  line-height: 29px;
 
-  -webkit-font-smoothing : antialiased;
-  text-rendering         : optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 
   font: {
-    family : $serif;
-    size   : 18px;
+    family: $serif;
+    size: 18px;
   }
   @media screen and (max-width: 500px) {
-    font-size : 93.8%;
+    font-size: 93.8%;
   }
 }
 
 /* HEADINGS */
 h1, h2, h3, h4, h5 {
-  margin      : 0.3em 0 0.5em 0;
+  margin: 0.3em 0 0.5em 0;
 
-  font-family : $display-font;
-  color       : $heading-text-color;
-  line-height : 1.2em;
+  font-family: $display-font;
+  color: $heading-text-color;
+  line-height: 1.2em;
 }
 
 h1 {
-  margin      : 1em 0 1.8em 0;
+  margin: 1em 0 1.8em 0;
   font-weight: 600;
-  font-size   : 2.4em;
-  line-height : 1.05em;
+  font-size: 2.4em;
+  line-height: 1.05em;
   text-align: center;
 
   @media screen and (max-width: 768px) {
-    font-size : 1.8em;
+    font-size: 1.8em;
   }
 }
 
 h2 { font-size: 28px; }
 
 h3 {
-  letter-spacing : .05em;
-  text-transform : uppercase;
+  letter-spacing: .05em;
+  text-transform: uppercase;
 
   font: {
-    size   : 1.324em;
-    family : $serif-sc;
+    size: 1.324em;
+    family: $serif-sc;
   }
 }
 
 h4 {
-  text-transform : lowercase;
+  text-transform: lowercase;
   font: {
-    size   : 1.3em;
-    family : $sans-sc;
+    size: 1.3em;
+    family: $sans-sc;
   }
 }
 
 /* TEXT */
 p {
-  margin : auto auto 1.5em;
+  margin: auto auto 1.5em;
 
   &.date {
-    margin-bottom  : 2.25em;
+    margin-bottom: 2.25em;
 
-    color          : $secondary-text-color;
-    letter-spacing : .05px;
-    text-transform : lowercase;
+    color: $secondary-text-color;
+    letter-spacing: .05px;
+    text-transform: lowercase;
 
     font: {
-      family : $serif-sc;
-      weight : 500;
-      size   : 1em;
+      family: $serif-sc;
+      weight: 500;
+      size: 1em;
     }
   }
   &.page-description {
-    margin-bottom : 0;
-    font-family   : $display-font;
+    margin-bottom: 0;
+    font-family: $display-font;
 
     .lead {
-      margin-bottom : 0.4em;
+      margin-bottom: 0.4em;
     }
   }
 }
 
 .text-align-right {
-  text-align : right;
+  text-align: right;
 }
 
 .text-align-left {
-  text-align : left;
+  text-align: left;
 }
 
 .text-align-center {
-  text-align : center;
+  text-align: center;
 }
 
 p, blockquote, table, form, ul, ol {
-  display       : block;
-  margin-bottom : 1.64706rem;
+  display: block;
+  margin-bottom: 1.64706rem;
 }
 
 ol, ul {
   @media screen and (max-width: 768px) {
-    margin-left : 1.4em;
+    margin-left: 1.4em;
   }
 }
 
 .cite {
-  display : block;
+  display: block;
   font: {
-    size  : 0.618em;
-    style : italic;
+    size: 0.618em;
+    style: italic;
   }
 }
 
 .blog p.date {
-  margin-bottom : 1.2em;
+  margin-bottom: 1.2em;
 }
 
 em, i { font-style: italic; }
@@ -124,44 +124,44 @@ em, i { font-style: italic; }
 strong, b { font-weight: bold; }
 
 small {
-  font-size : 15px;
+  font-size: 15px;
   line-height: 24px;
   h3 {
-    padding-bottom : 1em;
-    font-size      : 18px;
+    padding-bottom: 1em;
+    font-size: 18px;
   }
 }
 
 figcaption {
-  color : $secondary-text-color;
+  color: $secondary-text-color;
   font: {
-    size   : 90%;
-    family : $sans;
+    size: 90%;
+    family: $sans;
   }
 }
 
 .serif-sc {
-  font-family    : $serif-sc;
-  letter-spacing : .05em;
-  text-transform : lowercase;
+  font-family: $serif-sc;
+  letter-spacing: .05em;
+  text-transform: lowercase;
 }
 
 .sans-sc {
-  font-family    : $sans-sc;
-  letter-spacing : .05em;
-  text-transform : lowercase;
+  font-family: $sans-sc;
+  letter-spacing: .05em;
+  text-transform: lowercase;
 }
 
 .caps, %caps {
-  font-family    : $serif-sc;
-  letter-spacing : .05em;
-  text-transform : lowercase;
+  font-family: $serif-sc;
+  letter-spacing: .05em;
+  text-transform: lowercase;
 }
 
 /* LISTS */
 ul {
-  margin-bottom : 1.618em;
-  margin-left   : 2.5em;
+  margin-bottom: 1.618em;
+  margin-left: 2.5em;
 
   list-style    : disc outside none;
 }
@@ -255,6 +255,9 @@ hr {
 
     background : $dark-grey;
     border     : none;
+
+    background : transparent;
+    border-top : 1px dotted $dark-grey;
 
     margin-bottom: 1.64706rem;
   }
