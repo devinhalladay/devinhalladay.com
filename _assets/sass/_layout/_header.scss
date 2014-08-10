@@ -22,6 +22,7 @@ nav {
   li {
     display : block;
     float   : left;
+    font-family: $serif-sc;
 
     &:last-child {
       margin-right : 0;
@@ -30,10 +31,10 @@ nav {
     &:not(:first-child) {
       float       : right;
       margin-left : 30px;
+      font-family: $sans-sc;
     }
 
     a {
-      font-family     : $serif-sc;
       font-size       : 1em;
       font-weight     : 500;
       color           : $main-text-color;

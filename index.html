@@ -8,40 +8,11 @@ custom_class: home blog
   {% unless post.categories contains 'work' %}
     {% capture tweet_link %}https://twitter.com/intent/tweet?original_referer=http://devinhalladay.com{{ post.url | escape }}&text={{ post.tweet_text | escape }}&tw_p=tweetbutton&url=http://devinhalladay.com{{ post.url | escape }}{% endcapture %}
     {% capture fb_link %}http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://devinhalladay.com{{ post.url }}/&p[images][0]=https://twitter.com/api/users/profile_image/devinhalladay?size=original&p[title]={{ post.title }}&p[summary]={{ post.excerpt | strip_html }}{% endcapture %}
-
-    {% if post.custom_type == "quote" %}
-
-      <div class="entry quote">
-        <h4><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h4>
-        <p class="date">{{ post.date | pretty }}&nbsp;<a href="{{ tweet_link }}" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;<a href="{{ fb_link }}" target="_blank"><i class="fa fa-facebook"></i></a></p>
-        {{ post.content }}
-      </div>
-
-    {% elsif post.custom_type == "music" %}
-
-      <div class="entry music">
-        <h4><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h4>
-        <p class="date">{{ post.date | pretty }}&nbsp;<a href="{{ tweet_link }}" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;<a href="{{ fb_link }}" target="_blank"><i class="fa fa-facebook"></i></a></p>
-        {{ post.music-embed }}
-        <p>{{ post.content }}</p>
-      </div>
-
-    {% elsif post.custom_type == "article" %}
-
       <div class="entry post">
         <h2><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h2>
         <p class="date">{{ post.date | pretty }}&nbsp;<a href="{{ tweet_link }}" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;<a href="{{ fb_link }}" target="_blank"><i class="fa fa-facebook"></i></a></p>
         <p>{{ post.excerpt | strip_newlines | strip_html | truncatewords: 60 | smartypants }} <a class="more" href="{{ post.url }}">read more</a></p>
       </div>
-
-    {% elsif post.custom_type == "link" %}
-
-      <div class="entry link">
-        <h4><a href="{{ post.link_url }}" class="post-title link-title">{{ post.title }}</a><a class="post-title" href="{{ post.url }}"><i class="ss-icon">link</i></a></h4>
-        <p class="date">{{ post.date | pretty }}&nbsp;<a href="{{ tweet_link }}" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;<a href="{{ fb_link }}" target="_blank"><i class="fa fa-facebook"></i></a></p>
-        {{ post.content }}
-      </div>
-    {% endif %}
   {% endunless %}
 {% endfor %}
 
