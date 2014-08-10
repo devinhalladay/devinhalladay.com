@@ -2,14 +2,14 @@ body {
   @include ligatures_kerning;
 
   color: $main-text-color;
-  line-height: 30px;
+  line-height: 28px;
 
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 
   font: {
     family: $serif;
-    size: 18px;
+    size: 17px;
   }
   @media screen and (max-width: 500px) {
     font-size: 93.8%;
