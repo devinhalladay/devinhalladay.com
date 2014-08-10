@@ -263,7 +263,7 @@ task :deploy => [:generate] do
 
     # Init a new Git repo in the tmp dir.
     # system "git init"
-    system "scp * root@162.243.103.246:/var/www/devinhalladay.com/public_html/_site"
+    system "scp -r * root@162.243.103.246:/var/www/devinhalladay.com/public_html/_site"
     # Check all files into Git.
     # system "git add ."
     # Commit all files with the current time and date as the commit message.
