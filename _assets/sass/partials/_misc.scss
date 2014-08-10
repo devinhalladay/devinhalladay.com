@@ -1,27 +1,26 @@
+// Partial
+//
+// Misc
+// ===============
+// Styles that have nowhere left to go.
 
 .clearfix {
-  *zoom : 1;
+  *zoom: 1;
 
   &:before {
-    content : "";
-    display : table;
+    content: "";
+    display: table;
   }
+
   &:after {
-    content : "";
-
-    display : table;
-    clear   : both;
+    content: "";`
+    display: table;
+    clear: both;
   }
 }
 
-.left {
-  float : left;
-}
+.left { float: left; }
 
-.right {
-  float : right;
-}
+.right { float: right; }
 
-.align-center {
-  text-align : center;
-}
+.align-center { text-align: center; }
