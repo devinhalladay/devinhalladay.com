@@ -262,16 +262,17 @@ task :deploy => [:generate] do
     Dir.chdir tmp
 
     # Init a new Git repo in the tmp dir.
-    system "git init"
+    # system "git init"
+    system "scp * root@162.243.103.246:/var/www/devinhalladay.com/public_html/_site"
     # Check all files into Git.
-    system "git add ."
+    # system "git add ."
     # Commit all files with the current time and date as the commit message.
     message = "Site updated at #{Time.now.utc}"
-    system "git commit -m #{message.inspect}"
+    # system "git commit -m #{message.inspect}"
     # Add our repo as the origin remote.
-    system "git remote add origin root@162.243.103.246:/var/www/devinhalladay.com"
+    # system "git remote add origin root@162.243.103.246:/var/www/devinhalladay.com"
     # Force push all files to our master branch.
-    system "git push --set-upstream origin master --force"
+    # system "git push --set-upstream origin master --force"
 
     Dir.chdir pwd
   end
