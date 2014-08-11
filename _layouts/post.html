@@ -7,16 +7,9 @@ custom_class: post
   <div class="main-content">
     <div class="row">
       <div class="large-8 small-11 small-centered large-centered columns" id="content">
-        {% if page.custom_type == 'quote' %}
-          <h1><a href="{{ page.link_url }}">{{ page.title }}</a></h1>
-          <p class="date">{{ page.date | pretty }}</p>
-          <article>{{ content }}</article>
-
-        {% else %}
-          <h1>{{ page.title }}</h1>
-          <p class="date">{{ page.date | pretty }}</p>
-          <article>{{ content }}</article>
-        {% endif %}
+        <h1>{{ page.title }}</h1>
+        <p class="date">{{ page.date | pretty }}</p>
+        <article>{{ content }}</article>
       </div>
     </div>
   </div>
