@@ -8,7 +8,6 @@ gem 'jekyll-assets'
 
 gem 'uglifier'
 gem 'sass'
-gem 'compass'
 gem 'yuicompressor'
 gem 'zurb-foundation'
 
