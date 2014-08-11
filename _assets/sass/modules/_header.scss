@@ -5,65 +5,61 @@
 // Header styles.
 
 .header {
-  padding-top    : 1em;
-  // margin-bottom : 2em;
-  // border-bottom  : 1px dotted $dark-grey;
+  padding-top: 1em;
 }
 
 nav {
-  padding-bottom : 2em;
+  padding-bottom: 2em;
 
   ul {
-    display    : block;
+    display: block;
 
-    width      : 100%;
-    margin     : 0;
-    padding    : 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 
-    list-style : none;
+    list-style: none;
   }
   li {
-    display : block;
-    float   : left;
+    display: block;
+    float: left;
     font-family: $serif;
 
     &:last-child {
-      margin-right : 0;
+      margin-right: 0;
     }
 
     &:not(:first-child) {
-      float       : right;
-      margin-left : 30px;
+      float: right;
+      margin-left: 30px;
       font-family: $sans;
     }
 
     a {
-      font-size       : 1em;
-      font-weight     : 500;
-      color           : $main-text-color;
-      // letter-spacing  : 0.5px;
-      line-height     : 1em;
-      text-decoration : none;
-      // text-transform  : lowercase;
-      border-bottom   : none;
+      font-size: 1em;
+      font-weight: 500;
+      color: $main-text-color;
+      line-height: 1em;
+      text-decoration: none;
+      border-bottom: none;
 
       &:hover {
-        color           : $accent-color;
-        text-decoration : none;
-        border-bottom   : none;
+        color: $accent-color;
+        text-decoration: none;
+        border-bottom: none;
       }
     }
 
     &.active {
       a {
-        color : $accent-color;
+        color: $accent-color;
       }
     }
 
     &:first-child {
       a {
-        font-weight : bold;
-        color       : $main-text-color;
+        font-weight: bold;
+        color: $main-text-color;
       }
     }
   }
@@ -71,14 +67,14 @@ nav {
 
 @media screen and (max-width: 768px) {
   nav li {
-    margin-right : none;
+    margin-right: none;
 
     a {
-      font-size : 1em;
+      font-size: 1em;
     }
     &:not(:first-child) {
-      float       : left;
-      margin-left : 30px;
+      float: left;
+      margin-left: 30px;
     }
   }
 }
@@ -86,13 +82,13 @@ nav {
 @media screen and (max-width: 485px) {
   nav li {
     &:first-child {
-      float : none;
+      float: none;
     }
     &:not(:first-child) {
-      float        : left;
+      float: left;
 
-      margin-right : 20px;
-      margin-left  : 0;
+      margin-right: 20px;
+      margin-left: 0;
     }
   }
 }
