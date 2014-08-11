@@ -8,6 +8,12 @@
   padding-top: 1em;
 }
 
+.header__link--active {
+  a {
+    color: $accent-color;
+  }
+}
+
 nav {
   padding-bottom: 2em;
 
@@ -47,12 +53,6 @@ nav {
         color: $accent-color;
         text-decoration: none;
         border-bottom: none;
-      }
-    }
-
-    &.active {
-      a {
-        color: $accent-color;
       }
     }
 
