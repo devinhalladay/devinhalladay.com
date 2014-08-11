@@ -6,7 +6,6 @@
 
 body {
   @include ligatures_kerning;
-
   color: $main-text-color;
   line-height: 27px;
 
@@ -236,42 +235,43 @@ blockquote {
 
 HR
 ------------------------------------------- */
+.hr--long {
+  height: 1px;
+
+  background: $dark-grey;
+  border: none;
+
+  background: transparent;
+  border-top: 1px dotted $dark-grey;
+
+  margin-bottom: 1.64706rem;
+}
+
 hr {
-  height : auto;
-  border : none;
+  height: auto;
+  border: none;
 
   &.short {
-    color : $dark-grey;
+    color: $dark-grey;
     &:after {
-      content        : "* * *";
+      content: "* * *";
 
-      display        : block;
+      display: block;
 
-      margin-top     : 2rem;
-      margin-bottom  : 1.75rem;
+      margin-top: 2rem;
+      margin-bottom: 1.75rem;
 
-      color          : rgba(0,0,0,0.3);
-      letter-spacing : .2em;
-      line-height    : .857142857;
-      text-align     : center;
+      color: rgba(0,0,0,0.3);
+      letter-spacing: .2em;
+      line-height: .857142857;
+      text-align: center;
 
       font: {
-        size   : 1.75rem;
-        family : $display-font;
-        weight : 700;
+        size: 1.75rem;
+        family: $display-font;
+        weight: 700;
       }
     }
-  }
-  &.long {
-    height     : 1px;
-
-    background : $dark-grey;
-    border     : none;
-
-    background : transparent;
-    border-top : 1px dotted $dark-grey;
-
-    margin-bottom: 1.64706rem;
   }
 }
 
@@ -280,52 +280,52 @@ hr {
 LINKS
 ------------------------------------------- */
 a {
-  color              : $main-text-color;
-  text-decoration    : none;
-  border-bottom      : 1px dotted $main-text-color;
+  color: $main-text-color;
+  text-decoration: none;
+  border-bottom: 1px dotted $main-text-color;
 
-  -webkit-transition : .2s;
-  transition         : .2s;
+  -webkit-transition: .2s;
+  transition: .2s;
 
   &:hover, &:focus {
-    color           : $accent-color;
-    text-decoration : none;
-    border-bottom   : 1px dotted $accent-color;
+    color: $accent-color;
+    text-decoration: none;
+    border-bottom: 1px dotted $accent-color;
   }
 
   &.more {
-    font-style : normal;
+    font-style: normal;
   }
 
   &.post-title {
     font-family: $sans;
-    font-weight     : 600;
-    color           : $heading-text-color;
-    text-decoration : none;
-    border-bottom   : none;
+    font-weight: 600;
+    color: $heading-text-color;
+    text-decoration: none;
+    border-bottom: none;
     font-size: 28px;
 
     &:hover {
-      color               : $accent-color;
-      border-bottom-color : $accent-color;
+      color: $accent-color;
+      border-bottom-color: $accent-color;
     }
   }
 }
 
 .sans {
-  font-family : $sans;
+  font-family: $sans;
   &.light {
-    color : $secondary-text-color;
+    color: $secondary-text-color;
   }
 }
 
 .light {
-  color : $secondary-text-color;
+  color: $secondary-text-color;
 }
 
 .dark {
   p {
-    color : $heading-text-color;
+    color: $heading-text-color;
   }
 }
 
