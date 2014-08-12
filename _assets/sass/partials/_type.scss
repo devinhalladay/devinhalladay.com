@@ -63,28 +63,10 @@ h4 {
   }
 }
 
-p {
-  margin: auto auto 1.5em;
-}
-
 p, blockquote, table, form, ul, ol {
   display: block;
   margin-bottom: 1.64706rem;
 }
-
-ol, ul {
-  @media screen and (max-width: 768px) {
-    margin-left: 1.4em;
-  }
-}
-
-// .cite {
-//   display: block;
-//   font: {
-//     size: 0.618em;
-//     style: italic;
-//   }
-// }
 
 em, i { font-style: italic; }
 
@@ -109,25 +91,28 @@ figcaption {
 
 /* LISTS */
 ul {
-  margin-bottom: 1.618em;
   margin-left: 2.5em;
-
-  list-style    : disc outside none;
+  list-style: disc outside none;
+  @media screen and (max-width: 768px) {
+    margin-left: 1.4em;
+  }
 }
 
 ol {
-  margin-bottom : 1.618em;
-  list-style    : decimal outside none;
+  list-style: decimal outside none;
+  @media screen and (max-width: 768px) {
+    margin-left: 1.4em;
+  }
 }
 
 /* BLOCKQUOTES */
 blockquote {
-  margin-bottom : 1.4em;
-  margin-left   : -1.5em;
-  padding       : 0;
-  padding-left  : 1.5em;
+  margin-bottom: 1.4em;
+  margin-left: -1.5em;
+  padding: 0;
+  padding-left: 1.5em;
 
-  border-left   : 3px solid $accent-color;
+  border-left: 3px solid $accent-color;
 
   p {
     margin-bottom : 0;
@@ -139,32 +124,30 @@ blockquote {
       text-indent : 2em;
     }
   }
-  &.pullquote {
-    margin        : auto;
-    margin-bottom : 1.5em;
-    padding-left  : 0;
+}
 
-    border-left   : none;
+.pullquote {
+  margin: auto;
+  margin-bottom: 1.5em;
+  padding-left: 0;
+  border-left: none;
 
-    p {
-      margin      : 2em -80px 2em;
-      padding     : 0;
+  p {
+    margin: 2em -80px 2em;
+    padding: 0;
+    color: $heading-text-color;
+    line-height: 40px;
+    text-align: center;
+    font: {
+      family: $sans;
+      weight: 500;
+      size: 24px;
+    }
 
-      color       : $heading-text-color;
-      line-height : 40px;
-      text-align  : center;
-
-      font: {
-        family : $sans;
-        weight : 500;
-        size   : 24px;
-      }
-      @media screen and (max-width: 768px) {
-        margin      : 0;
-
-        font-size   : 1.3em;
-        line-height : 1.618em;
-      }
+    @media screen and (max-width: 768px) {
+      margin: 0;
+      font-size: 1.3em;
+      line-height: 1.618em;
     }
   }
 }
@@ -173,7 +156,13 @@ blockquote {
 
 HR
 ------------------------------------------- */
+hr {
+  height: auto;
+  border: none;
+}
+
 .hr--long {
+  @extend hr;
   height: 1px;
 
   background: $dark-grey;
@@ -186,6 +175,7 @@ HR
 }
 
 .hr--short {
+  @extend hr;
   color: $dark-grey;
   &:after {
     content: "* * *";
@@ -208,10 +198,6 @@ HR
   }
 }
 
-hr {
-  height: auto;
-  border: none;
-}
 
 /*
 
