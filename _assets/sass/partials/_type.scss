@@ -81,29 +81,22 @@ p {
       size: 1em;
     }
   }
-  &.page-description {
-    font-family: $display-font;
-
-    .lead {
-      margin-bottom: 0.4em;
-    }
-  }
 }
 
-.lead {
+.text--lead {
   font-family: $sans;
   font-size: 19px;
 }
 
-.text-align-right {
+.text--align-right {
   text-align: right;
 }
 
-.text-align-left {
+.text--align-left {
   text-align: left;
 }
 
-.text-align-center {
+.text--align-center {
   text-align: center;
 }
 
@@ -151,20 +144,14 @@ figcaption {
   }
 }
 
-.serif-sc {
+.text--serif-sc {
   font-family: $serif-sc;
   letter-spacing: .05em;
   text-transform: lowercase;
 }
 
-.sans-sc {
+.text--sans-sc {
   font-family: $sans-sc;
-  letter-spacing: .05em;
-  text-transform: lowercase;
-}
-
-.caps, %caps {
-  font-family: $serif-sc;
   letter-spacing: .05em;
   text-transform: lowercase;
 }
@@ -329,8 +316,6 @@ a {
   }
 }
 
-.post {
-  p.date {
-    text-align: center;
-  }
+.post__date {
+  text-align: center;
 }
