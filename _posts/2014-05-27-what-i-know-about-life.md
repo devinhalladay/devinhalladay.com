@@ -5,9 +5,9 @@ categories: journal
 custom_type: article
 date: 2014-05-27
 ---
-<span class="lead">I like to think that I know a lot about life: that I'm wiser than my age lends me to be, that I know some small secret of this infinitely gigantic universe that helps me see the world differently than everyone else.</span>
+<span class="text--lead">I like to think that I know a lot about life: that I'm wiser than my age lends me to be, that I know some small secret of this infinitely gigantic universe that helps me see the world differently than everyone else.</span>
 
-<hr class="short">
+<hr class="hr--short">
 
 On a small scale—my school, my city, the state, the country, even the Earth—that might be true. To some that statement is one of arrogance, and they might be right: maybe these thoughts of mine are all just part of my "teenage rebellion years" (oh, how I hate that term), and maybe I'll grow out of them as the world consumes me in my far-too-rapidly increasing age. But they might be wrong. Maybe I really am aware of something that everyone else is oblivious to. But I digress. On a large scale, an infinite one—the entire universe, and every bit of the future universe as it continues to expand into nothingness, into "everythingness"—*I know nothing.*
 

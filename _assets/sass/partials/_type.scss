@@ -185,32 +185,32 @@ HR
   margin-bottom: 1.64706rem;
 }
 
+.hr--short {
+  color: $dark-grey;
+  &:after {
+    content: "* * *";
+
+    display: block;
+
+    margin-top: 2rem;
+    margin-bottom: 1.75rem;
+
+    color: rgba(0,0,0,0.3);
+    letter-spacing: .2em;
+    line-height: .857142857;
+    text-align: center;
+
+    font: {
+      size: 1.75rem;
+      family: $display-font;
+      weight: 700;
+    }
+  }
+}
+
 hr {
   height: auto;
   border: none;
-
-  &.short {
-    color: $dark-grey;
-    &:after {
-      content: "* * *";
-
-      display: block;
-
-      margin-top: 2rem;
-      margin-bottom: 1.75rem;
-
-      color: rgba(0,0,0,0.3);
-      letter-spacing: .2em;
-      line-height: .857142857;
-      text-align: center;
-
-      font: {
-        size: 1.75rem;
-        family: $display-font;
-        weight: 700;
-      }
-    }
-  }
 }
 
 /*
@@ -231,6 +231,8 @@ a {
     border-bottom: 1px dotted $accent-color;
   }
 }
+
+// Modifier Classes
 
 .sans {
   font-family: $sans;
