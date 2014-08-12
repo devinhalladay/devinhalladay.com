@@ -4,12 +4,12 @@ title: Journal
 exclude_from_search: true
 custom_class: home blog
 ---
-<hr class="long">
+<hr class="hr--long">
 {% for post in site.posts %}
   {% unless post.categories contains 'work' %}
     <div class="entry">
       <h2><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h2>
-      <p class="date">{{ post.date | pretty }}</p>
+      <p class="post__date">{{ post.date | pretty }}</p>
       <p>{{ post.excerpt | strip_newlines | strip_html | truncatewords: 60 | smartypants }} <a class="more" href="{{ post.url }}">read more</a></p>
     </div>
   {% endunless %}

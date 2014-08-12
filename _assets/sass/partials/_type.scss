@@ -6,22 +6,21 @@
 
 body {
   @include ligatures_kerning;
-  color: $main-text-color;
-  line-height: 27px;
-
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 
+  line-height: 27px;
   font: {
     family: $serif;
     size: 17px;
   }
+  color: $main-text-color;
+
   @media screen and (max-width: 500px) {
     font-size: 93.8%;
   }
 }
 
-/* HEADINGS */
 h1, h2, h3, h4, h5 {
   margin: 0.3em 0 0.5em 0;
 
@@ -42,7 +41,9 @@ h1 {
   }
 }
 
-h2 { font-size: 28px; }
+h2 {
+  font-size: 28px;
+}
 
 h3 {
   letter-spacing: .05em;
@@ -62,42 +63,8 @@ h4 {
   }
 }
 
-/* TEXT */
 p {
   margin: auto auto 1.5em;
-
-  &.date {
-    margin-bottom: 2.25em;
-
-    text-align: left;
-
-    color: $secondary-text-color;
-    letter-spacing: .05px;
-    text-transform: lowercase;
-
-    font: {
-      family: $serif-sc;
-      weight: 500;
-      size: 1em;
-    }
-  }
-}
-
-.text--lead {
-  font-family: $sans;
-  font-size: 19px;
-}
-
-.text--align-right {
-  text-align: right;
-}
-
-.text--align-left {
-  text-align: left;
-}
-
-.text--align-center {
-  text-align: center;
 }
 
 p, blockquote, table, form, ul, ol {
@@ -111,17 +78,13 @@ ol, ul {
   }
 }
 
-.cite {
-  display: block;
-  font: {
-    size: 0.618em;
-    style: italic;
-  }
-}
-
-.blog p.date {
-  margin-bottom: 1.2em;
-}
+// .cite {
+//   display: block;
+//   font: {
+//     size: 0.618em;
+//     style: italic;
+//   }
+// }
 
 em, i { font-style: italic; }
 
@@ -142,18 +105,6 @@ figcaption {
     size: 90%;
     family: $sans;
   }
-}
-
-.text--serif-sc {
-  font-family: $serif-sc;
-  letter-spacing: .05em;
-  text-transform: lowercase;
-}
-
-.text--sans-sc {
-  font-family: $sans-sc;
-  letter-spacing: .05em;
-  text-transform: lowercase;
 }
 
 /* LISTS */
@@ -279,24 +230,6 @@ a {
     text-decoration: none;
     border-bottom: 1px dotted $accent-color;
   }
-
-  &.more {
-    font-style: normal;
-  }
-
-  &.post-title {
-    font-family: $sans;
-    font-weight: 600;
-    color: $heading-text-color;
-    text-decoration: none;
-    border-bottom: none;
-    font-size: 28px;
-
-    &:hover {
-      color: $accent-color;
-      border-bottom-color: $accent-color;
-    }
-  }
 }
 
 .sans {
@@ -316,6 +249,31 @@ a {
   }
 }
 
-.post__date {
+.text--lead {
+  font-family: $sans;
+  font-size: 19px;
+}
+
+.text--align-right {
+  text-align: right;
+}
+
+.text--align-left {
+  text-align: left;
+}
+
+.text--align-center {
   text-align: center;
+}
+
+.text--serif-sc {
+  font-family: $serif-sc;
+  letter-spacing: .05em;
+  text-transform: lowercase;
+}
+
+.text--sans-sc {
+  font-family: $sans-sc;
+  letter-spacing: .05em;
+  text-transform: lowercase;
 }
