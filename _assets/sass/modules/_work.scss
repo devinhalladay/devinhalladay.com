@@ -4,7 +4,7 @@
 // ===============
 // Styles for the work page.
 
-.work {
+.page__work {
   img {
     margin-bottom: 0;
     border: 1px solid $dark-grey;
@@ -22,34 +22,12 @@
       border-bottom: none;
     }
   }
-
-  .overlay {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    visibility: hidden;
-
-    height: 97%;
-    width: 100%;
-    padding: 80px 20px;
-
-    opacity: 0;
-    background: $accent-color;
-    background: rgba($accent-color,0.8);
-    color: #fff;
-
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
-  }
 }
-.work-entry {
+.page__work__project {
   a {
     border-bottom: none;
 
-    .overlay {
+    .page__work__project--overlay {
       h4 {
         font-weight: 600;
         color: #fff;
@@ -57,7 +35,7 @@
       }
     }
     &:hover {
-      .overlay {
+      .page__work__project--overlay {
         visibility: visible;
         opacity: 1;
       }
@@ -73,4 +51,26 @@
     font-weight: 600;
     text-align: center;
   }
+}
+
+.page__work__project--overlay {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+
+  height: 93%;
+  width: 100%;
+  padding: 80px 20px;
+
+  opacity: 0;
+  background: $accent-color;
+  background: rgba($accent-color,0.8);
+  color: #fff;
+
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
 }

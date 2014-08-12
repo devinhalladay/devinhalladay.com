@@ -1,5 +1,7 @@
 $(document).foundation();
 
+//= require vendor/jquery.fluidbox.min
+
 $(function () {
   $("figure a").fluidbox({
     closeTrigger: [
