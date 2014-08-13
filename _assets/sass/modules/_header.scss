@@ -37,6 +37,8 @@ nav {
 
     &:last-child {
       margin-right: 0;
+      width: 100%;
+      margin-left: 0 !important;
     }
 
     &:not(:first-child) {

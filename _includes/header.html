@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 
 <!--
-    Hi, please don't steal. I worked hard on this.
-    If you need a website designed or developed,
-    contact me and I'll be happy to work with you.
+    I'm Devin Halladay.
+    This is my humble website.
+    But it's more than a website.
+    This is my home.
+    A place where I can write.
+    A place where I can share
+    without being criticized.
 
-    Thanks!
-    Devin Halladay
+    Welcome.
 -->
 
 <html>
@@ -54,6 +57,7 @@
 </head>
 <body {% if page.custom_class %}class="{{ page.custom_class }}"{% endif %}>
   {% capture currentURL %}{{ page.url | replace: '/', ' ' | truncatewords: 1 | remove: '...' | remove: ' ' }}{% endcapture %}
+  {% capture hero %}{{ page.url | replace: '/', ' ' | truncatewords: 1 | remove: '...' | remove: ' ' }}{% endcapture %}
   <div class="header">
     <div class="row full-width">
       <div class="large-12 small-11 columns small-centered large-centered">
@@ -62,8 +66,17 @@
             {% for page in site.data.pages %}
               <li><a href="{% if forloop.first %}/{% else %}/{{ page.url }}{% endif %}" class="{% if forloop.first %}header__link--name{% endif %}{% if currentURL == page.url %} header__link--active{% endif %}" title="{{ page.title }}" data-no-instant>{{ page.page }}</a></li>
             {% endfor %}
+            <div class="clearfix"></div>
+            <li class="left"><a href="/for-the-fallen" class="{% if currentURL == 'for-the-fallen' %}header__link--active{% endif %}" title="{{ page.title }}" data-no-instant>
+              {% if page.categories contains "for-the-fallen" %}
+                For {{ page.title }}
+              {% else %}
+                For the Fallen
+              {% endif %}
+            </a></li>
           </ul>
         </nav>
+        <div class="clearfix"></div>
         <hr class="hr--long">
       </div>
     </div>

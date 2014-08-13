@@ -1,14 +1,13 @@
 ---
 layout: page
-title: Work
-custom_class: work
-alias: [/projects]
+title: For the Fallen Heroes
+custom_class: for-the-fallen
 ---
-    <div class="page__masthead">
-      <hr class="hr--long">
-      <p>I am <strong>available</strong> for freelance work.<br>For more recent work and a full portfolio, visit me on <a href="http://dribbble.com/devinhalladay">Dribbble</a>.</p>
-      <hr class="hr--long">
-    </div>
+    <hr class="hr--long">
+    This is a place to honor fallen heroes&mdash;people who have inspired me and countless others. I wouldn't be who I am today without them.
+    <br>
+    It's not much, but it's a place for me to show my thanks. I need this. If these people have helped you in a similar way, please feel free to <a href="/contact">email me</a> and we can chat.
+    <hr class="hr--long">
   </div>
 </div>
 
@@ -16,13 +15,13 @@ alias: [/projects]
   <div class="large-12 small-12 small-centered large-centered columns">
     <ul class="small-block-grid-1 large-block-grid-3">
       {% for weight in (1..20) %}
-        {% for post in site.categories.work %}
+        {% for post in site.categories.for-the-fallen %}
           {% if post.weight == weight %}
-            <li class="page__work__project">
+            <li class="page__heroes__hero">
               <a href="{{ post.url }}" {% if post.data_no_instant == true %}data-no-instant{% endif %}>
                 <figure>
                   <img src="{{ post.cover_image }}" alt="{{ post.title }}">
-                  <span class="page__work__project--overlay">
+                  <span class="page__heroes__hero--overlay">
                     <h4>{{ post.title }}</h4>
                   </span>
                 </figure>

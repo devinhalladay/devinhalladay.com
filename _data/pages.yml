@@ -2,18 +2,22 @@
   url: index.html
   title: Home
 
+- page: Contact
+  url: contact
+  title: "Let's chat!"
+
 - page: Quotes
   url: quotes
   title: Quotes
 
-- page: Contact
-  url: contact
-  title: "Let's chat!"
+- page: Work
+  url: work
+  title: Selected Works
 
 - page: Journal
   url: journal
   title: Journal
 
-- page: Work
-  url: work
-  title: Selected Works
+# - page: For the Fallen
+#   url: for-the-fallen
+#   title: For the Fallen Heroes

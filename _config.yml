@@ -17,9 +17,6 @@ paginate: 6
 exclude: ['README.md', 'Rakefile', 'Gemfile', 'Gemfile.lock']
 include: ['.htaccess', 'ping.php', 'keybase.txt', 'build.php']
 
-exclude_home:
-  categories: ['work']
-
 assets:
   js_compressor: uglifier
   css_compressor: sass

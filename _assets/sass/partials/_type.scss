@@ -23,7 +23,6 @@ body {
 
 h1, h2, h3, h4, h5 {
   margin: 0.3em 0 0.5em 0;
-
   font-family: $display-font;
   color: $heading-text-color;
   line-height: 1.2em;
@@ -115,13 +114,13 @@ blockquote {
   border-left: 3px solid $accent-color;
 
   p {
-    margin-bottom : 0;
+    margin-bottom: 0;
 
-    font-family   : $display-font;
-    color         : $main-text-color;
+    font-family: $display-font;
+    color: $main-text-color;
 
     + p {
-      text-indent : 2em;
+      text-indent: 2em;
     }
   }
 }

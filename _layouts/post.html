@@ -7,7 +7,7 @@ custom_class: post
   <div class="site__content">
     <div class="row">
       <div class="large-8 small-11 small-centered large-centered columns">
-        <h1>{{ page.title }}</h1>
+        <h1>{{ page.title | widont }}</h1>
         <p class="post__date text--align-center">{{ page.date | pretty }}</p>
         <article>{{ content }}</article>
       </div>
