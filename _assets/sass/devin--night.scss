@@ -33,13 +33,34 @@ colors) for the night/dark view of this site.
 @import 'partials/forms';
 @import 'partials/grid';
 
-.hr--short:after {
-  color: $color--light-grey;
-}
-
 // Modules
 @import "modules/all";
 
 // Vendor
 @import "vendor/fluidbox";
-@import "vendor/gridforms";
+@import "vendor/gridforms--night";
+
+.hr--short:after {
+  color: $color--light-grey;
+}
+
+section.wrap-grey {
+  background: darken($color--background, 26%) !important;
+}
+
+.hr--long {
+  border-top: 1px dotted $color--light-grey;
+}
+
+.entry {
+  border-bottom: 1px dotted $color--light-grey;
+}
+
+.footer {
+  border-top: 1px dotted $color--light-grey;
+}
+
+input,
+textarea {
+  color: #ffffff;
+}
