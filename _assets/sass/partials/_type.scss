@@ -24,7 +24,7 @@ body {
 h1, h2, h3, h4, h5 {
   margin: 0.3em 0 0.5em 0;
   font-family: $display-font;
-  color: $heading-text-color;
+  color: $color--darkest-grey;
   line-height: 1.2em;
 }
 
@@ -134,7 +134,7 @@ blockquote {
   p {
     margin: 2em -80px 2em;
     padding: 0;
-    color: $heading-text-color;
+    color: $color--darkest-grey;
     line-height: 40px;
     text-align: center;
     font: {
@@ -232,7 +232,7 @@ a {
 
 .dark {
   p {
-    color: $heading-text-color;
+    color: $color--darkest-grey;
   }
 }
 
