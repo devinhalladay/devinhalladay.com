@@ -14,7 +14,7 @@ body {
     family: $serif;
     size: 17px;
   }
-  color: $main-text-color;
+  color: $color--dark-grey;
 
   @media screen and (max-width: 500px) {
     font-size: 93.8%;
@@ -24,7 +24,7 @@ body {
 h1, h2, h3, h4, h5 {
   margin: 0.3em 0 0.5em 0;
   font-family: $display-font;
-  color: $heading-text-color;
+  color: $color--darkest-grey;
   line-height: 1.2em;
 }
 
@@ -81,7 +81,7 @@ small {
 }
 
 figcaption {
-  color: $secondary-text-color;
+  color: $color--light-grey;
   font: {
     size: 90%;
     family: $sans;
@@ -117,7 +117,7 @@ blockquote {
     margin-bottom: 0;
 
     font-family: $sans;
-    color: $main-text-color;
+    color: $color--dark-grey;
 
     + p {
       text-indent: 2em;
@@ -134,7 +134,7 @@ blockquote {
   p {
     margin: 2em -80px 2em;
     padding: 0;
-    color: $heading-text-color;
+    color: $color--darkest-grey;
     line-height: 40px;
     text-align: center;
     font: {
@@ -164,18 +164,18 @@ hr {
   @extend hr;
   height: 1px;
 
-  background: $dark-grey;
+  background: $color--lighter-grey;
   border: none;
 
   background: transparent;
-  border-top: 1px dotted $dark-grey;
+  border-top: 1px dotted $color--lighter-grey;
 
   margin-bottom: 1.64706rem;
 }
 
 .hr--short {
   @extend hr;
-  color: $dark-grey;
+  color: $color--lighter-grey;
   &:after {
     content: "* * *";
 
@@ -203,9 +203,9 @@ hr {
 LINKS
 ------------------------------------------- */
 a {
-  color: $main-text-color;
+  color: $color--dark-grey;
   text-decoration: none;
-  border-bottom: 1px dotted $main-text-color;
+  border-bottom: 1px dotted $color--dark-grey;
 
   -webkit-transition: .2s;
   transition: .2s;
@@ -222,17 +222,17 @@ a {
 .sans {
   font-family: $sans;
   &.light {
-    color: $secondary-text-color;
+    color: $color--light-grey;
   }
 }
 
 .light {
-  color: $secondary-text-color;
+  color: $color--light-grey;
 }
 
 .dark {
   p {
-    color: $heading-text-color;
+    color: $color--darkest-grey;
   }
 }
 

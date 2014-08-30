@@ -14,7 +14,7 @@
 
 .header__link--name {
   font-weight: 600;
-  color: $main-text-color;
+  color: $color--dark-grey;
 }
 
 nav {
@@ -50,7 +50,7 @@ nav {
     a {
       font-size: 1em;
       font-weight: 500;
-      color: $main-text-color;
+      color: $color--dark-grey;
       line-height: 1em;
       text-decoration: none;
       border-bottom: none;

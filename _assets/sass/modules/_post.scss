@@ -1,7 +1,7 @@
 .post__date {
   margin-bottom: 1.2em;
 
-  color: $secondary-text-color;
+  color: $color--light-grey;
   letter-spacing: .05px;
   text-transform: lowercase;
 
@@ -21,7 +21,7 @@
 a.post-title {
   font-family: $sans;
   font-weight: 600;
-  color: $heading-text-color;
+  color: $color--darkest-grey;
   text-decoration: none;
   border-bottom: none;
   font-size: 28px;
