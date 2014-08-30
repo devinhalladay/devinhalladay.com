@@ -44,7 +44,36 @@
   {% if page.custom_js %}{{ page.custom_js | javascript }}{% endif %}
 
   <!-- Custom CSS -->
+  {% stylesheet devin--night %}
   {% stylesheet devin %}
+
+  <script>
+    <!--
+    function getStylesheet() {
+      var currentTime = new Date().getHours();
+      if (0 <= currentTime&&currentTime < 5) {
+       document.write('{% stylesheet devin--night %}');
+      }
+      if (5 <= currentTime&&currentTime < 11) {
+       document.write('{% stylesheet devin %}');
+      }
+      if (11 <= currentTime&&currentTime < 16) {
+       document.write('{% stylesheet devin %}');
+      }
+      if (16 <= currentTime&&currentTime < 22) {
+       document.write('{% stylesheet devin--night %}');
+      }
+      if (22 <= currentTime&&currentTime <= 24) {
+       document.write('{% stylesheet devin--night %}');
+      }
+    }
+
+    getStylesheet();
+    -->
+  </script>
+
+<noscript>{% stylesheet devin %}</noscript>
+
   {% if page.custom_css %}{{ page.custom_css | stylesheet }}{% endif %}
 
   <script>
