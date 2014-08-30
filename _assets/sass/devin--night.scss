@@ -33,6 +33,10 @@ colors) for the night/dark view of this site.
 @import 'partials/forms';
 @import 'partials/grid';
 
+.hr--short:after {
+  color: $color--light-grey;
+}
+
 // Modules
 @import "modules/all";
 
