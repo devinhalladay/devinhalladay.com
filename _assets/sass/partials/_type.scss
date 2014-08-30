@@ -81,7 +81,7 @@ small {
 }
 
 figcaption {
-  color: $secondary-text-color;
+  color: $color--light-grey;
   font: {
     size: 90%;
     family: $sans;
@@ -222,12 +222,12 @@ a {
 .sans {
   font-family: $sans;
   &.light {
-    color: $secondary-text-color;
+    color: $color--light-grey;
   }
 }
 
 .light {
-  color: $secondary-text-color;
+  color: $color--light-grey;
 }
 
 .dark {
