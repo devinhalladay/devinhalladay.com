@@ -10,11 +10,7 @@ date: 2013-10-19
 
 Everything around us is designed—from the seat you're sitting on to the sheets of paper sitting in your printer. That sheet of paper, as simple as it may seem, was meticulously designed by someone just like me—someone just like you. The thickness of the paper was a design choice, allowing vendors to fit more in a pack and cutting the cost of production. The white color of the paper was a design choice — it is practical, and also conveys great emotion: that of having a clean slate. Paper has been designed and redesigned time after time since about the year 105 A.D. It was designed with love and care, with the single purpose of giving your content, be it art, text, or anything else, a place to *shine*.
 
-<blockquote class="pullquote"><p>Paper was designed with love and care, with the single purpose of giving your content, be it art, text, or anything else, a place to <i>shine</i>.</p></blockquote>
-
 We need to design everything the way paper was designed. We need to value simplicity, typography, and color. We need to take color, shape, texture, and rhythm into careful consideration. We need to design honestly, transparently, and with generous amounts of love and care.
-
-<blockquote class="pullquote"><p>We need to design honestly, transparently, and with generous amounts of love and care.</p></blockquote>
 
 With that being said, I'm going to go ahead and present to you what I think are important principles of honest, transparent design. Following these principles won't guarantee a beautiful, emotional design, but it will certainly help you gain a better insight into any design problem you might encounter.
 
@@ -25,8 +21,6 @@ Ambitious design is also honest. It allows you to forget any predetermined notio
 
 ## 2. Universal
 Great design can be understood by anyone, regardless of what language they speak or what ideals they might have. Don't focus your energy creating a design that will be understood by one section of your audience. Take a step back, look at the problem, and find a solution that will fit everyone's needs.
-
-<blockquote class="pullquote"><p>Take a step back, look at the problem, and find a solution that will fit everyone's needs.</p></blockquote>
 
 >Universal design represents or results in products and environments that are usable by all people, to the greatest extent possible, without the need for adaptation or specialized design.
 
@@ -43,9 +37,5 @@ It all began with cave drawings. Originally there was no language, and thus no n
 <hr class="hr--short">
 
 Everything around us is designed. The thought, care, and love that we have for the things we use every day—our MacBooks, our iPhones, our clothes, and anything else—should be reflected in the things that *we* design. Learn to sweat the details — the subtleties of your typography, the tint of your colors, and every other tiny detail in your design. **Design with love.**
-
-<blockquote class="pullquote">
-  <p>Learn to sweat the details: the subtleties of your typography, the tint of your colors, and every other tiny detail in your design.</p>
-</blockquote>
 
 Put your whole heart and soul into designing an honest design—a design that is **ambitious**, **universal**, **enlightened**, and **adaptable**.

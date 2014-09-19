@@ -9,7 +9,7 @@ custom_class: home blog
   {% unless post.categories contains 'work' or post.categories contains 'for-the-fallen' %}
     <div class="entry">
       <h2><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h2>
-      <p class="post__date">{{ post.date | pretty }}</p>
+      <p class="light">{{ post.date | pretty }}</p>
 <!--       <p>{{ post.excerpt | strip_newlines | strip_html | truncatewords: 26 | smartypants }} <a class="more" href="{{ post.url }}">read more</a></p>
  -->    </div>
   {% endunless %}
