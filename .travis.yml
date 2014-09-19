@@ -2,7 +2,7 @@ language: ruby
 cache:
   bundler: true
 rvm:
-- 2.0.0-p451
+- 2.0.0
 branches:
   only:
   - master
