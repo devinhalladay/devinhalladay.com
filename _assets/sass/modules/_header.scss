@@ -5,7 +5,8 @@
 // Header styles.
 
 .header {
-  padding-top: 1em;
+  margin-top: $baseline;
+  margin-bottom: $baseline*2;
 }
 
 .header__link--active {
@@ -18,7 +19,7 @@
 }
 
 nav {
-  padding-bottom: 2em;
+  padding-bottom: $baseline*1.5;
 
   ul {
     display: block;

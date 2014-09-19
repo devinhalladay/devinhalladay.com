@@ -22,6 +22,16 @@
   padding-bottom: 2em;
 }
 
+.post__header,
+.page__header {
+  margin-bottom: $baseline*3;
+}
+
+.post__title,
+.page__title {
+  text-align: center;
+}
+
 .entry {
   margin: 0 0 2em;
   padding: 0 0 1em;
