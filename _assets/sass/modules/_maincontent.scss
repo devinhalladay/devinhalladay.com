@@ -37,3 +37,13 @@
 
   border-bottom: 1px dotted $color--lighter-grey;
 }
+
+article {
+  p:not(:first-child) {
+    text-indent: 2em;
+    margin-bottom: 0px;
+  }
+  p:nth-of-type(2) {
+    text-indent: 0;
+  }
+}
