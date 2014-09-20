@@ -92,11 +92,11 @@
               <li><a href="{% if forloop.first %}/{% else %}/{{ page.url }}{% endif %}" class="{% if forloop.first %}header__link--name{% endif %}{% if currentURL == page.url %} header__link--active{% endif %}" title="{{ page.title }}" data-no-instant>{{ page.page }}</a></li>
             {% endfor %}
             <div class="clearfix"></div>
-            <li class="left"><a href="/for-the-fallen" class="{% if currentURL == 'for-the-fallen' %}header__link--active{% endif %}" title="{{ page.title }}" data-no-instant>
-              {% if page.categories contains "for-the-fallen" %}
+            <li class="left"><a href="/for-the-fallen" class="{% if currentURL == 'for-the-heroes' %}header__link--active{% endif %}" title="{{ page.title }}" data-no-instant>
+              {% if page.categories contains "for-the-heroes" %}
                 For {{ page.title }}
               {% else %}
-                For the Fallen
+                For the Heroes
               {% endif %}
             </a></li>
           </ul>
