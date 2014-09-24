@@ -9,6 +9,10 @@ custom_css: hero--charles-bukowski
 custom_class: hero--charles-bukowski
 fallen: true
 ---
+<figure>
+  <img src="/uploads/2014/09/buk.png" alt="Buk">
+</figure>
+
 <hr class="hr--long">
 <p class="text--lead">Dedicated to the great Charles Bukowski, a hero of literature, truth, and the human condition.</p>
 <hr class="hr--long">
