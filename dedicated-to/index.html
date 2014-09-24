@@ -3,36 +3,28 @@ layout: page
 title: For the Best of Us
 custom_class: dedicated-to
 ---
-    <hr class="hr--long">
-    This is a place to honor my heroes&mdash;people who have inspired me and countless others. I wouldn't be who I am today without them.
-    <br>
-    It's not much, but it's a place for me to show my thanks. I need this. If these people have helped you in a similar way, please feel free to <a href="/contact">email me</a> and we can chat.
-    <hr class="hr--long">
-  </div>
-</div>
+<hr class="hr--long">
+This is a place to honor my heroes&mdash;people who have inspired me and countless others. I wouldn't be who I am today without them.
+<br>
+It's not much, but it's a place for me to show my thanks. I need this. If these people have helped you in a similar way, please feel free to <a href="/contact">email me</a> and we can chat.
+<hr class="hr--long">
 
-<div class="row">
-  <div class="large-12 small-12 small-centered large-centered columns">
-    <ul class="small-block-grid-1 large-block-grid-3">
-      {% for weight in (1..20) %}
-        {% for post in site.categories.dedicated-to %}
-          {% if post.weight == weight %}
-            <li class="page__heroes__hero">
-              <a href="{{ post.url }}" {% if post.data_no_instant == true %}data-no-instant{% endif %}>
-                <figure>
-                  <img src="{{ post.cover_image }}" alt="{{ post.title }}">
-                  <span class="page__heroes__hero--overlay">
-                    <h4>{{ post.title }}</h4>
-                  </span>
-                </figure>
-              </a>
-            </li>
-          {% endif %}
-        {% endfor %}
-      {% endfor %}
-    </ul>
-  </div>
-</div>
-
-<div class="row">
-  <div class="large-9 small-12 small-centered large-centered columns" id="content">
+{% for weight in (1..20) %}
+  {% for post in site.categories.dedicated-to %}
+    {% if post.weight == weight %}
+      <div class="entry page__heroes__hero">
+        <h2><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h2>
+      </div>
+      <!-- <li class="page__heroes__hero">
+        <a href="{{ post.url }}" {% if post.data_no_instant == true %}data-no-instant{% endif %}>
+          <figure>
+            <img src="{{ post.cover_image }}" alt="{{ post.title }}">
+            <span class="page__heroes__hero--overlay">
+              <h4>{{ post.title }}</h4>
+            </span>
+          </figure>
+        </a>
+      </li> -->
+    {% endif %}
+  {% endfor %}
+{% endfor %}
