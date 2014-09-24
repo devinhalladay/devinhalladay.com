@@ -3,7 +3,7 @@ layout: post
 title: Charles Bukowski
 description: 'For Charles Bukowski, an American hero.'
 cover_image: '/uploads/2014/08/bukowski.jpg'
-categories: for-the-heroes
+categories: dedicated-to
 weight: 2
 custom_css: hero--charles-bukowski
 custom_class: hero--charles-bukowski

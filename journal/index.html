@@ -6,7 +6,7 @@ custom_class: home blog
 ---
 <hr class="hr--long">
 {% for post in site.posts %}
-  {% unless post.categories contains 'work' or post.categories contains 'for-the-fallen' %}
+  {% unless post.categories contains 'work' or post.categories contains 'dedicated-to' %}
     <div class="entry">
       <h2><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h2>
       <p class="light">{{ post.date | pretty }}</p>
