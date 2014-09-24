@@ -92,7 +92,7 @@
               <li><a href="{% if forloop.first %}/{% else %}/{{ page.url }}{% endif %}" class="{% if forloop.first %}header__link--name{% endif %}{% if currentURL == page.url %} header__link--active{% endif %}" title="{{ page.title }}" data-no-instant>{{ page.page }}</a></li>
             {% endfor %}
             <div class="clearfix"></div>
-            <li class="left"><a href="/dedicated-to" class="{% if currentURL == 'for-the-heroes' %}header__link--active{% endif %}" title="{{ page.title }}" data-no-instant>
+            <li class="left"><a href="/dedicated-to" class="{% if currentURL == 'dedicated-to' %}header__link--active{% endif %}" title="{{ page.title }}" data-no-instant>
               {% if page.categories contains "dedicated-to" %}
                 For {{ page.title }}
               {% else %}
