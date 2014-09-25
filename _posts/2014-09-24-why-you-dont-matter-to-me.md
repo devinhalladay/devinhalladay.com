@@ -3,6 +3,7 @@ layout: post
 title: Why You Don't Matter to Me
 categories: journal
 custom_type: article
+published: false
 ---
 <span class="text--lead">Disclaimer: If your feelings are easily hurt, don't read this. If you are reading this, however, this article is probably not about you—so read on. This website is an extension of my journal, and this article is not targeted at any one person.</span>
 
