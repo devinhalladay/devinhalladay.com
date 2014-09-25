@@ -25,51 +25,10 @@ body {
   }
 }
 
-// h1, h2, h3, h4, h5 {
-//   margin: 0.3em 0 0.5em 0;
-//   font-family: $display-font;
-//   color: $color--darkest-grey;
-//   line-height: 1.2em;
-// }
-
-// h1 {
-//   margin: 1em 0 1.8em 0;
-//   font-weight: 600;
-//   font-size: 2.4em;
-//   line-height: 1.05em;
-//   text-align: center;
-
-//   @media screen and (max-width: 768px) {
-//     font-size: 1.8em;
-//   }
-// }
-
-// h2 {
-//   font-size: 28px;
-// }
-
-// h3 {
-//   letter-spacing: .05em;
-//   text-transform: uppercase;
-
-//   font: {
-//     size: 1.324em;
-//     family: $serif-sc;
-//   }
-// }
-
-// h4 {
-//   text-transform: lowercase;
-//   font: {
-//     size: 1.3em;
-//     family: $sans-sc;
-//   }
-// }
-
 h1,
 .alpha {
   font-family: $display-font;
-  // font-weight: 800;
+  font-weight: 800;
   font-size: 3rem;
   line-height: 1.2;
 }
