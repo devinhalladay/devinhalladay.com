@@ -208,8 +208,12 @@ a {
 
 .text--lead {
   font-family: $sans;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   text-indent: 0;
+
+  @media (max-width: 500px) {
+    font-size: 1rem;
+  }
 }
 
 .text--align-right {
