@@ -11,12 +11,7 @@ fallen: true
 ---
 <figure>
   <img src="/uploads/2014/09/buk.png" alt="Buk">
-</figure>
-
-<hr class="hr--long">
-<p class="text--lead">Dedicated to the great Charles Bukowski, a hero of literature, truth, and the human condition.</p>
-<hr class="hr--long">
-
+</figure><hr class="hr--long"><p class="text--lead">Dedicated to the great Charles Bukowski, a hero of literature, truth, and the human condition.</p><hr class="hr--long">
 Ah, Bukowski. What a sad, brilliant man. I love your work dearly but it is a shame that you saw only one side of the coin that is life.
 
 You have been a great inspiration to me over the past two years since I first discovered your work. You have shown me that to be human is not glamorous, but that it is a struggle. That even the best of us can fall to lies, deceit, to the crushing will of society. But you have also shown me that I need not let the society in which I live define me. I am my own man.
