@@ -14,11 +14,10 @@
 
 a.post-title {
   font-family: $sans;
-  // font-weight: 600;
+  font-weight: 600;
   color: $color--darkest-grey;
   text-decoration: none;
   border-bottom: none;
-  font-size: 28px;
 
   &:hover {
     color: $accent-color;
