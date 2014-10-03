@@ -12,12 +12,14 @@ $baseline-unitless: 28/(16*($base-font-size/100%));
 $baseline: $baseline-unitless * 1rem;
 
 // Sans-serif
-$sans: "Whitney SSm A", "Whitney SSm B", Geneva, Verdana, sans-serif;
+$sans: 'Ideal Sans SSm A', 'Ideal Sans SSm B', Geneva, Verdana, sans-serif;
 $sans-sc: "Whitney SSm SC A", "Whitney SSm SC B", $sans;
 
 // Serif
-$serif: "Chronicle SSm A", "Chronicle SSm B", Georgia, Cambria, "Times New Roman", Times, serif;
-$serif-sc: "Chronicle SSm SC A", "Chronicle SSm SC B", $serif;
+// $serif: "Chronicle SSm A", "Chronicle SSm B", Georgia, Cambria, "Times New Roman", Times, serif;
+// $serif-sc: "Chronicle SSm SC A", "Chronicle SSm SC B", $serif;
+$serif: $sans;
+$serif-sc: $sans-sc;
 
 // Display
 $display-font: $serif;

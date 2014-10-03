@@ -6,7 +6,16 @@
 
 .header {
   margin-top: $baseline;
-  margin-bottom: $baseline*2;
+  font-size: 1rem;
+  h1 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #404951;
+    line-height: $baseline;
+    text-decoration: none;
+    font-family: $sans;
+    border-bottom: none;
+  }
 }
 
 .header__link--active {
@@ -19,7 +28,8 @@
 }
 
 nav {
-  padding-bottom: $baseline*1.5;
+  padding-top: $baseline;
+  margin-bottom: $baseline*.75;
 
   ul {
     display: block;
@@ -32,20 +42,11 @@ nav {
   }
 
   li {
-    display: block;
-    float: left;
-    font-family: $serif;
-
-    &:last-child {
-      margin-right: 0;
-      width: 100%;
-      margin-left: 0 !important;
-    }
+    display: inline-block;
+    font-family: $sans;
 
     &:not(:first-child) {
-      float: right;
       margin-left: 30px;
-      font-family: $sans;
     }
 
     a {
@@ -73,7 +74,6 @@ nav {
       font-size: 1em;
     }
     &:not(:first-child) {
-      float: left;
       margin-left: 30px;
     }
   }
@@ -81,12 +81,7 @@ nav {
 
 @media screen and (max-width: 485px) {
   nav li {
-    &:first-child {
-      float: none;
-    }
     &:not(:first-child) {
-      float: left;
-
       margin-right: 20px;
       margin-left: 0;
     }

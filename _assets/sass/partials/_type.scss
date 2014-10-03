@@ -9,7 +9,7 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 
-  font-size: $base-font-size;
+  font-size: 1rem;
   line-height: $baseline-unitless;
   font: {
     family: $serif;
@@ -138,7 +138,7 @@ hr {
   border: none;
 
   background: transparent;
-  border-top: 1px dotted $color--lighter-grey;
+  border-top: 1px solid $color--lighter-grey;
 
   margin-bottom: 1.64706rem;
 }

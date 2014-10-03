@@ -39,13 +39,15 @@
 
   <link rel="alternate" type="application/rss+xml" title="RSS Feed for devinhalladay.com" href="/atom.xml" />
 
-  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7806452/772864/css/fonts.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7806452/772864/css/fonts.css" /> -->
+
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7806452/639386/css/fonts.css" />
 
   {% if page.custom_js %}{{ page.custom_js | javascript }}{% endif %}
 
   <!-- Custom CSS -->
 
-  <script>
+  <!-- <script>
     function getStylesheet() {
       var currentTime = new Date().getHours();
       if (0 <= currentTime&&currentTime < 5) {
@@ -66,9 +68,9 @@
     }
 
     getStylesheet();
-  </script>
+  </script>-->
 
-  <noscript>{% stylesheet devin %}</noscript>
+  {% stylesheet devin %}
 
   {% if page.custom_css %}{{ page.custom_css | stylesheet }}{% endif %}
 
@@ -84,25 +86,26 @@
   {% capture currentURL %}{{ page.url | replace: '/', ' ' | truncatewords: 1 | remove: '...' | remove: ' ' }}{% endcapture %}
   {% capture hero %}{{ page.url | replace: '/', ' ' | truncatewords: 1 | remove: '...' | remove: ' ' }}{% endcapture %}
   <div class="header">
-    <div class="row full-width">
-      <div class="large-12 small-11 columns small-centered large-centered">
+    <div class="grid">
+      <div class="grid__col grid__col--6-of-12">
+        <h1>Another is a design studio for page and screen, led by Frank Chimero. We make lively work that threads digital and print for culture and commerce.</h1>
         <nav>
           <ul>
             {% for page in site.data.pages %}
-              <li><a href="{% if forloop.first %}/{% else %}/{{ page.url }}{% endif %}" class="{% if forloop.first %}header__link--name{% endif %}{% if currentURL == page.url %} header__link--active{% endif %}" title="{{ page.title }}" data-no-instant>{{ page.page }}</a></li>
+              <li><a href="/{{ page.url }}" class="{% if currentURL == page.url %} header__link--active{% endif %}" title="{{ page.title }}" data-no-instant>{{ page.page }}</a></li>
             {% endfor %}
-            <div class="clearfix"></div>
+            <!-- <div class="clearfix"></div>
             <li class="left"><a href="/dedicated-to" class="{% if currentURL == 'dedicated-to' %}header__link--active{% endif %}" title="{{ page.title }}" data-no-instant>
               {% if page.categories contains "dedicated-to" %}
                 Dedicated to {{ page.title }}
               {% else %}
                 Dedicated to the Best of Us
               {% endif %}
-            </a></li>
+            </a></li> -->
           </ul>
         </nav>
         <div class="clearfix"></div>
-        <hr class="hr--long">
       </div>
     </div>
   </div>
+  <hr class="hr--long">

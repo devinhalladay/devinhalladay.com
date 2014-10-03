@@ -1,6 +1,10 @@
-- page: "Devin&nbsp;Halladay"
-  url: index.html
-  title: Home
+- page: "Projects"
+  url:
+  title: Projects
+
+- page: Journal
+  url: journal
+  title: Journal
 
 - page: Contact
   url: contact
@@ -9,15 +13,3 @@
 - page: Quotes
   url: quotes
   title: Quotes
-
-- page: Work
-  url: work
-  title: Selected Works
-
-- page: Journal
-  url: journal
-  title: Journal
-
-# - page: For the Fallen
-#   url: for-the-fallen
-#   title: For the Fallen Heroes

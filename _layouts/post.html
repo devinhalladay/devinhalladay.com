@@ -5,14 +5,14 @@ custom_class: post quote
 {% include header.html %}
 
   <div class="site__content">
-    <div class="row">
-      <div class="large-8 small-11 small-centered large-centered columns">
+    <div class="grid">
+      <div class="grid__col grid__col--4-of-12">
         <div class="post__header">
           <h1 class="post__title">{{ page.title | widont }}</h1>
-          <p class="post__date text--align-center">{{ page.date | pretty }}</p>
+          <p class="post__date">{{ page.date | pretty }}</p>
         </div>
-        <article>{{ content }}</article>
       </div>
+      <article class="grid__col grid__col--6-of-12">{{ content }}</article>
     </div>
   </div>
 
