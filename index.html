@@ -4,56 +4,21 @@ title: Welcome
 custom_class: about
 custom_css: editorial-about
 ---
-
 <section class="projects">
   <div class="grid">
-    <div class="grid__col grid__col--6-of-12 page__work__project">
-      <a href="/test">
-        <span>Project Title</span>
-        <figure>
-          <img src="/place.jpeg" alt="Test">
-        </figure>
-      </a>
-    </div>
-    <div class="grid__col grid__col--6-of-12 page__work__project">
-      <a href="/test">
-        <span>Project Title</span>
-        <figure>
-          <img src="/place.jpeg" alt="Test">
-        </figure>
-      </a>
-    </div>
-    <div class="grid__col grid__col--6-of-12 page__work__project">
-      <a href="/test">
-        <span>Project Title</span>
-        <figure>
-          <img src="/place.jpeg" alt="Test">
-        </figure>
-      </a>
-    </div>
-    <div class="grid__col grid__col--6-of-12 page__work__project">
-      <a href="/test">
-        <span>Project Title</span>
-        <figure>
-          <img src="/place.jpeg" alt="Test">
-        </figure>
-      </a>
-    </div>
-    <div class="grid__col grid__col--6-of-12 page__work__project">
-      <a href="/test">
-        <span>Project Title</span>
-        <figure>
-          <img src="/place.jpeg" alt="Test">
-        </figure>
-      </a>
-    </div>
-    <div class="grid__col grid__col--6-of-12 page__work__project">
-      <a href="/test">
-        <span>Project Title</span>
-        <figure>
-          <img src="/place.jpeg" alt="Test">
-        </figure>
-      </a>
-    </div>
+    {% for weight in (1..20) %}
+      {% for post in site.categories.work %}
+        {% if post.weight == weight %}
+          <div class="grid__col grid__col--6-of-12 page__work__project">
+            <a href="{{ post.url }}"{% if post.data_no_instant == true %} data-no-instant{% endif %}>
+              <span>{{ post.title }}</span>
+              <figure>
+                <img src="{{ post.cover_image }}" alt="{{ post.title }}">
+              </figure>
+            </a>
+          </div>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
   </div>
 </section>

@@ -5,6 +5,7 @@ description: 'I <strong>love</strong> print design. I have a passion for typogra
 cover_image: 'http://devinhalladay.com/uploads/2013/11/cards.jpg'
 categories: work
 weight: 5
+published: false
 ---
 <ul class="small-block-grid-1 large-block-grid-2">
   {% include project-image-caption.html alt="Personal business cards" url="http://devinhalladay.com/uploads/2013/11/cards.jpg" caption="<strong>My personal business cards</strong>. The goal here was to futher explore and hone my understanding of typography by using the classic Neue Haas Grotesk and a limited color palette." %}

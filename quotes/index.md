@@ -1,11 +1,14 @@
 ---
-layout: page
+layout: default
 title: Quotes
 custom_class: quotes
 ---
-<hr class="hr--long">
-I've long needed a place to jot down the quotes I see and read that have an impact on me. This is that place. This page is mainly for me, but I encourage you to soak up all the wisdom it contains.
-<hr class="hr--long">
+<div class="grid">
+  <div class="grid__col grid__col--4-of-12">
+    I've long needed a place to jot down the quotes I see and read that have an impact on me. This is that place. This page is mainly for me, but I encourage you to soak up all the wisdom it contains.
+    <hr class="hr--long">
+  </div>
+  <div class="grid__col grid__col--8-of-12">
 <ul>
   {% include quote.html quote="The challenge of leadership is to be strong, but not rude; be kind, but not weak; be bold, but not bully; be thoughtful, but not lazy; be humble, but not timid; be proud, but not arrogant; have humor, but without folly." author="Jim Rohn" %}
 
@@ -31,3 +34,4 @@ I've long needed a place to jot down the quotes I see and read that have an impa
 
   {% include quote.html quote="Live, travel, adventure, bless, and don't be sorry." author="Jack Kerouac" %}
 </ul>
+</div>

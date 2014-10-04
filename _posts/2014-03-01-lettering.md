@@ -5,6 +5,7 @@ description: 'Digital and analog lettering done for clients, friends, and studio
 cover_image: '/uploads/2013/10/d-letter.jpg'
 categories: work
 weight: 3
+published: false
 ---
 <ul class="small-block-grid-1 large-block-grid-3">
   {% include project-image.html alt="D" url="http://devinhalladay.com/uploads/2013/10/d-letter.jpg" %}

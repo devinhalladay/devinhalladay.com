@@ -62,10 +62,10 @@ $grid-column-namespace: "grid__col";
 $col-groups: (2, 3, 4, 5, 6, 8, 12);
 
 // Gutter width
-$gutter-width: 20px;
+$gutter-width: 30px;
 
 // Breakpoints
-$breakpoint-medium: 700px;
+$breakpoint-medium: 648px;
 $breakpoint-small: 480px;
 
 .#{$grid-namespace} {

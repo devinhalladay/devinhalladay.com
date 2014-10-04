@@ -5,6 +5,7 @@ description: 'Vector illustrations done for clients, friends, and studio project
 cover_image: '/uploads/2013/10/hammeraxe.jpg'
 categories: work
 weight: 4
+published: false
 ---
 <ul class="small-block-grid-1 large-block-grid-3">
   {% include project-image.html alt="Book stack illustration" url="http://devinhalladay.com/uploads/2014/02/books.jpg" %}
