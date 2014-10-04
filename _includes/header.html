@@ -88,11 +88,11 @@
   <div class="header">
     <div class="grid">
       <div class="grid__col grid__col--6-of-12">
-        <h1>Another is a design studio for page and screen, led by Frank Chimero. We make lively work that threads digital and print for culture and commerce.</h1>
+        <h1><strong>My name is Devin Halladay</strong>. I'm a graphic designer and writer. <br> I craft honest visual solutions. I sincerely care about the stories with which I work and I have an ambition toward the finest of execution.</h1>
         <nav>
           <ul>
             {% for page in site.data.pages %}
-              <li><a href="/{{ page.url }}" class="{% if currentURL == page.url %} header__link--active{% endif %}" title="{{ page.title }}" data-no-instant>{{ page.page }}</a></li>
+              <li><a href="{% if page.url == 'index.html' %}/{% else %}/{{ page.url }}{% endif %}" class="{% if currentURL == page.url %} header__link--active{% elsif currentURL == '/' %} header__link--active{% endif %}" title="{{ page.title }}" data-no-instant>{{ page.page }}</a></li>
             {% endfor %}
             <!-- <div class="clearfix"></div>
             <li class="left"><a href="/dedicated-to" class="{% if currentURL == 'dedicated-to' %}header__link--active{% endif %}" title="{{ page.title }}" data-no-instant>

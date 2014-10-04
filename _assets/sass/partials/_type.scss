@@ -12,7 +12,7 @@ body {
   font-size: 1rem;
   line-height: $baseline-unitless;
   font: {
-    family: $serif;
+    family: $sans;
   }
   color: $color--dark-grey;
 
@@ -208,7 +208,7 @@ a {
 
 .text--lead {
   font-family: $sans;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-indent: 0;
 
   @media (max-width: 500px) {

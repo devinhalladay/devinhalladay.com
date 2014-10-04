@@ -1,48 +1,50 @@
 ---
-layout: page
+layout: default
 title: Let's Chat
 custom_script: //cdnjs.cloudflare.com/ajax/libs/parsley.js/2.0.2/parsley.min.js
 ---
-<div>
-  <hr class="hr--long">
+<div class="grid">
+  <div class="grid__col grid__col--4-of-12">
+    <div>
+      <p>
+        Mention <a href="http://twitter.com/devinhalladay">@devinhalladay</a> on Twitter if you just have a quick question or comment.
+      </p>
+    </div>
+  </div>
 
-  <p>
-    Mention <a href="http://twitter.com/devinhalladay">@devinhalladay</a> on Twitter if you just have a quick question or comment.
-  </p>
+  <div class="grid__col grid__col--8-of-12">
+    <form data-parsley-validate class="grid-form" method="POST" action="//forms.brace.io/devin@devinhalladay.com">
+      <fieldset>
+        <legend>Want to work with me on a project, ask me a question, or just chat? Email me using this form!</legend>
 
-  <hr class="hr--long">
+        <div data-row-span="2">
+          <div data-field-span="1" id="name">
+            <label for="name">Your Full Name</label>
+            <input type="text" name="Name" tabindex="1" id="name" data-parsley-class-handler="#name" data-parsley-required>
+          </div>
+          <div data-field-span="1" id="email">
+            <label for="email-address">Email Address</label>
+            <input type="email" data-parsley-class-handler="#email" data-parsley-type="email" data-parsley-required tabindex="2" id="email-address" name="_replyto">
+          </div>
+        </div>
+
+        <div data-row-span="2" id="message">
+          <div data-field-span="2">
+            <label for="message">Your Message</label>
+            <textarea data-parsley-class-handler="#message" data-parsley-required data-parsley-minlength="20" name="Message" type="text" cols="30" rows="10" tabindex="3" id="message"></textarea>
+          </div>
+        </div>
+
+        <div data-row-span="2">
+          <div data-field-span="1">
+            <span>Ready to get the ball rolling? Click submit.</span>
+          </div>
+          <div data-field-span="1">
+            <input type="hidden" name="_next" value="http://devinhalladay.com/contact/thanks">
+            <input class="submit" type="submit" value="Submit">
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
 </div>
-
-<form data-parsley-validate class="grid-form" method="POST" action="//forms.brace.io/devin@devinhalladay.com">
-  <fieldset>
-    <legend>Want to work with me on a project, ask me a question, or just chat? Email me using this form!</legend>
-
-    <div data-row-span="2">
-      <div data-field-span="1" id="name">
-        <label for="name">Your Full Name</label>
-        <input type="text" name="Name" tabindex="1" id="name" data-parsley-class-handler="#name" data-parsley-required>
-      </div>
-      <div data-field-span="1" id="email">
-        <label for="email-address">Email Address</label>
-        <input type="email" data-parsley-class-handler="#email" data-parsley-type="email" data-parsley-required tabindex="2" id="email-address" name="_replyto">
-      </div>
-    </div>
-
-    <div data-row-span="2" id="message">
-      <div data-field-span="2">
-        <label for="message">Your Message</label>
-        <textarea data-parsley-class-handler="#message" data-parsley-required data-parsley-minlength="20" name="Message" type="text" cols="30" rows="10" tabindex="3" id="message"></textarea>
-      </div>
-    </div>
-
-    <div data-row-span="2">
-      <div data-field-span="1">
-        <span>Ready to get the ball rolling? Click submit.</span>
-      </div>
-      <div data-field-span="1">
-        <input type="hidden" name="_next" value="http://devinhalladay.com/contact/thanks">
-        <input class="submit" type="submit" value="Submit">
-      </div>
-    </div>
-  </fieldset>
-</form>

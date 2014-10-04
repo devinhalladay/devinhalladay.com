@@ -1,0 +1,22 @@
+.grid__col.grid__col--6-of-12 {
+margin-top: 3em;
+}
+
+strong {
+display: block;
+font-weight: 500;
+z-index: 100;
+opacity: 1;
+padding: 1em 0px 0px 2em;
+position: static;
+}
+
+figure img {
+display: block;
+width: 100%;
+margin: -3em 0px 0px;
+opacity: 0.33;
+-webkit-filter: grayscale(1);
+padding: 0px;
+z-index: 1;
+}

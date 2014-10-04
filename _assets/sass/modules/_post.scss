@@ -1,5 +1,5 @@
 .post__date {
-  margin-top: $baseline;
+  margin-top: $baseline/2;
 
   color: $color--light-grey;
   letter-spacing: .05px;
@@ -13,7 +13,7 @@
 }
 
 a.post-title {
-  font-family: $sans;
+  font-family: $serif;
   font-weight: 600;
   color: $color--darkest-grey;
   text-decoration: none;
