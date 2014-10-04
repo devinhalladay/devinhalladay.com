@@ -4,6 +4,53 @@
 // ===============
 // Styles for the work page.
 
+.page__work__project {
+  margin-top: 3em;
+  padding-bottom: 1.5em;
+
+  a {
+    span {
+      display: block;
+      font-weight: 500;
+      position: absolute;
+      z-index: 100;
+      opacity: 0;
+      margin: -1em 0 0 2em;
+    }
+
+    figure {
+      img {
+        display: block;
+        width: 100%;
+        margin: -3em 0px 0px;
+        padding: 0px;
+        z-index: 1;
+      }
+    }
+
+    &:hover {
+      figure::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(21,192,220, 0.5);
+      }
+
+      span {
+        opacity: 1;
+        color: #fff;
+      }
+    }
+  }
+}
+
+
+
+
 .page__work {
   img {
     margin-bottom: 0;
