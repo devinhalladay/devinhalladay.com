@@ -1,6 +1,10 @@
 .site__header {
   height: 75px;
-  background: $color--background;
+  background: rgba(16,17,19,0.86);
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 900;
   & > * {
     position: relative;
     top: 50%;
@@ -8,7 +12,7 @@
   }
   a {
     text-decoration: none;
-    color: $color--light-grey;
+    color: #fff;
     &.current {
       font-weight: 700;
     }
