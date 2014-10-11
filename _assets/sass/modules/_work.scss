@@ -29,15 +29,18 @@
     }
 
     &:hover {
-      figure::before {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: rgba(21,192,220, 0.5);
+      figure {
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: rgba(21,192,220, 0.8);
+          cursor: pointer;
+        }
       }
 
       span {
