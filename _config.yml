@@ -1,6 +1,6 @@
 name: Devin Halladay
 url: http://devinhalladay.com
-description: 'This is the personal journal and portfolio of Devin Halladay &mdash; a designer, developer, and writer.'
+description: 'This is the portfolio and journal of Devin Halladay, a designer &amp; writer in Cleveland, Ohio.'
 
 timezone: America/New_York
 port: 4200
@@ -15,7 +15,7 @@ permalink: /:categories/:title
 paginate: 6
 
 exclude: ['README.md', 'Rakefile', 'Gemfile', 'Gemfile.lock']
-include: ['.htaccess', 'ping.php', 'keybase.txt', 'build.php']
+include: ['.htaccess', 'keybase.txt']
 
 assets:
   js_compressor: uglifier
@@ -24,5 +24,4 @@ assets:
     - _assets/fonts
     - _assets/js
     - _assets/sass
-    - _assets/img
   gzip: false

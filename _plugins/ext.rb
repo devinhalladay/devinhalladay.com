@@ -1,2 +1,1 @@
-require "jekyll-assets"
-require 'zurb-foundation'
+require 'jekyll-assets'

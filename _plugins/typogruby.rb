@@ -1,7 +1,5 @@
-# Plugin/Gem Loader
 require 'typogruby'
 
-# Typogruby - better typography
 module Jekyll
   module Converters
     class Markdown < Jekyll::Converter

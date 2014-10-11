@@ -1,23 +1,10 @@
----
-layout: default
-title: Journal
-exclude_from_search: true
-custom_class: home blog
----
-{% for post in site.posts %}
-  {% unless post.categories contains 'work' or post.categories contains 'dedicated-to' %}
-    <div class="grid">
-      <div class="grid__col grid__col--4-of-12">
-        <div class="entry">
-          <span class="beta"><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></span>
-          <p class="light">{{ post.date | pretty }}</p>
-        </div>
-      </div>
-      <div class="grid__col grid__col--6-of-12">
-        <div class="entry">
-          <p>{{ post.excerpt | strip_newlines | strip_html | truncatewords: 26 | smartypants }} <a class="more" href="{{ post.url }}">read more</a></p>
-        </div>
-      </div>
-    </div>
-  {% endunless %}
-{% endfor %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Untitled Document</title>
+    </head>
+    
+    <body>
+    </body>
+</html>
