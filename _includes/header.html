@@ -6,10 +6,10 @@
     <div class="grid__col grid__col--6-of-12">
       <nav class="site__header__nav">
         <ul>
-          <li><a href="/">Work</a></li>
-          <li><a href="/journal">Journal</a></li>
-          <li><a href="/profile">Profile</a></li>
-          <li><a href="/contact">Contact</a></li>
+          {% capture currentURL %}{{ page.url | replace: '/', ' ' | truncatewords: 1 | remove: '...' | remove: ' ' }}{% endcapture %}
+          {% for page in site.data.pages %}
+            <li><a href="{{ page.url }}"{% if currentURL == page.url %}class="current"{% endif %}{% if currentURL == '' %}class="current"{% endif %}>{{ page.page }}</a></li>
+          {% endfor %}
         </ul>
       </nav>
     </div>

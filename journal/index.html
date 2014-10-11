@@ -1,10 +1,30 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Untitled Document</title>
-    </head>
-    
-    <body>
-    </body>
-</html>
+---
+layout: default
+title: Welcome
+class: "page__home"
+---
+{% include header.html %}
+<section class="site__hero">
+  <div class="grid site__hero__headline">
+    <p class="grid__col grid__col--6-of-12 grid__col--push-6-of-12 beta">
+      Welcome! I'm Devin Halladay, a graphic designer and writer. I craft honest visual solutions. I sincerely care about the stories with which I work and I have an ambition toward the finest of execution.
+    </p>
+  </div>
+</section>
+<section class="site__content">
+  {% assign post = project %}
+  <div class="grid">
+    {% for project in site.posts limit:6 %}
+      {% if project.type == "featured-project" %}
+        <div class="project grid__col grid__col--6-of-12">
+          <a href="{{ project.url }}">
+            <span>{{ project.title }}</span>
+            <figure>
+              <img src="{{ project.cover-image }}" alt="{{ project.title }}">
+            </figure>
+          </a>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>

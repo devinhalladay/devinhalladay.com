@@ -1,0 +1,15 @@
+- page: Projects
+  url: /
+  title: Selected Projects
+
+- page: Journal
+  url: journal
+  title: Journal
+
+- page: Profile
+  url: profile
+  title: About Me
+
+- page: Contact
+  url: contact
+  title: Contact

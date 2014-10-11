@@ -6,10 +6,17 @@
     top: 50%;
     transform: translateY(-50%);
   }
+  a {
+    text-decoration: none;
+    color: $color--light-grey;
+    &.current {
+      font-weight: 700;
+    }
+  }
 }
 
 .site__header__nav {
   ul {
-    @include horizontal-list;
+    @include horizontal-list($padding: $baseline/1.5, $direction: left);
   }
 }

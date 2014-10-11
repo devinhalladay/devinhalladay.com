@@ -46,3 +46,16 @@ blockquote {
   color: $color--light-grey;
   border-left: 2px solid $color--accent;
 }
+
+%link {
+  color: inherit;
+  cursor: pointer;
+
+  &:hover {
+    color: $color--accent;
+  }
+}
+
+a, a:visited {
+  @extend %link;
+}

@@ -10,7 +10,7 @@
   <!-- Import Cloud.typography code. -->
   <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7806452/701986/css/fonts.css" />
 </head>
-<body>
+<body{% if page.class %} class="{{ page.class }}"{% endif %}>
   {{ content }}
 </body>
 {% javascript devin %}

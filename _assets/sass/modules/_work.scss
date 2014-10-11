@@ -1,0 +1,100 @@
+// Module
+//
+// Work
+// ===============
+// Styles for the work page.
+
+.project {
+  margin-top: 3em;
+
+  a {
+    span {
+      display: block;
+      font-weight: 500;
+      position: absolute;
+      z-index: 100;
+      opacity: 0;
+      margin: -2em 0 0 3em;
+    }
+
+    figure {
+      img {
+        display: block;
+        width: 100%;
+        margin: -3em 0px 0px;
+        padding: 0px;
+        z-index: 1;
+      }
+    }
+
+    &:hover {
+      figure {
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: rgba(21,192,220, 0.8);
+          cursor: pointer;
+          z-index: 800;
+        }
+      }
+
+      span {
+        opacity: 1;
+        color: #fff;
+        z-index: 900;
+      }
+    }
+  }
+}
+
+.project {
+  a {
+    border-bottom: none;
+
+    .project--overlay {
+      h4 {
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+      }
+    }
+    &:hover {
+      .project--overlay {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+
+  figure {
+    position: relative;
+    display: block;
+  }
+}
+
+.project--overlay {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+
+  height: 93%;
+  width: 100%;
+  padding: 80px 20px;
+
+  opacity: 0;
+  background: $color--accent;
+  background: rgba($color--accent,0.8);
+  color: #fff;
+
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
