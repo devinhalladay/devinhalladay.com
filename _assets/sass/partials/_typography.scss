@@ -1,0 +1,48 @@
+//
+// Partial: typography
+// ===================
+//
+// Type styles
+//
+
+
+h1,
+.alpha {
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+h2,
+.beta {
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  * + & {
+    padding-top: $baseline;
+  }
+}
+
+h3,
+.gamma {
+  margin-bottom: $baseline/2;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+h4,
+.delta {
+  margin-bottom: $baseline/2;
+  font-weight: 400;
+}
+
+p {
+  hyphens: auto;
+}
+
+blockquote {
+  padding: 0 $baseline;
+
+  color: $color--light-grey;
+  border-left: 2px solid $color--accent;
+}

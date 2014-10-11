@@ -1,0 +1,16 @@
+$font--sans-serif: 'Whitney SSm A', 'Whitney SSm B', Geneva, Verdana, san-serif;
+$font--sans-serif--sc: 'Whitney SSm SC A', 'Whitney SSm SC B', Geneva, Verdana, sans-serif;
+
+$base-font-size: (18/16)*100%;
+$baseline-unitless: 28/(16*($base-font-size/100%));
+$baseline: $baseline-unitless * 1rem;
+
+$color--darkest-grey: #404951;
+$color--dark-grey: #353D44;
+
+$color--light-grey: #808D97;
+$color--lighter-grey: #c4c8ca;
+$color--lightest-grey: #F6F7F8;
+
+$color--background: #ffffff;
+$color--accent: #15C0DC;

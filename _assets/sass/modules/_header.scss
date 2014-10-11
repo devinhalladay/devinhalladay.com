@@ -1,0 +1,15 @@
+.site__header {
+  height: 75px;
+  background: $color--background;
+  & > * {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.site__header__nav {
+  ul {
+    @include horizontal-list;
+  }
+}

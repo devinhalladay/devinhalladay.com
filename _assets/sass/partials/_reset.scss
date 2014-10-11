@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul, ol {
+  padding-left: 1.4em;
+  overflow: hidden;
+}
+
+main, footer,
+p, table, figure, blockquote, pre, ul, ol,
+h1, .alpha,
+h2, .beta {
+  margin-bottom: $baseline;
+}
+
+picture {
+  display: block;
+}
+
+li ol, li ul {
+  margin-bottom: 0;
+}

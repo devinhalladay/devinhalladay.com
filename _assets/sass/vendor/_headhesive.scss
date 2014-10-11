@@ -1,0 +1,27 @@
+.site__header__adhesive {
+  /* Required styles */
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  background: rgba(255,255,255,0.96);
+
+  /* Translate -100% to move off screen */
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+
+  /* Animations */
+  -webkit-transition: all 300ms ease-in-out;
+     -moz-transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out;
+}
+
+.site__header__adhesive--stick {
+  z-index: 9000;
+
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+          transform: translateY(0%);
+}

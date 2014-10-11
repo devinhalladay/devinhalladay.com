@@ -1,0 +1,31 @@
+# Ignore caches and logs
+.sass-cache
+_asset_bundler_cache/
+.bundle/
+Gemfile.lock
+
+# Ignore misc. files and folders
+_site/
+id_rsa
+id_rsa.pub
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
