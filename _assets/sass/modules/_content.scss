@@ -6,3 +6,45 @@
     font-family: "ff-meta-serif-web-pro";
   }
 }
+
+hr {
+  height: auto;
+  border: none;
+}
+
+.hr--long {
+  @extend hr;
+  height: 1px;
+
+  background: $color--lighter-grey;
+  border: none;
+
+  background: transparent;
+  border-top: 1px dotted $color--lighter-grey;
+
+  margin-bottom: 1.64706rem;
+}
+
+.hr--short {
+  @extend hr;
+  color: $color--lighter-grey;
+  &:after {
+    content: "* * *";
+
+    display: block;
+
+    margin-top: 2rem;
+    margin-bottom: 1.75rem;
+
+    color: rgba(0,0,0,0.3);
+    letter-spacing: .2em;
+    line-height: .857142857;
+    text-align: center;
+
+    font: {
+      size: 1.75rem;
+      family: $font--sans-serif;
+      weight: 700;
+    }
+  }
+}

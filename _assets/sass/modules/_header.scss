@@ -1,7 +1,7 @@
 .site__header {
   height: 75px;
   background: rgba(16,17,19,0.86);
-  color: #fff;
+  color: #cacaca;
   position: fixed;
   width: 100%;
   z-index: 900;
@@ -12,11 +12,19 @@
   }
   a {
     text-decoration: none;
-    color: #fff;
+    color: #cacaca;
     &.current {
       font-weight: 700;
+      color: #fff;
+    }
+    &:hover {
+      color: #fff;
     }
   }
+}
+
+.header__link--name {
+  color: #fff;
 }
 
 .site__header__nav {

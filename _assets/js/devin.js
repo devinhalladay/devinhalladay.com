@@ -1,4 +1,3 @@
-//= require vendor/adhesive
 //= require vendor/jquery.jamcity
 
 $(document).ready(function(){

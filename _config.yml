@@ -11,7 +11,7 @@ rdiscount:
     - smart
     - generate_toc
 
-permalink: /:categories/:title
+permalink: /journal/:title
 paginate: 6
 
 collections:
