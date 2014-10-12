@@ -2,9 +2,7 @@
   &.padding-top {
     padding-top: 75px*1.5;
   }
-  p {
-    font-family: "ff-meta-serif-web-pro";
-  }
+  font-family: "ff-meta-serif-web-pro";
 }
 
 hr {
@@ -20,7 +18,7 @@ hr {
   border: none;
 
   background: transparent;
-  border-top: 1px dotted $color--lighter-grey;
+  border-top: 1px dashed $color--lighter-grey;
 
   margin-bottom: 1.64706rem;
 }

@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   position: relative;
+  cursor: auto;
 }
 
 img {
@@ -10,7 +11,7 @@ img {
 }
 
 ul, ol {
-  padding-left: 1.4em;
+  padding-left: $baseline;
   overflow: hidden;
 }
 
@@ -19,12 +20,4 @@ p, table, figure, blockquote, pre, ul, ol,
 h1, .alpha,
 h2, .beta {
   margin-bottom: $baseline;
-}
-
-picture {
-  display: block;
-}
-
-li ol, li ul {
-  margin-bottom: 0;
 }

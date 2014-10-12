@@ -11,6 +11,8 @@ html {
   font-feature-settings: "liga" 1, "onum" 1, "kern" 1;
   font-kerning: normal;
 
+  color: $color--dark-grey;
+
   background-color: #fff;
 
   @media (max-width: 860px) {

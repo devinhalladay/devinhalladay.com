@@ -8,26 +8,22 @@
   margin-top: 3em;
 
   a {
-    h2 {
-      display: block;
-      font-weight: 500;
-      position: absolute;
-      z-index: 100;
-      opacity: 0;
-      margin: -1em 0 0 3em;
-    }
+    border-bottom: none;
 
-    figure {
-      img {
-        display: block;
-        width: 100%;
-        margin: -3em 0px 0px;
-        padding: 0px;
-        z-index: 1;
+    .project--overlay {
+      h4 {
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
       }
     }
 
     &:hover {
+      .project--overlay {
+        visibility: visible;
+        opacity: 1;
+      }
+
       figure {
         &::before {
           content: "";
@@ -49,31 +45,26 @@
         z-index: 701;
       }
     }
-  }
-}
 
-.project {
-  a {
-    border-bottom: none;
+    h2 {
+      display: block;
+      font-weight: 500;
+      position: absolute;
+      z-index: 100;
+      opacity: 0;
+      margin: -1em 0 0 3em;
+      width: 18em;
+    }
 
-    .project--overlay {
-      h4 {
-        font-weight: 600;
-        color: #fff;
-        text-align: center;
+    figure {
+      img {
+        display: block;
+        width: 100%;
+        margin: -3em 0px 0px;
+        padding: 0px;
+        z-index: 1;
       }
     }
-    &:hover {
-      .project--overlay {
-        visibility: visible;
-        opacity: 1;
-      }
-    }
-  }
-
-  figure {
-    position: relative;
-    display: block;
   }
 }
 
@@ -83,6 +74,7 @@
   top: 0;
   left: 0;
   visibility: hidden;
+  @extend %link;
 
   height: 93%;
   width: 100%;

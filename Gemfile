@@ -10,6 +10,7 @@ gem 'jekyll-assets'
 gem 'uglifier'
 gem 'sass'
 gem 'yuicompressor'
+gem 'autoprefixer-rails'
 gem 'facets'
 gem 'typogruby'
 
