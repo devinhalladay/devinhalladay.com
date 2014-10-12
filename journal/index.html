@@ -1,30 +1,21 @@
 ---
 layout: default
-title: Welcome
-class: "page__home"
+title: Journal
+class: "page__journal"
 ---
-{% include header.html %}
 <section class="site__hero">
   <div class="grid site__hero__headline">
-    <p class="grid__col grid__col--6-of-12 grid__col--push-6-of-12 beta">
-      Welcome! I'm Devin Halladay, a graphic designer and writer. I craft honest visual solutions. I sincerely care about the stories with which I work and I have an ambition toward the finest of execution.
-    </p>
   </div>
 </section>
 <section class="site__content">
-  {% assign post = project %}
   <div class="grid">
-    {% for project in site.posts limit:6 %}
-      {% if project.type == "featured-project" %}
-        <div class="project grid__col grid__col--6-of-12">
-          <a href="{{ project.url }}">
-            <span>{{ project.title }}</span>
-            <figure>
-              <img src="{{ project.cover-image }}" alt="{{ project.title }}">
-            </figure>
-          </a>
-        </div>
-      {% endif %}
+    {% for post in site.posts %}
+      <div class="post grid__col grid__col--4-of-12">
+        <a href="{{ post.url }}">
+          <h2 class="post__title">{{ post.title }}</h2>
+        </a>
+        <p class= "post__excerpt">{{ post.content | strip_html | truncatewords:26 }} <a href="{{ post.url }}">Read more&hellip;</a></p>
+      </div>
     {% endfor %}
   </div>
 </section>

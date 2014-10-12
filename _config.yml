@@ -14,6 +14,12 @@ rdiscount:
 permalink: /:categories/:title
 paginate: 6
 
+collections:
+  projects:
+    output: true
+    layout: default
+    permalink: /projects/:path/
+
 exclude: ['README.md', 'Rakefile', 'Gemfile', 'Gemfile.lock']
 include: ['.htaccess', 'keybase.txt']
 

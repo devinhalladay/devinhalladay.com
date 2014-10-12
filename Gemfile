@@ -2,9 +2,8 @@
 source "https://rubygems.org"
 
 # Jekyll core functions & markdown processing.
-gem 'jekyll', '~> 1.4.3'
+gem 'jekyll'
 gem 'rdiscount'
-gem 'redcarpet'
 
 # Plugins and plugin dependencies.
 gem 'jekyll-assets'

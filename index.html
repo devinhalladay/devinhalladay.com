@@ -3,7 +3,6 @@ layout: default
 title: Welcome
 class: "page__home"
 ---
-{% include header.html %}
 <section class="site__hero">
   <div class="grid site__hero__headline">
     <p class="grid__col grid__col--6-of-12 grid__col--push-6-of-12 beta">
@@ -14,17 +13,15 @@ class: "page__home"
 <section class="site__content">
   {% assign post = project %}
   <div class="grid">
-    {% for project in site.posts limit:6 %}
-      {% if project.type == "featured-project" %}
-        <div class="project grid__col grid__col--6-of-12">
-          <a href="{{ project.url }}">
-            <span>{{ project.title }}</span>
-            <figure>
-              <img src="{{ project.cover-image }}" alt="{{ project.title }}">
-            </figure>
-          </a>
-        </div>
-      {% endif %}
+    {% for project in site.projects limit:6 %}
+      <div class="project grid__col grid__col--6-of-12">
+        <a href="{{ project.url }}">
+          <span>{{ project.title }}</span>
+          <figure>
+            <img src="{{ project.cover-image }}" alt="{{ project.title }}">
+          </figure>
+        </a>
+      </div>
     {% endfor %}
   </div>
 </section>
