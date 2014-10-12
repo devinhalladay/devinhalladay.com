@@ -8,13 +8,13 @@
   margin-top: 3em;
 
   a {
-    span {
+    h2 {
       display: block;
       font-weight: 500;
       position: absolute;
       z-index: 100;
       opacity: 0;
-      margin: -2em 0 0 3em;
+      margin: -1em 0 0 3em;
     }
 
     figure {
@@ -39,14 +39,14 @@
           right: 0;
           background: rgba(21,192,220, 0.8);
           cursor: pointer;
-          z-index: 800;
+          z-index: 700;
         }
       }
 
-      span {
+      h2 {
         opacity: 1;
         color: #fff;
-        z-index: 900;
+        z-index: 701;
       }
     }
   }

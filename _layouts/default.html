@@ -8,7 +8,9 @@
   {% stylesheet devin %}
 
   <!-- Import Cloud.typography code. -->
-  <!-- <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7806452/701986/css/fonts.css" /> -->
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7806452/701986/css/fonts.css" />
+  <script src="//use.typekit.net/orl3fke.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
 </head>
 <body{% if page.class %} class="{{ page.class }}"{% endif %}>
   {% include header.html %}
@@ -17,5 +19,6 @@
   </section>
   {% include footer.html %}
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 {% javascript devin %}
 </html>

@@ -59,3 +59,11 @@ blockquote {
 a, a:visited {
   @extend %link;
 }
+
+.sans {
+  font-family: $font--sans-serif;
+}
+
+.serif {
+  font-family: $font--serif;
+}

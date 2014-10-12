@@ -5,7 +5,7 @@ class: "page__home"
 ---
 <section class="site__hero">
   <div class="grid site__hero__headline">
-    <p class="grid__col grid__col--6-of-12 grid__col--push-6-of-12 beta">
+    <p class="grid__col grid__col--6-of-12 grid__col--push-6-of-12 beta sans">
       Welcome! I'm Devin Halladay, a graphic designer and writer. I craft honest visual solutions. I sincerely care about the stories with which I work and I have an ambition toward the finest of execution.
     </p>
   </div>
@@ -16,7 +16,7 @@ class: "page__home"
     {% for project in site.projects limit:6 %}
       <div class="project grid__col grid__col--6-of-12">
         <a href="{{ project.url }}">
-          <span>{{ project.title }}</span>
+          <h2>{{ project.title }}</h2>
           <figure>
             <img src="{{ project.cover-image }}" alt="{{ project.title }}">
           </figure>
