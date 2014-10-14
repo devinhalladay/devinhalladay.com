@@ -6,6 +6,12 @@
   cursor: auto;
 }
 
+p, table, figure, blockquote, pre, ul, ol,
+h1, .alpha,
+h2, .beta {
+  margin-bottom: $baseline;
+}
+
 img {
   max-width: 100%;
 }
@@ -13,11 +19,4 @@ img {
 ul, ol {
   padding-left: $baseline;
   overflow: hidden;
-}
-
-main,
-p, table, figure, blockquote, pre, ul, ol,
-h1, .alpha,
-h2, .beta {
-  margin-bottom: $baseline;
 }

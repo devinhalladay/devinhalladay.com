@@ -1,6 +1,10 @@
 .site__content {
   &.padding-top {
     padding-top: 75px*1.5;
+
+    @media screen and (max-width: 754px) {
+      padding-top: $baseline;
+    }
   }
   font-family: "ff-meta-serif-web-pro";
 }

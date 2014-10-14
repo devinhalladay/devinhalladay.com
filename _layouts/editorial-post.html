@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | Devin Halladay</title>
+
+  <!-- Import the main stylesheet. -->
+  {% stylesheet devin %}
+
+  <script src="//use.typekit.net/orl3fke.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+</head>
+<body{% if page.class %} class="{{ page.class }}"{% endif %}>
+  {% include header.html %}
+  <section class="site__content padding-top">
+    <div class="grid">
+      <div class="grid__col grid__col--12-of-12">
+        <h1 class="article__title">{{ page.title }}</h1>
+      </div>
+    </div>
+    <article>
+      {{ content }}
+    </article>
+  </section>
+  {% include footer.html %}
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+{% javascript devin %}
+</html>

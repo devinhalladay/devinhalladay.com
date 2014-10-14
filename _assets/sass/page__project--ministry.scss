@@ -1,0 +1,36 @@
+.site__hero {
+  background-image: url('/uploads/2014/10/ministry-hero.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: 834px) {
+    height: 20em;
+  }
+
+  @media screen and (max-width: 560px) {
+    height: 18em;
+  }
+
+  @media screen and (max-width: 500px) {
+    height: 16em;
+  }
+}
+
+.site__hero__headline {
+  color: #fff;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @media screen and (max-width: 834px) {
+    transform: translateY(22px);
+  }
+
+  @media screen and (max-width: 560px) {
+    transform: translateY(22px);
+  }
+
+  @media screen and (max-width: 500px) {
+    transform: translateY(22px);
+  }
+}

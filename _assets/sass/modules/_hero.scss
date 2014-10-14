@@ -1,8 +1,45 @@
 .site__hero {
-  background-image: url('/uploads/2014/10/profile.png');
+  // background-image: url('/uploads/2014/10/profile.png');
   width: 100%;
-  height: 544px;
   margin-bottom: $baseline;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  max-width: 2000px;
+  max-height: 1000px;
+  z-index: 2;
+
+  &:before {
+    padding-bottom: 40%;
+
+    content: "";
+    display: block;
+    width: 100%;
+  }
+}
+
+.site__hero--blurred {
+  // background-image: url('/uploads/2014/10/profile-blurred.png');
+  width: 100%;
+  margin-bottom: $baseline;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  max-width: 2000px;
+  max-height: 1000px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+
+  &:before {
+    padding-bottom: 40%;
+
+    content: "";
+    display: block;
+    width: 100%;
+  }
 }
 
 .site__hero__headline {
@@ -13,9 +50,20 @@
   transform: translateY(-75px);
 }
 
-.page__contact {
+.page__home {
   .site__hero {
-    background-image: url("/uploads/2014/10/telegraph.png");
-    background-position: -196px -361px;
+    background-image: url('/uploads/2014/10/profile.png');
+  }
+  .site__hero--blurred {
+    background-image: url('/uploads/2014/10/profile-blurred.png');
+  }
+}
+
+.page__project--ministry {
+  .site__hero {
+    background-image: url('/uploads/2014/10/ministry-hero.png');
+  }
+  .site__hero--blurred {
+    background-image: url('/uploads/2014/10/ministry-hero-blurred.png');
   }
 }

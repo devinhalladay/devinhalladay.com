@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: editorial-post
 title: A Manifesto for Quality Thought
 ---
 <div class="grid">

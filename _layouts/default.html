@@ -7,8 +7,8 @@
   <!-- Import the main stylesheet. -->
   {% stylesheet devin %}
 
-  <!-- Import Cloud.typography code. -->
-  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7806452/701986/css/fonts.css" />
+   {% if page.stylesheet %}{{ page.stylesheet | stylesheet }}{% endif %}
+
   <script src="//use.typekit.net/orl3fke.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
 </head>

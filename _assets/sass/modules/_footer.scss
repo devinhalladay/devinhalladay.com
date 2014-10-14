@@ -5,4 +5,8 @@
 
 .site__footer__content {
   padding-top: $baseline;
+
+  @media screen and (max-width: 500px) {
+    padding-bottom: $baseline;
+  }
 }

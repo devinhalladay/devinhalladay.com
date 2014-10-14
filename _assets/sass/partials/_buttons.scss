@@ -1,0 +1,16 @@
+.button {
+  // background: #101113;
+  background: $color--accent;
+  border-radius: 2px;
+  color: #fff !important;
+  font-family: $font--sans-serif;
+  padding: 0.4em 1em;
+  text-decoration: none;
+  transition: all 0.2s;
+
+  &:hover {
+    color: #fff;
+    background: darken($color--accent, 10%);
+    transition: all 0.2s;
+  }
+}

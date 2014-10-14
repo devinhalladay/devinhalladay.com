@@ -33,7 +33,7 @@
           bottom: 0;
           left: 0;
           right: 0;
-          background: rgba(21,192,220, 0.8);
+          background: rgba($color--accent, 0.8);
           cursor: pointer;
           z-index: 700;
         }
@@ -52,7 +52,7 @@
       position: absolute;
       z-index: 100;
       opacity: 0;
-      margin: -1em 0 0 3em;
+      margin: -1em 0 0 2em;
       width: 18em;
     }
 
