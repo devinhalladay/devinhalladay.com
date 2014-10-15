@@ -2,6 +2,10 @@
   flex: 1;
   padding-bottom: 3em;
 
+  @media screen and (max-width: 754px) {
+    padding-top: 0;
+  }
+
   &.padding-top {
     padding-top: 75px*1.5;
 
@@ -15,6 +19,10 @@
 .page__home {
   .site__content{
     padding-bottom: 0;
+
+    @media screen and (max-width: 706px) {
+      padding-top: 0;
+    }
   }
 }
 

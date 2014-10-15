@@ -1,6 +1,7 @@
 //= require vendor/jquery.jamcity
 //= require vendor/typed
 //= require vendor/fluidbox
+//= require vendor/lazyload
 // // = require vendor/mousetrap.min
 
 $(document).ready(function(){
@@ -18,8 +19,8 @@ $(document).ready(function(){
 
 $(window).scroll(function(e) {
     var s = $(window).scrollTop(),
-        opacityVal = (s / 150.0),
-        oppOpacityVal = (150.0 / s);
+        opacityVal = (s / 120.0),
+        oppOpacityVal = (120.0 / s);
 
     $('.site__hero--blurred').css('opacity', opacityVal);
     $('.site__hero').css('opacity', oppOpacityVal);
@@ -54,5 +55,10 @@ $(function () {
       { selector: '#fluidbox-overlay', event: 'click'},
       { selector: 'window', event: 'scroll'}
     ]
+  });
+
+
+  $("img").lazyload({
+    effect : "fadeIn"
   });
 });

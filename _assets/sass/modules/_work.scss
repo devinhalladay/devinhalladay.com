@@ -7,10 +7,18 @@
 .project {
   margin-top: 3em;
 
+  @media screen and (max-width: 754px) {
+    padding-bottom: $baseline / 2;
+  }
+
   a {
     border-bottom: none;
 
     .project--overlay {
+      @media screen and (max-width: 754px) {
+        display: none;
+      }
+
       h4 {
         font-weight: 600;
         color: #fff;
@@ -22,10 +30,18 @@
       .project--overlay {
         visibility: visible;
         opacity: 1;
+
+        @media screen and (max-width: 754px) {
+          display: none;
+        }
       }
 
       figure {
         &::before {
+          @media screen and (max-width: 754px) {
+            display: none;
+          }
+
           content: "";
           display: block;
           position: absolute;
@@ -40,6 +56,10 @@
       }
 
       h2 {
+        @media screen and (max-width: 754px) {
+          display: none;
+        }
+
         opacity: 1;
         color: #fff;
         z-index: 701;
@@ -89,4 +109,8 @@
   -moz-transition: all .5s ease;
   -o-transition: all .5s ease;
   transition: all .5s ease;
+
+  @media screen and (max-width: 754px) {
+    display: none;
+  }
 }
