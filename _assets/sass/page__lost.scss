@@ -1,0 +1,44 @@
+.page__lost {
+  background-color: #101113;
+}
+
+.console {
+  color: #3FDB58;
+  font-size: 22px;
+  line-height: 1;
+  text-align: center;
+  font-family: "fira-mono", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+  -webkit-font-smoothing: none;
+  text-shadow: -2px 0 0px rgba(0,201,16,0.4),-4px 0 4px rgba(108,236,103,0.6),5px 0 4px rgba(69,204,91,0.5);
+  &:after {
+    visibility: visible;
+    content: '';
+    background-color: #43D45B;
+    display: inline-block;
+    position: relative;
+    width: 0.55em;
+    top: 3px;
+    height: 1rem;
+    margin-left: 0;
+    box-shadow: -4px 0 2px rgba(29, 165, 51, 0.4), -3px 0 14px rgba(85, 231, 102, 0.6), 4px 0 1px rgba(15, 111, 53, 0.5);
+    animation: blink 1s infinite;
+    animation-delay: 5s;
+    opacity: 1;
+  }
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}

@@ -1,4 +1,6 @@
 //= require vendor/jquery.jamcity
+//= require vendor/typed
+// // = require vendor/mousetrap.min
 
 $(document).ready(function(){
   $(".jams").JamCity({
@@ -6,6 +8,11 @@ $(document).ready(function(){
     username: 'devinhalladay',
     fetch: 1
   });
+
+  // Mousetrap.bind('enter', function(e) {
+  //   console.log("4 8 15 16 23 42");
+  //   alert("4 8 15 16 23 42");
+  // };
 });
 
 $(window).scroll(function(e) {
@@ -23,4 +30,11 @@ $(window).scroll(function(e) {
     $('.site__hero__headline').css({
       'top': "-" + ($(this).scrollTop() * 0.2) + "px"
     });
+});
+
+$(function(){
+  $(".console").typed({
+    strings: ["4 ^600 8 ^600 15 ^600 16 ^600 23 ^600 42 "],
+    typeSpeed: 0
+  });
 });
