@@ -2,15 +2,11 @@
   flex: 1;
   padding-bottom: 3em;
 
-  @media screen and (max-width: 754px) {
-    padding-top: 0;
-  }
-
   &.padding-top {
     padding-top: 75px*1.5;
 
     @media screen and (max-width: 754px) {
-      padding-top: $baseline;
+      padding-top: 75px*1.5;
     }
   }
   font-family: "ff-meta-serif-web-pro";
