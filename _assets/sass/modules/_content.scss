@@ -12,6 +12,12 @@
   font-family: "ff-meta-serif-web-pro";
 }
 
+.page__home {
+  .site__content{
+    padding-bottom: 0;
+  }
+}
+
 hr {
   height: auto;
   border: none;

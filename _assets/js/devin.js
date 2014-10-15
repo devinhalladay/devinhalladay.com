@@ -1,5 +1,6 @@
 //= require vendor/jquery.jamcity
 //= require vendor/typed
+//= require vendor/fluidbox
 // // = require vendor/mousetrap.min
 
 $(document).ready(function(){
@@ -36,5 +37,22 @@ $(function(){
   $(".console").typed({
     strings: ["4 ^600 8 ^600 15 ^600 16 ^600 23 ^600 42 "],
     typeSpeed: 0
+  });
+});
+
+
+$(function () {
+  $("figure a").fluidbox({
+    closeTrigger: [
+      { selector: '#fluidbox-overlay', event: 'click'},
+      { selector: 'window', event: 'scroll'}
+    ]
+  });
+
+  $(".fluidbox").fluidbox({
+    closeTrigger: [
+      { selector: '#fluidbox-overlay', event: 'click'},
+      { selector: 'window', event: 'scroll'}
+    ]
   });
 });

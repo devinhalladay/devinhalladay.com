@@ -6,8 +6,8 @@
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
-  max-width: 2000px;
-  max-height: 1000px;
+  max-width: 100%;
+  background-size: cover;
   z-index: 2;
 
   &:before {
@@ -27,8 +27,8 @@
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
-  max-width: 2000px;
-  max-height: 1000px;
+  max-width: 100%;
+  background-size: cover;
   position: absolute;
   top: 0;
   z-index: 1;
@@ -56,14 +56,5 @@
   }
   .site__hero--blurred {
     background-image: url('/uploads/2014/10/profile-blurred.png');
-  }
-}
-
-.page__project--ministry {
-  .site__hero {
-    background-image: url('/uploads/2014/10/ministry-hero.png');
-  }
-  .site__hero--blurred {
-    background-image: url('/uploads/2014/10/ministry-hero-blurred.png');
   }
 }
