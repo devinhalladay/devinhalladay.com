@@ -114,3 +114,36 @@
     display: none;
   }
 }
+
+
+/////////////////
+
+.page__project--oddball {
+  .site__hero {
+    background-image: url('/uploads/2014/10/oddball-hero.png');
+  }
+
+  .site__hero--blurred {
+    background-image: url('/uploads/2014/10/oddball-hero-blurred.png');
+  }
+}
+
+.page__project--ministry {
+  .site__hero {
+    background-image: url('/uploads/2014/10/ministry-hero.png');
+  }
+
+  .site__hero--blurred {
+    background-image: url('/uploads/2014/10/ministry-hero-blurred.png');
+  }
+}
+
+.page__project--flash-seats {
+  .site__hero {
+    background-image: url('/uploads/2014/10/ministry-hero.png');
+  }
+
+  .site__hero--blurred {
+    background-image: url('/uploads/2014/10/ministry-hero-blurred.png');
+  }
+}
