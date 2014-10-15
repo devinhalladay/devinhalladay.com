@@ -19,8 +19,8 @@ $(document).ready(function(){
 
 $(window).scroll(function(e) {
     var s = $(window).scrollTop(),
-        opacityVal = (s / 120.0),
-        oppOpacityVal = (120.0 / s);
+        opacityVal = (s / 14),
+        oppOpacityVal = (14 / s);
 
     $('.site__hero--blurred').css('opacity', opacityVal);
     $('.site__hero').css('opacity', oppOpacityVal);
