@@ -29,7 +29,7 @@ $(window).scroll(function(e) {
   $('.site__hero--blurred').css('opacity', opacityVal);
   $('.site__hero').css('opacity', oppOpacityVal);
 
-  if ($(window).scrollTop() < 0) {
+  if ($(window).scrollTop() <= 0) {
     $('.site__hero').css('opacity', 1);
   };
 
