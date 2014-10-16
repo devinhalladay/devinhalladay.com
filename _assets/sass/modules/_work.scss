@@ -36,6 +36,14 @@
         }
       }
 
+      img {
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        filter: grayscale(100%);
+      }
+
       figure {
         &::before {
           @media screen and (max-width: 754px) {
@@ -140,10 +148,20 @@
 
 .page__project--flash-seats {
   .site__hero {
-    background-image: url('/uploads/2014/10/ministry-hero.png');
+    background-image: url('/uploads/2014/10/flash-seats-hero.jpg');
   }
 
   .site__hero--blurred {
-    background-image: url('/uploads/2014/10/ministry-hero-blurred.png');
+    background-image: url('/uploads/2014/10/flash-seats-hero-blurred.jpg');
+  }
+}
+
+.page__project--hall-pass {
+  .site__hero {
+    background-image: url('/uploads/2014/10/hall-pass-hero.png');
+  }
+
+  .site__hero--blurred {
+    background-image: url('/uploads/2014/10/hall-pass-hero-blurred.png');
   }
 }

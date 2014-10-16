@@ -2,7 +2,8 @@
 //= require vendor/typed
 //= require vendor/fluidbox
 //= require vendor/lazyload
-// // = require vendor/mousetrap.min
+//= require vendor/mousetrap.min
+//= require vendor/jquery-ui-custom
 
 $(document).ready(function(){
   $(".jams").JamCity({
@@ -15,16 +16,21 @@ $(document).ready(function(){
     $('.site__header').css('background', 'rgb(16,17,19)');
   };
 
-  // Mousetrap.bind('enter', function(e) {
-  //   console.log("4 8 15 16 23 42");
-  //   alert("4 8 15 16 23 42");
-  // };
+  Mousetrap.bind('enter', function(e) {
+    console.log("4 8 15 16 23 42");
+    (function looper(){
+      // use callback function of the effect to call the outer looper function recursively.
+      $('body').effect('pulsate', function(){
+        setTimeout(looper); // add a timeout of needed
+      });
+    })();
+  });
 });
 
 $(window).scroll(function(e) {
   var s = $(window).scrollTop(),
-      opacityVal = (s / 14),
-      oppOpacityVal = (14 / s);
+      opacityVal = (s / 8),
+      oppOpacityVal = (8 / s);
 
   $('.site__hero--blurred').css('opacity', opacityVal);
   $('.site__hero').css('opacity', oppOpacityVal);

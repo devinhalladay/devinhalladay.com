@@ -47,7 +47,10 @@
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  transform: translateY(-75px);
+
+  @media screen and (max-width: 706px) {
+    transform: translateY(-35px);
+  }
 }
 
 .page__home {

@@ -8,7 +8,7 @@ class: "page__project page__project--oddball"
 
 <section class="site__hero--blurred"></section>
 
-<section class="site__content">
+<section class="site__content wrap">
   <div class="grid">
     <div class="grid__col grid__col--12-of-12">
       <h1>Oddball</h1>
@@ -32,7 +32,9 @@ class: "page__project page__project--oddball"
         <br>
         HTML, CSS, JS, Ruby, Ruby on Rails, WordPress, Sass, Less
       </p>
-      <a href="http://twitter.com/share?text=Check out this project by @devinhalladay. {{ site.url }}{{ page.url }} What do you think?&amp;related=devinhalladay&amp;url={{ page.url }}" class="button" target="_blank">Tweet it!</a>
+      <p class="sans">
+        <a href="http://twitter.com/share?text=Check out this project by @devinhalladay. {{ site.url }}{{ page.url }} What do you think?&amp;related=devinhalladay&amp;url={{ page.url }}" class="button" target="_blank">Tweet it!</a>
+      </p>
     </div>
 
     <div class="grid__col grid__col--7-of-12">
@@ -44,6 +46,10 @@ class: "page__project page__project--oddball"
         To date I've worked on a ton of promotional materials, brand collateral, web design and development, and identity design. The brand is still taking shape and continuously evolving, but the future of the brand looks promising.
       </p>
 
+      <p class="sans">
+        The eCommerce site isn't quite ready, but it should be launching in early November 2014. Keep an eye on <a href="http://wearoddball.com">wearoddball.com</a>.
+      </p>
+
       <hr class="hr--short">
 
       {% include full-width-image.html alt="Oddball Logo" url="/uploads/2014/10/oddball/logo.png" %}
@@ -51,16 +57,53 @@ class: "page__project page__project--oddball"
   </div>
   <div class="grid">
     <div class="grid__col grid__col--6-of-12">
-      {% include full-width-image.html alt="Perception Poster" url="/uploads/2014/10/oddball/bead-1.png" %}
+      {% include full-width-image.html alt="Graphic Element 1" url="/uploads/2014/10/oddball/bead-1.png" %}
     </div>
     <div class="grid__col grid__col--6-of-12">
-      {% include full-width-image.html alt="Perception Poster" url="/uploads/2014/10/oddball/bead-2.png" %}
+      {% include full-width-image.html alt="Graphic Element 2" url="/uploads/2014/10/oddball/bead-2.png" %}
     </div>
     <div class="grid__col grid__col--6-of-12">
-      {% include full-width-image.html alt="Perception Poster" url="/uploads/2014/10/oddball/bead-4.png" %}
+      {% include full-width-image.html alt="Graphic Element 3" url="/uploads/2014/10/oddball/bead-4.png" %}
     </div>
     <div class="grid__col grid__col--6-of-12">
-      {% include full-width-image.html alt="Perception Poster" url="/uploads/2014/10/oddball/bead-5.png" %}
+      {% include full-width-image.html alt="Graphic Element 4" url="/uploads/2014/10/oddball/bead-5.png" %}
+    </div>
+    <div class="grid__col grid__col--3-of-12">
+      <h3>The Landing Page</h3>
+      <p>I created a landing page for the launch to collect emails. This was written in Ruby on Rails and Sass, using PostgreSQL for the database and Heroku for hosting. The page collects an email and lets the user through to a new page, allowing them to refer friends for exclusive rewards.</p>
+    </div>
+    <div class="grid__col grid__col--9-of-12">
+      {% include full-width-image.html alt="Landing Page" url="/uploads/2014/10/oddball/landing-page.png" %}
+    </div>
+    <div class="grid__col grid__col--3-of-12">
+      <p>Upon entering their email and submitting the form, the user is taken to this page. Fancy. When a user refers a friend, the timeline-like reward bar progresses further toward the reward.</p>
+    </div>
+    <div class="grid__col grid__col--9-of-12">
+      {% include full-width-image.html alt="efer a Friend Page" url="/uploads/2014/10/oddball/refer-a-friend.png" %}
+    </div>
+    <div class="grid__col grid__col--3-of-12">
+      <p>The user could also hover over the reward tiers to see a picture of the reward.</p>
+    </div>
+    <div class="grid__col grid__col--9-of-12">
+      {% include full-width-image.html alt="Refer a Friend Page Reward Hover" url="/uploads/2014/10/oddball/refer-a-friend-hover.png" %}
+    </div>
+    <div class="grid__col grid__col--3-of-12">
+      <p>Transactional email? You bet! I took care of this with Mailgun. If you'd like, you can <a href="http://devinhalladay.com/projects/oddball/email/" target="_blank">view the email live</a>.</p>
+    </div>
+    <div class="grid__col grid__col--9-of-12">
+      {% include full-width-image.html alt="Transactional Email" url="/uploads/2014/10/oddball/transactional-email.png" %}
+    </div>
+    <div class="grid__col grid__col--12-of-12">
+      <h3>Misc. Design Assets</h3>
+    </div>
+    <div class="grid__col grid__col--6-of-12">
+      {% include full-width-image.html alt="Launch T-Shirt Front" url="/uploads/2014/10/oddball/shirt-front.png" %}
+    </div>
+    <div class="grid__col grid__col--6-of-12">
+      {% include full-width-image.html alt="Launch T-Shirt Back" url="/uploads/2014/10/oddball/shirt-back.png" %}
+    </div>
+    <div class="grid__col grid__col--6-of-12">
+      {% include full-width-image.html alt="Launch T-Shirt Back" url="/uploads/2014/10/oddball/tag.png" %}
     </div>
   </div>
 </section>
