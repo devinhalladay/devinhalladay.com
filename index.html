@@ -27,18 +27,23 @@ class: "page__home"
 <section class="site__content wrap">
   {% assign post = project %}
   <div class="grid">
-    <div class="grid__col grid__col--12-of-12">
+    <div class="grid__col grid__col--6-of-12">
       <h2>Selected Projects</h2>
+      <p class="sans">I'll be adding more case studies as I finish them throughout the rest of this week.</p>
     </div>
+  </div>
+  <div class="grid">
     {% for project in site.projects limit:6 %}
-      <div class="project grid__col grid__col--6-of-12">
-        <a href="{{ project.url }}">
-          <h2>{{ project.title }}</h2>
-          <figure>
-            <img src="{{ project.cover-image }}" alt="{{ project.title }}">
-          </figure>
-        </a>
+      {% unless project.published == false %}
+        <div class="project grid__col grid__col--6-of-12">
+          <a href="{{ project.url }}">
+            <h2>{{ project.title }}</h2>
+            <figure>
+              <img src="{{ project.cover-image }}" alt="{{ project.title }}">
+            </figure>
+          </a>
       </div>
+      {% endunless %}
     {% endfor %}
   </div>
 </section>
