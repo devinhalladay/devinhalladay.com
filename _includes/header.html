@@ -1,17 +1,19 @@
 <header class="site__header">
-  <div class="grid">
-    <div class="grid__col grid__col--6-of-12">
-      <a href="/" class="header__link--name">{{ site.name }}</a>
-    </div>
-    <div class="grid__col grid__col--6-of-12">
-      <nav class="site__header__nav">
-        <ul>
-          {% capture currentURL %}{{ page.url | replace: '/', ' ' | truncatewords: 1 | remove: '...' | remove: ' ' }}{% endcapture %}
-          {% for page in site.data.pages %}
-            <li><a href="{% if page.url == 'index.html' %}/{% else %}/{{ page.url }}{% endif %}" class="{% if currentURL == page.url %} current{% elsif currentURL == '/' %} current{% endif %}">{{ page.page }}</a></li>
-          {% endfor %}
-        </ul>
-      </nav>
+  <div class="wrap">
+    <div class="grid">
+      <div class="grid__col grid__col--6-of-12">
+        <a href="/" class="header__link--name">{{ site.name }}</a>
+      </div>
+      <div class="grid__col grid__col--6-of-12">
+        <nav class="site__header__nav">
+          <ul>
+            {% capture currentURL %}{{ page.url | replace: '/', ' ' | truncatewords: 1 | remove: '...' | remove: ' ' }}{% endcapture %}
+            {% for page in site.data.pages %}
+              <li><a href="{% if page.url == 'index.html' %}/{% else %}/{{ page.url }}{% endif %}" class="{% if currentURL == page.url %} current{% elsif currentURL == '/' %} current{% endif %}">{{ page.page }}</a></li>
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
     </div>
   </div>
 </header>
