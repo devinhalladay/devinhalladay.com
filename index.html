@@ -27,6 +27,9 @@ class: "page__home"
 <section class="site__content wrap">
   {% assign post = project %}
   <div class="grid">
+    <div class="grid__col grid__col--12-of-12">
+      <h2>Selected Projects</h2>
+    </div>
     {% for project in site.projects limit:6 %}
       <div class="project grid__col grid__col--6-of-12">
         <a href="{{ project.url }}">
