@@ -1,0 +1,17 @@
+<header class="site__header">
+  <div class="wrap">
+    <a href="/" class="header__link--name">Devin Halladay</a>
+    <nav class="site__header__nav nav-collapse">
+      <ul>
+        <!-- {% capture currentURL %}{{ page.url | replace: '/', ' ' | truncatewords: 1 | remove: '...' | remove: ' ' }}{% endcapture %} -->
+
+        <% data.pages.each do |page| %>
+          <li>
+            <a href="<% if page.link == 'index.html' %>/<% else %>/<%= page.link %><% end %>" class="<% if current_page.url == page.link or current_page.url == page.link2 %>current<% elsif current_page.url == '/' %>current<% end %>"><%= page.page %></a>
+          </li>
+          <!-- <li><a href="{% if page.link == 'index.html' %}/{% else %}/{{ page.link }}{% endif %}" class="{% if currentURL == page.link or currentURL == page.link2 %} current{% elsif currentURL == '/' %} current{% endif %}">{{ page.page }}</a></li> -->
+        <% end %>
+      </ul>
+    </nav>
+  </div>
+</header>

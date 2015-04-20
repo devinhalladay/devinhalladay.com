@@ -1,0 +1,64 @@
+<footer class="site__footer">
+  <div class="site__footer__content wrap">
+    <div class="grid">
+
+      <div class="grid__col grid__col--4-of-12">
+        <!-- <p>This is the end of the road, my friend. I'll see you on the other side.</p> -->
+        <p>“Live, travel, adventure, bless, and don't be sorry.” ― Jack Kerouac, <i>On the Road</i></p>
+        <p>&copy; <em>Forever</em> Devin Halladay.</p>
+      </div>
+
+      <div class="grid__col grid__col--4-of-12">
+        <p>
+          <a href="mailto:studio@devinhalladay.com">studio@devinhalladay.com</a>
+          <br><br>
+          <a href="/dedicated/">Dedications</a>
+          <br><br>
+          <% data.links.each_with_index do |link, index| %>
+            <a href="<%= link.url %>"><%= link.name %></a><% unless index == link.length %>,<% end %>
+          <% end %>
+        </p>
+      </div>
+
+      <div class="grid__col grid__col--4-of-12">
+        <p><strong>Now Playing</strong></p>
+        <div class="jams"></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" data-no-instant></script>
+
+<%= javascript_include_tag  "all" %>
+
+<script data-no-instant>InstantClick.init();</script>
+<script>
+  $(".jams").JamCity({
+    apiKey: '02adf7de5c1121bbab028c6c07233e68',
+    username: 'devinhalladay',
+    fetch: 1
+  });
+
+  $("figure a").fluidbox({
+    closeTrigger: [
+      { selector: '#fluidbox-overlay', event: 'click'},
+      { selector: 'window', event: 'scroll'}
+    ]
+  });
+
+  $(".fluidbox").fluidbox({
+    closeTrigger: [
+      { selector: '#fluidbox-overlay', event: 'click'},
+      { selector: 'window', event: 'scroll'}
+    ]
+  });
+
+  var nav = responsiveNav(".nav-collapse");
+</script>
+
+<div id="svg" class="hidden" aria-hidden="true">
+  <svg width="0" height="0">
+    <path id="svg--email" d="M25 25.199l-6.186-5.457-17.686 15.279c.644.605 1.51.979 2.467.979h42.809c.951 0 1.816-.373 2.459-.979l-17.675-15.279-6.188 5.457zm23.87-24.223c-.641-.605-1.507-.976-2.466-.976h-42.809c-.952 0-1.817.375-2.46.982l23.865 20.618 23.87-20.624zm-48.87 2.185v29.907l17.261-14.783-17.261-15.124zm32.738 15.124l17.262 14.781v-29.916l-17.262 15.135z"></path>
+  </svg>
+</div>
