@@ -1,14 +1,14 @@
 - page: Projects
-  link: index.html
+  link: /
   link2: projects
   title: Selected Projects
 
 - page: Journal
-  link: journal
+  link: /journal/
   title: Journal
 
 - page: Profile
-  link: profile
+  link: /profile/
   title: About Me
 
 # - page: Dedications
@@ -16,5 +16,5 @@
 #   title: Dedications
 
 - page: Contact
-  link: contact
+  link: /contact/
   title: Contact

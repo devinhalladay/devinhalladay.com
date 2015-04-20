@@ -34,30 +34,17 @@ classes: page__home
 
     <% posts_by_weight.each do |project| %>
       <%# if article.metadata[:page]['category'] == 'projects' %>
-        <article>
-          <h1>
-            <a href="<%= project.url %>"><%= project.title %></a>
-          </h1>
-
-          <%= project.summary %>
-
-          <a href="<%= project.url %>">Read more</a>
-        </article>
-      <%# end %>
-    <% end %>
-
-    {% for project in projects | sort:"weight" %}
-      {% unless project.published == false or project.private == true %}
-        <div class="project grid__col grid__col--6-of-12">
-          <a href="{{ project.url }}">
-            <h2>{{ project.title }}</h2>
+      <% unless project.data.published == false or project.data.private == true %>
+      <div class="project grid__col grid__col--6-of-12">
+          <a href="<%= project.url %>">
+            <h2><%= project.title %></h2>
             <figure>
-              <img src="{{ project.cover-image }}" alt="{{ project.title }}">
+              <img src="<%= project.data.cover_image %>" alt="<%= project.title %>">
             </figure>
           </a>
         </div>
-      {% endunless %}
-    {% endfor %}
+      <% end %>
+    <% end %>
   </div>
 
 <!--   <hr class="hr--long"></hr>

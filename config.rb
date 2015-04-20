@@ -126,7 +126,15 @@ helpers do
     words = input.split.size
     minutes = (words/words_per_minute).floor
     minutes_label = ' minute'
-    minutes > 0 ? "About a #{minutes} #{minutes_label}" : 'A less than 1 minute'
+    minutes > 0 ? "About a #{minutes} #{minutes_label}" : 'Less than a 1 minute'
+  end
+
+  def active_link_to(caption, url, options = {})
+    if current_page.url == "#{url}/"
+      options[:class] = "current"
+    end
+
+    link_to(caption, url, options)
   end
 end
 
