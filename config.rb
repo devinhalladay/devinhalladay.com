@@ -3,46 +3,23 @@
 ###
 
 # Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
+compass_config do |config|
+  config.output_style = :compact
+end
 
 ###
 # Page options, layouts, aliases and proxies
 ###
-
-# activate :blog do |blog|
-#   blog.permalink = ":category/:title.html"
-#   blog.sources = "posts/:category/*.html"
-# end
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   blog.name   = "journal"
   blog.prefix = "journal"
 
-  # Matcher for blog source files
-  # blog.sources = "journal/:year-:month-:day-:title.html"
-
-  # Dist articles
   blog.permalink = ":title.html"
-  # blog.summary_separator = /(READMORE)/
-  # blog.summary_length    = 250
-  # blog.taglink           = "tags/{tag}.html"
-  # blog.year_link         = "{year}.html"
-  # blog.month_link        = "{year}/{month}.html"
-  # blog.day_link          = "{year}/{month}/{day}.html"
-  # blog.default_extension = ".markdown"
 
   # Layout and Template
-  # blog.layout            = "post"
-  # blog.tag_template      = blog.prefix + "/tag.html"
-  # blog.calendar_template = blog.prefix + "/calendar.html"
-
-  # Enable pagination
-  # blog.paginate = true
-  # blog.per_page = 3
-  # blog.page_link = "page/{num}"
+  blog.layout            = "article"
 end
 
 activate :blog do |blog|
@@ -50,62 +27,17 @@ activate :blog do |blog|
   blog.name   = "projects"
   blog.prefix = "projects"
 
-  # Matcher for blog source files
-  blog.sources = ":year-:month-:day-:title.html"
-
-  # Dist articles
   blog.permalink = ":title.html"
-  # blog.summary_separator = /(READMORE)/
-  # blog.summary_length    = 250
-  # blog.taglink           = "tags/{tag}.html"
-  # blog.year_link         = "{year}.html"
-  # blog.month_link        = "{year}/{month}.html"
-  # blog.day_link          = "{year}/{month}/{day}.html"
-  # blog.default_extension = ".markdown"
 
   # Layout and Template
-  # blog.layout            = "post"
-  # blog.tag_template      = blog.prefix + "/tag.html"
-  # blog.calendar_template = blog.prefix + "/calendar.html"
-
-  # Enable pagination
-  # blog.paginate = true
-  # blog.per_page = 3
-  # blog.page_link = "page/{num}"
+  blog.layout            = "project"
 end
 
-# activate :blog_editor do |editor|
-#   # Where to place the editor UI.
-#   editor.mount_at = "/editor"
-#   editor.use_minified_assets = false
-# end
-
 activate :directory_indexes
-
-
-# Per-page layout changes:
-#
-# With no layout
-# page "/path/to/file.html", :layout => false
-#
-# With alternative layout
-# page "/path/to/file.html", :layout => :otherlayout
-#
-# A path which all have the same layout
-# with_layout :admin do
-#   page "/admin/*"
-# end
-
-# Proxy pages (https://middlemanapp.com/advanced/dynamic_pages/)
-# proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
-#  :which_fake_page => "Rendering a fake page with a local variable" }
 
 ###
 # Helpers
 ###
-
-# Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
 configure :development do
@@ -136,6 +68,10 @@ helpers do
 
     link_to(caption, url, options)
   end
+
+   def is_blog_article?
+    !current_article.nil?
+  end
 end
 
 set :css_dir, 'assets/css'
@@ -143,6 +79,8 @@ set :css_dir, 'assets/css'
 set :js_dir, 'assets/js'
 
 set :images_dir, 'assets/images'
+
+set :partials_dir, 'partials'
 
 # Build-specific configuration
 configure :build do

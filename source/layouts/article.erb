@@ -1,0 +1,44 @@
+<% wrap_layout :layout do %>
+  <section class="site__content wrap padding-top">
+    <div class="grid article__meta">
+      <h1 class="article__title text--centered"><%= current_page.title %></h1>
+      <p class="meta text--centered article__date"><%= current_page.date.strftime('%-d %B %Y') %></p>
+    </div>
+
+    <div class="grid">
+      <div class="grid__col grid__col--centered grid__col--6-of-12">
+        <article>
+          <%= yield %>
+        </article>
+
+        <hr class="hr--long">
+
+        <%= partial "twitter-buttons" %>
+      </div>
+    </div>
+  </section>
+
+  <% if current_article.previous_article %>
+    <div class="wrap">
+      <div class="grid">
+        <div class="readnext grid__col grid__col--centered grid__col--7-of-12">
+          <a href="<%= current_article.previous_article.url %>">
+            <strong>Read next</strong>
+            <span><%= current_article.previous_article.title %></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  <% else %>
+    <div class="wrap">
+      <div class="grid">
+        <div class="readnext grid__col grid__col--centered grid__col--6-of-12">
+          <a href="<%= blog_controller.data.articles.first.url %>">
+            <strong>You're at the earliest post. Go read the most recent one!</strong>
+            <span><%= blog_controller.data.articles.first.title %></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  <% end %>
+<% end %>

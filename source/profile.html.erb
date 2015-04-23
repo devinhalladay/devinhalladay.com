@@ -1,0 +1,62 @@
+---
+title: Profile
+classes: "page__profile"
+---
+<section class="site__content wrap padding-top">
+  <div class="grid">
+
+    <div class="grid__col grid__col--6-of-12">
+      <h2>A little bit about myself</h2>
+
+      <p>My name is Devin Halladay.<br>I'm a graphic designer, writer, and humanist.</p>
+
+      <hr class="hr--long">
+
+      <p class="text--lead">I create honest designs. I sincerely care about the stories with which I work and have an ambition toward the finest of execution.</p>
+
+      <hr class="hr--long">
+
+      <p>I value craftsmanship, curation, and careful research. I've put those principles to the test over the last few years and the results have been wonderful. I have five years of experience working with agencies, startups, and other companies large and small. The future is wide open, and I'm looking forward to creating something amazing with some amazing people.</p>
+
+      <hr class="hr--long">
+
+      <blockquote>
+        <p>The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+        <cite>— Jack Kerouac, <i>On the Road</i></cite>
+        <div class="clearfix"></div>
+      </blockquote>
+    </div>
+
+    <div class="grid__col grid__col--3-of-12 grid__col--push-1-of-12">
+      <h2>Non-fun facts</h2>
+
+      <h3>Location</h3>
+
+      <p>Cleveland, Ohio</p>
+
+      <h3>Likes</h3>
+      <p>Classical music, black clothes, minimalism, typography, literature, running, politics, liberty, coffee.</p>
+
+      <h3>Dislikes</h3>
+      <p>Country music, aestheticism, purple, Condoleezza Rice, Kid Rock, bad kerning, planking.</p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="grid__col grid__col--12-of-12">
+      <hr class="hr--long">
+      <h2>Services</h2>
+    </div>
+
+    <% for service in data.services %>
+      <div class="grid__col grid__col--4-of-12">
+        <h3><%= service.service %></h3>
+        <p>
+          <% service.subservices.each_with_index do |service, index| %>
+            <%= service %><% unless index == service.length %><br><% end %>
+          <% end %>
+        </p>
+      </div>
+    <% end %>
+  </div>
+</section>

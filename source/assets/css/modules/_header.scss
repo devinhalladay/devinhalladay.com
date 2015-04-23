@@ -1,0 +1,40 @@
+.site__header {
+  height: 90px;
+  background: #182023;
+  color: #D0D2D4;
+  font-family: $font--sans-serif;
+
+  & > * {
+    position: relative;
+    top: 52%;
+    transform: translateY(-52%);
+  }
+  a {
+    @include vertical-align;
+    text-decoration: none;
+    color: #D0D2D4;
+    font-size: 20px;
+    line-height: 1.2;
+    &.current {
+      font-weight: 700;
+      color: #fff;
+    }
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.header__link--name {
+  color: #fff;
+  float: left;
+  @include vertical-align;
+}
+
+.site__header__nav {
+  float: right;
+  @include vertical-align;
+  ul {
+    @include horizontal-list($padding: $baseline/1.5, $direction: left);
+  }
+}

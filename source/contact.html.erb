@@ -1,0 +1,26 @@
+---
+title: Contact
+class: "page__contact"
+---
+<section class="site__content wrap padding-top">
+  <div class="grid">
+    <div class="grid__col grid__col--3-of-12">
+
+      <h2>Notice</h2>
+      <p>When you click the button to email me, your default email client will open with an email addressed to me.</p>
+
+    </div>
+    <div class="grid__col grid__col--6-of-12 grid__col--push-1-of-12">
+
+      <h2>I'd like to get to know you.</h2>
+      <p>Whether you want to start a new design project, ask me a question, or just chat, feel free to email me. I promise I'll answer.</p>
+      <p><a href="mailto:studio@devinhalladay.com?Subject=I%20want%20to%20talk%20about...&Body=Hey%20Devin%21" class="button">Email me!</a></p>
+      <h3>You can also find me on...</h3>
+      <p>
+        <% data.links.each_with_index do |link, index| %>
+          <a href="<%= link.url %>"><%= link.name %></a><% unless index == link.length %><br><% end %>
+        <% end %>
+      </p>
+    </div>
+  </div>
+</section>

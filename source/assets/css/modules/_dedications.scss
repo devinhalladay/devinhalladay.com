@@ -1,0 +1,113 @@
+.dedication {
+  margin-top: 0.6em;
+
+  @media screen and (max-width: 754px) {
+    padding-bottom: $baseline / 2;
+  }
+
+  a {
+    text-decoration: none;
+
+    .dedication--overlay {
+      @media screen and (max-width: 754px) {
+        display: none;
+      }
+
+      h4 {
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+      }
+    }
+
+    figure {
+      &::before {
+        @media screen and (max-width: 754px) {
+          display: none;
+        }
+
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba($color--accent, 0);
+        cursor: pointer;
+        z-index: 700;
+        transition: all .2s ease;
+      }
+    }
+
+    &:hover {
+      .dedication--overlay {
+        visibility: visible;
+        opacity: 1;
+
+        @media screen and (max-width: 754px) {
+          display: none;
+        }
+      }
+
+      img {
+        transition: all .2s ease;
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        filter: grayscale(100%);
+        @media screen and (max-width: 754px) {
+          filter: grayscale(0);
+        }
+      }
+
+      figure {
+        &::before {
+          @media screen and (max-width: 754px) {
+            display: none;
+          }
+
+          background: rgba($color--accent, 0.94);
+          transition: all .2s ease;
+        }
+      }
+
+      h2 {
+        @media screen and (max-width: 754px) {
+          display: none;
+        }
+
+        text-decoration: none;
+        opacity: 1;
+        transition: opacity .2s ease;
+        color: #fff;
+        z-index: 701;
+      }
+    }
+
+    h2 {
+      display: block;
+      font-weight: 500;
+      // position: absolute;
+      margin: 0;
+      top: 2em;
+      -webkit-transition: opacity .2s ease;
+      transition: opacity .2s ease;
+      z-index: 100;
+      text-align: center;
+      opacity: 0;
+      width: 100%;
+    }
+
+    figure {
+      img {
+        display: block;
+        width: 100%;
+        margin: -3em 0px 0px;
+        padding: 0px;
+        z-index: 1;
+      }
+    }
+  }
+}

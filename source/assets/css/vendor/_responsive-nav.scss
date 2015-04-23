@@ -1,0 +1,56 @@
+/*! responsive-nav.js 1.0.32 by @viljamis */
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.js-nav-active {
+  .site__header {
+    height: 120px;
+    &>* {
+      top: 47px;
+    }
+  }
+
+  .site__header__nav ul li {
+    padding-right: 0;
+  }
+}
+
+.nav-collapse.opened {
+  max-height: 9999px;
+  top: 16px;
+  float: left;
+}
+
+.disable-pointer-events {
+  pointer-events: none !important;
+}
+
+.nav-toggle {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  float: right;
+}
+
+@media screen and (min-width: 40em) {
+  .js .nav-collapse {
+    position: relative;
+  }
+  .js .nav-collapse.closed {
+    max-height: none;
+  }
+  .nav-toggle {
+    display: none;
+  }
+}

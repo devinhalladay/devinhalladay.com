@@ -1,0 +1,13 @@
+.site__footer {
+  background: #182023;
+  color: #fff;
+  font-family: $font--sans-serif;
+}
+
+.site__footer__content {
+  padding-top: $baseline;
+
+  @media screen and (max-width: 500px) {
+    padding-bottom: $baseline;
+  }
+}

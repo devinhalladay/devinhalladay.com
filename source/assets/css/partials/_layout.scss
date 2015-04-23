@@ -1,0 +1,23 @@
+.wrap {
+  padding: 0 2%;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+
+  @media screen and (max-width: 1000px) {
+    width: 90%;
+  }
+}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+.display--block {
+  display: block;
+}
+
+.display--inline-block {
+  display: inline-block;
+}

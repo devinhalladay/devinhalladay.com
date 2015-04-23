@@ -1,0 +1,40 @@
+.page__home {
+  .banner {
+    padding: {
+      bottom: 0.6em;
+      top: 1.4em;
+    }
+    // border-bottom: 1px solid $color--lighter-grey;
+    margin-bottom: 1.5em;
+    background: $color--accent;
+    color: #fff;
+
+    a:hover {
+      color: #fff;
+    }
+
+    .gamma {
+      font: {
+        weight: normal;
+        size: 1.2rem;
+        family: $font--sans-serif;
+      }
+    }
+
+    .button {
+      background: none;
+      border: 1px solid #fff;
+      color: #fff;
+
+      &:hover {
+        background: #fff;
+        color: $color--accent !important;
+      }
+
+      @media screen and (max-width: 434px) {
+        margin-top: 0.5em;
+        display: inline-block;
+      }
+    }
+  }
+}

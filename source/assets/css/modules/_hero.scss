@@ -1,0 +1,35 @@
+.site__hero__image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+}
+
+.site__hero {
+  height: 400px;
+  @media (max-width: 701px) {
+    height: 360px;
+  }
+  @media (min-width: 1499px) {
+    height: 540px;
+  }
+}
+
+.site__hero__headline {
+  color: #fff;
+  padding-left: 0 !important;
+  font-weight: 400;
+  hyphens: none;
+}
+
+.site__hero__table {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.table__cell {
+  display: table-cell;
+  vertical-align: middle;
+}

@@ -1,16 +1,16 @@
 <!doctype html>
 <html>
   <head>
-    <%= partial "partials/meta" %>
+    <%= partial "meta" %>
   </head>
 
   <body class="<% if current_page.data.classes %><%= current_page.data.classes %><% end %>">
-    <%= partial "partials/header" %>
+    <%= partial "header" %>
 
     <%= yield %>
 
-    <%= partial "partials/newsletter-form" %>
-    <%= partial "partials/footer" %>
+    <%= partial "newsletter-form" %>
+    <%= partial "footer" %>
   </body>
 </html>
 

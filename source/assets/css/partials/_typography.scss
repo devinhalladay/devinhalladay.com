@@ -1,0 +1,102 @@
+h1,
+.alpha {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1;
+  font-family: $font--sans-serif;
+
+  @media (max-width: 500px) {
+    font-size: 2rem;
+  }
+}
+
+h2,
+.beta {
+  font-family: $font--sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+h3,
+.gamma {
+  margin-bottom: $baseline/2;
+
+  font-family: $font--sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+h4,
+.delta {
+  margin-bottom: $baseline/2;
+
+  font-family: $font--serif;
+  font-weight: 700;
+}
+
+p {
+  hyphens: auto;
+}
+
+blockquote {
+  padding: 0 $baseline;
+  color: $color--light-grey;
+  border-left: 2px solid $color--accent;
+  font-family: $font--sans-serif;
+  cite {
+    float: right;
+    padding: 0 0 $baseline*2 0;
+  }
+}
+
+%link {
+  color: inherit;
+
+  &:hover {
+    color: $color--accent;
+  }
+}
+
+a, a:visited {
+  @extend %link;
+}
+
+.a--plain {
+  text-decoration: none;
+}
+
+.sans {
+  font-family: $font--sans-serif !important;
+}
+
+.serif {
+  font-family: $font--serif;
+}
+
+.text--lead {
+  font-family: $font--serif;
+  font-size: 1.1rem;
+  line-height: 1.5em;
+  text-indent: 0;
+
+  @media (max-width: 500px) {
+    font-size: 1rem;
+  }
+}
+
+.text--centered {
+  text-align: center;
+}
+
+.meta {
+  color: $color--light-grey;
+  font-family: $font--sans-serif;
+}
+
+ol li {
+  margin-left: 10px
+}
+
+.small {
+  font-size: 18px;
+}
