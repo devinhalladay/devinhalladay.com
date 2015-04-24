@@ -33,6 +33,17 @@ activate :blog do |blog|
   blog.layout            = "project"
 end
 
+activate :blog do |blog|
+  # This will add a prefix to all links, template references and source paths
+  blog.name   = "dedicated"
+  blog.prefix = "dedicated"
+
+  blog.permalink = "to/:title.html"
+
+  # Layout and Template
+  blog.layout            = "article"
+end
+
 activate :directory_indexes
 
 ###

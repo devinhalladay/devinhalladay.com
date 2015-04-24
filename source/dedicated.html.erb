@@ -1,0 +1,35 @@
+---
+title: Dedications
+classes: "page__dedications"
+---
+<div class="site__hero">
+  <div class="site__hero__image" style="background: #182023;"></div>
+  <div class="site__hero__table">
+    <div class="table__cell">
+      <div class="grid wrap">
+
+        <p class="grid__col grid__col--6-of-12 site__hero__headline grid__col--push-6-of-12 beta sans">This website is dedicated to a few people who have made very significant impacts on my life. Here are a few special pages to honor them. More dedications are coming soon.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="site__content padding-top">
+  <div class="wrap">
+    <div class="grid dedications">
+      <% blog('dedicated').articles.each do |dedication| %>
+        <div class="grid__col grid__col--6-of-12">
+          <div class="dedication">
+            <a href="<%= dedication.url %>">
+              <h2><%= dedication.title %></h2>
+              <figure>
+                <img src="<%= dedication.data.cover_image %>" alt="<%= dedication.title %>">
+              </figure>
+            </a>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>
