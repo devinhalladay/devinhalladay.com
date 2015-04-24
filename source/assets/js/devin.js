@@ -4,6 +4,7 @@
 // // = require vendor/jribbble.min
 //= require vendor/responsive-nav
 //= require vendor/jquery-ui-custom
+//= require vendor/layzr
 //= require vendor/instantclick.min
 
 // Initiate slicknav for responsive navigation.

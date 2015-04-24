@@ -29,7 +29,7 @@
   background-position: center center;
   position: absolute;
   transition: all .25s ease-in-out;
-  border: 1px solid $color--lighter-grey;
+  // border: 1px solid $color--lighter-grey;
 }
   .fluidbox-closed .fluidbox-ghost {
     -webkit-transition-property: top, left, opacity, -webkit-transform;

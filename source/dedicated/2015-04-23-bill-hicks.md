@@ -3,7 +3,7 @@ title: Bill Hicks
 cover_image: "/assets/images/2014/09/bill-hicks.png"
 ---
 <figure>
-  <img src="/assets/images/2014/09/bill-hicks.png" alt="Bill">
+  <img data-layzr="/assets/images/2014/09/bill-hicks.png" alt="Bill">
 </figure>
 
 <hr class="hr--long">

@@ -20,3 +20,12 @@ ul, ol {
   padding-left: $baseline;
   overflow: hidden;
 }
+
+a {
+  outline: none;
+}
+
+a:active, a:focus {
+ outline: none;
+ ie-dummy: expression(this.hideFocus=true);
+}

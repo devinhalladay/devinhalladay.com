@@ -55,6 +55,15 @@
   });
 
   var nav = responsiveNav(".nav-collapse");
+
+  var layzr = new Layzr({
+    selector: '[data-layzr]',
+    attr: 'data-layzr',
+    retinaAttr: 'data-layzr-retina',
+    bgAttr: 'data-layzr-bg',
+    threshold: 0,
+    callback: null
+  });
 </script>
 
 <div id="svg" class="hidden" aria-hidden="true">

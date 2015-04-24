@@ -3,7 +3,7 @@ title: Charles Bukowski
 cover_image: "/assets/images/2014/09/buk.png"
 ---
 <figure>
-  <img src="/assets/images/2014/09/buk.png" alt="Buk">
+  <img data-layzr="/assets/images/2014/09/buk.png" alt="Buk">
 </figure>
 
 <hr class="hr--long">
