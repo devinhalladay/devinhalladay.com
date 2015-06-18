@@ -46,6 +46,18 @@ end
 
 activate :directory_indexes
 
+activate :deploy do |deploy|
+  deploy.method = :rsync
+  deploy.host   = '162.243.103.246'
+  deploy.path   = '/var/www/mica.devinhalladay.com/public_html'
+  # Optional Settings
+  deploy.user  = 'root' # no default
+  # deploy.port  = 5309 # ssh port, default: 22
+  deploy.clean = true # remove orphaned files on remote host, default: false
+  # deploy.flags = '-rltgoDvzO --no-p --del' # add custom flags, default: -avz
+end
+
+
 ###
 # Helpers
 ###
@@ -96,13 +108,19 @@ set :partials_dir, 'partials'
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 
   # Enable cache buster
-  # activate :asset_hash
+  activate :asset_hash
+
+  # activate :asset_host
+  #
+  # set :asset_host do |asset|
+  #   '//devinhalladay.oddball1.netdna-cdn.com'
+  # end
 
   # Use relative URLs
   # activate :relative_assets

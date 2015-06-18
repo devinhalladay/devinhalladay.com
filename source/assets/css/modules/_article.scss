@@ -22,7 +22,7 @@ article {
     font-family: $font--sans-serif;
     display: block;
     position: relative;
-    transition: all ease .6s;
+    transition: all ease .4s;
     padding: 1.875rem 1.25rem;
     text: {
       align: center;
@@ -45,7 +45,7 @@ article {
 
     &:hover {
       background-color: $color--accent;
-      transition: all ease .6s;
+      transition: all ease .4s;
     }
   }
 

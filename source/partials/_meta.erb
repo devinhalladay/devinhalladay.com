@@ -6,8 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Use title if it's in the page YAML frontmatter -->
-<title><%= current_page.data.title || "The Middleman" %></title>
-<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<title><%= current_page.data.title || "Devin Halladay" %></title>
+<meta name="description" content="<%= current_page.data.description || "This is the portfolio and journal of Devin Halladay, a designer who writes." %>">
 
 <link rel="alternate" type="application/atom+xml" title="RSS" href="/feed.xml">
 

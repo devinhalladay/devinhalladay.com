@@ -8,6 +8,7 @@ source 'https://rubygems.org'
 
 gem "middleman", "~>3.3.10"
 gem "middleman-blog"
+gem 'middleman-deploy', '~> 1.0'
 
 # For blog dependencies
 gem 'nokogiri'
