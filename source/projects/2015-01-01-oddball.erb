@@ -17,10 +17,10 @@ scope:
 ---
 <div class="grid">
   <div class="grid__col grid__col--6-of-12">
-    {% include full-width-image.html alt="Oddball Logo" url="/assets/images/2014/10/oddball/logo.jpg" %}
+    <%= partial("full-width-image", :locals => { :url => "/assets/images/2014/10/oddball/logo.jpg", :alt => "Oddball Logo" }) %>
   </div>
   <div class="grid__col grid__col--6-of-12">
-    {% include full-width-image.html alt="Launch T-Shirt Back" url="/assets/images/2014/10/oddball/tag.jpg" %}
+    <%= partial("full-width-image", :locals => { :url => "/assets/images/2014/10/oddball/tag.jpg", :alt => "Launch T-Shirt Back" }) %>
   </div>
 </div>
 
@@ -28,49 +28,49 @@ scope:
 
 <div class="grid">
   <div class="grid__col grid__col--6-of-12">
-    {% include full-width-image.html alt="Graphic Element 1" url="/assets/images/2014/10/oddball/bead-1.jpg" %}
+    <%= partial("full-width-image", :locals => { :url => "/assets/images/2014/10/oddball/bead-1.jpg", :alt => "Graphic Element 1" }) %>
   </div>
   <div class="grid__col grid__col--6-of-12">
-    {% include full-width-image.html alt="Graphic Element 2" url="/assets/images/2014/10/oddball/bead-2.jpg" %}
+    <%= partial("full-width-image", :locals => { :url => "/assets/images/2014/10/oddball/bead-2.jpg", :alt => "Graphic Element 2" }) %>
   </div>
   <div class="grid__col grid__col--6-of-12">
-    {% include full-width-image.html alt="Graphic Element 3" url="/assets/images/2014/10/oddball/bead-4.jpg" %}
+    <%= partial("full-width-image", :locals => { :url => "/assets/images/2014/10/oddball/bead-4.jpg", :alt => "Graphic Element 3" }) %>
   </div>
   <div class="grid__col grid__col--6-of-12">
-    {% include full-width-image.html alt="Graphic Element 4" url="/assets/images/2014/10/oddball/bead-5.jpg" %}
+    <%= partial("full-width-image", :locals => { :url => "/assets/images/2014/10/oddball/bead-5.jpg", :alt => "Graphic Element 4" }) %>
   </div>
   <div class="grid__col grid__col--3-of-12">
     <h3>The Landing Page</h3>
     <p>I created a landing page for the launch to collect emails. This was written in Ruby on Rails and Sass, using PostgreSQL for the database and Heroku for hosting. The page collects an email and lets the user through to a new page, allowing them to refer friends for exclusive rewards.</p>
   </div>
   <div class="grid__col grid__col--9-of-12">
-    {% include full-width-image.html alt="Landing Page" url="/assets/images/2014/10/oddball/landing-page.jpg" %}
+    <%= partial("full-width-image", :locals => { :url => "/assets/images/2014/10/oddball/landing-page.jpg", :alt => "Landing Page" }) %>
   </div>
   <div class="grid__col grid__col--3-of-12">
     <p>Upon entering their email and submitting the form, the user is taken to this page. Fancy. When a user refers a friend, the timeline-like reward bar progresses further toward the reward.</p>
   </div>
   <div class="grid__col grid__col--9-of-12">
-    {% include full-width-image.html alt="efer a Friend Page" url="/assets/images/2014/10/oddball/refer-a-friend.jpg" %}
+    <%= partial("full-width-image", :locals => { :url => "/assets/images/2014/10/oddball/refer-a-friend.jpg", :alt => "efer a Friend Page" }) %>
   </div>
   <div class="grid__col grid__col--3-of-12">
     <p>The user could also hover over the reward tiers to see a picture of the reward.</p>
   </div>
   <div class="grid__col grid__col--9-of-12">
-    {% include full-width-image.html alt="Refer a Friend Page Reward Hover" url="/assets/images/2014/10/oddball/refer-a-friend-hover.jpg" %}
+    <%= partial("full-width-image", :locals => { :url => "/assets/images/2014/10/oddball/refer-a-friend-hover.jpg", :alt => "Refer a Friend Page Reward Hover" }) %>
   </div>
   <div class="grid__col grid__col--3-of-12">
     <p>Transactional email? You bet! I took care of this with Mailgun. If you'd like, you can <a href="http://devinhalladay.com/projects/oddball/email/" target="_blank">view the email live</a>.</p>
   </div>
   <div class="grid__col grid__col--9-of-12">
-    {% include full-width-image.html alt="Transactional Email" url="/assets/images/2014/10/oddball/transactional-email.jpg" %}
+    <%= partial("full-width-image", :locals => { :url => "/assets/images/2014/10/oddball/transactional-email.jpg", :alt => "Transactional Email" }) %>
   </div>
   <div class="grid__col grid__col--12-of-12">
     <h3>Misc. Design Assets</h3>
   </div>
   <div class="grid__col grid__col--6-of-12">
-    {% include full-width-image.html alt="Launch T-Shirt Front" url="/assets/images/2014/10/oddball/shirt-front.jpg" %}
+    <%= partial("full-width-image", :locals => { :url => "/assets/images/2014/10/oddball/shirt-front.jpg", :alt => "Launch T-Shirt Front" }) %>
   </div>
   <div class="grid__col grid__col--6-of-12">
-    {% include full-width-image.html alt="Launch T-Shirt Back" url="/assets/images/2014/10/oddball/shirt-back.jpg" %}
+    <%= partial("full-width-image", :locals => { :url => "/assets/images/2014/10/oddball/shirt-back.jpg", :alt => "Launch T-Shirt Back" }) %>
   </div>
 </div>
