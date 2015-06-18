@@ -27,7 +27,7 @@ scope:
 
     <hr class="hr--short">
 
-    {% include full-width-image.html alt="Flash Seats Logo" url="/assets/images/2014/10/flash-seats/logo.jpg" %}
+    <%= partial( "full-width-image", :locals => { :url => "/assets/images/2014/10/flash-seats/logo.jpg", :alt => "Flash Seats Logo" }) %>
 
     <hr class="hr--short">
   </div>
@@ -39,7 +39,7 @@ scope:
     <p>After doing some research on the Flash Seats brand and ticketing system, I realized how central fans are to the core of the brand. With this in mind, I decided that the brand's new visual identity also needed to focus on the fans.</p>
   </div>
   <div class="grid__col grid__col--6-of-12">
-    {% include full-width-image.html alt="Style Tiles" url="/assets/images/2014/10/flash-seats/style-tiles.jpg" %}
+    <%= partial("full-width-image", :locals => { :url => "/assets/images/2014/10/flash-seats/style-tiles.jpg", :alt => "Style Tiles" }) %>
   </div>
   <div class="grid__col grid__col--7-of-12 grid__col--centered">
     <hr class="hr--short">
@@ -51,7 +51,7 @@ scope:
     <h3>Final Concept</h3>
   </div>
   <div class="grid__col grid__col--10-of-12">
-    {% include full-width-image.html alt="Flash Seats Logo" url="/assets/images/2014/10/flash-seats/logo.jpg" %}
+    <%= partial("full-width-image", :locals => { :url => "/assets/images/2014/10/flash-seats/logo.jpg", :alt => "Flash Seats Logo" }) %>
   </div>
   <hr class="hr--short">
 </div>
@@ -63,7 +63,7 @@ scope:
     <h3>Designer's Note</h3>
   </div>
 
-  <div class="grid__col grid__col--9-of-12">{% include full-width-image.html alt="Designer's Note" url="/assets/images/2015/02/flash/guidelines-3.png" %}</div>
+  <div class="grid__col grid__col--9-of-12"><%= partial("full-width-image", :locals => { :url => "/assets/images/2015/02/flash/guidelines-3.png", :alt => "Designer's Note" }) %></div>
   <div class="grid__col grid__col--3-of-12">
     <h3>Grid</h3>
     <p>
@@ -71,7 +71,7 @@ scope:
     </p>
   </div>
 
-  <div class="grid__col grid__col--9-of-12">{% include full-width-image.html alt="Grid" url="/assets/images/2015/02/flash/guidelines-4.png" %}</div>
+  <div class="grid__col grid__col--9-of-12"><%= partial("full-width-image", :locals => { :url => "/assets/images/2015/02/flash/guidelines-4.png", :alt => "Grid" }) %></div>
   <div class="grid__col grid__col--3-of-12">
     <h3>The Logo</h3>
     <p>
@@ -79,7 +79,7 @@ scope:
     </p>
   </div>
 
-  <div class="grid__col grid__col--9-of-12">{% include full-width-image.html alt="Logo Guidelines" url="/assets/images/2015/02/flash/guidelines-5.png" %}</div>
+  <div class="grid__col grid__col--9-of-12"><%= partial("full-width-image", :locals => { :url => "/assets/images/2015/02/flash/guidelines-5.png", :alt => "Logo Guidelines" }) %></div>
   <div class="grid__col grid__col--3-of-12">
     <h3>Color Scheme</h3>
     <p>
@@ -87,7 +87,7 @@ scope:
     </p>
   </div>
 
-  <div class="grid__col grid__col--9-of-12">{% include full-width-image.html alt="Logo Color Guidelines" url="/assets/images/2015/02/flash/guidelines-6.png" %}</div>
+  <div class="grid__col grid__col--9-of-12"><%= partial("full-width-image", :locals => { :url => "/assets/images/2015/02/flash/guidelines-6.png", :alt => "Logo Color Guidelines" }) %></div>
   <div class="grid__col grid__col--3-of-12">
     <h3>Color Scheme</h3>
     <p>
@@ -95,7 +95,7 @@ scope:
     </p>
   </div>
 
-  <div class="grid__col grid__col--9-of-12">{% include full-width-image.html alt="Color Scheme" url="/assets/images/2015/02/flash/guidelines-7.png" %}</div>
+  <div class="grid__col grid__col--9-of-12"><%= partial("full-width-image", :locals => { :url => "/assets/images/2015/02/flash/guidelines-7.png", :alt => "Color Scheme" }) %></div>
   <div class="grid__col grid__col--3-of-12">
     <h3>Logo Spacing Considerations</h3>
     <p>
@@ -103,7 +103,7 @@ scope:
     </p>
   </div>
 
-  <div class="grid__col grid__col--9-of-12">{% include full-width-image.html alt="Logo Spacing" url="/assets/images/2015/02/flash/guidelines-8.png" %}</div>
+  <div class="grid__col grid__col--9-of-12"><%= partial("full-width-image", :locals => { :url => "/assets/images/2015/02/flash/guidelines-8.png", :alt => "Logo Spacing" }) %></div>
   <div class="grid__col grid__col--3-of-12">
     <h3>App Icons</h3>
     <p>
@@ -111,7 +111,7 @@ scope:
     </p>
   </div>
 
-  <div class="grid__col grid__col--9-of-12">{% include full-width-image.html alt="App Icons" url="/assets/images/2015/02/flash/guidelines-9.png" %}</div>
+  <div class="grid__col grid__col--9-of-12"><%= partial("full-width-image", :locals => { :url => "/assets/images/2015/02/flash/guidelines-9.png", :alt => "App Icons" }) %></div>
   <div class="grid__col grid__col--3-of-12">
     <h3>Using the Flash Seats name in writing</h3>
     <p>
@@ -119,7 +119,7 @@ scope:
     </p>
   </div>
 
-  <div class="grid__col grid__col--9-of-12">{% include full-width-image.html alt="Flash Seats Brand Name in Writing" url="/assets/images/2015/02/flash/guidelines-10.png" %}</div>
+  <div class="grid__col grid__col--9-of-12"><%= partial("full-width-image", :locals => { :url => "/assets/images/2015/02/flash/guidelines-10.png", :alt => "Flash Seats Brand Name in Writing" }) %></div>
   <div class="grid__col grid__col--3-of-12">
     <h3>Advertising</h3>
     <p>
@@ -127,7 +127,7 @@ scope:
     </p>
   </div>
 
-  <div class="grid__col grid__col--9-of-12">{% include full-width-image.html alt="Advertising Samples" url="/assets/images/2015/02/flash/guidelines-11.png" %}</div>
+  <div class="grid__col grid__col--9-of-12"><%= partial("full-width-image", :locals => { :url => "/assets/images/2015/02/flash/guidelines-11.png", :alt => "Advertising Samples" }) %></div>
   <div class="grid__col grid__col--3-of-12">
     <h3>Ticket Concept</h3>
     <p>
@@ -135,7 +135,7 @@ scope:
     </p>
   </div>
 
-  <div class="grid__col grid__col--9-of-12">{% include full-width-image.html alt="Ticket Idea" url="/assets/images/2015/02/flash/guidelines-12.png" %}</div>
+  <div class="grid__col grid__col--9-of-12"><%= partial("full-width-image", :locals => { :url => "/assets/images/2015/02/flash/guidelines-12.png", :alt => "Ticket Idea" }) %></div>
   <div class="grid__col grid__col--3-of-12">
     <h3>Brand Values</h3>
     <p>
@@ -143,7 +143,7 @@ scope:
     </p>
   </div>
 
-  <div class="grid__col grid__col--9-of-12">{% include full-width-image.html alt="Brand Values" url="/assets/images/2015/02/flash/guidelines-13.png" %}</div>
+  <div class="grid__col grid__col--9-of-12"><%= partial("full-width-image", :locals => { :url => "/assets/images/2015/02/flash/guidelines-13.png", :alt => "Brand Values" }) %></div>
 </div>
 <div class="grid">
   <div class="grid__col grid__col--7-of-12 grid__col--centered">
