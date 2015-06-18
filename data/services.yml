@@ -12,6 +12,7 @@
     - Front-end Development
     - Responsive Design
     - Ruby
+    - Ruby on Rails
 
 - service: Print &amp; Production
   subservices:
@@ -19,3 +20,4 @@
   - Magazine Design
   - Apparel
   - Posters
+  - Advertising
