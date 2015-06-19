@@ -1,5 +1,6 @@
-<figure class="bordered">
+<figure>
   <a href="<%= url %>" class="fluidbox" data-no-instant>
-    <img title="<%= alt %>" alt="<%= alt %>" data-layzr="<%= url %>">
+    <img class="bordered" data-layzr="<%= url %>">
   </a>
+  <figcaption><%= figcap ||= "" %></figcaption>
 </figure>
