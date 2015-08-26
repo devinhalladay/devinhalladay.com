@@ -6,7 +6,6 @@ require "fileutils"
 require "tmpdir"
 require "rubygems"
 require "bundler/setup"
-require "jekyll"
 require "highline/import"
 require "httparty"
 
@@ -37,8 +36,8 @@ task :post do
   # Define the draft's filename.
   file = File.join(
     File.dirname(__FILE__),
-    '_drafts',
-    "#{slug_fixed}.md"
+    'journal',
+    "#{DATE}-#{slug_fixed}.md"
   )
 
   # Create the draft file in the location defined above
@@ -46,8 +45,8 @@ task :post do
   File.open(file, "w") do |f|
     f << <<-EOS.gsub(/^    /, '')
     ---
-    layout: post
     title: \"#{title}\"
+    published: \"false\"
     ---
     #{post_text}
     EOS
