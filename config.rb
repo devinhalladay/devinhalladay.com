@@ -49,7 +49,7 @@ activate :directory_indexes
 activate :deploy do |deploy|
   deploy.method = :rsync
   deploy.host   = '162.243.103.246'
-  deploy.path   = '/var/www/mica.devinhalladay.com/public_html'
+  deploy.path   = '/var/www/devinhalladay.com/public_html/_site'
   # Optional Settings
   deploy.user  = 'root' # no default
   # deploy.port  = 5309 # ssh port, default: 22
