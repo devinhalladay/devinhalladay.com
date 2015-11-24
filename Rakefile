@@ -7,7 +7,7 @@ require "tmpdir"
 require "rubygems"
 require "bundler/setup"
 require "highline/import"
-require "httparty"
+# require "httparty"
 
 # Get and parse the date
 DATE = Time.now.strftime("%Y-%m-%d")
@@ -47,6 +47,67 @@ task :post do
     ---
     title: \"#{title}\"
     published: \"false\"
+    ---
+    #{post_text}
+    EOS
+  end
+end
+
+##################################################
+# Write a new project.
+##################################################
+
+desc "Create a new project."
+task :project do
+  # Define project variables by prompting
+  title       = ask "Enter the title: "
+  description   = ask "Enter the project description here: "
+  intro = ask "Enter project intro here: "
+  scope = ask "Enter project scopes here, separated by commas: "
+  weight = ask "Enter a number for the post's weight: "
+  color = ask "Enter a post color: "
+  post_class = ask "Enter a post class: "
+  cover_image = ask "Enter a path to the post cover image here: "
+  scope_array = scope.split(",")
+  post_text = ask "Enter post text, if you have any ready: "
+  slug_var    = HighLine.agree("Do you want a custom slug for this post? (y/n)")
+  if slug_var == true
+    slug_text   = ask "Okay, what should the slug be?"
+    slug        = "#{slug_text.downcase.gsub(/[^\w|']+/, '-')}"
+    slug_dashed = "#{slug.gsub(/[^a-zA-Z0-9\-]/, "")}"
+    slug_fixed  = "#{slug_dashed.gsub(/\-$/, '')}"
+  else
+    slug        = "#{title.downcase.gsub(/[^\w|']+/, '-')}"
+    slug_dashed = "#{slug.gsub(/[^a-zA-Z0-9\-]/, "")}"
+    slug_fixed  = "#{slug_dashed.gsub(/\-$/, '')}"
+  end
+
+  # Define the draft's filename.
+  file = File.join(
+    File.dirname(__FILE__),
+    'source/projects',
+    "#{DATE}-#{slug_fixed}.md.erb"
+  )
+
+  # Create the draft file in the location defined above
+  # and insert the content defined in the post variables.
+  File.open(file, "w") do |f|
+    f << <<-EOS.gsub(/^    /, '')
+    ---
+    title: \"#{title}\"
+    cover_image: \"#{cover_image}\"
+    class: \"page__project page__project-#{post_class}\"
+    color: \"#{color}\"
+    weight: \"#{weight}\"
+
+    description: \"#{description}\"
+
+    intro: \"#{intro}\"
+
+    scope:
+      - #{
+        scope_array.join("\n  - ")
+      }
     ---
     #{post_text}
     EOS

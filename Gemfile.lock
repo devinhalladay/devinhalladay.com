@@ -36,6 +36,7 @@ GEM
     ffi (1.9.10)
     haml (4.0.7)
       tilt
+    highline (1.7.8)
     hike (1.2.3)
     hitimes (1.2.3)
     hooks (0.4.1)
@@ -139,6 +140,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  highline
   middleman (~> 3.3.10)
   middleman-blog
   middleman-deploy (~> 1.0)
