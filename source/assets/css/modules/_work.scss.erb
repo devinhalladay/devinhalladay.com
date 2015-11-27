@@ -128,3 +128,15 @@
 //     border: 1px solid $color--lighter-grey;
 //   }
 // }
+
+// .project-$i {
+//   color: #333;
+// }
+
+<% posts_by_weight.each_with_index do |project, index| %>
+  .project-<%= index %> {
+    a:hover figure::before {
+      background: rgba(<%= project.data.color %>, 0.94);
+    }
+  }
+<% end %>

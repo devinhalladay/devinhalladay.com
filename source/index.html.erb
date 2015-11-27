@@ -32,9 +32,9 @@ layout: custom-hero
 
   <div class="grid">
 
-    <% posts_by_weight.each do |project| %>
+    <% posts_by_weight.each_with_index do |project, index| %>
       <%# if article.metadata[:page]['category'] == 'projects' %>
-      <div class="project grid__col grid__col--6-of-12">
+      <div class="project project-<%= index %> grid__col grid__col--6-of-12">
         <a href="<%= project.url %>">
           <h2><%= project.title %></h2>
           <figure>
