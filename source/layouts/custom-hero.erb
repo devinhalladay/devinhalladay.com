@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <head>
+    <%= partial "meta" %>
+  </head>
+
+  <body class="<% if current_page.data.classes %><%= current_page.data.classes %><% end %>">
+    <%= yield %>
+
+    <%= partial "newsletter-form" %>
+    <%= partial "footer" %>
+  </body>
+</html>

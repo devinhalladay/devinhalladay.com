@@ -3,13 +3,13 @@
   width: 100%;
   position: absolute;
   background-size: cover;
-  background-position-y: 10%;
+  // background-position-y: 10%;
 }
 
 .site__hero {
-  height: 400px;
+  height: 420px;
   @media (max-width: 701px) {
-    height: 360px;
+    height: 420px;
   }
   @media (min-width: 1499px) {
     height: 540px;
@@ -21,6 +21,11 @@
   padding-left: 0 !important;
   font-weight: 400;
   hyphens: none;
+  .button {
+    background-color: #fff;
+    color: #4680FF;
+    font-size: 0.9em;
+  }
 }
 
 .site__hero__table {
@@ -33,4 +38,13 @@
 .table__cell {
   display: table-cell;
   vertical-align: middle;
+}
+
+.custom-hero {
+  .site__hero {
+    margin-bottom: 3em;
+  }
+  .site__hero__table {
+    height: 78%;
+  }
 }

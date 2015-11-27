@@ -98,7 +98,7 @@ task :project do
     cover_image: \"#{cover_image}\"
     class: \"page__project page__project-#{post_class}\"
     color: \"#{color}\"
-    weight: \"#{weight}\"
+    weight: #{weight}
 
     description: \"#{description}\"
 

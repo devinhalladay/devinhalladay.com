@@ -17,7 +17,7 @@ article {
 
 .readnext {
   a {
-    background-color: #C4C8CA;
+    background-color: #DADDDE;
     color: $color--dark-grey;
     font-family: $font--sans-serif;
     display: block;
@@ -45,6 +45,7 @@ article {
 
     &:hover {
       background-color: $color--accent;
+      color: #fff;
       transition: all ease .4s;
     }
   }

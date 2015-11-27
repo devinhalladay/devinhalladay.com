@@ -97,6 +97,10 @@ helpers do
   end
 end
 
+# sitemap
+set :url_root, 'http://devinhalladay.com'
+activate :search_engine_sitemap
+
 set :css_dir, 'assets/css'
 
 set :js_dir, 'assets/js'

@@ -1,8 +1,7 @@
 .site__header {
   height: 90px;
-  background: #182023;
-  color: #D0D2D4;
-  font-family: $font--sans-serif;
+  background: #13171D;
+  color: #ffffff;
 
   & > * {
     position: relative;
@@ -12,7 +11,7 @@
   a {
     @include vertical-align;
     text-decoration: none;
-    color: #D0D2D4;
+    color: #ffffff;
     font-size: 20px;
     line-height: 1.2;
     &.current {
@@ -36,5 +35,11 @@
   @include vertical-align;
   ul {
     @include horizontal-list($padding: $baseline/1.5, $direction: left);
+  }
+}
+
+.custom-hero {
+  .site__header {
+    background: transparent;
   }
 }

@@ -1,7 +1,7 @@
-- page: Projects
-  link: /
-  link2: projects
-  title: Selected Projects
+# - page: Projects
+#   link: /
+#   link2: projects
+#   title: Selected Projects
 
 - page: Journal
   link: /journal/
