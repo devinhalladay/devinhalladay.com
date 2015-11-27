@@ -42,6 +42,9 @@ p {
   &:last-child {
     margin-bottom: $baseline;
   }
+  &+blockquote {
+    margin-top: $baseline;
+  }
 }
 
 blockquote {
