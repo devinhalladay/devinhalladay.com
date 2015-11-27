@@ -45,6 +45,9 @@ p {
   &+blockquote {
     margin-top: $baseline;
   }
+  &+h3 {
+    margin-top: $baseline;
+  }
 }
 
 blockquote {
