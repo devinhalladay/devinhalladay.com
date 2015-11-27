@@ -2,7 +2,7 @@ h1,
 .alpha {
   font-weight: 400;
   font-size: 2rem;
-  line-height: 1;
+  line-height: 2rem;
   font-family: $font--sans-serif;
 
   @media (max-width: 500px) {
@@ -36,6 +36,12 @@ h4,
 
 p {
   hyphens: auto;
+  &+p {
+    text-indent: 1em;
+  }
+  &:last-child {
+    margin-bottom: $baseline;
+  }
 }
 
 blockquote {
@@ -92,8 +98,11 @@ a, a:visited {
   color: $color--light-grey;
 }
 
-ol li {
-  margin-left: 10px
+ol {
+  margin-top: $baseline;
+  li {
+    margin-left: 10px
+  }
 }
 
 .small {

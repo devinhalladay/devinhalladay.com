@@ -1,7 +1,7 @@
 ---
 title: Lessons Learned
 ---
-![](/assets/images/2015/08/wantneed.jpg "You can't always have what you need.")
+# <img alt="" title="You can't always have what you need." src="/assets/images/2015/08/wantneed.jpg">
 
 I've learned a few important lessons this summer that I thought I'd share—mostly for myself, but hopefully they will help you, too.
 

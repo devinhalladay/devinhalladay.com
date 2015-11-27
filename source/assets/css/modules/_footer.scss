@@ -2,6 +2,13 @@
   background: #13171D;
   color: #fff;
   font-family: $font--sans-serif;
+
+  p {
+    margin-bottom: $baseline;
+    &+p {
+      text-indent: 0;
+    }
+  }
 }
 
 .site__footer__content {
