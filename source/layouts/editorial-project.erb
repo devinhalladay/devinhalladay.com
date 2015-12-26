@@ -1,0 +1,49 @@
+<% wrap_layout :layout do %>
+
+  <div class="site__hero">
+    <div class="site__hero__image" style="background-color: <%= current_page.data.color %>;"></div>
+    <div class="site__hero__table">
+      <div class="table__cell">
+        <div class="grid wrap">
+          <p class="grid__col grid__col--6-of-12 site__hero__headline grid__col--push-6-of-12 beta sans">
+            <%= markdownify(current_page.data.description).gsub(/^<p>|<\/p>$/, '') %>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="site__content padding-top">
+    <div class="grid wrap">
+      <div class="grid__col grid__col--11-of-12 grid__col--push-1-of-12">
+        <h1><%= current_page.title %></h1>
+      </div>
+    </div>
+
+    <div class="grid wrap">
+      <div class="grid__col grid__col--1-of-12">
+        <h3>Intro</h3>
+      </div>
+
+      <div class="grid__col grid__col--6-of-12">
+        <p class="project__intro">
+        <%= markdownify(current_page.data.intro).gsub(/^<p>|<\/p>$/, '') %>
+        </p>
+      </div>
+
+      <div class="grid__col grid__col--push-1-of-12 grid__col--1-of-12">
+        <h3>Scope</h3>
+      </div>
+
+      <div class="grid__col grid__col--3-of-12">
+        <% for service in current_page.data.scope %>
+          <span class="display--block"><%= service %></span>
+        <% end %>
+      </div>
+    </div>
+
+    <hr class="hr--long wrap">
+
+    <%= yield %>
+  </section>
+<% end %>

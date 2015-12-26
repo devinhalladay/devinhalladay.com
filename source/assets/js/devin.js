@@ -1,5 +1,6 @@
 //= require vendor/jquery
 //= require vendor/jquery.jamcity
+//= require vendor/slick
 //= require vendor/typed
 //= require vendor/fluidbox
 // // = require vendor/jribbble.min
@@ -14,6 +15,12 @@ $(document).ready(function(){
     $('.site__header__nav').slicknav();
   });
 });
+
+// Slick slider
+$(document).ready(function(){
+  $('.slick').slick();
+});
+
 
 // Parallax for hero headlines.
 $(window).scroll(function(e) {

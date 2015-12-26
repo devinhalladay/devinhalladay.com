@@ -5,13 +5,39 @@ cover_image: "kindred"
 class: "page__project page__project-kindred"
 color: "#F8D152"
 weight: 3
+layout: editorial-project
 
 description: A magazine created in collaboration with [Julia Fletcher](http://www.juliafletcherphoto.com) to explore the intersection of design, illustration, and photo.
 
-intro: "Kindred is a magazine that explores the intersection of design, illustration, and photo."
+intro: "Kindred is a magazine that explores the intersection of design, illustration, and photo. <span class='meta'>Documentation by [Julia Fletcher](http://www.juliafletcherphoto.com).</span>"
 
 scope:
   - Design
   - Editorial
   - Illustration
 ---
+<style>
+  @media (max-width: 700px) {
+    .grid .grid__col {
+      padding-left: 0;
+    }
+  }
+</style>
+
+<div class="grid wrap">
+  <div class="grid__col grid__col--6-of-12">
+    <%= partial( "full-width-image", :locals => { :url => "/assets/images/2015/12/kindred/person-1.jpg", :alt => "Julia holding up Kindred" }) %>
+  </div>
+  <div class="grid__col grid__col--6-of-12">
+    <%= partial( "full-width-image", :locals => { :url => "/assets/images/2015/12/kindred/person-2.jpg", :alt => "Julia holding up Kindred" }) %>
+  </div>
+</div>
+
+<div class="slick-container">
+  <div class="grid">
+    <div class="slick grid__col grid__col--7-of-12 grid__col--centered">
+      <%= partial( "slide", :locals => {:url => "/assets/images/2015/12/kindred/person-1.jpg", :alt => "Julia holding up Kindred"}) %>
+      <%= partial( "slide", :locals => {:url => "/assets/images/2015/12/kindred/person-2.jpg", :alt => "Julia holding up Kindred"}) %>
+    </div>
+  </div>
+</div>
