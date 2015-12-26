@@ -129,6 +129,16 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-slider {
     margin-left: -5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+    cursor: grab;
 }
 
 .slick-dots {
@@ -194,4 +204,10 @@ $slick-opacity-not-active: 0.25 !default;
 .slick-container {
     background: $color--lightest-grey;
     padding: 2em 0 0.4em 0;
+    margin-bottom: 20px;
+}
+
+.slick-slide img {
+  cursor: -webkit-grab;
+  cursor: grab;
 }
