@@ -56,8 +56,9 @@ blockquote {
   border-left: 2px solid $color--accent;
   font-family: $font--sans-serif;
   cite {
-    float: right;
-    padding: 0 0 $baseline*2 0;
+    // float: right;
+    // padding: 0 0 $baseline*2 0;
+    font-size: 0.8rem;
   }
 }
 
@@ -90,9 +91,14 @@ a, a:visited {
   font-size: 1.1rem;
   line-height: 1.5em;
   text-indent: 0;
+  margin-bottom: $baseline;
 
   @media (max-width: 500px) {
     font-size: 1rem;
+  }
+
+  &+p {
+    text-indent: 0;
   }
 }
 

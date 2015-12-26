@@ -6,7 +6,7 @@
       <div class="table__cell">
         <div class="grid wrap">
           <p class="grid__col grid__col--6-of-12 site__hero__headline grid__col--push-6-of-12 beta sans">
-            <%= current_page.data.description %>
+            <%= markdownify(current_page.data.description).gsub(/^<p>|<\/p>$/, '') %>
           </p>
         </div>
       </div>

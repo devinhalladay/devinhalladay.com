@@ -25,3 +25,6 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 
 # For rakefile
 gem "highline"
+
+# For markdownify
+gem 'redcarpet'

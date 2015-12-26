@@ -92,9 +92,21 @@ helpers do
     link_to(caption, url, options)
   end
 
-   def is_blog_article?
+  def is_blog_article?
     !current_article.nil?
   end
+
+  def lazy_image(link)
+    tag(:img, :'data-layzr' => link)
+  end
+
+  require 'redcarpet'
+
+  def markdownify(str)
+    markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tables: true)
+    markdown.render(str.to_s)
+  end
+
 end
 
 # sitemap

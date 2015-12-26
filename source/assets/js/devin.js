@@ -1,3 +1,4 @@
+//= require vendor/jquery
 //= require vendor/jquery.jamcity
 //= require vendor/typed
 //= require vendor/fluidbox

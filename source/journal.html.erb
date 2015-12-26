@@ -9,10 +9,10 @@ title: Journal
         <%# if article.metadata[:page]['category'] == 'journal' %>
           <div class="post">
             <a href="<%= article.url %>">
-              <h2 class="post__title"><%= article.title %></h2>
-              <span class="meta small"><em><%= reading_time article.body %> read</em></span>
-              <br>
-              <span class="meta small"><%= article.date.strftime('%-d %B %Y') %></span>
+              <p class="post__title"><%= article.title %></p>
+              <!-- <span class="meta small"><em><%= reading_time article.body %> read</em></span> -->
+              <!-- <br> -->
+              <span class="meta small"><%= article.date.strftime('%A %-d %B %Y') %></span>
             </a>
           </div>
         <%# end %>

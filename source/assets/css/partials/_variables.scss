@@ -1,8 +1,8 @@
 $font--sans-serif: 'acumin-pro', Helvetica, sans-serif;
 $font--serif: $font--sans-serif;
 
-$base-font-size: (18/15.384615385)*100%;
-$baseline-unitless: 27/(15.384615385*($base-font-size/100%));
+$base-font-size: (17/15.384615385)*100%;
+$baseline-unitless: 26/(15.384615385*($base-font-size/100%));
 $baseline: $baseline-unitless * 1rem;
 
 $color--darkest-grey: #404951;

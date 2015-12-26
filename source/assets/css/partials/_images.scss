@@ -1,3 +1,13 @@
 .bordered {
   border: 1px solid $color--lighter-grey;
 }
+
+figure {
+  img {
+    margin-bottom: .75rem;
+  }
+  figcaption {
+    opacity: .75;
+    font-size: 0.8rem;
+  }
+}

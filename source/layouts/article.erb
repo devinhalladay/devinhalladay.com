@@ -1,8 +1,10 @@
 <% wrap_layout :layout do %>
   <section class="site__content wrap padding-top">
     <div class="grid article__meta">
-      <h1 class="article__title text--centered"><%= current_page.title %></h1>
-      <p class="meta text--centered article__date"><%= current_page.date.strftime('%-d %B %Y') %></p>
+      <div class="grid__col grid__col--centered grid__col--6-of-12">
+        <h1 class="article__title"><%= current_page.title %></h1>
+        <p class="meta article__date"><%= current_page.date.strftime('%A %-d %B %Y') %></p>
+      </div>
     </div>
 
     <div class="grid">
