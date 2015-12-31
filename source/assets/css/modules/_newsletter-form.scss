@@ -26,6 +26,7 @@
   font-size: 0.9rem;
   background-color:#DADDDE;
   border:1px solid transparent;
+  transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
   outline:0;
   display:block;
   padding:0 1.25rem;
@@ -37,6 +38,7 @@
   &:focus {
     border-color: $color--accent;
     background-color:#fff;
+    transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
 
     &::-webkit-input-placeholder,
     &::-moz-placeholder,
@@ -48,18 +50,21 @@
 
 .form-textfield--icon {
   padding-left:3.125rem;
+  transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
 
   &+svg {
     width:3.125rem;
     height:3.125rem;
     fill:#A4A9AB;
+    transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
     display:block;
     padding:.875rem;
-    margin-top:-3.125rem
+    margin-top:-3.125rem;
   }
 
   &:focus+svg {
-    fill: $color--accent
+    fill: $color--accent;
+    transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 }
 

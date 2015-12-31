@@ -28,3 +28,6 @@ gem "highline"
 
 # For markdownify
 gem 'redcarpet'
+
+# For color manipulation in ERB templates
+gem 'colorist'

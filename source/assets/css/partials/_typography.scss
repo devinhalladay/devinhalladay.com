@@ -63,9 +63,11 @@ blockquote {
 }
 
 %link {
+  transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
   color: inherit;
 
   &:hover {
+    transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
     color: $color--accent;
   }
 }

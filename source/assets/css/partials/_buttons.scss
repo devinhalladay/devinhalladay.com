@@ -5,12 +5,12 @@
   font-family: $font--sans-serif;
   padding: 0.2em 0.6em;
   text-decoration: none;
-  transition: all 0.2s;
+  transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
 
   &:hover {
     color: #fff;
     background: darken($color--accent, 10%);
-    transition: all 0.2s;
+    transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 }
 

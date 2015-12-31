@@ -1,7 +1,7 @@
 <% wrap_layout :layout do %>
 
   <div class="site__hero">
-    <div class="site__hero__image" style="background-color: <%= current_page.data.color %>;"></div>
+    <div class="site__hero__image" style="background-color: #<%= current_page.data.color %>;"></div>
     <div class="site__hero__table">
       <div class="table__cell">
         <div class="grid wrap">
@@ -46,4 +46,6 @@
 
     <%= yield  %>
   </section>
+
+  <%= partial "call-to-action" %>
 <% end %>
