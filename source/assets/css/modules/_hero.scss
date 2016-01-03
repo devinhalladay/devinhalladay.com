@@ -1,42 +1,53 @@
 .site__hero__image {
-  height: 100%;
-  width: 100%;
   position: absolute;
+
+  width: 100%;
+  height: 100%;
+
   background-size: cover;
-  // background-position-y: 10%;
 }
 
 .site__hero {
   height: 420px;
+
   @media (max-width: 701px) {
     height: 420px;
   }
+
   @media (min-width: 1499px) {
     height: 540px;
   }
 }
 
 .site__hero__headline {
-  color: #fff;
-  padding-left: 0 !important;
   font-weight: 400;
+
+  padding-left: 0 !important;
+
   hyphens: none;
+
+  color: $white;
+
   .button {
+    font-size: .9em;
+
+    color: #4680ff;
     background-color: #fff;
-    color: #4680FF;
-    font-size: 0.9em;
   }
 }
 
 .site__hero__table {
-  display: table;
   position: absolute;
-  height: 100%;
+
+  display: table;
+
   width: 100%;
+  height: 100%;
 }
 
 .table__cell {
   display: table-cell;
+
   vertical-align: middle;
 }
 
@@ -44,6 +55,7 @@
   .site__hero {
     margin-bottom: 3em;
   }
+
   .site__hero__table {
     height: 78%;
   }

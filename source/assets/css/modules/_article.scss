@@ -1,7 +1,8 @@
 .article__title {
+  margin-bottom: 0;
+
   font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 0;
 }
 
 .article__meta {
@@ -19,13 +20,19 @@ article {
 
 .readnext {
   a {
-    display: block;
-    position: relative;
     font-family: $font--sans-serif;
-    background-color: #DADDDE;
-    color: $color--dark-grey;
+
+    position: relative;
+
+    display: block;
+
     padding: 1.875rem 1.25rem;
+
     transition: all ease .4s;
+
+    color: $color--dark-grey;
+    background-color: #daddde;
+
     text: {
       align: center;
       decoration: none;
@@ -33,22 +40,25 @@ article {
 
     &:active {
       z-index: 2000;
-      &::after {
-        content: '';
+      &:after {
         position: absolute;
+        z-index: -1;
         top: 0;
+        right: 0;
         bottom: 0;
         left: 0;
-        right: 0;
+
+        content: '';
+
         background-color: inherit;
-        z-index: -1;
       }
     }
 
     &:hover {
-      background-color: $color--accent;
-      color: $white;
       transition: all ease .4s;
+
+      color: $white;
+      background-color: $color--accent;
     }
   }
 

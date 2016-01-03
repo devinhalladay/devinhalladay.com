@@ -1,13 +1,10 @@
 .page__home {
   .banner {
-    padding: {
-      bottom: 0.6em;
-      top: 1.4em;
-    }
-    // border-bottom: 1px solid $color--lighter-grey;
     margin-bottom: 1.5em;
-    background: $color--accent;
+    padding: 1.4em 0 .6em;
+
     color: #fff;
+    background: $color--accent;
 
     a:hover {
       color: #fff;
@@ -22,18 +19,19 @@
     }
 
     .button {
-      background: none;
-      border: 1px solid #fff;
       color: #fff;
+      border: 1px solid #fff;
+      background: none;
 
       &:hover {
-        background: #fff;
         color: $color--accent !important;
+        background: #fff;
       }
 
       @media screen and (max-width: 434px) {
-        margin-top: 0.5em;
         display: inline-block;
+
+        margin-top: .5em;
       }
     }
   }

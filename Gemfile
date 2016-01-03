@@ -31,3 +31,6 @@ gem 'redcarpet'
 
 # For color manipulation in ERB templates
 gem 'colorist'
+
+# For autoprefixing CSS rules
+gem 'middleman-autoprefixer'

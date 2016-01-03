@@ -1,16 +1,20 @@
 .button {
-  background: $color--accent;
-  border-radius: 2px;
-  color: #fff;
-  font-family: $font--sans-serif;
-  padding: 0.2em 0.6em;
+  padding: .2em .6em;
+
+  transition: .2s cubic-bezier(.165, .84, .44, 1);
   text-decoration: none;
-  transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  color: $white;
+  border-radius: 2px;
+  background: $color--accent;
+
+  font-family: $font--sans-serif;
 
   &:hover {
-    color: #fff;
+    transition: .2s cubic-bezier(.165, .84, .44, 1);
+
+    color: $white;
     background: darken($color--accent, 10%);
-    transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 }
 

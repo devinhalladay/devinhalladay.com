@@ -1,17 +1,20 @@
 ::-webkit-input-placeholder {
-  color:#9CA3A6!important;
-  opacity:1!important;
-  transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: .4s cubic-bezier(.165, .84, .44, 1);
+
+  opacity: 1 !important;
+  color: #9ca3a6 !important;
 }
 
 ::-moz-placeholder {
-  color:#9CA3A6!important;
-  opacity:1!important;
-  transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: .4s cubic-bezier(.165, .84, .44, 1);
+
+  opacity: 1 !important;
+  color: #9ca3a6 !important;
 }
 
 :-ms-input-placeholder {
-  color:#9CA3A6!important;
-  opacity:1!important;
-  transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: .4s cubic-bezier(.165, .84, .44, 1);
+
+  opacity: 1 !important;
+  color: #9ca3a6 !important;
 }

@@ -4,32 +4,29 @@ html {
     size: $base-font-size;
   }
   line-height: $baseline-unitless;
-  -ms-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
+
   text-size-adjust: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -webkit-font-feature-settings: "liga" 1, "kern" 1;
-  -moz-font-feature-settings: "liga" 1, "kern" 1;
-  font-feature-settings: "liga" 1, "kern" 1;
-  -webkit-font-kerning: normal;
-  -moz-font-kerning: normal;
+  font-feature-settings: 'liga' 1, 'kern' 1;
   font-kerning: normal;
 
 
   @media (max-width: 860px) {
-    font-size: $base-font-size*.9;
+    font-size: $base-font-size * .9;
   }
 
   @media (max-width: 500px) {
-    font-size: $base-font-size*.8;
+    font-size: $base-font-size * .8;
   }
 }
 
 body {
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
+
+  min-height: 100vh;
+
   color: $color--dark-grey;
   background-color: $color--background;
 }

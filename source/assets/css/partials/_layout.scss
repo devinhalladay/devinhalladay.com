@@ -1,8 +1,8 @@
 .wrap {
-  padding: 0 2%;
-  max-width: 1200px;
   width: 100%;
+  max-width: 1200px;
   margin: auto;
+  padding: 0 2%;
 
   @media screen and (max-width: 1000px) {
     width: 90%;

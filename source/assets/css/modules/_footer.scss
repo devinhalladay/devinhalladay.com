@@ -1,11 +1,13 @@
 .site__footer {
-  background: #13171D;
-  color: #fff;
   font-family: $font--sans-serif;
+
+  color: #fff;
+  background: #13171d;
 
   p {
     margin-bottom: $baseline;
-    &+p {
+
+    & + p {
       text-indent: 0;
     }
   }

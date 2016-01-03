@@ -1,6 +1,7 @@
 .site__content {
-  flex: 1;
   padding-bottom: 2em;
+
+  flex: 1;
 
   &.padding-top {
     padding-top: 75px;
@@ -12,7 +13,7 @@
 }
 
 .page__home {
-  .site__content{
+  .site__content {
     padding-bottom: 0;
 
     @media screen and (max-width: 706px) {
@@ -21,7 +22,7 @@
   }
 }
 
-h2.post__title {
+.post__title {
   margin-bottom: 0;
 }
 
@@ -36,42 +37,47 @@ h2.post__title {
 }
 
 
-hr {
+%hr {
   height: auto;
-  border: none;
+
+  border: 0;
 }
 
 .hr--long {
-  @extend hr;
+  @extend %hr;
+
   height: 1px;
-  background: $color--lighter-grey;
-  border: none;
-  background: transparent;
-  border-top: 1px solid $color--lighter-grey;
-  margin-bottom: 1.64706rem;
   margin-top: 1.64706rem;
+  margin-bottom: 1.64706rem;
+
+  border: 0;
+  border-top: 1px solid $color--lighter-grey;
+  // background: $color--lighter-grey;
+  background: transparent;
 }
 
 .hr--short {
-  @extend hr;
+  @extend %hr;
+
   color: $color--lighter-grey;
-  &:after {
-    content: "* * *";
+
+  &::after {
+    font: {
+      size: 1.75rem;
+      family: $font--sans-serif;
+      weight: 700;
+    }
+    line-height: .857142857;
 
     display: block;
 
     margin-top: 2rem;
     margin-bottom: 1.75rem;
 
-    color: rgba(0,0,0,0.3);
-    letter-spacing: .2em;
-    line-height: .857142857;
+    content: '* * *';
     text-align: center;
+    letter-spacing: .2em;
 
-    font: {
-      size: 1.75rem;
-      family: $font--sans-serif;
-      weight: 700;
-    }
+    color: rgba(0, 0, 0, .3);
   }
 }

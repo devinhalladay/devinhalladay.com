@@ -1,21 +1,23 @@
 $font--sans-serif: 'acumin-pro', Helvetica, sans-serif;
 $font--serif: $font--sans-serif;
 
-$base-font-size: (17/15.384615385)*100%;
-$baseline-unitless: 26/(15.384615385*($base-font-size/100%));
+$base-font-size: (17 / 15.384615385) * 100%;
+$baseline-unitless: 26 / (15.384615385 * ($base-font-size / 100%));
 $baseline: $baseline-unitless * 1rem;
 
 $color--darkest-grey: #404951;
 $color--dark-grey: #3d464d;
 
-$color--light-grey: #8B9094;
+$color--light-grey: #8b9094;
 $color--lighter-grey: #c4c8ca;
-$color--lightest-grey: #F6F7F8;
+$color--lightest-grey: #f6f7f8;
 
-$color--background: #ffffff;
-$color--accent: #4E88FF;
+$white: #fff;
+
+$color--background: #fff;
+$color--accent: #4e88ff;
 // november 26th $color--accent: #2798FE;
-/* new green $color--accent: #4ACA77; */
+// new green $color--accent: #4ACA77;
 // $color--accent: #946AD7;
 // $color--accent: #8CB56B;
 // $color--accent: #58AEE7;

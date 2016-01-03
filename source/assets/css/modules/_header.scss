@@ -1,23 +1,32 @@
 .site__header {
   height: 90px;
-  background: #13171D;
-  color: #ffffff;
+
+  color: #fff;
+  background: #13171d;
 
   & > * {
     position: relative;
     top: 52%;
+
     transform: translateY(-52%);
   }
+
   a {
     @include vertical-align;
-    text-decoration: none;
-    color: #ffffff;
+
     font-size: 20px;
     line-height: 1.2;
+
+    text-decoration: none;
+
+    color: #fff;
+
     &.current {
       font-weight: 700;
+
       color: #fff;
     }
+
     &:hover {
       color: #fff;
     }
@@ -25,16 +34,20 @@
 }
 
 .header__link--name {
-  color: #fff;
-  float: left;
   @include vertical-align;
+
+  float: left;
+
+  color: #fff;
 }
 
 .site__header__nav {
-  float: right;
   @include vertical-align;
+
+  float: right;
+
   ul {
-    @include horizontal-list($padding: $baseline/1.5, $direction: left);
+    @include horizontal-list($padding: $baseline / 1.5, $direction: left);
   }
 }
 

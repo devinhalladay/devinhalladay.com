@@ -7,6 +7,10 @@ compass_config do |config|
   config.output_style = :compact
 end
 
+activate :autoprefixer do |config|
+  config.browsers = ['last 2 versions', '> 10%']
+end
+
 ###
 # Page options, layouts, aliases and proxies
 ###
