@@ -3,7 +3,6 @@
 //= require vendor/slick
 //= require vendor/typed
 //= require vendor/fluidbox
-// // = require vendor/jribbble.min
 //= require vendor/responsive-nav
 //= require vendor/jquery-ui-custom
 //= require vendor/layzr
@@ -56,21 +55,3 @@ $(function () {
   window.onblur = function () { document.title = alttitle; };
   window.onfocus = function () { document.title = title; };
 });
-
-// API Ref: http://api.dribbble/players/:id/shots
-
-// $(document).ready(function(){
-//   $.jribbble.getShotsByPlayerId('devinhalladay', function (playerShots) {
-//     var html = [];
-//     $.each(playerShots.shots, function (i, shot) {
-//       html.push('<div class="project grid__col grid__col--4-of-12">');
-//       html.push('<a href="' + shot.url + '">');
-//       html.push('<h2>' + shot.title + '</h2>');
-//       html.push('<figure>')
-//       html.push('<img src="' + shot.image_url + '" ');
-//       html.push('alt="' + shot.title + '"></figure></a></div>');
-//     });
-
-//     $('.dribbble-shots').html(html.join(''));
-//   }, {page: 1, per_page: 6});
-// });
