@@ -1,11 +1,4 @@
 ###
-# Top-level site configuration
-###
-
-activate :directory_indexes
-
-
-###
 # Assets, autoprefixer, and Compass configs
 ###
 
@@ -106,20 +99,12 @@ helpers do
     minutes > 0 ? "About a #{minutes} #{minutes_label}" : 'Less than a 1 minute'
   end
 
-  def method_name
-
-  end
-
   def active_link_to(caption, url, options = {})
     if current_page.url == "#{url}/"
       options[:class] = "current"
     end
 
     link_to(caption, url, options)
-  end
-
-  def is_blog_article?
-    !current_article.nil?
   end
 
   def lazy_image(link)
@@ -135,15 +120,15 @@ helpers do
 
 end
 
+activate :directory_indexes
+
 activate :deploy do |deploy|
   deploy.method = :rsync
   deploy.host   = '162.243.103.246'
   deploy.path   = '/var/www/devinhalladay.com/public_html/_site'
-  # Optional Settings
-  deploy.user  = 'root' # no default
-  # deploy.port  = 5309 # ssh port, default: 22
-  deploy.clean = true # remove orphaned files on remote host, default: false
-  # deploy.flags = '-rltgoDvzO --no-p --del' # add custom flags, default: -avz
+  deploy.user  = 'root'
+  # Set deploy.port to define a port for the deploy server. Defaults to 22.
+  deploy.clean = true # removes orphaned files on remote host, default: false
 end
 
 # Reload the browser automatically whenever files change
