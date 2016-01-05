@@ -1,8 +1,11 @@
 ###
-# Compass
+# Assets, autoprefixer, and Compass configs
 ###
 
-# Change Compass configuration
+set :css_dir, 'assets/css'
+set :js_dir, 'assets/js'
+set :images_dir, 'assets/images'
+
 compass_config do |config|
   config.output_style = :compact
 end
@@ -12,64 +15,60 @@ activate :autoprefixer do |config|
 end
 
 ###
-# Page options, layouts, aliases and proxies
+# Build Configuration
 ###
 
+configure :build do
+  activate :minify_css
+  activate :minify_javascript
+  activate :asset_hash
+end
+
+###
+# Blog and page setup, directory index config, sitemap config
+###
+
+activate :directory_indexes
+
+# Setup sitemap
+set :url_root, 'http://devinhalladay.com'
+activate :search_engine_sitemap
+
+set :partials_dir, 'partials'
+
+# Journal
 activate :blog do |blog|
-  # This will add a prefix to all links, template references and source paths
   blog.name   = "journal"
   blog.prefix = "journal"
 
   blog.permalink = ":title.html"
 
-  # Layout and Template
   blog.layout            = "article"
 end
 
+# Projects
 activate :blog do |blog|
-  # This will add a prefix to all links, template references and source paths
   blog.name   = "projects"
   blog.prefix = "projects"
 
   blog.permalink = ":title.html"
 
-  # Layout and Template
   blog.layout            = "project"
 end
 
+# Dedications
 activate :blog do |blog|
-  # This will add a prefix to all links, template references and source paths
   blog.name   = "dedicated"
   blog.prefix = "dedicated"
 
   blog.permalink = "to/:title.html"
 
-  # Layout and Template
   blog.layout            = "article"
 end
-
-activate :directory_indexes
-
-activate :deploy do |deploy|
-  deploy.method = :rsync
-  deploy.host   = '162.243.103.246'
-  deploy.path   = '/var/www/devinhalladay.com/public_html/_site'
-  # Optional Settings
-  deploy.user  = 'root' # no default
-  # deploy.port  = 5309 # ssh port, default: 22
-  deploy.clean = true # remove orphaned files on remote host, default: false
-  # deploy.flags = '-rltgoDvzO --no-p --del' # add custom flags, default: -avz
-end
-
 
 ###
 # Helpers
 ###
-
-# Reload the browser automatically whenever files change
-configure :development do
-  activate :livereload
-end
 
 # Methods defined in the helpers block are available in templates
 helpers do
@@ -113,38 +112,18 @@ helpers do
 
 end
 
-# sitemap
-set :url_root, 'http://devinhalladay.com'
-activate :search_engine_sitemap
+activate :deploy do |deploy|
+  deploy.method = :rsync
+  deploy.host   = '162.243.103.246'
+  deploy.path   = '/var/www/devinhalladay.com/public_html/_site'
+  # Optional Settings
+  deploy.user  = 'root' # no default
+  # deploy.port  = 5309 # ssh port, default: 22
+  deploy.clean = true # remove orphaned files on remote host, default: false
+  # deploy.flags = '-rltgoDvzO --no-p --del' # add custom flags, default: -avz
+end
 
-set :css_dir, 'assets/css'
-
-set :js_dir, 'assets/js'
-
-set :images_dir, 'assets/images'
-
-set :partials_dir, 'partials'
-
-# Build-specific configuration
-configure :build do
-  # For example, change the Compass output style for deployment
-  activate :minify_css
-
-  # Minify Javascript on build
-  activate :minify_javascript
-
-  # Enable cache buster
-  activate :asset_hash
-
-  # activate :asset_host
-  #
-  # set :asset_host do |asset|
-  #   '//devinhalladay.oddball1.netdna-cdn.com'
-  # end
-
-  # Use relative URLs
-  # activate :relative_assets
-
-  # Or use a different image path
-  # set :http_prefix, "/Content/images/"
+# Reload the browser automatically whenever files change
+configure :development do
+  activate :livereload
 end
