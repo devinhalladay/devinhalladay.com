@@ -1,5 +1,5 @@
 //= require vendor/jquery
-//= require vendor/jquery.jamcity
+// //= require vendor/jquery.jamcity
 //= require vendor/slick
 //= require vendor/typed
 //= require vendor/fluidbox
@@ -19,7 +19,6 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('.slick').slick();
 });
-
 
 // Parallax for hero headlines.
 $(window).scroll(function(e) {
@@ -51,7 +50,7 @@ $('#tlemail').keypress(function(e){
 // Change the page title when the tab is switched.
 $(function () {
   var title = document.title;
-  var alttitle = "Come back! ❤";
+  var alttitle = "❤ Come back!";
   window.onblur = function () { document.title = alttitle; };
   window.onfocus = function () { document.title = title; };
 });
