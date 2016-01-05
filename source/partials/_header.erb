@@ -4,10 +4,9 @@
     <nav class="site__header__nav nav-collapse">
       <ul>
         <% data.pages.each do |p| %>
-          <li>
-            <a href="<%= p.link %>" class="<% if current_page.url == p.link %>current<% end %>"><%= p.page %></a>
-          </li>
+          <%= link_to_page p.page, p.link[0...-1] %>
         <% end %>
+
       </ul>
     </nav>
   </div>

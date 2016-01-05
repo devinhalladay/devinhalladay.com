@@ -1,4 +1,11 @@
 ###
+# Top-level site configuration
+###
+
+activate :directory_indexes
+
+
+###
 # Assets, autoprefixer, and Compass configs
 ###
 
@@ -25,10 +32,9 @@ configure :build do
 end
 
 ###
-# Blog and page setup, directory index config, sitemap config
+# Blog and page setup sitemap config
 ###
 
-activate :directory_indexes
 
 # Setup sitemap
 set :url_root, 'http://devinhalladay.com'
@@ -78,6 +84,19 @@ helpers do
     end.sort_by { |article| article.data.weight }
   end
 
+  def link_to_page name, url
+    path = request.path
+    current = path =~ Regexp.new('^' + url[1..-1] + '.*\.html')
+
+    if path == 'index.html' and name == 'about'
+      current = true
+    end
+
+    class_name = current ? ' class="current"' : ''
+
+    "<li><a#{class_name} href=\"#{url}\">#{name}</a></li>"
+  end
+
   def reading_time(input)
     words_per_minute = 180
 
@@ -85,6 +104,10 @@ helpers do
     minutes = (words/words_per_minute).floor
     minutes_label = ' minute'
     minutes > 0 ? "About a #{minutes} #{minutes_label}" : 'Less than a 1 minute'
+  end
+
+  def method_name
+
   end
 
   def active_link_to(caption, url, options = {})
