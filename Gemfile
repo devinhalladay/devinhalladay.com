@@ -13,6 +13,7 @@ gem 'middleman-search_engine_sitemap'
 
 # For blog dependencies
 gem 'nokogiri'
+gem 'builder'
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
