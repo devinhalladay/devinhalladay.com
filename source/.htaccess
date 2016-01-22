@@ -1,14 +1,12 @@
-# BEGIN FEEDPRESS
-RewriteEngine On
-# RewriteCond %{HTTP_USER_AGENT} !FeedValidator [NC]
-# RewriteCond %{HTTP_USER_AGENT} !FeedPress [NC]
-# RewriteRule ^atom.xml http://feedpress.me/devinhalladay [R=302,NC,L]
-# END FEEDPRESS
-
 # BEGIN INDEX.HTML TO /
 RewriteRule ^index\.html$ / [R=301,L]
 RewriteRule ^(.*)/index\.html$ /$1/ [R=301,L]
 # END INDEX.HTML TO /
+
+# REMOVE WWW
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
 
 # Error Document
 ErrorDocument 404 /404/index.html

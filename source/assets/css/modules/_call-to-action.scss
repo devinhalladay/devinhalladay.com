@@ -1,0 +1,13 @@
+.call-to-action p,
+.call-to-action h2 {
+  text-align: center;
+  color: #fff;
+}
+
+.call-to-action {
+  padding-top: 3em;
+
+  .button {
+    background: darken(#6dbbdf, 50%);
+  }
+}
