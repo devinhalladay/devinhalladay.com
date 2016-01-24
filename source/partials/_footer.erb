@@ -24,8 +24,8 @@
       </div>
 
       <div class="grid__col grid__col--4-of-12">
-        <p><strong>Now Playing Nothing</strong></p>
-        <div class="jams">Mourning the death of Rdio.</div>
+        <p><strong>Now Playing</strong></p>
+        <div class="jams"></div>
       </div>
     </div>
   </div>
@@ -37,11 +37,11 @@
 
 <script data-no-instant>InstantClick.init();</script>
 <script>
-  // $(".jams").JamCity({
-  //   apiKey: '02adf7de5c1121bbab028c6c07233e68',
-  //   username: 'devinhalladay',
-  //   fetch: 1
-  // });
+  $(".jams").JamCity({
+    apiKey: '02adf7de5c1121bbab028c6c07233e68',
+    username: 'devinhalladay',
+    fetch: 1
+  });
 
   $("figure a").fluidbox({
     closeTrigger: [
