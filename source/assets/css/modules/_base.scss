@@ -11,6 +11,9 @@ html {
   font-feature-settings: 'liga' 1, 'kern' 1;
   font-kerning: normal;
 
+  background-color: $color--accent;
+
+
 
   @media (max-width: 860px) {
     font-size: $base-font-size * .9;

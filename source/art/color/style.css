@@ -1,0 +1,28 @@
+body {margin:0; padding:0; overflow-y: hidden;} /* remove top and left whitespace */
+canvas {display:block;}    /* remove scrollbars */
+canvas:focus {outline:0;} /* remove blue outline around canvas */
+
+#info{
+  font-family: "helvetica";
+  background:white;
+  color:black;
+  opacity:0.9;
+
+  height: 60%; /* Set your own height: percents, ems, whatever! */
+  width: 50%; /* Set your own width: percents, ems, whatever! */
+  overflow: visible; /* Recommended in case content is larger than the container */
+  margin: auto; /* Center the item vertically & horizontally */
+  position: absolute; /* Break it out of the regular flow */
+  top: 0; left: 0; bottom: 0; right: 0; /* Set the bounds in which to center it, relative to its parent/container */
+
+  text-align:center;
+
+}
+
+#info h1,p,h2{
+  margin:20px;
+}
+
+#info p{
+  font-size:20px;
+}
