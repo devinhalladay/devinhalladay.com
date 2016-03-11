@@ -1,8 +1,3 @@
-# - page: Projects
-#   link: /
-#   link2: projects
-#   title: Selected Projects
-
 - page: Journal
   link: /journal/
   title: Journal
@@ -10,10 +5,6 @@
 - page: Profile
   link: /profile/
   title: About Me
-
-# - page: Dedications
-#   link: dedicated
-#   title: Dedications
 
 - page: Contact
   link: /contact/

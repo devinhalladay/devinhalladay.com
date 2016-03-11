@@ -60,8 +60,8 @@ end
 desc "Create a new project."
 task :project do
   # Define project variables by prompting
-  title       = ask "Enter the title: "
-  description   = ask "Enter the project description here: "
+  title = ask "Enter the title: "
+  description = ask "Enter the project description here: "
   intro = ask "Enter project intro here: "
   scope = ask "Enter project scopes here, separated by commas: "
   weight = ask "Enter a number for the post's weight: "
