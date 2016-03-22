@@ -2,6 +2,13 @@
 <html>
   <head>
     <%= partial "meta" %>
+    <% if current_page.data.color %>
+      <style>
+        html {
+          background-color: <%= current_page.data.color %>
+        }
+      </style>
+    <% end %>
   </head>
 
   <body class="<% if current_page.data.classes %><%= current_page.data.classes %><% end %>">

@@ -4,7 +4,7 @@ title: Logos &amp; Marks
 cover_image: "/assets/images/2014/10/logos-cover-800.jpg"
 class: "page__project page__project--logos"
 color: "#4680FF"
-weight: 5
+weight: 8
 
 description: "A collection of random logos &amp; marks that I'm especially proud of."
 
@@ -16,10 +16,14 @@ scope:
   - Type Design
 ---
 <div class="grid">
+  <div class="grid__col grid__col--6-of-12">
+    <%= partial( "full-width-image", :locals => { :url => "/assets/images/2016/03/boulder-logo.jpg", :alt => "Boulder Logo" }) %>
+  </div>
 
   <div class="grid__col grid__col--6-of-12">
     <%= partial( "full-width-image", :locals => { :url => "/assets/images/2015/06/logos/sshhh.jpg", :alt => "Sshhh Logo" }) %>
   </div>
+
   <div class="grid__col grid__col--6-of-12"><%= partial( "full-width-image", :locals => { :url => "/assets/images/2014/10/logos/blitz-800.png", :alt => "Blitz" }) %></div>
 
   <div class="grid__col grid__col--6-of-12"><%= partial( "full-width-image", :locals => { :url => "/assets/images/2014/10/logos/the-guild-800.jpg", :alt => "The Guild" }) %></div>
