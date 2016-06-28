@@ -1,5 +1,3 @@
-activate :livereload
-activate :directory_indexes
 activate :autoprefixer
 
 set :markdown_engine, :redcarpet
@@ -10,7 +8,7 @@ def foo(fruit: 'apple', cut: "sliced", topping: "ice cream")
   [fruit, cut, topping]
 end
 
-def activate_blog(blog_name, article_layout, article_source: "{year}-{month}-{day}-{title}", blog_permalink: "{title}.html")
+def activate_blog(blog_name, article_layout, article_source: "{year}-{month}-{day}-{title}", blog_permalink: "{title}")
   activate :blog do |b|
     b.sources = article_source
     b.name = blog_name
@@ -36,6 +34,12 @@ helpers do
 
     link_to(caption, url, options)
   end
+end
+
+activate :directory_indexes
+
+configure :development do
+  activate :livereload
 end
 
 configure :build do
