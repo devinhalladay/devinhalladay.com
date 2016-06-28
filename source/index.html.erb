@@ -37,22 +37,22 @@ title: Devin Halladay, Designer and Writer
 
 <section class="c-selected-work">
   <div class="o-grid">
-    <a href="/test">
-      <div class="o-col o-col--12-of-12">
-        <div class="c-work-overlay">
-          <!-- <%= image_tag '/images/nike_hero.png' %> -->
+    <% blog('work').articles.each do |work| %>
+      <a href="<%= work.url %>">
+        <div class="o-col o-col--12-of-12">
+          <div class="c-work-overlay">
+            <picture>
+              <source media="(min-width: 1441px)" srcset="/images/<%= work.title.downcase %>/large.jpg">
+              <source media="(min-width: 1020px)" srcset="/images/<%= work.title.downcase %>/large-sm.jpg">
+              <source media="(min-width: 680px)" srcset="/images/<%= work.title.downcase %>/med.jpg">
+              <source srcset="/images/<%= work.title.downcase %>/small.jpg">
+              <img alt="<%= work.title %>" srcset="">
+            </picture>
 
-          <picture>
-            <source media="(min-width: 1441px)" srcset="/images/nike/large.jpg">
-            <source media="(min-width: 1020px)" srcset="/images/nike/large-sm.jpg">
-            <source media="(min-width: 680px)" srcset="/images/nike/med.jpg">
-            <source srcset="/images/nike/small.jpg">
-            <img alt="Nike" srcset="">
-          </picture>
-
-          <h2 class="u-font-sans">Nike</h2>
+            <h2 class="u-font-sans"><%= work.title %></h2>
+          </div>
         </div>
-      </div>
-    </a>
+      </a>
+    <% end %>
   </div>
 </section>
