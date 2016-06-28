@@ -1,7 +1,7 @@
 ---
 title: Designed with Love
 ---
-<p class="text--lead">I love design. Its uncanny ability to make any person feel a wide range of emotions is absolutely fascinating. As designers, we hold the power of emotion in our hands—we can use color theory to evoke emotions, whitespace to draw attention, and so much more. That fact makes it clear that we need to pay attention to every pixel and give an equal amount of care to every single detail in what we are designing, in order to honestly and efficiently harness emotion. We need to design with <i>love</i>.</p>
+I love design. Its uncanny ability to make any person feel a wide range of emotions is absolutely fascinating. As designers, we hold the power of emotion in our hands—we can use color theory to evoke emotions, whitespace to draw attention, and so much more. That fact makes it clear that we need to pay attention to every pixel and give an equal amount of care to every single detail in what we are designing, in order to honestly and efficiently harness emotion. We need to design with *love*.
 
 Everything around us is designed—from the seat you're sitting on to the sheets of paper sitting in your printer. That sheet of paper, as simple as it may seem, was meticulously designed by someone just like me—someone just like you. The thickness of the paper was a design choice, allowing vendors to fit more in a pack and cutting the cost of production. The white color of the paper was a design choice — it is practical, and also conveys great emotion: that of having a clean slate. Paper has been designed and redesigned time after time since about the year 105 A.D. It was designed with love and care, with the single purpose of giving your content, be it art, text, or anything else, a place to *shine*.
 

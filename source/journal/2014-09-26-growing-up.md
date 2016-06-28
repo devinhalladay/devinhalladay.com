@@ -2,7 +2,7 @@
 title: Growing Up
 published: false
 ---
-<span class="text--lead">I'll be 18 years old in 42 days. That's crazy. In fact, it's terrifying.</span>
+I'll be 18 years old in 42 days. That's crazy. In fact, it's terrifying.
 
 <hr class="hr--short">
 
