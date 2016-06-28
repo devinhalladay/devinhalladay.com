@@ -4,6 +4,9 @@ This is my home online. It's always in transition.
 
 Currently, as it has been for the past two years, my site is running on Middleman. I like it—it allows full customization of every aspect of the system through plugins and helper methods as well as vast configuration potential.
 
+## Current version
+This is the newest iteration of my site, still under development and not yet live. To view the site that is currently published, switch over to the `2015` branch.
+
 ## Getting started
 If, for whatever reason, you want to load up my site in a local server, follow these steps. If you have issues, it's on you to figure them out because I don't offer support for other people on this repo.
 
@@ -12,3 +15,6 @@ If, for whatever reason, you want to load up my site in a local server, follow t
 3. Run `bundle install` to install gem requirements.
 4. Run `bundle exec middleman server`
 5. Open up localhost:4567 in your browser and you should be good to go.
+
+## Past versions
+Past versions are contained in other branches. From this point on, I will create a new branch for each previous version with the branch name being the year in which is was released. This makes it easier to archive designs and go back to them at a later date.
