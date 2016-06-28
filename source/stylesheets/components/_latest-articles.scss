@@ -1,8 +1,12 @@
 .c-latest-articles {
+  .article:nth-child(1) {
+    border-right: 1px solid $meta-color;
+  }
   a {
     text-decoration: none;
   }
   p {
+    text-align: justify;
     a {
       text-decoration: underline;
     }
