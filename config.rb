@@ -10,23 +10,12 @@ def foo(fruit: 'apple', cut: "sliced", topping: "ice cream")
   [fruit, cut, topping]
 end
 
-def activate_blog(blog_name, article_layout, *article_source, *blog_permalink)
+def activate_blog(blog_name, article_layout, article_source: "{year}-{month}-{day}-{title}", blog_permalink: "{title}.html")
   activate :blog do |b|
-    if defined? article_source
-      b.sources = article_source
-    else
-      b.sources = "#{blog_name}/{year}-{month}-{day}-{title}"
-    end
-
+    b.sources = article_source
     b.name = blog_name
     b.prefix = blog_name
-
-    if defined? blog_permalink
-      b.permalink = blog_permalink
-    else
-      b.permalink = "{title}.html"
-    end
-
+    b.permalink = blog_permalink
     b.layout = article_layout
   end
 end
