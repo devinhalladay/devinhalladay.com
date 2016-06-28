@@ -14,7 +14,10 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <%= partial "partials/fullscreen-navigation" %>
-    <%= yield %>
+    <div class="container">
+      <header><%= partial "partials/fullscreen-navigation" %></header>
+
+      <%= yield %>
+    </div>
   </body>
 </html>

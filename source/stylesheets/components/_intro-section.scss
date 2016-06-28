@@ -1,0 +1,20 @@
+.intro-section {
+  background-color: $light-color;
+  height: 620px;
+  text-align: center;
+  h1 {
+    margin-top: 0;
+    font-family: $display-serif;
+    font-size: 3em;
+    line-height: 60px;
+    padding-top: 60px;
+  }
+  hr {
+    height: 220px;
+    border-color: $black;
+  }
+  p {
+    font-family: $sans-serif;
+    font-size: 20px;
+  }
+}

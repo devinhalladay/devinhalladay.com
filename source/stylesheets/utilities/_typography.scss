@@ -1,0 +1,57 @@
+.u-font-center,
+%u-font-center {
+    text-align: center !important;
+}
+
+.u-font-left,
+%u-font-left {
+    text-align: left !important;
+}
+
+.u-font-right,
+%u-font-right {
+    text-align: right !important;
+}
+
+.u-font-small,
+%u-font-small {
+    font-size: 0.85em;
+    line-height: 1.8;
+}
+
+.u-font-strong,
+%u-font-strong {
+    font-weight: 600;
+}
+
+.u-font-black,
+%u-font-black {
+    color: $black;
+}
+
+.u-font-meta,
+%u-font-meta {
+    color: $meta-color;
+}
+
+.u-font-wrap,
+%u-font-wrap {
+    white-space: normal;
+}
+
+.u-font-nowrap,
+%u-font-nowrap {
+    white-space: nowrap;
+}
+
+.u-font-caps,
+%u-font-caps {
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-feature-settings: "c2sc" 1, "smcp" 1;
+}
+
+.u-font-sans,
+%u-font-sans {
+    font-family: $sans-serif;
+}

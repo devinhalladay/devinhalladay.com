@@ -1,3 +1,7 @@
+h1 {
+  font-family: $display-serif;
+}
+
 a {
   text-decoration: underline;
   color: inherit;
@@ -10,15 +14,6 @@ a {
 code, pre {
   font-family: $monospace;
   font-size: .875rem;
-}
-
-hr {
-  padding-top: $baseline;
-  margin-top: -2px;
-  margin-bottom: $baseline * 2;
-  color: $meta-color;
-  border: none;
-  border-bottom: 1px solid #A1A1A1;
 }
 
 .meta {
@@ -39,4 +34,10 @@ blockquote {
 .caps {
   font-feature-settings: "smcp", "c2sc", "lnum";
   letter-spacing: .05em;
+}
+
+.hr-vertical {
+  width: 1px;
+  border: none;
+  border-left: 1px solid;
 }

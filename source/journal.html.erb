@@ -1,10 +1,14 @@
 ---
 title: Journal
 ---
-<% blog('journal').articles.each do |article| %>
-  <a href="<%= article.url %>">
-    <h2><%= article.title %></h2>
-  </a>
-  <small><%= article.date.strftime('%A %-d %B %Y') %></small>
-  <hr>
-<% end %>
+<div class="o-grid">
+  <div class="o-col--7-of-12 o-col--centered">
+    <% blog('journal').articles.each do |article| %>
+      <a href="<%= article.url %>">
+        <h2><%= article.title %></h2>
+      </a>
+      <small><%= article.date.strftime('%A %-d %B %Y') %></small>
+      <hr>
+    <% end %>
+  </div>
+</div>
