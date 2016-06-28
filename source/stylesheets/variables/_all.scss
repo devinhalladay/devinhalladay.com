@@ -1,17 +1,3 @@
-$white: #ffffff;
-$black: #05223F;
-
-$site-color: #72B6EC;
-$text-color: #3D464D;
-$meta-color: #9EA3A6;
-
-$monospace: "Input Mono", "Source Code Pro", "Monaco", monospace;
-
-$sans-serif-fallback: "Helvetica Neue", Helvetica, sans-serif;
-$sans-serif: "Vaud", $sans-serif-fallback;
-
-$text-serif-fallback: "Georgia", "Times New Roman", serif;
-$text-serif: "Periodico Text", $text-serif-fallback;
-
-$display-serif-fallback: "Georgia", "Times New Roman", serif;
-$display-serif: "Periodico Text", $display-serif-fallback;
+@import "units";
+@import "fonts";
+@import "colors";
