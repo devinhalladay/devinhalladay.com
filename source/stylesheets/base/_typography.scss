@@ -5,6 +5,7 @@ h1 {
 a {
   text-decoration: underline;
   color: inherit;
+  cursor: pointer;
 
   &:hover, &:focus {
     color: $site-color;
