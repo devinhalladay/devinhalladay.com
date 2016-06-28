@@ -1,3 +1,34 @@
 ---
 title: Devin Halladay, Designer and Writer
 ---
+<div class="o-grid">
+  <div class="o-col o-col--6-of-12">
+    <div class="intro-section">
+      <h1>Devin<br>Halladay</h1>
+      <hr class="hr-vertical">
+      <p><strong>Designer &amp; writer.</strong><br>Currently reinventing myself.</p>
+    </div>
+  </div>
+  <div class="o-col o-col--6-of-12">
+    <%= image_tag 'https://scontent.fdtw1-1.fna.fbcdn.net/t31.0-8/12119984_1126442124050795_9076425020372004969_o.jpg' %>
+  </div>
+</div>
+
+<hr>
+<p class="meta u-font-sans u-font-center">Latest Articles</p>
+<hr>
+
+<section class="c-latest-articles">
+  <div class="o-grid">
+    <% blog('journal').articles[0...2].each do |article| %>
+      <div class="o-col o-col--6-of-12">
+        <a href="<%= article.url %>">
+          <h1><%= article.title %></h1>
+        </a>
+        <p><%= Nokogiri::HTML(article.summary).text %> <a href="<%= article.url %>">Read more</a></p>
+      </div>
+    <% end %>
+  </div>
+</section>
+
+<hr>

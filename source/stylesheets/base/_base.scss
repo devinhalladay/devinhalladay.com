@@ -6,3 +6,10 @@ html {
   -webkit-font-smoothing: antialiased;
   font-feature-settings: "liga", "hist", "onum";
 }
+
+.container {
+  max-width: 1390px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+}
