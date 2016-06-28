@@ -125,7 +125,7 @@ activate :directory_indexes
 activate :deploy do |deploy|
   deploy.method = :rsync
   deploy.host   = '162.243.103.246'
-  deploy.path   = '/var/www/wolffolins.devinhalladay.com/public_html'
+  deploy.path   = '/var/www/devinhalladay.com/public_html/_site'
   deploy.user  = 'root'
   # Set deploy.port to define a port for the deploy server. Defaults to 22.
   deploy.clean = true # removes orphaned files on remote host, default: false
