@@ -35,3 +35,8 @@ blockquote {
     font-style: normal;
   }
 }
+
+.caps {
+  font-feature-settings: "smcp", "c2sc", "lnum";
+  letter-spacing: .05em;
+}
