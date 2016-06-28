@@ -3,11 +3,6 @@ activate :autoprefixer
 set :markdown_engine, :redcarpet
 
 # Bring blog activation into a function to save typing and space
-
-def foo(fruit: 'apple', cut: "sliced", topping: "ice cream")
-  [fruit, cut, topping]
-end
-
 def activate_blog(blog_name, article_layout, article_source: "{year}-{month}-{day}-{title}", blog_permalink: "{title}")
   activate :blog do |b|
     b.sources = article_source
