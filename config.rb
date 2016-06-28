@@ -14,7 +14,7 @@ def activate_blog(blog_name, article_layout, article_source: "{year}-{month}-{da
 end
 
 # Activate and configure blogs
-activate_blog("journal", "layout")
+activate_blog("journal", "article")
 activate_blog("work", "layout")
 # activate_blog("dedicated", "to/{title}.html", "layout")
 
