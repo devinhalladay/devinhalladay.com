@@ -2,7 +2,7 @@
 title: Understanding Myself
 published: false
 ---
-<span class="text--lead">I've taken some time to think about an article I wrote yesterday (it has since been removed). If you saw that article, I want to make a few things more clear and try to explain myself a bit more. If you didn't see the article, you should be thankful—it was terrible. So, here it goes.</span>
+I've taken some time to think about an article I wrote yesterday (it has since been removed). If you saw that article, I want to make a few things more clear and try to explain myself a bit more. If you didn't see the article, you should be thankful—it was terrible. So, here it goes.
 
 In my last column, I wrote some pretty harsh stuff, and it was extremely conceited. I regret that. You see, I'm an egotist, and I can be extremely obnoxious at times. I've only just started to accept this fact in the last month or two. That's a problem, and I need to fix it. In part, I think this is a defense mechanism. I've worked hard to learn and soak up a lot of knowledge in my life. It bothers me that not everyone else has this desire to learn about everything, but that doesn't give me the right to be a jerk to them. So I put out a front because I don't want to be seen as someone who is ignorant or who doesn't value knowledge—when in fact my actions do just the opposite. This is a problem that I need to fix, but old habits are hard to break. It's going to take some work, but I'll get past this eventually.
 

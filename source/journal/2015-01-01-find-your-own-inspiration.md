@@ -1,7 +1,7 @@
 ---
 title: "Find Your Own Inspiration"
 ---
-<span class="text--lead">One thing that really bothers me about a lot of designers and other creative professionals (including myself) is that we focus too much on "inspiration." Inspiration is good thing. It helps us move, it helps us hustle. It drives passion and action. My problem is not with inspiration itself, but with the fact that many of us are looking for inspiration in all the wrong places.</span>
+One thing that really bothers me about a lot of designers and other creative professionals (including myself) is that we focus too much on "inspiration." Inspiration is good thing. It helps us move, it helps us hustle. It drives passion and action. My problem is not with inspiration itself, but with the fact that many of us are looking for inspiration in all the wrong places.
 
 A few days ago I found myself reading an article (I'd link to it here but I can't find it) about the books Steve Jobs recommended everyone read. I finished the article, looked up from my screen, and pondered for a second. *Why the hell am I reading this article?* I've already read every book on the list *at least* once. That's when I came to a realization: **I'm looking for inspiration in the wrong places.**
 
