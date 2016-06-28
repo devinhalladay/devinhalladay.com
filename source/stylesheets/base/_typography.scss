@@ -42,3 +42,13 @@ blockquote {
   border: none;
   border-left: 1px solid;
 }
+
+hr {
+  box-sizing: content-box;
+  overflow: visible;
+  height: 1px;
+  margin-top: 1.64706rem;
+  margin-bottom: 1.64706rem;
+  border: 0;
+  border-top: 1px solid $meta-color;
+}

@@ -1,27 +1,22 @@
 ---
 title: Devin Halladay, Designer and Writer
 ---
-<div class="o-grid">
-  <div class="o-col o-col--12-of-12">
     <div class="intro-section">
       <h1>Devin<br>Halladay</h1>
       <hr class="hr-vertical">
       <p><strong>Designer &amp; writer.</strong><br>Currently reinventing myself.</p>
     </div>
-  </div>
+
   <!-- <div class="o-col o-col--6-of-12">
     <%= image_tag 'https://scontent.fdtw1-1.fna.fbcdn.net/t31.0-8/12119984_1126442124050795_9076425020372004969_o.jpg' %>
   </div> -->
-</div>
 
-<hr>
-<p class="meta u-font-sans u-font-center">Latest Articles</p>
-<hr>
+<%= partial("partials/section-title", :locals => { :title => "Latest Articles" }) %>
 
 <section class="c-latest-articles">
-  <div class="o-grid">
+  <div class="row">
     <% blog('journal').articles[0...2].each do |article| %>
-      <div class="o-col o-col--6-of-12">
+      <div class="article col-xs-6">
         <a href="<%= article.url %>">
           <h1><%= article.title %></h1>
         </a>
@@ -31,28 +26,28 @@ title: Devin Halladay, Designer and Writer
   </div>
 </section>
 
-<hr>
-<p class="meta u-font-sans u-font-center">Selected Work</p>
-<hr>
+<%= partial("partials/section-title", :locals => { :title => "Selected Work" }) %>
 
 <section class="c-selected-work">
-  <div class="o-grid">
-    <% blog('work').articles.each do |work| %>
-      <a href="<%= work.url %>">
-        <div class="o-col o-col--12-of-12">
-          <div class="c-work-overlay">
-            <picture>
-              <source media="(min-width: 1441px)" srcset="/images/<%= work.title.downcase %>/large.jpg">
-              <source media="(min-width: 1020px)" srcset="/images/<%= work.title.downcase %>/large-sm.jpg">
-              <source media="(min-width: 680px)" srcset="/images/<%= work.title.downcase %>/med.jpg">
-              <source srcset="/images/<%= work.title.downcase %>/small.jpg">
-              <img alt="<%= work.title %>" srcset="">
-            </picture>
+  <% blog('work').articles.each do |work| %>
+    <a href="<%= work.url %>">
+      <div class="c-work-overlay">
+        <picture>
+          <source media="(min-width: 1441px)" srcset="/images/<%= work.title.downcase %>/large.jpg">
+          <source media="(min-width: 1020px)" srcset="/images/<%= work.title.downcase %>/large-sm.jpg">
+          <source media="(min-width: 680px)" srcset="/images/<%= work.title.downcase %>/med.jpg">
+          <source srcset="/images/<%= work.title.downcase %>/small.jpg">
+          <img alt="<%= work.title %>" srcset="">
+        </picture>
 
-            <h2 class="u-font-sans"><%= work.title %></h2>
-          </div>
-        </div>
-      </a>
-    <% end %>
-  </div>
+        <h2 class="u-font-sans"><%= work.title %></h2>
+      </div>
+    </a>
+  <% end %>
+</section>
+
+<%= partial("partials/section-title", :locals => { :title => "Subscribe to my newsletter, Occasionally Absurd!" }) %>
+
+<section class="c-newsletter">
+  <h2 class="u-font-center u-font-mega"><span class="light-blue">Occasionally</span><br><span class="dark-blue">Absurd</span></h2>
 </section>

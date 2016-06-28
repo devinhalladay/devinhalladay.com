@@ -1,0 +1,13 @@
+.c-newsletter {
+  h2 {
+    margin-top: 2rem;
+    line-height: 1;
+    font-family: $display-serif;
+    .light-blue {
+      color: #10BEFC;
+    }
+    .dark-blue {
+      color: $site-color;
+    }
+  }
+}
