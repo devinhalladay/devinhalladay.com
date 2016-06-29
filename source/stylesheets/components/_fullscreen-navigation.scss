@@ -5,7 +5,6 @@ $button-width: 25px;
   font-family: $sans-serif;
   font-size: 15px;
   margin-top: 1.2em;
-  float: right;
   cursor: pointer;
   z-index: 150;
   transition: opacity .25s ease;
@@ -37,8 +36,10 @@ $button-width: 25px;
 
 .menu-title {
   margin-top: -5px;
-  margin-left: -3.5em;
-  position: absolute;
+  margin-right: 0.5em;
+  display: block;
+  position: relative;
+  float: left;
   color: $meta-color;
 }
 
@@ -47,6 +48,7 @@ $button-width: 25px;
   width: 18px;
   margin-right: 1em;
   display: block;
+  float: right;
   position: relative;
 }
 

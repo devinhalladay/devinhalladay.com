@@ -1,5 +1,19 @@
 header {
   height: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: stretch;
+  .line {
+    flex: 1;
+    height: 1px;
+    min-width: 100px;
+    max-width: 1080px;
+    padding-left: 0;
+    margin: auto;
+    border-bottom: 1px solid black;
+  }
 }
 
 .header-brand {
