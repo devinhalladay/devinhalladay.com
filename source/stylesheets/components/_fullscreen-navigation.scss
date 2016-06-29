@@ -4,11 +4,8 @@ $button-width: 25px;
 .button_container {
   font-family: $sans-serif;
   font-size: 15px;
-  position: fixed;
-  top: 20px;
-  right: 50px;
-  height: $button-height;
-  width: $button-width;
+  margin-top: 1.2em;
+  float: right;
   cursor: pointer;
   z-index: 150;
   transition: opacity .25s ease;
@@ -39,8 +36,8 @@ $button-width: 25px;
 
 
 .menu-title {
-  right: 30px;
-  top: -5px;
+  margin-top: -5px;
+  margin-left: -3.5em;
   position: absolute;
   color: $meta-color;
 }
@@ -48,7 +45,9 @@ $button-width: 25px;
 .menu-icon {
   border: none;
   width: 18px;
-  position: absolute;
+  margin-right: 1em;
+  display: block;
+  position: relative;
 }
 
 .menu-icon span {

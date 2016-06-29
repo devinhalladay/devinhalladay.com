@@ -20,7 +20,10 @@
 
   <body class="<%= page_classes %>">
     <div class="container">
-      <header><%= partial "partials/fullscreen-navigation" %></header>
+      <header>
+        <a href="/" class="header-brand">Devin Halladay</a>
+        <%= partial "partials/fullscreen-navigation" %>
+      </header>
 
       <%= yield %>
     </div>
@@ -36,6 +39,7 @@
         </nav>
         <p class="u-font-sans u-font-caps"><a href="mailto:studio@devinhalladay.com">studio@devinhalladay.com</a></p>
         <p><em>“Men must live and create. Live to the point of tears.”</em></p>
+        <p class="u-font-meta">Copyright &copy; &infin; Devin Halladay.</p>
       </div>
     </footer>
   </body>

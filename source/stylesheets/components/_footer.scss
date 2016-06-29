@@ -2,7 +2,11 @@ footer {
   @extend %u-font-center;
   background-color: $dark-black;
   color: $light-color;
+  p {
+    margin-bottom: 2em;
+  }
   nav {
+    margin-bottom: 2em;
     padding-top: 2em;
     ul {
       padding-left: 0;

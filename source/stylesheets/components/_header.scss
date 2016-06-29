@@ -1,3 +1,10 @@
 header {
   height: 50px;
 }
+
+.header-brand {
+  padding-top: 0.6em;
+  display: inline-block;
+  text-decoration: none;
+  font-family: $sans-serif;
+}
