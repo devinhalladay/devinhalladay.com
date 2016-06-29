@@ -75,7 +75,7 @@ $button-width: 25px;
 .overlay {
   font-family: $sans-serif;
   position: fixed;
-  background: $black;
+  background: rgba(23, 23, 23, 0.93);
   z-index: 100;
   top: 0;
   left: 0;
@@ -87,7 +87,7 @@ $button-width: 25px;
   overflow: hidden;
 
   &.open {
-    opacity: .9;
+    opacity: 1;
     visibility: visible;
     height: 100%;
     transition: opacity .35s, visibility .35s;

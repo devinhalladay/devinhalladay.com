@@ -1,28 +1,42 @@
 .c-newsletter {
   h2 {
-    margin-top: 2rem;
+    margin-top: 0;
     line-height: 1;
     font-family: $display-serif;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.3em;
     .light-blue {
       color: #10BEFC;
     }
     .dark-blue {
-      color: $site-color;
+      color: #007EFF;
     }
   }
   p {
     // Reset text alignment so the parent element does not center it.
     text-align: left;
+    margin-bottom: 0em;
   }
   input {
-    width: 100%;
+    width: calc(100% - 1em);
     font-family: $sans-serif;
-    padding: 10px 1em 0.3em;
-    border: 2px solid #10BEFC;
+    padding: 10px 0 0.3em 1em;
+    border: 1px solid $meta-color;
   }
   input:focus {
     outline: none;
-    border: 2px solid $site-color;
+    border: 1px solid $site-color;
+  }
+  .button {
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    margin-top: 1em;
+    padding: 0.6em 0 0.4em;
+    color: #fff;
+    font-family: $sans-serif;
+    background-color: #FF5B5B;
+    &:hover {
+      background-color: $site-color;
+    }
   }
 }
