@@ -25,7 +25,7 @@
   }
   input:focus {
     outline: none;
-    border: 1px solid $site-color;
+    border: 1px solid #10BEFC;
   }
   .button {
     text-decoration: none;
@@ -35,9 +35,9 @@
     padding: 0.6em 0 0.4em;
     color: #fff;
     font-family: $sans-serif;
-    background-color: #FF5B5B;
+    background-color: #10BEFC;
     &:hover {
-      background-color: $site-color;
+      background-color: #007EFF;
     }
   }
 }
