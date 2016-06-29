@@ -3,11 +3,26 @@
     margin-top: 2rem;
     line-height: 1;
     font-family: $display-serif;
+    margin-bottom: 0.5em;
     .light-blue {
       color: #10BEFC;
     }
     .dark-blue {
       color: $site-color;
     }
+  }
+  p {
+    // Reset text alignment so the parent element does not center it.
+    text-align: left;
+  }
+  input {
+    width: 100%;
+    font-family: $sans-serif;
+    padding: 10px 1em 0.3em;
+    border: 2px solid #10BEFC;
+  }
+  input:focus {
+    outline: none;
+    border: 2px solid $site-color;
   }
 }

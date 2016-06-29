@@ -1,0 +1,17 @@
+footer {
+  @extend %u-font-center;
+  background-color: $dark-black;
+  color: $light-color;
+  nav {
+    padding-top: 2em;
+    ul {
+      padding-left: 0;
+    }
+  }
+  nav li {
+    display: inline-block;
+    &:not(:last-child) {
+      padding-right: 1em;
+    }
+  }
+}

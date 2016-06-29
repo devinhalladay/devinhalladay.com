@@ -32,10 +32,7 @@ helpers do
 end
 
 activate :directory_indexes
-
-configure :development do
-  activate :livereload
-end
+activate :livereload
 
 configure :build do
   activate :minify_css
