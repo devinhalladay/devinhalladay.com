@@ -24,5 +24,19 @@
 
       <%= yield %>
     </div>
+    <footer>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><%= active_link_to 'Home', '/' %></li>
+            <li><%= active_link_to 'Journal', '/journal' %></li>
+            <li><%= active_link_to 'Profile', '/profile' %></li>
+            <li><%= active_link_to 'Contact', '/contact' %></li>
+          </ul>
+        </nav>
+        <p class="u-font-sans u-font-caps"><a href="mailto:studio@devinhalladay.com">studio@devinhalladay.com</a></p>
+        <p><em>“Men must live and create. Live to the point of tears.”</em></p>
+      </div>
+    </footer>
   </body>
 </html>
