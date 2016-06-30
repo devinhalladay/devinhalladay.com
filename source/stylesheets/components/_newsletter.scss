@@ -5,6 +5,9 @@
     line-height: 1;
     font-family: $display-serif;
     margin-bottom: 0.3em;
+    @media all and (max-width: 48em) {
+      font-size: 3em;
+    }
     .light-blue {
       color: #10BEFC;
     }
