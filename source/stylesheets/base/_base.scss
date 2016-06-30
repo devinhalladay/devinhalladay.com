@@ -13,4 +13,8 @@ html {
   padding-right: 50px;
   padding-bottom: 2em;
   margin: auto;
+  @media (max-width: $breakpoint-small) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
