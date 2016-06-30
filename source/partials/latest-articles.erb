@@ -1,0 +1,14 @@
+<%= partial("partials/section-title", :locals => { :title => "Latest Articles" }) %>
+
+<section class="c-latest-articles">
+  <div class="row">
+    <% blog('journal').articles[0...2].each do |article| %>
+      <div class="article col-xs-12 col-sm-6">
+        <a href="<%= article.url %>">
+          <h1><%= article.title %></h1>
+        </a>
+        <p><%= Nokogiri::HTML(article.summary).text %> <a href="<%= article.url %>">Read more</a></p>
+      </div>
+    <% end %>
+  </div>
+</section>

@@ -2,6 +2,10 @@ h1 {
   font-family: $display-serif;
 }
 
+h1, h2 {
+  color: #13171D;
+}
+
 a {
   text-decoration: underline;
   color: inherit;
@@ -30,6 +34,11 @@ blockquote {
     font-weight: 400;
     font-style: normal;
   }
+}
+
+figcaption {
+  font-family: $sans-serif;
+  color: $meta-color;
 }
 
 .caps {
