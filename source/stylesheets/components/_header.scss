@@ -13,6 +13,10 @@ header {
     padding-left: 0;
     margin: auto;
     border-bottom: 1px solid black;
+    @media (max-width: 410px) {
+      display: none;
+    }
+
   }
 }
 
@@ -21,4 +25,9 @@ header {
   display: inline-block;
   text-decoration: none;
   font-family: $sans-serif;
+  margin-right: 1em;
+}
+
+.button_container {
+  margin-left: 1em;
 }
