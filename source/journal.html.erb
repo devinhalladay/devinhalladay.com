@@ -1,11 +1,16 @@
 ---
 title: Journal
 ---
+<div class="row">
+  <div class="col-xs-12">
+    <h1 class="u-font-mega u-font-center">Journal</h1>
+  </div>
+</div>
 <section>
   <div class="row">
     <% blog('journal').articles.each do |article| %>
-      <div class="article col-xs-6">
-        <a href="<%= article.url %>">
+      <div class="article col-xs-12 col-sm-6">
+        <a class="article-title" href="<%= article.url %>">
           <h1><%= article.title %></h1>
         </a>
         <small class="u-font-meta u-font-sans"><%= article.date.strftime('%A %-d %B %Y') %></small>
@@ -14,3 +19,5 @@ title: Journal
     <% end %>
   </div>
 </section>
+
+<%= partial "partials/newsletter-form" %>

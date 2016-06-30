@@ -5,6 +5,11 @@ header {
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: stretch;
+
+  @media all and (max-width: 48em) {
+    border-bottom: 1px solid $black;
+  }
+
   .line {
     flex: 1;
     height: 1px;
@@ -12,7 +17,7 @@ header {
     max-width: 1080px;
     padding-left: 0;
     margin: auto;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid $black;
     @media (max-width: 410px) {
       display: none;
     }

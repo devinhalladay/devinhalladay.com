@@ -8,3 +8,15 @@ article {
     margin-top: 0.5em;
   }
 }
+
+.article {
+  .article-title {
+    text-decoration: none;
+    h1 {
+      margin-bottom: 0;
+      line-height: 1.2;
+      font-family: $text-serif;
+      font-weight: 400;
+    }
+  }
+}
