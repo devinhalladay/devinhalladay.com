@@ -1,7 +1,7 @@
 footer {
   @extend %u-font-center;
-  background-color: $dark-black;
-  color: $light-color;
+  background-color: $dark-white;
+  color: $black;
   p {
     margin-bottom: 2em;
   }
@@ -17,5 +17,9 @@ footer {
     &:not(:last-child) {
       padding-right: 1em;
     }
+  }
+  .u-font-meta {
+    color: $black;
+    opacity: 0.5;
   }
 }
