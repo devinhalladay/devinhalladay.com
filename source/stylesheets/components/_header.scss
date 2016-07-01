@@ -1,5 +1,5 @@
 header {
-  height: 50px;
+  height: 4em;
   display: flex;
   flex-flow: row wrap;
   flex-wrap: wrap;
@@ -26,7 +26,7 @@ header {
 }
 
 .header-brand {
-  padding-top: 0.6em;
+  padding-top: 1.2em;
   display: inline-block;
   text-decoration: none;
   font-family: $sans-serif;
