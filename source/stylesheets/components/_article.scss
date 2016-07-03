@@ -9,6 +9,10 @@ article {
     padding-bottom: 1em;
     margin-bottom: .2em;
     border-bottom: 1px solid $dark-white;
+    @media all and (max-width: 48em) {
+      font-size: 3em;
+      padding-bottom: .5em;
+    }
   }
 }
 

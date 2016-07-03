@@ -55,10 +55,10 @@ $button-width: 25px;
   background: $site-color;
   border: none;
   height: 2px;
-  width: 100%;
+  width: 80%;
   position: absolute;
   top: 0;
-  left: 0;
+  left: right;
   transition:  all .35s ease;
   cursor: pointer;
 
