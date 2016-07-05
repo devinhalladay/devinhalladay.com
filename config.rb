@@ -15,7 +15,7 @@ end
 
 # Activate and configure blogs
 activate_blog("journal", "article")
-activate_blog("work", "layout")
+activate_blog("work", "work")
 # activate_blog("dedicated", "to/{title}.html", "layout")
 
 # Helper functions, available in templates

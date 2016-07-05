@@ -4,7 +4,7 @@ title: Devin Halladay, Designer and Writer
 <div class="intro-section">
   <h1>Devin<br>Halladay</h1>
   <hr class="hr-vertical">
-  <p><strong>Designer &amp; writer.</strong><br>Currently reinventing myself.</p>
+  <p><strong>Multidisciplinary designer</strong>, sculptor, sonic artist, &amp; writer.</p>
 </div>
 
 <%= partial "partials/latest-articles" %>
@@ -16,10 +16,10 @@ title: Devin Halladay, Designer and Writer
     <a href="<%= work.url %>">
       <div class="c-work-overlay">
         <picture>
-          <source media="(min-width: 1020px)" srcset="/images/<%= work.title.downcase %>/large.jpg">
-          <source media="(min-width: 900px)" srcset="/images/<%= work.title.downcase %>/large-sm.jpg">
-          <source media="(min-width: 680px)" srcset="/images/<%= work.title.downcase %>/med.jpg">
-          <source srcset="/images/<%= work.title.downcase %>/small.jpg">
+          <source media="(min-width: 1020px)" srcset="/images/<%= work.date.strftime('%Y/%m') %>/<%= work.title.downcase.gsub(' ', '-') %>/cover/large.png">
+          <source media="(min-width: 900px)" srcset="/images/<%= work.date.strftime('%Y/%m') %>/<%= work.title.downcase.gsub(' ', '-') %>/cover/large-sm.png">
+          <source media="(min-width: 680px)" srcset="/images/<%= work.date.strftime('%Y/%m') %>/<%= work.title.downcase.gsub(' ', '-') %>/cover/med.png">
+          <source srcset="/images/<%= work.date.strftime('%Y/%m') %>/<%= work.title.downcase.gsub(' ', '-') %>/cover/small.png">
           <img alt="<%= work.title %>" srcset="">
         </picture>
 
