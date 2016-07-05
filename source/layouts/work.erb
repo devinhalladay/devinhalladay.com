@@ -1,0 +1,18 @@
+<% wrap_layout :layout do %>
+  <div class="row center-xs">
+    <div class="col-xs-12 col-sm-9 col-md-7">
+      <h1 class="u-font-mega"><%= current_page.title %></h1>
+      <article>
+        <h3>Scope</h3>
+        <ul>
+          <% current_page.data.scope.split(", ").each do |r| %>
+            <li><%= r %></li>
+          <% end %>
+        </ul>
+        
+        <%= yield %>
+      </article>
+    </div>
+  </div>
+  <%= partial "partials/newsletter-form" %>
+<% end %>
