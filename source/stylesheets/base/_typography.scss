@@ -1,4 +1,4 @@
-h1 {
+h1, h2 {
   font-family: $display-serif;
 }
 
@@ -64,4 +64,15 @@ hr {
   margin-bottom: 1.64706rem;
   border: 0;
   border-top: 1px solid $meta-color;
+  opacity: .5
+}
+
+
+  * + h2, * + .h2,
+  * + h3, * + .h3 {
+    padding-top: $baseline;
+  }
+
+code, pre {
+  font-family: $monospace;
 }

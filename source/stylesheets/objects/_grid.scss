@@ -828,6 +828,9 @@
 }
 
 .xs-enclosed-section {
+  & + .xs-enclosed-section {
+    border-top: none;
+  }
   @media all and (min-width: 48em) {
     margin-left: 0;
     margin-right: 0;
