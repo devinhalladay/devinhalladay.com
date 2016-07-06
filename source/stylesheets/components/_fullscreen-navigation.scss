@@ -30,6 +30,9 @@ $button-width: 25px;
     .bottom {
       transform: translateY(-6px) translateX(0) rotate(-45deg);
       background: $white;
+      @media (max-width: 440px) {
+        transform: translateY(-7px) translateX(0) rotate(-45deg);
+      }
     }
   }
 

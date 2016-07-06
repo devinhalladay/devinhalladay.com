@@ -6,8 +6,9 @@ header {
   justify-content: space-around;
   align-content: stretch;
 
-  @media all and (max-width: 48em) {
+  @media all and (max-width: 440px) {
     border-bottom: 1px solid $black;
+    margin-bottom: 2em;
   }
 
   .line {
@@ -18,10 +19,9 @@ header {
     padding-left: 0;
     margin: auto;
     border-bottom: 1px solid $black;
-    @media (max-width: 410px) {
+    @media (max-width: 440px) {
       display: none;
     }
-
   }
 }
 
@@ -31,6 +31,9 @@ header {
   text-decoration: none;
   font-family: $sans-serif;
   margin-right: 1em;
+  @media all and (max-width: 48em) {
+    float: left;
+  }
 }
 
 .button_container {
