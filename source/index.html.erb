@@ -7,7 +7,21 @@ title: Devin Halladay, Designer and Writer
   <p><strong>Multidisciplinary designer</strong>, sculptor, sonic artist, &amp; writer.</p>
 </div>
 
-<%= partial "partials/latest-articles" %>
+<%= partial("partials/section-title", :locals => { :title => "Latest Articles" }) %>
+
+<section class="c-latest-articles">
+  <div class="row">
+    <% blog('journal').articles[0...2].each do |article| %>
+      <div class="article col-xs-12 col-sm-6">
+        <a class="article-title" href="<%= article.url %>">
+          <h1><%= article.title %></h1>
+        </a>
+        <small class="u-font-meta u-font-sans"><%= article.date.strftime('%A %-d %B %Y') %></small>
+        <p><%= Nokogiri::HTML(article.summary).text %> <a href="<%= article.url %>">Read more</a></p>
+      </div>
+    <% end %>
+  </div>
+</section>
 
 <%= partial("partials/section-title", :locals => { :title => "Selected Work" }) %>
 

@@ -2,7 +2,7 @@
 
 <section class="c-latest-articles">
   <div class="row">
-    <% blog('journal').articles[0...2].each do |article| %>
+    <% blog('journal').articles.reject!{ |article| article.title == current_page.title }[0...2].each do |article| %>
       <div class="article col-xs-12 col-sm-6">
         <a class="article-title" href="<%= article.url %>">
           <h1><%= article.title %></h1>
