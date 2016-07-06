@@ -1,5 +1,11 @@
 .c-selected-work {
-
+  transition: .4s all;
+  a:hover {
+    img {
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+      transition: .4s all;
+    }
+  }
 }
 
 .c-work-overlay {

@@ -1,3 +1,5 @@
+"use strict";
+
 // Wait until all assets are loaded to evaluate function
 $( document ).ready(function() {
   $('#toggle').click(function () {
@@ -12,9 +14,3 @@ $(document).keyup(function(e) {
     $('#overlay').removeClass('open');
   }
 });
-
-
-  // 
-	// $( document ).ready(function() {
-	// 	$('body').glitch();
-	// });
