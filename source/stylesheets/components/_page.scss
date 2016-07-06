@@ -1,8 +1,8 @@
 .c-page-title {
   padding-top: 0.2em;
+  margin-bottom: 0.6em;
   @media all and (max-width: 48em) {
-    font-size: 3em;
-    // padding-bottom: .5em;
     padding-top: .5em;
+    margin-bottom: 0;
   }
 }

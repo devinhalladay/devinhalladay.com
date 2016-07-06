@@ -13,6 +13,10 @@ a {
 
   &:hover, &:focus {
     color: $site-color;
+
+    h1 {
+      color: $site-color;
+    }
   }
 }
 
