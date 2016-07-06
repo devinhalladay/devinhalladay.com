@@ -1,0 +1,21 @@
+<%= partial("partials/section-title", :locals => { :title => "Latest Work" }) %>
+
+<section class="c-selected-work">
+  <% blog('work').articles[1...3].each do |work| %>
+    <% unless work.title == current_page.title %>
+      <a href="<%= work.url %>">
+        <div class="c-work-overlay">
+          <picture>
+            <source media="(min-width: 1020px)" srcset="/images/<%= work.date.strftime('%Y/%m') %>/<%= work.title.downcase.gsub(' ', '-') %>/cover/large.png">
+            <source media="(min-width: 900px)" srcset="/images/<%= work.date.strftime('%Y/%m') %>/<%= work.title.downcase.gsub(' ', '-') %>/cover/large-sm.png">
+            <source media="(min-width: 680px)" srcset="/images/<%= work.date.strftime('%Y/%m') %>/<%= work.title.downcase.gsub(' ', '-') %>/cover/med.png">
+            <source srcset="/images/<%= work.date.strftime('%Y/%m') %>/<%= work.title.downcase.gsub(' ', '-') %>/cover/small.png">
+            <img alt="<%= work.title %>" srcset="">
+          </picture>
+
+          <h2 class="u-font-sans"><%= work.title %></h2>
+        </div>
+      </a>
+    <% end %>
+  <% end %>
+</section>

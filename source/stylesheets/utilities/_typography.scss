@@ -61,4 +61,7 @@
   font-size: 6em;
   line-height: 1;
   margin-top: 0;
+  @media all and (max-width: 48em) {
+    font-size: 3em;
+  }
 }

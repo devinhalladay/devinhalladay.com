@@ -819,7 +819,7 @@
 }
 
 .xs-border-right {
-  div:first-child {
+  div:not(:last-child) {
     border-right: 1px solid $meta-color;
     @media all and (max-width: 48em) {
       border-right: 0;
@@ -829,6 +829,8 @@
 
 .xs-enclosed-section {
   @media all and (min-width: 48em) {
+    margin-left: 0;
+    margin-right: 0;
     border-top: 1px solid $meta-color;
     border-bottom: 1px solid $meta-color;
   }

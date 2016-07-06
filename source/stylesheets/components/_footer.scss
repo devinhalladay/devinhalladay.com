@@ -1,7 +1,7 @@
 footer {
   @extend %u-font-center;
-  background-color: $dark-white;
-  color: $black;
+  background-color: $dark-black;
+  color: $dark-white;
   p {
     margin-bottom: 2em;
   }
@@ -19,7 +19,7 @@ footer {
     }
   }
   .u-font-meta {
-    color: $black;
+    color: $dark-white;
     opacity: 0.5;
   }
 }
