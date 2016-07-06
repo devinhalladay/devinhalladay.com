@@ -197,7 +197,7 @@
 
 .center-xs {
   justify-content: center;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .end-xs {
@@ -815,5 +815,21 @@
 
   .last-lg {
     order: 1;
+  }
+}
+
+.xs-border-right {
+  div:first-child {
+    border-right: 1px solid $meta-color;
+    @media all and (max-width: 48em) {
+      border-right: 0;
+    }
+  }
+}
+
+.xs-enclosed-section {
+  @media all and (min-width: 48em) {
+    border-top: 1px solid $meta-color;
+    border-bottom: 1px solid $meta-color;
   }
 }
