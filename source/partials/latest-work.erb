@@ -1,7 +1,7 @@
 <%= partial("partials/section-title", :locals => { :title => "Latest Work" }) %>
 
 <section class="c-selected-work">
-  <% blog('work').articles.reject!{ |article| article.title == current_page.title }.each do |work| %>
+  <% blog('work').articles.reject!{ |article| article.title == current_page.title }[0...2].each do |work| %>
     <a href="<%= work.url %>">
       <div class="c-work-overlay">
         <picture>
