@@ -12,3 +12,9 @@ $(document).keyup(function(e) {
     $('#overlay').removeClass('open');
   }
 });
+
+
+  // 
+	// $( document ).ready(function() {
+	// 	$('body').glitch();
+	// });
