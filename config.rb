@@ -1,3 +1,5 @@
+require 'toolkit'
+
 activate :autoprefixer
 
 set :markdown_engine, :redcarpet

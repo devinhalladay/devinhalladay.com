@@ -1,10 +1,14 @@
 html {
-  font: 112.5%/1.7778 $text-serif;
+  font: 125%/1.7778 $text-serif;
   color: $black;
   background-color: $white;
 
   -webkit-font-smoothing: antialiased;
   font-feature-settings: "liga", "hist", "onum";
+
+  @media all and (max-width: 48em) {
+    font-size: 112.5%;
+  }
 }
 
 .container {

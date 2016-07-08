@@ -820,7 +820,7 @@
 
 .xs-border-right {
   div:not(:last-child) {
-    border-right: 1px solid $meta-color;
+    border-right: 1px solid rgba($meta-color, .5);
     @media all and (max-width: 48em) {
       border-right: 0;
     }
