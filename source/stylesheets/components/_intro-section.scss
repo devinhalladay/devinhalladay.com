@@ -2,7 +2,7 @@
   background-color: #F7F7F7;
   height: 580px;
   text-align: center;
-  margin-bottom: 2em;
+  // margin-bottom: 2em;
   h1 {
     margin-top: 0;
     font-family: $display-serif;
@@ -17,5 +17,15 @@
   p {
     font-family: $sans-serif;
     font-size: 20px;
+  }
+}
+
+.c-index-profile-image {
+  height: 580px;
+  width: 100%;
+  background: url('/images/2016/07/index-portrait.png') center no-repeat;
+  background-size: cover;
+  @media only screen and (min-width: 64em) {
+    background-position-y: -6em;
   }
 }

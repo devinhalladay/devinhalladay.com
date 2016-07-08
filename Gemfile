@@ -10,6 +10,7 @@ gem 'middleman-autoprefixer'
 gem 'redcarpet'
 gem 'builder'
 gem 'sass'
+gem 'toolkit', '~>2.0'
 
 # Add Nokogiri for text parsing
 gem 'nokogiri'
