@@ -6,6 +6,10 @@ h1, h2 {
   color: #13171D;
 }
 
+h3 + p {
+  margin-top: -0.5em;
+}
+
 a {
   text-decoration: underline;
   color: inherit;
@@ -75,4 +79,10 @@ hr {
 
 code, pre {
   font-family: $monospace;
+}
+
+ol {
+  li {
+    margin-bottom: 1em;
+  }
 }
