@@ -28,6 +28,7 @@
 .c-index-profile-image {
   height: 580px;
   width: 100%;
+  background-color: $light-color;
   background: url('/images/2016/07/index-portrait.png') center no-repeat;
   background-size: cover;
   @media only screen and (min-width: 64em) {

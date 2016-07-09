@@ -19,11 +19,15 @@ article {
 .article {
   .article-title {
     text-decoration: none;
+    padding-bottom: 0.1em;
     h1 {
       margin-bottom: 0;
       line-height: 1.2;
-      font-family: $text-serif;
-      font-weight: 400;
+      font-family: $display-serif;
+      // font-weight: 400;
     }
+  }
+  .article-date {
+    font-style: italic;
   }
 }

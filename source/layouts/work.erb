@@ -4,8 +4,12 @@
       <h1 class="u-font-mega u-font-center c-page-title"><%= current_page.title %></h1>
     </div>
   </div>
-  <div class="row center-xs xs-border-right xs-enclosed-section c-work-meta">
-    <div class="col-md-2 col-xs-12">
+  <div class="row center-xs md-border-right xs-enclosed-section c-work-meta">
+    <div class="col-sm-12 col-md-7 col-xs-12">
+      <h3>Intro</h3>
+      <p><%= current_page.data.intro %></p>
+    </div>
+    <div class="col-sm-12 col-md-2 col-xs-12">
       <h3>Scope</h3>
       <ul class="c-scope-list">
         <% current_page.data.scope.split(", ").each do |r| %>
@@ -13,13 +17,9 @@
         <% end %>
       </ul>
     </div>
-    <div class="col-md-3 col-xs-12">
+    <div class="col-sm-12 col-md-3 col-xs-12">
       <h3>Context</h3>
       <%= current_page.data.context %>
-    </div>
-    <div class="col-md-7 col-xs-12">
-      <h3>Intro</h3>
-      <p><%= current_page.data.intro %></p>
     </div>
   </div>
 

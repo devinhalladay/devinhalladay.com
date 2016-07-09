@@ -621,6 +621,12 @@
   .last-md {
     order: 1;
   }
+
+  .md-border-right {
+    div:not(:last-child) {
+      border-right: 1px solid rgba($meta-color, .5);
+    }
+  }
 }
 
 @media only screen and (min-width: 75em) {
@@ -834,7 +840,7 @@
   @media all and (min-width: 48em) {
     margin-left: 0;
     margin-right: 0;
-    border-top: 1px solid $meta-color;
-    border-bottom: 1px solid $meta-color;
+    border-top: 1px solid rgba($meta-color, .5);
+    border-bottom: 1px solid rgba($meta-color, .5);
   }
 }
