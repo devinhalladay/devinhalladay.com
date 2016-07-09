@@ -39,9 +39,9 @@
     padding: 0.6em 0 0.4em;
     color: #fff;
     font-family: $sans-serif;
-    background-color: #10BEFC;
+    background-color: $site-color;
     &:hover {
-      background-color: #007EFF;
+      background-color: lighten($site-color, 10%);;
     }
   }
 }

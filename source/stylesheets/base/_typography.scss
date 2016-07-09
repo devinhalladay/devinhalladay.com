@@ -11,7 +11,8 @@ h3 + p {
 }
 
 a {
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
   color: inherit;
   cursor: pointer;
 
@@ -85,4 +86,13 @@ ol {
   li {
     margin-bottom: 1em;
   }
+}
+
+.u-no-margin {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+small {
+  font-style: 85%;
 }

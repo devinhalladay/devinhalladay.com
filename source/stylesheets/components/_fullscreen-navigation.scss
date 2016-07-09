@@ -123,6 +123,7 @@ $button-width: 25px;
         position: relative;
         color: $white;
         text-decoration: none;
+        border-bottom: 0;
         overflow: hidden;
 
         &.active {
