@@ -70,3 +70,8 @@
   list-style: none;
   padding-left: 0;
 }
+
+.u-font-small,
+%u-font-small {
+  @extend small;
+}

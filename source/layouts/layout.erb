@@ -16,8 +16,7 @@
       document.createElement( "picture" );
     </script>
     <%= javascript_include_tag 'vendor/picturefill.js' %>
-    <!-- <%= javascript_include_tag 'vendor/glitch.js' %> -->
-    <!-- <%= javascript_include_tag 'vendor/html2canvas.js' %> -->
+    <%= javascript_include_tag 'vendor/label_better.js' %>
   </head>
 
   <body class="<%= page_classes %>">
@@ -32,4 +31,11 @@
     </div>
     <%= partial "partials/footer" %>
   </body>
+  <script>$("input.label_better").label_better({
+    position: "top",
+    easing: "ease-in-out",
+    offset: 0,
+    hidePlaceholderOnFocus: false
+  });
+</script>
 </html>
