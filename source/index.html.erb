@@ -41,7 +41,7 @@ title: Devin Halladay, Designer and Writer
           <source media="(min-width: 900px)" srcset="/images/<%= work.date.strftime('%Y/%m') %>/<%= work.title.downcase.gsub(' ', '-') %>/cover/large-sm.png">
           <source media="(min-width: 680px)" srcset="/images/<%= work.date.strftime('%Y/%m') %>/<%= work.title.downcase.gsub(' ', '-') %>/cover/med.png">
           <source srcset="/images/<%= work.date.strftime('%Y/%m') %>/<%= work.title.downcase.gsub(' ', '-') %>/cover/small.png">
-          <img alt="<%= work.title %>" srcset="">
+          <img alt="<%= work.title %>" srcset="/images/<%= work.date.strftime('%Y/%m') %>/<%= work.title.downcase.gsub(' ', '-') %>/cover/med.png">
         </picture>
 
         <h2 class="u-font-sans"><%= work.title %></h2>
