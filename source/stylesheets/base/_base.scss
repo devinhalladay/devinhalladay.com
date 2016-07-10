@@ -1,7 +1,6 @@
 html {
   font: 125%/1.7 $text-serif;
   color: $text-color;
-  background-color: $dark-black;
 
   -webkit-font-smoothing: antialiased;
   font-feature-settings: "liga", "hist", "onum";
@@ -10,11 +9,6 @@ html {
     font-size: 112.5%;
   }
 }
-
-body {
-  background-color: #fff;
-}
-
 .container {
   max-width: 1390px;
   padding-left: 50px;
