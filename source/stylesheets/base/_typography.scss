@@ -4,7 +4,9 @@ h1, h2 {
 
 h3 {
   font-family: $sans-serif;
-  font-size: 1.1em;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 h1, h2 {

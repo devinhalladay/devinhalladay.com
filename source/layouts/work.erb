@@ -7,19 +7,23 @@
   <div class="row center-xs md-border-right xs-enclosed-section c-work-meta">
     <div class="col-sm-12 col-md-7 col-xs-12">
       <h3>Intro</h3>
-      <p><%= current_page.data.intro %></p>
-    </div>
-    <div class="col-sm-12 col-md-2 col-xs-12">
-      <h3>Scope</h3>
-      <ul class="c-scope-list">
-        <% current_page.data.scope.split(", ").each do |r| %>
-          <li><%= r %></li>
-        <% end %>
-      </ul>
+      <div class="intro">
+        <p><%= current_page.data.intro %></p>
+      </div>
     </div>
     <div class="col-sm-12 col-md-3 col-xs-12">
       <h3>Context</h3>
       <p><%= current_page.data.context %></p>
+    </div>
+    <div class="col-sm-12 col-md-2 col-xs-12">
+      <h3>Scope</h3>
+      <div>
+        <ul class="c-scope-list">
+          <% current_page.data.scope.split(", ").each do |r| %>
+            <li><%= r %></li>
+          <% end %>
+        </ul>
+      </div>
     </div>
   </div>
 
