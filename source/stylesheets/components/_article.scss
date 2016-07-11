@@ -7,7 +7,7 @@ article {
   h1.u-font-mega {
     margin-top: 0.5em;
     padding-bottom: 1em;
-    margin-bottom: .2em;
+    margin-bottom: 0.4em;
     border-bottom: 1px solid $dark-white;
     @media all and (max-width: 48em) {
       font-size: 3em;
@@ -30,4 +30,8 @@ article {
   .article-date {
     font-style: italic;
   }
+}
+
+article + hr {
+  margin-bottom: 1.14706rem;
 }
