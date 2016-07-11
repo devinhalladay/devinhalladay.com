@@ -4,7 +4,9 @@
   text-align: center;
   padding-left: 2em;
   padding-right: 2em;
-  // margin-bottom: 2em;
+  @media screen and (max-width: 48em) {
+    margin-bottom: 2em;
+  }
   h1 {
     margin-top: 0;
     font-family: $display-serif;
