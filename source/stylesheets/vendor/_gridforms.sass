@@ -56,7 +56,7 @@
     // Fields cannot be spaced away from the grid (clear out margins/padding)
     // Field font sizes need to be applied here
     input[type="text"], input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"], textarea, select
-        font-size: $font-size-large
+        font-size: $font-size
         padding: 0
         margin: 0
         width: 100%
@@ -69,13 +69,15 @@
             color: lighten($label-color, 15%)
         &:focus
             outline: none
+    textarea
+        resize: vertical
     fieldset
         border: none
         padding: 0
         margin: 0
         legend
             border: none
-            border-bottom: 4px solid $legend-color
+            border-bottom: 1px solid $meta-color
             color: $legend-color
             font-size: $font-size-large
             font-weight: bold
@@ -158,6 +160,6 @@
 // Create Grid Form
 .grid-form
     font-family: $sans-serif
-    +grid-form($max-columns: 12, $font-size-large: 22px, $legend-color: $text-color, $field-padding: 8px, $label-font-size: 15px, $grid-border-color: $meta-color, $label-color: $text-color, $field-focus-color: lighten(#45A5F1, 30%))
-    legend
+    +grid-form($max-columns: 12, $font-size-large: 22px, $legend-color: $text-color, $field-padding: 8px, $label-font-size: 14px, $grid-border-color: $meta-color, $label-color: $text-color, $field-focus-color: lighten(#45A5F1, 30%))
+    input, textarea
         font-family: $text-serif
