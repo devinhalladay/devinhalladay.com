@@ -71,6 +71,13 @@
   padding-left: 0;
 }
 
+.u-font-inline-list {
+  li {
+    display: inline;
+    padding-right: 1.2em;
+  }
+}
+
 .u-font-small,
 %u-font-small {
   @extend small;

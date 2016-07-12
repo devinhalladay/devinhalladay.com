@@ -1,6 +1,11 @@
 .c-page-title {
   padding-top: 0.2em;
   margin-bottom: 0.6em;
+  &.border-bottom {
+    padding-top: 0em;
+    padding-bottom: 0.7em;
+    border-bottom: 1px solid rgba($meta-color, .5);
+  }
   @media all and (max-width: 48em) {
     padding-top: 0em;
     padding-bottom: 0.7em;
