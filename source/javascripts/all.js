@@ -56,7 +56,9 @@ $(document).ready(function() {
           $('#message').addClass('has-error');
         }
       } else {
-        alert('success');
+        $('input[type="submit"]').val('Success. Talk to you soon!');
+        $('input[type="submit"]').css("background-color", "#0fcf7b");
+        $('input[type="submit"]').prop('disabled',true);
       }
     });
     // stop the form from submitting the normal way and refreshing the page
