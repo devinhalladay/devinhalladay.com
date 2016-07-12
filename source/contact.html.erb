@@ -8,23 +8,23 @@ title: Contact
 </div>
 <div class="row center-xs">
   <div class="col-xs-12 col-sm-9 col-md-7 col-lg-6">
-    <form class="grid-form" action>
+    <form class="grid-form" method="POST" action="https://devinhalladay-contact.herokuapp.com/">
       <fieldset>
         <legend>Let's talk.</legend>
         <div data-row-span="2">
           <div data-field-span="1">
             <label>Your Name</label>
-            <input type="text" required>
+            <input type="text" name="name" required>
           </div>
           <div data-field-span="1">
             <label>Your Email</label>
-            <input type="email" required>
+            <input type="email" name="email" required>
           </div>
         </div>
         <div data-row-span="2">
           <div data-field-span="2">
             <label>Reason for your inquiry</label>
-            <select required>
+            <select name="reason" required>
               <option>You're intersted in hiring me for a project.</option>
               <option>You're interested in hiring me full-time or as an intern.</option>
               <option>You'd just like to say hello.</option>
@@ -36,11 +36,11 @@ title: Contact
         <div data-row-span="2">
           <div data-field-span="2">
             <label>Your Message</label>
-            <textarea required></textarea>
+            <textarea name="message" required></textarea>
           </div>
         </div>
+        <input type="submit" value="Submit!" class="button">
       </fieldset>
-      <input type="submit" value="Submit!" name="submit" class="button">
     </form>
   </div>
 </div>
