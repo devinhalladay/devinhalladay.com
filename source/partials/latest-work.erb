@@ -4,12 +4,15 @@
   <% blog('work').articles.reject!{ |article| article.title == current_page.title }[0...2].each do |work| %>
     <a href="<%= work.url %>">
       <div class="c-work-overlay">
+
+        <% @dir = "/images/#{work.date.strftime('%Y/%m')}/#{work.title.downcase.gsub(' ', '-')}/cover" %>
+
         <picture>
-          <source media="(min-width: 1020px)" srcset="/images/<%= work.date.strftime('%Y/%m') %>/<%= work.title.downcase.gsub(' ', '-') %>/cover/large.png">
-          <source media="(min-width: 900px)" srcset="/images/<%= work.date.strftime('%Y/%m') %>/<%= work.title.downcase.gsub(' ', '-') %>/cover/large-sm.png">
-          <source media="(min-width: 680px)" srcset="/images/<%= work.date.strftime('%Y/%m') %>/<%= work.title.downcase.gsub(' ', '-') %>/cover/med.png">
-          <source srcset="/images/<%= work.date.strftime('%Y/%m') %>/<%= work.title.downcase.gsub(' ', '-') %>/cover/small.png">
-          <img alt="<%= work.title %>" srcset="/images/<%= work.date.strftime('%Y/%m') %>/<%= work.title.downcase.gsub(' ', '-') %>/cover/med.png">
+          <source media="(min-width: 1020px)" srcset="<%= @dir %>/large.png">
+          <source media="(min-width: 900px)" srcset="<%= @dir %>/large-sm.png">
+          <source media="(min-width: 680px)" srcset="<%= @dir %>/med.png">
+          <source srcset="<%= @dir %>/small.png">
+          <img alt="<%= work.title %>" srcset="<%= @dir %>/med.png">
         </picture>
 
         <h2 class="u-font-sans"><%= work.title %></h2>
