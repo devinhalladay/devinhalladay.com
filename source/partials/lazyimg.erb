@@ -1,3 +1,8 @@
+<%
+# <%= partial("partials/lazyimg", :locals => { :img => "" }) %\>
+%>
+
+
 <figure>
   <img class="lazy" data-src="<%= img %>"><noscript><img src="<%= img %>"></noscript>
 </figure>
