@@ -1,4 +1,4 @@
-@import "toolkit";
+// @import "toolkit";
 
 // Normalize
 @import "normalize";
@@ -24,22 +24,5 @@
 // Helpers
 @import "helpers/all";
 
+// Vendor
 @import "vendor/all";
-
-.lazy-wrap {
-  background: #fff;
-}
-
-.lazy-hidden {
-  opacity: 0;
-}
-
-.lazy-loaded {
-  -webkit-transition: opacity .4s;
-  transition: opacity .4s;
-  opacity: 1;
-}
-
-.lazy {
-  display: none
-}
