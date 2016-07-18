@@ -34,15 +34,9 @@ helpers do
 end
 
 activate :directory_indexes
-# activate :livereload
+activate :livereload
 
 configure :build do
-  # activate :minify_css
-  # activate :minify_javascript
+  activate :minify_css
+  activate :minify_javascript
 end
-
-activate :external_pipeline,
-  name: :gulp,
-  command: build? ? 'npm run production' : 'npm run gulp',
-  source: ".tmp",
-  latency: 1
