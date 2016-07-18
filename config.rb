@@ -1,5 +1,6 @@
 require 'toolkit'
 
+activate :sprockets
 activate :autoprefixer
 
 set :markdown_engine, :redcarpet
