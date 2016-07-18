@@ -1,5 +1,5 @@
-require('vendor/lazyloadxt.js');
-require('vendor/picturefill.js');
+//= require vendor/lazyloadxt
+//= require vendor/picturefill
 
 // Wait until all assets are loaded to evaluate function
 $( document ).ready(function() {
@@ -7,7 +7,7 @@ $( document ).ready(function() {
     $(this).toggleClass('active');
     $('#overlay').toggleClass('open');
   });
-  
+
   $.extend($.lazyLoadXT, {
     edgeY:  200
   });
