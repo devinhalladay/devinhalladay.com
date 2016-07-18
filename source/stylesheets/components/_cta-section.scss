@@ -1,6 +1,10 @@
 .c-cta-section {
-  // background-color: $meta-color;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  text-align: center;
+  margin-top: 1em;
+  line-height: 3;
+  height: 2.7em;
+  border: none;
+  font-family: $sans-serif;
+  background-color: #F7F7F7;
 }
