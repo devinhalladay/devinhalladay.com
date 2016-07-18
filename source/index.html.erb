@@ -14,6 +14,19 @@ title: Devin Halladay, Designer and Writer
   </div>
 </div>
 
+<div class="row">
+  <div class="col-xs-12 col-sm-6">
+    <div class="c-cta-section">
+      <div>
+        <p>I'm currently <strong>available</strong> for work.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-6">
+    <a href="/contact" class="button">Hire me!</a>
+  </div>
+</div>
+
 <%= partial("partials/section-title", :locals => { :title => "Latest Articles" }) %>
 
 <section class="c-latest-articles">
@@ -34,14 +47,17 @@ title: Devin Halladay, Designer and Writer
 
 <section class="c-selected-work">
   <% blog('work').articles.each do |work| %>
+
+    <% @dir = "/images/#{work.date.strftime('%Y/%m')}/#{work.title.downcase.gsub(' ', '-')}/cover" %>
+
     <a href="<%= work.url %>">
       <div class="c-work-overlay">
         <picture>
-          <source media="(min-width: 1020px)" srcset="/images/<%= work.date.strftime('%Y/%m') %>/<%= work.title.downcase.gsub(' ', '-') %>/cover/large.png">
-          <source media="(min-width: 900px)" srcset="/images/<%= work.date.strftime('%Y/%m') %>/<%= work.title.downcase.gsub(' ', '-') %>/cover/large-sm.png">
-          <source media="(min-width: 680px)" srcset="/images/<%= work.date.strftime('%Y/%m') %>/<%= work.title.downcase.gsub(' ', '-') %>/cover/med.png">
-          <source srcset="/images/<%= work.date.strftime('%Y/%m') %>/<%= work.title.downcase.gsub(' ', '-') %>/cover/small.png">
-          <img alt="<%= work.title %>" srcset="/images/<%= work.date.strftime('%Y/%m') %>/<%= work.title.downcase.gsub(' ', '-') %>/cover/med.png">
+          <source media="(min-width: 1020px)" srcset="<%= @dir %>/large.png">
+          <source media="(min-width: 900px)" srcset="<%= @dir %>/large-sm.png">
+          <source media="(min-width: 680px)" srcset="<%= @dir %>/med.png">
+          <source srcset="<%= @dir %>/small.png">
+          <img alt="<%= work.title %>" srcset="<%= @dir %>/med.png">
         </picture>
 
         <h2 class="u-font-sans"><%= work.title %></h2>

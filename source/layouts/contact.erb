@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "Devin Halladay" %></title>
+
+    <%= stylesheet_link_tag :site %>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <%= javascript_include_tag :all %>
+
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="/javascripts/vendor/picturefill.js" async></script>
+    <script src="/javascripts/vendor/gridforms.js" async></script>
+    <script src="/javascripts/vendor/parsley.js" async></script>
+  </head>
+
+  <body class="<%= page_classes %>">
+    <div class="container">
+      <header>
+        <a href="/" class="header-brand">Devin Halladay</a>
+        <div class="line"></div>
+        <%= partial "partials/fullscreen-navigation" %>
+      </header>
+
+      <%= yield %>
+
+      <%= partial("partials/section-title", :locals => { :title => "Latest Work" }) %>
+
+<section class="c-selected-work">
+  <% blog('work').articles[0...2].each do |work| %>
+    <a href="<%= work.url %>">
+      <div class="c-work-overlay">
+        <picture>
+          <source media="(min-width: 1020px)" srcset="/images/<%= work.date.strftime('%Y/%m') %>/<%= work.title.downcase.gsub(' ', '-') %>/cover/large.png">
+          <source media="(min-width: 900px)" srcset="/images/<%= work.date.strftime('%Y/%m') %>/<%= work.title.downcase.gsub(' ', '-') %>/cover/large-sm.png">
+          <source media="(min-width: 680px)" srcset="/images/<%= work.date.strftime('%Y/%m') %>/<%= work.title.downcase.gsub(' ', '-') %>/cover/med.png">
+          <source srcset="/images/<%= work.date.strftime('%Y/%m') %>/<%= work.title.downcase.gsub(' ', '-') %>/cover/small.png">
+          <img alt="<%= work.title %>" srcset="/images/<%= work.date.strftime('%Y/%m') %>/<%= work.title.downcase.gsub(' ', '-') %>/cover/med.png">
+        </picture>
+
+        <h2 class="u-font-sans"><%= work.title %></h2>
+      </div>
+    </a>
+  <% end %>
+</section>
+
+    </div>
+    <%= partial "partials/footer" %>
+  </body>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('form[data-parsley-validate]').parsley({
+        trigger: 'change',
+        successClass: "has-success",
+        errorClass: "has-error",
+        classHandler: function (el) {
+          return el.$element.closest('div[data-field-span]');
+        }
+      });
+    });
+  </script>
+</html>

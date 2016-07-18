@@ -6,7 +6,7 @@
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Middleman" %></title>
+    <title><%= current_page.data.title || "Devin Halladay" %></title>
 
     <%= stylesheet_link_tag :site %>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
@@ -17,8 +17,7 @@
       document.createElement( "picture" );
     </script>
     <script src="/javascripts/vendor/picturefill.js" async></script>
-    <script src="/javascripts/vendor/gridforms.js" async></script>
-    <script src="/javascripts/vendor/parsley.js" async></script>
+    <script src="/javascripts/vendor/lazyloadxt.js" async></script>
   </head>
 
   <body class="<%= page_classes %>">
@@ -33,17 +32,9 @@
     </div>
     <%= partial "partials/footer" %>
   </body>
-
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('form[data-parsley-validate]').parsley({
-        trigger: 'change',
-        successClass: "has-success",
-        errorClass: "has-error",
-        classHandler: function (el) {
-          return el.$element.closest('div[data-field-span]');
-        }
-      });
+  <script>
+    $.extend($.lazyLoadXT, {
+      edgeY:  200
     });
   </script>
 </html>
