@@ -21,8 +21,19 @@ $(document).keyup(function(e) {
 });
 
 $(document).ready(function() {
+
+  $('select[name="reason"]').change(function () {
+    if ($(this).val() == "You're intersted in hiring me for a project.") {
+      $('#budget').parent().show();
+      $('select[name="budget"]').prop('disabled', false);
+    } else {
+      $('#budget').parent().hide();
+      $('select[name="budget"]').prop('disabled', true);
+    }
+  });
+
   // process the form
-  $('form').submit(function(event) {
+  $('.contact-form').submit(function(event) {
 
     $('#name').removeClass('has-error'); // remove the error class
     $('#email').removeClass('has-error'); // remove the error class

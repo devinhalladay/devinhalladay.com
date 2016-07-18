@@ -20,7 +20,7 @@ layout: contact
 </div>
 <div class="row center-xs">
   <div class="col-xs-12 col-sm-9 col-md-7 col-lg-6">
-    <form class="grid-form" method="POST" action="https://devinhalladay-contact.herokuapp.com/" data-parsley-validate>
+    <form class="contact-form grid-form" method="POST" action="https://devinhalladay-contact.herokuapp.com/" data-parsley-validate>
       <fieldset>
         <legend></legend>
         <div data-row-span="2">
@@ -42,6 +42,19 @@ layout: contact
               <option>You'd just like to say hello.</option>
               <option>You're an aspiring designer or a student and want advice.</option>
               <option>You'd like me to speak at your school or event.</option>
+            </select>
+          </div>
+        </div>
+        <div data-row-span="2">
+          <div data-field-span="2" id="budget">
+            <label>Budget</label>
+            <select name="budget" required>
+              <option>$1,000 to $5,000</option>
+              <option>$5,000 to $10,000</option>
+              <option>$10,000 to $15,000</option>
+              <option>$15,000 to $25,000</option>
+              <option>$25,000+</option>
+              <option>Not Sure</option>
             </select>
           </div>
         </div>
