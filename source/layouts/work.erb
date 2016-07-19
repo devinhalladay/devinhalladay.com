@@ -5,16 +5,18 @@
     </div>
   </div>
   <div class="row center-xs md-border-right xs-enclosed-section c-work-meta">
-    <div class="col-sm-12 col-md-7 col-xs-12">
+    <div class="col-sm-12 <% if current_page.data.context %>col-md-7<% else %>col-md-10<% end %> col-xs-12">
       <h3>Intro</h3>
       <div class="intro">
         <p><%= current_page.data.intro %></p>
       </div>
     </div>
-    <div class="col-sm-12 col-md-3 col-xs-12">
-      <h3>Context</h3>
-      <p><%= current_page.data.context %></p>
-    </div>
+    <% if current_page.data.context %>
+      <div class="col-sm-12 col-md-3 col-xs-12">
+        <h3>Context</h3>
+        <p><%= current_page.data.context %></p>
+      </div>
+    <% end %>
     <div class="col-sm-12 col-md-2 col-xs-12">
       <h3>Scope</h3>
       <div>
