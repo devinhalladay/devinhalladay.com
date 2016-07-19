@@ -10,3 +10,16 @@ input + label {
 form {
   margin-top: 1em;
 }
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px rgb(255, 255, 255) inset;
+  -webkit-text-fill-color: $text-color;
+
+  .grid-form [data-row-span] [data-field-span]:hover & {
+    -webkit-box-shadow: 0 0 0 50px #ebf5fd inset;
+  }
+
+  .grid-form [data-row-span] [data-field-span].focus & {
+    -webkit-box-shadow: 0 0 0 50px #d3eafc inset;
+  }
+}

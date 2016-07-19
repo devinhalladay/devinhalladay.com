@@ -39,6 +39,12 @@ $(document).ready(function() {
     $('#email').removeClass('has-error'); // remove the error class
     $('#message').removeClass('has-error'); // remove the error class
 
+    $('.contact-form :input').change(function(event) {
+      $('input[type="submit"]').val('Submit!');
+      $('input[type="submit"]').css("background-color", "#45A5F1");
+      $('input[type="submit"]').prop('disabled',false);
+    });
+
     // get the form data
     // there are many ways to get this data using jQuery (you can use the class or id also)
     var formData = $(this).serialize();
@@ -78,6 +84,10 @@ $(document).ready(function() {
         $('input[type="submit"]').css("background-color", "#0fcf7b");
         $('input[type="submit"]').prop('disabled',true);
       }
+    })
+    .fail(function(data) {
+      $('input[type="submit"]').val('Server error! Try again or email me at devin@devinhalladay.com.');
+      $('input[type="submit"]').css("background-color", "#e83131");
     });
     // stop the form from submitting the normal way and refreshing the page
     event.preventDefault();
