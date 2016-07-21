@@ -9,9 +9,25 @@
 }
 
 .work {
-  article img {
-    padding-top: 1em;
-    padding-bottom: 1em;
+  .tight-gutter {
+    figure {
+      margin-bottom: 0;
+    }
+  }
+  article {
+    img {
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+    .tight-gutter img {
+      padding-bottom: 0;
+      padding-top: 0.8em;
+      &.o-bordered-image {
+        padding-bottom: 0;
+        padding-top: 0;
+        margin-top: 0.8em;
+      }
+    }
   }
 }
 

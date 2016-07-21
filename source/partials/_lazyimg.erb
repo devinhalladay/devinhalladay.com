@@ -4,5 +4,5 @@
 
 
 <figure>
-  <img class="lazy" data-src="<%= img %>"><noscript><img src="<%= img %>"></noscript>
+  <img class="<% if locals[:border] == true %>o-bordered-image <% end %>lazy" data-src="<%= img %>"><noscript><img src="<%= img %>"></noscript>
 </figure>
