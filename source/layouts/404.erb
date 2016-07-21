@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <%= partial "partials/meta" %>
+
+    <%= stylesheet_link_tag :'404' %>
+
+    <script src="/javascripts/404.js" async></script>
+  </head>
+
+  <body class="<%= page_classes %>">
+    <div class="container">
+      <header>
+        <a href="/" class="header-brand">Devin Halladay</a>
+        <div class="line"></div>
+        <%= partial "partials/fullscreen-navigation" %>
+      </header>
+
+      <%= yield %>
+
+    </div>
+  </body>
+</html>
