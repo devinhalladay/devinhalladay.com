@@ -1,7 +1,5 @@
 require 'toolkit'
 
-activate :sitemap
-
 activate :sprockets
 activate :autoprefixer
 
