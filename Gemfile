@@ -6,6 +6,7 @@ gem 'middleman-blog'
 gem 'middleman-livereload'
 gem 'middleman-autoprefixer'
 gem 'middleman-sprockets'
+gem 'middleman-minify-html'
 
 # Templating Engines
 gem 'redcarpet'

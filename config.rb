@@ -2,6 +2,7 @@ require 'toolkit'
 
 activate :sprockets
 activate :autoprefixer
+activate :minify_html
 
 set :markdown_engine, :redcarpet
 
