@@ -2,10 +2,9 @@
   <div class="container">
     <nav>
       <ul>
-        <li><%= active_link_to 'Home', '/' %></li>
-        <li><%= active_link_to 'Journal', '/journal' %></li>
-        <li><%= active_link_to 'Profile', '/profile' %></li>
-        <li><%= active_link_to 'Contact', '/contact' %></li>
+        <% for link in data.navigation.links %>
+          <li><%= active_link_to link.title, link.url %></li>
+        <% end %>
       </ul>
     </nav>
     <p class="u-font-sans u-font-caps"><a href="mailto:studio@devinhalladay.com">studio@devinhalladay.com</a></p>
