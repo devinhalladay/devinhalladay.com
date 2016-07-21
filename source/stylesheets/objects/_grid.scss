@@ -3,6 +3,7 @@
   --outer-margin: 4rem;
   --gutter-compensation: calc((var(--gutter-width) * 0.5) * -1);
   --half-gutter-width: calc((var(--gutter-width) * 0.5));
+  --quarter-gutter-width: calc((var(--gutter-width) * 0.25));
   --xs-min: 30;
   --sm-min: 48;
   --md-min: 64;
@@ -74,6 +75,11 @@
   flex: 0 0 auto;
   padding-right: var(--half-gutter-width, 0.5rem);
   padding-left: var(--half-gutter-width, 0.5rem);
+
+  .tight-gutter & {
+    padding-right: var(--quarter-gutter-width, 0.25rem);
+    padding-left: var(--quarter-gutter-width, 0.25rem);
+  }
 }
 
 .col-xs {
@@ -268,6 +274,11 @@
     flex: 0 0 auto;
     padding-right: var(--half-gutter-width, 0.5rem);
     padding-left: var(--half-gutter-width, 0.5rem);
+
+    .tight-gutter & {
+      padding-right: var(--quarter-gutter-width, 0.25rem);
+      padding-left: var(--quarter-gutter-width, 0.25rem);
+    }
   }
 
   .col-sm {
@@ -463,6 +474,11 @@
     flex: 0 0 auto;
     padding-right: var(--half-gutter-width, 0.5rem);
     padding-left: var(--half-gutter-width, 0.5rem);
+
+    .tight-gutter & {
+      padding-right: var(--quarter-gutter-width, 0.25rem);
+      padding-left: var(--quarter-gutter-width, 0.25rem);
+    }
   }
 
   .col-md {
@@ -664,6 +680,11 @@
     flex: 0 0 auto;
     padding-right: var(--half-gutter-width, 0.5rem);
     padding-left: var(--half-gutter-width, 0.5rem);
+
+    .tight-gutter & {
+      padding-right: var(--quarter-gutter-width, 0.25rem);
+      padding-left: var(--quarter-gutter-width, 0.25rem);
+    }
   }
 
   .col-lg {
@@ -828,7 +849,7 @@
   div:not(:last-child) {
     border-right: 1px solid rgba($meta-color, .5);
     & > div {
-      border: none;  
+      border: none;
     }
     @media all and (max-width: 48em) {
       border-right: 0;

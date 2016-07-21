@@ -22,6 +22,10 @@
   margin-bottom: 2em;
   cursor: pointer;
 
+  .tight-gutter & {
+    margin-bottom: $gutter-width/2;
+  }
+
   img {
     position: relative;
     z-index: -1;
@@ -37,6 +41,8 @@
     font-size: 1.5em;
     font-weight: 400;
     margin-top: -2.5em;
+    line-height: 1;
+    border-bottom: 1px solid #ffffff;
     @media all and (max-width: 48em) {
       font-size: 1.4em;
       margin-top: -3em;
