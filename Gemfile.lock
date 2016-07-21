@@ -96,8 +96,6 @@ GEM
     middleman-minify-html (3.4.1)
       htmlcompressor (~> 0.2.0)
       middleman-core (>= 3.2)
-    middleman-sitemap-ping (0.0.1)
-      middleman-core (>= 3.0)
     middleman-sprockets (4.0.0)
       middleman-core (~> 4.0)
       sprockets (>= 3.0)
@@ -151,7 +149,6 @@ DEPENDENCIES
   middleman-deploy (~> 2.0.0.pre.alpha)
   middleman-livereload
   middleman-minify-html
-  middleman-sitemap-ping
   middleman-sprockets
   nokogiri
   redcarpet
