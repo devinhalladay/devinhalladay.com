@@ -7,7 +7,7 @@
         <a class="article-title" href="<%= article.url %>">
           <h1><%= article.title %></h1>
         </a>
-        <small class="u-font-meta u-font-sans"><%= article.date.strftime('%A %-d %B %Y') %></small>
+        <small class="u-font-meta u-font-meta u-font-mono"><%= article.date.strftime('%A %-d %B %Y') %></small>
         <p><%= Nokogiri::HTML(article.summary).text %> <a href="<%= article.url %>">Read more</a></p>
       </div>
     <% end %>

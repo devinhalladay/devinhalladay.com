@@ -28,7 +28,9 @@ article {
     }
   }
   .article-date {
-    font-style: italic;
+    // font-style: italic;
+    font-size: 0.9em;
+    font-family: $monospace;
   }
 }
 

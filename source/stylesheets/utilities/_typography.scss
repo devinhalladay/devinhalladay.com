@@ -56,6 +56,11 @@
     font-family: $sans-serif;
 }
 
+.u-font-mono,
+%u-font-mono {
+    font-family: $monospace;
+}
+
 .u-font-mega,
 %u-font-mega {
   font-size: 4em;
