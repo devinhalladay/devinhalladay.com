@@ -1,8 +1,9 @@
 require 'toolkit'
 
+activate :sitemap
+
 activate :sprockets
 activate :autoprefixer
-activate :minify_html
 
 set :markdown_engine, :redcarpet
 
@@ -41,4 +42,18 @@ activate :livereload
 configure :build do
   activate :minify_css
   activate :minify_javascript
+  activate :minify_html
+  config[:host] = "http://devinhalladay.com/new/new/new/new/"
+end
+
+
+
+activate :deploy do |deploy|
+  deploy.deploy_method = :rsync
+  deploy.host   = '162.243.103.246'
+  deploy.user   = 'root'
+  deploy.path   = '/var/www/devinhalladay.com/public_html/_site/new/new/new/new'
+  # Set deploy.port to define a port for the deploy server. Defaults to 22.
+  deploy.clean = true # removes orphaned files on remote host, default: false
+  deploy.flags = '--omit-dir-times -davz'
 end

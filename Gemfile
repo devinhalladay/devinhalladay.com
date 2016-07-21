@@ -7,6 +7,7 @@ gem 'middleman-livereload'
 gem 'middleman-autoprefixer'
 gem 'middleman-sprockets'
 gem 'middleman-minify-html'
+gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
 
 # Templating Engines
 gem 'redcarpet'
