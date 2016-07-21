@@ -17,8 +17,8 @@
   background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 34%, rgba(0,0,0,.7) 100%);
   background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 34%, rgba(0,0,0,.7) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
-  width: 100%;
-  height: 100%;
+  // width: 100%;
+  // height: 100%;
   margin-bottom: 2em;
   cursor: pointer;
 
@@ -34,11 +34,12 @@
     display: inline;
     margin-left: 0.5em;
     color: #fff;
-    font-size: 2.5em;
+    font-size: 1.5em;
     font-weight: 400;
     margin-top: -2.5em;
     @media all and (max-width: 48em) {
-      font-size: 2em;
+      font-size: 1.4em;
+      margin-top: -3em;
     }
   }
 }

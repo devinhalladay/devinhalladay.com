@@ -1,5 +1,5 @@
 ---
-title: Devin Halladay, Designer and Writer
+title: Devin Halladay, Graphic Designer and Writer
 ---
 <div class="row xs-border-right">
   <div class="col-xs-12 col-sm-6">
@@ -46,24 +46,28 @@ title: Devin Halladay, Designer and Writer
 <%= partial("partials/section-title", :locals => { :title => "Selected Work" }) %>
 
 <section class="c-selected-work">
-  <% blog('work').articles.each do |work| %>
+  <div class="row">
+    <% blog('work').articles.each do |work| %>
+      <div class="col-xs-12 col-sm-12 col-md-6">
 
-    <% @dir = "/images/#{work.date.strftime('%Y/%m')}/#{work.title.downcase.gsub(' ', '-')}/cover" %>
+        <% @dir = "/images/#{work.date.strftime('%Y/%m')}/#{work.title.downcase.gsub(' ', '-')}/cover" %>
 
-    <a href="<%= work.url %>">
-      <div class="c-work-overlay">
-        <picture>
-          <source media="(min-width: 1020px)" srcset="<%= @dir %>/large.png">
-          <source media="(min-width: 900px)" srcset="<%= @dir %>/large-sm.png">
-          <source media="(min-width: 680px)" srcset="<%= @dir %>/med.png">
-          <source srcset="<%= @dir %>/small.png">
-          <img alt="<%= work.title %>" srcset="<%= @dir %>/med.png">
-        </picture>
+        <a href="<%= work.url %>">
+          <div class="c-work-overlay">
+            <picture>
+              <source media="(min-width: 1020px)" srcset="<%= @dir %>/large.png">
+              <source media="(min-width: 900px)" srcset="<%= @dir %>/large-sm.png">
+              <source media="(min-width: 680px)" srcset="<%= @dir %>/med.png">
+              <source srcset="<%= @dir %>/small.png">
+              <img alt="<%= work.title %>" srcset="<%= @dir %>/med.png">
+            </picture>
 
-        <h2 class="u-font-sans"><%= work.title %></h2>
+            <h2 class="u-font-sans"><%= work.title %></h2>
+          </div>
+        </a>
       </div>
-    </a>
-  <% end %>
+    <% end %>
+  </div>
 </section>
 
 <%= partial "partials/newsletter-form" %>

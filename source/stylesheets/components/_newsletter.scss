@@ -132,3 +132,8 @@
   font-family: $sans-serif;
   border: 2px solid #DF3B3B;
 }
+
+.button, input[type="submit"], #mc_embed_signup input[type="submit"] {
+  width: 100%;
+  border: 0;
+}
