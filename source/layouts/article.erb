@@ -7,6 +7,7 @@
       </article>
       <hr>
       <div class="u-font-meta u-font-mono">
+        <% if current_page.data.meta %><%= current_page.data.meta %><% end %>
         <small>Published on <%= current_page.date.strftime('%A %-d %B %Y') %></small>
       </div>
     </div>

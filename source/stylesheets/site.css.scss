@@ -26,3 +26,20 @@
 
 // Vendor
 @import "vendor/all";
+
+
+#filters {
+  margin-bottom: 2em;
+  text-align: center;
+
+  div {
+    font-family: $monospace;
+    font-size: 0.8em;
+    display: inline;
+    margin-right: 1em;
+    border: 1px solid #333;
+    border-radius: 3px;
+    padding: .5em 1em;
+    transition: all 0.25s ease-in-out;
+  }
+}

@@ -47,13 +47,22 @@ title: Devin Halladay, Graphic Designer and Writer
 
 <section class="c-selected-work">
   <div class="row tight-gutter">
+    <div class="col-xs-12">
+      <div id="filters">
+        <% for filter in data.filters %>
+          <div class="<%= filter.filter_class %>"><%= filter.title %></div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <div class="row tight-gutter">
     <% blog('work').articles.each do |work| %>
       <div class="col-xs-12 col-sm-12 col-md-6">
 
         <% @dir = "/images/#{work.date.strftime('%Y/%m')}/#{work.title.downcase.gsub(' ', '-')}/cover" %>
 
         <a href="<%= work.url %>">
-          <div class="c-work-overlay">
+          <div class="c-work-overlay<% if work.data.filters %> <%= work.data.filters %><% end %>">
             <picture>
               <source media="(min-width: 1020px)" srcset="<%= @dir %>/large.png">
               <source media="(min-width: 900px)" srcset="<%= @dir %>/large-sm.png">
