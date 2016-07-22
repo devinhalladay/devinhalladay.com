@@ -1,5 +1,5 @@
 .intro-section {
-  background-color: #F7F7F7;
+  background-color: #edeff1;
   height: 580px;
   text-align: center;
   padding-left: 2em;
@@ -13,11 +13,14 @@
     font-size: 3em;
     line-height: 60px;
     padding-top: 60px;
+    @media only screen and (max-width: 1116px) {
+      font-size: 2.5em;
+    }
   }
   hr {
     height: 220px;
     border-color: $black;
-    @media only screen and (max-width: 64em) {
+    @media only screen and (max-width: 1116px) {
       height: 160px;
     }
   }
@@ -33,7 +36,7 @@
   background-color: $light-color;
   background: url('/images/2016/07/index-portrait.png') center no-repeat;
   background-size: cover;
-  @media only screen and (min-width: 64em) {
+  @media only screen and (min-width: 1084px) {
     background-position-y: -6em;
   }
 }
