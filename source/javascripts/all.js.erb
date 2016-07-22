@@ -1,5 +1,6 @@
 //= require vendor/lazyloadxt
 //= require vendor/picturefill
+//= require vendor/mixitup
 
 // Wait until all assets are loaded to evaluate function
 $( document ).ready(function() {
@@ -33,23 +34,28 @@ $(document).keyup(function(e) {
 });
 
 $(document).ready(function() {
-  $('[data-filter*="item-"]').css("background", "none").css("color", "#333").css("opacity", "0.4");
-  $('.filter-all').css("background", "#333").css("color", "#ddd").css("opacity", "1");
+  $('[data-filter*="item-"]').css("background", "none").css("color",
+    "#3d464d").css('border', '1px solid #3d464d');
+  $('[data-filter*="all"]').css("background", "#45a5f1").css("color", "#ffffff").css(
+    "opacity", "1").css('border', '1px solid #45a5f1');
 
   $('[data-filter*="item-"]').click(function() {
     $('[data-filter*="item-"]').css("background", "none").css("color",
-      "#333").css("opacity", "0.4");
+      "#3d464d").css('border', '1px solid #3d464d');
+
     $('[data-filter*="all"]').css("background", "none").css("color",
-      "#333").css("opacity", "0.4");
-    $(this).css("background", "#333").css("color", "#ddd").css(
-      "opacity", "1")
+      "#3d464d").css('border', '1px solid #3d464d');
+
+    $(this).css("background", "#45a5f1").css("color", "#ffffff").css(
+      "opacity", "1").css('border', '1px solid #45a5f1');
   });
 
   $('[data-filter*="all"]').click(function() {
     $('[data-filter*="item-"]').css("background", "none").css("color",
-      "#333").css("opacity", "0.4");
-    $(this).css("background", "#333").css("color", "#ddd").css(
-      "opacity", "1")
+      "#3d464d").css('border', '1px solid #3d464d');
+
+    $(this).css("background", "#45a5f1").css("color", "#ffffff").css(
+      "opacity", "1").css('border', '1px solid #45a5f1');
   });
 });
 
