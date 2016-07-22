@@ -39,7 +39,14 @@ $(document).ready(function() {
   $('[data-filter*="item-"]').click(function() {
     $('[data-filter*="item-"]').css("background", "none").css("color",
       "#333").css("opacity", "0.4");
-    $('[data-class*="filter-"]').css("background", "none").css("color",
+    $('[data-filter*="all"]').css("background", "none").css("color",
+      "#333").css("opacity", "0.4");
+    $(this).css("background", "#333").css("color", "#ddd").css(
+      "opacity", "1")
+  });
+
+  $('[data-filter*="all"]').click(function() {
+    $('[data-filter*="item-"]').css("background", "none").css("color",
       "#333").css("opacity", "0.4");
     $(this).css("background", "#333").css("color", "#ddd").css(
       "opacity", "1")
