@@ -1,0 +1,13 @@
+$( document ).ready(function() {
+  var o = new Array();
+
+  var o = [<% data.obliquestrategies.strategies.each_with_index do |s, index| %>"<%= s %>", <% end %>];
+
+  function randomIntFromInterval(min,max) {
+    return Math.floor(Math.random()*(max-min+1)+min);
+  }
+
+  var i = randomIntFromInterval(0,116);
+
+  $('#obliquestrategies em').text(o[i]);
+});

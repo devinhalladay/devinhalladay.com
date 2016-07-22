@@ -22,7 +22,7 @@ $(document).ready(function() {
 
     $('.contact-form :input').change(function(event) {
       $('input[type="submit"]').val('Submit!');
-      $('input[type="submit"]').css("background-color", "#45A5F1");
+      $('input[type="submit"]').css("background-color", "#17aaff");
       $('input[type="submit"]').prop('disabled',false);
     });
 
