@@ -1,6 +1,3 @@
-- title: All
-  filter_class: filter-all
-  item_class: item-all
 - title: Poster
   filter_class: filter-poster
   item_class: item-poster
