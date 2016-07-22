@@ -2,6 +2,10 @@
 <html>
   <head>
     <%= partial "partials/meta" %>
+
+    <%= yield_content :assets %>
+
+    <%= yield_content :css %>
   </head>
 
   <body class="<%= page_classes %>">
@@ -16,5 +20,6 @@
 
     <%= partial "partials/footer" %>
 
+    <%= yield_content :js %>
   </body>
 </html>

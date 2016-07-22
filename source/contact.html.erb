@@ -1,7 +1,25 @@
 ---
 title: Contact
-layout: contact
 ---
+<% content_for :js do %>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('form[data-parsley-validate]').parsley({
+        trigger: 'change',
+        successClass: "has-success",
+        errorClass: "has-error",
+        classHandler: function (el) {
+          return el.$element.closest('div[data-field-span]');
+        }
+      });
+    });
+  </script>
+<% end %>
+
+<% content_for :assets do %>
+  <%= javascript_include_tag :contact, :async => true %>
+<% end %>
+
 <div class="row">
   <div class="col-xs-12">
     <h1 class="u-font-mega u-font-center c-page-title border-bottom">Contact</h1>
@@ -69,3 +87,5 @@ layout: contact
     </form>
   </div>
 </div>
+
+<%= partial "partials/newsletter-form" %>
