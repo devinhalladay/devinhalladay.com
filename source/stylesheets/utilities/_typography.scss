@@ -71,12 +71,14 @@
   }
 }
 
-.u-font-unlist {
+.u-font-unlist,
+%u-font-unlist {
   list-style: none;
   padding-left: 0;
 }
 
 .u-font-inline-list {
+  @extend .u-font-unlist;
   li {
     display: inline;
     padding-right: 1.2em;
