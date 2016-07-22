@@ -1,7 +1,11 @@
 ---
 title: You're lost.
-layout: '404'
 ---
+<% content_for :assets do %>
+  <%= stylesheet_link_tag :'404' %>
+  <%= javascript_include_tag '404', :async => true %>
+<% end %>
+
 <div class="u-center-vertical">
   <div>
     <div class="green">You're lost.</div>

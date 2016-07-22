@@ -17,6 +17,11 @@
   height: 100vh;
 }
 
+header .line,
+header h3.lined {
+  display: none;
+}
+
 a:hover {
   color: #3fdb58 !important;
   text-shadow: -2px 0 0 rgba(0,201,16,.4),-4px 0 4px rgba(108,236,103,.6),5px 0 4px rgba(69,204,91,.5);
