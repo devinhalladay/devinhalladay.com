@@ -2,63 +2,7 @@
 //= require vendor/picturefill
 //= require vendor/mixitup
 
-// Wait until all assets are loaded to evaluate function
-$( document ).ready(function() {
-  $('#toggle').click(function () {
-    $(this).toggleClass('active');
-    $('#overlay').toggleClass('open');
-  });
-
-  $.extend($.lazyLoadXT, {
-    edgeY:  200
-  });
-
-  var o = new Array();
-
-  var o = [<% data.obliquestrategies.strategies.each_with_index do |s, index| %>"<%= s %>", <% end %>];
-
-  function randomIntFromInterval(min,max) {
-    return Math.floor(Math.random()*(max-min+1)+min);
-  }
-
-  var i = randomIntFromInterval(0,116);
-
-  $('#obliquestrategies em').text(o[i]);
-});
-
-$(document).keyup(function(e) {
-  if (e.keyCode == 27) { // escape key maps to keycode `27`
-    $('#toggle').removeClass('active');
-    $('#overlay').removeClass('open');
-  }
-});
-
-$(document).ready(function() {
-  $('[data-filter*="item-"]').css("background", "none").css("color",
-    "#3d464d").css('border', '1px solid #3d464d');
-  $('[data-filter*="all"]').css("background", "#45a5f1").css("color", "#ffffff").css(
-    "opacity", "1").css('border', '1px solid #45a5f1');
-
-  $('[data-filter*="item-"]').click(function() {
-    $('[data-filter*="item-"]').css("background", "none").css("color",
-      "#3d464d").css('border', '1px solid #3d464d');
-
-    $('[data-filter*="all"]').css("background", "none").css("color",
-      "#3d464d").css('border', '1px solid #3d464d');
-
-    $(this).css("background", "#45a5f1").css("color", "#ffffff").css(
-      "opacity", "1").css('border', '1px solid #45a5f1');
-  });
-
-  $('[data-filter*="all"]').click(function() {
-    $('[data-filter*="item-"]').css("background", "none").css("color",
-      "#3d464d").css('border', '1px solid #3d464d');
-
-    $(this).css("background", "#45a5f1").css("color", "#ffffff").css(
-      "opacity", "1").css('border', '1px solid #45a5f1');
-  });
-});
-
-$(function(){
-  $('.work').mixItUp();
-});
+//= require components/fullscreen-nav
+//= require components/images
+//= require components/oblique-strategies
+//= require components/filter
