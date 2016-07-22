@@ -5,7 +5,7 @@
 
     <%= stylesheet_link_tag :'404' %>
 
-    <script src="/javascripts/404.js" async></script>
+    <%= javascript_include_tag '404', :async => true %>
   </head>
 
   <body class="<%= page_classes %>">

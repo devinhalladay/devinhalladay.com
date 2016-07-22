@@ -30,10 +30,8 @@
 
 <%= stylesheet_link_tag :site %>
 
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-
-
-<%= javascript_include_tag :all %>
+<%= javascript_include_tag "https://code.jquery.com/jquery-2.2.4.min.js", :async => true %>
+<%= javascript_include_tag :all, :async => true %>
 
 <script>
   !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
