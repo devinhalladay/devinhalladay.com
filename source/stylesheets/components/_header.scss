@@ -5,6 +5,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: stretch;
+  align-items: center;
 
   @media all and (max-width: 440px) {
     border-bottom: 1px solid $black;
@@ -26,7 +27,6 @@ header {
 }
 
 .header-brand {
-  padding-top: 1.2em;
   display: inline-block;
   text-decoration: none;
   border-bottom: 0;
@@ -37,6 +37,43 @@ header {
   }
 }
 
-.button_container {
-  margin-left: 1em;
+header .line {
+  @media all and (min-width: 48em) {
+    display: none;
+  }
+}
+
+header h3.lined {
+  font-weight: 400;
+  margin: auto;
+  display: flex;
+  flex: 1;
+  text-align: center;
+  margin-right: -4.5em;
+
+  @media all and (max-width: 48em) {
+    display: none;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    display: flex;
+    flex-grow: 1;
+    float: left;
+    background: #979797;
+    height: 1px;
+  }
+
+  &::before {
+    margin-right: 1rem;
+    width: 50%;
+  }
+
+  &::after {
+    margin-left: 1rem;
+    margin-right: 5em;
+    padding-right: 3em;
+    width: 50%;
+  }
 }

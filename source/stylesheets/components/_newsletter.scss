@@ -120,7 +120,7 @@
   display: inline-block;
   // margin: 2px 0 1em;
   // padding: 5px 10px;
-  background-color: rgba(255,255,255,0.85);
+  background-color: transparent;
   border-radius: 3px;
   font-size: 14px;
   font-weight: 400;
@@ -130,6 +130,7 @@
 
 #mc_embed_signup #mc-embedded-subscribe-form input.mce_inline_error {
   font-family: $sans-serif;
+  margin: 0;
   border: 2px solid #DF3B3B;
 }
 

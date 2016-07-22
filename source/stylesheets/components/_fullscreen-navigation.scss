@@ -4,13 +4,11 @@ $button-width: 25px;
 .button_container {
   font-family: $sans-serif;
   font-size: 15px;
-  margin-top: 2.2em;
   cursor: pointer;
   z-index: 150;
   transition: opacity .25s ease;
-  @media (max-width: 440px) {
-    margin-top: 2em;
-  }
+  margin-left: 1em;
+  line-height: 1;
 
   &:hover {
     opacity: .7;
@@ -41,7 +39,6 @@ $button-width: 25px;
 
 
 .menu-title {
-  margin-top: -5px;
   margin-right: 0.5em;
   display: block;
   position: relative;

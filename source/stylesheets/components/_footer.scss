@@ -1,8 +1,7 @@
 footer {
   @extend %u-font-center;
   padding-top: 2em;
-  background-color: $dark-black;
-  color: $dark-white;
+  color: $dark-black;
   p {
     margin-bottom: 2em;
   }
@@ -21,5 +20,29 @@ footer {
   .u-font-meta {
     // color: $dark-white;
     // opacity: 0.5;
+  }
+}
+
+h3.lined {
+  font-weight: 400;
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  padding-bottom: 2em;
+
+  &::before,
+  &::after {
+    content: "";
+    flex-grow: 1;
+    background: $meta-color;
+    height: 1px;
+  }
+
+  &::before {
+    margin-right: 1rem;
+  }
+
+  &::after {
+    margin-left: 1rem;
   }
 }
