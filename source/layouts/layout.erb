@@ -5,16 +5,16 @@
   </head>
 
   <body class="<%= page_classes %>">
+
     <div class="container">
-      <header>
-        <a href="/" class="header-brand">Devin Halladay</a>
-        <h3 class="lined u-font-meta u-font-mono u-font-small">Welcome</h3>
-        <div class="line"></div>
-        <%= partial "partials/fullscreen-navigation" %>
-      </header>
+
+      <%= partial "partials/header" %>
 
       <%= yield %>
+
     </div>
+
     <%= partial "partials/footer" %>
+
   </body>
 </html>

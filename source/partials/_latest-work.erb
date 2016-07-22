@@ -1,22 +1,49 @@
-<%= partial("partials/section-title", :locals => { :title => "Latest Work" }) %>
+<% if is_blog_article? %>
+<% items = blog('work').articles.reject!{ |work| work.title == current_page.title }.sort_by!{ |work| work.data.priority } %>
+<% section_title = "More Work" %>
+<% else %>
+<% items = blog('work').articles.sort_by!{ |work| work.data.priority } %>
+<% section_title = "Selected Work" %>
+<% end %>
 
 <section class="c-selected-work">
-  <% blog('work').articles.reject!{ |article| article.title == current_page.title }[0...2].each do |work| %>
-    <a href="<%= work.url %>">
-      <div class="c-work-overlay">
+  
+  <%= partial("partials/section-title", :locals => { :title => section_title }) %>
+
+  <div class="row tight-gutter">
+    <div class="col-xs-12">
+      <div id="filters">
+        <div data-filter="all" class="filter-all filter">All</div>
+        <% for f in data.filters %>
+
+          <% filters = f.item_class.split %>
+
+          <div <% for filter in filters %>data-filter=".<%= filter %>"<% end %> class="filter"><%= f.title %></div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row tight-gutter work">
+    <% items.each_with_index do |work, index| %>
+      <div class="col-xs-12 col-sm-12 col-md-6 mix <%= work.data.filters.split.join(' ') %>" data-my-order="<%= index + 1 %>">
 
         <% @dir = "/images/#{work.date.strftime('%Y/%m')}/#{work.title.downcase.gsub(' ', '-')}/cover" %>
 
-        <picture>
-          <source media="(min-width: 1020px)" srcset="<%= @dir %>/large.png">
-          <source media="(min-width: 900px)" srcset="<%= @dir %>/large-sm.png">
-          <source media="(min-width: 680px)" srcset="<%= @dir %>/med.png">
-          <source srcset="<%= @dir %>/small.png">
-          <img alt="<%= work.title %>" srcset="<%= @dir %>/med.png">
-        </picture>
+        <a href="<%= work.url %>">
+          <div class="c-work-overlay">
+            <picture>
+              <source media="(min-width: 1020px)" srcset="<%= @dir %>/large-sm.png">
+              <source media="(min-width: 900px)" srcset="<%= @dir %>/large-sm.png">
+              <source media="(min-width: 680px)" srcset="<%= @dir %>/med.png">
+              <source srcset="<%= @dir %>/small.png">
+              <img alt="<%= work.title %>" srcset="<%= @dir %>/med.png">
+            </picture>
 
-        <h2 class="u-font-sans"><%= work.title %></h2>
+            <h2 class="u-font-sans"><%= work.title %></h2>
+          </div>
+        </a>
       </div>
-    </a>
-  <% end %>
+    <% end %>
+  </div>
 </section>

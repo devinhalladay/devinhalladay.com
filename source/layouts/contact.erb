@@ -3,46 +3,20 @@
   <head>
     <%= partial "partials/meta" %>
 
-    <script src="/javascripts/vendor/contact.js" async></script>
+    <%= javascript_include_tag :contact, :async => true %>
   </head>
 
   <body class="<%= page_classes %>">
+
     <div class="container">
-      <header>
-        <a href="/" class="header-brand">Devin Halladay</a>
-        <div class="line"></div>
-        <%= partial "partials/fullscreen-navigation" %>
-      </header>
+
+      <%= partial "partials/header" %>
 
       <%= yield %>
-
-      <%= partial("partials/section-title", :locals => { :title => "Latest Work" }) %>
-
-      <section class="c-selected-work">
-        <% blog('work').articles[0...2].each do |work| %>
-
-          <% @dir = "/images/#{work.date.strftime('%Y/%m')}/#{work.title.downcase.gsub(' ', '-')}/cover" %>
-
-          <a href="<%= work.url %>">
-            <div class="c-work-overlay">
-              <picture>
-                <source media="(min-width: 1020px)" srcset="<%= @dir %>/large.png">
-                <source media="(min-width: 900px)" srcset="<%= @dir %>/large-sm.png">
-                <source media="(min-width: 680px)" srcset="<%= @dir %>/med.png">
-                <source srcset="<%= @dir %>/small.png">
-                <img alt="<%= work.title %>" srcset="<%= @dir %>/med.png">
-              </picture>
-
-              <h2 class="u-font-sans"><%= work.title %></h2>
-            </div>
-          </a>
-        <% end %>
-      </section>
 
       <%= partial "partials/newsletter-form" %>
 
     </div>
-
 
     <%= partial "partials/footer" %>
   </body>

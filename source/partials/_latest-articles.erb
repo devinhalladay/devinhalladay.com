@@ -1,8 +1,15 @@
-<%= partial("partials/section-title", :locals => { :title => "Latest Articles" }) %>
-
 <section class="c-latest-articles">
+
+  <%= partial("partials/section-title", :locals => { :title => "Latest Articles" }) %>
+
   <div class="row">
-    <% blog('journal').articles.reject!{ |article| article.title == current_page.title }[0...2].each do |article| %>
+    <% if is_blog_article? %>
+      <% items = blog('journal').articles.reject!{ |article| article.title == current_page.title }[0...2] %>
+    <% else %>
+      <% items = blog('journal').articles[0...2] %>
+    <% end %>
+
+    <% items.each do |article| %>
       <div class="article col-xs-12 col-sm-6">
         <a class="article-title" href="<%= article.url %>">
           <h1><%= article.title %></h1>
