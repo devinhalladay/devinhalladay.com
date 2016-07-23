@@ -30,20 +30,16 @@ title: Profile
   <% end %>
 </div>
 
-<div class="row center-xs">
-  <div class="col-xs-12 col-sm-6">
-    <h2>A little bit about myself</h2>
-    <p>My name is Devin Halladay, and I'm a multidisciplinary graphic designer, writer, and humanist.</p>
-    <p>I'm currently living in Baltimore, studying design at the Maryland Institute College of Art. I'm taking a critical look at design and social theory and working hard to apply them to my design practice.</p>
+<% data.profile.about.each do |section| %>
+  <div class="row center-xs">
+    <div class="col-xs-12 col-sm-6">
+      <h2><%= section.title %></h2>
+      <% section.content.each do |p| %>
+        <p><%= p %></p>
+      <% end %>
+    </div>
   </div>
-</div>
-<div class="row center-xs">
-  <div class="col-xs-12 col-sm-6">
-    <h2>How I work</h2>
-    <p>I solve problems. I believe in the power of people, design, and critical thought to find simple solutions to complex problems. I value craftsmanship, curation, and quality thought.</p>
-    <p>I live and work according to four core tenets: <strong>learn the rules, promptly and mercilessly break them with spirit and intent, experiment relentlessly, and create fearlessly.</strong></p>
-  </div>
-</div>
+<% end %>
 
 <%= partial("partials/section-title", :locals => { :title => "Services" }) %>
 
