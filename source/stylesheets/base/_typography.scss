@@ -13,6 +13,10 @@ h1, h2 {
   color: #13171D;
 }
 
+h2 {
+  -webkit-margin-before: 0;
+}
+
 h3 + p {
   margin-top: -0.5em;
 }
