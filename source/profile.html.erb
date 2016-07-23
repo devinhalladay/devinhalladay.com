@@ -44,11 +44,11 @@ title: Profile
 <%= partial("partials/section-title", :locals => { :title => "Services" }) %>
 
 <div class="row xs-border-right center-xs u-font-center">
-  <% for capability in data.capabilities %>
+  <% data.profile.capabilities.each do |capability| %>
     <div class="col-xs-12 col-sm-3">
       <h3 class="u-no-margin"><%= capability.title %></h3>
       <ul class="u-font-unlist">
-        <% for service in capability.services %>
+        <% capability.services.each do |service| %>
           <li><%= service %></li>
         <% end %>
       </ul>
