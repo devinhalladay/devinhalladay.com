@@ -34,3 +34,28 @@ about:
     content:
       - "I solve problems. I believe in the power of people, design, and critical thought to find simple solutions to complex problems. I value craftsmanship, curation, and quality thought."
       - "I live and work according to four core tenets: <strong>learn the rules, promptly and mercilessly break them with spirit and intent, experiment relentlessly, and create fearlessly.</strong>"
+
+capabilities:
+  - title: "Branding"
+    services:
+      - Brand Creation
+      - Logo Development
+      - Brand Collateral
+      - Identity Design
+      - Brand Consulting
+
+  - title: "Digital"
+    services:
+      - Website Design
+      - Front-end Development
+      - Responsive Design
+      - Ruby
+      - Ruby on Rails
+
+  - title: "Print &amp; Production"
+    services:
+      - Editorial Design
+      - Magazine Design
+      - Apparel
+      - Posters
+      - Advertising
