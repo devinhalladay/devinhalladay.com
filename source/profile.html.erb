@@ -20,18 +20,14 @@ title: Profile
 </div>
 
 <div class="row xs-border-right xs-enclosed-section">
-  <div class="col-xs-12 col-sm-4">
-    <h3>Location</h3>
-    <p>Baltimore, MD</p>
-  </div>
-  <div class="col-xs-12 col-sm-4">
-    <h3>Likes</h3>
-    <p>Classical music, art, black clothes, minimalism, Jeff Goldblum, typography, literature, running, politics, liberty, coffee.</p>
-  </div>
-  <div class="col-xs-12 col-sm-4">
-    <h3>Dislikes</h3>
-    <p>Country music, Guy Fieri, purple, Condoleezza Rice, Kid Rock, bad kerning, planking.</p>
-  </div>
+  <% data.profile.fun_facts.each do |fact| %>
+    <div class="col-xs-12 col-sm-4">
+      <h3><%= fact.title %></h3>
+      <p>
+        <%= fact.content.join(", ") %>
+      </p>
+    </div>
+  <% end %>
 </div>
 
 <div class="row center-xs">

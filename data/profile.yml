@@ -1,0 +1,26 @@
+fun_facts:
+  - title: 'Location'
+    content:
+      - 'Baltimore, MD'
+  - title: 'Likes'
+    content:
+      - 'Classical music'
+      - 'art'
+      - 'black clothes'
+      - 'minimalism'
+      - 'Jeff Goldblum'
+      - 'typography'
+      - 'literature'
+      - 'running'
+      - 'politics'
+      - 'liberty'
+      - 'coffee'
+  - title: 'Dislikes'
+    content:
+      - 'Country music'
+      - 'Guy Fieri'
+      - 'purple'
+      - 'Condoleezza Rice'
+      - 'Kid Rock'
+      - 'bad kerning'
+      - 'planking'
