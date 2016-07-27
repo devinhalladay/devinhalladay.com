@@ -1,10 +1,14 @@
 <section class="c-latest-articles">
 
-  <%= partial("partials/section-title", :locals => { :title => "Latest Articles" }) %>
+  <% unless current_page.data.title == "Journal" %>
+    <%= partial("partials/section-title", :locals => { :title => "Latest Articles" }) %>
+  <% end %>
 
   <div class="row">
     <% if is_blog_article? %>
       <% items = blog('journal').articles.reject!{ |article| article.title == current_page.title }[0...2] %>
+    <% elsif current_page.data.title == "Journal" %>
+      <% items = blog('journal').articles %>
     <% else %>
       <% items = blog('journal').articles[0...2] %>
     <% end %>
@@ -14,8 +18,8 @@
         <a class="article-title" href="<%= article.url %>">
           <h1><%= article.title %></h1>
         </a>
-        <small class="u-font-meta u-font-meta u-font-mono"><%= article.date.strftime('%A %-d %B %Y') %></small>
-        <p><%= Nokogiri::HTML(article.summary).text %> <a href="<%= article.url %>">Read more</a></p>
+        <span class="article-date u-font-meta"><%= article.date.strftime('%A %-d %B %Y') %></span>
+        <p class="article-summary"><%= Nokogiri::HTML(article.summary).text %> <a href="<%= article.url %>">Read more</a></p>
       </div>
     <% end %>
   </div>
