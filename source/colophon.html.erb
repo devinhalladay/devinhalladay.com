@@ -9,28 +9,18 @@ title: Colophon
 <div class="row center-xs">
   <div class="col-xs-12 col-sm-9 col-md-7 col-lg-6">
     <ul class="u-font-meta u-font-unlist">
-      <li>Copyright &infin; Devin Halladay</li>
-      <li>Originally published 2016</li>
-      <li>Currently viewing Version № 5.0</li>
-      <li>Website design, development, and copywriting by Devin Halladay.</li>
+      <% data.colophon.basic_info.each do |item| %>
+        <li><%= item %></li>
+      <% end %>
     </ul>
 
-    <h3>Typography</h3>
-    <ul class="u-font-unlist">
-      <li>Periódico, <a href="http://eduardomanso.com/">Eduardo Manso (Emtype Foundry)</a></li>
-      <li>Vaud, <a href="http://wordshape.com/">Wordshape</a></li>
-    </ul>
-
-    <h3>Technology</h3>
-    <ul class="u-font-unlist">
-      <li><a href="http://middlemanapp.com">Middleman</a></li>
-      <li><a href="https://m.do.co/c/17d95b627883">Digital Ocean</a>, Rock solid hosting.</li>
-    </ul>
-
-    <h3>Portraits</h3>
-    <ul class="u-font-unlist">
-      <li>All those awesome portraits of yours truly cloaked in colored lights and moody atmospheric doom?</li>
-      <li>Yeah, those were done by my amazing photographer friend <a href="http://www.juliafletcherphoto.com/">Julia Fletcher</a>. <strong>Seriously, <a href="http://www.juliafletcherphoto.com/">check out her work</a> and <a href="http://www.juliafletcherphoto.com/contact">book her</a> right now.</strong> <em>I'll wait.</em></li>
-    </ul>
+    <% data.colophon.sections.each do |section| %>
+      <h3><%= section.title %></h3>
+      <ul class="u-font-unlist">
+        <% section.items.each do |item| %>
+          <li><%= item %></li>
+        <% end %>
+      </ul>
+    <% end %>
   </div>
 </div>
