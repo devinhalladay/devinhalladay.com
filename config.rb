@@ -1,7 +1,13 @@
 require 'toolkit'
 
+# # # # # #
+# @desc Activate global plugins
+# # # # # #
+
 activate :sprockets
-activate :autoprefixer
+activate :autoprefixer do |config|
+  config.browsers = ['last 2 versions', '> 10%']
+end
 
 set :markdown_engine, :redcarpet
 
