@@ -17,9 +17,11 @@ article {
 }
 
 .article {
+  &:not(:nth-last-child(-n+2)) {
+    margin-bottom: 1em;
+  }
   .article-title {
     text-decoration: none;
-    padding-bottom: 0.1em;
     h1 {
       margin-bottom: 0;
       line-height: 1.2;
@@ -28,9 +30,13 @@ article {
     }
   }
   .article-date {
-    // font-style: italic;
+    padding-top: .5em;
+    display: block;
     font-size: 0.9em;
     font-family: $monospace;
+  }
+  .article-summary {
+    margin-top: .5em;
   }
 }
 

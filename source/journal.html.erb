@@ -6,18 +6,7 @@ title: Journal
     <h1 class="u-font-mega u-font-center">Journal</h1>
   </div>
 </div>
-<section>
-  <div class="row">
-    <% blog('journal').articles.each do |article| %>
-      <div class="article col-xs-12 col-sm-6">
-        <a class="article-title" href="<%= article.url %>">
-          <h1><%= article.title %></h1>
-        </a>
-        <span class="article-date u-font-meta"><%= article.date.strftime('%A %-d %B %Y') %></span>
-        <p><%= Nokogiri::HTML(article.summary).text %> <a href="<%= article.url %>">Read more</a></p>
-      </div>
-    <% end %>
-  </div>
-</section>
+
+<%= partial "partials/latest-articles" %>
 
 <%= partial "partials/newsletter-form" %>
