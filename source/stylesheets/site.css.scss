@@ -1,28 +1,10 @@
-@import "toolkit";
-
-// Normalize
-@import "normalize";
-
-// Variables
-@import "variables/all";
-
-// Functions
-@import "utilities/all";
-
-// Mixins
-@import "mixins/all";
-
-// Base styles
-@import "base/all";
-
-// Objects
-@import "objects/all";
-
-// Components
-@import "components/all";
-
-// Helpers
-@import "helpers/all";
-
-// Vendor
-@import "vendor/all";
+@import "toolkit";          // Import Toolkit from the toolkit gem
+@import "normalize";        // Normalize
+@import "variables/all";    // Variables
+@import "utilities/all";    // Functions
+@import "mixins/all";       // Mixins
+@import "base/all";         // Base styles
+@import "objects/all";      // Objects
+@import "components/all";   // Components
+@import "helpers/all";      // Helpers
+@import "vendor/all";       // Vendor

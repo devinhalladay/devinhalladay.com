@@ -1,17 +1,20 @@
-require 'toolkit'
+set :markdown_engine, :redcarpet
 
 # # # # # #
-# @desc Activate global plugins
+# @desc Assets, autoprefixer, etc configs
 # # # # # #
+
+require 'toolkit'    # Require toolkit gem for Sass
 
 activate :sprockets
 activate :autoprefixer do |config|
   config.browsers = ['last 2 versions', '> 10%']
 end
 
-set :markdown_engine, :redcarpet
+# # # # # #
+# @desc Activate and configure blogs
+# # # # # #
 
-# Bring blog activation into a function to save typing and space
 def activate_blog(blog_name, article_layout, article_source: "{year}-{month}-{day}-{title}", blog_permalink: "{title}")
   activate :blog do |b|
     b.sources = article_source
@@ -41,7 +44,6 @@ helpers do
 end
 
 activate :directory_indexes
-activate :livereload
 
 configure :build do
   activate :minify_css
@@ -49,8 +51,6 @@ configure :build do
   activate :minify_html
   config[:host] = "http://devinhalladay.com/new/new/new/new/"
 end
-
-
 
 activate :deploy do |deploy|
   deploy.deploy_method = :rsync
