@@ -88,10 +88,10 @@ hr {
 }
 
 
-  * + h2, * + .h2,
-  * + h3, * + .h3 {
-    padding-top: $baseline;
-  }
+* + h2, * + .h2,
+* + h3, * + .h3 {
+  padding-top: $baseline;
+}
 
 code, pre {
   font-family: $monospace;
@@ -99,7 +99,7 @@ code, pre {
 
 ol {
   li {
-    margin-bottom: 1em;
+    margin-bottom: .5em;
   }
 }
 

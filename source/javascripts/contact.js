@@ -2,10 +2,9 @@
 //= require vendor/parsley
 
 $(document).ready(function() {
-
   $('select[name="reason"]').change(function () {
     if ($(this).val() == "You're intersted in hiring me for a project.") {
-      $('#budget').parent().show();
+      console.log($('#budget').parent().show());
       $('select[name="budget"]').prop('disabled', false);
     } else {
       $('#budget').parent().hide();
