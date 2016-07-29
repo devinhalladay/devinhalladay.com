@@ -9,9 +9,18 @@ cond1 ? stmt1 : (cond2 ? stmt2 : (cond3 ? stmt3 : stmt4)))
 
 %>
 
+<% if is_blog_article? %>
+  <% headline_title = current_article.blog_data.options[:name] %>
+<% elsif current_page.url == "/" %>
+  <% headline_title = "Welcome" %>
+<% else %>
+  <% headline_title = current_page.data.title %>
+<% end %>
+
+
 <header>
   <a href="/" class="header-brand">Devin Halladay</a>
-  <h3 class="lined u-font-meta u-font-mono u-font-small"><%= header_title %></h3>
+  <h3 class="lined u-font-meta u-font-mono u-font-small"><%= headline_title %></h3>
   <div class="line"></div>
   <%= partial "partials/fullscreen-navigation" %>
 </header>
