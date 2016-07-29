@@ -6,3 +6,38 @@ context: "Designed at Leapwise Media in the summer of 2014."
 filters: item-poster item-print item-branding item-logo
 priority: 10
 ---
+<div class="row center-xs">
+  <div class="col-xs-12 col-sm-10">
+    <%= partial("partials/lazyimg", :locals => { :img => "/images/2016/07/the-taste-of-medina/outcome/window.png" }) %>
+    <%= partial("partials/lazyimg", :locals => { :img => "/images/2016/07/the-taste-of-medina/poster-5.jpg" }) %>
+  </div>
+</div>
+<div class="row center-xs">
+  <div class="col-xs-12 col-sm-6">
+    <%= partial("partials/lazyimg", :locals => { :img => "/images/2016/07/the-taste-of-medina/outcome/apron.png", :border => true }) %>
+  </div>
+  <div class="col-xs-12 col-sm-6">
+    <%= partial("partials/lazyimg", :locals => { :img => "/images/2016/07/the-taste-of-medina/outcome/sticker.png" }) %>
+  </div>
+</div>
+<div class="row center-xs">
+  <div class="col-xs-12 col-sm-8">
+    <%= partial("partials/lazyimg", :locals => { :img => "/images/2016/07/the-taste-of-medina/outcome/final-colors.svg" }) %>
+  </div>
+</div>
+
+<div class="row center-xs">
+  <% (1..6).reject{ |i| i == 5 }.each do |i| %>
+    <div class="col-xs-12 col-sm-6">
+      <%= partial("partials/lazyimg", :locals => { :img => "/images/2016/07/the-taste-of-medina/poster-#{i}.jpg" }) %>
+    </div>
+  <% end %>
+</div>
+
+<div class="row center-xs">
+  <% (1..6).reject().each do |i| %>
+    <div class="col-xs-12 col-sm-6">
+      <%= partial("partials/lazyimg", :locals => { :img => "/images/2016/07/the-taste-of-medina/logo-#{i}.png", :border => true }) %>
+    </div>
+  <% end %>
+</div>

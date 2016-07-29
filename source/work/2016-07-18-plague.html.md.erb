@@ -5,14 +5,11 @@ intro: "I created two posters in a tribute to Crystal Castles, meant to evoke no
 filters: item-poster item-print
 priority: 1
 ---
-<div class="row center-xs">
+<div class="row center-xs top-xs">
   <div class="col-xs-12 col-sm-6">
-    <%= partial("partials/lazyimg", :locals => { :img => "/images/2016/07/plague/poster-1.jpg" }) %>
+    <%= partial("partials/lazyimg", :locals => { :img => "/images/2016/07/plague/poster-1.jpg", :border => true }) %>
   </div>
-</div>
-
-<div class="row center-xs">
-  <div class="col-xs-12 col-sm-10">
+  <div class="col-xs-12 col-sm-6">
     <%= partial("partials/lazyimg", :locals => { :img => "/images/2016/07/plague/poster-2.jpg" }) %>
   </div>
 </div>
