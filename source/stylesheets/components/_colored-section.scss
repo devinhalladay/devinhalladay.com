@@ -1,0 +1,9 @@
+.c-colored_section {
+  padding-top: 4em;
+  padding-bottom: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  .container + & {
+    margin-top: -2em;
+  }
+}
