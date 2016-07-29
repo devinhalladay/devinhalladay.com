@@ -19,6 +19,8 @@ $(document).ready(function() {
     $('#email').removeClass('has-error'); // remove the error class
     $('#message').removeClass('has-error'); // remove the error class
 
+    $('input[type="submit"]').val('Submitting...'); // set the submit button value to submitting...
+
     $('.contact-form :input').change(function(event) {
       $('input[type="submit"]').val('Submit!');
       $('input[type="submit"]').css("background-color", "#17aaff");
@@ -26,21 +28,20 @@ $(document).ready(function() {
     });
 
     // get the form data
-    // there are many ways to get this data using jQuery (you can use the class or id also)
     var formData = $(this).serialize();
     // process the form
     $.ajax({
       type        : 'POST',
-      url         : 'https://devinhalladay-contact.herokuapp.com', // the url where we want to POST
-      data        : formData, // our data object
-      dataType    : 'json', // what type of data do we expect back from the server
-      encode          : true
+      url         : 'https://devinhalladay-contact.herokuapp.com', // POST to this URL
+      data        : formData, // the data object
+      dataType    : 'json', // expect JSON back from the server response
+      encode      : true
     })
     // using the done promise callback
     .done(function(data) {
 
-      // log data to the console so we can see
-      console.log(data);
+      // DEBUGGING ONLY
+      // console.log(data);
 
       // handle errors and validation messages
       if ( ! data.success) {

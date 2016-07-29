@@ -16,10 +16,10 @@ input:-webkit-autofill {
   -webkit-text-fill-color: $text-color;
 
   .grid-form [data-row-span] [data-field-span]:hover & {
-    -webkit-box-shadow: 0 0 0 50px #ebf5fd inset;
+    -webkit-box-shadow: 0 0 0 50px lighten(#ebf5fd, .2) inset;
   }
 
   .grid-form [data-row-span] [data-field-span].focus & {
-    -webkit-box-shadow: 0 0 0 50px #d3eafc inset;
+    -webkit-box-shadow: 0 0 0 50px #ebf5fd inset;
   }
 }
