@@ -6,6 +6,11 @@
 
 .c-work-meta {
   margin-bottom: 2em;
+  @media (max-width: 48em) {
+    margin-left: 0;
+    margin-right: 0;
+    border-bottom: 1px solid rgba(151, 151, 151, 0.5);
+  }
 }
 
 .work {
