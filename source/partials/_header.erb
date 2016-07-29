@@ -1,6 +1,17 @@
+<%# if current_page_has_children
+  return current_page_title
+elsif current_page_has_a_parent (or: current_page_is_a_blog_article)
+  return current_page_parent_title
+elseif current_page_is_home_index
+  return "Welcome"
+
+cond1 ? stmt1 : (cond2 ? stmt2 : (cond3 ? stmt3 : stmt4)))
+
+%>
+
 <header>
   <a href="/" class="header-brand">Devin Halladay</a>
-  <h3 class="lined u-font-meta u-font-mono u-font-small">Welcome</h3>
+  <h3 class="lined u-font-meta u-font-mono u-font-small"><%= header_title %></h3>
   <div class="line"></div>
   <%= partial "partials/fullscreen-navigation" %>
 </header>

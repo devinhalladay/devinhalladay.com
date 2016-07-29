@@ -33,6 +33,7 @@ activate_blog("work", "work")
 
 # Helper functions, available in templates
 helpers do
+
   def active_link_to(caption, url, options = {})
     if current_page.url == "#{url}/"
       options[:class] = "active"
