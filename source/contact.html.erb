@@ -1,6 +1,10 @@
 ---
 title: Contact
 ---
+<% content_for :assets do %>
+  <%= javascript_include_tag :contact, :async => true %>
+<% end %>
+
 <% content_for :js do %>
   <script type="text/javascript">
     $(document).ready(function() {
@@ -14,10 +18,6 @@ title: Contact
       });
     });
   </script>
-<% end %>
-
-<% content_for :assets do %>
-  <%= javascript_include_tag :contact, :async => true %>
 <% end %>
 
 <div class="row">

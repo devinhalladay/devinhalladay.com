@@ -7,6 +7,7 @@ set :markdown_engine, :redcarpet
 require 'toolkit'    # Require toolkit gem for Sass
 
 activate :sprockets
+activate :livereload
 activate :autoprefixer do |config|
   config.browsers = ['last 2 versions', '> 10%']
 end

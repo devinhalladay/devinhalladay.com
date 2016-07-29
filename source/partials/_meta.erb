@@ -3,7 +3,9 @@
 <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
 
 <!-- Use title if it's in the page YAML frontmatter -->
-<title><%= "#{current_page.data.title} &mdash; Devin Halladay" || "Devin Halladay" %></title>
+<title><% if current_page.data.title %><%= "#{current_page.data.title} &mdash; Devin Halladay" %><% else %>Devin Halladay, Graphic Designer and Writer<% end %></title>
+
+
 
 <!-- Twitter Card -->
 
