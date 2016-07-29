@@ -43,6 +43,17 @@ helpers do
 
     link_to(caption, url, options)
   end
+
+  def header_title
+    if is_blog_article?
+      headline_title = current_article.blog_data.options[:name]
+    elsif current_page.url == "/"
+      headline_title = "Welcome"
+    else
+      headline_title = current_page.data.title
+    end
+  end
+  
 end
 
 activate :directory_indexes
