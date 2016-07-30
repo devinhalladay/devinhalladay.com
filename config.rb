@@ -53,7 +53,7 @@ helpers do
       headline_title = current_page.data.title
     end
   end
-  
+
 end
 
 activate :directory_indexes
@@ -61,8 +61,6 @@ activate :directory_indexes
 configure :build do
   activate :minify_css
   activate :minify_javascript
-  activate :minify_html
-  config[:host] = "http://devinhalladay.com/new/new/new/new/"
 end
 
 activate :deploy do |deploy|
