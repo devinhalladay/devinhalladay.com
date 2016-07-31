@@ -6,7 +6,6 @@ set :markdown_engine, :redcarpet
 
 require 'toolkit'    # Require toolkit gem for Sass
 
-activate :sprockets
 activate :livereload
 activate :autoprefixer do |config|
   config.browsers = ['last 2 versions', '> 10%']
@@ -58,7 +57,19 @@ end
 
 activate :directory_indexes
 
+activate :external_pipeline,
+  name: :webpack,
+  command: build? ? './node_modules/webpack/bin/webpack.js --bail' : './node_modules/webpack/bin/webpack.js --watch -d',
+  source: ".tmp/dist",
+  latency: 1
+
+configure :development do
+  ignore { |path| path =~ /\/(.*)\.js$/ && $1 != 'site' }
+end
+
 configure :build do
+  ignore { |path| path =~ /\/(.*)\.js$/ && $1 != 'site' }
+
   activate :minify_css
   activate :minify_javascript
 end

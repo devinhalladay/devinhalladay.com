@@ -1,5 +1,5 @@
-//= require vendor/gridforms
-//= require vendor/parsley
+import 'vendor/gridforms';
+import 'vendor/parsley';
 
 $(document).ready(function() {
   $('select[name="reason"]').change(function () {
