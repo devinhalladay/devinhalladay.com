@@ -1,4 +1,4 @@
-//= require vendor/typed
+require('vendor/typed');
 
 // Typed function for the 404 page.
 $(document).ready(function(){

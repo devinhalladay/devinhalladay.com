@@ -5,7 +5,6 @@ gem 'middleman', '>= 4.0.0'
 gem 'middleman-blog'
 gem 'middleman-livereload'
 gem 'middleman-autoprefixer'
-gem 'middleman-sprockets'
 gem 'middleman-minify-html'
 gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
 
