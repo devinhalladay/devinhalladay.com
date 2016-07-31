@@ -64,7 +64,7 @@ activate :external_pipeline,
   latency: 1
 
 configure :development do
-  ignore { |path| path =~ /\/(.*)\.js$/ && $1 != 'site' }
+  # ignore { |path| path =~ /\/(.*)\.js$/ && $1 != 'site' }
 end
 
 configure :build do
