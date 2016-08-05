@@ -7,12 +7,12 @@
 
     <%= yield_content :css %>
 
-    <style>
+    <!-- <style>
       .sr .c-section-divider,
       .sr .row {
         visibility: hidden;
       }
-    </style>
+    </style> -->
   </head>
 
   <body class="<%= page_classes %>">
@@ -28,9 +28,9 @@
     <%= partial "partials/footer" %>
 
     <%= yield_content :js %>
-    <script>
+    <!-- <script>
       sr.reveal('.sr .c-section-divider');
       sr.reveal('.sr .row');
-    </script>
+    </script> -->
   </body>
 </html>
