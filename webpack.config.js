@@ -3,7 +3,9 @@ var Clean = require('clean-webpack-plugin');
 
 module.exports = {
   entry: {
-    all: './source/javascripts/all.js'
+    all: './source/javascripts/all.js',
+    404: './source/javascripts/404.js',
+    contact: './source/javascripts/contact.js'
   },
 
   resolve: {
