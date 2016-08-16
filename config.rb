@@ -30,6 +30,7 @@ end
 # Activate and configure blogs
 activate_blog("journal", "article")
 activate_blog("work", "work")
+activate_blog("paintings", "work")
 
 
 # Helper functions, available in templates
