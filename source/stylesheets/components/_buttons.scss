@@ -16,51 +16,52 @@
 // }
 
 .button, .button-wrapper {
-    background-color: #ffffff;
-    color: $site-color;
-    border: 2px solid $site-color;
-    box-shadow: -5px -5px 0px 0px $site-color;
-    float: left;
-    margin-top: 1em;
-    transition: all 0.2s;
-    text-align: center;
-    box-sizing: border-box;
-    height: 55px;
-    position: relative;
+  font-family: $sans-serif;
+  background-color: #ffffff;
+  color: $site-color;
+  border: 2px solid $site-color;
+  box-shadow: -5px -5px 0px 0px $site-color;
+  float: left;
+  margin-top: 1em;
+  transition: all 0.2s;
+  text-align: center;
+  box-sizing: border-box;
+  height: 55px;
+  position: relative;
 }
 .button span, .button-wrapper a {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    box-sizing: border-box;
-    padding: 10px;
-    border: 0;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  box-sizing: border-box;
+  padding: 10px;
+  border: 0;
 }
 .button-wrapper {
-    margin: 0 0 40px 0;
+  margin: 0 0 40px 0;
 }
 .button-centered {
-    width: 100%;
-    text-align: center;
-    float: left;
+  width: 100%;
+  text-align: center;
+  float: left;
 }
 .button-centered .button {
-    display: inline-block;
-    float: none;
+  display: inline-block;
+  float: none;
 }
 .button:hover, .button:active, .button:focus, .button-wrapper:hover,
 .form-tab.active {
-    color: $dark-black;
-    border: 2px solid $dark-black;
-    -webkit-box-shadow: 5px 5px 0px 0px $dark-black;
-    -moz-box-shadow: 5px 5px 0px 0px $dark-black;
-    box-shadow: 5px 5px 0px 0px $dark-black;
+  color: $dark-black;
+  border: 2px solid $dark-black;
+  -webkit-box-shadow: 5px 5px 0px 0px $dark-black;
+  -moz-box-shadow: 5px 5px 0px 0px $dark-black;
+  box-shadow: 5px 5px 0px 0px $dark-black;
 }
 .button-plain {
   font-size: 20px;
@@ -71,11 +72,11 @@
   float: left;
 }
 .button-plain.absolute {
-    position: absolute;
-    bottom: 0;
-    margin: 0;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
 }
 .button-plain:hover {
-    color: $dark-black;
-    border: 2px solid $dark-black;
+  color: $dark-black;
+  border: 2px solid $dark-black;
 }
