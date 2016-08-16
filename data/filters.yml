@@ -16,9 +16,9 @@
 - title: Packaging
   filter_class: filter-packaging
   item_class: item-packaging
-- title: Illustration
-  filter_class: filter-illustration
-  item_class: item-illustration
+# - title: Illustration
+#   filter_class: filter-illustration
+#   item_class: item-illustration
 - title: Print
   filter_class: filter-print
   item_class: item-print
