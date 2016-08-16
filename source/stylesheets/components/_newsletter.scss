@@ -20,13 +20,13 @@
     text-align: left;
     margin-bottom: 0em;
   }
-  input {
+  input:not([type=submit]) {
     width: calc(100% - 1em);
     font-family: $sans-serif;
     padding: 10px 0 0.3em 1em;
     border: 1px solid $meta-color;
   }
-  input:focus {
+  input:not([type=submit]):focus {
     outline: none;
     border: 1px solid #10BEFC;
   }
@@ -88,7 +88,7 @@
 
 
 /* MailChimp Form Embed Code - Classic - 12/17/2015 v10.7 */
-#mc_embed_signup input {
+#mc_embed_signup input:not([type=submit]) {
   border: 1px solid #ABB0B2;
   border-radius: 3px;
 }
@@ -136,5 +136,6 @@
 
 .button, input[type="submit"], #mc_embed_signup input[type="submit"] {
   width: 100%;
-  border: 0;
+  outline: none;
+  // border: 0;
 }
