@@ -1,7 +1,7 @@
 basic_info:
   - Copyright &infin; Devin Halladay
   - Originally published 2016
-  - Currently viewing Version № 5.0
+  - Currently viewing Version № 5.0 <a href="http://v4.devinhalladay.com">(view v4)</a>
   - Website design, development, and copywriting by Devin Halladay.
 
 sections:
@@ -11,9 +11,7 @@ sections:
       - Vaud, <a href="http://wordshape.com/">Wordshape</a>
   - title: Technology
     items:
-      - <a href="http://middlemanapp.com">Middleman</a></li>
-      - <a href="https://m.do.co/c/17d95b627883">Digital Ocean</a>, Rock solid hosting.</li>
-  - title: Portraits
-    items:
-      - All those awesome portraits of yours truly cloaked in colored lights and moody atmospheric doom?</li>
-      - Yeah, those were done by my amazing photographer friend <a href="http://www.juliafletcherphoto.com/">Julia Fletcher</a>. <strong>Seriously, <a href="http://www.juliafletcherphoto.com/">check out her work</a> and <a href="http://www.juliafletcherphoto.com/contact">book her</a> right now.</strong> <em>I'll wait.</em></li>
+      - Ruby
+      - <a href="http://middlemanapp.com">Middleman</a>
+      - <a href="https://m.do.co/c/17d95b627883">Digital Ocean</a>, Rock solid hosting.
+      - Webpack
