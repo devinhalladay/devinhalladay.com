@@ -22,3 +22,6 @@
 - title: Print
   filter_class: filter-print
   item_class: item-print
+- title: Painting
+  filter_class: filter-painting
+  item_class: item-painting

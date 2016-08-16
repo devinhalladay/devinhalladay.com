@@ -1,0 +1,32 @@
+---
+title: Paintings
+scope: "Painting"
+intro: "Paintings."
+filters: item-painting
+priority: 1
+published: false
+---
+<section class="c-selected-work">
+  <div class="row tight-gutter work">
+    <% blog('paintings').articles.sort_by!{ |painting| painting.data.priority }.each_with_index do |painting, index| %>
+      <div class="col-xs-12 col-sm-12 col-md-6 mix <%= painting.data.filters.split.join(' ') %>" data-my-order="<%= index + 1 %>">
+
+        <% @dir = "/images/#{painting.date.strftime('%Y/%m')}/#{painting.title.downcase.gsub(' ', '-')}/cover" %>
+
+        <a href="<%= painting.url %>">
+          <div class="c-work-overlay">
+            <picture>
+              <source media="(min-width: 1020px)" srcset="<%= @dir %>/large-sm.png">
+              <source media="(min-width: 900px)" srcset="<%= @dir %>/large-sm.png">
+              <source media="(min-width: 680px)" srcset="<%= @dir %>/med.png">
+              <source srcset="<%= @dir %>/small.png">
+              <img alt="<%= painting.title %>" srcset="<%= @dir %>/med.png">
+            </picture>
+
+            <h2 class="u-font-sans"><%= painting.title %></h2>
+          </div>
+        </a>
+      </div>
+    <% end %>
+  </div>
+</section>
