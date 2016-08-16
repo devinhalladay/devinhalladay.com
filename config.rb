@@ -30,7 +30,7 @@ end
 
 
 # Setup sitemap
-set :url_root, 'http://devinhalladay.com'
+set :url_root, 'http://v4.devinhalladay.com'
 activate :search_engine_sitemap
 
 set :partials_dir, 'partials'
@@ -125,7 +125,7 @@ activate :directory_indexes
 activate :deploy do |deploy|
   deploy.method = :rsync
   deploy.host   = '162.243.103.246'
-  deploy.path   = '/var/www/devinhalladay.com/public_html/_site'
+  deploy.path   = '/var/www/v4.devinhalladay.com/public_html'
   deploy.user  = 'root'
   # Set deploy.port to define a port for the deploy server. Defaults to 22.
   deploy.clean = true # removes orphaned files on remote host, default: false
