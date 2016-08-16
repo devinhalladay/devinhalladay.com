@@ -11,6 +11,8 @@ activate :autoprefixer do |config|
   config.browsers = ['last 2 versions', '> 10%']
 end
 
+set :sass_source_maps, true
+
 # # # # # #
 # @desc Activate and configure blogs
 # # # # # #

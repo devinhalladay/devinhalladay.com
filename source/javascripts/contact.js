@@ -62,15 +62,33 @@ $(document).ready(function() {
         }
       } else {
         $('input[type="submit"]').val('Success. Talk to you soon!');
-        $('input[type="submit"]').css("background-color", "#0fcf7b");
+        $('input[type="submit"]').css("background-color", "#ffffff");
+        $('input[type="submit"]').css("color", "#0fcf7b");
+        $('input[type="submit"]').css("border", "2px solid #0fcf7b");
+        $('input[type="submit"]').css("box-shadow", "5px 5px 0px 0px #0fcf7b");
         $('input[type="submit"]').prop('disabled',true);
       }
     })
     .fail(function(data) {
       $('input[type="submit"]').val('Server error! Try again or email me at devin@devinhalladay.com.');
-      $('input[type="submit"]').css("background-color", "#e83131");
+      $('input[type="submit"]').val('Success. Talk to you soon!');
+      $('input[type="submit"]').css("background-color", "#ffffff");
+      $('input[type="submit"]').css("color", "#e83131");
+      $('input[type="submit"]').css("border", "2px solid #e83131");
+      $('input[type="submit"]').css("box-shadow", "5px 5px 0px 0px #e83131");
     });
     // stop the form from submitting the normal way and refreshing the page
     event.preventDefault();
+  });
+});
+
+$(document).ready(function() {
+  $('form[data-parsley-validate]').parsley({
+    trigger: 'change',
+    successClass: "has-success",
+    errorClass: "has-error",
+    classHandler: function (el) {
+      return el.$element.closest('div[data-field-span]');
+    }
   });
 });

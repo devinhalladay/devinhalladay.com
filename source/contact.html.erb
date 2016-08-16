@@ -6,18 +6,7 @@ title: Contact
 <% end %>
 
 <% content_for :js do %>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('form[data-parsley-validate]').parsley({
-        trigger: 'change',
-        successClass: "has-success",
-        errorClass: "has-error",
-        classHandler: function (el) {
-          return el.$element.closest('div[data-field-span]');
-        }
-      });
-    });
-  </script>
+  
 <% end %>
 
 <div class="row">
