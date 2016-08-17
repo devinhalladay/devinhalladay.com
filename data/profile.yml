@@ -30,12 +30,9 @@ fun_facts:
 about:
   - title: 'A little bit about myself'
     content:
-      - "My name is Devin Halladay, and I'm a multidisciplinary graphic designer, writer, and humanist."
-      - "I'm currently living in Baltimore, studying design at the Maryland Institute College of Art. I'm taking a critical look at design and social theory and working hard to apply them to my design practice."
-  - title: 'How I work'
-    content:
-      - "I solve problems. I believe in the power of people, design, and critical thought to find simple solutions to complex problems. I value craftsmanship, curation, and quality thought."
-      - "I live and work according to four core tenets: <strong>learn the rules, promptly and mercilessly break them with spirit and intent, experiment relentlessly, and create fearlessly.</strong>"
+      - "Hey! I'm Devin Halladay, a designer, poet, developer, sound artist, electronic musician, and sculptor—among other things."
+      - "I'm currently living in Baltimore, studying the intersections of design, sculpture, sound, and code at the Maryland Institute College of Art. I have a passion for interdisciplinary sculpture and for applying the poetics of space to all forms of media."
+      - "I live and work according to four core tenets: <ul><li><strong>Learn the rules;</strong></li><li><strong>Promptly and mercilessly break them with spirit and intent;</strong></li><li><strong>Experiment relentlessly; and</strong></li><li><strong>Create fearlessly.</strong></li></ul>"
 
 capabilities:
   - title: "Branding & Identity"
