@@ -5,10 +5,11 @@
 }
 
 .c-work-meta {
-  margin-bottom: 2em;
+  // margin-bottom: 2em;
   @media (max-width: 48em) {
     margin-left: 0;
     margin-right: 0;
+    margin-top: -1.6em;
     border-bottom: 1px solid rgba(151, 151, 151, 0.5);
   }
 }
@@ -38,6 +39,9 @@
 
 .intro {
   font-family: $sans-serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin-top: -0.4em;
+  @media (max-width: 48em) {
+    font-size: 1em;
+  }
 }

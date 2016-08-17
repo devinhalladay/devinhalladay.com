@@ -5,7 +5,7 @@
     </div>
   </div>
   <div class="row center-xs md-border-right xs-enclosed-section c-work-meta">
-    <div class="col-sm-12 <% if current_page.data.context %>col-md-7<% else %>col-md-10<% end %> col-xs-12">
+    <div class="col-sm-12 <% if current_page.data.context %>col-md-7<% else %>col-md-8<% end %> col-xs-12">
       <h3>Intro</h3>
       <div class="intro">
         <p><%= current_page.data.intro %></p>
@@ -17,14 +17,12 @@
         <p><%= current_page.data.context %></p>
       </div>
     <% end %>
-    <div class="col-sm-12 col-md-2 col-xs-12">
+    <div class="col-sm-12 col-md-3 col-xs-12">
       <h3>Scope</h3>
       <div>
-        <ul class="c-scope-list">
-          <% current_page.data.scope.split(", ").each do |r| %>
-            <li><%= r %></li>
-          <% end %>
-        </ul>
+        <p class="c-scope-list">
+          <%= current_page.data.scope %>
+        </p>
       </div>
     </div>
   </div>
