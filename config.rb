@@ -67,7 +67,7 @@ activate :external_pipeline,
   latency: 1
 
 configure :build do
-  ignore { |path| path =~ /\/(.*)\.js$/ && $1 != 'site' }
+  
 
   activate :minify_css
   activate :minify_javascript
