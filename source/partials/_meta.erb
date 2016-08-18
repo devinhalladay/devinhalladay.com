@@ -18,15 +18,11 @@
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_us">
-<meta property="og:url" content="https://devinhalladay.com/contact">
-<meta property="og:title" content="Devin Halladay — Contact">
+<meta property="og:url" content="http://devinhalladay.com<%= current_page.url %>">
+<meta property="og:title" content="<% if current_page.data.title %><%= "#{current_page.data.title} &mdash; Devin Halladay" %><% else %>Devin Halladay, Graphic Designer and Writer<% end %>">
 <meta property="og:description" content="I am a branding, print, and web designer in Baltimore, Maryland. I like making bold work with even bolder people.">
 <meta property="og:image" content="http://devinhalladay.com/images/2016/07/seo-image.png">
 <meta property="og:site_name" content="Devin Halladay">
-<meta property="og:see_also" content="https://twitter.com/devinhalladay">
-<meta property="og:see_also" content="https://www.dribbble.com/devinhalladay">
-<meta property="og:see_also" content="https://www.instagram.com/devinhalladay">
-<meta property="og:see_also" content="https://www.linkedin.com/in/devinhalladay">
 
 <%= stylesheet_link_tag :site %>
 
@@ -41,4 +37,15 @@
   insertBefore(d,q)}(window,document,'script','_gs');
 
   _gs('GSN-044261-H');
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-54086893-2', 'auto');
+  ga('send', 'pageview');
+
 </script>
