@@ -17,9 +17,16 @@
 - title: Packaging
   filter_class: filter-packaging
   item_class: item-packaging
+- title: Installation
+  filter_class: filter-installation
+  item_class: item-installation
+- title: Sound
+  filter_class: filter-sound
+  item_class: item-sound
 - title: Print
   filter_class: filter-print
   item_class: item-print
-- title: Painting
-  filter_class: filter-painting
-  item_class: item-painting
+# TODO: UNCOMMENT THESE WHEN YOU PUBLISH PAINTINGS
+# - title: Painting
+#  filter_class: filter-painting
+#  item_class: item-painting
