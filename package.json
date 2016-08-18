@@ -36,5 +36,9 @@
     "exports-loader": "^0.6.2",
     "imports-loader": "^0.6.4",
     "webpack": "^1.10.5"
+  },
+  "devDependencies": {
+    "file-loader": "^0.9.0",
+    "image-webpack-loader": "^2.0.0"
   }
 }
