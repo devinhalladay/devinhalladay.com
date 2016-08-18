@@ -858,6 +858,9 @@
 }
 
 .xs-enclosed-section {
+  .profile & {
+    margin-bottom: 2em;
+  }
   & + .xs-enclosed-section {
     border-top: none;
   }
