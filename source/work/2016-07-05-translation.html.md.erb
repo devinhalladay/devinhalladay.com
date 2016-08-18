@@ -1,7 +1,7 @@
 ---
 title: Translation
 scope: "Art Direction, Illustration, Print Design, Editorial Design"
-intro: "Translation is a magazine created as a followup to Kindred in collaboration with Julia Fletcher that explores the intersection of design, illustration, and photo, and the ways one can translate between these three distinct specializations. Documentation courtesy of Julia."
+intro: "Translation is a magazine created as a followup to Kindred examines the intersection of space, design, and photography by reversing the process used in Kindred. Documentation courtesy of Julia Fletcher."
 filters: item-illustration item-print
 priority: 3
 ---
@@ -10,22 +10,25 @@ priority: 3
     <%= partial("partials/lazyimg", :locals => { :img => "/images/2016/07/translation/spreads/1.png", :border => true }) %>
   </div>
   <div class="col-xs-12 col-sm-6">
-    <p>I have always had a keen interest in the way design and photo interact. With that interest in mind, I had the opportunity to collaborate with a good friend and fantastic photographer, Julia Fletcher, on a project. We immediately decided that we wanted to create a printed magazine, but the concept was the part that truly interested me.</p>
-    <p>Julia and I wanted to explore the way design and photo interact and relate. The idea was simple enough: Julia takes photos of manmade objects around the MICA campus, and I illustrate them however I see fit. Julia and I have similar styles and aesthetic interests, so the translation itself was no the challenge. The challenge was taking her photo, which is something captured and set in stone, into something living that can be altered freely to fit my simplified visual worldview.</p>
-    <p>The ultimate result of this experiment was a very interesting new way of thinking about the interaction of design and photo. Multiple questions were posed, but many will have to be answered with more projects <span class="u-font-meta">(hint, hint, keep your eyes open!)</span>.</p>
-  </div>
-</div>
-
-<div class="row tight-gutter">
-  <div class="col-xs-12 col-sm-6">
-    <%= partial("partials/lazyimg", :locals => { :img => "/images/2016/07/translation/spreads/2.png", :border => true }) %>
+    <p>Translation is a followup to Kindred, a magazine created with Julia Fletcher in 2015 to explore the intersections of space, design, and photography, and how physical space and architecture can be translated into two-dimensional mediums.</p>
+    <h3>Process</h3>
+    <p>The goal of this project was to reverse the process used in Kindred. The process for Translation consisted me creating (mostly abstract) geometric illustrations, and then handing them off to Julia. Once she had the illustrations on hand, she was to explore the Baltimore area and take photographs that looked like or were inspired by my illustrations.</p>
+    <p>You may notice some blank pages sprinkled in the mix here. In a few cases, I created illustrations that Julia could not take a matching photo for. This is especially interesting conceptually because it shows where the process fails; every process fails at a certain point, and we pushed ours to that point and beyond.</p>
+    <h3>Outcome</h3>
+    <p>This process provided us with numerous challenges, but ultimately resulted in a conceptually fascinating piece that garnered a lot of attention and fueled my personal passion for abstraction of space, which led to the creation of a wide range of pieces in many different mediums dealing with the abstraction, alteration, and augmentation of existing physical space.</p>
   </div>
 </div>
 
 <div class="row center-xs tight-gutter">
   <div class="col-xs-12 col-sm-10">
-    <% (3..26).each do |i| %>
-      <%= partial("partials/lazyimg", :locals => { :img => "/images/2016/07/translation/spreads/#{i}.png", :border => true }) %>
-    <% end %>
+    <%= partial("partials/lazyimg", :locals => { :img => "/images/2016/07/translation/spreads/2.png", :border => true }) %>
   </div>
+</div>
+
+<div class="row center-xs tight-gutter">
+  <% (3..26).each do |i| %>
+    <div class="col-xs-12 col-sm-6">
+      <%= partial("partials/lazyimg", :locals => { :img => "/images/2016/07/translation/spreads/#{i}.png", :border => true }) %>
+    </div>
+  <% end %>
 </div>
