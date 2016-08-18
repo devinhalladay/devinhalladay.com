@@ -1,7 +1,7 @@
 ---
 title: Kindred
 scope: "Art Direction, Illustration, Print Design, Editorial Design"
-intro: "Kindred is a magazine created in collaboration with Julia Fletcher that explores the intersection of design, illustration, and photo, and the ways one can translate between these three distinct specializations. Documentation courtesy of Julia."
+intro: "Kindred is a magazine that explores the intersection of design, illustration, and photo, and the ways one can translate between these three distinct specializations. Documentation courtesy of Julia."
 filters: item-illustration item-print
 priority: 2
 ---
@@ -11,39 +11,62 @@ priority: 2
   </div>
 </div>
 
-<div class="row center-xs">
+<div class="row">
+  <div class="col-xs-12 col-sm-3 col-md-4 col-lg-4">
+    <%= partial("partials/lazyimg", :locals => { :img => "/images/2016/07/kindred/me.jpg", :border => true }) %>
+  </div>
   <div class="col-xs-12 col-sm-9 col-md-7 col-lg-6">
     <p>I have always had a keen interest in the way design and photo interact. With that interest in mind, I had the opportunity to collaborate with a good friend and fantastic photographer, Julia Fletcher, on a project. We immediately decided that we wanted to create a printed magazine, but the concept was the part that truly interested me.</p>
-    <p>Julia and I wanted to explore the way design and photo interact and relate. The idea was simple enough: Julia takes photos of manmade objects around the MICA campus, and I illustrate them however I see fit. Julia and I have similar styles and aesthetic interests, so the translation itself was no the challenge. The challenge was taking her photo, which is something captured and set in stone, into something living that can be altered freely to fit my simplified visual worldview.</p>
-    <p>The ultimate result of this experiment was a very interesting new way of thinking about the interaction of design and photo. Multiple questions were posed, but many will have to be answered with more projects <span class="u-font-meta">(hint, hint, keep your eyes open!)</span>.</p>
+    <p>I wanted to explore the way design and photo interact and relate. The idea was simple enough: Julia takes photos of manmade objects around the MICA campus, and I illustrate them however I see fit.</p>
+    <p>Julia and I have similar styles and aesthetic interests, so the translation itself was no the challenge. The challenge was taking her photo, which is something captured and set in stone, into something living that can be altered freely to fit my simplified visual worldview.</p>
   </div>
 </div>
 
-<div class="row center-xs tight-gutter">
-  <div class="col-xs-12">
+<div class="row center-xs">
+  <div class="col-xs-12 col-sm-9">
     <%= partial("partials/lazyimg", :locals => { :img => "/images/2016/07/kindred/julia-2.jpg", :border => true }) %>
   </div>
 </div>
 
 <div class="row center-xs">
   <div class="col-xs-12 col-sm-6">
+    <h2>Awards</h2>
+    <p>Kindred, along with its sister magazine Translation, were chosen to be included in MICA's Foundation Exhibition in the fall of 2016.</p>
+  </div>
+</div>
+
+<div class="row center-xs">
+  <div class="col-xs-12 col-sm-5">
     <%= partial("partials/lazyimg", :locals => { :img => "/images/2016/07/kindred/spreads/1.png" }) %>
   </div>
-  <div class="col-xs-12 col-sm-6">
+  <div class="col-xs-12 col-sm-5">
     <%= partial("partials/lazyimg", :locals => { :img => "/images/2016/07/kindred/spreads/21.png" }) %>
   </div>
 </div>
 
-<div class="row center-xs tight-gutter">
-  <div class="col-xs-12 col-sm-10">
-    <% (2..20).each do |i| %>
-      <%= partial("partials/lazyimg", :locals => { :img => "/images/2016/07/kindred/spreads/#{i}.png", :border => true }) %>
-    <% end %>
+<div class="row center-xs">
+  <div class="col-xs-12 col-sm-9 col-md-7 col-lg-6">
+    <h2>Why?</h2>
+    <p>
+      In short, I have an <strong>obsession</strong> with abstraction of space and architecture. My paintings, sculpture, installation art, sound art, drawings, and posters often deal with color fields and the abstraction of space into a 2D representation.
+    </p>
+    <p>
+      This piece, and its sister piece, Translation, was my first chance to explore abstraction of space in-depth by recreating the space in multiple ways: photo and design.
+    </p>
   </div>
 </div>
 
 <div class="row center-xs tight-gutter">
-  <div class="col-xs-12 col-sm-8">
-    <%= partial("partials/lazyimg", :locals => { :img => "/images/2016/07/kindred/me.jpg", :border => true }) %>
+  <% (2..20).each do |i| %>
+    <div class="col-xs-12 col-sm-6">
+      <%= partial("partials/lazyimg", :locals => { :img => "/images/2016/07/kindred/spreads/#{i}.png", :border => true }) %>
+    </div>
+  <% end %>
+</div>
+
+<div class="row center-xs">
+  <div class="col-xs-12 col-sm-6">
+    <h2>Outcome</h2>
+    <p>The ultimate result of this experiment was a very interesting new way of thinking about the interaction of design and photo. Multiple questions were posed, but many will have to be answered with more projects <span class="u-font-meta">(hint, hint, keep your eyes open!)</span>.</p>
   </div>
 </div>
