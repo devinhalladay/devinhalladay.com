@@ -77,7 +77,7 @@ activate :deploy do |deploy|
   deploy.deploy_method = :rsync
   deploy.host   = '162.243.103.246'
   deploy.user   = 'root'
-  deploy.path   = '/var/www/devinhalladay.com/public_html/_site/new/new/new/new'
+  deploy.path   = '/var/www/devinhalladay.com/public_html'
   # Set deploy.port to define a port for the deploy server. Defaults to 22.
   deploy.clean = true # removes orphaned files on remote host, default: false
   deploy.flags = '--omit-dir-times -davz'
