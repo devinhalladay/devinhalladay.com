@@ -36,6 +36,7 @@ GEM
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
     hashie (3.4.4)
+    highline (1.7.8)
     htmlcompressor (0.2.0)
     http_parser.rb (0.6.0)
     i18n (0.7.0)
@@ -137,6 +138,7 @@ PLATFORMS
 
 DEPENDENCIES
   builder
+  highline
   middleman (>= 4.0.0)
   middleman-autoprefixer
   middleman-blog

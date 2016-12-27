@@ -16,3 +16,6 @@ gem 'toolkit', '~>2.0'
 
 # Add Nokogiri for text parsing
 gem 'nokogiri'
+
+# For rakefile
+gem 'highline'

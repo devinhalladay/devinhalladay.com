@@ -1,4 +1,117 @@
 ##################################################
+# Require gems.
+##################################################
+require "yaml"
+require "fileutils"
+require "tmpdir"
+require "rubygems"
+require "bundler/setup"
+require "highline/import"
+# require "httparty"
+
+# Get and parse the date
+DATE = Time.now.strftime("%Y-%m-%d")
+
+##################################################
+# Write a new post draft.
+##################################################
+
+desc 'Create a new post draft.'
+task :post do
+  # Define post variables by prompting.
+  title       = ask "Enter the title: "
+  post_text   = ask "Enter any initial text (like an idea or thought) here if you have it ready: "
+  slug_var    = HighLine.agree("Do you want a custom slug for this post? (y/n)")
+  if slug_var == true
+    slug_text   = ask "Okay, what should the slug be?"
+    slug        = "#{slug_text.downcase.gsub(/[^\w|']+/, '-')}"
+    slug_dashed = "#{slug.gsub(/[^a-zA-Z0-9\-]/, "")}"
+    slug_fixed  = "#{slug_dashed.gsub(/\-$/, '')}"
+  else
+    slug        = "#{title.downcase.gsub(/[^\w|']+/, '-')}"
+    slug_dashed = "#{slug.gsub(/[^a-zA-Z0-9\-]/, "")}"
+    slug_fixed  = "#{slug_dashed.gsub(/\-$/, '')}"
+  end
+
+  # Define the draft's filename.
+  file = File.join(
+    File.dirname(__FILE__),
+    'journal',
+    "#{DATE}-#{slug_fixed}.md"
+  )
+
+  # Create the draft file in the location defined above
+  # and insert the content defined in the post variables.
+  File.open(file, "w") do |f|
+    f << <<-EOS.gsub(/^    /, '')
+    ---
+    title: \"#{title}\"
+    published: \"false\"
+    ---
+    #{post_text}
+    EOS
+  end
+end
+
+##################################################
+# Write a new project.
+##################################################
+
+desc "Create a new project."
+task :project do
+  # Define project variables by prompting
+  title = ask "Enter the title: "
+  intro = ask "Enter project intro here: "
+  scope = ask "Enter project scopes here, separated by commas: "
+  scope_array = scope.split(",")
+  filters = ask "Enter project filters here, separated by commas (choose from
+  item-poster
+  item-branding
+  item-logo
+  item-web-ui
+  item-packaging
+  item-sculpture
+  item-sound
+  item-print): "
+  filters_array = filters.split(",")
+  priority = ask "Enter a number for the post's priority: "
+  post_text = ask "Enter post text, if you have any ready: "
+  slug_var    = HighLine.agree("Do you want a custom slug for this post? (y/n)")
+  if slug_var == true
+    slug_text   = ask "Okay, what should the slug be?"
+    slug        = "#{slug_text.downcase.gsub(/[^\w|']+/, '-')}"
+    slug_dashed = "#{slug.gsub(/[^a-zA-Z0-9\-]/, "")}"
+    slug_fixed  = "#{slug_dashed.gsub(/\-$/, '')}"
+  else
+    slug        = "#{title.downcase.gsub(/[^\w|']+/, '-')}"
+    slug_dashed = "#{slug.gsub(/[^a-zA-Z0-9\-]/, "")}"
+    slug_fixed  = "#{slug_dashed.gsub(/\-$/, '')}"
+  end
+
+  # Define the draft's filename.
+  file = File.join(
+    File.dirname(__FILE__),
+    'source/work',
+    "#{DATE}-#{slug_fixed}.html.erb"
+  )
+
+  # Create the draft file in the location defined above
+  # and insert the content defined in the post variables.
+  File.open(file, "w") do |f|
+    f << <<-EOS.gsub(/^    /, '')
+    ---
+    title: \"#{title}\"
+    scope: #{scope_array.join(",")}
+    intro: \"#{intro}\"
+    filters: #{filters_array.join(",")}
+    priority: #{priority}
+    ---
+    #{post_text}
+    EOS
+  end
+end
+
+##################################################
 # Notify the internet about new content
 ##################################################
 
