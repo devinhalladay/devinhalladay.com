@@ -19,8 +19,6 @@ ErrorDocument 404 /404/index.html
 # | Compression                                                                |
 # ------------------------------------------------------------------------------
 
-ExpiresActive on
-
 <IfModule mod_deflate.c>
 
     # Force compression for mangled headers.
@@ -119,21 +117,23 @@ ExpiresActive on
 
 </IfModule>
 
-## EXPIRES CACHING ##
+AddOutputFilter DEFLATE css js
+## ADD BROWSER CACHING ##
 <IfModule mod_expires.c>
 ExpiresActive On
-ExpiresByType image/jpg "access plus 1 year"
-ExpiresByType image/jpeg "access plus 1 year"
-ExpiresByType image/gif "access plus 1 year"
-ExpiresByType image/png "access plus 1 year"
-ExpiresByType text/css "access plus 1 month"
-ExpiresByType application/pdf "access plus 1 month"
-ExpiresByType text/x-javascript "access plus 1 month"
-ExpiresByType application/x-shockwave-flash "access plus 1 month"
-ExpiresByType image/x-icon "access plus 1 year"
-ExpiresDefault "access plus 2 days"
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 1 year"
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/png "access 1 year"
+ExpiresByType text/css "access 1 month"
+ExpiresByType text/javascript "access 1 month"
+ExpiresByType text/html "access 1 month"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType text/x-javascript "access 1 month"
+ExpiresByType application/x-shockwave-flash "access 1 month"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresDefault "access 1 month"
 </IfModule>
-## EXPIRES CACHING ##
 
 # ------------------------------------------------------------------------------
 # | Content Security Policy (CSP)                                              |
@@ -168,3 +168,16 @@ mod_gzip_item_include mime ^application/x-javascript.*
 mod_gzip_item_exclude mime ^image/.*
 mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
 </ifModule>
+
+## TYPES FIX ##
+AddType text/css .css
+AddType text/javascript .js
+## ADD GZIP COMPRESSION ##
+SetOutputFilter DEFLATE
+AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml text/javascript application/x-javascript application/x-httpd-php
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
+SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip
+Header append Vary User-Agent env=!dont-vary
