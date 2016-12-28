@@ -1,5 +1,5 @@
-$(document).ready(function() {
-  $.extend($.lazyLoadXT, {
-    edgeY:  200
-  });
-});
+// $(document).ready(function() {
+//   $.extend($.lazyLoadXT, {
+//     edgeY:  200
+//   });
+// });

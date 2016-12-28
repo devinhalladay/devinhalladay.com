@@ -1,4 +1,4 @@
-require('vendor/lazyloadxt');
+require('vendor/lazysizes.min');
 require('vendor/picturefill');
 require('vendor/mixitup');
 

@@ -33,11 +33,11 @@
         <a href="<%= work.url %>">
           <div class="c-work-overlay">
             <picture>
-              <source media="(min-width: 1020px)" srcset="<%= @dir %>/large-sm.png">
-              <source media="(min-width: 900px)" srcset="<%= @dir %>/large-sm.png">
-              <source media="(min-width: 680px)" srcset="<%= @dir %>/med.png">
+              <source media="(min-width: 1020px)" data-srcset="<%= @dir %>/large-sm.png">
+              <source media="(min-width: 900px)" data-srcset="<%= @dir %>/large-sm.png">
+              <source media="(min-width: 680px)" data-srcset="<%= @dir %>/med.png">
               <source srcset="<%= @dir %>/small.png">
-              <img alt="<%= work.title %>" srcset="<%= @dir %>/med.png">
+              <img alt="<%= work.title %>" class="lazyload" data-src="<%= @dir %>/med.png">
             </picture>
 
             <h2 class="u-font-sans"><%= work.title %></h2>
