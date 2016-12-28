@@ -19,6 +19,8 @@ ErrorDocument 404 /404/index.html
 # | Compression                                                                |
 # ------------------------------------------------------------------------------
 
+ExpiresActive on
+
 <IfModule mod_deflate.c>
 
     # Force compression for mangled headers.
@@ -63,6 +65,7 @@ ErrorDocument 404 /404/index.html
 # The following expires headers are set pretty far in the future. If you don't
 # control versioning with filename-based cache busting, consider lowering the
 # cache time for resources like CSS and JS to something like 1 week.
+
 
 <IfModule mod_expires.c>
 
@@ -154,3 +157,14 @@ ExpiresDefault "access plus 2 days"
 #        Header unset Content-Security-Policy
 #    </FilesMatch>
 # </IfModule>
+
+<ifModule mod_gzip.c>
+mod_gzip_on Yes
+mod_gzip_dechunk Yes
+mod_gzip_item_include file .(html?|txt|css|js|php|pl)$
+mod_gzip_item_include handler ^cgi-script$
+mod_gzip_item_include mime ^text/.*
+mod_gzip_item_include mime ^application/x-javascript.*
+mod_gzip_item_exclude mime ^image/.*
+mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
+</ifModule>
