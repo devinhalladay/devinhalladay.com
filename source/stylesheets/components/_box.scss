@@ -1,0 +1,36 @@
+.box-body {
+  border: 1px solid $meta-color;
+  border-radius: 3px;
+  padding: 15px;
+}
+
+.box-body strong {
+  color: inherit;
+}
+
+.box-header {
+  font-family: $sans-serif;
+  background-color: $text-color;
+  border-radius: 3px 3px 0 0;
+  color: white;
+  padding: 7px 10px 2px;
+}
+
+.box-header strong {
+  color: inherit;
+}
+
+.box-header + .box-body {
+  border-radius: 0 0 3px 3px;
+  border-top: none;
+}
+
+.box {
+  font-family: $sans-serif;
+  background-color: $lighter-color;
+  border-radius: 3px;
+}
+
+.box:not(:last-child) {
+  margin-bottom: 20px;
+}

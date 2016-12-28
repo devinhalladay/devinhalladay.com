@@ -7,3 +7,4 @@ $site-color: #17aaff;
 $text-color: #3d464d;
 $meta-color: #979797;
 $light-color: $dark-white;
+$lighter-color: lighten($dark-white, 7%);

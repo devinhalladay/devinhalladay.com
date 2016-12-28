@@ -3,3 +3,14 @@
   align-items: center;
   justify-content: center;
 }
+
+.u-clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}

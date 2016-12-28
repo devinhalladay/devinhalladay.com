@@ -89,3 +89,7 @@
 %u-font-small {
   @extend small;
 }
+
+.u-list-outside {
+  list-style-position: outside;
+}
