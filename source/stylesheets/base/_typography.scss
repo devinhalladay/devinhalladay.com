@@ -23,6 +23,10 @@ h2 + p {
   margin-top: -1em;
 }
 
+h1 + h3 {
+  padding-top: 0;
+}
+
 a {
   text-decoration: none;
   border-bottom: 1px solid currentColor;
