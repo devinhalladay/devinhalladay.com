@@ -12,7 +12,7 @@
 <meta property="twitter:creator" content="@devinhalladay">
 <meta property="twitter:title" content="Devin Halladay — Graphic Designer">
 <meta property="twitter:description" content="I am a branding, print, and web designer in Baltimore, Maryland. I like making bold work with even bolder people.">
-<meta property="twitter:image" content="http://devinhalladay.com/images/2016/07/seo-image.png">
+<meta property="twitter:image" content="<% if current_page.data.social_image %><%= "http://devinhalladay.com" + current_page.data.social_image %><% else %>http://devinhalladay.com/images/2016/07/seo-image.png <% end %>">
 
 <!-- Facebook OpenGraph -->
 
@@ -21,7 +21,7 @@
 <meta property="og:url" content="http://devinhalladay.com<%= current_page.url %>">
 <meta property="og:title" content="<% if current_page.data.title %><%= "#{current_page.data.title} &mdash; Devin Halladay" %><% else %>Devin Halladay, Graphic Designer and Writer<% end %>">
 <meta property="og:description" content="I am a branding, print, and web designer in Baltimore, Maryland. I like making bold work with even bolder people.">
-<meta property="og:image" content="http://devinhalladay.com/images/2016/07/seo-image.png">
+<meta property="og:image" content="<% if current_page.data.social_image %><%= "http://devinhalladay.com" + current_page.data.social_image %><% else %>http://devinhalladay.com/images/2016/07/seo-image.png <% end %>">
 <meta property="og:site_name" content="Devin Halladay">
 
 <%= stylesheet_link_tag :site %>
