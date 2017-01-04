@@ -6,4 +6,7 @@
   .container + & {
     margin-top: -2em;
   }
+  svg {
+    max-height: 220px;
+  }
 }
