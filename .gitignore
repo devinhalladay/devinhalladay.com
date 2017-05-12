@@ -23,3 +23,7 @@
 
 # Ignore my OmniOutliner Checklist
 Checklists.oo3
+
+# Ignore fonts
+/source/fonts
+/source/fonts/*
