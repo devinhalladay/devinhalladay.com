@@ -1,6 +1,7 @@
 ---
 title: "What's the secret?"
 permalink: 'journal/the-secret'
+published: false
 ---
 The vast majority of people these days are looking to live a life that doesn't interfere with the status quo. Others are looking for ways to get rich quick on the internet.  They ask "what's the secret?  how can I launch x-for-x in a week's time without any money, without hiring anyone, and without proper knowledge? how can I do this without failing a million times before I become successful?" Want to know the truth? It's not pleasant: there is no secret.
 

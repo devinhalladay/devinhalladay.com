@@ -1,5 +1,6 @@
 ---
 title: "My Digital Toolbelt"
+published: false
 ---
 This is just a quick post outlining the "tools of the trade," as they're known, that I use  for design and development; this only includes digital tools, but I plan on adding a new post shortly about the analog tools I use daily.
 

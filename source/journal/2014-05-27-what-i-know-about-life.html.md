@@ -1,5 +1,6 @@
 ---
 title: What I Know About Life
+published: false
 ---
 I like to think that I know a lot about life: that I'm wiser than my age lends me to be, that I know some small secret of this infinitely gigantic universe that helps me see the world differently than everyone else.
 

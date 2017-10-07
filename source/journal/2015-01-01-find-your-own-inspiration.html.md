@@ -1,5 +1,6 @@
 ---
 title: "Find Your Own Inspiration"
+published: false
 ---
 One thing that really bothers me about a lot of designers and other creative professionals (including myself) is that we focus too much on "inspiration." Inspiration is good thing. It helps us move, it helps us hustle. It drives passion and action. My problem is not with inspiration itself, but with the fact that many of us are looking for inspiration in all the wrong places.
 

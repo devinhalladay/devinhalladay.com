@@ -1,8 +1,8 @@
 links:
   - title: Work
     url: /
-  - title: Journal
-    url: /journal
+  # - title: Journal
+  #   url: /journal
   - title: Profile
     url: /profile
   - title: Contact

@@ -1,5 +1,6 @@
 ---
 title: Lessons Learned
+published: false
 ---
 
 ![You can't always have what you need.](/images/2015/08/25/lessons-learned/cover.jpg "You can't always have what you need.")

@@ -1,5 +1,6 @@
 ---
 title: A Manifesto for Quality Thought
+published: false
 ---
 1. No amount of thought can change anything unless ideas are shared and acted upon. If you censor yourself, you’ll never know what impact your thoughts can have on the world.
 2. Thought is the essence of life. Do not be afraid to be alone with your thoughts. When you take time away from the influence of society to be alone with your thoughts, you might learn more about yourself than you ever thought possible.

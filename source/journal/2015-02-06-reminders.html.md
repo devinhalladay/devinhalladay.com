@@ -1,5 +1,6 @@
 ---
 title: "Ten Reminders"
+published: false
 ---
 1. Stay humble.
 2. Never stop learning or experimenting.
