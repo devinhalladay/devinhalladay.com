@@ -3,62 +3,57 @@ availability: available
 fun_facts:
   - title: 'Location'
     content:
-      - 'Baltimore, MD'
+      - 'Baltimore — San Francisco'
   - title: 'Likes'
     content:
-      - 'Classical music'
-      - 'art'
-      - 'black clothes'
-      - 'minimalism'
+      - 'Nietzsche'
+      - 'sculpture'
       - 'Jeff Goldblum'
-      - 'typography'
-      - 'literature'
-      - 'running'
-      - 'politics'
-      - 'liberty'
+      - 'metaphysics'
+      - 'classical music'
+      - 'political theory'
       - 'coffee'
+      - 'Dadaism'
+      - 'clouds'
   - title: 'Dislikes'
     content:
-      - 'Country music'
       - 'Guy Fieri'
-      - 'purple'
+      - 'nihilism'
       - 'Condoleezza Rice'
-      - 'Kid Rock'
-      - 'bad kerning'
-      - 'planking'
+      - 'Donald Trump'
+      - 'pop music'
+      - 'bad writing'
 
 about:
-  - title: 'A little bit about myself'
+  - title:
     content:
-      - "Hey! I'm Devin Halladay, a designer, poet, developer, sound artist, electronic musician, and sculptor—among other things."
-      - "I'm currently living in Baltimore, studying the intersections of design, sculpture, sound, and code at the Maryland Institute College of Art. I have a passion for interdisciplinary sculpture and for applying the poetics of space to all forms of media."
-      - "I live and work according to four core tenets: <ul><li><strong>Learn the rules;</strong></li><li><strong>Promptly and mercilessly break them with spirit and intent;</strong></li><li><strong>Experiment relentlessly; and</strong></li><li><strong>Create fearlessly.</strong></li></ul>"
+      # - "I live and work according to four core tenets: <ul><li><strong>Learn the rules;</strong></li><li><strong>Promptly and mercilessly break them with spirit and intent;</strong></li><li><strong>Experiment relentlessly; and</strong></li><li><strong>Create fearlessly.</strong></li></ul>"
+      - "Hi! I’m Devin, a multidisciplinary designer, writer, and sculptor currently based in Baltimore, MD. I primarily work as a product and editorial designer, designing and simplifying complex systems at every scale."
+      - "I work closely with clients to achieve elegant, performant design solutions while maintaining a constant critical and conceptual lens on the work I’m making and its implications. I thrive on complex systems thinking and love nothing more than defining well-conceived product mechanics."
 
 capabilities:
-  - title: "Branding & Identity"
+  - title: "Branding"
     services:
-      - 'Logo Design'
-      - 'Identity Design'
-      - 'Brand Collateral'
-      - 'Brand Consulting'
-      - 'Brand Strategy'
-      - 'Brand Creation'
+      - 'Identity systems'
+      - 'Marks and logo design'
+      - 'Brand guidelines'
+      - 'Brand strategy'
+      - 'Creative direction'
+      - 'Copywriting'
 
   - title: "Design &amp; Development"
     services:
-      - 'UI Design'
-      - 'Web Design'
-      - 'Responsive Design'
-      - 'Ecommerce'
-      - 'Front-end Development'
-      - 'Sass'
-      - 'Ruby'
+      - 'Product design'
+      - 'Mechanics design'
+      - 'UI and web design'
+      - 'User experience'
+      - 'Front-end development'
 
   - title: "Print &amp; Publication"
     services:
-      - 'Book &amp; Editorial Design'
-      - 'Packaging Design'
-      - 'Magazine Design'
+      - 'Book &amp; editorial design'
+      - 'Magazine design'
       - 'Apparel'
       - 'Posters'
       - 'Advertising'
+      - 'Brand collateral'
