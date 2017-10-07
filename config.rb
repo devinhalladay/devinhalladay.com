@@ -50,7 +50,7 @@ helpers do
     if is_blog_article?
       headline_title = current_article.blog_data.options[:name]
     elsif current_page.url == "/"
-      headline_title = "Welcome"
+      headline_title = "Designer"
     else
       headline_title = current_page.data.title
     end
@@ -67,7 +67,7 @@ activate :external_pipeline,
   latency: 1
 
 configure :build do
-  
+
 
   activate :minify_css
   activate :minify_javascript

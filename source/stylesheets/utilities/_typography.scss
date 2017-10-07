@@ -63,12 +63,9 @@
 
 .u-font-mega,
 %u-font-mega {
-  font-size: 4em;
+  font-size: 3em;
   line-height: 1;
   margin-top: 0;
-  @media all and (max-width: 48em) {
-    font-size: 3em;
-  }
 }
 
 .u-font-unlist,
