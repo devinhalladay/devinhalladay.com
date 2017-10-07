@@ -34,9 +34,15 @@
   height: 580px;
   width: 100%;
   background-color: $light-color;
-  background: url('/images/2016/07/index-portrait.png') center no-repeat;
+  background: url('/images/2017/10/portrait-1.jpg') center no-repeat;
   background-size: cover;
-  @media only screen and (min-width: 1084px) {
-    background-position-y: -6em;
+  background-position: bottom;
+
+  @media only screen and (min-width: 1250px) {
+    background-position: center bottom -40px;
+  }
+
+  @media only screen and (max-width: 490px) {
+    height: 380px;
   }
 }
