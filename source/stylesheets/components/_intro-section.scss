@@ -1,5 +1,4 @@
 .intro-section {
-  background-color: #edeff1;
   height: 580px;
   text-align: center;
   padding-left: 2em;
@@ -10,6 +9,7 @@
   h1 {
     margin-top: 0;
     font-family: $display-serif;
+    font-weight: 300;
     font-size: 3em;
     line-height: 60px;
     padding-top: 60px;
@@ -26,7 +26,7 @@
   }
   p {
     font-family: $sans-serif;
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
