@@ -32,8 +32,9 @@ h1 + h3 {
 }
 
 a {
-  text-decoration: none;
-  border-bottom: 1px solid currentColor;
+  text-decoration-skip: ink;
+  text-decoration: underline;
+  // border-bottom: 1px solid currentColor;
   color: inherit;
   cursor: pointer;
 

@@ -52,7 +52,8 @@
     font-weight: 400;
     margin-top: -2.5em;
     line-height: 1;
-    border-bottom: 1px solid #ffffff;
+    text-decoration-skip: ink;
+    text-decoration: underline;
     @media all and (max-width: 48em) {
       font-size: 1.4em;
       margin-top: -3em;

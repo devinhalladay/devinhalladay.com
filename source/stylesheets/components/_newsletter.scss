@@ -83,7 +83,7 @@
 }
 
 .c-newsletter h2 span[data-text="Absurd"] {
-  @include textGlitch("absurd", 30, #007EFF, white, red, green, 450, 115);
+  @include textGlitch("absurd", 30, $text-color, white, red, blue, 450, 115);
 }
 
 /* MailChimp Form Embed Code - Classic - 12/17/2015 v10.7 */
