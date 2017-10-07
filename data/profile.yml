@@ -1,9 +1,6 @@
 availability: available
 
 fun_facts:
-  - title: 'Location'
-    content:
-      - 'Baltimore — San Francisco'
   - title: 'Likes'
     content:
       - 'Nietzsche'
@@ -25,11 +22,17 @@ fun_facts:
       - 'bad writing'
 
 about:
-  - title:
+  - title: "The Basics"
     content:
       # - "I live and work according to four core tenets: <ul><li><strong>Learn the rules;</strong></li><li><strong>Promptly and mercilessly break them with spirit and intent;</strong></li><li><strong>Experiment relentlessly; and</strong></li><li><strong>Create fearlessly.</strong></li></ul>"
       - "Hi! I’m Devin, a multidisciplinary designer, writer, and sculptor currently based in Baltimore, MD. I primarily work as a product and editorial designer, designing and simplifying complex systems at every scale."
       - "I work closely with clients to achieve elegant, performant design solutions while maintaining a constant critical and conceptual lens on the work I’m making and its implications. I thrive on complex systems thinking and love nothing more than defining well-conceived product mechanics."
+  - title: 'Methodology'
+    content:
+      - "My focus is on creating layered and expressive systems across traditional, current, and future media — from identity systems, to books, to user interfaces."
+      - "To that end I develop design systems in book and editorial design, typography, brand identity, and web and product design, through rigorous conceptual development, content strategy, and research."
+      - "I see every project as an opportunity to question the state, understanding, and values of design: each piece is a constant interplay of conceptual experimentation and applied knowledge."
+      - "My primary motive as a practicing artist and designer is to give coherence to complex systems. Sometimes this means designing the invisible, breaking with the expected, and on occasion embracing established values with sharp criticality."
 
 capabilities:
   - title: "Branding"
