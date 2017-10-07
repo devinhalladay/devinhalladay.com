@@ -50,6 +50,7 @@ header h3.lined {
   flex: 1;
   text-align: center;
   margin-right: -4.5em;
+  margin-top: -4px;
 
   @media all and (max-width: 48em) {
     display: none;

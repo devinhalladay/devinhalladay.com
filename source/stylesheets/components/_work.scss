@@ -40,9 +40,5 @@
 
 .intro {
   font-family: $sans-serif;
-  font-size: 1.1em;
   margin-top: -0.4em;
-  @media (max-width: 48em) {
-    font-size: 1em;
-  }
 }

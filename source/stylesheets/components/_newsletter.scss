@@ -23,12 +23,15 @@
   input:not([type=submit]) {
     width: calc(100% - 1em);
     font-family: $sans-serif;
-    padding: 10px 0 0.3em 1em;
-    border: 1px solid $meta-color;
+    padding: 0 0 0.3em 0;
+    border-bottom: 1px solid $meta-color;
   }
   input:not([type=submit]):focus {
     outline: none;
-    border: 1px solid #10BEFC;
+    border-color: #10BEFC;
+  }
+  .mc-field-group {
+    padding-bottom: 1em;
   }
 }
 
@@ -83,14 +86,14 @@
   @include textGlitch("absurd", 30, #007EFF, white, red, green, 450, 115);
 }
 
-
-
-
-
 /* MailChimp Form Embed Code - Classic - 12/17/2015 v10.7 */
 #mc_embed_signup input:not([type=submit]) {
-  border: 1px solid #ABB0B2;
-  border-radius: 3px;
+  border: none;
+  border-bottom: 1px solid #ABB0B2;
+
+  &:focus {
+    border-color: #10BEFC;
+  }
 }
 
 #mc_embed_signup #mce-error-response {
