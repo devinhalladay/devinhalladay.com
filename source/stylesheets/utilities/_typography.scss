@@ -56,6 +56,11 @@
     font-family: $sans-serif;
 }
 
+.u-font-serif,
+%u-font-serif {
+    font-family: $text-serif;
+}
+
 .u-font-mono,
 %u-font-mono {
     font-family: $monospace;
