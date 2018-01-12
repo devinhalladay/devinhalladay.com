@@ -24,10 +24,11 @@
 <meta property="og:image" content="<% if current_page.data.social_image %><%= "http://devinhalladay.com" + current_page.data.social_image %><% else %>http://devinhalladay.com/assets/images/2016/07/seo-image.png <% end %>">
 <meta property="og:site_name" content="Devin Halladay">
 
-<link rel="stylesheet" href="https://use.typekit.net/ukx6tpn.css">
+<%= stylesheet_link_tag "https://use.typekit.net/ukx6tpn.css" %>
 <%= stylesheet_link_tag :site %>
 
 <%= javascript_include_tag "https://code.jquery.com/jquery-2.2.4.min.js", :async => true %>
+<%= javascript_include_tag "https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js", :async => true %>
 <%= javascript_include_tag :all, :async => true %>
 
 <script>

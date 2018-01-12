@@ -1,20 +1,21 @@
 .intro-section {
   text-align: center;
-  padding: 2em;
+  padding: 2em 2em 4em;
   @media screen and (max-width: 48em) {
     margin-bottom: 2em;
   }
   h1 {
     font-family: $display-serif;
-    font-weight: 300;
-    font-size: 3em;
-    @media only screen and (max-width: 1116px) {
-      font-size: 2.5em;
-    }
+    font-weight: 350;
+    font-size: 2.6em;
+    margin: 0;
   }
+
   hr {
-    height: 220px;
+    height: 160px;
     border-color: $black;
+    margin-top: .5em;
+    margin-bottom: .5em;
     @media only screen and (max-width: 1116px) {
       height: 160px;
     }
@@ -23,22 +24,5 @@
     font-family: $sans-serif;
     font-size: 1.6em;
     margin: 0;
-  }
-}
-
-.c-index-profile-image {
-  height: 580px;
-  width: 100%;
-  background-color: $light-color;
-  background: url('/assets/images/2017/10/portrait-1.jpg') center no-repeat;
-  background-size: cover;
-  background-position: bottom;
-
-  @media only screen and (min-width: 1250px) {
-    background-position: center bottom -40px;
-  }
-
-  @media only screen and (max-width: 490px) {
-    height: 380px;
   }
 }

@@ -7,23 +7,6 @@
 <% end %>
 
 <section class="c-selected-work">
-
-  <%= partial("partials/section-title", :locals => { :title => section_title }) %>
-
-  <div class="row tight-gutter">
-    <div class="col-xs-12">
-      <div id="filters">
-        <div data-filter="all" class="filter-all filter">All</div>
-        <% for f in data.filters %>
-
-          <% filters = f.item_class.split %>
-
-          <div <% for filter in filters %>data-filter=".<%= filter %>"<% end %> class="filter"><%= f.title %></div>
-        <% end %>
-      </div>
-    </div>
-  </div>
-
   <div class="row tight-gutter work">
     <% items.each_with_index do |work, index| %>
       <div class="col-xs-12 col-sm-12 col-md-6 mix <%= work.data.filters.split.join(' ') %>" data-my-order="<%= index + 1 %>">
