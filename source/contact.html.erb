@@ -1,14 +1,6 @@
 ---
 title: Contact
 ---
-<% content_for :assets do %>
-  <%= javascript_include_tag :contact, :async => true %>
-<% end %>
-
-<% content_for :js do %>
-
-<% end %>
-
 <div class="row">
   <div class="col-xs-12">
     <h1 class="u-font-mega u-font-center c-page-title border-bottom">Let's Talk</h1>
@@ -27,55 +19,3 @@ title: Contact
     </ul>
   </div>
 </div>
-<!-- <div class="row center-xs">
-  <div class="col-xs-12 col-sm-9 col-md-7 col-lg-6">
-    <form class="contact-form grid-form" method="POST" action="https://devinhalladay-contact.herokuapp.com/" data-parsley-validate>
-      <fieldset>
-        <legend></legend>
-        <div data-row-span="2">
-          <div data-field-span="1" id="name">
-            <label>Your Name</label>
-            <input name="name" type="text" placeholder="Albert Camus" required>
-          </div>
-          <div data-field-span="1" id="email">
-            <label>Your Email</label>
-            <input type="email" name="email" placeholder="albert@albertcamus.com" required>
-          </div>
-        </div>
-        <div data-row-span="2">
-          <div data-field-span="2" id="reasons">
-            <label>Reason for your inquiry</label>
-            <select name="reason" required>
-              <option>You're interested in hiring me for a project.</option>
-              <option>You're interested in hiring me full-time or as an intern.</option>
-              <option>You'd just like to say hello.</option>
-              <option>You're an aspiring designer or a student and want advice.</option>
-              <option>You'd like me to speak at your school or event.</option>
-            </select>
-          </div>
-        </div>
-        <div data-row-span="2">
-          <div data-field-span="2" id="budget">
-            <label>Budget</label>
-            <select name="budget" required>
-              <option>$1,000 to $5,000</option>
-              <option>$5,000 to $10,000</option>
-              <option>$10,000 to $15,000</option>
-              <option>$15,000 to $25,000</option>
-              <option>$25,000+</option>
-              <option>Not Sure</option>
-            </select>
-          </div>
-        </div>
-        <div data-row-span="2">
-          <div data-field-span="2" id="message">
-            <label>Your Message</label>
-            <textarea name="message" placeholder="Type your wonderful message here" required></textarea>
-          </div>
-        </div>
-        <input type="text" name="h37fsdiu" value="">
-        <input type="submit" value="Submit!" class="button">
-      </fieldset>
-    </form>
-  </div>
-</div> -->
