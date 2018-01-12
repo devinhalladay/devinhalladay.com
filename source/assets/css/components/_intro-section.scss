@@ -1,18 +1,13 @@
 .intro-section {
-  height: 580px;
   text-align: center;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding: 2em;
   @media screen and (max-width: 48em) {
     margin-bottom: 2em;
   }
   h1 {
-    margin-top: 0;
     font-family: $display-serif;
     font-weight: 300;
     font-size: 3em;
-    line-height: 60px;
-    padding-top: 60px;
     @media only screen and (max-width: 1116px) {
       font-size: 2.5em;
     }
@@ -26,7 +21,8 @@
   }
   p {
     font-family: $sans-serif;
-    font-size: 18px;
+    font-size: 1.6em;
+    margin: 0;
   }
 }
 
