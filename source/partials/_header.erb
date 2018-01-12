@@ -1,6 +1,21 @@
 <header>
-  <a href="/" class="header-brand">Devin Halladay</a>
-  <h3 class="lined u-font-meta u-font-mono u-font-small"><%= header_title %></h3>
-  <div class="line"></div>
-  <%= partial "partials/fullscreen-navigation" %>
+  <div class="header-group">
+    <a href="/" class="site-title">Devin Halladay</a>
+    <div class="line"></div>
+  </div>
+
+  <div class="header-group header-group--subtitle">
+    <h3 class="u-font-meta u-font-mono u-font-small"><%= header_title %></h3>
+  </div>
+
+  <div class="header-group">
+    <div class="line"></div>
+    <nav class="site-nav">
+      <ul>
+        <% for link in data.navigation.links %>
+          <li><%= active_link_to link.title, link.url %></li>
+        <% end %>
+      </ul>
+    </nav>
+  </div>
 </header>

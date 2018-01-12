@@ -8,30 +8,30 @@ priority: 13
 ---
 <div class="row center-xs">
   <div class="col-xs-12 col-sm-8">
-    <%= partial("partials/lazyimg", :locals => { :img => "/images/2016/07/the-taste-of-medina/poster-5.jpg" }) %>
+    <%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2016/07/the-taste-of-medina/poster-5.jpg" }) %>
   </div>
   <div class="col-xs-12 col-sm-6">
-    <%= partial("partials/lazyimg", :locals => { :img => "/images/2016/07/the-taste-of-medina/outcome/window.png" }) %>
+    <%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2016/07/the-taste-of-medina/outcome/window.png" }) %>
   </div>
 </div>
 <div class="row center-xs">
   <div class="col-xs-12 col-sm-6">
-    <%= partial("partials/lazyimg", :locals => { :img => "/images/2016/07/the-taste-of-medina/outcome/apron.png", :border => true }) %>
+    <%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2016/07/the-taste-of-medina/outcome/apron.png", :border => true }) %>
   </div>
   <div class="col-xs-12 col-sm-6">
-    <%= partial("partials/lazyimg", :locals => { :img => "/images/2016/07/the-taste-of-medina/outcome/sticker.png" }) %>
+    <%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2016/07/the-taste-of-medina/outcome/sticker.png" }) %>
   </div>
 </div>
 <div class="row center-xs">
   <div class="col-xs-12 col-sm-8">
-    <%= partial("partials/lazyimg", :locals => { :img => "/images/2016/07/the-taste-of-medina/outcome/final-colors.svg" }) %>
+    <%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2016/07/the-taste-of-medina/outcome/final-colors.svg" }) %>
   </div>
 </div>
 
 <div class="row center-xs">
   <% (1..6).reject{ |i| i == 5 }.each do |i| %>
     <div class="col-xs-12 col-sm-6">
-      <%= partial("partials/lazyimg", :locals => { :img => "/images/2016/07/the-taste-of-medina/poster-#{i}.jpg" }) %>
+      <%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2016/07/the-taste-of-medina/poster-#{i}.jpg" }) %>
     </div>
   <% end %>
 </div>
@@ -39,7 +39,7 @@ priority: 13
 <div class="row center-xs">
   <% (1..6).reject().each do |i| %>
     <div class="col-xs-12 col-sm-6">
-      <%= partial("partials/lazyimg", :locals => { :img => "/images/2016/07/the-taste-of-medina/logo-#{i}.png", :border => true }) %>
+      <%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2016/07/the-taste-of-medina/logo-#{i}.png", :border => true }) %>
     </div>
   <% end %>
 </div>

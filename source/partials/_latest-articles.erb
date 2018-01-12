@@ -20,7 +20,7 @@
         </a>
         <span class="article-date u-font-meta"><%= article.date.strftime('%A %-d %B %Y') %></span>
         <p class="article-summary"><%= Nokogiri::HTML(article.summary).text %> <a href="<%= article.url %>">Read more</a></p>
-        <!-- <img src="http://localhost:4567/images/2015/08/25/lessons-learned/cover.jpg" class="related-img"> -->
+        <!-- <img src="http://localhost:4567/assets/images/2015/08/25/lessons-learned/cover.jpg" class="related-img"> -->
       </div>
     <% end %>
   </div>

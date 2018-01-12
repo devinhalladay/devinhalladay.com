@@ -28,7 +28,7 @@
     <% items.each_with_index do |work, index| %>
       <div class="col-xs-12 col-sm-12 col-md-6 mix <%= work.data.filters.split.join(' ') %>" data-my-order="<%= index + 1 %>">
 
-        <% @dir = "/images/#{work.date.strftime('%Y/%m')}/#{work.title.downcase.gsub(' ', '-')}/cover" %>
+        <% @dir = "/assets/images/#{work.date.strftime('%Y/%m')}/#{work.title.downcase.gsub(' ', '-')}/cover" %>
 
         <a href="<%= work.url %>">
           <div class="c-work-overlay">

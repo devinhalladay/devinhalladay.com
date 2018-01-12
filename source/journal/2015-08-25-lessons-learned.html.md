@@ -3,7 +3,7 @@ title: Lessons Learned
 published: false
 ---
 
-![You can't always have what you need.](/images/2015/08/25/lessons-learned/cover.jpg "You can't always have what you need.")
+![You can't always have what you need.](/assets/images/2015/08/25/lessons-learned/cover.jpg "You can't always have what you need.")
 
 I've learned a few important lessons this summer that I thought I'd share—mostly for myself, but hopefully they will help you, too.
 

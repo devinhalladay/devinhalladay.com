@@ -3,18 +3,18 @@ var Clean = require('clean-webpack-plugin');
 
 module.exports = {
   entry: {
-    all: './source/javascripts/all.js',
-    404: './source/javascripts/404.js',
-    contact: './source/javascripts/contact.js'
+    all: './source/assets/js/all.js',
+    404: './source/assets/js/404.js',
+    contact: './source/assets/js/contact.js'
   },
 
   resolve: {
-    root: __dirname + '/source/javascripts',
+    root: __dirname + '/source/assets/js',
   },
 
   output: {
     path: __dirname + '/.tmp/dist',
-    filename: 'javascripts/[name].js',
+    filename: 'assets/js/[name].js',
   },
 
   module: {

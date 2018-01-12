@@ -1,17 +1,22 @@
+activate :livereload
+activate :autoprefixer
+
 set :markdown_engine, :redcarpet
 
-# # # # # #
-# @desc Assets, autoprefixer, etc configs
-# # # # # #
+require 'toolkit'
 
-require 'toolkit'    # Require toolkit gem for Sass
+activate :external_pipeline,
+  name: :webpack,
+  command: build? ? './node_modules/webpack/bin/webpack.js --bail' : './node_modules/webpack/bin/webpack.js --watch -d --progress --color',
+  source: ".tmp/dist",
+  latency: 1
 
-activate :livereload
-activate :autoprefixer do |config|
-  config.browsers = ['last 2 versions', '> 10%']
-end
+# Set custom asset directories.
+set :css_dir, "assets/css"
+set :js_dir, "assets/js"
+set :images_dir, "assets/images"
+set :fonts_dir, "assets/fonts"
 
-set :sass_source_maps, true
 
 # # # # # #
 # @desc Activate and configure blogs
@@ -30,7 +35,6 @@ end
 # Activate and configure blogs
 activate_blog("journal", "article")
 activate_blog("work", "work")
-activate_blog("paintings", "work")
 
 
 # Helper functions, available in templates
@@ -60,15 +64,10 @@ end
 
 activate :directory_indexes
 
-activate :external_pipeline,
-  name: :webpack,
-  command: build? ? './node_modules/webpack/bin/webpack.js --bail' : './node_modules/webpack/bin/webpack.js --watch -d',
-  source: ".tmp/dist",
-  latency: 1
-
 configure :build do
-
-
+  # "Ignore" JS so webpack has full control.
+  ignore { |path| path =~ /\/(.*)\.js$/ && $1 != 'site' }
+  
   activate :minify_css
   activate :minify_javascript
 end

@@ -11,7 +11,7 @@ published: false
     <% blog('paintings').articles.sort_by!{ |painting| painting.data.priority }.each_with_index do |painting, index| %>
       <div class="col-xs-12 col-sm-12 col-md-6 mix <%= painting.data.filters.split.join(' ') %>" data-my-order="<%= index + 1 %>">
 
-        <% @dir = "/images/#{painting.date.strftime('%Y/%m')}/#{painting.title.downcase.gsub(' ', '-')}/cover" %>
+        <% @dir = "/assets/images/#{painting.date.strftime('%Y/%m')}/#{painting.title.downcase.gsub(' ', '-')}/cover" %>
 
         <a href="<%= painting.url %>">
           <div class="c-work-overlay">
