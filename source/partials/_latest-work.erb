@@ -6,7 +6,7 @@
 <% section_title = "Selected Work" %>
 <% end %>
 
-<section class="c-selected-work">
+<!-- <section class="c-selected-work">
   <div class="row tight-gutter work">
     <% items.each_with_index do |work, index| %>
       <div class="col-xs-12 col-sm-12 col-md-6 mix <%= work.data.filters.split.join(' ') %>" data-my-order="<%= index + 1 %>">
@@ -27,6 +27,34 @@
           </div>
         </a>
       </div>
+    <% end %>
+  </div>
+</section> -->
+
+<section class="c-selected-work container-fluid u-clearfix">
+  <div class="projects">
+    <% items.each_with_index do |work, index| %>
+        <% @img = "https://devinhalladay.imgix.net/#{work.date.strftime('%Y/%m')}/#{work.title.downcase.gsub(' ', '-')}/cover/large.png" %>
+
+        <a href="<%= work.url %>" class="project <%= work.data.grid_width %> <%= work.data.filters.split.join(' ') %>" data-size="3x1">
+          <picture>
+
+            <source media="(min-width: 1200px)" data-srcset="<%= @img %>?w=800&amp;fm=jpg&amp;q=100&amp;sharp=20, <%= @img %>?w=800&amp;fm=jpg&amp;q=100&amp;sharp=20&amp;dpr=2 2x">
+
+            <source media="(min-width: 768px) and (max-width: 992px)" data-srcset="<%= @img %>?w=992&amp;fm=jpg&amp;q=100&amp;sharp=20, <%= @img %>?w=992&amp;fm=jpg&amp;q=100&amp;sharp=20&amp;dpr=2 2x">
+
+            <source media="(min-width: 480px) and (max-width: 768px)" data-srcset="<%= @img %>?w=768&amp;fm=jpg&amp;q=100&amp;sharp=20, <%= @img %>?w=768&amp;fm=jpg&amp;q=100&amp;sharp=20&amp;dpr=2 2x">
+
+            <source media="(max-width: 480px)" data-srcset="<%= @img %>?w=480&amp;fm=jpg&amp;q=100&amp;sharp=20, <%= @img %>?w=480&amp;fm=jpg&amp;q=100&amp;sharp=20&amp;dpr=2 2x">
+
+            <img alt="<%= work.title %>" class="lazyload" data-src="<%= @img %>?w=800&amp;fm=jpg&amp;q=100&amp;sharp=20" data-srcset="<%= @img %>?w=800&amp;fm=jpg&amp;q=100&amp;sharp=20&amp;dpr=2 2x">
+
+          </picture>
+
+          <div class='title'>
+            <%= work.title %>
+          </div>
+        </a>
     <% end %>
   </div>
 </section>
