@@ -130,9 +130,27 @@
   vertical-align: top;
   width: 100%;
 }
-.project a {
+.project {
   display: block;
+  text-decoration: none;
   overflow: hidden;
+
+  .project-title {
+    font-family: $sans-serif;
+    padding: 0.5em 0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    align-items: flex-start;
+    display: flex;
+    margin-top: -9px;
+    align-items: center;
+
+    .subtitle {
+      margin-left: auto;
+      color: $meta-color;
+    }
+  }
 }
 .project-image {
   position: relative;
