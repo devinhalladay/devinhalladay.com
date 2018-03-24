@@ -4,8 +4,22 @@
   margin-top: -0.6em;
 }
 
+.meta-section {
+  padding-top: 2em;
+  border-bottom: 1px solid $black;
+}
+
 .c-work-meta {
   margin-bottom: 2em;
+  border-bottom: 1px solid $black;
+  padding-bottom: 3em;
+  & > div:first-child {
+    padding-left: 0;
+  }
+  h1 {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
   @media (max-width: 48em) {
     margin-left: 0;
     margin-right: 0;
@@ -40,5 +54,7 @@
 
 .intro {
   font-family: $sans-serif;
-  margin-top: -0.4em;
+  p {
+    margin: 0;
+  }
 }

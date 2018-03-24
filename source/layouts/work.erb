@@ -1,24 +1,18 @@
 <% wrap_layout :layout do %>
-  <div class="row center-xs">
-    <div class="col-xs-12 col-sm-9 col-md-7">
-      <h1 class="u-font-mega u-font-center c-page-title"><%= current_page.title %></h1>
-    </div>
-  </div>
-  <div class="row center-xs md-border-right c-work-meta">
-    <div class="col-sm-12 col-md-6 col-xs-12">
-      <h3>Intro</h3>
-      <div class="intro">
-        <p><%= current_page.data.intro %></p>
-      </div>
-    </div>
-    <!-- <div class="col-sm-12 col-md-3 col-xs-12">
-      <h3>Scope</h3>
-      <div>
+  <div class="container meta-section">
+    <div class="row center-xs c-work-meta">
+      <div class="col-xs-12 col-md-3">
+        <h1><%= current_page.title %></h1>
         <p class="c-scope-list">
           <%= current_page.data.scope %>
         </p>
       </div>
-    </div> -->
+      <div class="col-sm-12 col-md-5">
+        <div class="intro">
+          <p><%= current_page.data.intro %></p>
+        </div>
+      </div>
+    </div>
   </div>
 
   <article>

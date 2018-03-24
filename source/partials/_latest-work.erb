@@ -1,5 +1,5 @@
 <% if is_blog_article? %>
-<% items = blog('work').articles.reject!{ |work| work.data.published == false }.reject!{ |work| work.title == current_page.title }.sort_by!{ |work| work.data.priority } %>
+<% items = blog('work').articles.reject!{ |work| work.data.published == false }.reject!{ |work| work.title == current_page.title }.sort_by!{ |work| work.data.priority }[0 .. 3] %>
 <% section_title = "More Work" %>
 <% else %>
 <% items = blog('work').articles.reject!{ |work| work.data.published == false }.sort_by!{ |work| work.data.priority } %>
@@ -9,7 +9,7 @@
 <section class="c-selected-work container-fluid u-clearfix">
   <div class="projects">
     <% items.each_with_index do |work, index| %>
-        <% @img = "https://devinhalladay.imgix.net/#{work.date.strftime('%Y/%m')}/#{work.title.downcase.gsub(' ', '-')}/cover/large.png" %>
+        <% @img = "https://devinhalladay.imgix.net/#{work.date.strftime('%Y/%m')}/#{work.url.gsub('/', '').gsub('work', '')}/cover.png" %>
 
         <a href="<%= work.url %>" class="project <%= work.data.filters.split.join(' ') %>" data-size="3x3">
           <picture>
