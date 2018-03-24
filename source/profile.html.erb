@@ -1,130 +1,58 @@
 ---
 title: Profile
 ---
-<div class="row">
-  <div class="col-xs-12">
-    <h1 class="u-font-mega u-font-center c-page-title">Hi! I'm Devin.</h1>
+<div class="container"><div class="row center-xs">
+    <div class="col-xs-12">
+      <h1 class="u-font-mega u-font-center c-page-title">That's me &#8623;</h1>
 
-    <figure>
-      <picture>
-        <source media="(min-width: 1020px)" srcset="/assets/images/2016/07/portrait-large.png">
-        <source media="(min-width: 900px)" srcset="/assets/images/2016/07/portrait-large-sm.png">
-        <source media="(min-width: 680px)" srcset="/assets/images/2016/07/portrait-med.png">
-        <source srcset="/assets/images/2016/07/portrait-small.png">
-        <img alt="Portrait of Devin Halladay" srcset="">
-      </picture>
-    </figure>
-  </div>
-</div>
-
-<% data.profile.about.each do |section| %>
-  <div class="row center-xs">
-    <div class="col-xs-12 col-sm-6">
-      <h2><%= section.title %></h2>
-      <% section.content.each do |p| %>
-        <p><%= p %></p>
-      <% end %>
+      <figure>
+        <picture>
+          <source media="(min-width: 1020px)" srcset="/assets/images/2016/07/portrait-large.png">
+          <source media="(min-width: 900px)" srcset="/assets/images/2016/07/portrait-large-sm.png">
+          <source media="(min-width: 680px)" srcset="/assets/images/2016/07/portrait-med.png">
+          <source srcset="/assets/images/2016/07/portrait-small.png">
+          <img alt="Portrait of Devin Halladay" srcset="">
+        </picture>
+      </figure>
     </div>
   </div>
-<% end %>
 
-<%= partial("partials/section-title", :locals => { :title => "Services" }) %>
-
-<div class="row xs-border-right center-xs u-font-center">
-  <% data.profile.capabilities.each do |capability| %>
-    <div class="col-xs-12 col-sm-3">
-      <h3 class="u-no-margin"><%= capability.title %></h3>
-      <ul class="u-font-unlist">
-        <% capability.services.each do |service| %>
-          <li><%= service %></li>
+  <% data.profile.about.each do |section| %>
+    <div class="row center-xs">
+      <div class="col-xs-12 col-sm-6">
+        <h2><%= section.title %></h2>
+        <% section.content.each do |p| %>
+          <p><%= p %></p>
         <% end %>
-      </ul>
+      </div>
     </div>
   <% end %>
-</div>
 
-<%= partial("partials/section-title", :locals => { :title => "Opinions" }) %>
+  <%= partial("partials/section-title", :locals => { :title => "Services" }) %>
 
-<div class="row xs-border-right center-xs">
-  <% data.profile.fun_facts.each do |fact| %>
-    <div class="col-xs-12 col-sm-4">
-      <h3><%= fact.title %></h3>
-      <p>
-        <%= fact.content.join(", ") %>
-      </p>
-    </div>
-  <% end %>
-</div>
-
-<!-- <%= partial("partials/section-title", :locals => { :title => "Awards and Publications" }) %> -->
-
-<!-- <div class="row center-xs">
-  <div class="col-xs-12 col-sm-6">
-    <h2 class="u-font-center">2016</h2>
-    <ul>
-      <li>Two pieces selected to be featured in I Invited Britney
-        Spears To Dinner (The Invitation Was Not Accepted), a
-        multidisciplinary graphic design exhibition focusing on
-        nostalgia, disillusionment, and regrowth.</li>
-      <li>Recipient of the Louise N. Myerberg Family Competitive
-        Scholarship</li>
-      <li>Two pieces selected to be featured in MICA’s Fall Foundation
-        show in the fall of 2016.</li>
-      <li>Featured as an outstanding underclassman in MICA’s
-        quarterly magazine, Juxtapositions.</li>
-      <li>Synesthesia poster featured in MICA Design League’s
-        Shhhow!, a surprise exhibition in MICA’s Brown Center
-        that highlighted the work of students in MICA’s graphic
-        design department.</li>
-    </ul>
+  <div class="row xs-border-right center-xs u-font-center">
+    <% data.profile.capabilities.each do |capability| %>
+      <div class="col-xs-12 col-sm-3">
+        <h3 class="u-no-margin"><%= capability.title %></h3>
+        <ul class="u-font-unlist">
+          <% capability.services.each do |service| %>
+            <li><%= service %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
   </div>
-</div>
 
-<div class="row center-xs">
-  <div class="col-xs-12 col-sm-6">
-    <h2 class="u-font-center">2015</h2>
-    <ul>
-      <li>Recipient of scholarships including the Trustee Scholarship,
-        Fanny B Thalheimer Scholarship, and Creative
-        Vision Award.</li>
-      <li>Ministry of Print featured on Typewolf, Betalist, ProductHunt,
-        and Hacker News</li>
-    </ul>
+  <%= partial("partials/section-title", :locals => { :title => "Opinions" }) %>
+
+  <div class="row xs-border-right center-xs">
+    <% data.profile.fun_facts.each do |fact| %>
+      <div class="col-xs-12 col-sm-4">
+        <h3><%= fact.title %></h3>
+        <p>
+          <%= fact.content.join(", ") %>
+        </p>
+      </div>
+    <% end %>
   </div>
-</div>
-
-<div class="row center-xs">
-  <div class="col-xs-12 col-sm-6">
-    <h2 class="u-font-center">2014</h2>
-    <ul>
-      <li>Website featured on admiretheweb.com, Typewolf, and
-        various other online CSS and web design galleries</li>
-      <li>Article published in Stemmings, an online magazine for
-        designers and other creative professionals</li>
-    </ul>
   </div>
-</div>
-
-<%= partial("partials/section-title", :locals => { :title => "Experience" }) %>
-
-<div class="row center-xs">
-  <div class="col-xs-12 col-sm-6">
-    <h2>Designer, Freelance 2012–Present</h2>
-    <p>Working with a wide range of clients on diverse projects including web and mobile, branding and identity, poster design, and print has given me the opportunity to explore the design landscape. I collaborate with developers and designers to create effective solutions for clients small and large, in the technology, communications, fashion, lifestyle, entertainment, and non-profit industries.</p>
-
-    <h2>Designer/Founder, Ministry of Print 2014–2015</h2>
-    <p>As an experiment and successful side project, the Ministry of Print worked to design posters revolving around the idea between word and visual, concept and creation, ephemeral and enduring. Experimentations in communication and representation allowed me to freely break my own rules, fail, and succeed through a process of intellectual ideation and the physical graphic manifestation of my thought processes.</p>
-
-    <h2>Designer, Leapwise 2014</h2>
-    <p>At Leapwise my job was to create a wide range of designs for clients, ranging from nonprofits to startups to international companies. I worked closely with a team of three other designers and a developer to create effective solutions to client briefs. Additionally, I collaborated daily with the team of developers at Veritix, a Cleveland-based ticketing solutions company, to design and execute a line of ticketing apps and a conceptual rebrand of the company itself and its flagship product, FlashSeats.</p>
-  </div>
-</div>
-
-<%= partial("partials/section-title", :locals => { :title => "Leadership" }) %>
-
-<div class="row center-xs">
-  <div class="col-xs-12 col-sm-6">
-    <h2>Leader, MICA Design League 2015–Present</h2>
-    <p>As a freshman, I was invited to lead the MICA Design League, a student-run organization backed by the Graphic Design department. The MDL sponsors and organizes exhibitions, events, and programming for graphic design majors. Responsibilities include organizing meetings and events, meeting with advisors, and attending Student Voice Association meetings. The nomination made me the first freshman ever to lead the MDL.</p>
-  </div>
-</div> -->

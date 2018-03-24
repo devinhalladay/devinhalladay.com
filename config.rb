@@ -22,7 +22,7 @@ set :fonts_dir, "assets/fonts"
 # @desc Activate and configure blogs
 # # # # # #
 
-def activate_blog(blog_name, article_layout, article_source: "{year}-{month}-{day}-{title}", blog_permalink: "{title}")
+def activate_blog(blog_name, article_layout, article_source: "{year}-{month}-{day}-{title}.html", blog_permalink: "{title}")
   activate :blog do |b|
     b.sources = article_source
     b.name = blog_name

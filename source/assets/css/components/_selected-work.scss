@@ -148,6 +148,10 @@
       .project[data-size="3x3"] {
         grid-column: span 3;
         grid-row: span 3;
+
+        @media screen and (min-width: 1660px) {
+          grid-column: span 2;
+        }
       }
       .project[data-size="2x2"] a,
       .project[data-size="2x4"] a,
@@ -198,9 +202,18 @@
 
 }
 
+.work {
+  .project[data-size="3x3"] {
+    @media screen and (min-width: 1660px) {
+      // Make this layout 2 columns on an individual project page.
+      grid-column: span 2;
+    }
+  }
+}
 
 @media screen and (max-width: 750px) {
   .project {
+    padding-bottom: 1em;
     .project-title {
       flex-direction: column-reverse;
       margin-top: 0;
@@ -215,7 +228,7 @@
         padding-left: 0;
         margin-left: 0;
         font-size: .6em;
-        padding-bottom: .5em;
+        padding-bottom: .2em;
         padding-top: .2em;
       }
     }

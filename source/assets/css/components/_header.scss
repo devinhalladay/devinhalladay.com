@@ -1,5 +1,13 @@
 header {
   height: 4em;
+  background: #ffffff;
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+  z-index: 100;
+
+  &
 
   .container {
     display: flex;
@@ -14,6 +22,10 @@ header {
     margin-bottom: 2em;
     font-size: .9em;
   }
+}
+
+.header-up {
+  top: -4em;
 }
 
 .line {
