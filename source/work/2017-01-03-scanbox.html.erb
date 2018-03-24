@@ -6,8 +6,8 @@ filters: item-web-ui
 grid_width: w3
 priority: 6
 ---
-<div class="c-colored_section" style="background-color: #00C3FF">
-  <div class="container">
+<div class="container">
+  <div class="c-colored_section" style="background-color: #00C3FF">
     <div class="row center-xs">
       <div class="col-xs-12 col-sm-9 col-md-7 col-lg-6 u-font-center">
         <svg viewBox="11 10 59 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -20,237 +20,237 @@ priority: 6
       </div>
     </div>
   </div>
-</div>
 
-<div class="row center-xs">
-  <div class="col-xs-12 col-sm-7 col-md-6">
-    <p>For as long as I can remember I’ve had problems keeping papers organized: they get lost, ripped, crumpled, stuffed in backpacks, spilled on, out of order, and mixed up.</p>
-    <p>For me, papers from classes, meetings, assignments, clients, and every other possible source have become a curse on my productivity and on my sanity.</p>
-    <p>So, as a response to the solo app assignment, after struggling to ideate on a few other possible apps, it dawned on me that I may be able to design a thoughtful solution to my own problem.</p>
-    <p>So, Scanbox was born.</p>
-  </div>
-</div>
-
-<div class="row top-xs">
-  <div class="col-xs-12">
-    <%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/iphone.jpg" }) %>
-  </div>
-</div>
-
-<hr>
-
-<div class="row center-xs">
-  <div class="col-xs-12 col-sm-6">
-    <h1 class="u-font-center">Competitive Analysis</h1>
-    <p>As usual when starting out new projects, I started this with a competitive analysis. It turns out there are a lot of apps out there doing certain things very well, but none of them are perfect and none of them are good at Scanbox's core feature: scanned document organization.</p>
-    <hr>
-  </div>
-</div>
-
-<div class="row center-xs u-font-sans">
-  <div class="col-xs-12 col-sm-7 col-md-4">
-    <h3>Evernote Scannable</h3>
-    <div class="box">
-      <div class="box-header">
-        Ratings
-      </div>
-      <div class="box-body">
-        UX: 2/5<br>
-        UI: 3/5
-      </div>
-    </div>
-    <p>Evernote Scannable is a document scanning app from Evernote. From my testing, the design is confusing and the functionality is even more confusing. The scanner works, but seems pointless for the purposes I wanted because you need an external service (Evernote) in order to organize documents—and you have to do all the organization yourself.</p>
-  </div>
-  <div class="col-xs-12 col-sm-7 col-md-4">
-    <h3>Evernote</h3>
-    <div class="box">
-      <div class="box-header">
-        Ratings
-      </div>
-      <div class="box-body">
-        UX: 3/5<br>
-        UI: 4/5
-      </div>
-    </div>
-    <p>Evernote is another mystery—it seems they have a scanning feature built in, but it's a premium feature so I wasn't able to test it, and they have a separate product that does the same thing. However, without testing the scanning feature, I can make the observations that there seem to be many steps to achieve a simple action and the organization structure is not quite as simple as I would like.</p>
-  </div>
-  <div class="col-xs-12 col-sm-7 col-md-4">
-    <h3>Scanbot</h3>
-    <div class="box">
-      <div class="box-header">
-        Ratings
-      </div>
-      <div class="box-body">
-        UX: 4/5<br>
-        UI: 5/5
-      </div>
-    </div>
-    <p>Scanbot is one of the most popular scanner apps for iOS, and is certainly the best around. The UI and UX are both pretty impeccable, and the recent redesign make some more bold moves. The only UX issues I could find were in edge use cases or where a user makes a mistake. However, the organization feature was a pain to use and felt like an afterthought.</p>
-  </div>
-</div>
-
-<hr>
-
-<div class="row center-xs">
-  <div class="col-xs-12 col-sm-6">
-    <h1 class="u-font-center">User Persona</h1>
-    <p>For this app I only created one user persona, as I was still gaining my footing in the realm of user testing, research, and product strategy.</p>
-  </div>
-</div>
-
-<div class="row center-xs">
-  <div class="col-xs-12 col-sm-8">
-    <%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/persona.png", :border => true }) %>
-  </div>
-</div>
-
-<hr>
-
-<div class="row center-xs">
-  <div class="col-xs-12 col-sm-6">
-    <h1 class="u-font-center">Feature Set</h1>
-    <p>After completing initial user testing on various low-fi mockups, finishing competitive analysis, and developing a user perona, I began mapping out the feature set for Scanbox.</p>
-    <div class="box">
-      <div class="box-header">
-        Primary Features
-      </div>
-      <div class="box-body">
-        Document scanning (automatic and manual shutter)<br><br>
-        Intelligent document organization<br><br>
-        Intelligent document naming
-      </div>
-    </div>
-    <hr>
-  </div>
-</div>
-
-<div class="row center-xs u-center-vertical">
-  <div class="col-xs-12 col-sm-3">
-    <%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanbox/1.png", :border => true }) %>
-  </div>
-  <div class="col-xs-12 col-sm-6">
-    <div class="u-vertical-center">
-      <h3>Intelligent Document Organization</h3>
-      <p>Scanbox intelligently organizes your documents into "Stacks". This feature would work through artificial intelligence based on location data, calendar events, contacts, date and time, and other contextual information to guess where a newly scanned document should be placed.</p>
-      <p>This process makes organizing documents painless and is entirely tuneable by the user through the app's settings.</p>
+  <div class="row center-xs">
+    <div class="col-xs-12 col-sm-7 col-md-6">
+      <p>For as long as I can remember I’ve had problems keeping papers organized: they get lost, ripped, crumpled, stuffed in backpacks, spilled on, out of order, and mixed up.</p>
+      <p>For me, papers from classes, meetings, assignments, clients, and every other possible source have become a curse on my productivity and on my sanity.</p>
+      <p>So, as a response to the solo app assignment, after struggling to ideate on a few other possible apps, it dawned on me that I may be able to design a thoughtful solution to my own problem.</p>
+      <p>So, Scanbox was born.</p>
     </div>
   </div>
-</div>
 
-<div class="row center-xs u-center-vertical">
-  <div class="col-xs-12 col-sm-6">
-    <div class="u-vertical-center">
-      <h3>Intelligent Document Naming</h3>
-      <p>The app leverages the document organization system to intelligently name documents. By default this feature is on, so that when a user scans a document, it is more likely to have a relevant name to prevent extra work from the user in the long run. This feature can also be tweaked in the settings.</p>
+  <div class="row top-xs">
+    <div class="col-xs-12">
+      <%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/iphone.jpg" }) %>
     </div>
   </div>
-  <div class="col-xs-12 col-sm-3">
-    <%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanbox/9.png", :border => true }) %>
-  </div>
-</div>
 
-<div class="row center-xs u-center-vertical">
-  <div class="col-xs-12 col-sm-3">
-    <%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanner/2.png", :border => true }) %>
-  </div>
-  <div class="col-xs-12 col-sm-6">
-    <div class="u-vertical-center">
-      <h3>Document Scanning</h3>
-      <p>Scanbox uses established patterns from other document scanning apps that work very well. The scanning process is also intelligent, automatically snapping scans to the bounds of a document in physical space in order to account for skew, crumples, folds, and camera angle. The user can optionally scan multiple pages of a document at once to make the entire process seamless.</p>
+  <hr>
+
+  <div class="row center-xs">
+    <div class="col-xs-12 col-sm-6">
+      <h1 class="u-font-center">Competitive Analysis</h1>
+      <p>As usual when starting out new projects, I started this with a competitive analysis. It turns out there are a lot of apps out there doing certain things very well, but none of them are perfect and none of them are good at Scanbox's core feature: scanned document organization.</p>
+      <hr>
     </div>
   </div>
-</div>
 
-<hr>
-
-<div class="row center-xs">
-  <div class="col-xs-12 col-sm-6">
-    <h1 class="u-font-center">Screens</h1>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-xs-12">
-    <h3>Onboarding</h3>
-  </div>
-
-  <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/onboarding/1.png", :border => true }) %></div>
-
-  <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/onboarding/2.png", :border => true }) %></div>
-
-  <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/onboarding/3.png", :border => true }) %></div>
-
-  <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/onboarding/4.png", :border => true }) %></div>
-
-  <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/onboarding/5.png", :border => true }) %></div>
-
-  <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/onboarding/6.png", :border => true }) %></div>
-
-  <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/onboarding/7.png", :border => true }) %></div>
-
-  <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/onboarding/8.png", :border => true }) %></div>
-</div>
-
-<div class="row">
-  <div class="col-xs-12">
-    <h3>Scanner</h3>
-  </div>
-
-  <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanner/1.png", :border => true }) %></div>
-
-  <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanner/2.png", :border => true }) %></div>
-
-  <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanner/3.png", :border => true }) %></div>
-</div>
-
-<div class="row">
-  <div class="col-xs-12">
-    <h3>Document</h3>
+  <div class="row center-xs u-font-sans">
+    <div class="col-xs-12 col-sm-7 col-md-4">
+      <h3>Evernote Scannable</h3>
+      <div class="box">
+        <div class="box-header">
+          Ratings
+        </div>
+        <div class="box-body">
+          UX: 2/5<br>
+          UI: 3/5
+        </div>
+      </div>
+      <p>Evernote Scannable is a document scanning app from Evernote. From my testing, the design is confusing and the functionality is even more confusing. The scanner works, but seems pointless for the purposes I wanted because you need an external service (Evernote) in order to organize documents—and you have to do all the organization yourself.</p>
+    </div>
+    <div class="col-xs-12 col-sm-7 col-md-4">
+      <h3>Evernote</h3>
+      <div class="box">
+        <div class="box-header">
+          Ratings
+        </div>
+        <div class="box-body">
+          UX: 3/5<br>
+          UI: 4/5
+        </div>
+      </div>
+      <p>Evernote is another mystery—it seems they have a scanning feature built in, but it's a premium feature so I wasn't able to test it, and they have a separate product that does the same thing. However, without testing the scanning feature, I can make the observations that there seem to be many steps to achieve a simple action and the organization structure is not quite as simple as I would like.</p>
+    </div>
+    <div class="col-xs-12 col-sm-7 col-md-4">
+      <h3>Scanbot</h3>
+      <div class="box">
+        <div class="box-header">
+          Ratings
+        </div>
+        <div class="box-body">
+          UX: 4/5<br>
+          UI: 5/5
+        </div>
+      </div>
+      <p>Scanbot is one of the most popular scanner apps for iOS, and is certainly the best around. The UI and UX are both pretty impeccable, and the recent redesign make some more bold moves. The only UX issues I could find were in edge use cases or where a user makes a mistake. However, the organization feature was a pain to use and felt like an afterthought.</p>
+    </div>
   </div>
 
-  <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/document/1.png", :border => true }) %></div>
+  <hr>
 
-  <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/document/2.png", :border => true }) %></div>
-
-  <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/document/3.png", :border => true }) %></div>
-
-  <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/document/4.png", :border => true }) %></div>
-</div>
-
-<div class="row">
-  <div class="col-xs-12">
-    <h3>Scanbox</h3>
+  <div class="row center-xs">
+    <div class="col-xs-12 col-sm-6">
+      <h1 class="u-font-center">User Persona</h1>
+      <p>For this app I only created one user persona, as I was still gaining my footing in the realm of user testing, research, and product strategy.</p>
+    </div>
   </div>
 
-  <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanbox/1.png", :border => true }) %></div>
-
-  <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanbox/2.png", :border => true }) %></div>
-
-  <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanbox/3.png", :border => true }) %></div>
-
-  <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanbox/4.png", :border => true }) %></div>
-
-  <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanbox/5.png", :border => true }) %></div>
-
-  <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanbox/6.png", :border => true }) %></div>
-
-  <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanbox/7.png", :border => true }) %></div>
-
-  <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanbox/8.png", :border => true }) %></div>
-
-  <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanbox/9.png", :border => true }) %></div>
-
-  <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanbox/10.png", :border => true }) %></div>
-</div>
-
-<div class="row">
-  <div class="col-xs-12">
-    <h3>Settings</h3>
+  <div class="row center-xs">
+    <div class="col-xs-12 col-sm-8">
+      <%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/persona.png", :border => true }) %>
+    </div>
   </div>
 
-  <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/settings/1.png", :border => true }) %></div>
+  <hr>
 
-  <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/settings/2.png", :border => true }) %></div>
+  <div class="row center-xs">
+    <div class="col-xs-12 col-sm-6">
+      <h1 class="u-font-center">Feature Set</h1>
+      <p>After completing initial user testing on various low-fi mockups, finishing competitive analysis, and developing a user perona, I began mapping out the feature set for Scanbox.</p>
+      <div class="box">
+        <div class="box-header">
+          Primary Features
+        </div>
+        <div class="box-body">
+          Document scanning (automatic and manual shutter)<br><br>
+          Intelligent document organization<br><br>
+          Intelligent document naming
+        </div>
+      </div>
+      <hr>
+    </div>
+  </div>
 
-  <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/settings/3.png", :border => true }) %></div>
-</div>
+  <div class="row center-xs u-center-vertical">
+    <div class="col-xs-12 col-sm-3">
+      <%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanbox/1.png", :border => true }) %>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <div class="u-vertical-center">
+        <h3>Intelligent Document Organization</h3>
+        <p>Scanbox intelligently organizes your documents into "Stacks". This feature would work through artificial intelligence based on location data, calendar events, contacts, date and time, and other contextual information to guess where a newly scanned document should be placed.</p>
+        <p>This process makes organizing documents painless and is entirely tuneable by the user through the app's settings.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row center-xs u-center-vertical">
+    <div class="col-xs-12 col-sm-6">
+      <div class="u-vertical-center">
+        <h3>Intelligent Document Naming</h3>
+        <p>The app leverages the document organization system to intelligently name documents. By default this feature is on, so that when a user scans a document, it is more likely to have a relevant name to prevent extra work from the user in the long run. This feature can also be tweaked in the settings.</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+      <%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanbox/9.png", :border => true }) %>
+    </div>
+  </div>
+
+  <div class="row center-xs u-center-vertical">
+    <div class="col-xs-12 col-sm-3">
+      <%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanner/2.png", :border => true }) %>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <div class="u-vertical-center">
+        <h3>Document Scanning</h3>
+        <p>Scanbox uses established patterns from other document scanning apps that work very well. The scanning process is also intelligent, automatically snapping scans to the bounds of a document in physical space in order to account for skew, crumples, folds, and camera angle. The user can optionally scan multiple pages of a document at once to make the entire process seamless.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row center-xs">
+    <div class="col-xs-12 col-sm-6">
+      <h1 class="u-font-center">Screens</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h3>Onboarding</h3>
+    </div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/onboarding/1.png", :border => true }) %></div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/onboarding/2.png", :border => true }) %></div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/onboarding/3.png", :border => true }) %></div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/onboarding/4.png", :border => true }) %></div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/onboarding/5.png", :border => true }) %></div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/onboarding/6.png", :border => true }) %></div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/onboarding/7.png", :border => true }) %></div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/onboarding/8.png", :border => true }) %></div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h3>Scanner</h3>
+    </div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanner/1.png", :border => true }) %></div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanner/2.png", :border => true }) %></div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanner/3.png", :border => true }) %></div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h3>Document</h3>
+    </div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/document/1.png", :border => true }) %></div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/document/2.png", :border => true }) %></div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/document/3.png", :border => true }) %></div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/document/4.png", :border => true }) %></div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h3>Scanbox</h3>
+    </div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanbox/1.png", :border => true }) %></div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanbox/2.png", :border => true }) %></div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanbox/3.png", :border => true }) %></div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanbox/4.png", :border => true }) %></div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanbox/5.png", :border => true }) %></div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanbox/6.png", :border => true }) %></div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanbox/7.png", :border => true }) %></div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanbox/8.png", :border => true }) %></div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanbox/9.png", :border => true }) %></div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/scanbox/10.png", :border => true }) %></div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h3>Settings</h3>
+    </div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/settings/1.png", :border => true }) %></div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/settings/2.png", :border => true }) %></div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3"><%= partial("partials/lazyimg", :locals => { :img => "/assets/images/2017/01/scanbox/screens/settings/3.png", :border => true }) %></div>
+  </div>
+  </div>
