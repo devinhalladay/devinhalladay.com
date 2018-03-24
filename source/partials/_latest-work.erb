@@ -36,7 +36,7 @@
     <% items.each_with_index do |work, index| %>
         <% @img = "https://devinhalladay.imgix.net/#{work.date.strftime('%Y/%m')}/#{work.title.downcase.gsub(' ', '-')}/cover/large.png" %>
 
-        <a href="<%= work.url %>" class="project <%= work.data.filters.split.join(' ') %>" data-size="2x2">
+        <a href="<%= work.url %>" class="project <%= work.data.filters.split.join(' ') %>" data-size="3x3">
           <picture>
 
             <source media="(min-width: 1200px)" data-srcset="<%= @img %>?w=800&amp;fm=jpg&amp;q=100&amp;sharp=20, <%= @img %>?w=800&amp;fm=jpg&amp;q=100&amp;sharp=20&amp;dpr=2 2x">

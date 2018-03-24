@@ -1,24 +1,27 @@
 header {
   height: 4em;
-  display: flex;
-  align-items: center;
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
 
   @media all and (max-width: 440px) {
     border-bottom: 1px solid $site-color;
     margin-bottom: 2em;
   }
+}
 
-  .line {
-    flex: 1;
-    height: 1px;
-    min-width: 100px;
-    max-width: 1080px;
-    padding-left: 0;
-    margin: auto;
-    border-bottom: 1px solid $site-color;
-    @media (max-width: 440px) {
-      display: none;
-    }
+.line {
+  flex: 1;
+  height: 1px;
+  min-width: 100px;
+  max-width: 1080px;
+  padding-left: 0;
+  margin: auto;
+  border-bottom: 1px solid $site-color;
+  @media (max-width: 440px) {
+    display: none;
   }
 }
 
@@ -39,7 +42,6 @@ header {
 
 .line {
   @extend .header-group;
-  margin-bottom: .5em;
   border-bottom: 1px solid;
 }
 

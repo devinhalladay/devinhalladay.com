@@ -1,10 +1,10 @@
-$monospace: "Input Mono", "Source Code Pro", "Monaco", monospace;
-
 $sans-serif-fallback: "Neue Haas Grotesk", "Helvetica Neue", Helvetica, sans-serif;
-$sans-serif: "acumin-pro", $sans-serif-fallback;
+$sans-serif: "Atlas Grotesk", $sans-serif-fallback;
 
 $text-serif-fallback: "Georgia", "Times New Roman", serif;
-$text-serif: "Periodico Text", $text-serif-fallback;
+$text-serif: $sans-serif;
 
 $display-serif-fallback: "Georgia", "Times New Roman", serif;
-$display-serif: "Periodico Display", $display-serif-fallback;
+$display-serif: $sans-serif;
+
+$monospace: $sans-serif;
