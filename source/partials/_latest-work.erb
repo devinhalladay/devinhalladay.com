@@ -1,8 +1,8 @@
 <% if is_blog_article? %>
-<% items = blog('work').articles.reject!{ |work| work.title == current_page.title }.sort_by!{ |work| work.data.priority } %>
+<% items = blog('work').articles.reject!{ |work| work.data.published == false }.reject!{ |work| work.title == current_page.title }.sort_by!{ |work| work.data.priority } %>
 <% section_title = "More Work" %>
 <% else %>
-<% items = blog('work').articles.sort_by!{ |work| work.data.priority } %>
+<% items = blog('work').articles.reject!{ |work| work.data.published == false }.sort_by!{ |work| work.data.priority } %>
 <% section_title = "Selected Work" %>
 <% end %>
 
