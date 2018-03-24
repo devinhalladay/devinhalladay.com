@@ -1,139 +1,10 @@
-// .c-selected-work {
-//   a {
-//     img {
-//       -webkit-transform: scale(1);
-//     	transform: scale(1);
-//       -webkit-box-shadow: none;
-//       -moz-box-shadow: none;
-//       box-shadow: none;
-//
-//       transition: all 0.2s ease-in-out;
-//     }
-//     &:hover img {
-//     	transform: scale(1.1);
-//
-//       -webkit-box-shadow: 0px 0px 40px -8px rgba(77,77,77,0.98);
-//       -moz-box-shadow: 0px 0px 40px -8px rgba(77,77,77,0.98);
-//       box-shadow: 0px 0px 40px -8px rgba(77,77,77,0.98);
-//     }
-//   }
-// }
-//
-// .c-work-overlay {
-//   background: rgba(0,0,0,0);
-//   background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 34%, rgba(0,0,0,.7) 100%);
-//   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(34%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,.7)));
-//   background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 34%, rgba(0,0,0,.7) 100%);
-//   background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 34%, rgba(0,0,0,.7) 100%);
-//   background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 34%, rgba(0,0,0,.7) 100%);
-//   background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 34%, rgba(0,0,0,.7) 100%);
-//   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
-//   margin-bottom: 2em;
-//   overflow: hidden;
-//   cursor: pointer;
-//
-//   .tight-gutter & {
-//     margin-bottom: $gutter-width/2;
-//   }
-//
-//   img {
-//     position: relative;
-//     z-index: -1;
-//     display: block;
-//     width: auto;
-//   }
-//
-//   h2 {
-//     position: absolute;
-//     display: inline;
-//     margin-left: 0.5em;
-//     color: #fff;
-//     font-size: 1.5em;
-//     font-weight: 400;
-//     margin-top: -2.5em;
-//     line-height: 1;
-//     text-decoration-skip: ink;
-//     text-decoration: underline;
-//     @media all and (max-width: 48em) {
-//       font-size: 1.4em;
-//       margin-top: -3em;
-//     }
-//   }
-// }
-
-// .grid-grid-item {
-// 	float: left;
-// 	width: 100px;
-// }
-//
-// .grid-grid-item.w1 {
-// 	width: 210px;
-// }
-//
-// .grid-item.w2 {
-// 	width: 12.5%;
-// 	height: auto;
-// 	-webkit-box-sizing: border-box;
-// 	-moz-box-sizing: border-box;
-// 	box-sizing: border-box;
-// }
-//
-// .grid-item.w3 {
-// 	width: 25%;
-// 	-webkit-box-sizing: border-box;
-// 	-moz-box-sizing: border-box;
-// 	box-sizing: border-box;
-// }
-//
-// .grid-item.w6 {
-// 	width: 100%;
-// }
-//
-// .grid-item.w6 img {
-// 	width: 100%;
-// 	height: auto;
-// }
-
-
-// .gutter-sizer { width: 20px }
-//
-// .grid-sizer,
-// .grid-item { width: 25%; }
-//
-// .grid-item-big {
-//   width: 50%;
-// }
-
-
-// .grid:after {
-//   content: '';
-//   display: block;
-//   clear: both;
-// }
-//
-// .grid-sizer,
-// .grid-item {
-//   width: 20%;
-// }
-//
-// .grid-item {
-//   float: left;
-//   margin-bottom: 20px;
-// }
-//
-// .grid-item--width2 { width:  40%; }
-// .grid-item--width3 { width:  60%; }
-
-
-.project {
-  position: relative;
-  vertical-align: top;
-  width: 100%;
-}
 .project {
   display: block;
   text-decoration: none;
   overflow: hidden;
+  position: relative;
+  vertical-align: top;
+  width: 100%;
 
   .project-title {
     font-family: $sans-serif;
@@ -144,11 +15,21 @@
     align-items: flex-start;
     display: flex;
     margin-top: -9px;
-    align-items: center;
+    align-items: baseline;
+
+    .title {
+      width: 50%;
+      padding-right: 10px;
+    }
 
     .subtitle {
       margin-left: auto;
       color: $meta-color;
+      width: 50%;
+      padding-left: 10px;
+      font-size: .7em;
+      line-height: 1.4em;
+      text-align: right;
     }
   }
 }
@@ -176,7 +57,6 @@
   .project {
     position: relative;
     vertical-align: top;
-    width: 49%;
     display: inline-block;
   }
   .projects-wrapper {
@@ -316,4 +196,31 @@
     }
   }
 
+}
+
+
+@media screen and (max-width: 750px) {
+  .project {
+    .project-title {
+      flex-direction: column-reverse;
+      margin-top: 0;
+      padding-top: 0;
+      .title {
+        padding-right: 0;
+        width: 100%;
+      }
+      .subtitle {
+        width: 100%;
+        text-align: left;
+        padding-left: 0;
+        margin-left: 0;
+        font-size: .6em;
+        padding-bottom: .5em;
+        padding-top: .2em;
+      }
+    }
+  }
+  .projects-wrapper {
+    padding-left: 0.5rem;
+  }
 }

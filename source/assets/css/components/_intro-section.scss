@@ -1,6 +1,6 @@
 .intro-section {
   text-align: center;
-  padding: 2em 2em 4em;
+  padding: 0 0 2em;
   @media screen and (max-width: 48em) {
     margin-bottom: 2em;
   }
@@ -23,6 +23,11 @@
   p {
     font-family: $sans-serif;
     font-size: 1.6em;
+    line-height: 1.4em;
     margin: 0;
   }
+}
+
+.hero {
+  border-bottom: 1px solid $black;
 }

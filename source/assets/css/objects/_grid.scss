@@ -1,6 +1,9 @@
 :root {
   --gutter-width: 50px;
-  --outer-margin: 4rem;
+  --outer-margin: 3rem;
+  @media only screen and (max-width: 681px ) {
+    --outer-margin: 1rem;
+  }
   --gutter-compensation: calc((var(--gutter-width) * 0.5) * -1);
   --half-gutter-width: calc((var(--gutter-width) * 0.5));
   --quarter-gutter-width: calc((var(--gutter-width) * 0.25));
