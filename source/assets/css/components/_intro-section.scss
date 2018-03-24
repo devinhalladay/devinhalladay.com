@@ -1,9 +1,6 @@
 .intro-section {
   text-align: center;
   padding: 0 0 2em;
-  @media screen and (max-width: 48em) {
-    margin-bottom: 2em;
-  }
   h1 {
     font-family: $display-serif;
     font-weight: 300;
@@ -12,12 +9,12 @@
   }
 
   hr {
-    height: 160px;
+    height: 120px;
     border-color: $black;
     margin-top: .5em;
     margin-bottom: .5em;
-    @media only screen and (max-width: 1116px) {
-      height: 160px;
+    @media screen and (max-width: 48em) {
+      height: 90px;
     }
   }
   p {
@@ -25,6 +22,9 @@
     font-size: 1.6em;
     line-height: 1.4em;
     margin: 0;
+    @media screen and (max-width: 48em) {
+      font-size: 1.5em;
+    }
   }
 }
 

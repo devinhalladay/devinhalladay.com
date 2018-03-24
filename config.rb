@@ -54,7 +54,7 @@ helpers do
     if is_blog_article?
       headline_title = current_article.blog_data.options[:name]
     elsif current_page.url == "/"
-      headline_title = "Designer"
+      headline_title = "Design For Becoming"
     else
       headline_title = current_page.data.title
     end

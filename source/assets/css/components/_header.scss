@@ -4,11 +4,15 @@ header {
   .container {
     display: flex;
     align-items: center;
+    @media only screen and (max-width: 48em) {
+      padding-top: 0.3em;
+    }
   }
 
-  @media all and (max-width: 440px) {
+  @media all and (max-width: 48em) {
     border-bottom: 1px solid $site-color;
     margin-bottom: 2em;
+    font-size: .9em;
   }
 }
 
@@ -32,7 +36,7 @@ header {
 }
 
 .header-group--subtitle {
-  flex-grow: 0;
+  flex: initial;
   padding: 0 1em;
 
   h3 {
@@ -61,5 +65,23 @@ header {
   margin-right: 1em;
   @media all and (max-width: 48em) {
     float: left;
+    line-height: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  .header-group, .line {
+    justify-content: flex-start;
+  }
+
+  .site-nav {
+    flex: 0;
+  }
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .header-group--subtitle {
+    display: none;
   }
 }
