@@ -77,4 +77,5 @@ activate :deploy do |deploy|
   # Set deploy.port to define a port for the deploy server. Defaults to 22.
   deploy.clean = true # removes orphaned files on remote host, default: false
   deploy.flags = '--omit-dir-times -davz'
+  deploy.build_before = true
 end
