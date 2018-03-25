@@ -5,4 +5,40 @@ intro: "Leading design efforts for an app whose mission is to liberate everyone 
 filters: item-web-ui, item-logo
 priority: 2
 ---
+<% @image_dir = '/assets/images/2018/03/cents' %>
 
+<div class="container">
+  <div class="row center-xs">
+    <div class="col-xs-12 col-md-8">
+      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/logo.png" }) %>
+    </div>
+  </div>
+  
+  <div class="row center-xs">
+    <div class="col-xs-12 col-sm-3">
+      <p><a href="https://centsapp.io" class="button">Check it out &#8605;</a></p>
+    </div>
+    <div class="col-xs-12 col-sm-5">
+      <p>I've been lead designer at Cents since 2016, working alongside an all-star team to build a seamless product that just works. After many long nights of designing and testing, Cents recently launched to the public with a web app. Our iOS app is coming soon to the App Store.</p>
+      <p class="meta">I'll update this project with the iOS portion as soon as the app launches!</p>
+    </div>
+  </div>
+
+  <div class="row center-xs">
+    <div class="col-xs-12">
+      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/1.png" }) %>
+    </div>
+  </div>
+
+  <div class="row center-xs">
+    <div class="col-xs-12">
+      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/2.png" }) %>
+    </div>
+  </div>
+
+  <div class="row center-xs">
+    <div class="col-xs-12">
+      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/3.png" }) %>
+    </div>
+  </div>
+</div>
