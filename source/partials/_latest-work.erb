@@ -6,7 +6,7 @@
 <% section_title = "Selected Work" %>
 <% end %>
 
-<section class="c-selected-work container-fluid u-clearfix">
+<section class="c-selected-work container u-clearfix">
   <div class="projects">
     <% items.each_with_index do |work, index| %>
         <% @img = "https://devinhalladay.imgix.net/#{work.date.strftime('%Y/%m')}/#{work.url.gsub('/', '').gsub('work', '')}/cover.png" %>

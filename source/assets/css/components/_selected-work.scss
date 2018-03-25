@@ -136,10 +136,6 @@
       .project[data-size="3x3"] {
         grid-column: span 3;
         grid-row: span 3;
-
-        @media screen and (min-width: 1660px) {
-          grid-column: span 2;
-        }
       }
       .project[data-size="2x2"] a,
       .project[data-size="2x4"] a,
