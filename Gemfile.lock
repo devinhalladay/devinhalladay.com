@@ -143,7 +143,7 @@ DEPENDENCIES
   middleman (>= 4.0.0)
   middleman-autoprefixer
   middleman-blog
-  middleman-deploy (~> 2.0.0.pre.alpha)
+  middleman-deploy
   middleman-livereload
   middleman-minify-html
   nokogiri
