@@ -25,5 +25,4 @@
 Checklists.oo3
 
 # Ignore fonts
-/source/fonts
-/source/fonts/*
+/source/assets/fonts/*
