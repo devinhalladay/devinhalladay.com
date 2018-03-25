@@ -14,15 +14,15 @@
         <a href="<%= work.url %>" class="project <% if work.data.filters %><%= work.data.filters.split.join(' ') %><% end %>" data-size="3x3">
           <picture>
 
-            <source media="(min-width: 1200px)" data-srcset="<%= @img %>?w=800&amp;fm=jpg&amp;q=100&amp;sharp=20, <%= @img %>?w=800&amp;fm=jpg&amp;q=100&amp;sharp=20&amp;dpr=2 2x">
+            <source media="(min-width: 1200px)" data-srcset="<%= @img %>?w=800&amp;fm=jpg&amp;q=100, <%= @img %>?w=800&amp;fm=jpg&amp;q=100&amp;dpr=2 2x">
 
-            <source media="(min-width: 768px) and (max-width: 992px)" data-srcset="<%= @img %>?w=992&amp;fm=jpg&amp;q=100&amp;sharp=20, <%= @img %>?w=992&amp;fm=jpg&amp;q=100&amp;sharp=20&amp;dpr=2 2x">
+            <source media="(min-width: 768px) and (max-width: 992px)" data-srcset="<%= @img %>?w=992&amp;fm=jpg&amp;q=100, <%= @img %>?w=992&amp;fm=jpg&amp;q=100&amp;dpr=2 2x">
 
-            <source media="(min-width: 480px) and (max-width: 768px)" data-srcset="<%= @img %>?w=768&amp;fm=jpg&amp;q=100&amp;sharp=20, <%= @img %>?w=768&amp;fm=jpg&amp;q=100&amp;sharp=20&amp;dpr=2 2x">
+            <source media="(min-width: 480px) and (max-width: 768px)" data-srcset="<%= @img %>?w=768&amp;fm=jpg&amp;q=100, <%= @img %>?w=768&amp;fm=jpg&amp;q=100&amp;dpr=2 2x">
 
-            <source media="(max-width: 480px)" data-srcset="<%= @img %>?w=480&amp;fm=jpg&amp;q=100&amp;sharp=20, <%= @img %>?w=480&amp;fm=jpg&amp;q=100&amp;sharp=20&amp;dpr=2 2x">
+            <source media="(max-width: 480px)" data-srcset="<%= @img %>?w=480&amp;fm=jpg&amp;q=100, <%= @img %>?w=480&amp;fm=jpg&amp;q=100&amp;dpr=2 2x">
 
-            <img alt="<%= work.title %>" class="lazyload" data-src="<%= @img %>?w=800&amp;fm=jpg&amp;q=100&amp;sharp=20" data-srcset="<%= @img %>?w=800&amp;fm=jpg&amp;q=100&amp;sharp=20&amp;dpr=2 2x">
+            <img alt="<%= work.title %>" class="lazyload" data-src="<%= @img %>?w=800&amp;fm=jpg&amp;q=100" data-srcset="<%= @img %>?w=800&amp;fm=jpg&amp;q=100&amp;dpr=2 2x">
 
           </picture>
 
