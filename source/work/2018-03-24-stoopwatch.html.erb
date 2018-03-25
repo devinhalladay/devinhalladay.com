@@ -1,8 +1,44 @@
 ---
 title: "Stoopwatch"
 scope: Product Design, Logo
-intro: "Designing Baltimore's new neighborhood crime alertt."
-filters: 
+intro: "Stoopwatch is Baltimore's new neighborhood crime alert. I designed an interface that makes it easy to report a crime quickly and walk home safely at night, while avoiding methods of enabling things like racial profiling by removing all unecessary report fields."
+filters:
 priority: 11
 ---
+<% @image_dir = '/assets/images/2018/03/stoopwatch' %>
 
+<div class="container">
+  <div class="row center-xs">
+    <div class="col-xs-12">
+      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/1.png" }) %>
+    </div>
+  </div>
+
+  <div class="row center-xs">
+    <div class="col-xs-12 col-sm-6">
+      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/4.png" }) %>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <figure>
+        <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/3.png" }) %>
+      </figure>
+    </div>
+  </div>
+
+  <div class="row center-xs">
+    <div class="col-xs-12 col-sm-6">
+      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/6.png" }) %>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/5.png" }) %>
+  </div>
+
+  <div class="row center-xs">
+    <div class="col-xs-12">
+      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/7.png" }) %>
+    </div>
+    <div class="col-xs-12">
+      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/8.png" }) %>
+    </div>
+  </div>
+</div>
