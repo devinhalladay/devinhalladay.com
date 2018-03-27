@@ -14,10 +14,7 @@
 
     <%= yield %>
 
-    <div class="container">
-      <%= partial "partials/footer" %>
-    </div>
-
+    <%= partial "partials/footer" %>
 
     <%= javascript_include_tag "https://code.jquery.com/jquery-2.2.4.min.js", :async => true %>
     <%= javascript_include_tag :all, :async => true %>
@@ -25,24 +22,6 @@
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
     <%= yield_content :js %>
-
-    <script type="text/javascript">
-
-      // $(document).ready(function() {
-      //
-      //      var $container = $('.grid');
-      //
-      //      $container.imagesLoaded(function(){
-      //        $container.masonry({
-      //          itemSelector: '.grid-item',
-      //          columnWidth: '.grid-sizer',
-      //          gutter: 10,
-      //          percentPosition: true,
-      //        });
-      //      });
-      //
-      //    });
-    </script>
 
     <script>
       !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
