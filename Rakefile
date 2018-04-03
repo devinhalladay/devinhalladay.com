@@ -11,6 +11,8 @@ require "highline/import"
 
 # Get and parse the date
 DATE = Time.now.strftime("%Y-%m-%d")
+YEAR = Time.now.strftime("%Y")
+MONTH = Time.now.strftime("%m")
 
 ##################################################
 # Write a new post draft.
@@ -64,16 +66,6 @@ task :project do
   intro = ask "Enter project intro here: "
   scope = ask "Enter project scopes here, separated by commas: "
   scope_array = scope.split(",")
-  filters = ask "Enter project filters here, separated by commas (choose from
-  item-poster
-  item-branding
-  item-logo
-  item-web-ui
-  item-packaging
-  item-sculpture
-  item-sound
-  item-print): "
-  filters_array = filters.split(",")
   priority = ask "Enter a number for the post's priority: "
   post_text = ask "Enter post text, if you have any ready: "
   slug_var    = HighLine.agree("Do you want a custom slug for this post? (y/n)")
@@ -103,12 +95,18 @@ task :project do
     title: \"#{title}\"
     scope: #{scope_array.join(",")}
     intro: \"#{intro}\"
-    filters: #{filters_array.join(",")}
     priority: #{priority}
+    published: false
     ---
-    #{post_text}
+    <% @image_dir = 'assets/images/#{YEAR}/#{MONTH}/#{slug_fixed}' %>
+    <%# @image_dir = 'https://devinhalladay.imgix.net/#{YEAR}/#{MONTH}/#{slug_fixed}' %>
+    <div class="container">
+      #{post_text}
+    </div>
     EOS
   end
+
+  FileUtils.mkdir_p "source/assets/images/#{YEAR}/#{MONTH}/#{slug_fixed}"
 end
 
 ##################################################
