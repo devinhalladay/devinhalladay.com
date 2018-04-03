@@ -133,6 +133,7 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
+    xmlrpc (0.3.0)
 
 PLATFORMS
   ruby
@@ -150,6 +151,7 @@ DEPENDENCIES
   redcarpet
   sass
   toolkit (~> 2.0)
+  xmlrpc
 
 BUNDLED WITH
    1.16.1

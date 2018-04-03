@@ -13,6 +13,8 @@ gem 'redcarpet'
 gem 'builder'
 gem 'sass'
 gem 'toolkit', '~>2.0'
+gem 'xmlrpc'
+
 
 # Add Nokogiri for text parsing
 gem 'nokogiri'
