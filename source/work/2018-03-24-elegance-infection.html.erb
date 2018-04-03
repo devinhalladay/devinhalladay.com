@@ -4,5 +4,70 @@ scope: Design, Photography
 intro: "An experimental book exploring the conceptual and formal construction of the typefaces Papyrus and Domaine Text."
 filters: item-print
 priority: 9
-published: false
 ---
+
+<%# <% @image_dir = 'https://devinhalladay.imgix.net/2018/03/book-of-caesurae' %>
+<% @image_dir = '/assets/images/2018/03/elegance-infection' %>
+<div class="container">
+  <div class="row center-xs">
+    <div class="col-xs-12">
+      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/1.jpg" }) %>
+    </div>
+    <div class="col-xs-12">
+      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/6.jpg" }) %>
+    </div>
+  </div>
+
+  <div class="row center-xs">
+    <div class="col-xs-12 col-md-6">
+      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/2.jpg" }) %>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/3.jpg" }) %>
+    </div>
+  </div>
+  <div class="row center-xs">
+    <div class="col-xs-12 col-md-6">
+      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/4.jpg" }) %>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/5.jpg" }) %>
+    </div>
+  </div>
+
+  <div class="row center-xs">
+    <div class="col-xs-12">
+      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/9.jpg" }) %>
+    </div>
+  </div>
+
+  <div class="row center-xs">
+    <div class="col-xs-12">
+      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/10.jpg" }) %>
+    </div>
+  </div>
+
+  <div class="row center-xs">
+    <div class="col-xs-12">
+      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/11.jpg" }) %>
+    </div>
+  </div>
+
+  <div class="row center-xs">
+    <div class="col-xs-12">
+      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/12.jpg" }) %>
+    </div>
+  </div>
+
+  <div class="row center-xs">
+    <div class="col-xs-12">
+      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/13.jpg" }) %>
+    </div>
+  </div>
+
+  <div class="row center-xs">
+    <div class="col-xs-12">
+      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/7.jpg" }) %>
+    </div>
+  </div>
+</div>
