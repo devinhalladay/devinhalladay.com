@@ -28,6 +28,10 @@ header {
   top: -4em;
 }
 
+.header-down {
+  background: linear-gradient(to bottom, rgba(255,255,255,0.9) 44%,rgba(255,255,255,0) 100%);
+}
+
 .line {
   flex: 1;
   height: 1px;

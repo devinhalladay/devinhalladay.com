@@ -24,7 +24,7 @@ function hasScrolled() {
     $('header').removeClass('header-down').addClass('header-up');
   } else {
     if(st + $(window).height() < $(document).height()) {
-      $('header').removeClass('header-up');
+      $('header').removeClass('header-up').addClass('header-down');
     }
   }
   lastScrollTop = st;
