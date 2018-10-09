@@ -12,18 +12,16 @@
   }
 
   hr {
-    height: 120px;
+    height: 60px;
     border-color: $black;
     margin-top: .5em;
     margin-bottom: .5em;
-    @media screen and (max-width: 48em) {
-      height: 90px;
-    }
   }
   p {
     font-family: $sans-serif;
     font-size: 1.6em;
     line-height: 1.4em;
+    font-weight: 300;
     margin: 0;
     @media screen and (max-width: 48em) {
       font-size: 1.3em;

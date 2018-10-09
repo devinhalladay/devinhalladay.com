@@ -1,7 +1,7 @@
 links:
-  - title: Work
-    url: /
   - title: Profile
     url: /profile
+  - title: Writing
+    url: https://infinitecaesura.com/
   - title: Contact
     url: /contact
