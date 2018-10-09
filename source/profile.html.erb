@@ -42,17 +42,5 @@ title: Profile
       </div>
     <% end %>
   </div>
-
-  <%= partial("partials/section-title", :locals => { :title => "Opinions" }) %>
-
-  <div class="row xs-border-right center-xs">
-    <% data.profile.fun_facts.each do |fact| %>
-      <div class="col-xs-12 col-sm-4">
-        <h3><%= fact.title %></h3>
-        <p>
-          <%= fact.content.join(", ") %>
-        </p>
-      </div>
-    <% end %>
-  </div>
-  </div>
+  
+</div>
