@@ -1,0 +1,40 @@
+---
+title: "FreshBudget"
+scope: Naming, Identity Design
+intro: "Brand identity for a startup seeking to solve thee nutrition crisis in low-income communities."
+priority: 1
+---
+<% @image_dir = '/assets/images/2018/10/freshbudget' %>
+<%# @image_dir = 'https://devinhalladay.imgix.net/2018/10/freshbudget' %>
+<div class="container">
+  <div class="row center-xs">
+    <div class="col-xs-12 col-md-6">
+      <h2>A Fresh New Name</h2>
+      <p>When FreshBudget came to me, they were calling themselves <em>Food Budget Butler</em>. This name felt exclusive and alienating, as well as outdated, and it was generally ineffective for the client's target audience. I worked with the client to rename the company <strong>FreshBudget.</strong></p>
+    </div>
+  </div>
+  <div class="row center-xs">
+    <div class="col-xs-12 col-md-10">
+      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/name.png", :border => true }) %>
+    </div>
+  </div>
+  <div class="row center-xs">
+    <div class="col-xs-12 col-md-6">
+      <h2>A Friendly Identity</h2>
+      <p>With the identity, we wanted to communicate notions of budgeting and healthy eating, giving these traditionally annoying topics a positive and friendly twist. The result is a logomark and application system that comes across as friendly, economical, and healthy.</p>
+    </div>
+  </div>
+  <div class="row center-xs">
+    <div class="col-xs-12 col-md-6">
+      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/logo-full.png", :border => true }) %>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/logo-mark.png", :border => true }) %>
+    </div>
+  </div>
+  <div class="row center-xs">
+    <div class="col-xs-12">
+      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/composition.png", :border => true }) %>
+    </div>
+  </div>
+</div>
