@@ -1,8 +1,7 @@
 .intro-section {
   text-align: center;
-  padding: 0 0 2em;
   @media screen and (max-width: 48em) {
-    padding: 1em 0 1em;
+    padding: 1em 0 0;
   }
   h1 {
     font-family: $display-serif;
@@ -31,7 +30,6 @@
 }
 
 .hero {
-  border-bottom: 1px solid $black;
   .row {
     & > div:first-child {
       padding: 0;
