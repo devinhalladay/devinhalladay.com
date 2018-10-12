@@ -93,6 +93,11 @@ hr {
   border-top: 1px solid $meta-color;
 }
 
+p {
+  &:first-child {
+    padding-top: 0;
+  }
+}
 
 * + h2, * + .h2,
 * + h3, * + .h3 {

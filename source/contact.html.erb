@@ -1,21 +1,48 @@
 ---
 title: Contact
 ---
+<% content_for :js do %>
+  <script src="http://cdn.jsdelivr.net/npm/jquery.marquee@1.5.0/jquery.marquee.min.js" charset="utf-8"></script>
+
+  <script type="text/javascript">
+    const $mq = $('.marquee');
+    const el = "    <a href='mailto:studio@devinhalladay.com'>studio@devinhalladay.com</a>    ";
+
+    $mq.append(el).append(el).append(el).marquee({
+      duration: 6500,
+      gap: 10,
+      delayBeforeStart: 0,
+      duplicated: true,
+      allowCss3Support: true,
+      startVisible: true
+    });
+  </script>
+<% end %>
+
+<style>
+  .marquee {
+    width: 100%;
+    overflow: hidden;
+    background: #000000;
+  }
+</style>
+
 <div class="row">
   <div class="col-xs-12">
-    <h1 class="u-font-mega u-font-center c-page-title border-bottom">Let's Talk</h1>
+    <h1 class="u-font-mega u-font-center c-page-title">Get in Touch</h1>
   </div>
 </div>
 <div class="row center-xs">
   <div class="col-xs-12 col-sm-9 col-md-7 col-lg-6">
-    <p>Whether you want to start a new design project, ask me a question, or just chat, feel free to email me. I promise I'll answer.</p>
-    <p class="u-font-mono"><a href="mailto:studio@devinhalladay.com">studio@devinhalladay.com</a></p>
+    <p>Email me for new projects, mentorship, or just to chat.</p>
+    <p class="u-font-big marquee"><a href="mailto:studio@devinhalladay.com">studio@devinhalladay.com</a></p>
     <hr class="hr--short">
-    <p>If you're so inclined, you can also find me @devinhalladay on most social networks.</p>
+    <p>You can also find me @devinhalladay basically everywhere.</p>
     <ul class="u-font-unlist u-font-inline-list">
-      <li><a href="http://dribbble.com/devinhalladay">Dribbble</a></li>
+      <li><a href="http://are.na/devin-halladay">Are.na</a></li>
       <li><a href="http://twitter.com/devinhalladay">Twitter</a></li>
       <li><a href="http://github.com/devinhalladay">GitHub</a></li>
+      <li><a href="http://dribbble.com/devinhalladay">Dribbble</a></li>
     </ul>
   </div>
 </div>
