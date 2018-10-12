@@ -23,10 +23,6 @@ h3 {
   letter-spacing: 1.5px;
 }
 
-h1, h2 {
-  color: #13171D;
-}
-
 h3 + p {
   margin-top: -0.5em;
 }
@@ -84,6 +80,7 @@ figcaption {
   width: 1px;
   border: none;
   border-left: 1px solid;
+  opacity: 1;
 }
 
 hr {
@@ -94,7 +91,6 @@ hr {
   margin-bottom: 1.64706rem;
   border: 0;
   border-top: 1px solid $meta-color;
-  opacity: .5
 }
 
 

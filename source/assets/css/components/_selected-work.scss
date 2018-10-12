@@ -6,16 +6,33 @@
   vertical-align: top;
   width: 100%;
 
+  &:hover {
+    color: $text-color;
+  }
+
+
+  picture {
+    height: fit-content;
+
+    img {
+      display: block;
+
+      &:after:hover {
+
+      }
+    }
+
+
+  }
+
   .project-title {
     font-family: $sans-serif;
     padding: 0.5em 0;
     text-decoration: none;
     font-size: 1.2rem;
     line-height: 1.2;
-    margin-top: -9px;
 
     .subtitle {
-      color: $meta-color;
       font-size: .7em;
       line-height: 1.4em;
     }

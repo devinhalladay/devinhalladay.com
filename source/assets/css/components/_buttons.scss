@@ -1,7 +1,7 @@
 .button, .button-wrapper {
   font-family: $sans-serif;
   background-color: $site-color;
-  color: #ffffff;
+  color: $black;
   float: left;
   margin-top: 1em;
   transition: all 0.2s;
@@ -9,6 +9,7 @@
   height: 45px;
   position: relative;
   border-radius: 6px;
+  line-height: 2.4;
 }
 .button span, .button-wrapper a {
   position: absolute;
@@ -38,8 +39,8 @@
 }
 .button:hover, .button:active, .button:focus, .button-wrapper:hover,
 .form-tab.active {
-  background-color: lighten($site-color, 20%);
-  color: #ffffff;
+  background-color: darken($site-color, 10%);
+  color: $black;
 }
 .button-plain {
   font-size: 20px;

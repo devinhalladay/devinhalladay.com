@@ -5,9 +5,8 @@
     line-height: 1;
     font-family: $display-serif;
     font-weight: 500;
-    font-size: 1.6em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    font-size: 1.8em;
+    padding: 0;
   }
   p {
     // Reset text alignment so the parent element does not center it.
@@ -17,15 +16,17 @@
   input:not([type=submit]) {
     width: calc(100% - 1em);
     font-family: $sans-serif;
-    padding: 0 0 0.3em 0;
-    border-bottom: 1px solid $meta-color;
+    padding-left: 1em;
+    border-bottom: 1px solid $text-color;
+    border-radius: 6px;
+    height: 45px;
   }
   input:not([type=submit]):focus {
     outline: none;
     border-color: #10BEFC;
   }
   .mc-field-group {
-    padding-bottom: 1em;
+    padding-bottom: .5em;
   }
 }
 
