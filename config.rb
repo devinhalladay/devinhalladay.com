@@ -54,7 +54,7 @@ helpers do
     if is_blog_article?
       headline_title = current_article.blog_data.options[:name]
     elsif current_page.url == "/"
-      headline_title = "Systems Designer"
+      headline_title = "Design, Etc."
     else
       headline_title = current_page.data.title
     end
@@ -75,7 +75,7 @@ activate :deploy do |deploy|
   deploy.host   = 'root@162.243.103.246'
   deploy.path   = '/var/www/devinhalladay.com/public_html'
   # Set deploy.port to define a port for the deploy server. Defaults to 22.
-  deploy.clean = true # removes orphaned files on remote host, default: false
+  deploy.clean = false # removes orphaned files on remote host, default: false
   deploy.flags = '--omit-dir-times -davz'
   deploy.build_before = true
 end

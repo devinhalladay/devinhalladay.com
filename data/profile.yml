@@ -24,7 +24,6 @@ fun_facts:
 about:
   - title: "The Basics"
     content:
-      # - "I live and work according to four core tenets: <ul><li><strong>Learn the rules;</strong></li><li><strong>Promptly and mercilessly break them with spirit and intent;</strong></li><li><strong>Experiment relentlessly; and</strong></li><li><strong>Create fearlessly.</strong></li></ul>"
       - "Hi! I’m Devin, a multidisciplinary designer, writer, and sculptor currently based in Baltimore, MD. I primarily work as a product and editorial designer, designing and simplifying complex systems at every scale."
       - "I work closely with clients to achieve elegant, performant design solutions while maintaining a constant critical and conceptual lens on the work I’m making and its implications. I thrive on complex systems thinking and love nothing more than defining well-conceived product mechanics."
   - title: 'Methodology'
@@ -35,28 +34,23 @@ about:
       - "My primary motive as a practicing artist and designer is to give coherence to complex systems. Sometimes this means designing the invisible, breaking with the expected, and on occasion embracing established values with sharp criticality."
 
 capabilities:
-  - title: "Branding"
+  - title: "Branding and Identity"
     services:
-      - 'Identity systems'
-      - 'Marks and logo design'
-      - 'Brand guidelines'
-      - 'Brand strategy'
-      - 'Creative direction'
+      - 'Identity Systems'
+      - 'Logo Design'
+      - 'Brand Stategy'
       - 'Copywriting'
 
   - title: "Design &amp; Development"
     services:
-      - 'Product design'
-      - 'Mechanics design'
-      - 'UI and web design'
-      - 'User experience'
-      - 'Front-end development'
+      - 'Digital Product Design'
+      - 'Product Strategy'
+      - 'Front-End Development'
+      - 'UI/UX Design'
 
   - title: "Print &amp; Publication"
     services:
-      - 'Book &amp; editorial design'
-      - 'Magazine design'
-      - 'Apparel'
-      - 'Posters'
-      - 'Advertising'
-      - 'Brand collateral'
+      - 'Poster Design'
+      - 'Book and Editorial Design'
+      - 'Brand Collaterial'
+      - 'Packaging'

@@ -5,7 +5,7 @@ title: Profile
     <div class="col-xs-12 col-sm-10">
       <h1 class="u-font-mega u-font-center c-page-title">That's me &#8623;</h1>
 
-      <figure>
+      <figure class="grain-effect">
         <picture>
           <source media="(min-width: 1020px)" srcset="https://devinhalladay.imgix.net/2018/10/profile.jpg">
           <source media="(min-width: 900px)" srcset="https://devinhalladay.imgix.net/2018/10/profile.jpg">
@@ -30,7 +30,7 @@ title: Profile
 
   <%= partial("partials/section-title", :locals => { :title => "Services" }) %>
 
-  <div class="row xs-border-right center-xs u-font-center">
+  <div class="row center-xs">
     <% data.profile.capabilities.each do |capability| %>
       <div class="col-xs-12 col-sm-3">
         <h3 class="u-no-margin"><%= capability.title %></h3>
@@ -42,5 +42,5 @@ title: Profile
       </div>
     <% end %>
   </div>
-  
+
 </div>
