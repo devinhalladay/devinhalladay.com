@@ -1,12 +1,14 @@
 .c-colored_section {
-  padding-top: 4em;
-  padding-bottom: 1em;
-  margin-top: 2em;
-  margin-bottom: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+
   .container + & {
     margin-top: -2em;
   }
   svg {
+    display: block;
     max-height: 220px;
   }
 }

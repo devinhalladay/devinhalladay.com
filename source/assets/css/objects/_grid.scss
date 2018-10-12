@@ -82,13 +82,13 @@
     padding-left: var(--quarter-gutter-width, 0.25rem);
   }
 
-  &:first-child {
-    padding-left: 0;
-  }
-
-  &:last-child {
-    padding-right: 0;
-  }
+  // &:first-child {
+  //   padding-left: 0;
+  // }
+  //
+  // &:last-child {
+  //   padding-right: 0;
+  // }
 }
 
 .col-xs {
@@ -155,7 +155,6 @@
 .col-xs-12 {
   flex-basis: 100%;
   max-width: 100%;
-  padding: 0;
 }
 
 .col-xs-offset-0 {
