@@ -1,5 +1,5 @@
 .box-body {
-  border: 1px solid $meta-color;
+  border: 1px solid $black;
   border-radius: 3px;
   padding: 15px;
 }
@@ -10,10 +10,11 @@
 
 .box-header {
   font-family: $sans-serif;
-  background-color: $text-color;
+  background-color: $black;
   border-radius: 3px 3px 0 0;
   color: white;
-  padding: 7px 10px 2px;
+  border: 1px solid $meta-color;
+  padding: 7px 10px 7px;
 }
 
 .box-header strong {
@@ -27,8 +28,9 @@
 
 .box {
   font-family: $sans-serif;
-  background-color: $lighter-color;
+  background-color: $black;
   border-radius: 3px;
+  border: 1px solid $meta-color;
 }
 
 .box:not(:last-child) {

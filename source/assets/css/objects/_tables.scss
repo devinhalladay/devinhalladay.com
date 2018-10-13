@@ -10,7 +10,7 @@ th {
 }
 
 table {
-  background-color: white;
+  background-color: $black;
   color: $text-color;
   margin-bottom: 20px;
   width: 100%;
@@ -67,7 +67,7 @@ table th.is-link > a {
 
 table td.is-link > a:hover,
 table th.is-link > a:hover {
-  background-color: $site-color;
+  background-color: lighten($black, 10%);
   color: white;
 }
 
@@ -83,14 +83,14 @@ table th {
 }
 
 table tr:hover {
-  background-color: $lighter-color;
+  background-color: lighten($black, 10%);
 }
 
 table thead td,
 table thead th {
   border-width: 0 0 2px;
   color: $text-color;
-  background-color: $lighter-color;
+  background-color: lighten($black, 10%);
 }
 
 table tbody tr:last-child td,
