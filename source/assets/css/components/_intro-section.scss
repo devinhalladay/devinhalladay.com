@@ -16,9 +16,12 @@
     margin-top: .5em;
     margin-bottom: .5em;
   }
+  img {
+    max-width: 260px;
+  }
   p {
     font-family: $sans-serif;
-    font-size: 1.6em;
+    font-size: 1.8em;
     line-height: 1.4em;
     font-weight: 300;
     margin: 0;
