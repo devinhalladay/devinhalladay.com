@@ -64,6 +64,8 @@ end
 
 activate :directory_indexes
 
+activate :asset_hash, :exts => %w(.css) # Only hash for .jpg
+
 configure :build do
   # "Ignore" JS so webpack has full control.
   activate :minify_css

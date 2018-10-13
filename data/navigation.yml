@@ -3,6 +3,5 @@ links:
     url: /profile
   - title: Contact
     url: /contact
-  - title: Writing ↬
-    external_link: true
-    url: https://infinitecaesura.com/
+  # - title: Writing
+  #   url: https://infinitecaesura.com/

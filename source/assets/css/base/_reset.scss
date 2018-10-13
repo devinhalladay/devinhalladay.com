@@ -66,6 +66,10 @@ audio:not([controls]) {
 ol, ul {
   margin: 0;
   padding: 0;
+
+  @media (max-width: $breakpoint-small) {
+    padding: 0 1em;
+  }
 }
 
 /**

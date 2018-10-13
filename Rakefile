@@ -98,7 +98,7 @@ task :project do
     priority: #{priority}
     published: false
     ---
-    <% @image_dir = 'assets/images/#{YEAR}/#{MONTH}/#{slug_fixed}' %>
+    <% @image_dir = '/assets/images/#{YEAR}/#{MONTH}/#{slug_fixed}' %>
     <%# @image_dir = 'https://devinhalladay.imgix.net/#{YEAR}/#{MONTH}/#{slug_fixed}' %>
     <div class="container">
       #{post_text}
