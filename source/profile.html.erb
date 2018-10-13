@@ -28,9 +28,12 @@ title: Profile
     </div>
   <% end %>
 
-  <%= partial("partials/section-title", :locals => { :title => "Services" }) %>
-
   <div class="row center-xs">
+    <div class="col-xs-12">
+      <hr>
+      <h2>Services</h2>
+      <hr>
+    </div>
     <% data.profile.capabilities.each do |capability| %>
       <div class="col-xs-12 col-sm-3">
         <h3 class="u-no-margin"><%= capability.title %></h3>

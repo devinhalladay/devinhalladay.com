@@ -26,20 +26,6 @@
           </div>
         </form>
       </div>
-
-      <%= javascript_include_tag :mcvalidate, :async => true %>
-
-      <script type='text/javascript'>
-        (function($) {
-          window.fnames = new Array();
-          window.ftypes = new Array();
-          fnames[1]='FNAME';
-          ftypes[1]='text';
-          fnames[0]='EMAIL';
-          ftypes[0]='email';
-        }(jQuery));
-        var $mcj = jQuery.noConflict(true);
-      </script>
     </div>
   </div>
 </section>

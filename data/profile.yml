@@ -22,16 +22,29 @@ fun_facts:
       - 'bad writing'
 
 about:
-  - title: "The Basics"
+  - title: "About Me"
     content:
-      - "Hi! I’m Devin, a multidisciplinary designer, writer, and sculptor currently based in Baltimore, MD. I primarily work as a product and editorial designer, designing and simplifying complex systems at every scale."
-      - "I work closely with clients to achieve elegant, performant design solutions while maintaining a constant critical and conceptual lens on the work I’m making and its implications. I thrive on complex systems thinking and love nothing more than defining well-conceived product mechanics."
-  - title: 'Methodology'
+      - "I’m a multidisciplinary designer and theorist, working across all media to understand, design, and maintain systems at every scale. I work with clients internationally."
+      - "I am concerned first and foremost with the ethics and politics of design, and believe that aesthetics are ideology made concrete. As such, I believe that every designed form contributes in some way to the political reality, and I work hard to ensure that my contributions are positive."
+  - title: 'Methodology/Process'
     content:
-      - "My focus is on creating layered and expressive systems across traditional, current, and future media — from identity systems, to books, to user interfaces."
-      - "To that end I develop design systems in book and editorial design, typography, brand identity, and web and product design, through rigorous conceptual development, content strategy, and research."
-      - "I see every project as an opportunity to question the state, understanding, and values of design: each piece is a constant interplay of conceptual experimentation and applied knowledge."
-      - "My primary motive as a practicing artist and designer is to give coherence to complex systems. Sometimes this means designing the invisible, breaking with the expected, and on occasion embracing established values with sharp criticality."
+      - "I am a partner, not an arbiter. I believe that the best design is made through close collaboration and constant experimentation, iteration, and feedback."
+      - "My design practice pairs typographic and systematic nuance with intense conceptual rigor in order to achieve elegant, performant design solutions that provoke and question established values."
+      - <ol class="process">
+          <img src="/assets/images/2018/10/profile/research.svg"></img>
+          <li><strong>Research</strong> — The most important part. I embed myself as deeply as possible in the subject matter in question in order to fully understand its problem space and ground truths.</li>
+          <img src="/assets/images/2018/10/profile/strategy.svg"></img>
+          <li><strong>Strategy</strong> — I work collaboratively with the client to develop design and project strategy based on my research and the client's goals. This ensures that we're all on the same page and have a clear goal.</li>
+          <img src="/assets/images/2018/10/profile/design.svg"></img>
+          <li><strong>Design & Iterate</strong> — I then experiment, design, and iterate with constant client feedback reviews in order to push through to the final product. My research and strategy are essential to this stage, as they improve the accuracy of the final products.</li>
+          <img src="/assets/images/2018/10/profile/delivery.svg"></img>
+          <li><strong>Delivery</strong> — The final products — be they instructions, files, principles, or something else — is delivered to the client comprehensively and with detailed documentation.</li>
+          <img src="/assets/images/2018/10/profile/afterwards.svg"></img>
+          <li><strong>Afterward</strong> —
+          I maintain long-term relationships with each client because I believe the design process is never finished. Once I design something, I stick with it for the life of the form.</li>
+        </ol>
+
+      # development, content strategy, and research
 
 capabilities:
   - title: "Branding and Identity"

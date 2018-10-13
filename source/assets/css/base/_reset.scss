@@ -63,6 +63,11 @@ audio:not([controls]) {
   height: 0;
 }
 
+ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */

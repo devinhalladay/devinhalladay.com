@@ -91,6 +91,10 @@ hr {
   margin-bottom: 1.64706rem;
   border: 0;
   border-top: 1px solid $meta-color;
+
+  & + h2 {
+    padding-top: 0;
+  }
 }
 
 p {
@@ -109,8 +113,11 @@ code, pre {
 }
 
 ol {
+  margin
   li {
-    margin-bottom: .5em;
+    margin-bottom: .4em;
+    padding-left: 0.6em;
+    margin-left: -0.6em;
   }
 }
 
