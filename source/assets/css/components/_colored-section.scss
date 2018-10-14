@@ -3,10 +3,8 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 2em;
+  padding: 0 20px;
 
-  .container + & {
-    margin-top: -2em;
-  }
   svg {
     display: block;
     max-height: 220px;
