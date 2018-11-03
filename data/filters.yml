@@ -1,32 +1,9 @@
-- title: Poster
-  filter_class: filter-poster
-  item_class: item-poster
-- title: Branding
+- title: Interaction
+  filter_class: filter-interaction
+  item_class: item-interaction
+- title: Branding & Identity
   filter_class: filter-branding
   item_class: item-branding
-- title: Logo
-  filter_class: filter-logo
-  item_class: item-logo
-- title: Web/UI
-  filter_class: filter-web-ui
-  item_class: item-web-ui
-# TODO: UNCOMMENT THESE WHEN YOU PUBLISH THE ODDBALL CASE STUDY
-# - title: Dev
-#   filter_class: filter-dev
-#   item_class: item-dev
-- title: Packaging
-  filter_class: filter-packaging
-  item_class: item-packaging
-- title: Sculpture
-  filter_class: filter-sculpture
-  item_class: item-sculpture
-- title: Sound
-  filter_class: filter-sound
-  item_class: item-sound
 - title: Print
   filter_class: filter-print
   item_class: item-print
-# TODO: UNCOMMENT THESE WHEN YOU PUBLISH PAINTINGS
-# - title: Painting
-#  filter_class: filter-painting
-#  item_class: item-painting

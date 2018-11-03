@@ -3,5 +3,6 @@ links:
     url: /profile
   - title: Contact
     url: /contact
-  # - title: Writing
-  #   url: https://infinitecaesura.com/
+  - title: Writing
+    url: https://infinitecaesura.com/
+    newTab: true

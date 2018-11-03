@@ -1,0 +1,26 @@
+.work-filter {
+  border-bottom: 1px solid $meta-color;
+  margin-bottom: 40px;
+  .nav-container {
+    margin-bottom: -1px;
+    nav {
+      width: fit-content;
+      margin: auto;
+      div {
+        display: inline-block;
+        padding: 0;
+        margin-left: 30px;
+        position: relative;
+        border-bottom: 1px solid $meta-color;
+        height: 50px;
+        line-height: 50px;
+        color: $white;
+        text-transform: capitalize;
+        text-decoration: none;
+        &.active {
+          border-bottom: 2px solid $white;
+        }
+      }
+    }
+  }
+}

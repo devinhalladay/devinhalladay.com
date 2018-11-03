@@ -17,8 +17,8 @@
     <%= partial "partials/footer" %>
 
     <%= javascript_include_tag "https://code.jquery.com/jquery-2.2.4.min.js", :async => true %>
-    <%= javascript_include_tag :all, :async => true %>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <%# <%= javascript_include_tag "/assets/js/vendor/mixitup.min.js" %> %>
+    <%= javascript_include_tag :all %>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
     <%= yield_content :js %>
