@@ -43,6 +43,11 @@ module.exports = {
   },
 
   plugins: [
-    new Clean(['.tmp'])
+    new Clean(['.tmp']),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      "window.jQuery": "jquery"
+    })
   ],
 };
