@@ -7,9 +7,9 @@
 <% end %>
 
 <section class="c-selected-work container u-clearfix">
-  <%# if current_page.url == "/" %>
-    <%# partial "partials/work-type" %>
-  <%# end %>
+  <% if current_page.url == "/" %>
+    <%= partial "partials/work-type" %>
+  <% end %>
   <div class="projects">
     <% items.each_with_index do |work, index| %>
         <% if development? %>
@@ -18,7 +18,7 @@
           <% @img = "https://devinhalladay.imgix.net/#{work.date.strftime('%Y/%m')}/#{work.url.gsub('/', '').gsub('work', '')}/cover.png" %>
         <% end %>
 
-        <a href="<% if work.data.outbound_link %><%= work.data.outbound_link %><% else %><%= work.url %><% end %>" class="mix project <% if work.data.filters %><%= work.data.filters.split.join(' ') %><% end %>" data-size="2x2"<% if work.data.outbound_link %>target="_blank"<% end %>>
+        <a href="<% if work.data.outbound_link %><%= work.data.outbound_link %><% else %><%= work.url %><% end %>" class="mix project <% if work.data.filters %><%= work.data.filters.split(', ').join(' ') %><% end %>" data-size="2x2"<% if work.data.outbound_link %>target="_blank"<% end %>>
           <picture>
 
             <source media="(min-width: 1200px)" data-srcset="<%= @img %>?w=800&amp;fm=jpg&amp;q=100, <%= @img %>?w=800&amp;fm=jpg&amp;q=100&amp;dpr=2 2x">

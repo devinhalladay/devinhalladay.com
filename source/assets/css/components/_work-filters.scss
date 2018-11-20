@@ -8,6 +8,7 @@
       margin: auto;
       div {
         display: inline-block;
+        cursor: pointer;
         padding: 0;
         margin-left: 30px;
         position: relative;
@@ -17,8 +18,9 @@
         color: $white;
         text-transform: capitalize;
         text-decoration: none;
-        &.active {
-          border-bottom: 2px solid $white;
+        &.mixitup-control-active {
+          border-bottom: 1px solid $white;
+          font-weight: 500;
         }
       }
     }

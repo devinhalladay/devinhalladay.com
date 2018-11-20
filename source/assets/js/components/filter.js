@@ -1,8 +1,7 @@
 var config = {
-    "animation": {
-        "duration": 489,
-        "effects": "fade"
-    }
+  animation: {
+    enable: false
+  },
 }
 
 var mixer = mixitup('.projects', config);

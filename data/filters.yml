@@ -1,7 +1,7 @@
 - title: Interaction
   filter_class: filter-interaction
   item_class: item-interaction
-- title: Branding & Identity
+- title: Branding
   filter_class: filter-branding
   item_class: item-branding
 - title: Print
