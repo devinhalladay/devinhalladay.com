@@ -101,4 +101,14 @@ header {
   .header-group--subtitle {
     display: none;
   }
+
+  header {
+    padding-top: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding-top: 0;
+  }
 }

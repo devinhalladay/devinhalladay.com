@@ -2,14 +2,14 @@
   font-family: $sans-serif;
   background-color: $site-color;
   color: $black;
-  float: left;
-  margin-top: 1em;
+  // margin-top: 1em;
   transition: all 0.2s;
   text-align: center;
   height: 45px;
   position: relative;
   border-radius: 6px;
-  line-height: 2.4;
+  line-height: 1;
+  padding: 10px 20px;
 }
 .button span, .button-wrapper a {
   position: absolute;
@@ -24,6 +24,7 @@
   box-sizing: border-box;
   padding: 10px;
   border: 0;
+  text-decoration: none;
 }
 .button-wrapper {
   margin: 0 0 40px 0;

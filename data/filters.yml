@@ -1,9 +1,12 @@
-- title: Interaction
+- title: 'Web & Interaction'
   filter_class: filter-interaction
   item_class: item-interaction
-- title: Branding
+- title: Brand Identity
   filter_class: filter-branding
   item_class: item-branding
 - title: Print
   filter_class: filter-print
   item_class: item-print
+- title: Other
+  filter_class: filter-other
+  item_class: item-other

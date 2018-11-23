@@ -6,7 +6,6 @@ module.exports = {
     all: './source/assets/js/all.js',
     mixitup: './source/assets/js/vendor/mixitup.min.js',
     404: './source/assets/js/404.js',
-    contact: './source/assets/js/contact.js'
   },
 
   resolve: {
