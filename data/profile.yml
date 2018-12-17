@@ -24,7 +24,7 @@ fun_facts:
 about:
   - title: "About Me"
     content:
-      - "I’m a multidisciplinary designer and theorist, working across all media to understand, design, and maintain systems at every scale. I work with clients internationally."
+      - I’m a multidisciplinary designer working across all media to understand, design, and maintain systems at every scale. I work with clients internationally. Previously, I was a product designer at <a href="http://palantir.com">Palantir</a>, <a href="http://quora.com">Quora</a>, and <a href="http://friendsoftheweb.com">Friend of the Web</a>.
       - "I am concerned first and foremost with the ethics and politics of design, and believe that aesthetics are ideology made concrete. As such, I believe that every designed form contributes in some way to the political reality, and I work hard to ensure that my contributions are positive."
   - title: 'Methodology/Process'
     content:

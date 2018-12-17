@@ -4,7 +4,6 @@ var Clean = require('clean-webpack-plugin');
 module.exports = {
   entry: {
     all: './source/assets/js/all.js',
-    mixitup: './source/assets/js/vendor/mixitup.min.js',
     404: './source/assets/js/404.js',
   },
 
@@ -43,10 +42,10 @@ module.exports = {
 
   plugins: [
     new Clean(['.tmp']),
-    new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery",
-      "window.jQuery": "jquery"
+      new webpack.ProvidePlugin({
+        $: "jquery",
+        jQuery: "jquery",
+        "window.jQuery": "jquery"
     })
   ],
 };
