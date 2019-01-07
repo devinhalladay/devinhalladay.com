@@ -28,7 +28,7 @@
 
   .project-title {
     font-family: $sans-serif;
-    padding: 0.5em 0;
+    padding: 1.2em 0 0;
     text-decoration: none;
     font-size: 1.2rem;
     line-height: 1.2;
@@ -100,7 +100,7 @@
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: auto;
       grid-column-gap: 20px;
-      grid-row-gap: 20px;
+      grid-row-gap: 60px;
 
       .project {
         overflow: hidden;
