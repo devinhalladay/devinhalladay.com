@@ -12,6 +12,45 @@
     margin: 0;
   }
 
+  .systems {
+    white-space: nowrap;
+  }
+
+  .systems:before {
+    content: url(/assets/images/2019/01/systems.svg);
+    width: 40px;
+    display: inline-block;
+    position: relative;
+    padding-right: 7px;
+    top: 10px;
+  }
+
+  .products {
+    white-space: nowrap;
+  }
+
+    .products:before {
+      content: url(/assets/images/2019/01/products.svg);
+      width: 40px;
+      display: inline-block;
+      position: relative;
+      padding-right: 7px;
+      top: 10px;
+    }
+
+    .theory {
+      white-space: nowrap;
+    }
+
+      .theory:before {
+        content: url(/assets/images/2019/01/theory.svg);
+        width: 40px;
+        display: inline-block;
+        position: relative;
+        padding-right: 7px;
+        top: 3px;
+      }
+
   hr {
     height: 60px;
     border-color: $text-color;

@@ -1,5 +1,4 @@
 .work-filter {
-  border-bottom: 1px solid $meta-color;
   margin-bottom: 40px;
   .nav-container {
     margin-bottom: -1px;
@@ -29,17 +28,20 @@
         cursor: pointer;
         padding: 0;
         position: relative;
-        border-bottom: 1px solid $meta-color;
-        height: 50px;
-        line-height: 50px;
+        border: 1px solid $meta-color;
+        padding: 5px 10px;
+        border-radius: 4px;
         color: $white;
+        font-size: 14px;
         text-transform: capitalize;
         text-decoration: none;
         &:not(:first-child) {
-          margin-left: 30px;
+          margin-left: 20px;
         }
         &.mixitup-control-active {
-          border-bottom: 1px solid $white;
+          border: 1px solid #ffffff;
+          background: #ffffff;
+          color: #000000;
           font-weight: 500;
         }
       }
