@@ -1,0 +1,11 @@
+<% wrap_layout :layout do %>
+
+<section class="hero">
+  <a href="/" class="return-link"><span></span> Back home</a>
+  <h1><%= current_page.title %></h1>
+  <h2><%= current_page.data.description %></h2>
+</section>
+
+<%= yield %>
+
+<% end %>

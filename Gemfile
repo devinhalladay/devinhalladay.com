@@ -7,6 +7,7 @@ gem 'middleman-livereload'
 gem 'middleman-autoprefixer'
 gem 'middleman-minify-html'
 gem 'middleman-deploy'
+gem "middleman-sprockets"
 
 # Templating Engines
 gem 'redcarpet'
@@ -21,3 +22,5 @@ gem 'nokogiri'
 
 # For rakefile
 gem 'highline'
+
+gem "middleman-dato"

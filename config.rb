@@ -1,3 +1,5 @@
+activate :dato, live_reload: true, preview: true
+
 activate :livereload
 activate :autoprefixer
 
@@ -17,23 +19,25 @@ set :js_dir, "assets/js"
 set :images_dir, "assets/images"
 set :fonts_dir, "assets/fonts"
 
+ignore '/templates/*'
+
 
 # # # # # #
 # @desc Activate and configure blogs
 # # # # # #
 
 def activate_blog(blog_name, article_layout, article_source: "{year}-{month}-{day}-{title}.html", blog_permalink: "{title}")
-  activate :blog do |b|
-    b.sources = article_source
-    b.name = blog_name
-    b.prefix = blog_name
-    b.permalink = blog_permalink
-    b.layout = article_layout
-  end
+  
+end
+
+activate :blog do |b|
+  b.sources = "projects/{year}-{month}-{day}-{title}.html"
+  b.name = "work"
+  b.permalink = "{title}"
+  b.layout = "project"
 end
 
 # Activate and configure blogs
-activate_blog("journal", "article")
 activate_blog("work", "work")
 
 
@@ -50,21 +54,9 @@ helpers do
     link_to(caption, url, options)
   end
 
-  def header_title
-    if is_blog_article?
-      headline_title = current_article.blog_data.options[:name]
-    elsif current_page.url == "/"
-      headline_title = "Design, Etc."
-    else
-      headline_title = current_page.data.title
-    end
-  end
-
 end
 
 activate :directory_indexes
-
-activate :asset_hash, :exts => %w(.css) # Only hash for .jpg
 
 configure :build do
   # "Ignore" JS so webpack has full control.

@@ -1,0 +1,12 @@
+{
+  "browser": true,
+  "devel": true,
+  "strict": true,
+  "undef": true,
+  "unused": true,
+  "predef": {   
+    "Flickity": false,
+    "matchesSelector": false,
+    "QUnit": false
+  }
+}

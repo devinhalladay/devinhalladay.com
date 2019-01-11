@@ -1,51 +1,63 @@
 <!doctype html>
 <html>
   <head>
-    <%= partial "partials/meta" %>
-
-    <%= yield_content :assets %>
-
-    <%= yield_content :css %>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title><%= current_page.data.title || "Devin Halladay — Design, Etc." %></title>
+    <%= stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.css" %>
+    <%= stylesheet_link_tag "site" %>
+    <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" %>
+    <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.pkgd.min.js" %>
+    <%= javascript_include_tag "site" %>
   </head>
+  <body>
+    <script>
+      document.body.className = 'fade';
+    </script>
 
-  <body class="<%= page_classes %>">
-
-    <%= partial "partials/header" %>
-
-    <div id="barba-wrapper">
-      <div class="barba-container">
-        <%= yield %>
-      </div>
+    <div class="scroll-1 scroll">
+      <div id="progress-1" class="progress-1"></div>
+    </div>
+    <div class="scroll-2 scroll">
+      <div id="progress-2" class="progress-2"></div>
+    </div>
+    <div class="scroll-3 scroll">
+      <div id="progress-3" class="progress-3"></div>
+    </div>
+    <div class="scroll-4 scroll">
+      <div id="progress-4" class="progress-4"></div>
+    </div>
+    <div class="scroll-5 scroll">
+      <div id="progress-5" class="progress-5"></div>
+    </div>
+    <div class="scroll-6 scroll">
+      <div id="progress-6" class="progress-6"></div>
+    </div>
+    <div class="scroll-7 scroll">
+      <div id="progress-7" class="progress-7"></div>
+    </div>
+    <div class="scroll-8 scroll">
+      <div id="progress-8" class="progress-8"></div>
     </div>
 
-    <%= partial "partials/footer" %>
+    <main class="verso">
+      <div class="page-container grid">
+        <%= yield %>
+      </div>
+    </main>
 
-    <%= javascript_include_tag "https://code.jquery.com/jquery-2.2.4.min.js", :async => true %>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js" %>
-    <%= javascript_include_tag "/assets/js/vendor/mixitup.min.js" %>
-    <%= javascript_include_tag :all %>
-    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-
-    <%= yield_content :js %>
+    <main class="recto">
+    
+    </main>
+    
+    <footer></footer>
 
     <script>
-      !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
-      arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
-      d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
-      insertBefore(d,q)}(window,document,'script','_gs');
-
-      _gs('GSN-044261-H');
+      document.addEventListener("DOMContentLoaded", function(e) {
+        document.body.className = '';
+      });
     </script>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-54086893-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-54086893-2');
-    </script>
-
   </body>
 </html>
