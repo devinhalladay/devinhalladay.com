@@ -1,5 +1,3 @@
-activate :dato, live_reload: true, preview: true
-
 activate :livereload
 activate :autoprefixer
 
@@ -26,9 +24,6 @@ ignore '/templates/*'
 # @desc Activate and configure blogs
 # # # # # #
 
-def activate_blog(blog_name, article_layout, article_source: "{year}-{month}-{day}-{title}.html", blog_permalink: "{title}")
-  
-end
 
 activate :blog do |b|
   b.sources = "projects/{year}-{month}-{day}-{title}.html"
@@ -36,9 +31,6 @@ activate :blog do |b|
   b.permalink = "{title}"
   b.layout = "project"
 end
-
-# Activate and configure blogs
-activate_blog("work", "work")
 
 
 # Helper functions, available in templates

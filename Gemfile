@@ -22,5 +22,3 @@ gem 'nokogiri'
 
 # For rakefile
 gem 'highline'
-
-gem "middleman-dato"
