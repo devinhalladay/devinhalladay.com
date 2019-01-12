@@ -1,8 +1,8 @@
 links:
-  - title: Profile
-    url: /profile
   - title: Contact
     url: /contact
+  - title: Profile
+    url: /profile
   - title: Writing
     url: https://infinitecaesura.com/
     newTab: true

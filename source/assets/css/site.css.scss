@@ -10,21 +10,12 @@
 @import "pages/all";  
 @import "vendor/all";       // Vendor
 
-// .article {
-//       position: relative;
-// }
-// .related-img {
-//   position: absolute;
-//   top: 0;
-//   right: 4em;
-//   z-index: -1;
-//   top: 0;
-//   max-width: 32%;
-//   display: none;
-// }
-//
-// .article a:hover {
-//   .related-img {
-//     display: block;
-//   }
-// }
+.lazyload,
+.lazyloading {
+  opacity: 0;
+}
+
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 300ms;
+}

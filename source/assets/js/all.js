@@ -64,4 +64,18 @@ Barba.Dispatcher.on('newPageReady', function (e) {
 
     var mixer = mixitup('.projects', config);
   }
+
+  if ($('.marquee')) {
+    const $mq = $('.marquee');
+    const el = "    <a href='mailto:studio@devinhalladay.com'>studio@devinhalladay.com</a>    ";
+
+    $mq.append(el).append(el).append(el).marquee({
+      duration: 6500,
+      gap: 10,
+      delayBeforeStart: 0,
+      duplicated: true,
+      allowCss3Support: true,
+      startVisible: true
+    });
+  }
 })

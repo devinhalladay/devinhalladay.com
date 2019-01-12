@@ -12,17 +12,26 @@
     margin: 0;
   }
 
+  span:before {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    padding-right: 7px;
+    top: 10px;
+
+    @media screen and (max-width: 48em) {
+      width: 30px;
+    }
+  }
+
   .systems {
     white-space: nowrap;
   }
 
   .systems:before {
     content: url(/assets/images/2019/01/systems.svg);
-    width: 40px;
-    display: inline-block;
-    position: relative;
-    padding-right: 7px;
-    top: 10px;
+    
+    
   }
 
   .products {
@@ -31,11 +40,6 @@
 
     .products:before {
       content: url(/assets/images/2019/01/products.svg);
-      width: 40px;
-      display: inline-block;
-      position: relative;
-      padding-right: 7px;
-      top: 10px;
     }
 
     .theory {
@@ -44,10 +48,6 @@
 
       .theory:before {
         content: url(/assets/images/2019/01/theory.svg);
-        width: 40px;
-        display: inline-block;
-        position: relative;
-        padding-right: 7px;
         top: 3px;
       }
 
