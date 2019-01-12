@@ -2,7 +2,7 @@
 <% items = blog('work').articles.reject!{ |work| work.title == current_page.title }.sort_by!{ |work| work.data.priority }[0 .. 2] %>
 <% section_title = "More Work" %>
 <% else %>
-<% items = blog('work').articles.sort_by!{ |work| work.data.priority } %>
+<% items = blog('work').articles %>
 <% section_title = "Selected Work" %>
 <% end %>
 
