@@ -26,3 +26,5 @@ Checklists.oo3
 
 # Ignore fonts
 /source/assets/fonts/*
+
+.vscode
