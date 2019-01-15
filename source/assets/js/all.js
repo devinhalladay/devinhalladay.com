@@ -58,7 +58,7 @@ Barba.Dispatcher.on('newPageReady', function (e) {
   if ($('.projects')) {
     var config = {
       animation: {
-        enable: false
+        enable: true
       },
     }
 

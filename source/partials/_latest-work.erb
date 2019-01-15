@@ -19,19 +19,8 @@
         <% end %>
 
         <a href="<% if work.data.outbound_link %><%= work.data.outbound_link %><% else %><%= work.url %><% end %>" class="mix project <% if work.data.filters %><%= work.data.filters.split(', ').join(' ') %><% end %>" data-size="2x2"<% if work.data.outbound_link %>target="_blank"<% end %>>
-          <picture>
 
-            <source media="(min-width: 1200px)" data-srcset="<%= @img %>?w=800&amp;fm=jpg&amp;q=100, <%= @img %>?w=800&amp;fm=jpg&amp;q=100&amp;dpr=2 2x">
-
-            <source media="(min-width: 768px) and (max-width: 992px)" data-srcset="<%= @img %>?w=992&amp;fm=jpg&amp;q=100, <%= @img %>?w=992&amp;fm=jpg&amp;q=100&amp;dpr=2 2x">
-
-            <source media="(min-width: 480px) and (max-width: 768px)" data-srcset="<%= @img %>?w=768&amp;fm=jpg&amp;q=100, <%= @img %>?w=768&amp;fm=jpg&amp;q=100&amp;dpr=2 2x">
-
-            <source media="(max-width: 480px)" data-srcset="<%= @img %>?w=480&amp;fm=jpg&amp;q=100, <%= @img %>?w=480&amp;fm=jpg&amp;q=100&amp;dpr=2 2x">
-
-            <img alt="<%= work.title %>" class="lazyload" data-src="<%= @img %>?w=800&amp;fm=jpg&amp;q=100" data-srcset="<%= @img %>?w=800&amp;fm=jpg&amp;q=100&amp;dpr=2 2x">
-
-          </picture>
+            <img alt="<%= work.title %>" class="lazyload" data-src="<%= @img %>?w=800&amp;fm=jpg&amp;q=100">
 
           <div class="project-title">
             <div class="title"><%= work.title %></div>

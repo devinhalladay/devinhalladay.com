@@ -1,6 +1,6 @@
 var config = {
   animation: {
-    enable: false
+    enable: true
   },
 }
 

@@ -35,6 +35,10 @@
         font-size: 14px;
         text-transform: capitalize;
         text-decoration: none;
+        transition: 0.4s all ease;
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.2);
+        }
         &:not(:first-child) {
           margin-left: 20px;
         }

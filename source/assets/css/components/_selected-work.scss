@@ -5,28 +5,20 @@
   position: relative;
   vertical-align: top;
   width: 100%;
+  height: fit-content;
+  transition: 0.2s all ease;
 
   &:hover {
     color: $text-color;
+    transform: scale(0.96);
   }
 
-
-  picture {
-    height: fit-content;
-
-    img {
-      display: block;
-      width: 100%;
-      border-radius: 4px;
-      border: 1px solid #fff;
-      box-sizing: border-box;
-
-      &:after:hover {
-
-      }
-    }
-
-
+  img {
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
   }
 
   .project-title {
