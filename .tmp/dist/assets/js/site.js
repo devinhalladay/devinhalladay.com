@@ -49,15 +49,63 @@
 
 	$(document).ready(function () {
 	
-	  // $(document).on('click', 'a', function (e) {
-	  //   let link = $(this).attr('href');
+	  function init() {
+	    let $blockGallery = $('.block-gallery').flickity({
+	      contain: true,
+	      wrapAround: true,
+	      imagesLoaded: true,
+	      cellSelector: '.gallery-slide',
+	      pageDots: false,
+	      adaptiveHeight: true
+	    });
 	
-	  //   $('.recto').first().load(link + ' .page-container', function () {
-	  //     window.history.replaceState(null, null, link);
-	  //   });
+	    var $carouselStatus = $('.carousel-status');
+	    var flkty = $blockGallery.data('flickity');
 	
-	  //   e.preventDefault();
-	  // });
+	    function updateStatus() {
+	      var cellNumber = flkty.selectedIndex + 1;
+	      $carouselStatus.text(cellNumber + '/' + flkty.slides.length);
+	    }
+	    updateStatus();
+	    $blockGallery.on('change.flickity', updateStatus);
+	
+	
+	
+	    var coll = document.getElementsByClassName("collapsible");
+	    var i;
+	
+	    for (i = 0; i < coll.length; i++) {
+	      coll[i].addEventListener("click", function () {
+	        this.classList.toggle("active");
+	        var content = this.children[1];
+	        if (content.style.maxHeight) {
+	          content.style.maxHeight = null;
+	        } else {
+	          content.style.maxHeight = content.scrollHeight + "px";
+	
+	          this.scrollIntoView({
+	            behavior: "smooth",
+	            block: "start",
+	            inline: "nearest"
+	          });
+	        }
+	      });
+	    }
+	  }
+	
+	  init();
+	
+	  $(document).on('click', 'a', function (e) {
+	    let link = $(this).attr('href');
+	
+	    $('.recto').first().load(link + ' .page-container', function () {
+	      window.history.replaceState(null, null, link);
+	      $(this).addClass('open');
+	      init();
+	    });
+	
+	    e.preventDefault();
+	  });
 	
 	
 	  const docHeight = $(document).height();
@@ -100,51 +148,6 @@
 	    document.getElementById("progress-6").style.height = scrolled + 5 + "%";
 	    document.getElementById("progress-7").style.height = scrolled + 5 + "%";
 	    document.getElementById("progress-8").style.width = scrolled + 5 + "%";
-	  }
-	
-	
-	
-	
-	  let $blockGallery = $('.block-gallery').flickity({
-	    contain: true,
-	    wrapAround: true,
-	    imagesLoaded: true,
-	    cellSelector: '.gallery-slide',
-	    pageDots: false,
-	    adaptiveHeight: true
-	  });
-	
-	  var $carouselStatus = $('.carousel-status');
-	  var flkty = $blockGallery.data('flickity');
-	
-	  function updateStatus() {
-	    var cellNumber = flkty.selectedIndex + 1;
-	    $carouselStatus.text(cellNumber + '/' + flkty.slides.length);
-	  }
-	  updateStatus();
-	  $blockGallery.on('change.flickity', updateStatus);
-	
-	
-	
-	  var coll = document.getElementsByClassName("collapsible");
-	  var i;
-	
-	  for (i = 0; i < coll.length; i++) {
-	    coll[i].addEventListener("click", function () {
-	      this.classList.toggle("active");
-	      var content = this.children[1];
-	      if (content.style.maxHeight) {
-	        content.style.maxHeight = null;
-	      } else {
-	        content.style.maxHeight = content.scrollHeight + "px";
-	        
-	        this.scrollIntoView({
-	          behavior: "smooth",
-	          block: "start",
-	          inline: "nearest"
-	        });
-	      }
-	    });
 	  }
 	})
 	

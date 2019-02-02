@@ -47,12 +47,15 @@ strong {
 }
 
 section {
-  padding-bottom: 2em; 
+  padding-bottom: 2em;
 }
 
 .grid {
   display: grid;
   grid-gap: 20px;
+  max-width: 100em;
+  margin: auto;
+
   grid-template-columns: unquote("[full-start] 1fr [spill-start] 1fr [breakout-start] 1fr [main-start] repeat(6, 1fr) [main-end] 1fr [breakout-end] 1fr [spill-end] 1fr [full-end]");
 
   @media (max-width: 1100px) {
@@ -88,7 +91,7 @@ section {
   border-radius: 4px;
   background: rgba(255, 255, 255, 1);
   transition: background 0.2s;
-  font-size: 1.6vw;
+  font-size: 1.3em;
   line-height: 1.25em;
   font-weight: 400;
   color: #000;
@@ -649,10 +652,27 @@ body.fade {
 
 .verso {
   transition: 1s transform ease-in-out;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .recto {
+  transform: translateX(100%);
   transition: 1s transform ease-in-out;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  &.open {
+    transform: translateX(0%);
+  }
 }
 
 .header-bg {
