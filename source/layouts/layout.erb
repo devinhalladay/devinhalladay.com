@@ -10,6 +10,8 @@
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" %>
     <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.pkgd.min.js" %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js" %>
     <%= javascript_include_tag "site" %>
   </head>
   <body>
@@ -42,11 +44,15 @@
       <div id="progress-8" class="progress-8"></div>
     </div>
 
-    <main class="verso">
-      <div class="page-container grid">
-        <%= yield %>
+    <div id="barba-wrapper">
+      <div class="barba-container">
+        <main class="verso">
+          <div class="page-container grid">
+            <%= yield %>
+          </div>
+        </main>
       </div>
-    </main>
+    </div>
 
     <main class="recto">
     

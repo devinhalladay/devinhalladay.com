@@ -13,21 +13,21 @@
   <section class="main-carousel">
     <div class="h2">Featured Projects</div>
     <div class="block block-gallery medium-margin">
-      <% 5.times do %>
-      <div class="gallery-slide">
-        <a href="/raf">
-          <div class="image" style="background-image: url(/assets/images/cover-1.png)"></div>
-          <div class="caption">
-            <div class="title--block">
-              Raf Simons Fall 19, "SUBSTANCE"
+      <% blog.articles.each do |project| %>
+        <div class="gallery-slide">
+          <a href="<%= project.url %>">
+            <div class="image" style="background-image: url(/assets/images/cover-1.png)"></div>
+            <div class="caption">
+              <div class="title--block">
+                <%= project.title %>
+              </div>
+              <div class="meta--block">
+                <%= project.data.scope %>
+              </div>
             </div>
-            <div class="meta--block">
-              Art Direction
-            </div>
-          </div>
-          <p class="carousel-status"></p>
-        </a>
-      </div>
+            <p class="carousel-status"></p>
+          </a>
+        </div>
       <% end %>
     </div>
   </section>

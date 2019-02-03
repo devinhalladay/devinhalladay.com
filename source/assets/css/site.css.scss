@@ -6,31 +6,43 @@ body {
   color: #fff;
   font-family: "Neue Haas Unica Pro", sans-serif;
   padding: 10px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.55em;
-  font-weight: 300;
+  font-weight: 400;
 }
 
-// a {
-//   text-decoration: underline;
-// }
+.page-container {
+  padding-bottom: 5em;
+}
+
+a {
+  text-decoration: underline;
+  color: #fff;
+}
+
+p {
+  & + h2 {
+    padding-top: 2.5rem;
+  }
+}
 
 strong {
   font-weight: 500;
 }
 
 .hero {
-    padding-top: 10vh;
-    padding-bottom: 1em;
+  padding-top: 10vh;
+  padding-bottom: 1em;
 
   h1 {
     font-weight: 300;
     color: #999999;
     font-weight: 300;
     line-height: 1.4;
-    font-size: 1.7em;
+    font-size: 1.5em;
     padding-top: 1em;
 
+    
     a {
       text-decoration: none;
       border-bottom: 1px solid #fff;
@@ -44,16 +56,40 @@ strong {
       margin-top: 2em;
     }
   }
+
+  &--project {
+    h1 {
+      color: #fff;
+    }
+
+    h2 {
+      color: #999999;
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+  }
 }
 
 section {
   padding-bottom: 2em;
 }
 
+main {
+  @media (max-width: 600px) {
+    padding: 20px;
+  }
+}
+
+.dg {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .grid {
   display: grid;
   grid-gap: 20px;
-  max-width: 100em;
+  max-width: 80em;
   margin: auto;
 
   grid-template-columns: unquote("[full-start] 1fr [spill-start] 1fr [breakout-start] 1fr [main-start] repeat(6, 1fr) [main-end] 1fr [breakout-end] 1fr [spill-end] 1fr [full-end]");
@@ -91,7 +127,7 @@ section {
   border-radius: 4px;
   background: rgba(255, 255, 255, 1);
   transition: background 0.2s;
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 1.25em;
   font-weight: 400;
   color: #000;
@@ -105,11 +141,15 @@ section {
 .recent-work {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 20px;
+  grid-column-gap: 40px;
   grid-row-gap: 20px;
 
-  @media (max-width: 600px) {
+  @media (max-width: 1100px) {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .project {
@@ -233,7 +273,11 @@ h2, .h2 {
   line-height: 38px;
   font-size: 28px;
   color: #FFFFFF;
-    padding-bottom: 15px;
+  padding-bottom: 12px;
+}
+
+p + figure {
+  padding-top: 1em;
 }
 
 section {
@@ -634,7 +678,6 @@ body.fade {
 }
 
 .grain-effect {
-
   &:after {
     -webkit-animation: grain 5s steps(10) infinite;
     animation: grain 5s steps(10) infinite;
@@ -652,27 +695,10 @@ body.fade {
 
 .verso {
   transition: 1s transform ease-in-out;
-  background-color: #000;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 .recto {
-  transform: translateX(100%);
   transition: 1s transform ease-in-out;
-  background-color: #000;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-
-  &.open {
-    transform: translateX(0%);
-  }
 }
 
 .header-bg {
@@ -681,6 +707,22 @@ body.fade {
   bottom: 50vh;
   left: 0;
   width: 100%;
+  z-index: -1;
+  background-size: cover;
   background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 1) 100%),
   url(https://devinhalladay.imgix.net/2018/11/mercurial-world/cover.png?w=800&fm=jpg&q=100&dpr=2);
+}
+
+.process-list {
+  img {
+    max-width: 150px;
+  }
+}
+
+ol {
+  li {
+    margin-bottom: .4em;
+    padding-left: 0.6em;
+    margin-left: -0.6em;
+  }
 }
