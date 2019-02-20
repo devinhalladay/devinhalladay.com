@@ -726,3 +726,17 @@ ol {
     margin-left: -0.6em;
   }
 }
+
+
+.popover {
+	display: none;
+  position: fixed;
+  pointer-events: none;
+  cursor: crosshair;
+  max-width: 500px;
+  z-index: 999999;
+}
+
+.text-hoverable {
+  cursor: crosshair;
+}

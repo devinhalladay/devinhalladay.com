@@ -1,0 +1,34 @@
+---
+title: "iOS Alarm Contexts"
+scope: Product Design
+intro: "Facing a problem of having far too many alarms set on my phone every morning, I designed a solution that allows users to set a range of alarms in just one step."
+filters: item-interaction
+priority: 4
+---
+<% @image_dir = 'https://devinhalladay.imgix.net/2018/03/alarm-contexts' %>
+<div class="container">
+  <div class="row center-xs">
+    <div class="col-xs-12">
+      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/1.jpg" }) %>
+    </div>
+  </div>
+  <div class="row center-xs">
+    <div class="col-xs-12 col-md-6 col-lg-5">
+      <h2>A Better Way to Set Alarms</h2>
+      <p>If you're anything like me you've experienced this annoying problem: you set about 10 alarms to wake up in the morning and have a list of over 100 alarms in Clock.app on your phone set at 5–25 minute intervals. You wake up and forget to turn off some of them and they go off in a meeting making you look stupid, or you set the wrong ones and wake up late.</p>
+      <p>Alarms shouldn't be that hard to create an maintain, and iOS doesn't do a good enough job. So I created a hypothetical solution: <strong>Alarm Contexts</strong>.</p>
+      <p>An Alarm Context is, quite simply, a single alarm that repeats itself at a regular interval during a specified duration. It simplifies the 10 alarms I set every morning into a single entry, allowing me to turn off a single alarm instead of turning off 10. Additionally, a user can snooze the current alarm iteration in the Context and the next alarm will go off after the specified interval passes, ensuring you never miss that important meeting again.</p>
+    </div>
+  </div>
+  <div class="row center-xs">
+    <div class="col-xs-12 col-sm-4 col-md-4">
+      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/4.png" }) %>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-4">
+      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/3.png" }) %>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-4">
+      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/2.png" }) %>
+    </div>
+  </div>
+</div>

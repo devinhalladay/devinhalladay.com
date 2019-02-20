@@ -1,35 +1,12 @@
-
   <section class="hero">
     <p class="byline">Design, Etc.</p>
     <h1>
       <a href="/about">Devin Halladay</a> is a multidisciplinary designer working at the intersection
-      of <span class="text-hoverable">culture</span>, <span class="text-hoverable">politics</span>, and <span class="text-hoverable">technology</span>.
-      His work is focused on <a href="" class="nav-products">products</a>, <a href="" class="nav-systems">systems</a>,
+      of <span class="text-hoverable invoker--culture">culture</span>, <span class="text-hoverable invoker--politics">politics</span>, and <span class="text-hoverable">technology</span>.
+      His work is focused on <a href="" class="nav-products">products</a>, <a href="" class="nav-systems invoker--systems">systems</a>,
       and <a href="" class="nav-theory">theory</a>.
     </h1>
     <a href="/contact" class="button button-forward">Get in touch</a>
-  </section>
-  
-  <section class="main-carousel">
-    <div class="h2">Featured Projects</div>
-    <div class="block block-gallery medium-margin">
-      <% blog.articles.each do |project| %>
-        <div class="gallery-slide">
-          <a href="<%= project.url %>">
-            <div class="image" style="background-image: url(/assets/images/cover-1.png)"></div>
-            <div class="caption">
-              <div class="title--block">
-                <%= project.title %>
-              </div>
-              <div class="meta--block">
-                <%= project.data.scope %>
-              </div>
-            </div>
-            <p class="carousel-status"></p>
-          </a>
-        </div>
-      <% end %>
-    </div>
   </section>
   
   <section class="recent-work gc-breakout">
