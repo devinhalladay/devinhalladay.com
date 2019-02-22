@@ -52,18 +52,14 @@ proto.getLastCell = function() {
 };
 
 proto.select = function() {
-  this.changeSelected( true );
+  this.cells.forEach( function( cell ) {
+    cell.select();
+  });
 };
 
 proto.unselect = function() {
-  this.changeSelected( false );
-};
-
-proto.changeSelected = function( isSelected ) {
-  var classMethod = isSelected ? 'add' : 'remove';
   this.cells.forEach( function( cell ) {
-    cell.element.classList[ classMethod ]('is-selected');
-    cell.element.setAttribute( 'aria-selected', isSelected.toString() );
+    cell.unselect();
   });
 };
 

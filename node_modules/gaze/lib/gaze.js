@@ -2,7 +2,7 @@
  * gaze
  * https://github.com/shama/gaze
  *
- * Copyright (c) 2018 Kyle Robinson Young
+ * Copyright (c) 2016 Kyle Robinson Young
  * Licensed under the MIT license.
  */
 
@@ -270,8 +270,6 @@ Gaze.prototype.relative = function (dir, unixify) {
 
 // Adds files and dirs to watched
 Gaze.prototype._addToWatched = function (files) {
-  var dirs = [];
-
   for (var i = 0; i < files.length; i++) {
     var file = files[i];
     var filepath = path.resolve(this.options.cwd, file);
@@ -287,13 +285,6 @@ Gaze.prototype._addToWatched = function (files) {
     if (file.slice(-1) === '/') { filepath += path.sep; }
     helper.objectPush(this._watched, path.dirname(filepath) + path.sep, filepath);
 
-    dirs.push(dirname);
-  }
-
-  dirs = helper.unique(dirs);
-
-  for (var k = 0; k < dirs.length; k++) {
-    dirname = dirs[k];
     // add folders into the mix
     var readdir = fs.readdirSync(dirname);
     for (var j = 0; j < readdir.length; j++) {
@@ -303,7 +294,6 @@ Gaze.prototype._addToWatched = function (files) {
       }
     }
   }
-
   return this;
 };
 

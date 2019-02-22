@@ -15,10 +15,10 @@ try {
 }
 
 test('symlink', function (t) {
-    t.plan(2);
+    t.plan(1);
 
     resolve('foo', { basedir: symlinkDir, preserveSymlinks: false }, function (err, res, pkg) {
-        t.error(err);
+        if (err) t.fail(err);
         t.equal(res, path.join(__dirname, 'resolver', 'symlinked', '_', 'node_modules', 'foo.js'));
     });
 });
@@ -41,9 +41,7 @@ test('sync symlink when preserveSymlinks = true', function (t) {
 
 test('sync symlink', function (t) {
     var start = new Date();
-    t.doesNotThrow(function () {
-        t.equal(resolve.sync('foo', { basedir: symlinkDir, preserveSymlinks: false }), path.join(__dirname, 'resolver', 'symlinked', '_', 'node_modules', 'foo.js'));
-    });
+    t.equal(resolve.sync('foo', { basedir: symlinkDir, preserveSymlinks: false }), path.join(__dirname, 'resolver', 'symlinked', '_', 'node_modules', 'foo.js'));
     t.ok(new Date() - start < 50, 'resolve.sync timedout');
     t.end();
 });

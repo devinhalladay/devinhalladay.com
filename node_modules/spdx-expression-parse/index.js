@@ -1,8 +1,5 @@
-'use strict'
+var parser = require('./parser').parser
 
-var scan = require('./scan')
-var parse = require('./parse')
-
-module.exports = function (source) {
-  return parse(scan(source))
+module.exports = function (argument) {
+  return parser.parse(argument)
 }

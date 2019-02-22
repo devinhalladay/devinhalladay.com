@@ -28,7 +28,7 @@ namespace SassTypes
       }
 
       a = Nan::To<double>(raw_val[3]).FromJust();
-      NODE_SASS_FALLTHROUGH;
+      // fall through vvv
 
     case 3:
       if (!raw_val[0]->IsNumber() || !raw_val[1]->IsNumber() || !raw_val[2]->IsNumber()) {
