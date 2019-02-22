@@ -4,4 +4,5 @@
 .sass-cache
 build/
 .env
-.node_Modules
+node_modules
+.tmp
