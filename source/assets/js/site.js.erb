@@ -55,12 +55,37 @@ $(document).ready(function () {
   //   e.preventDefault();
   // });
 
-  <% projectImages =[] %>
-<% for project in blog.articles do %>
-  <% projectImages.push(project.data.image) %>
-<% end %>
+  // Culture images
 
-const projectImages = <%= projectImages %>;
+  <% cultureImages =[] %>
+
+  <% for project in blog.articles.select {|p| p.data.tag == 'culture'} do %>
+    <% cultureImages.push(project.data.hover_image) %>
+  <% end %>
+
+  const cultureImages = <%= cultureImages %>;
+
+  // Politics images
+
+  <% politicsImages =[] %>
+
+  <% for project in blog.articles.select {| p | p.data.tag == 'politics' } do %>
+    <% politicsImages.push(project.data.hover_image) %>
+  <% end %>
+
+  const politicsImages = <%= politicsImages %>;
+
+  // Technology images
+
+  <% technologyImages = [] %>
+
+  <% for project in blog.articles.select{|p| p.data.tag == 'technology'} do %>
+    <% technologyImages.push(project.data.hover_image) %>
+  <% end %>
+
+  const technologyImages = <%= technologyImages %>;
+  
+
 
   var mouse = {
     x: 0,
@@ -73,7 +98,31 @@ const projectImages = <%= projectImages %>;
 
 
   $('.invoker--culture').on('mouseenter', function () {
-    let imageToShow = projectImages[Math.floor(Math.random() * projectImages.length)];
+    let imageToShow = cultureImages[Math.floor(Math.random() * cultureImages.length)];
+
+    $('.popover').html('<img src="' + imageToShow + '">').css('display', 'block');
+    offset.x = -$('.popover').width() / 2;
+    clearTimeout(this.timer);
+  }).on('mouseleave', function () {
+    this.timer = setTimeout(function () {
+      $('.popover').hide();
+    }, 10);
+  });
+
+  $('.invoker--politics').on('mouseenter', function () {
+    let imageToShow = politicsImages[Math.floor(Math.random() * politicsImages.length)];
+
+    $('.popover').html('<img src="' + imageToShow + '">').css('display', 'block');
+    offset.x = -$('.popover').width() / 2;
+    clearTimeout(this.timer);
+  }).on('mouseleave', function () {
+    this.timer = setTimeout(function () {
+      $('.popover').hide();
+    }, 10);
+  });
+
+  $('.invoker--technology').on('mouseenter', function () {
+    let imageToShow = technologyImages[Math.floor(Math.random() * technologyImages.length)];
 
     $('.popover').html('<img src="' + imageToShow + '">').css('display', 'block');
     offset.x = -$('.popover').width() / 2;

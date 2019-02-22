@@ -128,7 +128,7 @@ main {
   background: rgba(255, 255, 255, 1);
   transition: background 0.2s;
   font-size: 1.2em;
-  line-height: 1.25em;
+  line-height: 1;
   font-weight: 400;
   color: #000;
   text-decoration: none;
@@ -140,7 +140,7 @@ main {
 
 .recent-work {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 40px;
   grid-row-gap: 20px;
 
@@ -739,4 +739,23 @@ ol {
 
 .text-hoverable {
   cursor: crosshair;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  background: #000000;
+  font-size: 2em;
+  line-height: 1;
+  margin-top: 0;
+}
+
+.u-font-inline-list {
+  li {
+    display: inline-block;
+
+    &:not(:last-child) {
+      padding-right: 20px;
+    }
+  }
 }

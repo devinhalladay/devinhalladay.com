@@ -11,11 +11,11 @@
   
   <section class="recent-work gc-breakout">
     <div class="h2">Recent Work</div>
-    <% 6.times do %>
+    <% for project in blog.articles do %>
     <div class="project">
-      <a href="">
-        <img src="https://devinhalladay.imgix.net/2018/10/raf-simons/cover.png">
-        <div class="caption">Cents</div>
+      <a href="<%= project.url %>">
+        <img src="<%= project.data.cover_image %>">
+        <div class="caption"><%= project.title %></div>
       </a>
     </div>
     <% end %>

@@ -3,7 +3,7 @@ var Clean = require('clean-webpack-plugin');
 
 module.exports = {
   entry: {
-    site: './source/assets/js/site.js',
+    site: './source/assets/js/site.js.erb',
   },
 
   resolve: {
