@@ -11,7 +11,7 @@
 
 <section class="recent-work gc-spill">
   <div class="h2">Recent Work</div>
-  <% for project in blog.articles do %>
+  <% for project in blog.articles[0...6] do %>
   <div class="project">
     <a href="<%= project.url %>">
       <img src="<%= project.data.cover_image %>">
@@ -24,30 +24,35 @@
 
 <section class="archive gc-spill">
   <div class="h2">Index</div>
-  <div class="archive-group">
-    <div class="archive-group-heading">2018</div>
-    <% 4.times do %>
-    <div class="archive-project collapsible">
-      <header>
-        <div class="left">
-          <div class="thumbnail-wrapper">
-            <img src="https://devinhalladay.imgix.net/2018/10/raf-simons/cover.png" alt="">
-          </div>
-          <div class="project-meta">
-            <h2>Cents</h2>
-            <div class="meta">Design, Development</div>
+
+  <% blog.articles.group_by {|a| a.date.year }.each do |year, projects| %>
+    <div class="archive-group">
+      <div class="archive-group-heading"><%= year %></div>
+      <% projects.each do |project| %>
+        <div class="archive-project collapsible">
+          <header>
+            <div class="left">
+              <div class="thumbnail-wrapper">
+                <img src="<%= project.data.cover_image %>" alt="">
+              </div>
+              <div class="project-meta">
+                <h2><%= project.title %></h2>
+                <div class="meta"><%= project.data.scope %></div>
+              </div>
+            </div>
+            <% if project.data.external_url %>
+              <div class="right">
+                <a href="<%= project.data.external_url %>" class="button btn-small">View site</a>
+              </div>
+            <% end %>
+          </header>
+          <div class="content">
+            <img src="https://devinhalladay.imgix.net/2018/10/raf-simons/cover.png">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam facilis non enim, quibusdam officiis eum
+              itaque beatae, impedit possimus assumenda explicabo amet quam nisi vitae hic? Non omnis vitae corporis!</p>
           </div>
         </div>
-        <div class="right">
-          <a href="/contact" class="button button-contact btn-small">Visit site <span class="button-contact-arrow"></span></a>
-        </div>
-      </header>
-      <div class="content">
-        <img src="https://devinhalladay.imgix.net/2018/10/raf-simons/cover.png">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam facilis non enim, quibusdam officiis eum
-          itaque beatae, impedit possimus assumenda explicabo amet quam nisi vitae hic? Non omnis vitae corporis!</p>
-      </div>
+      <% end %>
     </div>
-    <% end %>
-  </div>
+  <% end %>
 </section>

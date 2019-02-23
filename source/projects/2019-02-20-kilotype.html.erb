@@ -1,16 +1,16 @@
 ---
 title: "Kilotype"
 scope: Web Design
-intro: "Designing a website for a new German type foundry, with Friends of the Web."
-priority: 1
-filters: item-interaction
+description: "Designing a website for a new German type foundry, with Friends of the Web."
+cover_image: /assets/images/2019/02/kilotype/cover.png
+tag: culture
 ---
 <%# @image_dir = '/assets/images/2019/02/kilotype' %>
 <% @image_dir = 'https://devinhalladay.imgix.net/2019/02/kilotype' %>
 <div class="container">
   <div class="row center-xs">
     <div class="col-xs-12 col-md-10">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/mockup.jpg" }) %>
+      <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/mockup.jpg" }) %>
     </div>
   </div>
   <div class="row center-xs">
@@ -29,13 +29,13 @@ filters: item-interaction
     <div class="col-xs-12 col-md-10">
       <hr>
       <h2>Early Iterations</h2>
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/1.png" }) %>
+      <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/1.png" }) %>
     </div>
     <div class="col-xs-12 col-md-10">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/2.png" }) %>
+      <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/2.png" }) %>
     </div>
     <div class="col-xs-12 col-md-10">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/3.png" }) %>
+      <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/3.png" }) %>
     </div>
   </div>
 
@@ -43,10 +43,10 @@ filters: item-interaction
     <div class="col-xs-12 col-md-10">
       <hr>
       <h2>Round Two</h2>
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/4.png" }) %>
+      <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/4.png" }) %>
     </div>
     <div class="col-xs-12 col-md-10">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/6.png" }) %>
+      <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/6.png" }) %>
     </div>
   </div>
 
@@ -54,13 +54,13 @@ filters: item-interaction
     <div class="col-xs-12 col-md-10">
       <hr>
       <h2>Round Three</h2>
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/9.png" }) %>
+      <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/9.png" }) %>
     </div>
     <div class="col-xs-12 col-md-10">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/10.png" }) %>
+      <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/10.png" }) %>
     </div>
     <div class="col-xs-12 col-md-10">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/11.png" }) %>
+      <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/11.png" }) %>
     </div>
   </div>
 
@@ -68,7 +68,7 @@ filters: item-interaction
     <div class="col-xs-12 col-md-10">
       <hr>
       <h2>Final</h2>
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/mockup.jpg" }) %>
+      <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/mockup.jpg" }) %>
       <p class="u-font-center">
         <a href="https://kilotype.de/" class="button">View the final site</a>
       </p>

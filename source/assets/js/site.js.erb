@@ -76,8 +76,8 @@ function init() {
 
   <% cultureImages =[] %>
 
-  <% for project in blog.articles.select {|p| p.data.tag == 'culture'} do %>
-    <% cultureImages.push(project.data.hover_image) %>
+  <% for project in blog.articles.select {|p| p.data.tag.include? 'culture'} do %>
+    <% cultureImages.push(project.data.cover_image) %>
   <% end %>
 
   const cultureImages = <%= cultureImages %>;
@@ -86,8 +86,8 @@ function init() {
 
   <% politicsImages =[] %>
 
-  <% for project in blog.articles.select {| p | p.data.tag == 'politics' } do %>
-    <% politicsImages.push(project.data.hover_image) %>
+  <% for project in blog.articles.select {| p | p.data.tag.include? 'politics' } do %>
+    <% politicsImages.push(project.data.cover_image) %>
   <% end %>
 
   const politicsImages = <%= politicsImages %>;
@@ -96,8 +96,8 @@ function init() {
 
   <% technologyImages = [] %>
 
-  <% for project in blog.articles.select{|p| p.data.tag == 'technology'} do %>
-    <% technologyImages.push(project.data.hover_image) %>
+  <% for project in blog.articles.select{|p| p.data.tag.include? 'technology'} do %>
+    <% technologyImages.push(project.data.cover_image) %>
   <% end %>
 
   const technologyImages = <%= technologyImages %>;

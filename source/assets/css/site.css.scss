@@ -24,6 +24,19 @@ p {
   & + h2 {
     padding-top: 2.5rem;
   }
+
+  & + p {
+    margin-top: 1em;
+  }
+
+  & + :not(p) {
+    padding-top: 1.7778em;
+  }
+}
+
+ul + h2,
+ol + h2 {
+  padding-top: 2.5rem;
 }
 
 strong {
@@ -105,6 +118,14 @@ main {
   }
 
   & > * {
+    grid-column: main-start / main-end;
+  }
+
+  & > p {
+    margin-top: 0;
+  }
+
+  & > .gc-main {
     grid-column: main-start / main-end;
   }
 
@@ -274,10 +295,6 @@ h2, .h2 {
   font-size: 28px;
   color: #FFFFFF;
   padding-bottom: 12px;
-}
-
-p + figure {
-  padding-top: 1em;
 }
 
 section {
@@ -830,4 +847,18 @@ footer {
   transform: translate(-50%, -50%);
   pointer-events: none;
   z-index: -1;
+}
+
+.hero-image {
+  padding-bottom: 1em;
+}
+
+figure {
+  & + figure {
+    padding-top: 1.7778em;
+  }
+
+  & + :not(figure) {
+    padding-top: 1.7778em;
+  }
 }
