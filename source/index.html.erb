@@ -3,8 +3,8 @@
   <h1>
     <a href="/about">Devin Halladay</a> is a multidisciplinary designer working at the intersection
     of <span class="text-hoverable invoker invoker--culture">culture</span>, <span class="text-hoverable invoker invoker--politics">politics</span>, and <span class="text-hoverable invoker invoker--technology">technology</span>.
-    His work is focused on <a href="" class="nav-products">products</a>, <a href="" class="nav-systems">systems</a>,
-    and <a href="" class="nav-theory">theory</a>.
+    His work is focused on <span class="nav-products">products</span>, <span class="nav-systems">systems</span>,
+    and <span class="nav-theory">theory</span>. He writes on <a target="_blank" href="https://infinitecaesura.com">Infinite Caesura</a>.
   </h1>
   <a href="/contact" class="button button-forward">Get in touch</a>
 </section>
@@ -30,27 +30,24 @@
       <div class="archive-group-heading"><%= year %></div>
       <% projects.each do |project| %>
         <div class="archive-project collapsible">
-          <header>
-            <div class="left">
-              <div class="thumbnail-wrapper">
-                <img src="<%= project.data.cover_image %>" alt="">
+          <a href="<%= project.url %>">
+            <header>
+              <div class="left">
+                <div class="thumbnail-wrapper">
+                  <img src="<%= project.data.cover_image %>" alt="">
+                </div>
+                <div class="project-meta">
+                  <h2><%= project.title %><span>&rarr;</span></h2>
+                  <div class="meta"><%= project.data.scope %></div>
+                </div>
               </div>
-              <div class="project-meta">
-                <h2><%= project.title %></h2>
-                <div class="meta"><%= project.data.scope %></div>
-              </div>
-            </div>
-            <% if project.data.external_url %>
-              <div class="right">
-                <a href="<%= project.data.external_url %>" class="button btn-small">View site</a>
-              </div>
-            <% end %>
-          </header>
-          <div class="content">
-            <img src="https://devinhalladay.imgix.net/2018/10/raf-simons/cover.png">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam facilis non enim, quibusdam officiis eum
-              itaque beatae, impedit possimus assumenda explicabo amet quam nisi vitae hic? Non omnis vitae corporis!</p>
-          </div>
+              <% if project.data.external_url %>
+                <div class="right">
+                  <a target="_blank" href="<%= project.data.external_url %>" class="button btn-small">View site</a>
+                </div>
+              <% end %>
+            </header>
+          </a>
         </div>
       <% end %>
     </div>

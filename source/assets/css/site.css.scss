@@ -29,7 +29,7 @@ p {
     margin-top: 1em;
   }
 
-  & + :not(p) {
+  & + :not(p):not(hr) {
     padding-top: 1.7778em;
   }
 }
@@ -123,6 +123,10 @@ main {
 
   & > p {
     margin-top: 0;
+
+    & + ul {
+      padding-top: 0;
+    }
   }
 
   & > .gc-main {
@@ -181,6 +185,11 @@ main {
 }
 
 .archive-project {
+  transition: 0.4s all ease-in-out;
+
+  a {
+    text-decoration: none;
+  }
 
   header {
     border-top: 1px solid gray;
@@ -189,6 +198,25 @@ main {
     padding-top: 0.5em;
     padding-bottom: 0.3em;
     cursor: pointer;
+  }
+
+  h2 {
+    span {
+      transition: 0.2s all ease-in-out;
+      color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      margin-left: 0.5em;
+    }
+  }
+
+  &:hover {
+    background-color: #212121;
+
+    h2 {
+      span {
+        margin-left: 1em;
+      }
+    }
   }
 
   .content {
@@ -208,6 +236,10 @@ main {
 
   .right {
     margin-left: auto;
+
+    @media screen and (max-width: 750px) {
+      display: none;
+    }
   }
 
   .left {
@@ -226,6 +258,7 @@ main {
     font-size: 12px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    line-height: 1.6;
   }
 
   .project-meta {
@@ -773,10 +806,11 @@ ol {
 .marquee {
   width: 100%;
   overflow: hidden;
-  background: #000000;
   font-size: 2em;
   line-height: 1;
   margin-top: 0;
+  padding-bottom: 1em;
+  font-weight: 300;
 }
 
 .u-font-inline-list {
@@ -858,7 +892,20 @@ figure {
     padding-top: 1.7778em;
   }
 
-  & + :not(figure) {
+  & + :not(figure):not(hr) {
     padding-top: 1.7778em;
   }
+}
+
+h2 + figure {
+  padding-top: 1em;
+}
+
+hr {
+  margin-top: 1.7778em;
+  margin-bottom: 1.7778em;
+}
+
+.o-bordered-image {
+  border: 1px solid white;
 }
