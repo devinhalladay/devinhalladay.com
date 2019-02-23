@@ -5,7 +5,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title><%= current_page.data.title || "Devin Halladay — Design, Etc." %></title>
+    <title><%= current_page.data.title || "Devin Halladay — Design, etc." %></title>
+    <link rel="stylesheet" href="https://use.typekit.net/muz8ydr.css">
     <%= stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.css" %>
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" %>
@@ -46,21 +47,25 @@
 
     <div id="barba-wrapper">
       <div class="barba-container">
-        <main class="verso">
+
+        <main>
           <div class="page-container grid">
             <%= yield %>
           </div>
         </main>
+
+
+        <footer>
+          <div class="page-container grid">
+            <h3>Design, Etc.</h3>
+            <p id="obliquestrategies">An Oblique Strategy: <em></em></p>
+            <p class="u-font-caps"><a href="mailto:studio@devinhalladay.com">studio@devinhalladay.com</a></p>
+          </div>
+        </footer>
       </div>
     </div>
 
-    <main class="recto">
-    
-    </main>
-
     <div class="popover"></div>
-    
-    <footer></footer>
 
     <script>
       document.addEventListener("DOMContentLoaded", function(e) {

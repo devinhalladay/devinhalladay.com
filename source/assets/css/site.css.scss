@@ -4,7 +4,7 @@
 body {
   background-color: #000;
   color: #fff;
-  font-family: "Neue Haas Unica Pro", sans-serif;
+  font-family: "neue-haas-unica", Neue Haas Unica, Neue Haas Unica Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
   padding: 10px;
   font-size: 20px;
   line-height: 1.55em;
@@ -140,8 +140,8 @@ main {
 
 .recent-work {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
   grid-row-gap: 20px;
 
   @media (max-width: 1100px) {
@@ -319,6 +319,14 @@ section {
   .caption {
     font-size: 20px;
     font-weight: 300;
+  }
+  .meta {
+    font-size: 0.8em;
+    line-height: 1;
+    color: #949494;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
   }
 }
 
@@ -693,13 +701,13 @@ body.fade {
   }
 }
 
-.verso {
-  transition: 1s transform ease-in-out;
-}
+// .verso {
+//   transition: 1s transform ease-in-out;
+// }
 
-.recto {
-  transition: 1s transform ease-in-out;
-}
+// .recto {
+//   transition: 1s transform ease-in-out;
+// }
 
 .header-bg {
   position: absolute;
@@ -739,6 +747,7 @@ ol {
 
 .text-hoverable {
   cursor: crosshair;
+  border-bottom: 1px dashed white;
 }
 
 .marquee {
@@ -758,4 +767,64 @@ ol {
       padding-right: 20px;
     }
   }
+}
+
+footer {
+  h3 {
+    font-weight: 300;
+    font-size: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 1em;
+    text-transform: uppercase;
+    color: #9e9e9e;
+    letter-spacing: .1em;
+    -webkit-font-feature-settings: "c2sc" 1, "smcp" 1;
+    font-feature-settings: "c2sc" 1, "smcp" 1;
+
+    &::before, &::after {
+      content: "";
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      background: #9e9e9e;
+      height: 1px;
+    } 
+
+    &::before {
+      margin-right: 1em;
+    }
+
+    &::after {
+      margin-left: 1em;
+    }
+  }
+
+  p {
+    color: #999999;
+    font-weight: 300;
+    line-height: 1.4;
+    font-size: 1.5em;
+  }
+}
+
+.dot {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background: #000;
+  border: 1px solid white;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: -1;
 }

@@ -1,78 +1,53 @@
-  <section class="hero">
-    <p class="byline">Design, Etc.</p>
-    <h1>
-      <a href="/about">Devin Halladay</a> is a multidisciplinary designer working at the intersection
-      of <span class="text-hoverable invoker--culture">culture</span>, <span class="text-hoverable invoker--politics">politics</span>, and <span class="text-hoverable">technology</span>.
-      His work is focused on <a href="" class="nav-products">products</a>, <a href="" class="nav-systems invoker--systems">systems</a>,
-      and <a href="" class="nav-theory">theory</a>.
-    </h1>
-    <a href="/contact" class="button button-forward">Get in touch</a>
-  </section>
-  
-  <section class="recent-work gc-breakout">
-    <div class="h2">Recent Work</div>
-    <% for project in blog.articles do %>
-    <div class="project">
-      <a href="<%= project.url %>">
-        <img src="<%= project.data.cover_image %>">
-        <div class="caption"><%= project.title %></div>
-      </a>
+<section class="hero">
+  <p class="byline">Design, Etc.</p>
+  <h1>
+    <a href="/about">Devin Halladay</a> is a multidisciplinary designer working at the intersection
+    of <span class="text-hoverable invoker invoker--culture">culture</span>, <span class="text-hoverable invoker invoker--politics">politics</span>, and <span class="text-hoverable invoker invoker--technology">technology</span>.
+    His work is focused on <a href="" class="nav-products">products</a>, <a href="" class="nav-systems">systems</a>,
+    and <a href="" class="nav-theory">theory</a>.
+  </h1>
+  <a href="/contact" class="button button-forward">Get in touch</a>
+</section>
+
+<section class="recent-work gc-spill">
+  <div class="h2">Recent Work</div>
+  <% for project in blog.articles do %>
+  <div class="project">
+    <a href="<%= project.url %>">
+      <img src="<%= project.data.cover_image %>">
+      <div class="caption"><%= project.title %></div>
+      <div class="meta"><%= project.data.scope %></div>
+    </a>
+  </div>
+  <% end %>
+</section>
+
+<section class="archive gc-spill">
+  <div class="h2">Index</div>
+  <div class="archive-group">
+    <div class="archive-group-heading">2018</div>
+    <% 4.times do %>
+    <div class="archive-project collapsible">
+      <header>
+        <div class="left">
+          <div class="thumbnail-wrapper">
+            <img src="https://devinhalladay.imgix.net/2018/10/raf-simons/cover.png" alt="">
+          </div>
+          <div class="project-meta">
+            <h2>Cents</h2>
+            <div class="meta">Design, Development</div>
+          </div>
+        </div>
+        <div class="right">
+          <a href="/contact" class="button button-contact btn-small">Visit site <span class="button-contact-arrow"></span></a>
+        </div>
+      </header>
+      <div class="content">
+        <img src="https://devinhalladay.imgix.net/2018/10/raf-simons/cover.png">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam facilis non enim, quibusdam officiis eum
+          itaque beatae, impedit possimus assumenda explicabo amet quam nisi vitae hic? Non omnis vitae corporis!</p>
+      </div>
     </div>
     <% end %>
-  </section>
-  
-  <section class="archive gc-spill">
-    <div class="h2">Index</div>
-    <div class="archive-group">
-      <div class="archive-group-heading">2018</div>
-      <% 4.times do %>
-      <div class="archive-project collapsible">
-        <header>
-          <div class="left">
-            <div class="thumbnail-wrapper">
-              <img src="https://devinhalladay.imgix.net/2018/10/raf-simons/cover.png" alt="">
-            </div>
-            <div class="project-meta">
-              <h2>Cents</h2>
-              <div class="meta">Design, Development</div>
-            </div>
-          </div>
-          <div class="right">
-            <a href="/contact" class="button button-contact btn-small">Visit site <span class="button-contact-arrow"></span></a>
-          </div>
-        </header>
-        <div class="content">
-          <img src="https://devinhalladay.imgix.net/2018/10/raf-simons/cover.png">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam facilis non enim, quibusdam officiis eum
-            itaque beatae, impedit possimus assumenda explicabo amet quam nisi vitae hic? Non omnis vitae corporis!</p>
-        </div>
-      </div>
-      <% end %>
-    </div>
-    <div class="archive-group">
-      <div class="archive-group-heading">2017</div>
-      <% 4.times do %>
-      <div class="archive-project collapsible">
-        <header>
-          <div class="left">
-            <div class="thumbnail-wrapper">
-              <img src="https://devinhalladay.imgix.net/2018/10/raf-simons/cover.png" alt="">
-            </div>
-            <div class="project-meta">
-              <h2>Cents</h2>
-              <div class="meta">Design, Development</div>
-            </div>
-          </div>
-          <div class="right">
-            <a href="/contact" class="button button-contact btn-small">Visit site <span class="button-contact-arrow"></span></a>
-          </div>
-        </header>
-        <div class="content">
-          <img src="https://devinhalladay.imgix.net/2018/10/raf-simons/cover.png">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam facilis non enim, quibusdam officiis eum
-            itaque beatae, impedit possimus assumenda explicabo amet quam nisi vitae hic? Non omnis vitae corporis!</p>
-        </div>
-      </div>
-      <% end %>
-    </div>
-  </section>
+  </div>
+</section>
