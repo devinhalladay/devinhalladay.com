@@ -1,3 +1,32 @@
+function initMarquee() {
+  if ($('.archive')) {
+    var config = {
+      animation: {
+        enable: false
+      },
+      selectors: {
+        target: '.archive-project'
+      }
+    }
+
+    var mixer = mixitup('.archive', config);
+  }
+
+  const $mq = $('.marquee');
+  const el = "    <a href='mailto:studio@devinhalladay.com'>studio@devinhalladay.com</a>    ";
+
+  if ($mq) {
+    $mq.append(el).append(el).append(el).marquee({
+      duration: 6500,
+      gap: 10,
+      delayBeforeStart: 0,
+      duplicated: true,
+      allowCss3Support: true,
+      startVisible: true
+    });
+  }
+}
+
 function changeTitleOnBlur() {
   var title = document.title;
   var alttitle = "Enjoy your day!";
@@ -23,13 +52,13 @@ $(document).ready(function () {
     $('body').append('<div class="dot" style="top:' + y + 'px; left:' + e.pageX + 'px"></div>');
   });
 
-  // Change the page title when the tab is switched.
   changeTitleOnBlur();
-
   obliqueStrategy();
 });
 
 function init() {
+  initMarquee();
+
   if ($('.block-gallery').length > 0) {
     let $blockGallery = $('.block-gallery').flickity({
       contain: true,
@@ -92,6 +121,8 @@ function init() {
     y: 30
   };
 
+  
+
 
   $('.invoker').on('mouseenter', function() {
     let imageToShow;
@@ -120,6 +151,35 @@ function init() {
     textHoverable[i].addEventListener('mousemove', function (e) {
       mouse.x = e.pageX;
       mouse.y = e.pageY;
+      $('.popover').css({
+        left: (mouse.x + offset.x) + 'px',
+        top: (mouse.y + offset.y) + 'px'
+      });
+    });
+  }
+
+
+
+
+  $('.thumbnail-wrapper').on('mouseenter', function () {
+    let img = $(this).find('img');
+    let imgSrc = img.attr('src');
+    
+    $('.popover').html('<img src="' + imgSrc + '">').css('display', 'block');
+    offset.x = -$('.popover').width() / 2;
+    clearTimeout(this.timer);
+  }).on('mouseleave', function () {
+    this.timer = setTimeout(function () {
+      $('.popover').hide();
+    }, 10);
+  });
+
+  let imageHoverable = document.querySelectorAll('.thumbnail-wrapper');
+
+  for (let i = 0; i < imageHoverable.length; i++) {
+    imageHoverable[i].addEventListener('mousemove', function (e) {
+      mouse.x = e.clientX;
+      mouse.y = e.clientY;
       $('.popover').css({
         left: (mouse.x + offset.x) + 'px',
         top: (mouse.y + offset.y) + 'px'

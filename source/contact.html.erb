@@ -3,37 +3,25 @@ title: Contact
 ---
 
 <% content_for :scripts do %>
-  <script type='text/javascript' src='//cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js'></script>
-
-  <script>
-    const $mq = $('.marquee');
-    const el = "    <a href='mailto:studio@devinhalladay.com'>studio@devinhalladay.com</a>    ";
-
-    $mq.append(el).append(el).append(el).marquee({
-      duration: 6500,
-      gap: 10,
-      delayBeforeStart: 0,
-      duplicated: true,
-      allowCss3Support: true,
-      startVisible: true
-    });
-  </script>
+  
 <% end %>
 
-<section class="hero">
-  <a href="/" class="return-link"><span></span> Back home</a>
-  <h1>
-    Email me for new projects, speaking opportunities, mentorship, or just to chat.
-  </h1>
-</section>
-
-<p class="marquee">
-  <a href="mailto:studio@devinhalladay.com">studio@devinhalladay.com</a>
-</p>
-<p>You can also find me most places online at @devinhalladay:</p>
-<ul class="u-font-inline-list">
-  <li><a href="http://are.na/devin-halladay">Are.na</a></li>
-  <li><a href="http://twitter.com/devinhalladay">Twitter</a></li>
-  <li><a href="http://github.com/devinhalladay">GitHub</a></li>
-  <li><a href="http://dribbble.com/devinhalladay">Dribbble</a></li>
-</ul>
+<div class="gc-main">
+  <section class="hero">
+    <a href="/" class="return-link"><span></span> Back home</a>
+    <h1>
+      Email me for new projects, speaking opportunities, mentorship, or just to chat.
+    </h1>
+  </section>
+  
+  <p class="marquee">
+    <a href="mailto:studio@devinhalladay.com">studio@devinhalladay.com</a>
+  </p>
+  <p>You can also find me most places online at @devinhalladay:</p>
+  <ul class="u-font-inline-list hug">
+    <li><a href="http://are.na/devin-halladay">Are.na</a></li>
+    <li><a href="http://twitter.com/devinhalladay">Twitter</a></li>
+    <li><a href="http://github.com/devinhalladay">GitHub</a></li>
+    <li><a href="http://dribbble.com/devinhalladay">Dribbble</a></li>
+  </ul>
+</div>

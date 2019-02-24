@@ -1,6 +1,6 @@
 <section class="hero">
   <p class="byline">Design, Etc.</p>
-  <h1>
+  <h1 class="hug">
     <a href="/about">Devin Halladay</a> is a multidisciplinary designer working at the intersection
     of <span class="text-hoverable invoker invoker--culture">culture</span>, <span class="text-hoverable invoker invoker--politics">politics</span>, and <span class="text-hoverable invoker invoker--technology">technology</span>.
     His work is focused on <span class="nav-products">products</span>, <span class="nav-systems">systems</span>,
@@ -25,11 +25,18 @@
 <section class="archive gc-spill">
   <div class="h2">Index</div>
 
+  <nav>
+    <button type="button" data-filter="all">All</button>
+    <button type="button" data-filter=".interaction">Web & Interaction</button>
+    <button type="button" data-filter=".identity">Brand Identity</button>
+    <button type="button" data-filter=".print">Print</button>
+  </nav>
+
   <% blog.articles.group_by {|a| a.date.year }.each do |year, projects| %>
     <div class="archive-group">
       <div class="archive-group-heading"><%= year %></div>
       <% projects.each do |project| %>
-        <div class="archive-project">
+        <div class="archive-project <%= project.data.filters %>">
           <a href="<%= project.url %>">
             <header>
               <div class="left">
