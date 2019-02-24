@@ -35,28 +35,30 @@
   <% blog.articles.group_by {|a| a.date.year }.each do |year, projects| %>
     <div class="archive-group">
       <div class="archive-group-heading"><%= year %></div>
-      <% projects.each do |project| %>
-        <div class="archive-project <%= project.data.filters %>">
-          <a href="<%= project.url %>">
-            <header>
-              <div class="left">
-                <div class="thumbnail-wrapper">
-                  <img src="<%= project.data.cover_image %>" alt="">
+      <div class="archive-group-contents">
+        <% projects.each do |project| %>
+          <div class="archive-project <%= project.data.filters %>">
+            <a href="<%= project.url %>">
+              <header>
+                <div class="left">
+                  <div class="thumbnail-wrapper">
+                    <img src="<%= project.data.cover_image %>" alt="">
+                  </div>
+                  <div class="project-meta">
+                    <h2><%= project.title %><span>&rarr;</span></h2>
+                    <div class="meta"><%= project.data.scope %></div>
+                  </div>
                 </div>
-                <div class="project-meta">
-                  <h2><%= project.title %><span>&rarr;</span></h2>
-                  <div class="meta"><%= project.data.scope %></div>
-                </div>
-              </div>
-              <% if project.data.external_url %>
-                <div class="right">
-                  <a target="_blank" href="<%= project.data.external_url %>" class="button btn-small">View site</a>
-                </div>
-              <% end %>
-            </header>
-          </a>
-        </div>
-      <% end %>
+                <% if project.data.external_url %>
+                  <div class="right">
+                    <a target="_blank" href="<%= project.data.external_url %>" class="button btn-small">View site</a>
+                  </div>
+                <% end %>
+              </header>
+            </a>
+          </div>
+        <% end %>
+      </div>
     </div>
   <% end %>
 </section>

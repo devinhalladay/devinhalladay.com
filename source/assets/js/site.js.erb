@@ -10,6 +10,23 @@ function initMarquee() {
     }
 
     var mixer = mixitup('.archive', config);
+
+    $('.archive').on('mixEnd', function (e, state) {
+      let archiveGroups = $('.archive-group');
+
+      archiveGroups.each(function() {
+        let $that = $(this);
+        let archiveGroupContents = $(this).find('.archive-group-contents');
+
+        // Show all archive groups
+        $that.show();
+        
+        // If archive group contains no visible projects, hide the group
+        if (archiveGroupContents.find('.archive-project:visible').length == 0) {
+          $that.hide();
+        }
+      })
+    });
   }
 
   const $mq = $('.marquee');
