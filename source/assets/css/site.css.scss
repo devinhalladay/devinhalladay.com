@@ -81,6 +81,14 @@ main {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.dg-halves {
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .grid {
   display: grid;
   grid-gap: 20px;
@@ -113,6 +121,14 @@ main {
 
   & > .gc-main {
     grid-column: main-start / main-end;
+  }
+
+  & > .gc-half {
+    grid-column: 2 / 7;
+  }
+
+  & > .gc-half-second {
+    grid-column: 2 / 7;
   }
 
   & > .gc-breakout {
@@ -925,4 +941,16 @@ footer {
 
 .o-bordered-image {
   border: 1px solid white;
+}
+
+.c-colored_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+
+  svg {
+    display: block;
+    max-height: 220px;
+  }
 }

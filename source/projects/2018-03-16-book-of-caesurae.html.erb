@@ -6,85 +6,59 @@ tag: culture
 cover_image: /assets/images/2018/03/book-of-caesurae/cover.png
 filters: print
 ---
+<% @image_dir = '/assets/images/2018/03/book-of-caesurae' %>
 
-<% @image_dir = 'https://devinhalladay.imgix.net/2018/03/book-of-caesurae' %>
-<div class="container">
-  <div class="row center-xs">
-    <div class="col-xs-12">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/1.jpg" }) %>
-    </div>
-  </div>
-  <div class="row center-xs">
-    <div class="col-xs-12 col-md-9">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/2.jpg", :border => true }) %>
-    </div>
-  </div>
-  <div class="row center-xs">
-    <div class="col-xs-12 col-md-6 col-lg-5">
-      <h2>The Syncopated Grid</h2>
-      <p>The cartesian grid is the origin of all tyrannies—a grid becomes absolute very easily, striating and strangling the space it contains with obstinacy.</p>
-      <p>As an alternative to the linear Modernist mono-grid, I developed what I call the <i>syncopated grid</i>. The syncopated grid operates in such a way that it forces a sense of nonlinear motion into the content's structure, effectively erasing the grid entirely while still leaving an underlying structure.</p>
-      <p>The word "syncopation" comes from music (as does <i>caesura</i>, which is the origin of this piece's title). In music, syncopation is when beats are subdivided in unexpected or unusual ways. Similarly, this grid is unevenly subdivided with larger open spaces toward the sides and tightly arranged columns toward the center.</p>
-    </div>
-  </div>
-  <div class="row center-xs">
-    <div class="col-xs-12 col-lg-8">
-      <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'>
+<div class="gc-spill">
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/1.jpg" }) %>
+</div>
 
-      <figure>
-        <iframe src='https://player.vimeo.com/video/254033354?loop=1&title=0&byline=0&portrait=0' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-      </figure>
-      </div>
-    </div>
-  </div>
-  <div class="row center-xs">
-    <div class="col-xs-12 col-md-6 col-lg-5">
-      <h2>Collage</h2>
-      <p>The central formal method of this book is collage. Collage is a tried-and-true method for me, something I go back to time and again when I feel lost, uncertain, or simply unsure what to make.</p>
-      <p>The use of collage in this piece was very deliberate, pairing images that represent different experiences of the timing of a singular event or emotion. In other words, each element of an individual collage is in tension with the other elements conceptually, formally, and durationally.</p>
-    </div>
-  </div>
-  <div class="row center-xs tight-gutter">
-    <div class="col-xs-12 col-md-6">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/5.jpg", :border => true }) %>
-    </div>
-    <div class="col-xs-12 col-md-6">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/6.jpg", :border => true }) %>
-    </div>
-    <div class="col-xs-12 col-md-6">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/7.jpg", :border => true }) %>
-    </div>
-    <div class="col-xs-12 col-md-6">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/9.jpg", :border => true }) %>
-    </div>
-  </div>
-  <div class="row center-xs tight-gutter">
-    <div class="col-xs-12 col-md-6">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/4.jpg", :border => true }) %>
-    </div>
-    <div class="col-xs-12 col-md-6">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/8.jpg", :border => true }) %>
-    </div>
-  </div>
-  <div class="row center-xs tight-gutter">
-    <div class="col-xs-12">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/3.jpg" }) %>
-    </div>
-  </div>
-  <div class="row center-xs">
-    <div class="col-xs-12 col-md-6 col-lg-5">
-      <h2>Give it a read!</h2>
-      <p>Feel free to flip through the pages below and read the poems and essays contained in the pages of this book. If you have any questions, want clarification of a stanza, or are curious about the piece, <a href="http://twitter.com/devinhalladay">reach out on Twitter</a>!</p>
-    </div>
-  </div>
-  <div class="row center-xs">
-    <div class="col-xs-12">
-      <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'>
+<div class="gc-breakout">
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/2.jpg", :border => true }) %>
+</div>
 
-        <figure>
-          <iframe src='//e.issuu.com/embed.html#22605255/59565636' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-        </figure>
-      </div>
-    </div>
-  </div>
+<div class="gc-main">
+  <h2>The Syncopated Grid</h2>
+  <p>The cartesian grid is the origin of all tyrannies—a grid becomes absolute very easily, striating and strangling the space it contains with obstinacy.</p>
+  <p>As an alternative to the linear Modernist mono-grid, I developed what I call the <i>syncopated grid</i>. The syncopated grid operates in such a way that it forces a sense of nonlinear motion into the content's structure, effectively erasing the grid entirely while still leaving an underlying structure.</p>
+  <p>The word "syncopation" comes from music (as does <i>caesura</i>, which is the origin of this piece's title). In music, syncopation is when beats are subdivided in unexpected or unusual ways. Similarly, this grid is unevenly subdivided with larger open spaces toward the sides and tightly arranged columns toward the center.</p>
+</div>
+
+<div class="gc-breakout">
+  <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'>
+
+  <figure>
+    <iframe src='https://player.vimeo.com/video/254033354?loop=1&title=0&byline=0&portrait=0' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  </figure>
+</div>
+
+<div class="gc-main">
+  <h2>Collage</h2>
+  <p>The central formal method of this book is collage. Collage is a tried-and-true method for me, something I go back to time and again when I feel lost, uncertain, or simply unsure what to make.</p>
+  <p>The use of collage in this piece was very deliberate, pairing images that represent different experiences of the timing of a singular event or emotion. In other words, each element of an individual collage is in tension with the other elements conceptually, formally, and durationally.</p>
+</div>
+
+<div class="gc-spill dg dg-halves">
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/5.jpg", :border => true }) %>
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/6.jpg", :border => true }) %>
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/7.jpg", :border => true }) %>
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/9.jpg", :border => true }) %>
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/4.jpg", :border => true }) %>
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/8.jpg", :border => true }) %>
+</div>
+
+<div class="gc-spill">
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/3.jpg" }) %>
+</div>
+
+<div class="gc-main">
+  <h2>Give it a read!</h2>
+  <p>Feel free to flip through the pages below and read the poems and essays contained in the pages of this book. If you have any questions, want clarification of a stanza, or are curious about the piece, <a href="http://twitter.com/devinhalladay">reach out on Twitter</a>!</p>
+</div>
+
+<div class="gc-spill">
+  <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'>
+
+  <figure>
+    <iframe src='//e.issuu.com/embed.html#22605255/59565636' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  </figure>
 </div>

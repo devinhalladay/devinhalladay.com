@@ -7,67 +7,25 @@ cover_image: /assets/images/2018/03/elegance-infection/cover.png
 filters: print
 ---
 
-<% @image_dir = 'https://devinhalladay.imgix.net/2018/03/elegance-infection' %>
-<div class="container">
-  <div class="row center-xs">
-    <div class="col-xs-12">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/1.jpg" }) %>
-    </div>
-    <div class="col-xs-12">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/6.jpg" }) %>
-    </div>
-  </div>
+<% @image_dir = '/assets/images/2018/03/elegance-infection' %>
 
-  <div class="row center-xs">
-    <div class="col-xs-12 col-md-6">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/2.jpg" }) %>
-    </div>
-    <div class="col-xs-12 col-md-6">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/3.jpg" }) %>
-    </div>
-  </div>
-  <div class="row center-xs">
-    <div class="col-xs-12 col-md-6">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/4.jpg" }) %>
-    </div>
-    <div class="col-xs-12 col-md-6">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/5.jpg" }) %>
-    </div>
-  </div>
+<div class="gc-spill">
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/1.jpg" }) %>
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/6.jpg" }) %>
+</div>
 
-  <div class="row center-xs">
-    <div class="col-xs-12">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/9.jpg" }) %>
-    </div>
-  </div>
+<div class="gc-spill dg dg-halves">
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/2.jpg" }) %>
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/3.jpg" }) %>
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/4.jpg" }) %>
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/5.jpg" }) %>
+</div>
 
-  <div class="row center-xs">
-    <div class="col-xs-12">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/10.jpg" }) %>
-    </div>
-  </div>
-
-  <div class="row center-xs">
-    <div class="col-xs-12">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/11.jpg" }) %>
-    </div>
-  </div>
-
-  <div class="row center-xs">
-    <div class="col-xs-12">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/12.jpg" }) %>
-    </div>
-  </div>
-
-  <div class="row center-xs">
-    <div class="col-xs-12">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/13.jpg" }) %>
-    </div>
-  </div>
-
-  <div class="row center-xs">
-    <div class="col-xs-12">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/7.jpg" }) %>
-    </div>
-  </div>
+<div class="gc-spill">
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/9.jpg" }) %>
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/10.jpg" }) %>
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/11.jpg" }) %>
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/12.jpg" }) %>
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/13.jpg" }) %>
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/7.jpg" }) %>
 </div>

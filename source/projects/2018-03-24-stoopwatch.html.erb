@@ -6,40 +6,20 @@ tag: technology, politics
 cover_image: /assets/images/2018/03/stoopwatch/cover.png
 filters: interaction
 ---
-<% @image_dir = 'https://devinhalladay.imgix.net/2018/03/stoopwatch' %>
+<% @image_dir = '/assets/images/2018/03/stoopwatch' %>
 
-<div class="container">
-  <div class="row center-xs">
-    <div class="col-xs-12">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/1.png" }) %>
-    </div>
-  </div>
+<div class="gc-spill">
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/1.png" }) %>
+</div>
 
-  <div class="row center-xs">
-    <div class="col-xs-12 col-sm-6">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/4.png" }) %>
-    </div>
-    <div class="col-xs-12 col-sm-6">
-      <figure>
-        <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/3.png" }) %>
-      </figure>
-    </div>
-  </div>
+<div class="gc-spill dg dg-halves">
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/4.png" }) %>
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/3.png" }) %>
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/6.png" }) %>
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/5.png" }) %>
+</div>
 
-  <div class="row center-xs">
-    <div class="col-xs-12 col-sm-6">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/6.png" }) %>
-    </div>
-    <div class="col-xs-12 col-sm-6">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/5.png" }) %>
-  </div>
-
-  <div class="row center-xs">
-    <div class="col-xs-12">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/7.png" }) %>
-    </div>
-    <div class="col-xs-12">
-      <%= partial("partials/lazyimg", :locals => { :img => "#{@image_dir}/8.png" }) %>
-    </div>
-  </div>
+<div class="gc-spill">
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/7.png" }) %>
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/8.png" }) %>
 </div>
