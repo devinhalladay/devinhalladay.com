@@ -80,7 +80,7 @@ h2 {
     margin-top: 2 * $leading;
 }
 h3 {
-    font-size: 1 * $scale * 1rem;
+    font-size: $scale / 1.2 * 1rem;
 }
 h4 {
     font-size: $scale / 2 * 1rem;
