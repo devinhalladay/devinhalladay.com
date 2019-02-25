@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-room-component/dist/aframe-room-component.min.js"></script>
+      <meta name="viewport" content="width = device-width, initial-scale = 1.0, minimum-scale = 1, maximum-scale = 1, user-scalable = no" />
+      <link rel="stylesheet" href="https://use.typekit.net/wmh8ssp.css">
+
+      
+      <style>
+        .container {
+          font-family: "neue-haas-unica";
+          font-weight: 300;
+          position: absolute;
+          z-index: 999;
+          color: black;
+          font-size: 20px;
+          display: flex !important;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          align-items: center;
+          justify-content: space-between;
+        }
+        
+        .left {
+          padding-left: 15vw;
+        }
+        
+        .right {
+          padding-right: 15vw;
+        }
+        
+        .you-are-here {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .you-are-here::before {
+          content: '';
+          border-bottom: 1px solid black;
+          width: 100%;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          height: 1px;
+        }
+      </style>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="ground" src="1.png">
+        <a-mixin id="floorMat" material="color:#BBB"></a-mixin>
+      </a-assets>
+  
+      <a-sky material="src: #ground" rotation="0 -130 0"></a-sky>
+      
+      <!-- <a-plane src="#ground" rotation="-90 0 0" width="30" height="30" repeat="1 1"></a-plane> -->
+      <a-light type="ambient" color="#ffffff"></a-light>
+      
+      <!-- <rw-room position="-2 0 -2" material="src: #ground">
+  			<rw-wall position="4 0 0" material="src: #ground"></rw-wall>
+  			<rw-wall position="4 0 4" material="src: #ground"></rw-wall>
+  			<rw-wall position="0 0 4" material="src: #ground"></rw-wall>
+  			<rw-wall position="0 0 0" material="src: #ground"> 
+			</rw-wall>
+      <rw-floor></rw-floor>
+      <rw-ceiling></rw-ceiling>
+		</rw-room> -->
+    
+    
+    
+    <rw-room position="-2 0 -2">
+      
+
+      <a-entity
+        position="4 0 3"
+      
+    geometry="primitive: plane; width: 4; height: auto"
+    material="color: blue"
+    text="value: This text will be 4 units wide."></a-entity>
+        <rw-wall position="4 0 0" material="src:#ground; repeat:0.5 0.5;"></rw-wall>
+        <rw-wall position=" 4 0 4" material="src:#ground; repeat:0.5 0.5;"></rw-wall>
+        <rw-wall position=" 0 0 4" material="src:#ground; repeat:0.5 0.5;"></rw-wall>
+        <rw-wall position="0 0 0" material="src:#ground; repeat:0.5 0.5;"></rw-wall>
+        
+        <rw-floor material="src:#ground; repeat:0.5 0.5;"></rw-floor>
+        <rw-ceiling material="src:#ground; repeat:0.5 0.5;"></rw-ceiling>
+
+      </rw-room>
+    </a-scene>
+  </body>
+</html>

@@ -1,5 +1,11 @@
-function initMarquee() {
-  if ($('.archive')) {
+function initLazyload() {
+  var lazyLoadInstance = new LazyLoad({
+    elements_selector: ".lazyload"
+  });
+}
+
+function initMixitUp() {
+  if ($('.archive').length > 0) {
     var config = {
       animation: {
         enable: false
@@ -14,13 +20,13 @@ function initMarquee() {
     $('.archive').on('mixEnd', function (e, state) {
       let archiveGroups = $('.archive-group');
 
-      archiveGroups.each(function() {
+      archiveGroups.each(function () {
         let $that = $(this);
         let archiveGroupContents = $(this).find('.archive-group-contents');
 
         // Show all archive groups
         $that.show();
-        
+
         // If archive group contains no visible projects, hide the group
         if (archiveGroupContents.find('.archive-project:visible').length == 0) {
           $that.hide();
@@ -28,7 +34,9 @@ function initMarquee() {
       })
     });
   }
+}
 
+function initMarquee() {
   const $mq = $('.marquee');
   const el = "    <a href='mailto:studio@devinhalladay.com'>studio@devinhalladay.com</a>    ";
 
@@ -71,6 +79,7 @@ $(document).ready(function () {
 
   changeTitleOnBlur();
   obliqueStrategy();
+  initLazyload();
 });
 
 function init() {
@@ -153,6 +162,7 @@ function init() {
     }
 
     $('.popover').html('<img src="' + imageToShow + '">').css('display', 'block');
+
     offset.x = -$('.popover').width() / 2;
     clearTimeout(this.timer);
 
@@ -297,4 +307,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
 Barba.Dispatcher.on("newPageReady", function(e) {
   init();
   obliqueStrategy();
+  initMixitUp();
+  initLazyload();
+  $('.dot').remove();
 });

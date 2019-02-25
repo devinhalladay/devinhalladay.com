@@ -1,0 +1,24 @@
+<svg width="6" height="6" viewBox="0 0 6 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>expand</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(75 60)">
+<g id="expand">
+<g id="Symbols">
+<g id="expand hover">
+<g id="Group 4">
+<g id="Path 6">
+<use xlink:href="#path0_fill" transform="translate(-75 -58.4826)" fill="#006500"/>
+</g>
+<g id="Path 6">
+<use xlink:href="#path1_fill" transform="matrix(-1 0 0 -1 -68.9991 -55.6474)" fill="#006500"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 0 -3.59375e-09C 0 -3.59375e-09 0 3.48169 0 3.83655C 0 4.19141 0.200256 4.3526 0.531067 4.3526L 4.50085 4.3526L 0 -3.59375e-09Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 0 -1.25e-10C 0 -1.25e-10 0 3.48169 0 3.83655C 0 4.19141 0.200256 4.3526 0.531067 4.3526L 4.50085 4.3526L 0 -1.25e-10Z"/>
+</defs>
+</svg>

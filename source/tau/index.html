@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>You have a choice.</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@devinhalladay">
+    <meta name="twitter:creator" content="@devinhalladay">
+    <meta name="twitter:title" content="This Interface is a Mirror">
+    <meta name="twitter:description" content="You have a choice. This interface is a mirror.">
+    <meta name="twitter:image" content="https://devinhalladay.com/tau/assets/images/social-image.jpg">
+  </head>
+
+  <body>
+    <div class="flex-container">
+      <div class="container">
+        <h1>You have a choice.</h1>
+        <a onclick="openWindow();" class="tau"><img src="assets/images/6.png" alt="Tau"></a>
+        <h2>This interface is a mirror.</h2>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="window" id="window">
+        <div class="buttons">
+          <a class="button close" onclick="closeWindow();">
+            <img src="assets/images/close.svg">
+          </a>
+          <a class="button zoom" onclick="enterWindow();" id="expand">
+            <img src="assets/images/expand.svg">
+          </a>
+          <a class="button retract" onclick="exitWindow();" id="retract" style="display: none;">
+            <img src="assets/images/retract.svg">
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="assets/js/main.js" charset="utf-8"></script>
+
+</html>

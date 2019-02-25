@@ -3,5 +3,5 @@
 %>
 
 <figure>
-  <img class="<% if locals[:border] %>o-bordered-image <% end %>" src="<%= img %>">
+  <img class="<% if locals[:border] %>o-bordered-image <% end %>lazyload" data-src="<%= img %>"><noscript><img src="<%= img %>"></noscript>
 </figure>

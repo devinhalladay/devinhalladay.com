@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>Synthesizing Speech with p5.speech</title>
+    <link href="stylesheets/site.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/rbf3blz.css">
+    <script src="javascripts/site.js"></script>
+  </head>
+  <body>
+    <div class="container"><h1>Synthesizing Speech with p5.speech</h1>
+
+<h2 class="author">Devin Halladay</h2>
+
+<blockquote>
+<p><a href="http://ability.nyu.edu/p5.js-speech/">p5.speech</a> is a JavaScript library that provides simple, clear access to the Web Speech and Speech Recognition APIs, allowing for the easy creation of sketches that can talk and listen.</p>
+</blockquote>
+
+<p>In this short introduction, you&rsquo;ll learn about R. Luke DuBois&rsquo; <code>p5.speech</code> JavaScript library — in particular, you&rsquo;ll learn how to use this library to <em>synthesize</em> speech using <code>p5.js</code>.</p>
+
+<h2>What You&rsquo;ll Make</h2>
+
+<p>Click in the sketch below to see what you&rsquo;ll be making in this tutorial.</p>
+
+<iframe src="https://devinhalladay.com/mlw-tutorial/sketch/"></iframe>
+
+<h2>Prep Work</h2>
+
+<p>To get started, you&rsquo;ll need a basic p5.js setup. You can download the setup files <a href="sketch/p5-speech-setup.zip">here</a>, or create a directory with the following files:</p>
+
+<h3><code>index.html</code></h3>
+<div class="highlight"><pre class="highlight html"><code>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"p5.speech.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"sketch.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="c">&lt;!-- Nothing here --&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+
+</code></pre></div>
+<h3><code>sketch.js</code></h3>
+<div class="highlight"><pre class="highlight javascript"><code>
+<span class="kd">function</span> <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// The Basics</span>
+  <span class="nx">createCanvas</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="mi">500</span><span class="p">);</span>
+  <span class="nx">background</span><span class="p">(</span><span class="s1">'#171C20'</span><span class="p">);</span>
+  <span class="nx">colorMode</span><span class="p">(</span><span class="nx">HSB</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">draw</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// Nothing here yet</span>
+<span class="p">}</span>
+
+</code></pre></div>
+<h3><code>p5.speech.js</code></h3>
+
+<p>Also download the latest <code>p5.speech</code> library <a href="http://ability.nyu.edu/p5.js-speech/">here</a>, unzip it, and drop <code>lib/p5.speech.js</code> into your directory.</p>
+
+<hr>
+
+<h2>Synthesizing Speech</h2>
+
+<p>In order to synthesize speech, we&rsquo;ll need to instantiate the p5.speech library in <code>sketch.js</code>.</p>
+<div class="highlight"><pre class="highlight javascript"><code>
+<span class="kd">var</span> <span class="nx">myVoice</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">p5</span><span class="p">.</span><span class="nx">Speech</span><span class="p">();</span> <span class="c1">// Instantiate p5.Speech</span>
+
+<span class="kd">function</span> <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span> <span class="err">…</span> <span class="p">}</span>
+
+</code></pre></div>
+<p>This instantiates a new <code>p5.speech</code> object that will allow us to interface with the library via a variable, in this case <code>myVoice</code>.</p>
+
+<p>Now we&rsquo;ll synthesize some basic speech in our p5 <code>setup()</code> function to make sure everything is working.</p>
+<div class="highlight"><pre class="highlight javascript"><code>
+<span class="kd">function</span> <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// The Basics</span>
+  <span class="nx">createCanvas</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="mi">500</span><span class="p">);</span>
+  <span class="nx">background</span><span class="p">(</span><span class="s1">'#171C20'</span><span class="p">);</span>
+  <span class="nx">colorMode</span><span class="p">(</span><span class="nx">HSB</span><span class="p">);</span>
+
+  <span class="c1">// Access p5.speech's `speak` function via `myVoice`</span>
+  <span class="nx">myVoice</span><span class="p">.</span><span class="nx">speak</span><span class="p">(</span><span class="s1">'It works!'</span><span class="p">);</span>
+<span class="p">}</span>
+
+</code></pre></div>
+<p>Reload your <code>index.html</code> with your sound turned up and you should hear some speech!</p>
+
+<h2>Adding Circles on Click</h2>
+
+<p>Awesome, now it&rsquo;s time to start adding circles to the canvas on mouse press.</p>
+
+<p>Let&rsquo;s add a <code>mousePressed()</code> function to our <code>sketch.js</code>.</p>
+<div class="highlight"><pre class="highlight javascript"><code>
+<span class="err">…</span>
+
+<span class="kd">function</span> <span class="nx">mousePressed</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">fill</span><span class="p">(</span><span class="nx">random</span><span class="p">(</span><span class="mi">360</span><span class="p">),</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">);</span> <span class="c1">// Generate a random HSB hue;</span>
+  <span class="nx">ellipse</span><span class="p">(</span><span class="nx">mouseX</span><span class="p">,</span> <span class="nx">mouseY</span><span class="p">,</span> <span class="mi">40</span><span class="p">);</span> <span class="c1">// Place an ellipse at (mouseX, mouseY).</span>
+<span class="p">}</span>
+
+</code></pre></div>
+<h2>Making Our Circles Speak</h2>
+
+<p>Now let&rsquo;s make our circles speak when we click on the canvas.</p>
+
+<p>To start, let&rsquo;s see if we can get some basic speech working on click.</p>
+
+<p>In the <code>mousePressed()</code> function, add one line after the code you added in the last step:</p>
+<div class="highlight"><pre class="highlight javascript"><code>
+<span class="kd">function</span> <span class="nx">mousePressed</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">fill</span><span class="p">(</span><span class="nx">random</span><span class="p">(</span><span class="mi">360</span><span class="p">),</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">);</span> <span class="c1">// Generate a random HSB hue;</span>
+  <span class="nx">ellipse</span><span class="p">(</span><span class="nx">mouseX</span><span class="p">,</span> <span class="nx">mouseY</span><span class="p">,</span> <span class="mi">40</span><span class="p">);</span> <span class="c1">// Place an ellipse at (mouseX, mouseY).</span>
+  <span class="nx">myVoice</span><span class="p">.</span><span class="nx">speak</span><span class="p">(</span><span class="s1">'Test!'</span><span class="p">);</span> <span class="c1">// Speak "Test!"</span>
+<span class="p">}</span>
+
+</code></pre></div>
+<p>Now when you click on the canvas of your sketch, you should see a circle and hear the word &ldquo;Test!&rdquo; repeatedly. But we want our sketch to say an entire sentence and loop through the sentence with every click. How can we do this?</p>
+
+<h2>Arrays and Counters</h2>
+
+<p>To do this, we&rsquo;ll need to add an array and incrementally go through it every click. We&rsquo;ll use a counter for this.</p>
+
+<p>Add the following code to the beginning of your <code>sketch.js</code>:</p>
+<div class="highlight"><pre class="highlight javascript"><code>
+<span class="kd">var</span> <span class="nx">words</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"p"</span><span class="p">,</span> <span class="s2">"five"</span><span class="p">,</span> <span class="s2">"is"</span><span class="p">,</span> <span class="s2">"awesome"</span><span class="p">];</span> <span class="c1">// A list of words</span>
+<span class="kd">var</span> <span class="nx">counter</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// A counter for the words</span>
+
+<span class="err">…</span>
+
+</code></pre></div>
+<p>Line 1 adds an array called <code>words</code> — an array is basically just a list of things (it could be strings, integers, floats, or any other JavaScript data type). Line 2 adds a new variable called <code>counter</code> and sets it to <code>0</code>. We&rsquo;ll use this variable to keep track of where we are in the <code>words</code> array.</p>
+
+<p>Now let&rsquo;s count through the array we just created on <code>mousePressed</code>.</p>
+
+<p>In <code>sketch.js</code>, replace <code>myVoice.speak(&#39;Test!&#39;)</code> with the following:</p>
+<div class="highlight"><pre class="highlight javascript"><code>
+<span class="nx">myVoice</span><span class="p">.</span><span class="nx">speak</span><span class="p">(</span><span class="nx">words</span><span class="p">[</span><span class="nx">counter</span><span class="p">]);</span>
+<span class="nx">counter</span> <span class="o">=</span> <span class="p">(</span><span class="nx">counter</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="nx">words</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+
+</code></pre></div>
+<p>Line 1 uses <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors#Bracket_notation">bracket notation</a> to access the word in position <code>counter</code> in our <code>words</code> array. For example, if <code>counter</code> has the value <code>0</code>, the value of <code>words[0]</code> will be <code>&quot;p&quot;</code>. If it has the value <code>3</code>, <code>words[3]</code> will return <code>awesome</code>.</p>
+
+<p>Line 2 takes our counter and increments it by one until it reaches <code>words.length</code>, which in this case is 4.</p>
+
+<p>Reload your sketch and everything should have come together into the final version!</p>
+
+<iframe src="https://devinhalladay.com/mlw-tutorial/sketch/"></iframe>
+</div>
+  </body>
+</html>

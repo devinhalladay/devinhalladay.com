@@ -1,0 +1,174 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-weight: normal; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 300; }
+
+.container {
+  text-align: center; }
+
+h1,
+h2 {
+  font-weight: 300; }
+
+h1 {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 2em; }
+
+h2,
+.disclaimer {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 2em; }
+
+.tau {
+  display: block;
+  -webkit-animation: bounce .5s 6 alternate ease-out;
+  -moz-animation: bounce .5s 6 alternate ease-out;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  cursor: pointer; }
+  .tau img {
+    width: 12em; }
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0); }
+  100% {
+    -webkit-transform: translateY(-20px); } }
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; }
+
+.hidden {
+  display: none; }
+
+.button {
+  width: 12vw;
+  height: 12vw;
+  border-radius: 50%;
+  display: inline-block;
+  border: 2px solid;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; }
+  .button:first-child {
+    margin-right: 6em; }
+  .button img {
+    width: 60%; }
+
+.close {
+  background: #FF6059;
+  border-color: #E0443E; }
+  .close:active {
+    background: #BD4A46;
+    border-color: #b03537; }
+
+.zoom {
+  background: #00ca56;
+  border-color: #14ae46; }
+  .zoom:active {
+    background: #029740;
+    border-color: #128435; }
+
+.retract {
+  background: #00ca56;
+  border-color: #14ae46; }
+  .retract:active {
+    background: #029740;
+    border-color: #128435; }
+
+.window {
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  width: 60%;
+  height: 60%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  z-index: 999;
+  transition: all .2s ease-in-out;
+  position: absolute;
+  top: 20%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; }
+  .window.open {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  .window.full {
+    top: 0;
+    width: 100%;
+    height: 100%; }
+
+@media (max-width: 860px) {
+  .button {
+    width: 16vw;
+    height: 16vw; }
+    .button:first-child {
+      margin-right: 3em; } }
+
+@media (max-width: 500px) {
+  .button:first-child {
+    margin-right: 1.5em; } }
