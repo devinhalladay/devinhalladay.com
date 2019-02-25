@@ -1,0 +1,78 @@
+<script>
+  <% cultureImages =[] %>
+  
+    <% for project in blog.articles.select {|p| p.data.tag.include? 'culture'} do %>
+      <% cultureImages.push(project.data.cover_image) %>
+    <% end %>
+  
+    const cultureImages = <%= cultureImages %>;
+  
+    // Politics images
+  
+    <% politicsImages =[] %>
+  
+    <% for project in blog.articles.select {| p | p.data.tag.include? 'politics' } do %>
+      <% politicsImages.push(project.data.cover_image) %>
+    <% end %>
+  
+    const politicsImages = <%= politicsImages %>;
+  
+    // Technology images
+  
+    <% technologyImages = [] %>
+  
+    <% for project in blog.articles.select{|p| p.data.tag.include? 'technology'} do %>
+      <% technologyImages.push(project.data.cover_image) %>
+    <% end %>
+  
+    const technologyImages = <%= technologyImages %>;
+    
+  
+  
+    var mouse = {
+      x: 0,
+      y: 0
+    },
+    offset = {
+      x: 30,
+      y: 30
+    };
+  
+    
+  
+  
+    $('.invoker').on('mouseenter', function() {
+      let imageToShow;
+  
+      if ($(this).hasClass('invoker--culture')) {
+        imageToShow = cultureImages[Math.floor(Math.random() * cultureImages.length)];
+      } else if ($(this).hasClass('invoker--politics')) {
+        imageToShow = politicsImages[Math.floor(Math.random() * politicsImages.length)];
+      } else if ($(this).hasClass('invoker--technology')) {
+        imageToShow = technologyImages[Math.floor(Math.random() * technologyImages.length)];
+      }
+  
+      $('.popover').html('<img src="' + imageToShow + '">').css('display', 'block');
+  
+      offset.x = -$('.popover').width() / 2;
+      clearTimeout(this.timer);
+  
+    }).on('mouseleave', function () {
+      this.timer = setTimeout(function () {
+        $('.popover').hide();
+      }, 10);
+    });
+  
+    let textHoverable = document.querySelectorAll('.invoker');
+  
+    for (let i = 0; i < textHoverable.length; i++) {
+      textHoverable[i].addEventListener('mousemove', function (e) {
+        mouse.x = e.pageX;
+        mouse.y = e.pageY;
+        $('.popover').css({
+          left: (mouse.x + offset.x) + 'px',
+          top: (mouse.y + offset.y) + 'px'
+        });
+      });
+    }
+</script>

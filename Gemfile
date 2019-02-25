@@ -16,6 +16,9 @@ gem 'sass'
 gem 'toolkit', '~>2.0'
 gem 'xmlrpc'
 
+gem "middleman-sprockets"
+
+
 
 # Add Nokogiri for text parsing
 gem 'nokogiri'

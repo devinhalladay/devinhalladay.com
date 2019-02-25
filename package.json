@@ -38,6 +38,7 @@
     "jquery": "^2.1.4",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
+    "turbolinks": "^5.2.0",
     "waypoints": "^4.0.0",
     "webpack": "^1.10.5"
   },
