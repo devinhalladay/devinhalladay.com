@@ -1,9 +1,6 @@
-var Turbolinks = require("turbolinks")
-Turbolinks.start()
-
 function initLazyload() {
   var lazyLoadInstance = new LazyLoad({
-    elements_selector: ".lazyload"
+    elements_seslector: ".lazyload"
   });
 }
 
@@ -21,18 +18,16 @@ function initMixitUp() {
     var mixer = mixitup('.archive', config);
 
     $('.archive').on('mixEnd', function (e, state) {
-      let archiveGroups = $('.archive-group');
-
-      archiveGroups.each(function () {
-        let $that = $(this);
-        let archiveGroupContents = $(this).find('.archive-group-contents');
+      $('.archive-group').each(function () {
+        var that = $(this);
+        var archiveGroupContents = $(this).find('.archive-group-contents');
 
         // Show all archive groups
-        $that.show();
+        that.show();
 
         // If archive group contains no visible projects, hide the group
         if (archiveGroupContents.find('.archive-project:visible').length == 0) {
-          $that.hide();
+          that.hide();
         }
       })
     });
@@ -76,7 +71,7 @@ function obliqueStrategy() {
 
 $(document).ready(function () {
   $('body').on('click', function (e) {
-    let y = e.pageY;
+    var y = e.pageY;
     $('body').append('<div class="dot" style="top:' + y + 'px; left:' + e.pageX + 'px"></div>');
   });
 
@@ -90,13 +85,14 @@ function init() {
   initMarquee();
 
   if ($('.block-gallery').length > 0) {
-    let $blockGallery = $('.block-gallery').flickity({
+    var $blockGallery = $('.block-gallery').flickity({
       contain: true,
       wrapAround: true,
       imagesLoaded: true,
       cellSelector: '.gallery-slide',
       pageDots: false,
-      adaptiveHeight: true
+      adaptiveHeight: true,
+      draggable: false
     });
 
     var $carouselStatus = $('.carousel-status');
@@ -111,8 +107,8 @@ function init() {
   }
 
   $('.thumbnail-wrapper').on('mouseenter', function () {
-    let img = $(this).find('img');
-    let imgSrc = img.attr('src');
+    var img = $(this).find('img');
+    var imgSrc = img.attr('src');
     
     $('.popover').html('<img src="' + imgSrc + '">').css('display', 'block');
     offset.x = -$('.popover').width() / 2;
@@ -123,9 +119,9 @@ function init() {
     }, 10);
   });
 
-  let imageHoverable = document.querySelectorAll('.thumbnail-wrapper');
+  var imageHoverable = document.querySelectorAll('.thumbnail-wrapper');
 
-  for (let i = 0; i < imageHoverable.length; i++) {
+  for (var i = 0; i < imageHoverable.length; i++) {
     imageHoverable[i].addEventListener('mousemove', function (e) {
       mouse.x = e.clientX;
       mouse.y = e.clientY;
