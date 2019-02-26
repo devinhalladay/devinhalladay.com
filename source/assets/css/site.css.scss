@@ -37,6 +37,9 @@ strong {
     padding-top: 1em;
     font-weight: 300;
 
+    @media (max-width: 600px) {
+      font-size: 1.3em;
+    }
     
     a {
       text-decoration: none;
@@ -69,7 +72,7 @@ section {
   padding-bottom: 2em;
 }
 
-main {
+main, footer {
   @media (max-width: 600px) {
     padding: 20px;
   }
@@ -587,8 +590,25 @@ body.fade {
 }
 
 
-::-webkit-scrollbar {
-  display: none;
+// ::-webkit-scrollbar {
+//   display: none;
+// }
+
+::-webkit-scrollbar-track
+{
+	border: 1px solid #fff;
+	background-color: #000;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #000;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #fff;	
 }
 
 

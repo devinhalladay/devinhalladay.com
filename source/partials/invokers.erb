@@ -38,10 +38,8 @@
       y: 30
     };
   
-    
-  
-  
-    $('.invoker').on('mouseenter', function() {
+    Barba.Dispatcher.on("newPageReady", function(e) {
+$('.invoker').on('mouseenter', function() {
       let imageToShow;
   
       if ($(this).hasClass('invoker--culture')) {
@@ -75,4 +73,5 @@
         });
       });
     }
+    });
 </script>
