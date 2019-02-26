@@ -1,0 +1,158 @@
+@import "reset";
+
+body {
+  color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 300;
+}
+
+.container {
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+}
+
+h1 {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 2em;
+}
+
+h2,
+.disclaimer {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 2em;
+}
+
+.tau {
+	display: block;
+	-webkit-animation: bounce .5s 6 alternate ease-out;
+	-moz-animation: bounce .5s 6 alternate ease-out;
+	animation-play-state: running;
+	animation-iteration-count: infinite;
+  cursor: pointer;
+  img {
+    width: 12em;
+  }
+}
+
+@-webkit-keyframes bounce {
+	  0% { -webkit-transform: translateY(0); }
+	100% { -webkit-transform: translateY(-20px); }
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.hidden {
+	display: none;
+}
+
+.button {
+	width: 12vw;
+  height: 12vw;
+	border-radius: 50%;
+  display: inline-block;
+	border: 2px solid;
+	text-decoration: none;
+	display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+	&:first-child {
+		margin-right: 6em;
+	}
+	img {
+		width: 60%;
+	}
+}
+
+.close {
+  background: #FF6059;
+  border-color: #E0443E;
+	&:active {
+	  background: #BD4A46;
+	  border-color: #b03537;
+	}
+}
+
+.zoom {
+  background: #00ca56;
+  border-color: #14ae46;
+	&:active {
+	  background: #029740;
+	  border-color: #128435;
+	}
+}
+
+.retract {
+  background: #00ca56;
+  border-color: #14ae46;
+	&:active {
+	  background: #029740;
+	  border-color: #128435;
+	}
+  img {
+		// width: 68%;
+	}
+}
+
+.window {
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  width: 60%;
+  height: 60%;
+  transform: scale(0);
+  z-index: 999;
+  transition: all .2s ease-in-out;
+  position: absolute;
+  top: 20%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &.open {
+    transform: scale(1);
+  }
+
+  &.full {
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 860px) {
+  .button {
+  	width: 16vw;
+    height: 16vw;
+  	&:first-child {
+  		margin-right: 3em;
+  	}
+  }
+}
+
+@media (max-width: 500px) {
+  .button {
+  	&:first-child {
+  		margin-right: 1.5em;
+  	}
+  }
+}

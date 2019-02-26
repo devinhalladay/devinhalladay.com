@@ -1,0 +1,27 @@
+---
+title: "iOS Alarm Contexts"
+scope: Product Design
+description: "Facing a problem of having far too many alarms set on my phone every morning, I designed a solution that allows users to set a range of alarms in just one step."
+tag: technology
+cover_image: /assets/images/2018/03/alarm-contexts/cover.png
+filters: interaction
+featured: true
+---
+<% @image_dir = '/assets/images/2018/03/alarm-contexts' %>
+
+<div class="gc-spill">
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/1.jpg" }) %>
+</div>
+
+<div class="gc-main">
+  <h2>A Better Way to Set Alarms</h2>
+  <p>If you're anything like me you've experienced this annoying problem: you set about 10 alarms to wake up in the morning and have a list of over 100 alarms in Clock.app on your phone set at 5–25 minute intervals. You wake up and forget to turn off some of them and they go off in a meeting making you look stupid, or you set the wrong ones and wake up late.</p>
+  <p>Alarms shouldn't be that hard to create an maintain, and iOS doesn't do a good enough job. So I created a hypothetical solution: <strong>Alarm Contexts</strong>.</p>
+  <p>An Alarm Context is, quite simply, a single alarm that repeats itself at a regular interval during a specified duration. It simplifies the 10 alarms I set every morning into a single entry, allowing me to turn off a single alarm instead of turning off 10. Additionally, a user can snooze the current alarm iteration in the Context and the next alarm will go off after the specified interval passes, ensuring you never miss that important meeting again.</p>
+</div>
+
+<div class="gc-spill dg dg-halves">
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/4.png" }) %>
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/3.png" }) %>
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/2.png" }) %>
+</div>

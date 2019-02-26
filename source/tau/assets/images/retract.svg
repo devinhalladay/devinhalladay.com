@@ -1,0 +1,22 @@
+<svg width="9" height="9" viewBox="0 0 9 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>retract</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-213 136)">
+<g id="retract">
+<g id="Symbols">
+<g id="Group 2">
+<g id="Path 6">
+<use xlink:href="#path0_fill" transform="translate(217.5 -136)" fill="#006500"/>
+</g>
+<g id="Path 6">
+<use xlink:href="#path1_fill" transform="matrix(-1 0 0 -1 217.501 -127.165)" fill="#006500"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 0 -4.6875e-10C 0 -4.6875e-10 0 3.48169 0 3.83655C 0 4.19141 0.200256 4.3526 0.531067 4.3526L 4.50085 4.3526L 0 -4.6875e-10Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 0 0C 0 0 0 3.48169 0 3.83655C 0 4.19141 0.200256 4.3526 0.531067 4.3526L 4.50085 4.3526L 0 0Z"/>
+</defs>
+</svg>

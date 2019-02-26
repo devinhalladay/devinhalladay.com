@@ -1,0 +1,21 @@
+---
+title: "Dionysian Hangover"
+scope: Code, Product Design, Research
+description: "An expanded design and art piece questioning the value and implications of sharing emotional content online. It's not perfect, so be gentle!"
+tag: culture, politics, technology
+cover_image: /assets/images/2018/03/dionysian-hangover/cover.png
+external_url: https://dionysianhangover.com/
+filters: interaction
+---
+
+<% @image_dir = '/assets/images/2018/03/dionysian-hangover' %>
+
+<div class="gc-breakout">
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/1.png" }) %>
+</div>
+
+<div class="gc-main">
+  <p><div class="button button-forward">See it in action</div></p>
+  <p>This piece was created in response to my readings of Donna Haraway and Byung-Chul Han. Its goal is to interrogate the space between organic-body and data-point by explicitly subjecting a user's emotions as read by a simplistic algorithm to the mechanics and imagery of capitalism and empirical data culture.</p>
+  <p>The project was made with P5.js, using averaged data from <i><a href="https://ig.ft.com/how-much-is-your-personal-data-worth/">Financial Times</a></i> to generate a new "emotional cost" at a regular interval.</p>
+</div>

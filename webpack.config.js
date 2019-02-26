@@ -3,8 +3,7 @@ var Clean = require('clean-webpack-plugin');
 
 module.exports = {
   entry: {
-    all: './source/assets/js/all.js',
-    404: './source/assets/js/404.js',
+    site: './source/assets/js/site.js',
   },
 
   resolve: {
@@ -41,11 +40,6 @@ module.exports = {
   },
 
   plugins: [
-    new Clean(['.tmp']),
-      new webpack.ProvidePlugin({
-        $: "jquery",
-        jQuery: "jquery",
-        "window.jQuery": "jquery"
-    })
+    new Clean(['.tmp'])
   ],
 };

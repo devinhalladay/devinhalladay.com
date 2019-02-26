@@ -32,11 +32,13 @@
     "docsearch.js": "^2.0.7",
     "exports-loader": "^0.6.2",
     "extract-text-webpack-plugin": "^3.0.2",
+    "flickity-imagesloaded": "^2.0.0",
     "highlight.js": "^9.0.0",
     "imports-loader": "^0.6.4",
     "jquery": "^2.1.4",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
+    "turbolinks": "^5.2.0",
     "waypoints": "^4.0.0",
     "webpack": "^1.10.5"
   },

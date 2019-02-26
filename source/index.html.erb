@@ -1,16 +1,86 @@
----
-blog: work
----
-<div class="container">
-  <div class="hero">
-    <div class="row xs-border-right center-xs">
-      <div class="col-xs-12 col-sm-8 col-lg-6">
-        <div class="intro-section">
-          <p><span>Devin Halladay</span> is a multidisciplinary designer and artist working on <span class="products">products</span>, <span class="systems">systems</span>, and <span class="theory">theory</span>.</p>
-        </div>
+<section class="hero">
+  <p class="byline hug">Design, Etc.</p>
+  <h1 class="hug">
+    <a href="/about">Devin Halladay</a> is a multidisciplinary designer working at the intersection
+    of <span class="text-hoverable invoker invoker--culture">culture</span>, <span class="text-hoverable invoker invoker--politics">politics</span>, and <span class="text-hoverable invoker invoker--technology">technology</span>.
+    His work is focused on <span class="nav-products">products</span>, <span class="nav-systems">systems</span>,
+    and <span class="nav-theory">theory</span>. He writes on <a target="_blank" href="https://infinitecaesura.com">Infinite Caesura</a>.
+  </h1>
+  <a href="/contact" class="button button-forward">Get in touch</a>
+</section>
+
+<section class="gc-main">
+  <div class="h2">Featured Work</div>
+  <div class="block block-gallery medium-margin">
+    <% blog.articles.select {|p| p.data.featured }.each do |project| %>
+      <div class="gallery-slide">
+        <a href="<%= project.url %>">
+          <div class="image" style="background-image: url(<%= project.data.cover_image %>)"></div>
+          <div class="caption">
+            <div class="title--block">
+              <%= project.title %>
+            </div>
+            <div class="meta--block">
+              <%= project.data.scope %>
+            </div>
+          </div>
+          <p class="carousel-status"></p>
+        </a>
+      </div>
+    <% end %>
+  </div>
+</section>
+
+<section class="recent-work gc-spill">
+  <div class="h2">Recent Work</div>
+  <% for project in blog.articles[0...6] do %>
+  <div class="project">
+    <a href="<%= project.url %>">
+      <img src="<%= project.data.cover_image %>">
+      <div class="caption"><%= project.title %></div>
+      <div class="meta"><%= project.data.scope %></div>
+    </a>
+  </div>
+  <% end %>
+</section>
+
+<section class="archive gc-spill">
+  <div class="h2">Index (Selected Work)</div>
+
+  <nav>
+    <button type="button" data-filter="all">All</button>
+    <button type="button" data-filter=".interaction">Web & Interaction</button>
+    <button type="button" data-filter=".identity">Brand Identity</button>
+    <button type="button" data-filter=".print">Print</button>
+  </nav>
+
+  <% blog.articles.group_by {|a| a.date.year }.each do |year, projects| %>
+    <div class="archive-group">
+      <div class="archive-group-heading"><%= year %></div>
+      <div class="archive-group-contents">
+        <% projects.each do |project| %>
+          <div class="archive-project <%= project.data.filters %>">
+            <a href="<%= project.url %>">
+              <header>
+                <div class="left">
+                  <div class="thumbnail-wrapper">
+                    <img src="<%= project.data.cover_image %>" alt="">
+                  </div>
+                  <div class="project-meta">
+                    <h2><%= project.title %><span>&rarr;</span></h2>
+                    <div class="meta"><%= project.data.scope %></div>
+                  </div>
+                </div>
+                <% if project.data.external_url %>
+                  <div class="right">
+                    <a target="_blank" href="<%= project.data.external_url %>" class="button btn-small">View site</a>
+                  </div>
+                <% end %>
+              </header>
+            </a>
+          </div>
+        <% end %>
       </div>
     </div>
-  </div>
-</div>
-
-<%= partial "partials/latest-work" %>
+  <% end %>
+</section>

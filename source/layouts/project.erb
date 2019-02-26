@@ -1,0 +1,59 @@
+<% wrap_layout :layout do %>
+
+  <section class="hero hero--project">
+    <a href="/" class="return-link"><span></span> Back home</a>
+    <h1 class="hug"><%= current_page.title %></h1>
+    <h2 class="hug"><%= current_page.data.description %></h2>
+    <p class="hug byline"><%= current_page.data.scope %></p>
+  </section>
+
+  <%= yield %>
+
+  <% prev_project = current_article.article_previous %>
+  <% next_project = current_article.article_next %>
+
+  <% if prev_project %>
+    <section class="project-nav">
+      <div class="gc-main">
+        <div class="archive-project interaction">
+          <a href="<%= prev_project.url %>">
+            <header>
+              <p class="title">Next Project</p>
+              <div class="left">
+                <div class="thumbnail-wrapper">
+                  <img src="<%= prev_project.data.cover_image %>" alt="">
+                </div>
+                <div class="project-meta">
+                  <h2><%= prev_project.title %><span>&rarr;</span></h2>
+                  <div class="meta"><%= prev_project.data.scope %></div>
+                </div>
+              </div>
+            </header>
+          </a>
+        </div>
+      </div>
+    </section>
+  <% else %>
+    <section class="project-nav">
+      <div class="gc-main">
+        <div class="archive-project interaction">
+          <a href="<%= next_project.url %>">
+            <header>
+              <p class="title">Previous Project</p>
+              <div class="left">
+                <div class="thumbnail-wrapper">
+                  <img src="<%= next_project.data.cover_image %>" alt="">
+                </div>
+                <div class="project-meta">
+                  <h2><%= next_project.title %><span>&rarr;</span></h2>
+                  <div class="meta"><%= next_project.data.scope %></div>
+                </div>
+              </div>
+            </header>
+          </a>
+        </div>
+      </div>
+    </section>
+  <% end %>
+
+<% end %>

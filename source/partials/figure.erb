@@ -1,0 +1,7 @@
+<%
+# <%= partial("partials/lazyimg", :locals => { :img => "" }) %\>
+%>
+
+<figure>
+  <img class="<% if locals[:border] %>o-bordered-image <% end %>lazyload" data-src="<%= locals[:img] %>"><noscript><img src="<%= locals[:img] %>"></noscript>
+</figure>

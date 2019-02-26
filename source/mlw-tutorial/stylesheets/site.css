@@ -1,0 +1,210 @@
+/* Dracula Theme v1.2.5
+ *
+ * https://github.com/zenorocha/dracula-theme
+ *
+ * Copyright 2016, All rights reserved
+ *
+ * Code licensed under the MIT license
+ * http://zenorocha.mit-license.org
+ *
+ * @author Rob G <wowmotty@gmail.com>
+ * @author Chris Bracco <chris@cbracco.me>
+ * @author Zeno Rocha <hi@zenorocha.com>
+ * @author Piruin Panichphol <piruin.p@gmail.com>
+ */
+/*
+ * Variables
+ */
+/*
+ * Styles
+ */
+.highlight {
+  background: #171c21;
+  color: #f8f8f2; }
+  .highlight .hll,
+  .highlight .s,
+  .highlight .sa,
+  .highlight .sb,
+  .highlight .sc,
+  .highlight .dl,
+  .highlight .sd,
+  .highlight .s2,
+  .highlight .se,
+  .highlight .sh,
+  .highlight .si,
+  .highlight .sx,
+  .highlight .sr,
+  .highlight .s1,
+  .highlight .ss {
+    color: #f1fa8c; }
+  .highlight .go {
+    color: #44475a; }
+  .highlight .err,
+  .highlight .g,
+  .highlight .l,
+  .highlight .n,
+  .highlight .x,
+  .highlight .p,
+  .highlight .ge,
+  .highlight .gr,
+  .highlight .gh,
+  .highlight .gi,
+  .highlight .gp,
+  .highlight .gs,
+  .highlight .gu,
+  .highlight .gt,
+  .highlight .ld,
+  .highlight .no,
+  .highlight .nd,
+  .highlight .ni,
+  .highlight .ne,
+  .highlight .nn,
+  .highlight .nx,
+  .highlight .py,
+  .highlight .w,
+  .highlight .bp {
+    color: #f8f8f2; }
+  .highlight .gh,
+  .highlight .gi,
+  .highlight .gu {
+    font-weight: bold; }
+  .highlight .ge {
+    text-decoration: underline; }
+  .highlight .bp {
+    font-style: italic; }
+  .highlight .c,
+  .highlight .ch,
+  .highlight .cm,
+  .highlight .cpf,
+  .highlight .c1,
+  .highlight .cs {
+    color: #6272a4; }
+  .highlight .kd,
+  .highlight .kt,
+  .highlight .nb,
+  .highlight .nl,
+  .highlight .nv,
+  .highlight .vc,
+  .highlight .vg,
+  .highlight .vi,
+  .highlight .vm {
+    color: #8be9fd; }
+  .highlight .kd,
+  .highlight .nb,
+  .highlight .nl,
+  .highlight .nv,
+  .highlight .vc,
+  .highlight .vg,
+  .highlight .vi,
+  .highlight .vm {
+    font-style: italic; }
+  .highlight .na,
+  .highlight .nc,
+  .highlight .nf,
+  .highlight .fm {
+    color: #50fa7b; }
+  .highlight .k,
+  .highlight .o,
+  .highlight .cp,
+  .highlight .kc,
+  .highlight .kn,
+  .highlight .kp,
+  .highlight .kr,
+  .highlight .nt,
+  .highlight .ow {
+    color: #ff79c6; }
+  .highlight .m,
+  .highlight .mb,
+  .highlight .mf,
+  .highlight .mh,
+  .highlight .mi,
+  .highlight .mo,
+  .highlight .il {
+    color: #bd93f9; }
+  .highlight .gd {
+    color: #ff5555; }
+
+body {
+  background-color: #222830;
+  color: #f9ffee;
+  font-family: "ibm-plex-sans", -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  text-align: center; }
+
+iframe {
+  border: 0;
+  width: 500px;
+  height: 500px; }
+  iframe body {
+    padding: 0; }
+
+a {
+  color: #ff8b3a; }
+
+.container {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 0 .9rem;
+  position: relative;
+  text-align: left;
+  padding-bottom: 100px; }
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.2;
+  margin-top: .4em;
+  margin-bottom: .2em;
+  font-weight: 200;
+  font-family: "ibm-plex-mono", "ibm-plex-sans", -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  color: #ff8b3a;
+  text-align: center; }
+
+h2.author {
+  font-weight: 300;
+  font-family: "ibm-plex-mono", "ibm-plex-sans", -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.2em; }
+
+h2 {
+  font-weight: 400;
+  color: #ff8b3a;
+  padding-top: 1em; }
+
+h3 {
+  padding-top: 1.4em; }
+
+li {
+  padding-bottom: 0.6em; }
+
+p {
+  font-size: 18px;
+  text-align: left;
+  line-height: 1.7em; }
+
+blockquote {
+  margin-left: 0;
+  border-left: 3px solid #ff8b3a;
+  padding-left: 20px;
+  margin-top: 2em;
+  margin-bottom: 2em; }
+
+code {
+  white-space: pre-wrap;
+  font-family: "ibm-plex-mono", "ibm-plex-sans", -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  color: #67d2ff;
+  background: #171c21;
+  border-radius: 4px;
+  padding: 0px 6px 4px; }
+
+pre {
+  background: #171c21;
+  padding: 5px 20px;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.08), 0px 0px 4px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.08), 0px 0px 4px rgba(0, 0, 0, 0.05);
+  font-size: 1.2em;
+  border-radius: 4px;
+  overflow: auto; }
+  pre code {
+    background: none;
+    padding: 0;
+    padding: 1em 1.5em; }
