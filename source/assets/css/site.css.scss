@@ -30,6 +30,10 @@ strong {
   padding-top: 10vh;
   padding-bottom: 1em;
 
+  @media (max-width: 600px) {
+    padding-top: 5vh;
+  }
+
   h1 {
     color: #999999;
     line-height: 1.4;
@@ -39,6 +43,7 @@ strong {
 
     @media (max-width: 600px) {
       font-size: 1.3em;
+      padding-top: 0;
     }
     
     a {
@@ -268,6 +273,11 @@ main, footer {
     font-weight: 400;
     padding-bottom: 0;
     line-height: 1;
+
+    @media (max-width: 600px) {
+      line-height: 1.3;
+      font-size: 18px;
+    }
   }
 
   .meta {
@@ -275,6 +285,10 @@ main, footer {
     letter-spacing: 1px;
     text-transform: uppercase;
     line-height: 1.6;
+
+    @media (max-width: 600px) {
+      font-size: 12px;
+    }
   }
 
   .project-meta {
@@ -596,7 +610,6 @@ body.fade {
 
 ::-webkit-scrollbar-track
 {
-	border: 1px solid #fff;
 	background-color: #000;
 }
 
@@ -1179,5 +1192,35 @@ table.is-striped tbody tr:nth-child(even):hover {
   &.loaded {
     opacity: 1;
     transition: opacity 300ms;
+  }
+}
+
+
+.scroll-top-button {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #fff;
+
+  &:after {
+    content: '↑';
+    color: #ffffff;
+    background-color: #000;
+    width: 1.8em;
+    height: 1.8em;
+    line-height: 1.8em;
+    font-size: 1em;
+    margin: 6px;
+    font-weight: 500;
+    display: block;
+    border-radius: 100px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 }

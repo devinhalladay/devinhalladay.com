@@ -84,6 +84,16 @@ $(document).ready(function () {
 function init() {
   initMarquee();
 
+  window.onscroll = function () { scollTopButton() };
+
+  function scollTopButton() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      $('.scroll-top-button').show();
+    } else {
+      $('.scroll-top-button').hide();
+    }
+  }
+
   if ($('.block-gallery').length > 0) {
     var $blockGallery = $('.block-gallery').flickity({
       contain: true,
@@ -228,4 +238,9 @@ Barba.Dispatcher.on("newPageReady", function(e) {
   initMixitUp();
   initLazyload();
   $('.dot').remove();
+
+  $('.scroll-top-button').click(function() {
+    $('html,body').animate({ scrollTop: 0 }, 'slow');
+    return false;
+  })
 });
