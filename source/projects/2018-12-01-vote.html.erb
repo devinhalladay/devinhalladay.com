@@ -1,0 +1,37 @@
+---
+title: "Digital Vote Posters"
+scope: Web Design, Web Development
+description: "Designing a series of websites-as-posters to encourage people to participate in politics and to vote on election day."
+tag: politics culture technology
+cover_image: /assets/images/2018/12/vote/cover.png
+external_url: https://devinhalladay.com/vote/
+filters: interaction
+---
+<% @image_dir = '/assets/images/2018/12/vote' %>
+
+<div class="gc-main">
+  <a target="_blank" href="/vote/1/" class="no-barba button button-forward">View poster #1</a>
+</div>
+
+<div class="gc-spill">
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/1-desktop.png" }) %>
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/1-scrunched.png" }) %>
+</div>
+
+<div class="gc-main">
+  <hr>
+  <a target="_blank" href="/vote/2/" class="no-barba button button-forward">View poster #2</a>
+</div>
+
+<div class="gc-spill">
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/2.png" }) %>
+</div>
+
+<div class="gc-main">
+  <hr>
+  <a target="_blank" href="/vote/3/" class="no-barba button button-forward">View poster #3</a>
+</div>
+
+<div class="gc-spill">
+  <%= partial("partials/figure", :locals => { :img => "#{@image_dir}/3.png" }) %>
+</div>

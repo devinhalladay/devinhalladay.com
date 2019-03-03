@@ -1,0 +1,15 @@
+* {
+	box-sizing: border-box;
+	position: relative;
+}
+
+.u-test, %u-test { outline: 1px solid red; }
+
+.site {
+	padding: 0;
+	margin: 0;
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}

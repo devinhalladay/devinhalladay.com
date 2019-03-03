@@ -1,0 +1,30 @@
+// Typography helpers
+.u-font, %u-font {
+  // Font family helpers
+  &--serif { font-family: "Spectral", "Times New Roman", serif !important; }
+  &--sans { font-family: "Helvetica Neue", "Helvetica", sans-serif; }
+
+  // Text color helpers
+  &--gray { color: $gray; }
+  &--color { color: $color; }
+
+  // Text weights
+  &--300 { font-weight: 300; }
+  &--400 { font-weight: 400; }
+  &--500 { font-weight: 500; }
+  &--600 { font-weight: 600; }
+
+  // Text styles
+  &--italic { font-style: italic; }
+
+  // Sizes
+  &--smaller { font-size: 0.94em; }
+}
+
+.u-hidden {
+  display: none !important;
+}
+
+.u-visible {
+  display: inherit !important;
+}

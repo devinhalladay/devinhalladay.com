@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Make yourself heard.</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" href="assets/css/style.min.css">
+	</head>
+
+	<body class="site">
+		<script>
+		  document.body.classList.add('fade');
+		</script>
+
+		<div class="container">
+			<section class="months"></section>
+
+			<section class="days dates"></section>
+
+			<section class="actions"></section>
+
+			<section class="tagline">
+				<p><span class="u-font--sans">Voting isn’t the only way to be political.</span> Always participate.</p>
+			</section>
+
+			<section class="tagline-date">
+				<p>
+					But on election day, make yourself heard.
+					<span class="u-font--sans u-font--500">Cast your vote on
+						<span class="u-font--color tagline-date-target"></span>.
+					</span>
+				</p>
+			</section>
+
+			<section class="tagline-cta">
+				<p>
+					<a id="tagline-cta" class="u-font--sans u-font--500" href="https://www.headcount.org/find-your-polling-place/">
+						Find your polling location.
+						<svg class="arrow" width="80" height="23" viewBox="0 0 80 20" fill="none">
+							<path id="tagline-arrow-line" class="arrow-line" d="M0 11.5H23" stroke-width="2"/>
+							<path id="tagline-arrow-chevron" class="arrow-chevron" d="M13 22L23.5072 11.5L13 1" stroke-width="2"/>
+						</svg>
+					</a>
+				</p>
+			</section>
+
+			<section class="tiny-tagline">
+				<p>Make yourself heard. <span class="u-font--sans u-font--500">Cast your vote on <span class="u-font--color tiny-tagline-date"></span>.</p>
+
+				<div class="tiny-cta u-font--sans">
+					<p><a id="tiny-tagline-cta" class="u-font--sans u-font--500" href="https://www.headcount.org/find-your-polling-place/">Find your polling location.
+						<svg class="tiny-tagline-arrow" width="80" height="23" viewBox="0 0 80 20" fill="none">
+							<path id="tiny-tagline-arrow-line" class="arrow-line" d="M0 11.5H23" stroke-width="2"/>
+							<path id="tiny-tagline-arrow-chevron" class="arrow-chevron" d="M13 22L23.5072 11.5L13 1" stroke-width="2"/>
+						</svg>
+					</a></p>
+				</div>
+			</section>
+		</div>
+
+		<section class="vote-day-card">
+			<p>Make yourself heard. <span class="u-font--sans">Vote today.</span>
+				<br>
+				<a id="vote-day-card-cta" class="u-font--sans u-font--500" href="https://www.headcount.org/find-your-polling-place/">Find your polling location.
+					<svg class="vote-day-card-arrow" width="80" height="23" viewBox="0 0 80 20" fill="none">
+						<path id="vote-day-card-arrow-line" class="arrow-line" d="M0 11.5H23" stroke-width="2"/>
+						<path id="vote-day-card-arrow-chevron" class="arrow-chevron" d="M13 22L23.5072 11.5L13 1" stroke-width="2"/>
+					</svg>
+				</a></p>
+		</section>
+
+		<footer>
+			<p>
+				<span class="u-font--serif u-font--300">Make yourself heard.</span>
+				Cast your vote on <span class="footer-vote-date"></span>.
+				<a href="https://www.headcount.org/find-your-polling-place/" id="cta" class="cta">
+					Find your polling location.
+					<svg class="arrow" width="80" height="30" viewBox="0 0 80 22" fill="none">
+					  <path id="cta-arrow-line" class="arrow-line" d="M0 11.5H23" stroke-width="2"/>
+					  <path id="cta-arrow-chevron" class="arrow-chevron" d="M13 22L23.5072 11.5L13 1" stroke-width="2"/>
+					</svg>
+				</a>
+			</p>
+		</footer>
+	</body>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function(e) {
+			document.body.classList.remove('fade');
+		});
+	</script>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	<script src="assets/js/luxon.min.js" charset="utf-8"></script>
+	<script src="assets/js/scripts.js" charset="utf-8"></script>
+	<script src="assets/js/app.js" charset="utf-8"></script>
+</html>

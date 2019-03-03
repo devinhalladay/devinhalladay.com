@@ -1,0 +1,13 @@
+* {
+	box-sizing: border-box;
+	position: relative;
+}
+
+.test, %test { outline: 1px solid red; }
+
+.site {
+	margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
