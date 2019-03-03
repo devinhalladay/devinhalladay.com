@@ -22,7 +22,7 @@ module.exports = {
         exclude: /node_modules|\.tmp|vendor/,
         loader: 'babel-loader',
         query: {
-          presets: ['es2015', 'stage-0'],
+          presets: ['es2016', 'stage-0'],
         },
       },
       {

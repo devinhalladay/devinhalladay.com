@@ -51,9 +51,7 @@ end
 activate :directory_indexes
 
 configure :build do
-  # "Ignore" JS so webpack has full control.
   activate :minify_css
-  activate :minify_javascript
 end
 
 activate :deploy do |deploy|
