@@ -80,7 +80,9 @@ h2 {
     margin-top: 2 * $leading;
 }
 h3 {
-    font-size: $scale / 1.2 * 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 h4 {
     font-size: $scale / 2 * 1rem;

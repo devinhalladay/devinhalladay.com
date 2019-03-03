@@ -1,0 +1,81 @@
+---
+title: Subjective Dictionary
+scope: "Web Design, Web Development"
+description: "Design and development of a subjective dictionary intended to catalog research for my undergraduate thesis in graphic design."
+cover_image: /assets/images/2019/03/dictionary/cover.png
+tag: culture, politics, technology
+filters: interaction
+---
+<div class="gc-main">
+  <a href="https://body-without-organs.netlify.com/" class="button button-forward">View it live</a>
+</div>
+
+<div class="gc-main">
+  <%= partial("partials/figure", :locals => { :img => "/assets/images/2019/03/dictionary/forms.jpg", :border => true }) %>
+</div>
+
+<div class="gc-main">
+  <h2>Redefining the Dictionary</h2>
+  <p>In order to organize my thoughts during my thesis research, I needed something like a dictionary of ideas I uncovered through my research. But a regular dictionary wasn't enough — mine needed to accomodate images, text, documents, and other forms of media. Furthermore, my dictionary needed to have some additional functionalities to help me generate new concepts by combining and rediscovering old ones.</p>
+</div>
+
+<div class="gc-spill">
+  <%= partial("partials/figure", :locals => { :img => "/assets/images/2019/03/dictionary/main-image.png" }) %>
+</div>
+
+<div class="gc-spill dg dg-halves">
+  <%= partial("partials/figure", :locals => { :img => "/assets/images/2019/03/dictionary/concept.png" }) %>
+  <%= partial("partials/figure", :locals => { :img => "/assets/images/2019/03/dictionary/entry.png" }) %>
+</div>
+
+<div class="gc-main">
+  <h2>Dictionary Mechanics (How it Works)</h2>
+  <h3>Organization</h3>
+  <p>The dictionary is organized by overarching concepts. Each entry is tagged with one or more concepts, and is displayed in a list when you click on the concept you want to explore.</p>
+  <p>Concepts are organized by weight — that is, they are organized by the amount of entries under each concept. This allows me to see how my ideas progress and how my focus shifts over time.</p>
+  <h3>Image Thumbnails</h3>
+  <p>In order to add visual texture to the page and to help me contextualize each concept, I added inline thumbnail images to each concept. These images are randomly selected from individual entries  under each concept.</p>
+  <h3>AJAX Page Loading</h3>
+  <p>All pages are loaded via AJAX in order to keep the browsing experience smooth and seamless.</p>
+  <hr>
+</div>
+
+<div class="gc-main">
+  <h2>The Rhizome</h2>
+  <p>Taking inspiration from my readings of philosopher Gilles Deleuze and psychoanalyst Felix Guattari, I adopted the concept of the rhizome, or a decentralized network of ever-branching nodes (this is an oversimplification, but it works for our purposes).</p>
+  <p>Using the rhizome as inspiration, I developed a network visualization that randomly generates a network of all the entries in the dictionary. I use this feature to generate unexpected connections between entries.</p>
+</div>
+
+<div class="gc-spill">
+  <%= partial("partials/figure", :locals => { :img => "/assets/images/2019/03/dictionary/rhizome.png" }) %>
+</div>
+
+<div class="gc-main">
+  <h2>The Timeline</h2>
+  <p>To give myself another way to see the progression of my ideas throughout the process of developing my thesis, I added a timeline feature to my dictionary that allows my to view all entries based on the date on which they were added.</p>
+</div>
+
+<div class="gc-spill">
+  <%= partial("partials/figure", :locals => { :img => "/assets/images/2019/03/dictionary/timeline.png" }) %>
+</div>
+
+
+<div class="gc-main">
+  <h2>Search</h2>
+  <p>I also added a search functionality that performs a full-text search on all entries to help me find a particular entry quickly.</p>
+</div>
+
+<div class="gc-spill">
+  <%= partial("partials/figure", :locals => { :img => "/assets/images/2019/03/dictionary/search.png" }) %>
+</div>
+
+<div class="gc-main">
+  <hr>
+  <h2>Technical Details</h2>
+  <ul>
+    <li>The site is <a href="https://github.com/devinhalladay/body-without-organs">open source</a>, as always.</li>
+    <li>I'm using <a href="https://www.netlifycms.org/">Netlify CMS</a> as the content management system in order to keep the site entirely static.</li>
+    <li>The site itself is built with Middleman.</li>
+  </ul>
+  <a href="https://body-without-organs.netlify.com/" class="button button-forward">View it live</a>
+</div>
