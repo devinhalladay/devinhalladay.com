@@ -69,6 +69,26 @@ function obliqueStrategy() {
   $('#obliquestrategies em').text(o[i]);
 }
 
+function resizeGridItem(item) {
+  grid = document.getElementsByClassName("selected-images")[0];
+  rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
+  rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
+  rowSpan = Math.ceil((item.getBoundingClientRect().height + rowGap) / (rowHeight + rowGap));
+  
+  item.style.gridRowEnd = "span " + rowSpan;
+}
+
+function resizeAllGridItems() {
+  allItems = document.getElementsByClassName("item");
+  for (x = 0; x < allItems.length; x++) {
+    resizeGridItem(allItems[x]);
+  }
+}
+
+function resizeInstance(instance) {
+  resizeGridItem(instance);
+}
+
 $(document).ready(function () {
   $('body').on('click', function (e) {
     var y = e.pageY;
@@ -85,6 +105,14 @@ function init() {
   initMarquee();
 
   window.onscroll = function () { scollTopButton() };
+
+  resizeAllGridItems();
+  window.addEventListener("resize", resizeAllGridItems);
+
+  allMasonryBlocks = document.getElementsByClassName("masonry-block");
+  for (x = 0; x < allMasonryBlocks.length; x++) {
+    resizeInstance(allMasonryBlocks[x]);
+  }
 
   function scollTopButton() {
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {

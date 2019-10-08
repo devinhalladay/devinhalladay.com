@@ -199,6 +199,14 @@ main, footer {
   }
 }
 
+.selected-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-auto-rows: 20px;
+}
+
 .archive-project {
   transition: 0.2s all ease-in-out;
 
@@ -388,7 +396,7 @@ section {
     padding-right: 10px;
 }
 
-.recent-work {
+.recent-work, .selected-images {
   .h2 {
     grid-column: 1/-1;
     padding-bottom: 0;

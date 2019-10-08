@@ -8,7 +8,7 @@
 </section>
 
 <section class="gc-main">
-  <div class="h2">Featured Work</div>
+  <div class="h2">Featured Case Studies</div>
   <div class="block block-gallery medium-margin">
     <% blog.articles.select {|p| p.data.featured }.each do |project| %>
       <div class="gallery-slide">
@@ -30,7 +30,7 @@
 </section>
 
 <section class="recent-work gc-spill">
-  <div class="h2">Recent Work</div>
+  <div class="h2">Case Studies</div>
   <% for project in blog.articles[0...6] do %>
   <div class="project">
     <a href="<%= project.url %>">
@@ -42,8 +42,16 @@
   <% end %>
 </section>
 
+<div class="selected-images gc-spill">
+  <div class="h2">Selected Images</div>
+
+  <% Dir.glob(config[:source] + '/selected-images/*') do |filename| %>
+    <img class="masonry-block" src="<%= filename.gsub!('source/', '/') %>">
+  <% end %>
+</div>
+
 <section class="archive gc-spill">
-  <div class="h2">Index (Selected Work)</div>
+  <div class="h2">Index of Case Studies</div>
 
   <nav>
     <button type="button" data-filter="all">All</button>
