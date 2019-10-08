@@ -29,19 +29,6 @@
   </div>
 </section>
 
-<section class="recent-work gc-spill">
-  <div class="h2">Case Studies</div>
-  <% for project in blog.articles[0...6] do %>
-  <div class="project">
-    <a href="<%= project.url %>">
-      <img src="<%= project.data.cover_image %>">
-      <div class="caption"><%= project.title %></div>
-      <div class="meta"><%= project.data.scope %></div>
-    </a>
-  </div>
-  <% end %>
-</section>
-
 <div class="selected-images gc-spill">
   <div class="h2">Selected Images</div>
 
