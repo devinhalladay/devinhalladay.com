@@ -178,27 +178,6 @@ main, footer {
   }
 }
 
-.recent-work {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-
-  @media (max-width: 1100px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 600px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .project {
-    img {
-      border-radius: 4px;
-    }
-  }
-}
-
 .selected-images {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -396,7 +375,7 @@ section {
     padding-right: 10px;
 }
 
-.recent-work, .selected-images {
+.selected-images {
   .h2 {
     grid-column: 1/-1;
     padding-bottom: 0;
