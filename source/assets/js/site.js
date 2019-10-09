@@ -190,6 +190,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
 Barba.Dispatcher.on("newPageReady", function(e) {
   init();
   obliqueStrategy();
+  initScrollBars();
   initLazyload();
   // $('.dot').remove();
 
