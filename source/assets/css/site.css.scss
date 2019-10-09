@@ -318,6 +318,7 @@ main, footer {
 }
 
 .nav-products {
+  display: inline-block;
   &:before {
     content: url('/assets/images/products-icon.svg');
     position: relative;
@@ -328,6 +329,7 @@ main, footer {
 }
 
 .nav-systems {
+  display: inline-block;
   &:before {
     content: url('/assets/images/systems-icon.svg');
     position: relative;
@@ -338,6 +340,7 @@ main, footer {
 }
 
 .nav-theory {
+  display: inline-block;
   &:before {
     content: url('/assets/images/theory-icon.svg');
     position: relative;
