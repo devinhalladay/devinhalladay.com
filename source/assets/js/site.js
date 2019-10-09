@@ -4,36 +4,6 @@ function initLazyload() {
   });
 }
 
-function initMixitUp() {
-  if ($('.archive').length > 0) {
-    var config = {
-      animation: {
-        enable: false
-      },
-      selectors: {
-        target: '.archive-project'
-      }
-    }
-
-    var mixer = mixitup('.archive', config);
-
-    $('.archive').on('mixEnd', function (e, state) {
-      $('.archive-group').each(function () {
-        var that = $(this);
-        var archiveGroupContents = $(this).find('.archive-group-contents');
-
-        // Show all archive groups
-        that.show();
-
-        // If archive group contains no visible projects, hide the group
-        if (archiveGroupContents.find('.archive-project:visible').length == 0) {
-          that.hide();
-        }
-      })
-    });
-  }
-}
-
 function initMarquee() {
   const $mq = $('.marquee');
   const el = "    <a href='mailto:studio@devinhalladay.com'>studio@devinhalladay.com</a>    ";
@@ -69,26 +39,6 @@ function obliqueStrategy() {
   $('#obliquestrategies em').text(o[i]);
 }
 
-function resizeGridItem(item) {
-  grid = document.getElementsByClassName("selected-images")[0];
-  rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
-  rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
-  rowSpan = Math.ceil((item.getBoundingClientRect().height + rowGap) / (rowHeight + rowGap));
-  
-  item.style.gridRowEnd = "span " + rowSpan;
-}
-
-function resizeAllGridItems() {
-  allItems = document.getElementsByClassName("item");
-  for (x = 0; x < allItems.length; x++) {
-    resizeGridItem(allItems[x]);
-  }
-}
-
-function resizeInstance(instance) {
-  resizeGridItem(instance);
-}
-
 $(document).ready(function () {
   $('body').on('click', function (e) {
     var y = e.pageY;
@@ -105,14 +55,6 @@ function init() {
   initMarquee();
 
   window.onscroll = function () { scollTopButton() };
-
-  resizeAllGridItems();
-  window.addEventListener("resize", resizeAllGridItems);
-
-  allMasonryBlocks = document.getElementsByClassName("masonry-block");
-  for (x = 0; x < allMasonryBlocks.length; x++) {
-    resizeInstance(allMasonryBlocks[x]);
-  }
 
   function scollTopButton() {
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
@@ -263,7 +205,6 @@ document.addEventListener("DOMContentLoaded", function(e) {
 Barba.Dispatcher.on("newPageReady", function(e) {
   init();
   obliqueStrategy();
-  initMixitUp();
   initLazyload();
   $('.dot').remove();
 
