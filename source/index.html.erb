@@ -29,14 +29,6 @@
   </div>
 </section>
 
-<div class="selected-images gc-spill">
-  <div class="h2">Selected Images</div>
-
-  <% Dir.glob(config[:source] + '/selected-images/*') do |filename| %>
-    <img class="masonry-block" src="<%= filename.gsub!('source/', '/') %>">
-  <% end %>
-</div>
-
 <section class="archive gc-spill">
   <div class="h2">Index of Case Studies</div>
 
