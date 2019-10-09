@@ -85,32 +85,6 @@ function init() {
     updateStatus();
     $blockGallery.on('change.flickity', updateStatus);
   }
-
-  $('.thumbnail-wrapper').on('mouseenter', function () {
-    var img = $(this).find('img');
-    var imgSrc = img.attr('src');
-    
-    $('.popover').html('<img src="' + imgSrc + '">').css('display', 'block');
-    offset.x = -$('.popover').width() / 2;
-    clearTimeout(this.timer);
-  }).on('mouseleave', function () {
-    this.timer = setTimeout(function () {
-      $('.popover').hide();
-    }, 10);
-  });
-
-  var imageHoverable = document.querySelectorAll('.thumbnail-wrapper');
-
-  for (var i = 0; i < imageHoverable.length; i++) {
-    imageHoverable[i].addEventListener('mousemove', function (e) {
-      mouse.x = e.clientX;
-      mouse.y = e.clientY;
-      $('.popover').css({
-        left: (mouse.x + offset.x) + 'px',
-        top: (mouse.y + offset.y) + 'px'
-      });
-    });
-  }
 }
 
 $(document).ready(function () {
