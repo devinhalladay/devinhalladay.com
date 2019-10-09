@@ -36,13 +36,19 @@ function obliqueStrategy() {
 
   var i = randomIntFromInterval(0, 116);
 
+  var obliqueParent = $('.oblique-strategy');
+
   $('#obliquestrategies em').text(o[i]);
 }
 
 $(document).ready(function () {
   $('body').on('click', function (e) {
-    var y = e.pageY;
-    $('body').append('<div class="dot" style="top:' + y + 'px; left:' + e.pageX + 'px"></div>');
+    if ($(e.target).attr('class') == 'oblique-strategy' || $(e.target).parents(".oblique-strategy").length) {
+      return
+    } else {
+      var y = e.pageY;
+      $('body').append('<div class="dot" style="top:' + y + 'px; left:' + e.pageX + 'px"></div>');
+    }
   });
 
   changeTitleOnBlur();
@@ -53,18 +59,21 @@ $(document).ready(function () {
   initScrollBars();
 });
 
+function scollTopButton() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    $('.scroll-top-button').show();
+  } else {
+    $('.scroll-top-button').hide();
+  }
+}
+
 function init() {
+  initScrollBars();
   window.onscroll = function () { scollTopButton() };
 
-  function scollTopButton() {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-      $('.scroll-top-button').show();
-    } else {
-      $('.scroll-top-button').hide();
-    }
-  }
-
-  initScrollBars();
+  $('.refresh-oblique-strategy').click(function () {
+    obliqueStrategy();
+  })
 
   if ($('.block-gallery').length > 0) {
     var $blockGallery = $('.block-gallery').flickity({

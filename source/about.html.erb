@@ -19,6 +19,14 @@ title: About
 <p>I am concerned primarily with the politics and ideology articulated through the acts and artifacts of design. I believe that aesthetics are the synthesis of ideology and form. I believe that individual labor is the most powerful political tool available. I believe that ethics in design are not "ethics in design" but ethics proper. I believe that we can do better, together. Always forward.</p>
 <p>Have I caught your interest? Are you a credentialist? <a class="no-barba" href="/Devin_Halladay-Resume.pdf">View my resume</a>.</p>
 
+
+<h2>Services</h2>
+<p class="hug">
+  <% data.services.each do |service| %>
+      <%= service %><% if service != data.services.last %><%= ', ' %><% end %>
+  <% end %>
+</p>
+
 <h2>Methodology</h2>
 <p>I am a partner, not an arbiter. There is no truth. I believe that the best design is made through close collaboration and constant experimentation, iteration, and feedback.</p>
 <p>My design practice pairs systematic nuance with conceptual rigor in order to achieve elegant, performant design solutions that provoke and question established values.</p>
