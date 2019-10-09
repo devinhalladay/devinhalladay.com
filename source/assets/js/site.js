@@ -5,12 +5,12 @@ function initLazyload() {
 }
 
 function initMarquee() {
-  const $mq = $('.marquee');
-  const el = "    <a href='mailto:studio@devinhalladay.com'>studio@devinhalladay.com</a>    ";
+  const $mq = $('.marquee p');
+  const el = "    <a href='mailto:studio@devinhalladay.com'>studio@devinhalladay.com</a> <span class='always-forward-circle'>→</span>    ";
 
   if ($mq) {
     $mq.append(el).append(el).append(el).marquee({
-      duration: 6500,
+      duration: 8000,
       gap: 10,
       delayBeforeStart: 0,
       duplicated: true,
@@ -49,11 +49,11 @@ $(document).ready(function () {
 
   obliqueStrategy();
   initLazyload();
+  initMarquee();
+  initScrollBars();
 });
 
 function init() {
-  initMarquee();
-
   window.onscroll = function () { scollTopButton() };
 
   function scollTopButton() {
@@ -63,6 +63,8 @@ function init() {
       $('.scroll-top-button').hide();
     }
   }
+
+  initScrollBars();
 
   if ($('.block-gallery').length > 0) {
     var $blockGallery = $('.block-gallery').flickity({
@@ -80,15 +82,14 @@ function init() {
 
     function updateStatus() {
       var cellNumber = flkty.selectedIndex + 1;
-      $carouselStatus.text(cellNumber + '/' + flkty.slides.length);
+      $carouselStatus.text(cellNumber + ' of ' + flkty.slides.length);
     }
     updateStatus();
     $blockGallery.on('change.flickity', updateStatus);
   }
 }
 
-$(document).ready(function () {
-
+function initScrollBars() {
   const docHeight = $(document).height();
 
   $(".progress-1").animate({ height: "5%" });
@@ -101,10 +102,10 @@ $(document).ready(function () {
   $(".progress-8").animate({ width: "5%" });
 
   window.onscroll = function () {
-    myFunction();
+    scrollBars();
   };
 
-  function myFunction() {
+  function scrollBars() {
     var winScroll =
       document.body.scrollTop || document.documentElement.scrollTop;
     var height =
@@ -120,7 +121,7 @@ $(document).ready(function () {
     document.getElementById("progress-7").style.height = scrolled + 5 + "%";
     document.getElementById("progress-8").style.width = scrolled + 5 + "%";
   }
-})
+}
 
 
 
@@ -147,6 +148,7 @@ const FadePageTransition = Barba.BaseTransition.extend({
     });
   },
   fadeIn: function() {
+    initMarquee();
     const _this = this;
     const oldContainer = this.oldContainer;
     const newContainer = this.newContainer;
@@ -180,7 +182,7 @@ Barba.Dispatcher.on("newPageReady", function(e) {
   init();
   obliqueStrategy();
   initLazyload();
-  $('.dot').remove();
+  // $('.dot').remove();
 
   $('.scroll-top-button').click(function() {
     $('html,body').animate({ scrollTop: 0 }, 'slow');

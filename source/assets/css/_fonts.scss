@@ -1,0 +1,20 @@
+@font-face {
+  font-family:"Wremena";
+  src:url("/assets/fonts/Wremena-Light.woff2") format("woff2"),url("/assets/fonts/Wremena-Light.woff") format("woff"),url("/assets/fonts/Wremena-Light.otf") format("opentype");
+  font-style:normal;
+  font-weight:300;
+}
+        
+@font-face {
+  font-family:"Wremena";
+  src:url("/assets/fonts/Wremena-Regular.woff2") format("woff2"),url("/assets/fonts/Wremena-Regular.woff") format("woff"),url("/assets/fonts/Wremena-Regular.otf") format("opentype");
+  font-style:normal;
+  font-weight:400;
+}
+
+@font-face {
+  font-family: "Wremena";
+  src:url("/assets/fonts/Wremena-Bold.woff2") format("woff2"),url("/assets/fonts/Wremena-Bold.woff") format("woff"),url("/assets/fonts/Wremena-Bold.otf") format("opentype");
+  font-style:normal;
+  font-weight:500;
+}

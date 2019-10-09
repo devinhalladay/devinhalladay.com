@@ -1,15 +1,18 @@
 <section class="hero">
   <p class="byline hug">Always Forward</p>
   <h1 class="hug">
-    <a href="/about">Devin Halladay</a> is a designer interested in working for cultural and government institutions.
-    He specializes in <span class="nav-products">software design</span> and <span class="nav-systems">identity systems</span>. He publishes <span class="nav-theory">theory</span> work on <a target="_blank" href="https://infinitecaesura.com">Infinite Caesura</a>.
+    My name is <a href="/about">Devin Halladay</a>. I design alternative futures with and through government and cultural institutions. I specialize in the design of <span class="nav-products">software</span> and <span class="nav-systems">identity systems</span>. I publish <span class="nav-theory">theory</span> on <a target="_blank" href="https://infinitecaesura.com">Infinite Caesura</a>. <span>How can I be of service?</span>
   </h1>
-  <a href="/contact" class="button button-forward">Get in touch</a>
+  <div class="marquee">
+    <p>
+      <a href="mailto:studio@devinhalladay.com">studio@devinhalladay.com</a> <span class="always-forward-circle">→</span>
+    </p>
+  </div>
 </section>
 
 <section class="gc-main">
-  <div class="h2">Featured Case Studies</div>
   <div class="block block-gallery medium-margin">
+    <div class="gallery-highlight"></div>
     <% blog.articles.select {|p| p.data.featured }.each do |project| %>
       <div class="gallery-slide">
         <a href="<%= project.url %>">
@@ -28,3 +31,4 @@
     <% end %>
   </div>
 </section>
+
