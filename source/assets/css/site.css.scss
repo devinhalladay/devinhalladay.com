@@ -979,7 +979,7 @@ footer {
 
   p {
     font-weight: 300;
-    font-size: 1em;
+    font-size: 1.4em;
     line-height: 1.2;
     margin-top: 0;
     padding: 20px;
@@ -1317,10 +1317,7 @@ table.is-striped tbody tr:nth-child(even):hover {
 .cta {
   font-family: 'Great Vibes', cursive;
   font-size: 1.8em;
-  background: linear-gradient(264.03deg, #FFFFFF -12.37%, #FF005C -12.36%, #FFFFFF 48.05%, #0085FF 101.65%);
   padding-right: 6px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   display: flex;
   height: 92px;
   animation: fadein 2s;
@@ -1328,6 +1325,13 @@ table.is-striped tbody tr:nth-child(even):hover {
   svg {
     height: 92px;
     position: absolute;
+    filter: drop-shadow(0 2px 4px white);
+
+    text {
+      fill: white;
+      // text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8), 0 0 5px rgba(255, 255, 255, 0.8), 0px 0px 20px rgb(255, 255, 255);
+      
+    }
   }
 }
 
@@ -1337,5 +1341,35 @@ table.is-striped tbody tr:nth-child(even):hover {
     }
     to {
         opacity:1;
+    }
+}
+
+
+.becoming-line {
+    fill: none;
+    stroke: white;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    stroke-dashoffset: 0;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+.becoming-line { 
+    clip-path: url(#becoming);
+    stroke-dasharray: 75;
+    animation-name: draw-time;
+}
+
+@keyframes draw-time {
+    0% {
+        stroke-dashoffset: 75;
+    }
+
+    10% {
+        stroke-dashoffset: 0;
     }
 }
