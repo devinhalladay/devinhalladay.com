@@ -30,6 +30,14 @@ strong {
     padding-top: 5vh;
   }
 
+  path {
+    fill: transparent;
+  }
+
+  text {
+    font-size: 0.09em;
+  }
+
   .h2 {
     padding-bottom: 0 !important;
     padding-top: 0 !important;
@@ -1307,5 +1315,27 @@ table.is-striped tbody tr:nth-child(even):hover {
 }
 
 .cta {
-  display: block;
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.8em;
+  background: linear-gradient(264.03deg, #FFFFFF -12.37%, #FF005C -12.36%, #FFFFFF 48.05%, #0085FF 101.65%);
+  padding-right: 6px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  height: 92px;
+  animation: fadein 2s;
+
+  svg {
+    height: 92px;
+    position: absolute;
+  }
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }
