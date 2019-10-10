@@ -41,6 +41,11 @@ strong {
     font-size: 1.5em;
     padding-top: 1em;
     font-weight: 300;
+    text-indent: 1em;
+
+    &::first-line {
+      text-indent: 0;
+    }
 
     @media (max-width: 600px) {
       font-size: 1.3em;

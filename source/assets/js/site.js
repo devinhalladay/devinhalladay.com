@@ -20,6 +20,36 @@ function initMarquee() {
   }
 }
 
+function initMixitUp() {
+  if ($('.archive').length > 0) {
+    var config = {
+      animation: {
+        enable: false
+      },
+      selectors: {
+        target: '.archive-project'
+      }
+    }
+
+    var mixer = mixitup('.archive', config);
+
+    $('.archive').on('mixEnd', function (e, state) {
+      $('.archive-group').each(function () {
+        var that = $(this);
+        var archiveGroupContents = $(this).find('.archive-group-contents');
+
+        // Show all archive groups
+        that.show();
+
+        // If archive group contains no visible projects, hide the group
+        if (archiveGroupContents.find('.archive-project:visible').length == 0) {
+          that.hide();
+        }
+      })
+    });
+  }
+}
+
 function changeTitleOnBlur() {
   var title = document.title;
   var alttitle = "Enjoy your day!";
@@ -192,6 +222,7 @@ Barba.Dispatcher.on("newPageReady", function(e) {
   obliqueStrategy();
   initScrollBars();
   initLazyload();
+  initMixitUp();
   // $('.dot').remove();
 
   $('.scroll-top-button').click(function() {
