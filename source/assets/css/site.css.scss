@@ -82,6 +82,24 @@ strong {
   &--project {
     h1 {
       color: #fff;
+      text-indent: 0;
+      
+      span {
+        display: flex;
+        align-items: center;
+
+        &:before {
+          top: 4px;
+        }
+
+        &.nav-theory:before {
+          top: -2px;
+        }
+
+        &.nav-internet:before {
+          top: 1px;
+        }
+      }
     }
 
     h2 {
@@ -139,7 +157,7 @@ main, footer {
 .grid {
   display: grid;
   grid-gap: 20px;
-  max-width: 80em;
+  max-width: 90em;
   margin: auto;
 
   grid-template-columns: unquote("[full-start] 1fr [spill-start] 1fr [breakout-start] 1fr [main-start] repeat(6, 1fr) [main-end] 1fr [breakout-end] 1fr [spill-end] 1fr [full-end]");
@@ -156,6 +174,10 @@ main, footer {
 
   & > * {
     grid-column: main-start / main-end;
+
+    @media (max-width: 1100px) {
+      grid-column: spill-start / spill-end;
+    }
   }
 
   & > p {
@@ -963,17 +985,17 @@ footer {
       white-space: nowrap;
       border: 1px solid white;
       border-radius: 50px;
-      width: 26px;
-      height: 26px;
+      width: 36px;
+      height: 36px;
       margin-right: 10px;
       display: inline-flex;
       align-content: center;
       justify-content: center;
       line-height: 1.4;
       font-size: 0.8em;
-          z-index: 999;
-    background: black;
-    cursor: pointer;
+      z-index: 999;
+      background: black;
+      cursor: pointer;
     }
   }
 

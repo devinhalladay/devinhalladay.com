@@ -1,11 +1,12 @@
 ---
-title: Software Design
+title: Conceptual Art
 page_class: project
 ---
 <section class="hero hero--project">
   <a href="/" class="return-link"><span></span> Back home</a>
-  <h1 class="hug"><span class="nav-products"><%= current_page.data.title %></span></h1>
-  <h2 class="hug">My software design practice specializes in advanced decomp of complex problem spaces using theory and systems. Recent developments in my practice have evaluated the applications and efficacy of cybernetic theory.</h2>
+  <h1 class="hug"><span class="nav-theory"><%= current_page.data.title %></span></h1>
+  <h2 class="hug">My art practice attempts to develop a holistic critical inquiry into the condition of the contemporary world and mind, utilizing technology and theory to articulate complex philosophies.
+ </h2>
 </section>
 
 <section class="archive gc-spill">
@@ -14,7 +15,7 @@ page_class: project
       <div class="archive-group-heading"><%= year %></div>
       <div class="archive-group-contents">
         <% projects.each do |project| %>
-          <% if project.data.categories && (project.data.categories.include? "software") %>
+          <% if project.data.categories && (project.data.categories.include? "internet") %>
             <div class="archive-project <%= project.data.filters %>">
               <a href="<%= project.url %>">
                 <header>
