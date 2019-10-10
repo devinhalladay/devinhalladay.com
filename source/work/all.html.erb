@@ -1,0 +1,44 @@
+<section class="hero">
+  <a href="/" class="return-link"><span></span> Back home</a>
+  <h1 class="hug">This is an archive of a bunch of work made through the last few years. It's not everything, but it's pretty comprehensive.
+  </h1>
+</section>
+
+<section class="archive gc-spill">
+  <nav>
+    <button type="button" data-filter="all">All</button>
+    <button type="button" data-filter=".interaction">Web & Interaction</button>
+    <button type="button" data-filter=".identity">Brand Identity</button>
+    <button type="button" data-filter=".print">Print</button>
+  </nav>
+
+  <% blog.articles.group_by {|a| a.date.year }.each do |year, projects| %>
+    <div class="archive-group">
+      <div class="archive-group-heading"><%= year %></div>
+      <div class="archive-group-contents">
+        <% projects.each do |project| %>
+            <div class="archive-project <%= project.data.filters %>">
+              <a href="<%= project.url %>">
+                <header>
+                  <div class="left">
+                    <div class="thumbnail-wrapper">
+                      <img src="<%= project.data.cover_image %>" alt="">
+                    </div>
+                    <div class="project-meta">
+                      <h2><%= project.title %><span>&rarr;</span></h2>
+                      <div class="meta"><%= project.data.scope %></div>
+                    </div>
+                  </div>
+                  <% if project.data.external_url %>
+                    <div class="right">
+                      <a target="_blank" href="<%= project.data.external_url %>" class="button btn-small">View site</a>
+                    </div>
+                  <% end %>
+                </header>
+              </a>
+            </div>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</section>

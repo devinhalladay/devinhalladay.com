@@ -1,0 +1,42 @@
+---
+title: Internet
+---
+<section class="hero">
+  <a href="/" class="return-link"><span></span> Back home</a>
+  <h1 class="hug">
+  This internet is a big, centralized, monotonous beast made of mined materials, manual labor, and massive carbon footprint. These are my contributions to it, and my attempts to make it at least a little more human.
+  </h1>
+</section>
+
+<section class="archive gc-spill">
+  <% blog.articles.group_by {|a| a.date.year }.each do |year, projects| %>
+    <div class="archive-group">
+      <div class="archive-group-heading"><%= year %></div>
+      <div class="archive-group-contents">
+        <% projects.each do |project| %>
+          <% if project.data.categories && (project.data.categories.include? "internet") %>
+            <div class="archive-project <%= project.data.filters %>">
+              <a href="<%= project.url %>">
+                <header>
+                  <div class="left">
+                    <div class="thumbnail-wrapper">
+                      <img src="<%= project.data.cover_image %>" alt="">
+                    </div>
+                    <div class="project-meta">
+                      <h2><%= project.title %><span>&rarr;</span></h2>
+                    </div>
+                  </div>
+                  <% if project.data.external_url %>
+                    <div class="right">
+                      <a target="_blank" href="<%= project.data.external_url %>" class="button btn-small">View site</a>
+                    </div>
+                  <% end %>
+                </header>
+              </a>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</section>
