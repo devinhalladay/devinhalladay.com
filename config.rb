@@ -46,6 +46,12 @@ helpers do
     link_to(caption, url, options)
   end
 
+  def projects_by_category(category)  
+    sitemap.resources.select do |resource|
+      resource.data.categories.present? && resource.data.categories.include?(category)
+    end
+  end
+
 end
 
 activate :directory_indexes

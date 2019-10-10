@@ -1,6 +1,5 @@
 ---
 title: Identity Design
-page_class: project
 ---
 <section class="hero hero--project">
   <a href="/" class="return-link"><span></span> Back home</a>
@@ -8,33 +7,55 @@ page_class: project
   <h2 class="hug">My multidisciplinary identity design practice merges systematic and typographic nuance with deep conceptual research, critical theory, experimentation, and technology.</h2>
 </section>
 
+<section class="gc-main">
+  <h2 class="hug">Featured Case Studies</h2>
+  <div class="block block-gallery medium-margin">
+    <div class="gallery-highlight"></div>
+    <% blog.articles.select {|p| p.data.featured && ((defined? p.data.categories == String) && (p.data.categories.include? "identity")) }.each do |project| %>
+      <div class="gallery-slide">
+        <a href="<%= project.url %>">
+          <div class="image" style="background-image: url(<%= project.data.cover_image %>)"></div>
+          <div class="caption">
+            <div class="title--block">
+              <%= project.title %>
+            </div>
+            <div class="meta--block">
+              <%= project.data.scope %>
+            </div>
+          </div>
+          <p class="carousel-status"></p>
+        </a>
+      </div>
+    <% end %>
+  </div>
+</section>
+
 <section class="archive gc-spill">
-  <% blog.articles.group_by {|a| a.date.year }.each do |year, projects| %>
+  <h2>The Works</h2>
+  <% blog.articles.select { |a| (defined? a.data.categories == String) && (a.data.categories.include? "identity") }.group_by {|a| a.date.year }.each do |year, projects| %>
     <div class="archive-group">
       <div class="archive-group-heading"><%= year %></div>
       <div class="archive-group-contents">
         <% projects.each do |project| %>
-          <% if project.data.categories && (project.data.categories.include? "identity") %>
-            <div class="archive-project <%= project.data.filters %>">
-              <a href="<%= project.url %>">
-                <header>
-                  <div class="left">
-                    <div class="thumbnail-wrapper">
-                      <img src="<%= project.data.cover_image %>" alt="">
-                    </div>
-                    <div class="project-meta">
-                      <h2><%= project.title %><span>&rarr;</span></h2>
-                    </div>
+          <div class="archive-project">
+            <a href="<%= project.url %>">
+              <header>
+                <div class="left">
+                  <div class="thumbnail-wrapper">
+                    <img src="<%= project.data.cover_image %>" alt="">
                   </div>
-                  <% if project.data.external_url %>
-                    <div class="right">
-                      <a target="_blank" href="<%= project.data.external_url %>" class="button btn-small">View site</a>
-                    </div>
-                  <% end %>
-                </header>
-              </a>
-            </div>
-          <% end %>
+                  <div class="project-meta">
+                    <h2><%= project.title %><span>&rarr;</span></h2>
+                  </div>
+                </div>
+                <% if project.data.external_url %>
+                  <div class="right">
+                    <a target="_blank" href="<%= project.data.external_url %>" class="button btn-small">View site</a>
+                  </div>
+                <% end %>
+              </header>
+            </a>
+          </div>
         <% end %>
       </div>
     </div>

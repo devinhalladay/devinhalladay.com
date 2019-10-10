@@ -1,6 +1,5 @@
 ---
 title: Complete Works
-page_class: project
 ---
 <section class="hero hero--project">
   <a href="/" class="return-link"><span></span> Back home</a>
@@ -9,6 +8,7 @@ page_class: project
 </section>
 
 <section class="gc-main">
+  <h2 class="hug">Featured Case Studies</h2>
   <div class="block block-gallery medium-margin">
     <div class="gallery-highlight"></div>
     <% blog.articles.select {|p| p.data.featured }.each do |project| %>
@@ -31,6 +31,8 @@ page_class: project
 </section>
 
 <section class="archive gc-spill">
+  <h2>The Works</h2>
+  
   <nav>
     <button type="button" data-filter="all">All</button>
     <button type="button" data-filter=".interaction">Web & Interaction</button>
