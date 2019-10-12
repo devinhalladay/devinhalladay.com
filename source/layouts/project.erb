@@ -3,7 +3,7 @@
   <section class="hero hero--project">
     <a href="/" class="return-link"><span></span> Back home</a>
     <h1 class="hug"><%= current_page.title %></h1>
-    <h2 class="hug"><%= current_page.data.description %></h2>
+    <% if current_page.data.description %><h2 class="hug"><%= current_page.data.description %></h2><% end %>
     <p class="hug byline"><%= current_page.data.scope %></p>
   </section>
 

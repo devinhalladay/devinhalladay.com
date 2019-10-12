@@ -1395,3 +1395,19 @@ table.is-striped tbody tr:nth-child(even):hover {
         stroke-dashoffset: 0;
     }
 }
+
+.video {
+  padding-bottom: 56.25%; /* for 16:9 ratio */
+  padding-top: 25px;
+  position: relative;
+  height: 0;
+}
+.video iframe,
+.video object,
+.video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
