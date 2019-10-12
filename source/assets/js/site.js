@@ -113,9 +113,13 @@ function init() {
       cellSelector: '.gallery-slide',
       pageDots: false,
       adaptiveHeight: true,
-      draggable: false
+      draggable: false,
+      autoPlay: 2800,
+      selectedAttraction: 0.2,
+      friction: 0.8
     });
-
+    
+    
     var $carouselStatus = $('.carousel-status');
     var flkty = $blockGallery.data('flickity');
 
@@ -228,5 +232,5 @@ Barba.Dispatcher.on("newPageReady", function(e) {
   $('.scroll-top-button').click(function() {
     $('html,body').animate({ scrollTop: 0 }, 'slow');
     return false;
-  })
+  });
 });
