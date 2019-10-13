@@ -1039,15 +1039,17 @@ footer {
   position: absolute;
   width: 30px;
   height: 30px;
-  border-radius: 40px;
-  background: #000;
-  border: 1px solid white;
+  // border-radius: 40px;
+  // background: #000;
+  // border: 1px solid white;
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   pointer-events: none;
-  z-index: -1;
+  z-index: 100;
+  background: url("/assets/images/bubble-blue.png");
+  background-size: cover;
 }
 
 .hero-image {
