@@ -884,8 +884,7 @@ body.fade {
   width: 100%;
   z-index: -1;
   background-size: cover;
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 1) 100%),
-  url(https://devinhalladay.imgix.net/2018/11/mercurial-world/cover.png?w=800&fm=jpg&q=100&dpr=2);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, black 100%), url("/assets/images/2019/10/still-life/2.jpg?fm=jpg&q=100&dpr=2") top center/100% no-repeat !important;
 }
 
 .process-list {
