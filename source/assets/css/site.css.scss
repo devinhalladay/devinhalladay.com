@@ -853,7 +853,29 @@ body.fade {
   display: block;
   position: relative;
   width: 100%;
-  overflow: hidden
+  overflow: hidden;
+
+  &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      background-image: url(/assets/images/profile.jpg);
+      left: 0;
+      right: 0;
+      bottom: 7px;
+      background-size: cover;
+      border-radius: 60%;
+      background-position: top center;
+      mix-blend-mode: darken;
+      opacity: 0;
+      transition: 0.2s all ease-in-out;
+    }
+
+  &:hover {
+    &:before {
+      opacity: 1;
+    }
+  }
 }
 
 .grain-effect>* {

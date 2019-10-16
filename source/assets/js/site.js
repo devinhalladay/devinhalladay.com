@@ -95,13 +95,7 @@ $(document).ready(function () {
   // });
 
   $('body').on('click', function (e) {
-    if (($(e.target).attr('class') == 'oblique-strategy' || $(e.target).parents(".oblique-strategy").length) || ($(e.target).attr('class') == 'return-link' || $(e.target).parents(".return-link").length)) {
-      return
-    } else {
       var y = e.pageY;
-      if ($(e.target).attr('class') == 'clear-bubbles-button' || $(e.target).parents(".clear-bubbles-button").length) {
-        return
-      } else {
         // direction = Math.round(Math.random()) == 0 ? 'left' : 'right';
         // setInterval(function () {
         //   dot.animate({
@@ -114,13 +108,11 @@ $(document).ready(function () {
         //     left: direction == 'left' ? '-=40' : '+=40',
         //   }, 1000);
         // });
-        $('body').snowfall({ flakeOriginX: e.pageX, flakeOriginY: e.pageY, image: "/assets/images/bubble-blue.png", flakeCount: 1, minSize: 10, maxSize: 32 });
-      }
+        $('body').snowfall({ flakeOriginX: e.pageX, flakeOriginY: e.pageY, image: "/assets/images/bubble-blue.png", flakeCount: 1, minSize: 10, maxSize: 64 });
 
       if ($('.dot').length > 0) {
         $('.clear-bubbles-button').show();
       }
-    }
   });
 
   $('.clear-bubbles-button').click(function() {
