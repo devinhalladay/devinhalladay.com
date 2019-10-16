@@ -4,21 +4,35 @@ function initLazyload() {
   });
 }
 
-function initMarquee() {
-  const $mq = $('.marquee p');
-  const el = "    <a href='mailto:studio@devinhalladay.com'>studio@devinhalladay.com</a> <span class='always-forward-circle'>→</span>    ";
+// function start_marquee() {
+//   function go() {
+//     if ($('.marquee-contents').position().left + $('.marquee-contents').width() <= ($('.marquee-contents').offset().left + $('.marquee-contents').width())) {
+//       i = i + step;
+//     } else {
+//       i = 0 + ;
+//       $('.marquee-contents').children().first().remove().clone().appendTo($('.marquee-contents'));
+//     }
+//     $('.marquee-contents').css('margin-left', -i + 'px');
+//   }
+//   var i = 0,
+//     step = 3;
+//   var m = $('.marquee');
+//   m.children().wrap('<div class="marquee-contents"></div>')
+//   var t = $('.marquee-contents').html();
+//   $('.marquee-contents').html(t);
+//   var width = (m.innerWidth() + 1);
+//   $('.marquee-contents').html(t + t + t + t);
 
-  if ($mq) {
-    $mq.append(el).append(el).append(el).marquee({
-      duration: 8000,
-      gap: 10,
-      delayBeforeStart: 0,
-      duplicated: true,
-      allowCss3Support: true,
-      startVisible: true
-    });
-  }
-}
+//   var initWidth = $('.marquee-contents').offset().left;
+
+//   m.mouseenter(function () {
+//     step = 0;
+//   });
+//   m.mouseleave(function () {
+//     step = 3;
+//   });
+//   setInterval(go, 10);
+// }
 
 function initMixitUp() {
   if ($('.archive').length > 0) {
@@ -72,22 +86,44 @@ function obliqueStrategy() {
 }
 
 $(document).ready(function () {
+  // start_marquee();
+  // $(".marquee p").mark.marquee();
+  // $(".marquee p").mark.mouseover(function () {
+  //   $(this).removeAttr("style");
+  // }).mouseout(function () {
+  //   $(this).mark.marquee();
+  // });
+
   $('body').on('click', function (e) {
-    if ($(e.target).attr('class') == 'oblique-strategy' || $(e.target).parents(".oblique-strategy").length) {
+    if (($(e.target).attr('class') == 'oblique-strategy' || $(e.target).parents(".oblique-strategy").length) || ($(e.target).attr('class') == 'return-link' || $(e.target).parents(".return-link").length)) {
       return
     } else {
       var y = e.pageY;
-      $('body').append('<div class="dot" style="top:' + y + 'px; left:' + e.pageX + 'px"></div>');
+      if ($(e.target).attr('class') == 'clear-bubbles-button' || $(e.target).parents(".clear-bubbles-button").length) {
+        return
+      } else {
+        $('body').append('<div class="dot" style="top:' + y + 'px; left:' + e.pageX + 'px"></div>');
+      }
+
+      if ($('.dot').length > 0) {
+        $('.clear-bubbles-button').show();
+      }
     }
   });
+
+  $('.clear-bubbles-button').click(function() {
+    $('.dot').remove();
+    $(this).hide();
+  })
 
   changeTitleOnBlur();
 
   obliqueStrategy();
   initLazyload();
-  initMarquee();
   initScrollBars();
 });
+
+
 
 function scollTopButton() {
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
@@ -191,7 +227,6 @@ const FadePageTransition = Barba.BaseTransition.extend({
     });
   },
   fadeIn: function() {
-    initMarquee();
     const _this = this;
     const oldContainer = this.oldContainer;
     const newContainer = this.newContainer;
@@ -222,15 +257,24 @@ document.addEventListener("DOMContentLoaded", function(e) {
 });
 
 Barba.Dispatcher.on("newPageReady", function(e) {
+  // $('.marquee').marquee();
   init();
   obliqueStrategy();
   initScrollBars();
   initLazyload();
+  Marquee3k.init();
   initMixitUp();
-  // $('.dot').remove();
+
+  window.onscroll = function () { scollTopButton() };
 
   $('.scroll-top-button').click(function() {
     $('html,body').animate({ scrollTop: 0 }, 'slow');
     return false;
   });
+
+  if ($('.dot').length > 0) {
+    $('.clear-bubbles-button').show();
+  } else {
+    $('.clear-bubbles-button').hide();
+  }
 });
