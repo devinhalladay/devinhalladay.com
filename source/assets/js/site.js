@@ -102,7 +102,19 @@ $(document).ready(function () {
       if ($(e.target).attr('class') == 'clear-bubbles-button' || $(e.target).parents(".clear-bubbles-button").length) {
         return
       } else {
-        $('body').append('<div class="dot" style="top:' + y + 'px; left:' + e.pageX + 'px"></div>');
+        // direction = Math.round(Math.random()) == 0 ? 'left' : 'right';
+        // setInterval(function () {
+        //   dot.animate({
+        //     top: '+=14',
+        //     left: direction == 'left' ? '+=14' : '-=0',
+        //   }, 500);
+
+        //   dot.animate({
+        //     top: '-=40',
+        //     left: direction == 'left' ? '-=40' : '+=40',
+        //   }, 1000);
+        // });
+        $('body').snowfall({ flakeOriginX: e.pageX, flakeOriginY: e.pageY, image: "/assets/images/bubble-blue.png", flakeCount: 1, minSize: 10, maxSize: 32 });
       }
 
       if ($('.dot').length > 0) {
