@@ -38,6 +38,10 @@ strong {
     padding-top: 5vh;
   }
 
+  .marquee3k {
+    padding-top: 1em;
+  }
+
   path {
     fill: transparent;
   }
@@ -84,6 +88,12 @@ strong {
 
     & + .button {
       margin-top: 2em;
+    }
+  }
+
+  &--home {
+    h1 {
+      padding-top: 0;
     }
   }
 
@@ -959,9 +969,38 @@ ol {
   position: relative;
   height: 2.5em;
 
+  .marquee3k__wrapper {
+    height: 100%;
+  }
+
+  img {
+    height: 100%;
+    opacity: 0.6;
+  }
+
+  .marquee-contents {
+    display: inline-flex !important;
+    position: relative;
+    height: 100%;
+
+    a {
+      display: block;
+      display: flex;
+      height: 70%;
+      width: max-content;
+      margin-top: 10px;
+      align-items: center;
+      text-decoration: none;
+      border-bottom: 0;
+      cursor: pointer;
+      padding-right: 2em;
+    }
+  }
+
   p {
     padding-right: 0.5em;
-    box-sizing: border-box;
+    margin-top: 4px;
+    display: flex;
   }
 
   &:before, &:after {

@@ -266,8 +266,11 @@ Barba.Dispatcher.on("newPageReady", function(e) {
   obliqueStrategy();
   initScrollBars();
   initLazyload();
-  Marquee3k.init();
   initMixitUp();
+
+  if ($('.marquee3k').hasClass('is-init') !== true) {
+    Marquee3k.init();
+  }
 
   window.onscroll = function () { scollTopButton() };
 
