@@ -1,8 +1,28 @@
 ---
 title: "Computational Book Covers"
 scope: "Code, Systems Design"
-cover_image: /assets/images/2019/03/differance/cover.png
+cover_image: /assets/images/2019/10/computational-covers/cover.png
 filters: art, print, identity
-categories: conceptual-art identity
-published: false
+categories: conceptual-art identity internet software
+description: Computational book cover generation system for a series of books released by Public Domain.
+featured: true
 ---
+<div class="gc-spill">
+  <%= partial("partials/figure", :locals => { :img => "/assets/images/2019/10/computational-covers/1.jpg" }) %>
+  <%= partial("partials/figure", :locals => { :img => "/assets/images/2019/10/computational-covers/2.png" }) %>
+</div>
+
+<div class="gc-main">
+  <p>
+    Rather than subject the text of the books to algorithmic rules, I defined algorithmic rules that take various metrics from the text and use them as input to an abstract data vizualization. This brings the content of each book to life in a way similar to other books in the series, unifying them visually and conceptually.
+  </p>
+  <p>Complete with facsimiles of layout design software functionality like intelligent text reflowing based on character width and a configuration interface, this book cover generator handles the hard parts of the design system beneath an easy to use interface.</p>
+ <p>
+  <a href="/public-domain-cover-generator" class="button button-forward">Play with the generator</a>
+  </p>
+</div>
+
+<div class="gc-spill">
+<%= partial("partials/figure", :locals => { :img => "/assets/images/2019/10/computational-covers/3.png" }) %>
+</div>
+

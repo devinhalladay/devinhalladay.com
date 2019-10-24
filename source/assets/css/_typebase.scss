@@ -15,11 +15,15 @@ html {
     font-size: $baseFontSize / 16 * 100%;
     // Make everything look a little nicer in webkit
     -webkit-font-smoothing: antialiased;
-    // -webkit-text-size-adjust: auto
-    // -moz-text-size-adjust: auto
-    // -ms-text-size-adjust: auto
-    // -o-text-size-adjust: auto
-    // text-size-adjust: auto
+    -webkit-text-size-adjust: auto;
+    -moz-text-size-adjust: auto;
+    -ms-text-size-adjust: auto;
+    -o-text-size-adjust: auto;
+    text-size-adjust: auto;
+
+    @media screen and (max-width: 600px) {
+        font-size: $baseFontSize / 18 * 100%;
+    }
 
 }
 /* Copy & Lists */
@@ -78,6 +82,10 @@ h2 {
     font-size: 2 * $scale * 1rem;
     line-height: 2 * $leading;
     margin-top: 2 * $leading;
+
+    @media screen and (max-width: 600px) {
+      margin-top: 0;
+    }
 }
 h3 {
     font-size: 1rem;

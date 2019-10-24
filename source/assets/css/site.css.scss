@@ -14,6 +14,7 @@ body {
   font-size: 20px;
   line-height: 1.55em;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 a {
@@ -31,14 +32,14 @@ strong {
 }
 
 .hero {
-  padding-top: 10vh;
+  padding-top: 5em;
   padding-bottom: 1em;
 
   @media (max-width: 600px) {
-    padding-top: 5vh;
+    padding-top: 2em;
   }
 
-  .marquee3k {
+  .marquee {
     padding-top: 1em;
   }
 
@@ -61,11 +62,6 @@ strong {
     font-size: 1.5em;
     padding-top: 1em;
     font-weight: 300;
-    text-indent: 1em;
-
-    &::first-line {
-      text-indent: 0;
-    }
 
     @media (max-width: 600px) {
       font-size: 1.3em;
@@ -80,6 +76,10 @@ strong {
       &:hover {
         text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8), 0 0 5px rgba(255, 255, 255, 0.8), 0px 0px 20px rgb(255, 255, 255);
       }
+    }
+
+    span:not(.cta) {
+      margin-left: 1em;
     }
 
     span, a {
@@ -100,9 +100,9 @@ strong {
   &--project {
     h1 {
       color: #fff;
-      text-indent: 0;
       
       span {
+        margin-left: 0 !important;
         display: flex;
         align-items: center;
 
@@ -247,6 +247,7 @@ main, footer {
 
   a {
     border-bottom: none;
+
   }
 
   header {
@@ -257,6 +258,10 @@ main, footer {
     padding-top: 0.5em;
     padding-bottom: 0.3em;
     cursor: pointer;
+
+    a {
+      flex: 1;
+    }
 
     p.title {
       flex: 0 0 100%;
@@ -726,28 +731,26 @@ body.fade {
   font-size: 22px;
   color: #949494;
 
-  &:after {
-    content: '←';
-    color: #000000;
+  span {
+    color: black;
     background-color: #949494;
-    width: 1.6em;
-    height: 1.6em;
-    line-height: 1.6em;
+    width: 1.8em;
+    height: 1.8em;
+    line-height: 1.8em;
     font-size: 0.75em;
     margin-right: 10px;
     font-weight: 500;
     display: block;
     border-radius: 100px;
     text-align: center;
-    font-family: -apple-system,
-    BlinkMacSystemFont,
-    'Helvetica Neue',
-    Helvetica,
-    Arial,
-    sans-serif;
     float: left;
-    top: 2px;
     position: relative;
+
+    svg {
+      width: 1.4em;
+      top: 2px;
+      position: relative;
+    }
   }
 }
 
@@ -959,7 +962,7 @@ ol {
   border-bottom: 1px dashed white;
 }
 
-.marquee3k {
+.marquee {
   width: 100%;
   overflow: hidden;
   font-size: 1.5em;
@@ -969,38 +972,30 @@ ol {
   position: relative;
   height: 2.5em;
 
-  .marquee3k__wrapper {
-    height: 100%;
-  }
-
-  img {
-    height: 100%;
-    opacity: 0.6;
-  }
-
-  .marquee-contents {
-    display: inline-flex !important;
-    position: relative;
-    height: 100%;
-
     a {
-      display: block;
-      display: flex;
-      height: 70%;
-      width: max-content;
-      margin-top: 10px;
+      height: 2.5em;
       align-items: center;
       text-decoration: none;
       border-bottom: 0;
       cursor: pointer;
-      padding-right: 2em;
     }
-  }
+
+    &.marquee--images {
+      a {
+        padding: 20px;  
+      }
+    }
+
+    img {
+      height: 2.5em;
+      opacity: 0.6;
+      max-width: 6em;
+    }
 
   p {
-    padding-right: 0.5em;
-    margin-top: 4px;
+    margin-top: -4px;
     display: flex;
+    height: 100%;
   }
 
   &:before, &:after {
@@ -1044,7 +1039,6 @@ ol {
 footer {
   padding: 4em 0;
   .oblique-strategy {
-    border: 1px solid white;
     border-radius: 40px 0;
     box-shadow: inset 0px 0px 20px 0px white;
     display: flex;
@@ -1052,25 +1046,6 @@ footer {
     margin: 0 20px;
     overflow: hidden;
     transition: 0.2s all ease-in-out;
-
-    .refresh-oblique-strategy {
-      font-style: normal;
-      color: white;
-      white-space: nowrap;
-      border: 1px solid white;
-      border-radius: 50px;
-      width: 36px;
-      height: 36px;
-      margin-right: 10px;
-      display: inline-flex;
-      align-content: center;
-      justify-content: center;
-      line-height: 1.4;
-      font-size: 0.8em;
-      z-index: 999;
-      background: black;
-      cursor: pointer;
-    }
   }
 
   p {
@@ -1375,6 +1350,10 @@ table.is-striped tbody tr:nth-child(even):hover {
   cursor: pointer;
   border-radius: 4px;
   background-color: #fff;
+
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 
   &:after {
     content: '↑';

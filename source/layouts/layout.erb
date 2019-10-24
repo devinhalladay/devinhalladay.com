@@ -13,19 +13,19 @@
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:site" content="@devinhalladay">
     <meta property="twitter:creator" content="@devinhalladay">
-    <meta property="twitter:title" content="<% if current_page.data.title %><%= "#{current_page.data.title} &mdash; Devin Halladay" %><% else %>Devin Halladay, Designer<% end %>">
-    <meta property="twitter:description" content="<% if current_page.data.intro %><%= current_page.data.intro %><% else %>Designer, conceptual artist, and critical theorist.<% end %>">
-    <meta property="twitter:image" content="<% if current_page.data.social_image %><%= "http://devinhalladay.com" + current_page.data.social_image %><% else %>http://devinhalladay.com/assets/images/2018/10/seo-image.png <% end %>">
+    <meta property="twitter:title" content="<% if current_page.data.title %><%= "#{current_page.data.title} &mdash; Devin Halladay" %><% else %>Devin Halladay - Design, etc.<% end %>">
+    <meta property="twitter:description" content="<% if current_page.data.intro %><%= current_page.data.intro %><% else %>Designer, conceptual artist, and critical theorist, for, with, and through the world.<% end %>">
+    <meta property="twitter:image" content="<% if current_page.data.social_image %><%= "http://devinhalladay.com" + current_page.data.social_image %><% elsif current_page.data.cover_image %><%= current_page.data.cover_image %><% else %>http://devinhalladay.com/assets/images/2018/10/seo-image.png <% end %>">
 
     <!-- Facebook OpenGraph -->
 
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_us">
     <meta property="og:url" content="http://devinhalladay.com<%= current_page.url %>">
-    <meta property="og:title" content="<% if current_page.data.title %><%= "#{current_page.data.title} &mdash; Devin Halladay" %><% else %>Devin Halladay, Designer<% end %>">
-    <meta property="og:description" content="<% if current_page.data.intro %><%= current_page.data.intro %><% else %>Designer, conceptual artist, and critical theorist.<% end %>">
-    <meta property="og:image" content="<% if current_page.data.social_image %><%= "http://devinhalladay.com" + current_page.data.social_image %><% else %>http://devinhalladay.com/assets/images/2018/10/seo-image.png <% end %>">
-    <meta property="og:site_name" content="Devin Halladay">
+    <meta property="og:title" content="<% if current_page.data.title %><%= "#{current_page.data.title} &mdash; Devin Halladay" %><% else %>Devin Halladay - Design, etc.<% end %>">
+    <meta property="og:description" content="<% if current_page.data.intro %><%= current_page.data.intro %><% else %>Designer, conceptual artist, and critical theorist, for, with, and through the world.<% end %>">
+    <meta property="og:image" content="<% if current_page.data.social_image %><%= "http://devinhalladay.com" + current_page.data.social_image %><% elsif current_page.data.cover_image %><%= current_page.data.cover_image %><% else %>http://devinhalladay.com/assets/images/2018/10/seo-image.png <% end %>">
+    <meta property="og:site_name" content="Devin Halladay - Design, etc.">
 
     <link rel="stylesheet" href="https://use.typekit.net/jrq6sjj.css">
     <%= stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.css" %>
@@ -36,8 +36,9 @@
     <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js" %>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@11.0.2/dist/lazyload.min.js"></script>
-    <%= javascript_include_tag "marquee3k" %>
+    <%= javascript_include_tag "https://cdn.jsdelivr.net/npm/jquery.marquee@1.5.0/jquery.marquee.min.js" %>
     <%= javascript_include_tag "snowfall" %>
+    <%= javascript_include_tag "pause" %>
     <%= javascript_include_tag "site" %>
 
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
@@ -93,7 +94,7 @@
         <footer>
           <div class="grid">
             <div class="oblique-strategy">
-              <p id="obliquestrategies"><span class="refresh-oblique-strategy">↻</span> <em></em></p>
+              <p id="obliquestrategies"><em></em></p>
             </div>
           </div>
         </footer>

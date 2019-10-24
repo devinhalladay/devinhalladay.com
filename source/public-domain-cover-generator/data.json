@@ -1,0 +1,313 @@
+[
+  {
+    "isbn": "774153546322",
+    "title": "The Aesthetics of Soft Automation",
+    "author_fname": "Devin",
+    "author_lname": "Halladay",
+    "subtitle": "An Interrogation of Efficiency, Automation, and Their Aesthetics",
+    "page_count": 103,
+    "section_count": 4,
+    "category": "Systems",
+    "date_published": "10/07/2015",
+    "abstract": "Automated technologies have always produced their own aesthetics of the machinery of work. With the rise of new media and digital technology, the aesthetics of automation have become something entirely different: encoded ideological signifiers with the sole goal of making us work more without noticing a shift in work hours or intensity."
+  },
+  { "isbn": "074632119822",
+    "title": "Anti-Aesthetic",
+    "author_fname": "Devin",
+    "author_lname": "Halladay",
+    "page_count": 187,
+    "section_count": 10,
+    "category": "Practices",
+    "date_published": "12/05/2015",
+    "abstract": ""
+  },
+  {
+    "isbn": "940431890622",
+    "title": "Technical Optics and Aura",
+    "author_fname": "Devin",
+    "author_lname": "Halladay",
+    "page_count": 147,
+    "category": "Dialogues",
+    "date_published": "10/30/2017",
+    "abstract": "Since the emergence of consciousness, the real has been inaccessible to the conscious, as described by the likes of Lacan, Nietzsche, Deleuze, Marx, Benjamin, and many others. The history of civilization is not the story of man's continued and enhanced comprehension of the world, but of man's accelerating removal from it. The emergent social phenomena of technical optics — from perspective lattices, to magic lanterns, to camera obscuras, to augmented reality glasses — represent a single dialectical phenomenon that has gone unchanged, and has simply shifted in orientation and intensity over the course of human history: the illusion. This essay attempts to trace a few major developments in the history of technical optics and illusion since the 17th century and describe in what ways these developments altered the materiality of human consciousness, experience, and knowledge."
+  },
+  {
+    "isbn": "476033540422",
+    "title": "Destabilizing- Différance",
+    "subtitle": "Différance as a Method of Dismantling Hegemony",
+    "author_fname": "Devin",
+    "author_lname": "Halladay",
+    "page_count": 212,
+    "category": "Practices",
+    "date_published": "05/30/2014",
+    "abstract": "All structures of power exist in and are executed by the most mundane and quotidian parts of our social reality. These structures of power, despite their looming presence, are merely composed of the everyday: people, telephone numbers, histories, assemblages, networks, websites, connections, buildings, and text. Power, expressed through this social text, is an assemblage of micro-articulations, expressed by signifiers that are themselves the articulations of a network of differences — what Derrida called différance."
+  },
+  {
+    "isbn": "085790538422",
+    "title": "The Stoic Pharmakon",
+    "author_fname": "Devin",
+    "author_lname": "Halladay",
+    "page_count": 200,
+    "subtitle": "On the Fraudulent Affirmation of the Stoics",
+    "section_count": 18,
+    "category": "Practices",
+    "date_published": "08/24/2014",
+    "abstract": "Hegel may consider Stoicism a stage of human consciousness, but to believe this is to consider nihilism a stage of human consciousness. Stoicism wears a mask of affirmation but its true face reveals a deep and intractable ressentiment. The Stoic mindset is a violent, passive nihilism uprooted from its affirmative soil and turned by some sickly botany into a pharmakon. This passive nihilism—defined by Nietzsche as a decline and recession of the power of the spirit— leads the Stoics to ends that denigrate their own humanity, defeating their espoused tenets of acceptance and endurance."
+  },
+  {
+    "isbn": "724559476722",
+    "title": "Empty Soul, Empty World",
+    "author_fname": "Devin",
+    "author_lname": "Halladay",
+    "page_count": 281,
+    "subtitle": "Kenosis as the Antithesis of the Gift-Giving Virtue",
+    "section_count": 15,
+    "category": "Practices",
+    "date_published": "04/28/2016"
+  },
+  {
+    "isbn": "933398341422",
+    "title": "Plato's Invisible Apparatus",
+    "author_fname": "Devin",
+    "author_lname": "Halladay",
+    "page_count": 278,
+    "subtitle": "An Ontological Interpretation of Plato's Republic.",
+    "section_count": 6,
+    "category": "Systems",
+    "date_published": "09/22/2016",
+    "abstract": "By reading Plato’s dialectical structure formally, this essay will uncover a new ontology composed of the series of political regimes, social allegiances, and transcendental thralldoms Plato problematizes throughout the Republic. Using that ontology as its foundation, this essay will then reveal Plato’s hidden objective: to construct an apparatus of sociopolitical forces designed to correct and guard against transcendental and immanent disorder in the polis, as a direct response to the slow decline of Ancient Greece."
+  },
+  {
+    "isbn": "644528697622",
+    "title": "In the Maelstrom",
+    "author_fname": "Devin",
+    "author_lname": "Halladay",
+    "page_count": 174,
+    "subtitle": "An Interrogation of Automation, Efficiency, and Their Aesthetics",
+    "section_count": 14,
+    "category": "Systems",
+    "date_published": "12/11/2016",
+    "abstract": "Automated technologies have always produced their own aesthetics of the machinery of work. With the rise of new media and digital technology, the aesthetics of automation have become something entirely different: encoded ideological signifiers with the sole goal of making us work more without noticing a shift in work hours or intensity."
+  },
+  {
+    "isbn": "823496433222",
+    "title": "The Value of Inequality",
+    "author_fname": "Devin",
+    "author_lname": "Halladay",
+    "page_count": 218,
+    "section_count": 2,
+    "category": "Spaces",
+    "date_published": "12/29/2014"
+  },
+  {
+    "isbn": "917376844822",
+    "title": "Human Understanding, Anti-Human Truth",
+    "author_fname": "Devin",
+    "author_lname": "Halladay",
+    "page_count": 184,
+    "category": "Dialogues",
+    "date_published": "01/19/2015"
+  },
+  {
+    "isbn": "025390524922",
+    "title": "The Overman and the Cannibal",
+    "subtitle": "Aeonophagy and Nihilism",
+    "author_fname": "Devin",
+    "author_lname": "Halladay",
+    "page_count": 66,
+    "category": "Practices",
+    "date_published": "04/03/2018"
+  },
+  {
+    "isbn": "654800101222",
+    "title": "The Birth of Datapower",
+    "author_fname": "Devin",
+    "author_lname": "Halladay",
+    "page_count": 124,
+    "subtitle": "New forms of power",
+    "byline": "a collection of critical essays",
+    "section_count": 20,
+    "category": "Systems",
+    "date_published": "05/14/2016",
+    "abstract": "Biopower and biopolitics have been the predominant forms of power relation between power regime and population since the seventeenth century. In the twenty-first century, however, we are witnessing a reconfiguration of biopolitics within the sphere of cyberspace—one that is much more granular and much more dangerous than biopolitics itself: we are witnessing the advent of datapower."
+  },
+  {
+    "isbn": "789962882222",
+    "title": "Essential Conflict",
+    "author_fname": "Devin",
+    "author_lname": "Halladay",
+    "page_count": 90,
+    "subtitle": "A Brief Introduction",
+    "section_count": 1,
+    "category": "Spaces",
+    "date_published": "02/01/2017"
+  },
+  {
+    "isbn": "547449229422",
+    "title": "In Search of Joy",
+    "author_fname": "Devin",
+    "author_lname": "Halladay",
+    "page_count": 246,
+    "category": "Dialogues",
+    "date_published": "08/24/2017"
+  },
+  {
+    "isbn": "388225910822",
+    "title": "Machievellian Stoicism",
+    "author_fname": "Devin",
+    "author_lname": "Halladay",
+    "page_count": 179,
+    "subtitle": "analyzing The tragedy of Sophonisba",
+    "section_count": 7,
+    "category": "Dialogues",
+    "date_published": "08/10/2014"
+  },
+  {
+    "isbn": "027801040722",
+    "title": "Tumults and Tyrrany",
+    "author_fname": "Devin",
+    "author_lname": "Halladay",
+    "subtitle": "The Keys to Liberty",
+    "page_count": 215,
+    "category": "Spaces",
+    "date_published": "04/22/2017"
+  },
+  {
+    "isbn": "205110875722",
+    "title": "A New Cannibalism",
+    "subtitle": "Toward Syntropic Cultivation",
+    "author_fname": "Devin",
+    "author_lname": "Halladay",
+    "page_count": 115,
+    "category": "Practices",
+    "date_published": "10/31/2017"
+  },
+  {
+    "isbn": "775969739222",
+    "title": "The Entropic Dialectic",
+    "author_fname": "Devin",
+    "author_lname": "Halladay",
+    "subtitle": "The origin of affirmation, authenticity, and conscience",
+    "page_count": 90,
+    "category": "Systems",
+    "date_published": "09/30/2017"
+  },
+  {
+    "isbn": "144155107722",
+    "title": "Towards a New Meaning",
+    "author_fname": "Devin",
+    "author_lname": "Halladay",
+    "page_count": 226,
+    "category": "Dialogues",
+    "date_published": "11/05/2016"
+  },
+  {
+    "isbn": "244014949722",
+    "title": "The Temporal Shift",
+    "subtitle": "Data Culture and the Totalization of Time",
+    "author_fname": "Devin",
+    "author_lname": "Halladay",
+    "page_count": 236,
+    "category": "Spaces",
+    "date_published": "12/14/2017"
+  },
+  {
+    "isbn": "363969676222",
+    "title": "Abyssa and Ordinates",
+    "subtitle": "Shattering the Cartesian Grid",
+    "author_fname": "Devin",
+    "author_lname": "Halladay",
+    "page_count": 60,
+    "category": "Spaces",
+    "date_published": "02/14/2017"
+  },
+  {
+    "isbn": "123056134222",
+    "title": "The Mercurial World",
+    "subtitle": "Living in a World of Crisis",
+    "author_fname": "Devin",
+    "author_lname": "Halladay",
+    "page_count": 79,
+    "category": "Spaces",
+    "date_published": "05/13/2018"
+  },
+  {
+    "isbn": "397347988722",
+    "title": "Tools Are Cultural",
+    "author_fname": "Edited by Devin",
+    "author_lname": "Halladay",
+    "page_count": 80,
+    "section_count": 2,
+    "category": "Practices",
+    "date_published": "07/30/2015"
+  },
+  {
+    "isbn": "917404149522",
+    "title": "Public Domain",
+    "author_fname": "Devin",
+    "author_lname": "Halladay",
+    "page_count": 109,
+    "subtitle": "The responsibility of designer and designed",
+    "byline": "An Anthology",
+    "section_count": 12,
+    "category": "Spaces",
+    "date_published": "12/25/2015"
+  },
+  {
+    "isbn": "145221050022",
+    "title": "The Age of the World Picture",
+    "author_fname": "Devin",
+    "author_lname": "Halladay",
+    "page_count": 185,
+    "category": "Spaces",
+    "date_published": "12/28/2014"
+  },
+  {
+    "isbn": "757204480822",
+    "title": "The Stack",
+    "author_fname": "Benjamin",
+    "author_lname": "Bratton",
+    "page_count": 158,
+    "category": "Systems",
+    "date_published": "02/01/2016"
+  },
+  {
+    "isbn": "716201358922",
+    "title": "The Internet Does Not Exist",
+    "subtitle": "A Collection of Essays",
+    "author_fname": "Edited by Hito",
+    "author_lname": "Steyerl",
+    "page_count": 258,
+    "category": "Dialogues",
+    "date_published": "02/04/2015"
+  },
+  {
+    "isbn": "096391826522",
+    "title": "A Slow, Contemporary Violence",
+    "author_fname": "Jussi",
+    "author_lname": "Parikka",
+    "page_count": 110,
+    "category": "Spaces",
+    "date_published": "04/05/2014"
+  },
+  {
+    "isbn": "891226766322",
+    "title": "A Geology of Media",
+    "author_fname": "Jussi",
+    "author_lname": "Parikka",
+    "page_count": 237,
+    "category": "Spaces",
+    "date_published": "12/06/2014"
+  },
+  {
+    "isbn": "747315587322",
+    "title": "Geontologies",
+    "author_fname": "Elizabeth",
+    "author_lname": "Povinelli",
+    "page_count": 139,
+    "subtitle": "A Requiem to Late Liberalism",
+    "section_count": 2,
+    "category": "Practices",
+    "date_published": "08/06/2018"
+  }
+]

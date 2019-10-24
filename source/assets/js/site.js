@@ -1,6 +1,6 @@
 function initLazyload() {
   var lazyLoadInstance = new LazyLoad({
-    elements_seslector: ".lazyload"
+    elements_selector: ".lazyload"
   });
 }
 
@@ -108,7 +108,7 @@ $(document).ready(function () {
         //     left: direction == 'left' ? '-=40' : '+=40',
         //   }, 1000);
         // });
-        $('body').snowfall({ flakeOriginX: e.pageX, flakeOriginY: e.pageY, image: "/assets/images/bubble-blue.png", flakeCount: 1, minSize: 10, maxSize: 64 });
+        $('body').snowfall({ flakeOriginX: e.pageX, flakeOriginY: e.pageY, image: "/assets/images/bubble-blue.png", flakeCount: 1, minSize: 10, maxSize: 46 });
 
       if ($('.dot').length > 0) {
         $('.clear-bubbles-button').show();
@@ -141,7 +141,7 @@ function init() {
   initScrollBars();
   window.onscroll = function () { scollTopButton() };
 
-  $('.refresh-oblique-strategy').click(function () {
+  $('.oblique-strategy').click(function () {
     obliqueStrategy();
   })
 
@@ -226,6 +226,7 @@ const FadePageTransition = Barba.BaseTransition.extend({
         duration: 300,
         complete: function() {
           resolve();
+          $('.marquee').marquee('destroy');
         }
       });
     });
@@ -246,6 +247,19 @@ const FadePageTransition = Barba.BaseTransition.extend({
       easing: "easeOutCubic",
       duration: 600,
       complete: function() {
+        $('.marquee').marquee({
+          //duration in milliseconds of the marquee
+          duration: 3000,
+          //gap in pixels between the tickers
+          gap: 20,
+          //time in milliseconds before the marquee will start animating
+          delayBeforeStart: 0,
+          //'left' or 'right'
+          direction: 'left',
+          //true or false - should the marquee be duplicated to show an effect of continues flow
+          duplicated: true,
+          pauseOnHover: true
+        });
         _this.done();
       }
     });
@@ -261,16 +275,25 @@ document.addEventListener("DOMContentLoaded", function(e) {
 });
 
 Barba.Dispatcher.on("newPageReady", function(e) {
-  // $('.marquee').marquee();
   init();
   obliqueStrategy();
   initScrollBars();
   initLazyload();
   initMixitUp();
 
-  if ($('.marquee3k').hasClass('is-init') !== true) {
-    Marquee3k.init();
-  }
+  $('.marquee').marquee({
+    //duration in milliseconds of the marquee
+    duration: 3000,
+    //gap in pixels between the tickers
+    gap: 20,
+    //time in milliseconds before the marquee will start animating
+    delayBeforeStart: 0,
+    //'left' or 'right'
+    direction: 'left',
+    //true or false - should the marquee be duplicated to show an effect of continues flow
+    duplicated: true,
+    pauseOnHover: true
+  });
 
   window.onscroll = function () { scollTopButton() };
 

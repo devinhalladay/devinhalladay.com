@@ -189,4 +189,8 @@ section#section-5 .dot.is-selected {
     line-height: 32px;
 
     box-shadow: inset 0px 0px 11px 0px white;
+
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
 }

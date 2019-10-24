@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background: #F3F7F9;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #10161A;
+}
+
+select {
+  height: 40px;
+  font-size: 18px;
+  border-radius: 4px;
+  width: 100%;
+  background-color: #f5f8fa;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(hsla(0,0%,100%,.8)),to(hsla(0,0%,100%,0)));
+  background-image: linear-gradient(180deg,hsla(0,0%,100%,.8),hsla(0,0%,100%,0));
+  color: #182026;
+  margin-bottom: 20px;
+}
+
+select:focus {
+  outline: 2px solid rgba(72, 175, 240, 1);
+}
+
+.sidebar {
+  height: fit-content;
+  -ms-align-items: center;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid #BFCCD6;
+  /* flex: 2; */
+  padding: 20px;
+  margin-bottom: 1em;
+  /* hack to reorder sidebar items and make barcode the last item */
+  /* make sidebar a flex container to suport `order` declaration */
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: row;
+}
+
+#barcode {
+  /* make it the last item */
+  order: 1;
+  /* fix flexbox image stretching */
+  align-self: center;
+}
+
+.info {
+  width: 400px;
+  padding-right: 2em;
+}
+
+.functions {
+  width: 300px;
+  padding-right: 2em;
+}
+
+.sidebar p {
+  color: #293742;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.sidebar p.tip {
+  color: #0E5A8A;
+  background-color: rgba(72, 175, 240, .2);
+  border: 1px solid rgba(72, 175, 240, 1);
+  border-radius: 4px;
+  padding: 6px;
+}
+
+button {
+  min-width: 40px;
+  min-height: 40px;
+  padding: 5px 15px;
+  font-size: 16px;
+  background-color: #f5f8fa;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(hsla(0,0%,100%,.8)),to(hsla(0,0%,100%,0)));
+  background-image: linear-gradient(180deg,hsla(0,0%,100%,.8),hsla(0,0%,100%,0));
+  color: #182026;
+  width: 100%;
+  border-radius: 4px;
+  outline: 0;
+  margin-bottom: 1em;
+}
+
+.button--green {
+  color: #ffffff;
+  background-color: #0f9960;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(hsla(0,0%,100%,.1)),to(hsla(0,0%,100%,0)));
+  background-image: linear-gradient(180deg,hsla(0,0%,100%,.1),hsla(0,0%,100%,0));
+}
+
+button.half-width {
+  width: calc(50% - 5px);
+  margin-right: 5px;
+}
+
+.p5Canvas {
+  flex: 5;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.p5Canvas svg {
+  border: 1px solid #e8e8e8;
+  -webkit-box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.12);
+  margin: 20px 0;
+}
+
+.sidebar-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
