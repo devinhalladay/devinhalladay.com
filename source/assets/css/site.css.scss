@@ -6,6 +6,10 @@
   cursor: url('/assets/images/cursor.svg') 7 13, auto;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #000;
   color: #fff;
@@ -287,7 +291,7 @@ main, footer {
   }
 
   &:hover {
-    background-color: #212121;
+    // background-color: #212121;
     margin: 0 -20px;
     padding: 0 20px;
 
@@ -872,7 +876,7 @@ body.fade {
       content: '';
       position: absolute;
       top: 0;
-      background-image: url(/assets/images/profile.jpg);
+      background-image: url(/assets/images/2019/10/me.jpg);
       left: 0;
       right: 0;
       bottom: 7px;
