@@ -4,36 +4,6 @@ function initLazyload() {
   });
 }
 
-// function start_marquee() {
-//   function go() {
-//     if ($('.marquee-contents').position().left + $('.marquee-contents').width() <= ($('.marquee-contents').offset().left + $('.marquee-contents').width())) {
-//       i = i + step;
-//     } else {
-//       i = 0 + ;
-//       $('.marquee-contents').children().first().remove().clone().appendTo($('.marquee-contents'));
-//     }
-//     $('.marquee-contents').css('margin-left', -i + 'px');
-//   }
-//   var i = 0,
-//     step = 3;
-//   var m = $('.marquee');
-//   m.children().wrap('<div class="marquee-contents"></div>')
-//   var t = $('.marquee-contents').html();
-//   $('.marquee-contents').html(t);
-//   var width = (m.innerWidth() + 1);
-//   $('.marquee-contents').html(t + t + t + t);
-
-//   var initWidth = $('.marquee-contents').offset().left;
-
-//   m.mouseenter(function () {
-//     step = 0;
-//   });
-//   m.mouseleave(function () {
-//     step = 3;
-//   });
-//   setInterval(go, 10);
-// }
-
 function initMixitUp() {
   if ($('.archive').length > 0) {
     var config = {
@@ -86,14 +56,6 @@ function obliqueStrategy() {
 }
 
 $(document).ready(function () {
-  // start_marquee();
-  // $(".marquee p").mark.marquee();
-  // $(".marquee p").mark.mouseover(function () {
-  //   $(this).removeAttr("style");
-  // }).mouseout(function () {
-  //   $(this).mark.marquee();
-  // });
-
   $('body').on('click', function (e) {
       var y = e.pageY;
         // direction = Math.round(Math.random()) == 0 ? 'left' : 'right';
@@ -226,7 +188,6 @@ const FadePageTransition = Barba.BaseTransition.extend({
         duration: 300,
         complete: function() {
           resolve();
-          $('.marquee').marquee('destroy');
         }
       });
     });
@@ -247,19 +208,6 @@ const FadePageTransition = Barba.BaseTransition.extend({
       easing: "easeOutCubic",
       duration: 600,
       complete: function() {
-        $('.marquee').marquee({
-          //duration in milliseconds of the marquee
-          duration: 3000,
-          //gap in pixels between the tickers
-          gap: 20,
-          //time in milliseconds before the marquee will start animating
-          delayBeforeStart: 0,
-          //'left' or 'right'
-          direction: 'left',
-          //true or false - should the marquee be duplicated to show an effect of continues flow
-          duplicated: true,
-          pauseOnHover: true
-        });
         _this.done();
       }
     });
@@ -280,21 +228,6 @@ Barba.Dispatcher.on("newPageReady", function(e) {
   initScrollBars();
   initLazyload();
   initMixitUp();
-
-  $('.marquee').marquee({
-    //duration in milliseconds of the marquee
-    duration: 3000,
-    //gap in pixels between the tickers
-    gap: 20,
-    //time in milliseconds before the marquee will start animating
-    delayBeforeStart: 0,
-    //'left' or 'right'
-    direction: 'left',
-    //true or false - should the marquee be duplicated to show an effect of continues flow
-    duplicated: true,
-    pauseOnHover: true
-  });
-
   window.onscroll = function () { scollTopButton() };
 
   $('.scroll-top-button').click(function() {
