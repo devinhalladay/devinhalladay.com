@@ -476,6 +476,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.25rem;
 }
 
+.\!mt-12 {
+  margin-top: 3rem !important;
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .flex {
   display: flex;
 }
@@ -539,6 +547,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-1 {
   padding-bottom: 0.25rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
 }
 
 .font-mono {
