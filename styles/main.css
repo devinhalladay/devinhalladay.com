@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  background: black;
+}
+
+@font-face {
+  font-family: 'Panama';
+  src: url('/fonts/panama.woff2') format('woff2'),
+    url('/fonts/panama.woff') format('woff'),
+    url('/fonts/panama.otf') format('opentype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Panama';
+  src: url('/fonts/panama-italic.woff') format('woff'),
+    url('/fonts/panama-italic.otf') format('opentype');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Panama';
+  src: url('/fonts/panama-bold.woff2') format('woff2'),
+    url('/fonts/panama-bold.woff') format('woff'),
+    url('/fonts/panama-bold.otf') format('opentype');
+  font-style: bold;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Compagnon';
+  src: url('/fonts/Compagnon-LightItalic.woff2') format('woff2'),
+      url('/fonts/Compagnon-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Compagnon';
+  src: url('/fonts/Compagnon-Light.woff2') format('woff2'),
+      url('/fonts/Compagnon-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Compagnon';
+  src: url('/fonts/Compagnon-Roman.woff2') format('woff2'),
+      url('/fonts/Compagnon-Roman.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Compagnon';
+  src: url('/fonts/Compagnon-Medium.woff2') format('woff2'),
+      url('/fonts/Compagnon-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Compagnon';
+  src: url('/fonts/Compagnon-Bold.woff2') format('woff2'),
+      url('/fonts/Compagnon-Bold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  @apply font-serif;
+  font-size:18px;
+  @apply leading-relaxed
+}
+
+a:not(#replit-badge) {
+  @apply border-b;
+  @apply border-white/20;
+  @apply bg-white/10;
+  padding: 4px 4px 0;
+  @apply rounded-sm;
+  @apply transition-all;
+  @apply duration-300;
+}
+
+a:not(#replit-badge):not(.custom):hover {
+  @apply bg-yellow/40;
+  @apply border-b-yellow;
+  @apply text-yellow;
+}
